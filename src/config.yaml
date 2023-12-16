@@ -1,7 +1,7 @@
 site:
   name: AstroWind
-  site: 'https://astrowind.vercel.app'
-  base: '/'
+  site: 'https://ankschoubey.github.io'
+  base: '/astro'
   trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
