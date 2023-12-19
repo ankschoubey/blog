@@ -21,7 +21,7 @@ const metadata = {
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '#' },
+        // { text: 'Home', href: '#' },
         // { text: 'About', href: '#about' },
         // { text: 'Hire Me', href: '#resume' },
         // { text: 'Porfolio', href: '#porfolio' },
@@ -31,6 +31,26 @@ const metadata = {
           links: [
             { text: 'Tech', href: getPermalink('technical', 'tag') },
             { text: 'Life', href: getPermalink('non-technical', 'tag') }
+          ]
+        },
+        {
+          text: "Tech Series",
+          href: getPermalink(),
+          links: [
+            { text: 'Clean Code', href: getPermalink('non-technical', 'tag'), icon: 'tabler:brand-linkedin' },
+            { text: 'TDD', href: "/tdd" },
+            { text: 'Continuous Delivery', href: getPermalink('non-technical', 'tag') },
+          ]
+        },
+        {
+          text: "Life Series",
+          href: getPermalink(),
+          links: [
+            { text: 'Developing Core Values', href: getPermalink('non-technical', 'tag') },
+            { text: 'Clarity in Thoughts', href: getPermalink('non-technical', 'tag') },
+            { text: 'Responsibility in Actions', href: getPermalink('non-technical', 'tag') },
+            { text: 'Optimism in Approach', href: getPermalink('non-technical', 'tag') },
+            { text: 'Harmony in Interactions', href: getPermalink('non-technical', 'tag') },
           ]
         }
         // { text: 'Tech Posts', href: getPermalink('technical', 'tag') },
@@ -56,7 +76,7 @@ const metadata = {
     id="hero"
     title="Ankush Choubey"
     taglineInverted={true}
-    tagline="Senior Full Stack Developer"
+    tagline="Senior 👨🏻‍💻 Full Stack Developer"
     actions={[
       { variant: "primary", target: '_blank', text: 'Hire me', href: 'https://www.linkedin.com/in/ankushchoubey/' },
       { variant: "secondary", text: 'Tech Blog', href: getPermalink('technical', 'tag') },
