@@ -1,9 +1,8 @@
 site:
   name: Ankush Choubey
   site: 'https://ankschoubey.github.io'
-  base: '/'
+  base: '/astrowindblog'
   trailingSlash: false
-
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
