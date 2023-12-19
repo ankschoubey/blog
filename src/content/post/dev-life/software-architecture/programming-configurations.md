@@ -3,6 +3,7 @@ excerpt: beyond algorithms and data structures
 title: Programming is now Configuring
 comments: true
 tags:
+ - technical
  - configuration-management
 publishDate: 2020-06-29T20:42:15.233506
 use_math: true

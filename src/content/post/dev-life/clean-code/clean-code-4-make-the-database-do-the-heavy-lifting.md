@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: You cannot compete with SQL
 tags:
+ - technical
  - clean-code
 publishDate: 2019-12-22T20:42:15.091119
 title: Make the database do the heavy lifting

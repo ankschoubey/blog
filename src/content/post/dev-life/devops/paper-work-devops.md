@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - personal
  - non-technical
 publishDate: 2022-06-12T20:52:08.052481

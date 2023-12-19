@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Speed up fetching of child entities
 tags:
+ - technical
  - spring-boot
  - database
 title: Solving N+1 Problem in Hibernate

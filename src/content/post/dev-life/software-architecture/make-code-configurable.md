@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Things that should take 0 coding effort
 tags:
+ - technical
  - clean-code
  - spring-boot
  - configuration-management

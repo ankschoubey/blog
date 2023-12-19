@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Unless you stop
 tags:
+ - technical
  - information-system
  - business
 publishDate: 2021-08-01T20:42:15.488221

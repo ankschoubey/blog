@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - bdd
 publishDate: 2023-03-11T20:52:08.052481
 last-modified-purpose:

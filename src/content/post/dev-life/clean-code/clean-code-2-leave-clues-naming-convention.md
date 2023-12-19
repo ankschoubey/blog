@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Comments and Naming Conventions
 tags:
+ - technical
  - clean-code
 publishDate: 2022-08-06T20:42:15.089636
 title: Leave Clues

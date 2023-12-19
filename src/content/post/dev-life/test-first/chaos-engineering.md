@@ -2,6 +2,7 @@
 comments: true
 excerpt: A powerful way to increase resilence of a system
 tags:
+ - technical
  - chaos-engineering
  - tdd
 publishDate: 2022-09-11T20:52:08.052481

@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: For those who don’t require Google level optimization
 tags:
+ - technical
  - web-development
 publishDate: 2020-02-22T20:42:15.140795
 title: Simple Hacks for increasing website load time

@@ -2,6 +2,7 @@
 comments: true
 excerpt: Multithreading programming has never been easier.
 tags:
+ - technical
  - microservices
  - experience
  - webflux

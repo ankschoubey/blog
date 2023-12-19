@@ -2,6 +2,7 @@
 comments: true
 excerpt: Using ApplicationContext directly can indeed be a handy approach for debugging without setting up the entire application infrastructure.
 tags:
+ - technical
  - spring-boot
 publishDate: 2023-12-11T20:52:08.052481
 last-modified-purpose:

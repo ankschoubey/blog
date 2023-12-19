@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Impact, Revenue and Deceptions.
 tags:
+ - technical
  - business
  - information-system
 title: Open Source Software (OSS)

@@ -2,6 +2,7 @@
 comments: true
 excerpt: Make a map of item and index. Check if target - currentItem exists.
 tags:
+ - technical
  - algorithm-problems
  - arrays
 publishDate: 2022-10-29T20:52:08.052481

@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - configuration-management
  - release-cycle
 publishDate: 2023-03-30T20:52:08.052481

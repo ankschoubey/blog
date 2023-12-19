@@ -2,6 +2,7 @@
 comments: true
 excerpt: For Chaos Engineering and Continuous Delivery
 tags:
+ - technical
  - feature-flagging
  - configuration-management
 publishDate: 2022-08-28T20:52:08.052481

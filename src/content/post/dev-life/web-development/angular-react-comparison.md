@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - web-development
 publishDate: 2021-12-04T20:52:08.052481
 slug: /angular-react-comparison/

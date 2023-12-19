@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - web-development
  - software-architecture
  - configuration-management

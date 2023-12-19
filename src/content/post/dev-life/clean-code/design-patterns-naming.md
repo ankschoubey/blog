@@ -2,6 +2,7 @@
 comments: true
 excerpt: Making it easy for future-code readers to understand
 tags:
+ - technical
  - clean-code
 publishDate: 2022-03-12T20:52:08.052481
 last-modified-purpose:

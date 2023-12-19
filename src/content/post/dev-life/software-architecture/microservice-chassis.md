@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - dev-productivity
 publishDate: 2022-10-02T20:52:08.052481
 last-modified-purpose:

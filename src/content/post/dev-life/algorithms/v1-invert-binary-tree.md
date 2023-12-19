@@ -2,6 +2,7 @@
 comments: true
 excerpt: Swap left and right. Then repeat for those nodes.
 tags:
+ - technical
  - algorithm-problems
  - binary-tree
  - east

@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - web-development
 publishDate: 2021-08-11T20:52:08.052481
 slug: /package-json/

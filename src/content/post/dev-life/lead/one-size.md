@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Choose the right tool for the job.
 tags:
+ - technical
  - philosophical
  - decision-making
  - for-future-me

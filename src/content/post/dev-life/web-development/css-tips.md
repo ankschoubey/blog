@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - web-development
 publishDate: 2021-09-13T20:52:08.052481
 slug: /css-tips/

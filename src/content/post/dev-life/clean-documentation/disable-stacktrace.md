@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - logging
  - spring-boot
  - clean-code

@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - programming
  - time
 title: Time tracking over programmers is counter-productive

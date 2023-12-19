@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - information-system
 title: Keeping Web Dev Code proper
 publishDate: 2021-08-01T20:42:15.593554

@@ -2,6 +2,7 @@
 comments: true
 excerpt: Fix bugs before your user reports
 tags:
+ - technical
  - observability
 publishDate: 2023-01-01T20:52:08.052481
 last-modified-purpose:

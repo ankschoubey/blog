@@ -2,6 +2,7 @@
 comments: true
 excerpt: Ideas shape development; specs sync teams; Gherkin tests ensure precision.
 tags:
+ - technical
  - bdd
  - product-development
 publishDate: 2022-05-21T20:52:08.052481

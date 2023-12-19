@@ -2,6 +2,7 @@
 comments: true
 excerpt: Understanding and extending spring boot with custom AutoConfiguration
 tags:
+ - technical
  - spring-boot
  - configuration-management
 publishDate: 2022-09-11T20:52:08.052481

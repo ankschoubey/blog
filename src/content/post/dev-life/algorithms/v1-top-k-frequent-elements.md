@@ -2,6 +2,7 @@
 comments: true
 excerpt: count all numbers. sort. and return top k. Use streams to make it cleaner. or use bucket sort.
 tags:
+ - technical
  - algorithm-problems
  - arrays
  - medium

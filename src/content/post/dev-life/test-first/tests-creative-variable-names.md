@@ -2,6 +2,7 @@
 comments: true
 excerpt: Creative variable names in tests can make them fun and interesting to read.
 tags:
+ - technical
  - testing
  - tdd
  - clean-code

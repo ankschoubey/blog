@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - programming
 title: How I learned basics of programming.
 publishDate: 2021-08-01T20:42:15.515422

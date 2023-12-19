@@ -2,6 +2,7 @@
 comments: true
 excerpt: Testing interfaces, abstract classes, and design patterns efficiently can be tricky since parents and children depend on each other.<br><br>We can write tests to eliminate these dependencies during the test time, making our tests very short and decoupled.
 tags:
+ - technical
  - design-patterns
  - tdd
  - testing

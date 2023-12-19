@@ -2,6 +2,7 @@
 comments: true
 excerpt: From card picking to release
 tags:
+ - technical
  - dev
  - tdd
 publishDate: 2022-09-08T20:52:08.052481

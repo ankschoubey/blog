@@ -2,6 +2,7 @@
 comments: true
 excerpt: Fluent Assertions make tests highly readable and English-like, presenting a concise structure that simplifies comprehension
 tags:
+ - technical
  - testing
  - tdd
  - clean-code

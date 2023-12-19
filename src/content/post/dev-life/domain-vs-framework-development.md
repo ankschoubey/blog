@@ -2,6 +2,7 @@
 comments: true
 excerpt: A Comparison between Application/Domain vs Framework Development
 tags:
+ - technical
  - baton
  - rant
  - 200-500-words

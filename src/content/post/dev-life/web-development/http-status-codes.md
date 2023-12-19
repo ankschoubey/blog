@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - web-development
  - notes
 publishDate: 2022-10-15T20:52:08.052481

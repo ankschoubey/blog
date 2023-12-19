@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - clean-code
  - spring-boot
  - database

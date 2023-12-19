@@ -2,6 +2,7 @@
 comments: true
 excerpt: Extending our Movie example creating a REST API with TDD. Scenarios covered are Create, Read, Update and Delete.
 tags:
+ - technical
  - testing
  - tdd
 publishDate: 2023-08-17T20:52:08.052481

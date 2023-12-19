@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - security
 publishDate: 2023-05-31T20:52:08.052481
 last-modified-purpose: 

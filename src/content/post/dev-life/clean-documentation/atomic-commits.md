@@ -2,6 +2,7 @@
 comments: true
 excerpt: Why small frequent commits leads to higher productivity
 tags:
+ - technical
  - clean-code
  - continuous-integration
  - commits

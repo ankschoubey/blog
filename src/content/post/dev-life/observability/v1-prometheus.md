@@ -2,6 +2,7 @@
 comments: true
 excerpt: The monitoring and time series database
 tags:
+ - technical
  - observability
  - prometheus
 publishDate: 2022-11-23T20:52:08.052481

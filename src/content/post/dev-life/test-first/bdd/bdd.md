@@ -2,6 +2,7 @@
 comments: true
 excerpt: The process that keeps everyone in sync
 tags:
+ - technical
  - product-development
  - tdd
  - testing

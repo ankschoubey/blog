@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - clean-code
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:

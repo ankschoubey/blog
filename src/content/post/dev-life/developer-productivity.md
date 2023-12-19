@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - information-system
  - for-future-me
  - tools

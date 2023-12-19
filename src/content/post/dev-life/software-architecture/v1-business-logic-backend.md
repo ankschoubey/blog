@@ -2,6 +2,7 @@
 comments: true
 excerpt: Making your application secure, high performance and maintanable.
 tags:
+ - technical
  - web-development
  - software-architecture
 publishDate: 2023-07-06T20:52:08.052481

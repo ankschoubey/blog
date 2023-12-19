@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - deep-learning
 title: 10 Google Collab Tips
 publishDate: 2019-09-18T20:42:15.084538

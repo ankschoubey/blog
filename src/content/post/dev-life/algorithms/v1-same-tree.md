@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - algorithm-problems
  - arrays
 publishDate: 2022-11-16T20:52:08.052481

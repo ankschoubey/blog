@@ -2,6 +2,7 @@
 comments: true
 excerpt: A template for thinking and creating understandable uniform tests
 tags:
+ - technical
  - testing
  - clean-code
  - favorite

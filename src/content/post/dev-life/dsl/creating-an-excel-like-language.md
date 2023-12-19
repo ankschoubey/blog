@@ -3,6 +3,7 @@ excerpt: Using the best current programming language creation-tool.
 title: How we created a query and evaluation language similar to Google Sheets and Excel formulas
 comments: true
 tags:
+ - technical
  - clean-code
  - dsl
  - developer-diary

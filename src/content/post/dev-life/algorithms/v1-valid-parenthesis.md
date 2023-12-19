@@ -2,6 +2,7 @@
 comments: true
 excerpt: God-level solution - iterate.<br>If an opening bracket is found, put the closing bracket in a stack.<br>If the closing bracket is found, pop and check for equality.
 tags:
+ - technical
  - algorithm-problems
  - stack
 publishDate: 2022-11-06T20:52:08.052481

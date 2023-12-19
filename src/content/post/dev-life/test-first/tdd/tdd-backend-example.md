@@ -2,6 +2,7 @@
 comments: true
 excerpt: Learn the foundation of TDD with a simple example explained in depth. 
 tags:
+ - technical
  - testing
  - tdd
 publishDate: 2023-08-13T20:52:08.052481

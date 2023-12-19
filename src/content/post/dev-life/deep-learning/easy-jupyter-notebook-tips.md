@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - deep-learning
 title: Easy Jupyter Notebook Tips
 publishDate: 2019-07-29T20:42:15.063562

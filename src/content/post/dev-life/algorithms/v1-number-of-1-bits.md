@@ -2,6 +2,7 @@
 comments: true
 excerpt: Check if the last bit is 1 by (n&1). Do the right unsigned shift (logical shift >>>). Loop.
 tags:
+ - technical
  - algorithm-problems
  - blind-75
  - bit-manipulation

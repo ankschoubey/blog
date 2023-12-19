@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: You ain’t gonna need it
 tags:
+ - technical
  - clean-code
 publishDate: 2020-01-04T20:42:15.112388
 title: Remove un-necessary code

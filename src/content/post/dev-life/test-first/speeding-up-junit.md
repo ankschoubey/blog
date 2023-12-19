@@ -2,6 +2,7 @@
 comments: true
 excerpt: From 8 minutes to less than 3 minutes.
 tags:
+ - technical
  - spring-boot
  - tdd
  - testing

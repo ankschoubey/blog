@@ -3,6 +3,7 @@ excerpt: Placeholder
 title: Agile and DevOps
 comments: true
 tags:
+ - technical
  - agile
  - devops
  - business

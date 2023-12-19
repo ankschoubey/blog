@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - web-development
  - graphql
 publishDate: 2023-04-06T20:42:15.140795

@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - software-engineering
  - clean-code
 publishDate: 2022-08-20T20:52:08.052481

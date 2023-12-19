@@ -2,6 +2,7 @@
 comments: true
 excerpt: Practical Chaos Engineering Part 1
 tags:
+ - technical
  - chaos-engineering
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:

@@ -2,6 +2,7 @@
 comments: true
 excerpt: A much better alternative to Javascript
 tags:
+ - technical
  - web-development
 publishDate: 2021-12-01T20:52:08.052481
 slug: /typescript

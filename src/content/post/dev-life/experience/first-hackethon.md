@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - information-system
  - experience
 title: First Hackathon

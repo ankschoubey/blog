@@ -2,6 +2,7 @@
 comments: true
 excerpt: Make sure the left pointer is always the lowest yet. Keep checking the difference between left and right. And return max.
 tags:
+ - technical
  - algorithm-problems
  - sliding-window
  - easy

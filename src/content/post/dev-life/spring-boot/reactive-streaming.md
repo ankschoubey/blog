@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - clean-code
  - reactive
 publishDate: 2022-07-24T20:52:08.052481

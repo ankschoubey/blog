@@ -2,6 +2,7 @@
 comments: true
 excerpt: Create a set and put items in one by one while checking if `num` is already there.
 tags:
+ - technical
  - algorithm-problems
  - arrays
  - easy

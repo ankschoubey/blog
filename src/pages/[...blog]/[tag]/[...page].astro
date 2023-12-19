@@ -26,11 +26,30 @@ const metadata = {
     follow: blogTagRobots?.follow,
   },
 };
+
+// TODO: Fix this
+let headerLine = tag === "non-technical" ? "Life & Self Improvement": `Tag: ${tag}`
+
+if(tag === "technical"){
+  headerLine = "Software Engineering"
+}
+
+
 ---
 
 <Layout metadata={metadata}>
+  
   <section class="px-4 md:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
-    <Headline>Tag: {tag}</Headline>
+    <Headline>{headerLine}</Headline>
+    {tag === "non-technical" && <p>
+      The TLDR of all these articles is this:
+      <ul class="list m-2">
+        <li class="m-2"> ● Be healthy. Health is most important.</li>
+        <li class="m-2"> ● Develop and rely on good habits and core values. They provide good default fallbacks.</li>
+      </ul>
+      <br>
+      <h2 class="font-bold text-2xl mb-4">All Articles: </h2>
+      </p>}
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
   </section>

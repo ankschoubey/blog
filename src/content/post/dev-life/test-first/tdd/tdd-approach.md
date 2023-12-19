@@ -2,6 +2,7 @@
 comments: true
 excerpt: A step by step algorithm
 tags:
+ - technical
  - testing
  - tdd
 publishDate: 2022-03-04T20:52:08.052481

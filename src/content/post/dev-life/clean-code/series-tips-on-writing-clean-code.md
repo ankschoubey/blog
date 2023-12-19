@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: constructing the simplest possible code that would solve your problem resulting in an increase in productivity by producing higher quality in less time.
 tags:
+ - technical
  - clean-code
 title: Clean Code
 publishDate: 2019-12-19T20:42:15.086538

@@ -2,6 +2,7 @@
 comments: true
 excerpt: TDD Example that saved around 2 hours
 tags:
+ - technical
  - tdd-example
  - tdd
 publishDate: 2022-09-08T20:52:08.052481

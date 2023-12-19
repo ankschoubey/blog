@@ -3,6 +3,7 @@ comments: true
 excerpt: Separate out technical code from business/domain logic for extreme reusability for code.
 last-modified-purpose: This is just Domain Driven Design and applies to both frontend and backend.
 tags:
+ - technical
  - web-development
  - ddd
  - clean-code

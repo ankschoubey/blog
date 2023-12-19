@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - concurrency
 publishDate: 2022-12-15T20:52:08.052481
 last-modified-purpose:

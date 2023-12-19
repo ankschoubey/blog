@@ -2,6 +2,7 @@
 comments: true
 excerpt: I believe walking the board is an important step towards facilitating Continuous Delivery. The standup format facilitates perfection in updates, focused on one card at a time which is closer to completion and takes less time to complete.
 tags:
+ - technical
  - business
  - agile
 publishDate: 2023-07-02T20:52:08.052481

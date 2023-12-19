@@ -2,6 +2,7 @@
 comments: true
 excerpt: Have 2 pointers. One at the start other at the end. Skip if `!Character.isLetterOrDigit` and compare with `Character.toLowerCase`
 tags:
+ - technical
  - algorithm-problems
  - two-pointers
  - easy

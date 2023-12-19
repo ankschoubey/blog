@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Mitigating the most discoraging part of software development
 tags:
+ - technical
  - devops
  - tools
 title: A replicable Development Environment with Docker + VS Code

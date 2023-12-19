@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - configuration-management
 publishDate: 2023-03-26T20:52:08.052481
 last-modified-purpose:

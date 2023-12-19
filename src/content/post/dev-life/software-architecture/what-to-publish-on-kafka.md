@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - spring-boot
  - message-queue
 publishDate: 2022-08-07T20:52:08.052481

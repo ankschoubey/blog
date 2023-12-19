@@ -3,6 +3,7 @@ excerpt:  Implementing OData, Utilizing Specifications, and Enhancing API Flexib
 title: How we implemented OData for MongoDB and use it in OpenAPI
 comments: true
 tags:
+ - technical
  - clean-code
  - dsl
  - developer-diary

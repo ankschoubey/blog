@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Using Kaggle CLI
 tags:
+ - technical
  - deep-learning
 publishDate: 2019-08-10T20:42:15.065727
 title: How To Download Dataset From Kaggle

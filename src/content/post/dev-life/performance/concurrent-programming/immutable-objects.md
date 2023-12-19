@@ -2,6 +2,7 @@
 comments: true
 excerpt: It's best to start with immutable objects and then modify them if needed.
 tags:
+ - technical
  - concurrent-programming
  - reactive-programming
 publishDate: 2022-09-18T20:52:08.052481

@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - programming
 title: Tips for coding on a slow computer
 publishDate: 2021-08-01T20:42:15.412890

@@ -3,6 +3,7 @@ excerpt: Placeholder
 title: Deciding to learn a {programming} topic
 comments: true
 tags:
+ - technical
  - for-future-me
  - learning
 toc: false

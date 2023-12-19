@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Atomic Habits applied to code. Thanks James Clear.
 tags:
+ - technical
  - clean-code
  - business
 publishDate: 2020-01-06T20:42:15.137147

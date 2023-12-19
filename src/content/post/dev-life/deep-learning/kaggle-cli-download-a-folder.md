@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - deep-learning
 publishDate: 2020-03-10T20:42:15.143791
 title: 'Kaggle CLI QA: How to download a particular folder'

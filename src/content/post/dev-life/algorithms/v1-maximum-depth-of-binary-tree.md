@@ -2,6 +2,7 @@
 comments: true
 excerpt: go to each depth, incrementing a depth counter by 1. return max of it.
 tags:
+ - technical
  - algorithm-problems
  - binary-tree
  - easy

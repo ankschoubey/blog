@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - architecture
  - plugin
 publishDate: 2022-11-13T20:52:08.052481

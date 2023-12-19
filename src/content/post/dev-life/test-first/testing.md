@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - collection-of-thoughts
  - testing
  - truth

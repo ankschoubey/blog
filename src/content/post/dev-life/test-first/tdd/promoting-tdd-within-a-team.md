@@ -2,6 +2,7 @@
 comments: true
 excerpt: Promoting TDD within a team requires patience, consistent effort, and a focus on creating a positive and supportive environment for learning and improvement.
 tags:
+ - technical
  - testing
  - tdd
 publishDate: 2023-08-09T20:52:08.052481

@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - devops
  - information-system
 publishDate: 2021-08-01T20:42:15.672411

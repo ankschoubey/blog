@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Constructing the simplest possible code
 tags:
+ - technical
  - clean-code
  - tools
 publishDate: 2020-05-11T20:42:15.210883

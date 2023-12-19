@@ -2,6 +2,7 @@
 comments: true
 excerpt: Placeholder 
 tags:
+ - technical
  - microservices
  - distributed-systems
 publishDate: 2022-12-03T20:52:08.052481

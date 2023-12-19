@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Baby steps towards competitions
 tags:
+ - technical
  - deep-learning
 title: Series  Kaggle Getting Started
 publishDate: 2020-03-30T20:42:15.164522

@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink, getAsset, CATEGORY_BASE } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -88,26 +88,30 @@ export const headerData = {
     {
       text: 'Blog',
       links: [
+        // {
+        //   text: 'Article',
+        //   href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+        // },
+        // {
+        //   text: 'Article (with MDX)',
+        //   href: getPermalink('markdown-elements-demo-post', 'post'),
+        // },
+        // {
+        //   text: 'Category Page',
+        //   href: getPermalink('Personal-Development', 'category'),
+        // },
         {
-          text: 'Blog List',
-          href: getBlogPermalink(),
+          text: 'Software Engineering',
+          href: getPermalink('technical', 'tag'),
         },
         {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+          text: 'Life & Self Improvement',
+          href: getPermalink('non-technical', 'tag'),
         },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('Personal-Development', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
+        // {
+        //   text: 'All Blogposts',
+        //   href: getBlogPermalink(),
+        // },
       ],
     },
     {

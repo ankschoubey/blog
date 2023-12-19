@@ -2,6 +2,7 @@
 comments: true
 excerpt: Iterate over both and store minimum one in current; Increment in the list from where minimum came. Once one of the lists is empty, empty the other one.
 tags:
+ - technical
  - algorithm-problems
  - linked-list
  - easy

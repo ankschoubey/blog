@@ -2,6 +2,7 @@
 comments: true
 excerpt: Details about breaking user story added
 tags:
+ - technical
  - business
  - agile
 publishDate: 2022-11-21T20:52:08.052481

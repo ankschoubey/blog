@@ -2,6 +2,7 @@
 comments: true
 excerpt: Implementing OAuth server is easier than it looks and it saves money in the long run.
 tags:
+ - technical
  - security
  - oauth
 publishDate: 2023-03-22T20:52:08.052481

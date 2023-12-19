@@ -3,6 +3,7 @@ excerpt: or Machine Learning
 title: Advice for those who want to learn Deep Learning
 comments: true
 tags:
+ - technical
  - deep-learning
 publishDate: 2020-05-02T20:42:15.185834
 use_math: true

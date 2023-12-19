@@ -2,6 +2,7 @@
 comments: true
 excerpt: Data validation at various stages minimizes bugs and unnecessary overhead, ensuring consistent and accurate information flow.
 tags:
+ - technical
  - data
  - clean-code
 publishDate: 2022-12-27T20:52:08.052481

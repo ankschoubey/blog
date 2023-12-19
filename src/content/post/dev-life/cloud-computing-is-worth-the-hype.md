@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: Your robot on the internet
 tags:
+ - technical
  - cloud-computing
  - information-system
 title: Cloud is Worth the Hype

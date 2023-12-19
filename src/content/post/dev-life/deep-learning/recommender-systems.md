@@ -3,6 +3,7 @@ toc: false
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - applications-of-ml
  - information-system
 title: Applications of Recommender Systems

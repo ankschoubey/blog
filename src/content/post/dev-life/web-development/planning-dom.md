@@ -2,6 +2,7 @@
 comments: true
 excerpt: BEM, TDD, and thoughtful design supercharge web development by streamlining UI DOM planning for maximum efficiency.
 tags:
+ - technical
  - web-development
  - tdd
 publishDate: 2023-10-28T20:52:08.052481

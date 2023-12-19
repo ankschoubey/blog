@@ -2,6 +2,7 @@
 comments: true
 excerpt: Consolidating object creation, mock of methods and more.
 tags:
+ - technical
  - testing
  - clean-code
  - tdd

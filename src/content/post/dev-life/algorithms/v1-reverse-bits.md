@@ -2,6 +2,7 @@
 comments: true
 excerpt: Get the last bit of value from the original. append to the reverse one. shift reverse one to the left. instead of adding, you can do `or` because after the shift last value will be 0. Imp - iterate 32 times only.
 tags:
+ - technical
  - algorithm-problems
  - blind-75
  - bit-manipulation

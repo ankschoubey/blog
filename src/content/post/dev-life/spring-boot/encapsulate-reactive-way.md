@@ -2,6 +2,7 @@
 comments: true
 excerpt: Notes from Avoiding Reactor Meltdown
 tags:
+ - technical
  - reactive
  - spring-boot
 publishDate: 2022-08-15T20:52:08.052481

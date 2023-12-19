@@ -2,6 +2,7 @@
 comments: true
 excerpt: 'Placeholder' 
 tags:
+ - technical
  - testing
  - tdd
 publishDate: 2022-04-27T20:52:08.052481

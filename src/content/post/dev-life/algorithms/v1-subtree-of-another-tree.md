@@ -2,6 +2,7 @@
 comments: true
 excerpt: Check if root is same as subtree or root.left is same or root.right is same;
 tags:
+ - technical
  - algorithm-problems
  - tree
  - easy
