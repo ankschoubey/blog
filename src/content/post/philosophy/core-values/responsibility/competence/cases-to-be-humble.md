@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, responsibility, team-work]
+tags:
+ - philosophical
+ - responsibility
+ - team-work
 title: Cases To Be Humble
 permalink: /humble/
 publishDate: 2021-08-01T20:42:15.643388

@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, inputs]
+tags:
+ - non-technical
+ - inputs
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: 
 permalink: /v1/chatgpt-assist

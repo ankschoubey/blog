@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Practical Chaos Engineering Part 1
-categories: [chaos-engineering]
+tags:
+ - chaos-engineering
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
 permalink: /response-type-field/

@@ -1,7 +1,10 @@
 ---
 comments: true
 description: If you don't, no one takes you seriously.
-categories: [communication, non-technical, team-work]
+tags:
+ - communication
+ - non-technical
+ - team-work
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose:
 permalink: /social-confidence/

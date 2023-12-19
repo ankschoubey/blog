@@ -2,7 +2,10 @@
 description: Using the best current programming language creation-tool.
 title: How we created a query and evaluation language similar to Google Sheets and Excel formulas
 comments: true
-categories: [clean-code, dsl, developer-diary]
+tags:
+ - clean-code
+ - dsl
+ - developer-diary
 toc: false
 use_math: true
 publishDate: 2020-05-25T20:42:15.220865

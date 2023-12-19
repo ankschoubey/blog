@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [decision-making, collection-of-thoughts, systems]
+tags:
+ - decision-making
+ - collection-of-thoughts
+ - systems
 title: Decision Making Heuristics
 publishDate: 2021-08-14T20:42:15.644388
 permalink: /decision-making-heuristics/

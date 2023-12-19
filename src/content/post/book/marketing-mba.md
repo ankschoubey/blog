@@ -2,7 +2,7 @@
 toc: false
 comments: true
 description: Placeholder 
-tags: 
+tags:
  - business
  - books
  - marketing

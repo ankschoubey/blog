@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [decision-making, systems]
+tags:
+ - decision-making
+ - systems
 title: Plan quickly. Move fast. Break things.
 publishDate: 2021-08-01T20:42:15.497285
 permalink: /move/

@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: Dodge Recommender Systems
-categories: [non-technical, inputs]
+tags:
+ - non-technical
+ - inputs
 publishDate: 2021-09-06T20:52:08.052481
 permalink: /internet-distractions/
 title: Making Internet Less Distracting

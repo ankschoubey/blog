@@ -1,7 +1,11 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [core-values, time-matters, non-technical, systems]
+tags:
+ - core-values
+ - time-matters
+ - non-technical
+ - systems
 publishDate: 2022-01-28T20:52:08.052481
 last-modified-purpose:
 permalink: /personal-budgeting/

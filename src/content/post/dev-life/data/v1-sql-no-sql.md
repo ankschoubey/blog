@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [database, no-sql]
+tags:
+ - database
+ - no-sql
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/sql-and-no-sql

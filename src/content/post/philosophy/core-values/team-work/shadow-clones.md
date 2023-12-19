@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [baton, team-work, non-technical]
+tags:
+ - baton
+ - team-work
+ - non-technical
 publishDate: 2022-05-29T20:52:08.052481
 last-modified-purpose:
 permalink: /shadow-clones/

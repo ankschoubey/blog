@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Comments and Naming Conventions
-categories: [clean-code]
+tags:
+ - clean-code
 publishDate: 2022-08-06T20:42:15.089636
 title: Leave Clues
 permalink: /naming_conventions/

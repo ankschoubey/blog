@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [web-development]
+tags:
+ - web-development
 publishDate: 2021-08-11T20:52:08.052481
 permalink: /package-json/
 title: Tips for working with `package.json`

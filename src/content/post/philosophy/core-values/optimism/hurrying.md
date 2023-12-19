@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [decision-making, for-future-me, peace]
+tags:
+ - decision-making
+ - for-future-me
+ - peace
 publishDate: 2021-08-01T20:42:15.508582
 title: Hurrying does not help.
 permalink: /hurrying/

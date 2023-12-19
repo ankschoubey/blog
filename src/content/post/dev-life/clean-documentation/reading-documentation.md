@@ -1,7 +1,8 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [software-engineering]
+tags:
+ - software-engineering
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose: Fixed grammatical mistakes
 permalink: /reading-documentation/

@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [leadership, responsibility, team-work]
+tags:
+ - leadership
+ - responsibility
+ - team-work
 title: Age is not a perfect measure of experience
 publishDate: 2021-08-01T20:42:15.494363
 permalink: /age/

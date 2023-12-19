@@ -1,7 +1,12 @@
 ---
 comments: true
 description: The fundamental operating system
-categories: [philosophical, for-future-me, decision-making, non-technical, matured]
+tags:
+ - philosophical
+ - for-future-me
+ - decision-making
+ - non-technical
+ - matured
 publishDate: 2022-07-02T20:52:08.052481
 last-modified-purpose: add Autenticity as fundamental value
 permalink: /my-core-values/

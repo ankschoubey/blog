@@ -1,7 +1,7 @@
 ---
 comments: true
 description: Placeholder 
-categories: []
+
 publishDate: 2022-10-15T20:52:08.052481
 last-modified-purpose:
 permalink: /first-two-weeks/

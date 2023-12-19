@@ -1,7 +1,10 @@
 ---
 comments: true
 description: How Our Needs, Environment, and Choices Shape Our Lives
-categories: [non-technical, inputs, mature]
+tags:
+ - non-technical
+ - inputs
+ - mature
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: 
 permalink: /v1/inputs

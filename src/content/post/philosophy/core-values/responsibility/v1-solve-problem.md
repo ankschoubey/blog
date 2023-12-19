@@ -1,7 +1,9 @@
 ---
 comments: true
 description: And escape it. It's a more empowering path and maybe the only path.
-categories: [non-technical, responsibility]
+tags:
+ - non-technical
+ - responsibility
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/actually-solve-the-problem

@@ -1,7 +1,8 @@
 ---
 toc: false
 description: especially for maths
-categories: [clean-code]
+tags:
+ - clean-code
 publishDate: 2019-12-25T20:42:15.097026
 title: Avoid inventing algorithms and data structures
 permalink: /complexity/

@@ -2,7 +2,8 @@
 description: Placeholder 
 title: ROI of Fun
 comments: true
-categories: [peace]
+tags:
+ - peace
 use_math: true
 publishDate: 2021-08-01T20:42:15.239598
 permalink: /fun/

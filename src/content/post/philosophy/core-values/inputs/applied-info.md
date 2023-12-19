@@ -2,7 +2,11 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [decision-making,collection-of-thoughts, non-technical, truth]
+tags:
+ - decision-making
+ - collection-of-thoughts
+ - non-technical
+ - truth
 title: Research Fast, Understand the Gist, Apply, Iterate, and Move Forward
 publishDate: 2022-10-14T20:42:15.598510
 permalink: /applied-info/

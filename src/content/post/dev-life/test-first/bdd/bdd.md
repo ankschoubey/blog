@@ -1,7 +1,11 @@
 ---
 comments: true
 description: The process that keeps everyone in sync
-categories: [product-development, tdd, testing, bdd]
+tags:
+ - product-development
+ - tdd
+ - testing
+ - bdd
 publishDate: 2022-05-23T20:52:08.052481
 last-modified-purpose:
 permalink: /bdd/

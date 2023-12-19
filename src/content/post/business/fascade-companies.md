@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Only for-money companies
-categories: [business]
+tags:
+ - business
 publishDate: 2021-08-01T20:42:15.366196
 title: Facade companies
 permalink: /facade/

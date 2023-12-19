@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [microservices, distributed-systems]
+tags:
+ - microservices
+ - distributed-systems
 publishDate: 2022-12-03T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/api-client-sdk

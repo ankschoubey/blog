@@ -1,7 +1,8 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [web-development]
+tags:
+ - web-development
 publishDate: 2021-09-13T20:52:08.052481
 permalink: /css-tips/
 title: CSS Tips

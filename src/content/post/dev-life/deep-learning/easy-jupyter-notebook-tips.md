@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [deep-learning]
+tags:
+ - deep-learning
 title: Easy Jupyter Notebook Tips
 publishDate: 2019-07-29T20:42:15.063562
 permalink: /jupyter_notebook/

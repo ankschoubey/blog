@@ -2,7 +2,8 @@
 description: Placeholder 
 title: Math motivation
 comments: true
-categories: [collection-of-thoughts]
+tags:
+ - collection-of-thoughts
 use_math: true
 publishDate: 2020-05-04T20:42:15.193139
 permalink: /math/

@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [decision-making, for-future-me, baton]
+tags:
+ - decision-making
+ - for-future-me
+ - baton
 title: Research
 publishDate: 2021-08-01T20:42:15.512366
 permalink: /research/

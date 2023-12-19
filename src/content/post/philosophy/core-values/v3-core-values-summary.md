@@ -1,7 +1,12 @@
 ---
 comments: true
 description: The fundamental operating system
-categories: [philosophical, for-future-me, decision-making, non-technical, matured]
+tags:
+ - philosophical
+ - for-future-me
+ - decision-making
+ - non-technical
+ - matured
 publishDate: 2023-02-12T20:52:08.052481
 last-modified-purpose: 
 permalink: /v3/my-core-values/

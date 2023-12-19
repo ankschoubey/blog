@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Non-repudiation
-categories: [business]
+tags:
+ - business
 title: If it's official, communicate via email
 publishDate: 2021-08-01T20:42:15.386733
 permalink: /official_email/

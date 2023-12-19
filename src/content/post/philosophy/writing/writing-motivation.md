@@ -2,7 +2,10 @@
 description: Placeholder 
 title: Collection of Thoughts on Writing
 comments: true
-categories: [collection-of-thoughts, non-technical, truth]
+tags:
+ - collection-of-thoughts
+ - non-technical
+ - truth
 use_math: true
 publishDate: 2022-10-08T20:42:15.226335
 last-modified-purpose: added more tips

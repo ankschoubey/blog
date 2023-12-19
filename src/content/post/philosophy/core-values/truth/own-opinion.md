@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, truth]
+tags:
+ - philosophical
+ - truth
 title: Develop your own opinions and reasonings
 publishDate: 2021-05-03T20:42:15.650028
 permalink: /original-opinion/

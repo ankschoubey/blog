@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: and Logging with style
-categories: [clean-code]
+tags:
+ - clean-code
 publishDate: 2020-01-06T20:42:15.128460
 title: Exception handling
 permalink: /exception_handing/

@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Placeholder 
-categories: [collaboration]
+tags:
+ - collaboration
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
 permalink: /empathic-developer/

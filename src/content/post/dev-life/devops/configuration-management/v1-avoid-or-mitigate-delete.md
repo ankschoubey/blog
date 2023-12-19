@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Placeholder 
-categories: [configuration-management]
+tags:
+ - configuration-management
 publishDate: 2023-03-26T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/avoid-or-mitigate-deleting

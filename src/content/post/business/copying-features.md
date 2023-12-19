@@ -2,7 +2,8 @@
 description: An observation of different technology companies
 title: Copying features and products
 comments: true
-categories: [ business]
+tags:
+ - business
 publishDate: 2021-08-01T20:42:15.329202
 use_math: true
 permalink: /copying_products/

@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, rant, responsibility]
+tags:
+ - non-technical
+ - rant
+ - responsibility
 publishDate: 2022-11-05T20:52:08.052481
 last-modified-purpose:
 permalink: /v2/good-intentions-good-action

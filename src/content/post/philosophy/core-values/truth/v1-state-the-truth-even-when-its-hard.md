@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Why we should use the vocabulary 'stating'. And how can we state the truth.
-categories: [non-technical, truth, mature]
+tags:
+ - non-technical
+ - truth
+ - mature
 publishDate: 2023-03-16T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/truth/state-truth-when-it-hurts

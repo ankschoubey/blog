@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [clean-code, spring-boot, database]
+tags:
+ - clean-code
+ - spring-boot
+ - database
 publishDate: 2021-06-12T20:42:15.692681
 title: Art of Reducing Lines of Code in Java/Spring Boot
 permalink: /clean-code-spring-boot/

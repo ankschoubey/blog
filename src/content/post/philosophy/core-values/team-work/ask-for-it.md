@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [for-future-me, team-work, truth]
+tags:
+ - for-future-me
+ - team-work
+ - truth
 title: Just ask for it
 publishDate: 2021-08-01T20:42:15.417929
 permalink: /ask/

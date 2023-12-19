@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, responsibility, needs]
+tags:
+ - non-technical
+ - responsibility
+ - needs
 publishDate: 2022-11-22T20:52:08.052481
 last-modified-purpose: 
 permalink: /v1/get-out-of-house

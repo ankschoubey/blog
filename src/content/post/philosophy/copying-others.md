@@ -2,7 +2,8 @@
 description: Placeholder 
 title: Copying Others vs Being Yourself
 comments: true
-categories: [truth]
+tags:
+ - truth
 publishDate: 2015-10-04T20:42:15.058326
 use_math: true
 permalink: /copying/

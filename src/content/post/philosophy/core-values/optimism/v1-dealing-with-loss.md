@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Instead of seeing failure as a personal flaw or a permanent setback, see it as an opportunity for growth and improvement. Focus on learning from your mistakes and using them to become better in the future.
-categories: [peace, non-technical]
+tags:
+ - peace
+ - non-technical
 publishDate: 2023-05-06T20:52:08.052481
 last-modified-purpose:
 read-this-when: You experiences a loss and are thinking about it.

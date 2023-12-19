@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [clean-code, reactive]
+tags:
+ - clean-code
+ - reactive
 publishDate: 2022-07-24T20:52:08.052481
 last-modified-purpose:
 permalink: /reactive-streaming/

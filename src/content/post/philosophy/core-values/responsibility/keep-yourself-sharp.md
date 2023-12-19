@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, responsibility, systems]
+tags:
+ - non-technical
+ - responsibility
+ - systems
 publishDate: 2022-10-08T20:52:08.052481
 last-modified-purpose:
 permalink: /keep-yourself-sharp/

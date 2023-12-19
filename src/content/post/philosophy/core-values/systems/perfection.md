@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Why failing forward is the only way?
-categories: [non-technical, systems]
+tags:
+ - non-technical
+ - systems
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
 permalink: /perfection/

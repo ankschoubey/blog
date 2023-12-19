@@ -1,7 +1,9 @@
 ---
 comments: true
 description: BDD focuses on solving customer problems, not implementation details like UI. Those are addressed in other activities like wireframing and TDD.
-categories: [bdd, tdd]
+tags:
+ - bdd
+ - tdd
 publishDate: 2023-03-22T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/bdd-vs-tdd

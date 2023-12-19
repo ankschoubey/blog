@@ -2,7 +2,9 @@
 description: Draft version
 title: Marketing Money
 comments: true
-categories: [business, marketing]
+tags:
+ - business
+ - marketing
 publishDate: 2021-08-01T20:42:15.236602
 use_math: true
 permalink: /marketing-money/

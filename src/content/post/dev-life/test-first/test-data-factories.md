@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Consolidating object creation, mock of methods and more.
-categories: [testing, clean-code, tdd]
+tags:
+ - testing
+ - clean-code
+ - tdd
 publishDate: 2022-05-03T20:52:08.052481
 last-modified-purpose:
 permalink: /test-data-factories/

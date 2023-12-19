@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: Atomic Habits applied to code. Thanks James Clear.
-categories: [clean-code, business]
+tags:
+ - clean-code
+ - business
 publishDate: 2020-01-06T20:42:15.137147
 title: Leave it better than you found it
 permalink: /leave_it_better/

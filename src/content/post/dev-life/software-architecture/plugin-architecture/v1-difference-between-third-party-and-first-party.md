@@ -1,7 +1,9 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [architecture, plugin]
+tags:
+ - architecture
+ - plugin
 publishDate: 2023-03-03T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/internal-vs-external-plugin

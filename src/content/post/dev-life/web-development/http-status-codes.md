@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [web-development, notes]
+tags:
+ - web-development
+ - notes
 publishDate: 2022-10-15T20:52:08.052481
 last-modified-purpose:
 permalink: /HTTP-status-codes/

@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, health, systems]
+tags:
+ - non-technical
+ - health
+ - systems
 publishDate: 2022-10-25T20:52:08.052481
 last-modified-purpose:
 permalink: /dealing-with-health-problems/

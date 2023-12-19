@@ -2,7 +2,9 @@
 description: Placeholder 
 title: "Environment Focused: For-Profit vs Non-Profits"
 comments: true
-categories: [business, non-profit]
+tags:
+ - business
+ - non-profit
 use_math: true
 publishDate: 2021-08-01T20:42:15.260601
 permalink: /environment/

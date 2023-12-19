@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical]
+tags:
+ - non-technical
 publishDate: 2022-09-25T20:52:08.052481
 last-modified-purpose:
 permalink: /type-a-type-b/

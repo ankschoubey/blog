@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: "Rephrase: Who is your customer?"
-categories: [marketing, communication, truth]
+tags:
+ - marketing
+ - communication
+ - truth
 title: Who is your audience?
 publishDate: 2021-08-01T20:42:15.434096
 permalink: /audience/

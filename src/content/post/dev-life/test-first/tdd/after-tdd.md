@@ -1,7 +1,9 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [testing, tdd]
+tags:
+ - testing
+ - tdd
 publishDate: 2022-04-27T20:52:08.052481
 last-modified-purpose:
 permalink: /after-tdd/

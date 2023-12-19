@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Promoting TDD within a team requires patience, consistent effort, and a focus on creating a positive and supportive environment for learning and improvement.
-categories: [testing, tdd]
+tags:
+ - testing
+ - tdd
 publishDate: 2023-08-09T20:52:08.052481
 last-modified-purpose:
 permalink: /promote-tdd-in-a-team/

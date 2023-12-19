@@ -1,7 +1,9 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [non-technical, tdd]
+tags:
+ - non-technical
+ - tdd
 publishDate: 2022-03-18T20:52:08.052481
 last-modified-purpose:
 permalink: /human-intuition/

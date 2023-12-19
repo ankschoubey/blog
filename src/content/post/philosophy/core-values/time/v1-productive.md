@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, time]
+tags:
+ - non-technical
+ - time
 publishDate: 2022-12-22T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/productive

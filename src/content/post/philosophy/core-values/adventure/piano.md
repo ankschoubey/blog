@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [non-technical]
+tags:
+ - non-technical
 title: Piano
 publishDate: 2021-08-01T20:42:15.543379
 permalink: /piano/

@@ -2,7 +2,11 @@
 description: Mindsets and statergies to apply exponential progress to life, business and beyond.
 title: Thinking in terms of exponential grow over linear growth
 comments: true
-categories: [planning, systems, clarity, non-technical]
+tags:
+ - planning
+ - systems
+ - clarity
+ - non-technical
 use_math: true
 publishDate: 2023-07-20T20:42:15.193139
 permalink: /exponential-growth/

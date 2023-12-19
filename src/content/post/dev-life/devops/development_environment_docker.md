@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: Mitigating the most discoraging part of software development
-categories: [devops, tools]
+tags:
+ - devops
+ - tools
 title: A replicable Development Environment with Docker + VS Code
 publishDate: 2021-08-01T20:42:15.533515
 permalink: /development_environment_docker/

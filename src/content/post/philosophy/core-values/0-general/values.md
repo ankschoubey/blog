@@ -1,7 +1,10 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, non-technical, matured]
+tags:
+ - philosophical
+ - non-technical
+ - matured
 publishDate: 2022-07-02T20:52:08.052481
 permalink: /core-values/
 title: Choosing better values

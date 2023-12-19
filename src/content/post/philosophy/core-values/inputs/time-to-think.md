@@ -2,7 +2,11 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, decision-making, truth, peace]
+tags:
+ - philosophical
+ - decision-making
+ - truth
+ - peace
 title: You need time to think
 publishDate: 2021-08-14T20:42:15.596505
 permalink: /think/

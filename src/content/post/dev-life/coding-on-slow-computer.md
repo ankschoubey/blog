@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [programming]
+tags:
+ - programming
 title: Tips for coding on a slow computer
 publishDate: 2021-08-01T20:42:15.412890
 permalink: /slow_computer/

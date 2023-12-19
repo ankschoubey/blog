@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: You ain’t gonna need it
-categories: [clean-code]
+tags:
+ - clean-code
 publishDate: 2020-01-04T20:42:15.112388
 title: Remove un-necessary code
 permalink: /code_cleanup/

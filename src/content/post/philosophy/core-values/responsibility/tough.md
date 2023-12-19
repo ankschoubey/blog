@@ -2,7 +2,11 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, for-future-me, personal, responsibility]
+tags:
+ - philosophical
+ - for-future-me
+ - personal
+ - responsibility
 title: Positive effects of doing hard things
 publishDate: 2021-08-01T20:42:15.663278
 permalink: /tough/

@@ -1,7 +1,10 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, non-technical, implementing-core-values]
+tags:
+ - philosophical
+ - non-technical
+ - implementing-core-values
 publishDate: 2023-05-06T20:52:08.052481
 permalink: /v1/follow-your-values/
 title: Let the world do what it wants to do, you follow your core values

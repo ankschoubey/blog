@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [business, teams, agile]
+tags:
+ - business
+ - teams
+ - agile
 publishDate: 2022-03-17T20:52:08.052481
 last-modified-purpose:
 permalink: /3-man-squad/

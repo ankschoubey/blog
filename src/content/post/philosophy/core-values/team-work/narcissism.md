@@ -1,7 +1,11 @@
 ---
 comments: true
 description: Everyone has snakes. We have it too. 
-categories: [psychology, philosophy, non-technical, team-work]
+tags:
+ - psychology
+ - philosophy
+ - non-technical
+ - team-work
 publishDate: 2022-08-18T20:52:08.052481
 last-modified-purpose: added points on controlling aggression
 permalink: /narcissism/

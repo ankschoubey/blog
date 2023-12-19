@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [health, systems]
+tags:
+ - health
+ - systems
 title: How to recover from physical injuries faster
 permalink: /physical-injury/
 publishDate: 2022-01-09T20:42:15.557734

@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Ideas shape development; specs sync teams; Gherkin tests ensure precision.
-categories: [bdd, product-development]
+tags:
+ - bdd
+ - product-development
 publishDate: 2022-05-21T20:52:08.052481
 last-modified-purpose:
 permalink: /need-for-executable-specification/

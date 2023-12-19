@@ -1,7 +1,10 @@
 ---
 comments: true
 description: My experience implementing Kanban Principles.
-categories: [lean, agile, systems]
+tags:
+ - lean
+ - agile
+ - systems
 publishDate: 2023-01-07T20:52:08.052481
 last-modified-purpose:
 permalink: /implementing-kanban/

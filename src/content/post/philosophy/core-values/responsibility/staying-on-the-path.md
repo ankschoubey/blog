@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, for-future-me, responsibility]
+tags:
+ - philosophical
+ - for-future-me
+ - responsibility
 title: The Path / Ethics
 permalink: /path/
 publishDate: 2021-08-01T20:42:15.552524

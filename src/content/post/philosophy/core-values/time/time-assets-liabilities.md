@@ -1,7 +1,12 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [core-values, time-matters, philosophical, non-technical, time]
+tags:
+ - core-values
+ - time-matters
+ - philosophical
+ - non-technical
+ - time
 publishDate: 2022-01-26T20:52:08.052481
 last-modified-purpose:
 permalink: /time-assets-and-liabilities/

@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Check if the last bit is 1 by (n&1). Do the right unsigned shift (logical shift >>>). Loop.
-categories: [algorithm-problems, blind-75, bit-manipulation]
+tags:
+ - algorithm-problems
+ - blind-75
+ - bit-manipulation
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/number-of-1-bits

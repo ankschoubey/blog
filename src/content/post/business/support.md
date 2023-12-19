@@ -2,7 +2,8 @@
 description: Placeholder 
 title: Support shows how much the company really care
 comments: true
-categories: [ business]
+tags:
+ - business
 use_math: true
 permalink: /support/
 publishDate: 2021-08-01T20:42:15.337888

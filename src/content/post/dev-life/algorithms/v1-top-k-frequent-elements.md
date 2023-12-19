@@ -1,7 +1,12 @@
 ---
 comments: true
 description: count all numbers. sort. and return top k. Use streams to make it cleaner. or use bucket sort.
-categories: [algorithm-problems, arrays, medium, heap, bucket-sort]
+tags:
+ - algorithm-problems
+ - arrays
+ - medium
+ - heap
+ - bucket-sort
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/top-k-frequent-elements

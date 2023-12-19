@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [applications-of-ml, information-system]
+tags:
+ - applications-of-ml
+ - information-system
 title: Applications of Recommender Systems
 publishDate: 2021-08-01T20:42:15.669474
 permalink: /recommender-systems/

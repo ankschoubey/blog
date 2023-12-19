@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [database, information-system]
+tags:
+ - database
+ - information-system
 title: Keeping database simple
 last-modified-purpose: appended Markdown to "Keep Data within Database Platform Independent"
 publishDate: 2022-12-03T20:42:15.673574

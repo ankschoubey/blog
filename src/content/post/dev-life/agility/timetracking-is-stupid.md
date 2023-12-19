@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [programming, time]
+tags:
+ - programming
+ - time
 title: Time tracking over programmers is counter-productive
 publishDate: 2021-08-01T20:42:15.362418
 permalink: /time_tracking/

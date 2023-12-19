@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Iterate over both and store minimum one in current; Increment in the list from where minimum came. Once one of the lists is empty, empty the other one.
-categories: [algorithm-problems, linked-list, easy]
+tags:
+ - algorithm-problems
+ - linked-list
+ - easy
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/merge-two-sorted-lists

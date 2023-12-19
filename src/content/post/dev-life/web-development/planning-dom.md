@@ -1,7 +1,9 @@
 ---
 comments: true
 description: BEM, TDD, and thoughtful design supercharge web development by streamlining UI DOM planning for maximum efficiency.
-categories: [web-development, tdd]
+tags:
+ - web-development
+ - tdd
 publishDate: 2023-10-28T20:52:08.052481
 last-modified-purpose:
 permalink: /tdd/planning-dom/

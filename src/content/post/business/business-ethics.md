@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [business, collection-of-thoughts, decision-making]
+tags:
+ - business
+ - collection-of-thoughts
+ - decision-making
 title: Business Ethics
 permalink: /business-ethics/
 publishDate: 2021-08-01T20:42:15.545856

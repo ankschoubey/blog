@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, mature]
+tags:
+ - non-technical
+ - mature
 publishDate: 2022-10-05T20:52:08.052481
 last-modified-purpose:
 permalink: /core-values-overtime/

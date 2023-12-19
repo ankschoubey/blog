@@ -2,7 +2,8 @@
 description: and design
 title: User Interfaces
 comments: true
-categories: [business]
+tags:
+ - business
 publishDate: 2020-06-23T20:42:15.230335
 use_math: true
 permalink: /ui/

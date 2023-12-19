@@ -1,7 +1,9 @@
 ---
 comments: true
 description: A cartoon can teach you about importance of self-discovery, aligning with one's conscience, and facing challenges voluntarily.
-categories: [non-technical, truth]
+tags:
+ - non-technical
+ - truth
 publishDate: 2023-12-10T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/truth/pinocchio

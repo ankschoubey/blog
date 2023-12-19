@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Separating connectors from business logic in a service-oriented architecture promotes reusability and single responsibility.
-categories: [web-development, ddd, clean-code]
+tags:
+ - web-development
+ - ddd
+ - clean-code
 publishDate: 2023-03-10T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/separate-service/

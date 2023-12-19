@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Learn the foundation of TDD with a simple example explained in depth. 
-categories: [testing, tdd]
+tags:
+ - testing
+ - tdd
 publishDate: 2023-08-13T20:52:08.052481
 last-modified-purpose:
 permalink: /tdd-backend-example

@@ -2,7 +2,10 @@
 description: Placeholder 
 title: Agile and DevOps
 comments: true
-categories: [agile, devops,business]
+tags:
+ - agile
+ - devops
+ - business
 publishDate: 2020-05-21T20:42:15.219855
 use_math: true
 permalink: /agile_devops/

@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: For those who don’t require Google level optimization
-categories: [web-development]
+tags:
+ - web-development
 publishDate: 2020-02-22T20:42:15.140795
 title: Simple Hacks for increasing website load time
 permalink: /load_time/

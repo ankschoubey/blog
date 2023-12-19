@@ -2,7 +2,9 @@
 description: How humanity progresses.
 title: Baton Road
 comments: true
-categories: [favorite, responsibility]
+tags:
+ - favorite
+ - responsibility
 use_math: true
 publishDate: 2021-08-01T20:42:15.242622
 permalink: /baton/

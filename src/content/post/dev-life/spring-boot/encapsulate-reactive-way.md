@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Notes from Avoiding Reactor Meltdown
-categories: [reactive, spring-boot]
+tags:
+ - reactive
+ - spring-boot
 publishDate: 2022-08-15T20:52:08.052481
 last-modified-purpose:
 permalink: /encapsulate-blocking-reactive-way/

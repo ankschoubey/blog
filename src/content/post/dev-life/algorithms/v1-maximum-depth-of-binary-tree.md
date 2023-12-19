@@ -1,7 +1,10 @@
 ---
 comments: true
 description: go to each depth, incrementing a depth counter by 1. return max of it.
-categories: [algorithm-problems, binary-tree, easy]
+tags:
+ - algorithm-problems
+ - binary-tree
+ - easy
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/maximum-depth-of-binary-tree

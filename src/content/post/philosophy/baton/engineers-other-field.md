@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [information-system, baton]
+tags:
+ - information-system
+ - baton
 title: Why Software Engineers Should Enter Other Fields.
 publishDate: 2021-08-01T20:42:15.506448
 permalink: /engineer/

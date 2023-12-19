@@ -1,7 +1,11 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [core-values, calm, non-technical, team-work]
+tags:
+ - core-values
+ - calm
+ - non-technical
+ - team-work
 publishDate: 2022-07-01T20:52:08.052481
 last-modified-purpose:
 permalink: /trust/

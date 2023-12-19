@@ -1,7 +1,10 @@
 ---
 comments: true
 description: compare the count of letters in each word and put group them in a map
-categories: [algorithm-problems, arrays, medium]
+tags: 
+ - algorithm-problems
+ - arrays
+ - medium
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/group-anagrams

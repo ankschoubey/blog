@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [time]
+tags:
+ - time
 publishDate: 2021-08-01T20:42:15.377623
 title: Opportunity Cost
 permalink: /opportunity/

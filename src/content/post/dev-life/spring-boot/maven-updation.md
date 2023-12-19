@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [maven, build-tool, automation]
+tags:
+ - maven
+ - build-tool
+ - automation
 publishDate: 2022-07-24T20:52:08.052481
 last-modified-purpose:
 permalink: /maven-dependency-upgrade/

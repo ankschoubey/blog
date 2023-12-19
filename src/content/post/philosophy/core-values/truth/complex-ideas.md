@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, baton]
+tags:
+ - philosophical
+ - baton
 publishDate: 2022-08-14T20:52:08.052481
 permalink: /complex/
 last-modified-purpose: added CI/CD and no-automation

@@ -1,7 +1,11 @@
 ---
 comments: true
 description: Why small frequent commits leads to higher productivity
-categories: [clean-code, continuous-integration, commits, code-review]
+tags:
+ - clean-code
+ - continuous-integration
+ - commits
+ - code-review
 publishDate: 2022-07-14T20:52:08.052481
 last-modified-purpose:
 permalink: /atomic-commits/

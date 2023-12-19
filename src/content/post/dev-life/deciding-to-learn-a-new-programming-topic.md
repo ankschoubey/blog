@@ -2,7 +2,9 @@
 description: Placeholder 
 title: Deciding to learn a {programming} topic
 comments: true
-categories: [ for-future-me, learning]
+tags:
+ - for-future-me
+ - learning
 toc: false
 use_math: true
 publishDate: 2020-05-25T20:42:15.220865

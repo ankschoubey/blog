@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [collection-of-thoughts, drafts, truth]
+tags:
+ - collection-of-thoughts
+ - drafts
+ - truth
 title: Reading Books
 permalink: /read/
 publishDate: 2021-08-01T20:42:15.423682

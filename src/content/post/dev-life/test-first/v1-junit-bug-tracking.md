@@ -1,7 +1,11 @@
 ---
 comments: true
 description: Placeholder 
-categories: [200-500 words, tdd, testing, clean-code]
+tags:
+ - 200-500-words
+ - tdd
+ - testing
+ - clean-code
 publishDate: 2022-11-6T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/junit-bug-tracking

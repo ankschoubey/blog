@@ -1,7 +1,11 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [clean-code, continuous-integration, commits, code-review]
+tags:
+ - clean-code
+ - continuous-integration
+ - commits
+ - code-review
 publishDate: 2022-05-17T20:52:08.052481
 last-modified-purpose:
 permalink: /conventional-commits/

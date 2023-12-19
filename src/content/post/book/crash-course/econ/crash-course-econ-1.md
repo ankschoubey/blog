@@ -4,8 +4,8 @@ comments: true
 description: 'Placeholder' 
 tags: 
  - crash-course
- -  econ
- -  summary]
+ - econ
+ - summary
 title: Intro to Economics - Crash Course Econ 1
 permalink: /crash-course/econ/1
 publishDate: 2023-03-04T20:42:15.538277

@@ -2,7 +2,11 @@
 comments: true
 description: "Architecture is a crucial pillar of accelerating product delivery. It's hard to keep a team in sync with architecture over time.<br><br>
 Architectural testing can enforce architectural decisions as simple tests, dramatically reducing code review effort and extending code maintainability."
-categories: [clean-code, testing, tdd, tdd-example]
+tags:
+ - clean-code
+ - testing
+ - tdd
+ - tdd-example
 publishDate: 2022-08-20T20:52:08.052481
 last-modified-purpose: added details about how I implement ArchUnit tests
 permalink: /architecture-testing/

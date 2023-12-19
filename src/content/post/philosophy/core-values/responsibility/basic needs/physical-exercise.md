@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [for-future-me, non-technical, systems]
+tags:
+ - for-future-me
+ - non-technical
+ - systems
 title: Physical Exercise
 permalink: /exercise/
 publishDate: 2021-08-01T20:42:15.652723

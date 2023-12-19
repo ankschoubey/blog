@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [information-system, experience]
+tags:
+ - information-system
+ - experience
 title: First Hackathon
 publishDate: 2021-08-01T20:42:15.491429
 permalink: /first_hackathon/

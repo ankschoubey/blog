@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, truth]
+tags:
+ - non-technical
+ - truth
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
 permalink: /advice-that-suggest-being-fake/

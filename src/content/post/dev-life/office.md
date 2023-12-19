@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [philosophical, business]
+tags:
+ - philosophical
+ - business
 publishDate: 2021-08-01T20:42:15.471453
 title: Office is just school for adults
 permalink: /the_office/

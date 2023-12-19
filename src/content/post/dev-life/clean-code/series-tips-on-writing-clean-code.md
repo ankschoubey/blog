@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: constructing the simplest possible code that would solve your problem resulting in an increase in productivity by producing higher quality in less time.
-categories: [clean-code]
+tags:
+ - clean-code
 title: Clean Code
 publishDate: 2019-12-19T20:42:15.086538
 permalink: /clean_code/

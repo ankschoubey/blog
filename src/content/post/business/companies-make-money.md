@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [business]
+tags:
+ - business
 title: Businesses are for making money
 publishDate: 2021-08-01T20:42:15.385051
 permalink: /for_profit/

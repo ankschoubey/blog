@@ -1,7 +1,8 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [web-development]
+tags:
+ - web-development
 publishDate: 2021-12-04T20:52:08.052481
 permalink: /angular-react-comparison/
 title: Angular and React Comparison

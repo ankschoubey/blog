@@ -1,7 +1,6 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: []
 publishDate: 2022-03-21T20:52:08.052481
 last-modified-purpose:
 permalink: /one-month-microservice/

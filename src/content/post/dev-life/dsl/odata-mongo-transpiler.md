@@ -2,7 +2,10 @@
 description:  Implementing OData, Utilizing Specifications, and Enhancing API Flexibility.
 title: How we implemented OData for MongoDB and use it in OpenAPI
 comments: true
-categories: [clean-code, dsl, developer-diary]
+tags:
+ - clean-code
+ - dsl
+ - developer-diary
 toc: false
 use_math: true
 publishDate: 2023-07-11T20:42:15.220865

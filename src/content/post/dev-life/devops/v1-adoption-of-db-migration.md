@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [database, culture, ideas]
+tags:
+ - database
+ - culture
+ - ideas
 publishDate: 2020-10-31T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/adoption-of-db-migration

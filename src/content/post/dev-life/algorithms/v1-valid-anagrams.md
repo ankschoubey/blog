@@ -3,7 +3,9 @@ comments: true
 description: "check if the length is the same.<br>
 find the difference in the count of letters in both numbers.<br>
 since there are only 26 letters, you can count in a single int array of 26. <br>index = char - 'a'"
-categories: [algorithm-problems, arrays]
+tags:
+ - algorithm-problems
+ - arrays
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/valid-anagrams

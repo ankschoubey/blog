@@ -1,7 +1,9 @@
 ---
 comments: true
 description: It's best to start with immutable objects and then modify them if needed.
-categories: [concurrent-programming, reactive-programming]
+tags:
+ - concurrent-programming
+ - reactive-programming
 publishDate: 2022-09-18T20:52:08.052481
 last-modified-purpose:
 permalink: /immutable-objects/

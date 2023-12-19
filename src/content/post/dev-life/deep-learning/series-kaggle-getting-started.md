@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Baby steps towards competitions
-categories: [deep-learning]
+tags:
+ - deep-learning
 title: Series  Kaggle Getting Started
 publishDate: 2020-03-30T20:42:15.164522
 permalink: /kaggle_getting_started/

@@ -1,7 +1,10 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [core-values, truth, non-technical]
+tags:
+ - core-values
+ - truth
+ - non-technical
 publishDate: 2022-06-29T20:52:08.052481
 last-modified-purpose: draft
 permalink: /articulate/

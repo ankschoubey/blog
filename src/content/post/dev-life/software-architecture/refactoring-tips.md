@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [information-system, for-future-me]
+tags:
+ - information-system
+ - for-future-me
 publishDate: 2021-08-01T20:42:15.662278
 title: Quick Refactoring Tips
 permalink: /refactoring/

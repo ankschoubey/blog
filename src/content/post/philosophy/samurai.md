@@ -2,7 +2,8 @@
 description: Forced to upgrade
 title: Samurai to Modern Army in 10 years
 comments: true
-categories: [philosophical]
+tags:
+ - philosophical
 use_math: true
 publishDate: 2021-08-01T20:42:15.336888
 permalink: /samurai/

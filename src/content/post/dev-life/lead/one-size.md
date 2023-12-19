@@ -2,7 +2,11 @@
 toc: false
 comments: true
 description: Choose the right tool for the job.
-categories: [philosophical, decision-making, for-future-me, systems]
+tags:
+ - philosophical
+ - decision-making
+ - for-future-me
+ - systems
 title: There is no one size fits all
 publishDate: 2021-08-01T20:42:15.658574
 permalink: /one-size/

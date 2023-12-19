@@ -2,7 +2,9 @@
 description: We should not avoid good action. Good action has good results in the long term. It may seem easy to avoid good action in the short term. But good action is the only path to the best outcome.
 title: Keep your Karma Ledger clean
 comments: true
-categories: [responsibility, non-technical]
+tags:
+ - responsibility
+ - non-technical
 use_math: true
 publishDate: 2023-05-24T20:42:15.242622
 permalink: /v1/karma-ledger/

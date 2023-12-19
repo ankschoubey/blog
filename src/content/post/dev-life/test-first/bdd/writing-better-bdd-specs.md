@@ -1,7 +1,12 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [testing, software-engineering, product-development, bdd, tdd]
+tags:
+ - testing
+ - software-engineering
+ - product-development
+ - bdd
+ - tdd
 publishDate: 2022-08-14T20:52:08.052481
 last-modified-purpose:
 permalink: /writing-better-specs/

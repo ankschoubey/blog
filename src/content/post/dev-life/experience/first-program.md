@@ -2,7 +2,6 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: []
 title: My First Program
 publishDate: 2021-05-03T20:42:15.693687
 permalink: /first-program/

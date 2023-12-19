@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [information-system]
+tags:
+ - information-system
 publishDate: 2021-08-01T20:42:15.500315
 title: Write Tests after Cleaning Code.
 permalink: /writing_test/

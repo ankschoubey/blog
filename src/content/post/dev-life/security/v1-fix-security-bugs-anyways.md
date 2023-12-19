@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Placeholder 
-categories: [security]
+tags:
+ - security
 publishDate: 2023-05-31T20:52:08.052481
 last-modified-purpose: 
 permalink: /v1/v1-fix-security-bugs-anyways

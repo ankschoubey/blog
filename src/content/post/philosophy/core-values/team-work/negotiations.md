@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [communication, non-technical, team-work]
+tags:
+ - communication
+ - non-technical
+ - team-work
 publishDate: 2022-08-12T20:52:08.052481
 last-modified-purpose:
 permalink: /negotiations/

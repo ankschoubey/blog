@@ -2,7 +2,8 @@
 description: For consumers
 title: "Just buy it. Don’t build it yourself."
 comments: true
-categories: [ business]
+tags:
+ - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.292983
 permalink: /just_buy/

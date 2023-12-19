@@ -1,7 +1,9 @@
 ---
 comments: true
 description: TDD Example that saved around 2 hours
-categories: [tdd-example, tdd]
+tags:
+ - tdd-example
+ - tdd
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
 permalink: /tdd-over-json/

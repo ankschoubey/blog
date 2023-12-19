@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Improving quality and speed of writing by transferring a well-known software development practice.
-categories: [non-technical, writing, truth]
+tags:
+ - non-technical
+ - writing
+ - truth
 publishDate: 2022-05-13T20:52:08.052481
 last-modified-purpose:
 permalink: /question-driven-writing/

@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Why traditional roles of men and women are relevant?
-categories: [non-technical, responsibility]
+tags:
+ - non-technical
+ - responsibility
 publishDate: 2023-01-31T20:52:08.052481
 last-modified-purpose: 
 permalink: /v1/traditional-roles

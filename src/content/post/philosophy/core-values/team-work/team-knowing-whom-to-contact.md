@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [agile, collaboration, team-work]
+tags:
+ - agile
+ - collaboration
+ - team-work
 publishDate: 2022-09-21T20:52:08.052481
 last-modified-purpose:
 permalink: /team-knowing-whom-to-contact/

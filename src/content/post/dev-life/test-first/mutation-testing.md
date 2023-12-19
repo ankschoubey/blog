@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [testing, clean-code, tdd]
+tags:
+ - testing
+ - clean-code
+ - tdd
 publishDate: 2022-08-07T20:52:08.052481
 last-modified-purpose:
 permalink: /mutation-testing/

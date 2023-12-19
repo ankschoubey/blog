@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [logging, spring-boot, clean-code]
+tags:
+ - logging
+ - spring-boot
+ - clean-code
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
 permalink: /disable-stacktrace/

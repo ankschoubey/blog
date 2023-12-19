@@ -1,7 +1,10 @@
 ---
 comments: true
 description: The more personal responsibility you take on and fullfil, the more incontrol you’ll feel. This will give you strength and power.
-categories: [core-values, responsibility, non-technical]
+tags:
+ - core-values
+ - responsibility
+ - non-technical
 publishDate: 2022-12-06T20:52:08.052481
 last-modified-purpose:
 permalink: /responsibility-stratergies/

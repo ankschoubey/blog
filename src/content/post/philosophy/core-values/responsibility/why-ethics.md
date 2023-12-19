@@ -1,7 +1,11 @@
 ---
 toc: false
 comments: true
-categories: [philosophical, collection-of-thoughts, decision-making, mature]
+tags:
+ - philosophical
+ - collection-of-thoughts
+ - decision-making
+ - mature
 title: Why Ethics? 
 permalink: /why_ethics/
 publishDate: 2021-08-01T20:42:15.540962

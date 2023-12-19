@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Make a map of item and index. Check if target - currentItem exists.
-categories: [algorithm-problems, arrays]
+tags:
+ - algorithm-problems
+ - arrays
 publishDate: 2022-10-29T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/two-sums

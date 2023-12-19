@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [writing, non-technical]
+tags:
+ - writing
+ - non-technical
 publishDate: 2022-12-15T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/why-i-write

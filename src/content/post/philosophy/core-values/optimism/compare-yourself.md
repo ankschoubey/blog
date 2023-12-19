@@ -2,7 +2,12 @@
 toc: false
 comments: true
 description: 'placeholder'
-categories: [philosophical, for-future-me, personal, responsibility, systems]
+tags:
+ - philosophical
+ - for-future-me
+ - personal
+ - responsibility
+ - systems
 title: Compare yourself with who you were yesterday
 publishDate: 2021-05-04T20:42:15.654723
 permalink: /compare/

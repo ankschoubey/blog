@@ -2,7 +2,11 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [information-system, for-future-me, tools, favorite]
+tags:
+ - information-system
+ - for-future-me
+ - tools
+ - favorite
 title: Developer Productivity
 publishDate: 2021-08-01T20:42:15.532481
 permalink: /dev_productivity/

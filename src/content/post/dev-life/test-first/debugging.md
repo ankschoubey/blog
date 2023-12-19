@@ -1,7 +1,8 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [clean-code]
+tags:
+ - clean-code
 publishDate: 2022-04-19T20:52:08.052481
 last-modified-purpose:
 permalink: /debugging-effectively/

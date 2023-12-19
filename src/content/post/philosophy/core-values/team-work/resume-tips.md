@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Do you want to have high salary? or Do you want to have a good career? or Both?
-categories: [dev]
+tags:
+ - dev
 publishDate: 2022-08-01T20:52:08.052481
 last-modified-purpose:
 permalink: /resume-tips/

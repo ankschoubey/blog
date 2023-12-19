@@ -1,7 +1,9 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [personal, non-technical]
+tags:
+ - personal
+ - non-technical
 publishDate: 2022-06-12T20:52:08.052481
 last-modified-purpose:
 permalink: /paper-work-devops/

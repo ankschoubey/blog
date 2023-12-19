@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Ethos, Pathos and Logos are techniques of persuasion. But are applications of it in making clear decisions and better interpersonal dynamics, especially in high-emotion situations.
-categories: [non-technical, truth]
+tags:
+ - non-technical
+ - truth
 publishDate: 2023-04-07T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/truth/ethos-pathos-logos

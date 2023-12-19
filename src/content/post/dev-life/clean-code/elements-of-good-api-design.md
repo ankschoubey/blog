@@ -1,7 +1,8 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [middleware]
+tags:
+ - middleware
 publishDate: 2022-02-19T20:52:08.052481
 last-modified-purpose:
 permalink: /good-rest-api-design/

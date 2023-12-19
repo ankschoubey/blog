@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, decision-making, peace]
+tags:
+ - philosophical
+ - decision-making
+ - peace
 publishDate: 2021-08-16T20:52:08.052481
 permalink: /questions-false/
 title: "All Questions are False"

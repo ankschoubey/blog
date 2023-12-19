@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Catching lies, liars and protecting yourself
-categories: [non-technical, truth, mature]
+tags:
+ - non-technical
+ - truth
+ - mature
 publishDate: 2022-12-31T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/truth/liars

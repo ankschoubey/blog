@@ -1,7 +1,9 @@
 ---
 comments: true
 description: From card picking to release
-categories: [dev, tdd]
+tags:
+ - dev
+ - tdd
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose: added collaboration points
 permalink: /dev-workflow/

@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, peace]
+tags:
+ - non-technical
+ - peace
 publishDate: 2022-10-25T20:52:08.052481
 last-modified-purpose:
 permalink: /badly/

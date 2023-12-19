@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [decision-making, truth, observability]
+tags:
+ - decision-making
+ - truth
+ - observability
 publishDate: 2022-08-13T20:52:08.052481
 last-modified-purpose:
 permalink: /data-driven-decisions/

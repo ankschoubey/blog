@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Create a set and put items in one by one while checking if `num` is already there.
-categories: [algorithm-problems, arrays, easy]
+tags:
+ - algorithm-problems
+ - arrays
+ - easy
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/contains-duplicate

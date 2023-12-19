@@ -2,7 +2,8 @@
 description: or Machine Learning
 title: Advice for those who want to learn Deep Learning
 comments: true
-categories: [ deep-learning]
+tags:
+ - deep-learning
 publishDate: 2020-05-02T20:42:15.185834
 use_math: true
 permalink: /dl_advice/

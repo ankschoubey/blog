@@ -1,7 +1,9 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [software-engineering, clean-code]
+tags:
+ - software-engineering
+ - clean-code
 publishDate: 2022-08-20T20:52:08.052481
 last-modified-purpose: code review template
 permalink: /code-reviews/

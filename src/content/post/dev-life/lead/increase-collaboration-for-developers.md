@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Placeholder 
-categories: [collaborations]
+tags:
+ - collaborations
 publishDate: 2022-10-20T20:52:08.052481
 last-modified-purpose:
 permalink: /increase-collaboration-for-developers/

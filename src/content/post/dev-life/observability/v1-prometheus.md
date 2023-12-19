@@ -1,7 +1,9 @@
 ---
 comments: true
 description: The monitoring and time series database
-categories: [observability, prometheus]
+tags:
+ - observability
+ - prometheus
 publishDate: 2022-11-23T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/prometheus

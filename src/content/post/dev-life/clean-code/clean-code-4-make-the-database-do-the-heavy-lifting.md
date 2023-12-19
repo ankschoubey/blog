@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: You cannot compete with SQL
-categories: [clean-code]
+tags:
+ - clean-code
 publishDate: 2019-12-22T20:42:15.091119
 title: Make the database do the heavy lifting
 permalink: /sql_is_fast/

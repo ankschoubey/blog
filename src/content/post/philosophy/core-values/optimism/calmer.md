@@ -1,7 +1,11 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [core-values, calm, non-technical, peace]
+tags:
+ - core-values
+ - calm
+ - non-technical
+ - peace
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
 permalink: /calmer/

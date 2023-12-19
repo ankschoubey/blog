@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: of "success"
-categories: [baton, for-future-me, systems]
+tags:
+ - baton
+ - for-future-me
+ - systems
 title: Probabilities
 publishDate: 2021-08-01T20:42:15.402337
 permalink: /probabilities/

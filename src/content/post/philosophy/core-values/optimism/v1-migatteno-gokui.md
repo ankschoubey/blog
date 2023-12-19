@@ -1,7 +1,9 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, health]
+tags:
+ - non-technical
+ - health
 publishDate: 2022-11-05T20:52:08.052481
 last-modified-purpose:
 permalink: /v2/migatteno-gokui

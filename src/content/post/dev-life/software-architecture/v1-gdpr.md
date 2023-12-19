@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [security, compliance, system-design]
+tags:
+ - security
+ - compliance
+ - system-design
 publishDate: 2022-12-08T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/gdpr

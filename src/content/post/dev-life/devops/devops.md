@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [devops, information-system]
+tags:
+ - devops
+ - information-system
 publishDate: 2021-08-01T20:42:15.672411
 title: Gist of DevOps
 permalink: /devops/

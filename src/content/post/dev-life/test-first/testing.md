@@ -2,7 +2,11 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [collection-of-thoughts, testing, truth, tdd]
+tags:
+ - collection-of-thoughts
+ - testing
+ - truth
+ - tdd
 title: The philosophy behind testing in software and in general
 publishDate: 2021-08-01T20:42:15.560528
 permalink: /testing/

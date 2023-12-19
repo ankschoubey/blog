@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Placeholder 
-categories: [bdd]
+tags:
+ - bdd
 publishDate: 2023-01-07T20:52:08.052481
 last-modified-purpose:
 permalink: /v1/template-for-gherkin-specs
@@ -26,16 +27,14 @@ Feature: A new feature
   Open Issues -
   Side Note -
 
-  Personas (if needed) - 
-    - User 
+  Personas (if needed) -    - User 
         Age -
         Background - 
-
   Scenario: 
     Mock UI - NA
     Card Number - NA
     
-    Technical Note -  NA
+    Technical Note - NA
       Testing Note - NA
     Marketing Note - NA
      Doc Team Note - NA

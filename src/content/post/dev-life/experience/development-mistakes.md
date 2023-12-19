@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Placeholder 
-categories: [experience]
+tags:
+ - experience
 publishDate: 2022-10-08T20:52:08.052481
 last-modified-purpose:
 permalink: /development-mistakes/

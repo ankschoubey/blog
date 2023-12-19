@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Leave when not okay
-categories: [clean-code]
+tags:
+ - clean-code
 publishDate: 2019-12-20T20:42:15.088154
 title: Flat is better than nested
 permalink: /flat_is_better/

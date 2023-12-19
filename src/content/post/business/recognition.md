@@ -2,7 +2,8 @@
 toc: false
 comments: true
 description: Recognition
-categories: [business]
+tags:
+ - business
 title: Give credit where credit is due
 publishDate: 2021-08-01T20:42:15.426183
 permalink: /recognition/

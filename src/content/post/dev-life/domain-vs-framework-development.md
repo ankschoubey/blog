@@ -1,7 +1,11 @@
 ---
 comments: true
 description: A Comparison between Application/Domain vs Framework Development
-categories: [baton, rant, 200-500 words, technical]
+tags:
+ - baton
+ - rant
+ - 200-500-words
+ - technical
 publishDate: 2022-10-27T20:52:08.052481
 last-modified-purpose:
 permalink: /domain-vs-framework-development/

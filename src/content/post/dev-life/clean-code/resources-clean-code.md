@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: Constructing the simplest possible code
-categories: [clean-code, tools]
+tags:
+ - clean-code
+ - tools
 publishDate: 2020-05-11T20:42:15.210883
 title: Clean Code Resources and Tools
 permalink: /clean_code_tools/

@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: "'Probably Right'"
-categories: [for-future-me, decision-making, truth]
+tags:
+ - for-future-me
+ - decision-making
+ - truth
 title: Opinions/Events are not black and white.
 publishDate: 2021-08-01T20:42:15.410545
 permalink: /black_white/

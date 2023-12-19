@@ -1,7 +1,8 @@
 ---
 comments: true
 description: Placeholder 
-categories: [dev-productivity]
+tags:
+ - dev-productivity
 publishDate: 2022-10-02T20:52:08.052481
 last-modified-purpose:
 permalink: /microservice-chassis/

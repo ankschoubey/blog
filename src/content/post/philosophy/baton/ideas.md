@@ -2,7 +2,9 @@
 description: 'Placeholder' 
 title: Ideas
 comments: true
-categories: [collection-of-thoughts, inputs]
+tags:
+ - collection-of-thoughts
+ - inputs
 use_math: true
 publishDate: 2021-08-01T20:42:15.246053
 permalink: /idea/

@@ -2,7 +2,11 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [leadership, philosophical, business, team-work]
+tags:
+ - leadership
+ - philosophical
+ - business
+ - team-work
 publishDate: 2021-08-01T20:42:15.468577
 title: Empowerment/Enabling
 permalink: /giving_help/

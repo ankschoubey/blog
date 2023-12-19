@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Placeholder 
-categories: [non-technical, systems, setup]
+tags:
+ - non-technical
+ - systems
+ - setup
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: 
 permalink: /v1/desk-setup

@@ -1,7 +1,10 @@
 ---
 comments: true
 description: Notes from HealthyGamerGG podcast. If there is one thing we need to learn about how to play the game of life well, understand trauma.
-categories: [peace, non-technical, psychology]
+tags:
+ - peace
+ - non-technical
+ - psychology
 publishDate: 2023-05-06T20:52:08.052481
 last-modified-purpose:
 read-this-when: 

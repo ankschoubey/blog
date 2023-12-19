@@ -2,7 +2,9 @@
 description: Give up on thinking about the outcome. Do what needs to be done. Following your values is complete in itself. The outcome is a bonus.
 title: Values are 'now'. Act!
 comments: true
-categories: [responsibility, non-technical]
+tags:
+ - responsibility
+ - non-technical
 use_math: true
 publishDate: 2023-09-30T20:42:15.242622
 permalink: /v1/values-are-now/

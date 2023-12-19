@@ -1,7 +1,10 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [core-values, team-work, non-technical]
+tags:
+ - core-values
+ - team-work
+ - non-technical
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added tips for communicating better
 permalink: /team-work/

@@ -2,7 +2,9 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [personal, responsibility]
+tags:
+ - personal
+ - responsibility
 title: Always keep yourself ready to switch companies
 permalink: /switch-jobs/
 publishDate: 2021-05-26T20:42:15.654723

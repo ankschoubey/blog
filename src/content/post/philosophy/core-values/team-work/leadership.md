@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [business, leadership, team-work]
+tags:
+ - business
+ - leadership
+ - team-work
 title: Who is a leader?
 publishDate: 2021-08-01T20:42:15.419969
 permalink: /leader/

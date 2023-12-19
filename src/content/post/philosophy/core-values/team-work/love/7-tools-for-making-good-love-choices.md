@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: कर्म करो और फल की चिंता मत करो
-categories: [love, team-work, non-technical]
+tags:
+ - love
+ - team-work
+ - non-technical
 title: 7 Tools To Make Good Love Choices
 publishDate: 2023-03-25T20:42:15.419969
 permalink: /v1/7-tools-for-making-good-love-choices/

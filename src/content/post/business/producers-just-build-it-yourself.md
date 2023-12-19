@@ -2,7 +2,8 @@
 description: For producers
 title: "If it is a core part of your business, don't outsource, build it yourself."
 comments: true
-categories: [business]
+tags:
+ - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.296625
 permalink: /build_it_yourself/

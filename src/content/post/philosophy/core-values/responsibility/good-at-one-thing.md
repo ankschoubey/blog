@@ -1,7 +1,10 @@
 ---
 comments: true
 description: 'Placeholder' 
-categories: [philosophical, non-technical, responsibility]
+tags:
+ - philosophical
+ - non-technical
+ - responsibility
 publishDate: 2022-05-02T20:52:08.052481
 last-modified-purpose:
 permalink: /good-at-one-thing/
