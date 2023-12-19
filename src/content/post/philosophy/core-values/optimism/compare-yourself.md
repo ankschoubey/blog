@@ -1,7 +1,7 @@
 ---
 toc: false
 comments: true
-description: 'placeholder'
+excerpt: 'placeholder'
 tags:
  - philosophical
  - for-future-me
@@ -10,7 +10,7 @@ tags:
  - systems
 title: Compare yourself with who you were yesterday
 publishDate: 2021-05-04T20:42:15.654723
-permalink: /compare/
+slug: /compare/
 ---
 
 # Games with no end goal

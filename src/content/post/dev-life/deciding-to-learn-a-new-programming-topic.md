@@ -1,5 +1,5 @@
 ---
-description: Placeholder 
+excerpt: Placeholder 
 title: Deciding to learn a {programming} topic
 comments: true
 tags:
@@ -8,7 +8,7 @@ tags:
 toc: false
 use_math: true
 publishDate: 2020-05-25T20:42:15.220865
-permalink: /new_tech/
+slug: /new_tech/
 image: /images/new_tech/1.jpg
 ---
 

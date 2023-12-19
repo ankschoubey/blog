@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - testing
  - software-engineering
@@ -9,7 +9,7 @@ tags:
  - tdd
 publishDate: 2022-08-14T20:52:08.052481
 last-modified-purpose:
-permalink: /writing-better-specs/
+slug: /writing-better-specs/
 title: Writing better BDD specifications
 ---
 

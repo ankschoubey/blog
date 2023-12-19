@@ -1,9 +1,9 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 publishDate: 2022-03-21T20:52:08.052481
 last-modified-purpose:
-permalink: /one-month-microservice/
+slug: /one-month-microservice/
 title: One Month Microservice
 ---
 

@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - personal
  - responsibility
 title: Always keep yourself ready to switch companies
-permalink: /switch-jobs/
+slug: /switch-jobs/
 publishDate: 2021-05-26T20:42:15.654723
 image: /images/switch-jobs.jpg
 hide: true

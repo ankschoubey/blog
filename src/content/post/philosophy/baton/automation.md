@@ -1,12 +1,12 @@
 ---
-description: Placeholder 
+excerpt: Placeholder 
 title: There is never enough automation
 comments: true
 tags:
  - business
 publishDate: 2021-08-01T20:42:15.333866
 use_math: true
-permalink: /automate/
+slug: /automate/
 ---
 
 I see this all the time.

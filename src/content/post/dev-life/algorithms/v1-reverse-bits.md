@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Get the last bit of value from the original. append to the reverse one. shift reverse one to the left. instead of adding, you can do `or` because after the shift last value will be 0. Imp - iterate 32 times only.
+excerpt: Get the last bit of value from the original. append to the reverse one. shift reverse one to the left. instead of adding, you can do `or` because after the shift last value will be 0. Imp - iterate 32 times only.
 tags:
  - algorithm-problems
  - blind-75
  - bit-manipulation
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/reverse-bits
+slug: /v1/reverse-bits
 title: Blind 75 - Reverse Bits
 ---
 

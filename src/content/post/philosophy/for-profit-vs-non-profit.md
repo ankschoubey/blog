@@ -1,5 +1,5 @@
 ---
-description: Placeholder 
+excerpt: Placeholder 
 title: "Environment Focused: For-Profit vs Non-Profits"
 comments: true
 tags:
@@ -7,7 +7,7 @@ tags:
  - non-profit
 use_math: true
 publishDate: 2021-08-01T20:42:15.260601
-permalink: /environment/
+slug: /environment/
 image: /images/environment.jpg
 ---
 ![](/images/environment.jpg)

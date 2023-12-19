@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-description: The illusion of perfect execution... every time.
+excerpt: The illusion of perfect execution... every time.
 
 publishDate: 2021-08-01T20:42:15.357716
 title: When you are just starting out, don’t try to imitate the expert.
-permalink: /imitating_experts/
+slug: /imitating_experts/
 ---
 
 Imitate after you have a firm base to understand what and why they are doing something.

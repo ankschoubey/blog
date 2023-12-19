@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - collaborations
 publishDate: 2022-10-20T20:52:08.052481
 last-modified-purpose:
-permalink: /increase-collaboration-for-developers/
+slug: /increase-collaboration-for-developers/
 title: Increase collaboration for Developers
 ---
 

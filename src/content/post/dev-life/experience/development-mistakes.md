@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - experience
 publishDate: 2022-10-08T20:52:08.052481
 last-modified-purpose:
-permalink: /development-mistakes/
+slug: /development-mistakes/
 title: 3 Big Development Mistakes That Had Significant Costs Later
 image: /images/development-mistakes.jpg
 ---

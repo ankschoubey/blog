@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - core-values
  - calm
@@ -8,7 +8,7 @@ tags:
  - team-work
 publishDate: 2022-07-01T20:52:08.052481
 last-modified-purpose:
-permalink: /trust/
+slug: /trust/
 title: On Building Trust
 toc: false
 ---

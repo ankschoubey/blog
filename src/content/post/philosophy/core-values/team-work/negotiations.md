@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - communication
  - non-technical
  - team-work
 publishDate: 2022-08-12T20:52:08.052481
 last-modified-purpose:
-permalink: /negotiations/
+slug: /negotiations/
 title: Negotiations
 toc: false
 ---

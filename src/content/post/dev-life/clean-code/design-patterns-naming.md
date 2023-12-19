@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Making it easy for future-code readers to understand
+excerpt: Making it easy for future-code readers to understand
 tags:
  - clean-code
 publishDate: 2022-03-12T20:52:08.052481
 last-modified-purpose:
-permalink: /naming-design-patterns/
+slug: /naming-design-patterns/
 title: Clean code - Naming convension for design patterns
 image: /images/naming-design-patterns.jpg
 ---

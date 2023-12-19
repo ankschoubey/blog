@@ -1,13 +1,13 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - business
  - communication
  - team-work
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added section "Be prepared early by maintaining notes"
-permalink: /effective-meetings/
+slug: /effective-meetings/
 title: Running and Being Effective during Meetings
 toc: false
 ---

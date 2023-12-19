@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - non-technical
  - tdd
 publishDate: 2022-03-18T20:52:08.052481
 last-modified-purpose:
-permalink: /human-intuition/
+slug: /human-intuition/
 title: Human Intuition while working in Technology
 ---
 

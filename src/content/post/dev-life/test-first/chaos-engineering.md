@@ -1,12 +1,12 @@
 ---
 comments: true
-description: A powerful way to increase resilence of a system
+excerpt: A powerful way to increase resilence of a system
 tags:
  - chaos-engineering
  - tdd
 publishDate: 2022-09-11T20:52:08.052481
 last-modified-purpose:
-permalink: /chaos-engineering/
+slug: /chaos-engineering/
 title: Chaos Engineering
 toc: false
 image: https://upload.wikimedia.org/wikipedia/commons/3/39/LogoChaosMonkeysNetflix.png

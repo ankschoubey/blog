@@ -1,6 +1,6 @@
 ---
 comments: true
-description: Everyone has snakes. We have it too. 
+excerpt: Everyone has snakes. We have it too. 
 tags:
  - psychology
  - philosophy
@@ -8,7 +8,7 @@ tags:
  - team-work
 publishDate: 2022-08-18T20:52:08.052481
 last-modified-purpose: added points on controlling aggression
-permalink: /narcissism/
+slug: /narcissism/
 title: We are all narcissist!
 image: /images/narcissism.jpg
 toc: false

@@ -1,13 +1,13 @@
 ---
 comments: true
-description: If you don't, no one takes you seriously.
+excerpt: If you don't, no one takes you seriously.
 tags:
  - communication
  - non-technical
  - team-work
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose:
-permalink: /social-confidence/
+slug: /social-confidence/
 title: Reason to aim for social confidence
 toc: false
 ---

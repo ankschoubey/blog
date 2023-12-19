@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - core-values
  - calm
@@ -8,7 +8,7 @@ tags:
  - peace
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
-permalink: /calmer/
+slug: /calmer/
 title: Strategies to be Calmer
 toc: false
 ---

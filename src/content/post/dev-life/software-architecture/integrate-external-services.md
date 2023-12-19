@@ -1,10 +1,10 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
-permalink: /integrate-external-services/
+slug: /integrate-external-services/
 title: Pointers while integrating an external service
 image: /images/integrate-external-services.jpg
 ---

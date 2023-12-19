@@ -1,6 +1,6 @@
 ---
 comments: true
-description: With TDD, you don't find any logical bugs. The remaining types of bugs are data bugs and configuration bugs. This article discusses configuration validations to find and fix config bugs.
+excerpt: With TDD, you don't find any logical bugs. The remaining types of bugs are data bugs and configuration bugs. This article discusses configuration validations to find and fix config bugs.
 tags:
  - testing
  - devops
@@ -8,7 +8,7 @@ tags:
  - tdd
 publishDate: 2023-05-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/validate-configuration
+slug: /v1/validate-configuration
 title: Automate Validation of Your Configuration
 ---
 

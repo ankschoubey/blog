@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - devops
 publishDate: 2022-08-20T20:52:08.052481
 last-modified-purpose:
-permalink: /speeding-up-pipelines/
+slug: /speeding-up-pipelines/
 title: Speed up Pipelines
 toc: false
 image: /images/speeding-up-pipelines.svg

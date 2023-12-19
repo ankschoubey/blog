@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - software-engineering
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose: Fixed grammatical mistakes
-permalink: /reading-documentation/
+slug: /reading-documentation/
 title: Thoughts on Reading Documentation
 image: /images/reading-documentation.jpg
 ---

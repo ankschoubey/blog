@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - mature
 publishDate: 2022-10-05T20:52:08.052481
 last-modified-purpose:
-permalink: /core-values-overtime/
+slug: /core-values-overtime/
 title: Core Values Overtime - Pointers, Motivations
 ---        
 

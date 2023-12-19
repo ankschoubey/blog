@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - security
 publishDate: 2023-02-01T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/rsa
+slug: /v1/rsa
 title: RSA Algorithm
 toc: false
 image: /images/v1-rsa/rsa-creators.jpeg

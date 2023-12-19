@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - philosophical
  - for-future-me
  - responsibility
 title: The Path / Ethics
-permalink: /path/
+slug: /path/
 publishDate: 2021-08-01T20:42:15.552524
 image: /images/path.jpg
 ---

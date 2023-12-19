@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Making your application secure, high performance and maintanable.
+excerpt: Making your application secure, high performance and maintanable.
 tags:
  - web-development
  - software-architecture
 publishDate: 2023-07-06T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/business-logic-backend/
+slug: /v1/business-logic-backend/
 title: Keep your business logic in the backend. Not frontend.
 ---
 

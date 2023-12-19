@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Check if root is same as subtree or root.left is same or root.right is same;
+excerpt: Check if root is same as subtree or root.left is same or root.right is same;
 tags:
  - algorithm-problems
  - tree
  - easy
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/subtree-of-another-tree
+slug: /v1/subtree-of-another-tree
 title: Blind 75 - Subtree of Another Tree
 ---
 

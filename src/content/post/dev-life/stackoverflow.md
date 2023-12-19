@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - dev-life
 publishDate: 2022-01-15T20:52:08.052481
 last-modified-purpose:
-permalink: /stackoverflow/
+slug: /stackoverflow/
 title: Using StackOverflow as challenge log
 image: /images/stack_overflow.png
 ---

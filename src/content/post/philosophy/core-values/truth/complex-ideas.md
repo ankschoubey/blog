@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - philosophical
  - baton
 publishDate: 2022-08-14T20:52:08.052481
-permalink: /complex/
+slug: /complex/
 last-modified-purpose: added CI/CD and no-automation
 title: Complex Technologies are extension of Simple Ones
 ---

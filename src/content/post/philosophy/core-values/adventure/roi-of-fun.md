@@ -1,12 +1,12 @@
 ---
-description: Placeholder 
+excerpt: Placeholder 
 title: ROI of Fun
 comments: true
 tags:
  - peace
 use_math: true
 publishDate: 2021-08-01T20:42:15.239598
-permalink: /fun/
+slug: /fun/
 image: /images/2020-07-01-roi-of-fun/one_piece_luffy_drawing.jpg
 ---
 

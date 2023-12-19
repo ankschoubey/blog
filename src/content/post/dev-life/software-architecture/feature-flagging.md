@@ -1,12 +1,12 @@
 ---
 comments: true
-description: For Chaos Engineering and Continuous Delivery
+excerpt: For Chaos Engineering and Continuous Delivery
 tags:
  - feature-flagging
  - configuration-management
 publishDate: 2022-08-28T20:52:08.052481
 last-modified-purpose:
-permalink: /feature-flagging/
+slug: /feature-flagging/
 title: Feature Flagging
 toc: false
 image: /images/feature-flagging.jpg

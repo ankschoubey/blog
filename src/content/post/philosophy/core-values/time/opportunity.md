@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - time
 publishDate: 2021-08-01T20:42:15.377623
 title: Opportunity Cost
-permalink: /opportunity/
+slug: /opportunity/
 ---
 
 **If I am a lion 🦁 should I be chasing mice 🐁 or should I be chasing a deer 🦌?** [^2]

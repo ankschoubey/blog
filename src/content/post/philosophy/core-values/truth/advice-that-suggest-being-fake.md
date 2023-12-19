@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - truth
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
-permalink: /advice-that-suggest-being-fake/
+slug: /advice-that-suggest-being-fake/
 title: How to take advice that suggests being fake?
 toc: false
 ---

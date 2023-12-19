@@ -1,13 +1,13 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - communication
  - team-work
  - non-technical
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
-permalink: /boundaries/
+slug: /boundaries/
 title: Understanding Boundaries and Why They Are the Key To Better Life
 toc: false
 ---

@@ -1,5 +1,5 @@
 ---
-description: Give up on thinking about the outcome. Do what needs to be done. Following your values is complete in itself. The outcome is a bonus.
+excerpt: Give up on thinking about the outcome. Do what needs to be done. Following your values is complete in itself. The outcome is a bonus.
 title: Values are 'now'. Act!
 comments: true
 tags:
@@ -7,7 +7,7 @@ tags:
  - non-technical
 use_math: true
 publishDate: 2023-09-30T20:42:15.242622
-permalink: /v1/values-are-now/
+slug: /v1/values-are-now/
 image: /images/values-are-now.jpg
 ---
 

@@ -1,13 +1,13 @@
 ---
 comments: true
-description: go to each depth, incrementing a depth counter by 1. return max of it.
+excerpt: go to each depth, incrementing a depth counter by 1. return max of it.
 tags:
  - algorithm-problems
  - binary-tree
  - easy
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/maximum-depth-of-binary-tree
+slug: /v1/maximum-depth-of-binary-tree
 title: Blind 75 - Maximum Depth of Binary Tree
 ---
 

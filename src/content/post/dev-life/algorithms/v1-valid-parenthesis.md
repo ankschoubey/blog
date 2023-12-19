@@ -1,12 +1,12 @@
 ---
 comments: true
-description: God-level solution - iterate.<br>If an opening bracket is found, put the closing bracket in a stack.<br>If the closing bracket is found, pop and check for equality.
+excerpt: God-level solution - iterate.<br>If an opening bracket is found, put the closing bracket in a stack.<br>If the closing bracket is found, pop and check for equality.
 tags:
  - algorithm-problems
  - stack
 publishDate: 2022-11-06T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/valid-parentheses
+slug: /v1/valid-parentheses
 title: Blind 75 - Valid Parentheses
 ---
 

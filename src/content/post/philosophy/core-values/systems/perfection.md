@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Why failing forward is the only way?
+excerpt: Why failing forward is the only way?
 tags:
  - non-technical
  - systems
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
-permalink: /perfection/
+slug: /perfection/
 title: Perfection isn't an attainable goal. We are always a step closer to it.
 toc: false
 image: /images/perfection.svg

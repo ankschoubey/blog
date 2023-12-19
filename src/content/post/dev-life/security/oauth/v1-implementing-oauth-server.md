@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Implementing OAuth server is easier than it looks and it saves money in the long run.
+excerpt: Implementing OAuth server is easier than it looks and it saves money in the long run.
 tags:
  - security
  - oauth
 publishDate: 2023-03-22T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/implementing-oauth
+slug: /v1/implementing-oauth
 title: Implementing an OAuth Server Manually
 toc: false
 image: /images/implementing-oauth.png

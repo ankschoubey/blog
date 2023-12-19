@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - health
  - systems
 publishDate: 2022-10-25T20:52:08.052481
 last-modified-purpose:
-permalink: /dealing-with-health-problems/
+slug: /dealing-with-health-problems/
 title: Deal with health problems by becoming a domain expert in the field so that you can collaborate better with doctors
 ---
 

@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - database
 publishDate: 2023-03-03T20:52:08.052481
 last-modified-purpose:
-permalink: /db-migration-script/
+slug: /db-migration-script/
 title: Migrating DB smoothly with a migration script
 ---
 

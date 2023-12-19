@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags: 
  - crash-course
  - econ
  - summary
 title: Intro to Economics - Crash Course Econ 1
-permalink: /crash-course/econ/1
+slug: /crash-course/econ/1
 publishDate: 2023-03-04T20:42:15.538277
 ---
 

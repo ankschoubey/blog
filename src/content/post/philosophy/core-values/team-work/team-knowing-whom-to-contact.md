@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - agile
  - collaboration
  - team-work
 publishDate: 2022-09-21T20:52:08.052481
 last-modified-purpose:
-permalink: /team-knowing-whom-to-contact/
+slug: /team-knowing-whom-to-contact/
 title: Increase collaboration by knowing whom to contact
 toc: false
 image: /images/team-knowing-whom-to-contact.jpg

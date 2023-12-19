@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Dodge Recommender Systems
+excerpt: Dodge Recommender Systems
 tags:
  - non-technical
  - inputs
 publishDate: 2021-09-06T20:52:08.052481
-permalink: /internet-distractions/
+slug: /internet-distractions/
 title: Making Internet Less Distracting
 image: /images/internet-distractions.jpg
 ---

@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Event Sourcing is a paradigm where the entire state of an application is derived by replaying a series of events, providing benefits such as accurate auditing and schema flexibility.' 
+excerpt: 'Event Sourcing is a paradigm where the entire state of an application is derived by replaying a series of events, providing benefits such as accurate auditing and schema flexibility.' 
 tags:
  - devops
  - configuration-management
 publishDate: 2023-12-19T20:52:08.052481
-permalink: /what-is-event-sourcing/
+slug: /what-is-event-sourcing/
 image: /images/what-is-event-sourcing.png
 title: Understanding Event Sourcing
 ---

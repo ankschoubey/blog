@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Developing better instinctive reactions to unknown situations
+excerpt: Developing better instinctive reactions to unknown situations
 tags:
  - non-technical
 publishDate: 2022-11-23T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/core-attributes
+slug: /v1/core-attributes
 title: Core Attributes
 ---
 

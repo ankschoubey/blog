@@ -1,13 +1,13 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - philosophical
  - non-technical
  - truth
 publishDate: 2022-06-05T20:52:08.052481
 last-modified-purpose:
-permalink: /truth-fidility/
+slug: /truth-fidility/
 title: Truth and Fidility
 image: /images/truth-fidility.jpg
 toc: false

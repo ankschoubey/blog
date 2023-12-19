@@ -1,14 +1,14 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - decision-making
  - collection-of-thoughts
  - systems
 title: Decision Making Heuristics
 publishDate: 2021-08-14T20:42:15.644388
-permalink: /decision-making-heuristics/
+slug: /decision-making-heuristics/
 image: /images/decision-making-heuristics.jpg
 ---
 ![](/images/decision-making-heuristics.jpg)

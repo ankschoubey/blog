@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - personal
  - non-technical
 publishDate: 2022-06-12T20:52:08.052481
 last-modified-purpose:
-permalink: /paper-work-devops/
+slug: /paper-work-devops/
 title: Paper work is like DevOps
 hide: true
 toc: false

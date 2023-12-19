@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - philosophical
  - non-technical
  - implementing-core-values
 publishDate: 2023-05-17T20:52:08.052481
-permalink: /v1/core-values-are-not-optional/
+slug: /v1/core-values-are-not-optional/
 title: Core Values are Not Optional
 last-modified-purpose:
 read-this-when: you feel it's okay to not follow your core values just this once.

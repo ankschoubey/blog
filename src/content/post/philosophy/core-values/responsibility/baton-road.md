@@ -1,5 +1,5 @@
 ---
-description: How humanity progresses.
+excerpt: How humanity progresses.
 title: Baton Road
 comments: true
 tags:
@@ -7,7 +7,7 @@ tags:
  - responsibility
 use_math: true
 publishDate: 2021-08-01T20:42:15.242622
-permalink: /baton/
+slug: /baton/
 image: https://images-na.ssl-images-amazon.com/images/I/61F6zC1EuvL._SL1024_.jpg
 ---
 

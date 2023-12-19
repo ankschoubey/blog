@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - communication
  - team-work
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose:
-permalink: /communication-during-conflict/
+slug: /communication-during-conflict/
 title: Communication during conflict
 image: /images/communication-during-conflict.jpg
 toc: false

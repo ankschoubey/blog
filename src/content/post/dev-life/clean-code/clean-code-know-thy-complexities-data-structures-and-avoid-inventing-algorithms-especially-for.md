@@ -1,11 +1,11 @@
 ---
 toc: false
-description: especially for maths
+excerpt: especially for maths
 tags:
  - clean-code
 publishDate: 2019-12-25T20:42:15.097026
 title: Avoid inventing algorithms and data structures
-permalink: /complexity/
+slug: /complexity/
 ---
 
 > **If** you are **inventing new algorithms**, you either **don’t know** the right algorithm **or** are working on your **PhD** thesis.

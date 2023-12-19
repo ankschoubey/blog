@@ -1,12 +1,12 @@
 ---
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 title: Middleman
 comments: true
 tags:
  - business
 publishDate: 2021-08-01T20:42:15.347436
 use_math: true
-permalink: /middlemen/
+slug: /middlemen/
 ---
 
 Middlemen companies provide services from one company to either another company or to consumers. 

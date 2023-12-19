@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: For those who don’t require Google level optimization
+excerpt: For those who don’t require Google level optimization
 tags:
  - web-development
 publishDate: 2020-02-22T20:42:15.140795
 title: Simple Hacks for increasing website load time
-permalink: /load_time/
+slug: /load_time/
 ---
 
 # Reduce bundle size

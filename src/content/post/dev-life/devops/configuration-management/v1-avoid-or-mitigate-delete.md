@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - configuration-management
 publishDate: 2023-03-26T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/avoid-or-mitigate-deleting
+slug: /v1/avoid-or-mitigate-deleting
 title: Manage Configuration Better By Avoiding Deleting or Making it Last Step
 ---
 

@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - software-engineering
  - clean-code
 publishDate: 2022-08-20T20:52:08.052481
 last-modified-purpose: code review template
-permalink: /code-reviews/
+slug: /code-reviews/
 title: Code Reviews and Pair Programming
 ---
 Code reviews allow having a much high quality of code. And pair programming is the best way to do code reviews.

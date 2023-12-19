@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: and why communication policy is essential
+excerpt: and why communication policy is essential
 tags:
  - business
  - communication
 title: Communication Bottleneck in large organizations
 publishDate: 2021-08-01T20:42:15.428392
-permalink: /communication_bottleneck/
+slug: /communication_bottleneck/
 image: /images/communication_bottleneck.jpg
 ---
 

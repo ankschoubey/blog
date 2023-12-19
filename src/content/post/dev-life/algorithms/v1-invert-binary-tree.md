@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Swap left and right. Then repeat for those nodes.
+excerpt: Swap left and right. Then repeat for those nodes.
 tags:
  - algorithm-problems
  - binary-tree
  - east
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/invert-binary-tree
+slug: /v1/invert-binary-tree
 title: Blind 75 - Invert Binary Tree
 ---
 

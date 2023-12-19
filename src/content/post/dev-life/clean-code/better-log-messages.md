@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - clean-code
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
-permalink: /writing-log-messages/
+slug: /writing-log-messages/
 title: Writing Meaningful Log Messages
 ---
 

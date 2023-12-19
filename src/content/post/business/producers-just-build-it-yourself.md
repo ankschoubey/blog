@@ -1,12 +1,12 @@
 ---
-description: For producers
+excerpt: For producers
 title: "If it is a core part of your business, don't outsource, build it yourself."
 comments: true
 tags:
  - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.296625
-permalink: /build_it_yourself/
+slug: /build_it_yourself/
 image: https://www.teslarati.com/wp-content/uploads/2019/08/tesla-gigafactory-4-europe.jpg
 ---
 

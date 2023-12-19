@@ -1,10 +1,10 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 
 publishDate: 2022-10-15T20:52:08.052481
 last-modified-purpose:
-permalink: /first-two-weeks/
+slug: /first-two-weeks/
 title: First 2 Weeks of A New Project
 ---
 

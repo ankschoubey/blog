@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Make a map of item and index. Check if target - currentItem exists.
+excerpt: Make a map of item and index. Check if target - currentItem exists.
 tags:
  - algorithm-problems
  - arrays
 publishDate: 2022-10-29T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/two-sums
+slug: /v1/two-sums
 title: Blind 75 Two Sums
 ---
 

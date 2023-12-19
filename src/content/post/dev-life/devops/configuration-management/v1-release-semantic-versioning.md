@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - configuration-management
  - release-cycle
 publishDate: 2023-03-30T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/release-semantic-versioning
+slug: /v1/release-semantic-versioning
 title: Release and Development Snapshot Version Semantic Versioning with Maven
 ---
 

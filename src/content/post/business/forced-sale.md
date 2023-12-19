@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - business
 title: Don’t try to force a sale on people who are not your user base
 publishDate: 2021-08-01T20:42:15.368425
-permalink: /forced_sale/
+slug: /forced_sale/
 image: /images/forced_sale/1.jpg
 ---
 

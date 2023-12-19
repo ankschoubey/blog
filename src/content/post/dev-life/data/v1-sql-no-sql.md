@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - database
  - no-sql
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/sql-and-no-sql
+slug: /v1/sql-and-no-sql
 title: My experience working with MongoDB
 image: /images/v1-sql-and-no-sql/header.png
 image-fit: contain

@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Understanding and extending spring boot with custom AutoConfiguration
+excerpt: Understanding and extending spring boot with custom AutoConfiguration
 tags:
  - spring-boot
  - configuration-management
 publishDate: 2022-09-11T20:52:08.052481
 last-modified-purpose:
-permalink: /autoconfiguration/
+slug: /autoconfiguration/
 title: How AutoConfiguration works in Spring Boot
 toc: false
 image: /images/autoconfiguration.svg

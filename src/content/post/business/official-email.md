@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Non-repudiation
+excerpt: Non-repudiation
 tags:
  - business
 title: If it's official, communicate via email
 publishDate: 2021-08-01T20:42:15.386733
-permalink: /official_email/
+slug: /official_email/
 image: /images/official_email/1.jpg
 ---
 

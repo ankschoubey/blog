@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: 'MNIST: Kaggle Getting Started'
+excerpt: 'MNIST: Kaggle Getting Started'
 tags:
  - deep-learning
 title: Digit Recognition
 publishDate: 2020-03-30T20:42:15.162484
-permalink: /mnist/
+slug: /mnist/
 image: https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png
 ---
 ***

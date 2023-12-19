@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - systems
  - setup
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/desk-setup
+slug: /v1/desk-setup
 title: Desk Setup
 toc: false
 ---

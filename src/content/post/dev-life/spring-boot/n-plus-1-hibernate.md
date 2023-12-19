@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Speed up fetching of child entities
+excerpt: Speed up fetching of child entities
 tags:
  - spring-boot
  - database
 title: Solving N+1 Problem in Hibernate
 publishDate: 2021-08-01T20:52:08.052481
-permalink: /n-plus-one-hibernate/
+slug: /n-plus-one-hibernate/
 image: /images/n-plus-one.svg
 ---
 

@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - security
  - compliance
  - system-design
 publishDate: 2022-12-08T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/gdpr
+slug: /v1/gdpr
 title: Implementation GDPR - Download and Delete A Users Data in Microservice World
 image: /images/v1-gdpr.png
 ---

@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - collaboration
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
-permalink: /empathic-developer/
+slug: /empathic-developer/
 title: Be a more empathic developer
 toc: false
 image: /images/empathic-developer.jpg

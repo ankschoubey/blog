@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Check if the last bit is 1 by (n&1). Do the right unsigned shift (logical shift >>>). Loop.
+excerpt: Check if the last bit is 1 by (n&1). Do the right unsigned shift (logical shift >>>). Loop.
 tags:
  - algorithm-problems
  - blind-75
  - bit-manipulation
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/number-of-1-bits
+slug: /v1/number-of-1-bits
 title: Blind 75 - Number of 1 Bits
 ---
 

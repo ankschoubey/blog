@@ -1,14 +1,14 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - clean-code
  - spring-boot
  - database
 publishDate: 2021-06-12T20:42:15.692681
 title: Art of Reducing Lines of Code in Java/Spring Boot
-permalink: /clean-code-spring-boot/
+slug: /clean-code-spring-boot/
 ---
 
 While there are many techniques which are language agnostic, these are some of my favorites with Spring Boot.

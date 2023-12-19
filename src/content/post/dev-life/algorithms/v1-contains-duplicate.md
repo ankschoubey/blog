@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Create a set and put items in one by one while checking if `num` is already there.
+excerpt: Create a set and put items in one by one while checking if `num` is already there.
 tags:
  - algorithm-problems
  - arrays
  - easy
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/contains-duplicate
+slug: /v1/contains-duplicate
 title: Blind 75 - Contains Duplicate
 ---
 

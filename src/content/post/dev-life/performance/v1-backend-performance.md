@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - backend
 publishDate: 2022-09-18T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/backend-performance/
+slug: /v1/backend-performance/
 title: 5 Simple Things to Improve Backend and Frontend Performance
 toc: false
 ---

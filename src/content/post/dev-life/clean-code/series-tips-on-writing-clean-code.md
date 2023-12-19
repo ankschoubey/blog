@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: constructing the simplest possible code that would solve your problem resulting in an increase in productivity by producing higher quality in less time.
+excerpt: constructing the simplest possible code that would solve your problem resulting in an increase in productivity by producing higher quality in less time.
 tags:
  - clean-code
 title: Clean Code
 publishDate: 2019-12-19T20:42:15.086538
-permalink: /clean_code/
+slug: /clean_code/
 image: /images/2019-12-19-series-tips-on-writing-clean-code/1.png
 ---
 

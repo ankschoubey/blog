@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Fix bugs before your user reports
+excerpt: Fix bugs before your user reports
 tags:
  - observability
 publishDate: 2023-01-01T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/observability-for-developers
+slug: /v1/observability-for-developers
 title: Observability For Developers
 ---
 

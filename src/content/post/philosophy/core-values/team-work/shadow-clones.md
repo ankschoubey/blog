@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - baton
  - team-work
  - non-technical
 publishDate: 2022-05-29T20:52:08.052481
 last-modified-purpose:
-permalink: /shadow-clones/
+slug: /shadow-clones/
 title: Shadow Clone of Ideas
 image: /images/shadow-clones.jpeg
 ---

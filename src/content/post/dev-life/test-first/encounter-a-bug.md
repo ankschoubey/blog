@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - testing
  - tdd
 publishDate: 2022-03-26T20:52:08.052481
 last-modified-purpose:
-permalink: /encounter-a-bug/
+slug: /encounter-a-bug/
 title: Whenever you encounter a bug
 ---
 

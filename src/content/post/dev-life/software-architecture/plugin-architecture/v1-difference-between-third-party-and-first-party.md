@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - architecture
  - plugin
 publishDate: 2023-03-03T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/internal-vs-external-plugin
+slug: /v1/internal-vs-external-plugin
 title: The only differences between external_apps and internal_features in a plugin architecture
 ---
 

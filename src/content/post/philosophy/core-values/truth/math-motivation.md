@@ -1,12 +1,12 @@
 ---
-description: Placeholder 
+excerpt: Placeholder 
 title: Math motivation
 comments: true
 tags:
  - collection-of-thoughts
 use_math: true
 publishDate: 2020-05-04T20:42:15.193139
-permalink: /math/
+slug: /math/
 image: /images/math.jpg
 ---
 

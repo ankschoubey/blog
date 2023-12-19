@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Why traditional roles of men and women are relevant?
+excerpt: Why traditional roles of men and women are relevant?
 tags:
  - non-technical
  - responsibility
 publishDate: 2023-01-31T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/traditional-roles
+slug: /v1/traditional-roles
 title: Nihilism of The Modern Age. And Traditional Roles to the Rescue.
 toc: false
 ---

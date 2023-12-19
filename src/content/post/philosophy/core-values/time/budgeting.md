@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - core-values
  - time-matters
@@ -8,7 +8,7 @@ tags:
  - systems
 publishDate: 2022-01-28T20:52:08.052481
 last-modified-purpose:
-permalink: /personal-budgeting/
+slug: /personal-budgeting/
 title: Personal Budgeting
 ---
 

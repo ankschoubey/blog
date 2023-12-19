@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - spring-boot
  - message-queue
 publishDate: 2022-08-07T20:52:08.052481
 last-modified-purpose: added CQRS
-permalink: /what-when-to-publish/
+slug: /what-when-to-publish/
 title: What and when to publish on message queue
 ---
 

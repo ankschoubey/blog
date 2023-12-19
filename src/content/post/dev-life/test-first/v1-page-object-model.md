@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Page Object Model can be used with any testing framework to write cleaner and simpler tests that are fast to write.
+excerpt: Page Object Model can be used with any testing framework to write cleaner and simpler tests that are fast to write.
 tags:
  - testing
  - tdd
 publishDate: 2023-08-28T20:52:08.052481
 last-modified-purpose:
-permalink: /tdd/page-object-model
+slug: /tdd/page-object-model
 title: Write Cleaner UI Tests with Page Object Model Pattern
 image: /images/tdd/page-object-model.png
 cover-img-style: "position: relative; height:100%"

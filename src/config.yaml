@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
+    default: Ankush Choubey
+    template: '%s — Ankush Choubey'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
@@ -34,7 +34,7 @@ i18n:
 apps:
   blog:
     isEnabled: true
-    postsPerPage: 6
+    postsPerPage: 1000
 
     post:
       isEnabled: true

@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - database
  - mongodb
@@ -9,7 +9,7 @@ tags:
  - tdd-example
 publishDate: 2022-04-16T20:52:08.052481
 last-modified-purpose:
-permalink: /optimistic-locking-exception-mongodb/
+slug: /optimistic-locking-exception-mongodb/
 title: Solving a OptimisticLockingException During Upsert in MongoDB-Spring Webflux
 ---
 

@@ -1,13 +1,13 @@
 ---
 comments: true
-description: From 8 minutes to less than 3 minutes.
+excerpt: From 8 minutes to less than 3 minutes.
 tags:
  - spring-boot
  - tdd
  - testing
 publishDate: 2022-07-30T20:52:08.052481
 last-modified-purpose:
-permalink: /spring-boot-junit-faster/
+slug: /spring-boot-junit-faster/
 title: Speeding Up Spring Boot/JUnit tests
 image: /images/spring-boot-junit-faster/header.png
 ---

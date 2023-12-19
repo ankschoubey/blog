@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Unless you stop
+excerpt: Unless you stop
 tags:
  - information-system
  - business
 publishDate: 2021-08-01T20:42:15.488221
 title: Software project never ends
-permalink: /software_end/
+slug: /software_end/
 ---
 Building software is having no fixed deadline. Below are some reasons why.
 

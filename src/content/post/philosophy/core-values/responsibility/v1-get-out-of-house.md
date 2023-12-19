@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - responsibility
  - needs
 publishDate: 2022-11-22T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/get-out-of-house
+slug: /v1/get-out-of-house
 title: Getting out of the house is the way you become a responsible ball of energy.
 toc: false
 ---

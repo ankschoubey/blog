@@ -1,13 +1,13 @@
 ---
 comments: true
-description: How Our Needs, Environment, and Choices Shape Our Lives
+excerpt: How Our Needs, Environment, and Choices Shape Our Lives
 tags:
  - non-technical
  - inputs
  - mature
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/inputs
+slug: /v1/inputs
 title: Need for Optimizing Inputs in the Modern World
 toc: false
 ---

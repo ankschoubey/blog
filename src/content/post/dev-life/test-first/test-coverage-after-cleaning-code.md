@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - information-system
 publishDate: 2021-08-01T20:42:15.500315
 title: Write Tests after Cleaning Code.
-permalink: /writing_test/
+slug: /writing_test/
 ---
 
 Quality of code determines the quality of the test.

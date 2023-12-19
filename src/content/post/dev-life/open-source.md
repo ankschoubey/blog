@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Impact, Revenue and Deceptions.
+excerpt: Impact, Revenue and Deceptions.
 tags:
  - business
  - information-system
 title: Open Source Software (OSS)
 publishDate: 2021-08-01T20:42:15.547885
-permalink: /open-source/
+slug: /open-source/
 image: /images/open-source.jpg
 ---
 ![](/images/open-source.jpg)

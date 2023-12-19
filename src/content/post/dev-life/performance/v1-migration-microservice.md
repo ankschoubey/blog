@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - backend
 publishDate: 2023-08-05T20:52:08.052481
 last-modified-purpose:
-permalink: /data-migration-microservice/
+slug: /data-migration-microservice/
 title: 7 Tips to Optimize a Microservice for Data Migration Job
 toc: false
 image: /images/data-migration-microservice.png

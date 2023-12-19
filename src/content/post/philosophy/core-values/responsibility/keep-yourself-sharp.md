@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - responsibility
  - systems
 publishDate: 2022-10-08T20:52:08.052481
 last-modified-purpose:
-permalink: /keep-yourself-sharp/
+slug: /keep-yourself-sharp/
 title: Keep Yourself Polished All the Time
 image: /images/keep-yourself-sharp.jpg
 ---

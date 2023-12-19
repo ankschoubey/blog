@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - core-values
  - time-matters
@@ -9,7 +9,7 @@ tags:
  - time
 publishDate: 2022-01-26T20:52:08.052481
 last-modified-purpose:
-permalink: /time-assets-and-liabilities/
+slug: /time-assets-and-liabilities/
 title: Time Assets and Liabilities
 ---
 

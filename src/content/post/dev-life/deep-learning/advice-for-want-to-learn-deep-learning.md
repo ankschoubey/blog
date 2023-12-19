@@ -1,12 +1,12 @@
 ---
-description: or Machine Learning
+excerpt: or Machine Learning
 title: Advice for those who want to learn Deep Learning
 comments: true
 tags:
  - deep-learning
 publishDate: 2020-05-02T20:42:15.185834
 use_math: true
-permalink: /dl_advice/
+slug: /dl_advice/
 ---
 
 I do get questions once or twice a month in my friend circle of someone who is thinking of starting to learn Machine Learning or Deep Learning.

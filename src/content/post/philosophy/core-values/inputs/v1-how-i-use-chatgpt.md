@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - inputs
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/chatgpt-assist
+slug: /v1/chatgpt-assist
 title: How I use ChatGPT as an AI Assist?
 toc: false
 ---

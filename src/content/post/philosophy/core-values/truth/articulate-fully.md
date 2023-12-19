@@ -1,13 +1,13 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - core-values
  - truth
  - non-technical
 publishDate: 2022-06-29T20:52:08.052481
 last-modified-purpose: draft
-permalink: /articulate/
+slug: /articulate/
 title: Articulate Fully
 ---
 

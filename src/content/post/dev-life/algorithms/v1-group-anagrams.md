@@ -1,13 +1,13 @@
 ---
 comments: true
-description: compare the count of letters in each word and put group them in a map
+excerpt: compare the count of letters in each word and put group them in a map
 tags: 
  - algorithm-problems
  - arrays
  - medium
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/group-anagrams
+slug: /v1/group-anagrams
 title: Blind 75 - Group Anagram
 ---
 

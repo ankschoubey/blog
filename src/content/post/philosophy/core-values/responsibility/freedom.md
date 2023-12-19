@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - philosophical
  - exploration
@@ -9,7 +9,7 @@ tags:
  - responsibility
 publishDate: 2022-05-31T20:52:08.052481
 last-modified-purpose:
-permalink: /freedom/
+slug: /freedom/
 title: Ways towards Freedom
 ---
 

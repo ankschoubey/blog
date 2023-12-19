@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - for-future-me
  - non-technical
  - systems
 title: Physical Exercise
-permalink: /exercise/
+slug: /exercise/
 publishDate: 2021-08-01T20:42:15.652723
 image: /images/exercise.jpg
 hide: true

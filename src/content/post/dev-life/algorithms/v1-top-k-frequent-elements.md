@@ -1,6 +1,6 @@
 ---
 comments: true
-description: count all numbers. sort. and return top k. Use streams to make it cleaner. or use bucket sort.
+excerpt: count all numbers. sort. and return top k. Use streams to make it cleaner. or use bucket sort.
 tags:
  - algorithm-problems
  - arrays
@@ -9,7 +9,7 @@ tags:
  - bucket-sort
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/top-k-frequent-elements
+slug: /v1/top-k-frequent-elements
 title: Blind 75 - Top K Frequent Elements - IMP
 ---
 

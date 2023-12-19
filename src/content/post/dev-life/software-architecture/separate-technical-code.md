@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Separate out technical code from business/domain logic for extreme reusability for code.
+excerpt: Separate out technical code from business/domain logic for extreme reusability for code.
 last-modified-purpose: This is just Domain Driven Design and applies to both frontend and backend.
 tags:
  - web-development
  - ddd
  - clean-code
 publishDate: 2022-10-14T20:52:08.052481
-permalink: /separate-technical-code/
+slug: /separate-technical-code/
 title: Separate Technical Code From Domain Code in both Frontend and Backend
 image: https://docs.google.com/drawings/d/e/2PACX-1vRmJrv9fnB7DanMfjGED-WD8BRd43xERmub5YWCYWTOIejwBuomQzuNYDZK-9Pc6GcyDhu7BfDiv4Md/pub?w=1369&h=1006
 ---

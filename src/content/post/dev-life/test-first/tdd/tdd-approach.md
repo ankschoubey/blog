@@ -1,12 +1,12 @@
 ---
 comments: true
-description: A step by step algorithm
+excerpt: A step by step algorithm
 tags:
  - testing
  - tdd
 publishDate: 2022-03-04T20:52:08.052481
 last-modified-purpose:
-permalink: /current-tdd-approach/
+slug: /current-tdd-approach/
 title: My current approach to TDD
 ---
 

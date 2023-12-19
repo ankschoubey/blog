@@ -1,12 +1,12 @@
 ---
 comments: true
-description: How Zero-To-One is relevant in software development, why you should make Deployment&Delivery Pipeline first and how to make releases un-cool.
+excerpt: How Zero-To-One is relevant in software development, why you should make Deployment&Delivery Pipeline first and how to make releases un-cool.
 tags:
  - devops
  - continuous-delivery
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: Added notes from other blogs
-permalink: /v1/continuous-delivery
+slug: /v1/continuous-delivery
 title: Start your project with Continuous Delivery till 'PROD'
 image: /images/continuous-delivery.png
 toc: false

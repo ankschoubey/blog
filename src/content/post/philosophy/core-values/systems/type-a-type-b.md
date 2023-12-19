@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
 publishDate: 2022-09-25T20:52:08.052481
 last-modified-purpose:
-permalink: /type-a-type-b/
+slug: /type-a-type-b/
 title: Aim to be between Type A and B
 image: /images/type-a-type-b.jpg
 ---

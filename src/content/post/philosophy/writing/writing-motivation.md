@@ -1,5 +1,5 @@
 ---
-description: Placeholder 
+excerpt: Placeholder 
 title: Collection of Thoughts on Writing
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
 use_math: true
 publishDate: 2022-10-08T20:42:15.226335
 last-modified-purpose: added more tips
-permalink: /write/
+slug: /write/
 image: /images/write.jpg
 ---
 

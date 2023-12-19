@@ -7,10 +7,10 @@ tags:
  - decision-making
  - mature
 title: Why Ethics? 
-permalink: /why_ethics/
+slug: /why_ethics/
 publishDate: 2021-08-01T20:42:15.540962
 image: /images/why_ethics.jpg
-description: "Long term impacts"
+excerpt: "Long term impacts"
 ---
 ![](/images/why_ethics.jpg)
 

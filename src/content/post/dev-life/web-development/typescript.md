@@ -1,10 +1,10 @@
 ---
 comments: true
-description: A much better alternative to Javascript
+excerpt: A much better alternative to Javascript
 tags:
  - web-development
 publishDate: 2021-12-01T20:52:08.052481
-permalink: /typescript
+slug: /typescript
 title: Typescript
 image: /images/typescript.svg
 last-modified-purpose: More details added

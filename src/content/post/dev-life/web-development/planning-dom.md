@@ -1,12 +1,12 @@
 ---
 comments: true
-description: BEM, TDD, and thoughtful design supercharge web development by streamlining UI DOM planning for maximum efficiency.
+excerpt: BEM, TDD, and thoughtful design supercharge web development by streamlining UI DOM planning for maximum efficiency.
 tags:
  - web-development
  - tdd
 publishDate: 2023-10-28T20:52:08.052481
 last-modified-purpose:
-permalink: /tdd/planning-dom/
+slug: /tdd/planning-dom/
 title: 5 Step Process to Planning and Building a UI DOM Efficiently with Boxes, BEM and TDD
 image: /images/planning-dom/step-3-css-naming.png
 cover-img-style: "position: relative; height:100%"

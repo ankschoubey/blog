@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - peace
 publishDate: 2022-10-25T20:52:08.052481
 last-modified-purpose:
-permalink: /badly/
+slug: /badly/
 title: We only see what we do badly because the reward of doing work well is just peace.
 ---
 

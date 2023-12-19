@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 title: My First Program
 publishDate: 2021-05-03T20:42:15.693687
-permalink: /first-program/
+slug: /first-program/
 ---
 
 My first piece of code was a calculator in Visual Basic. It was 2005 and I was in 4th grade. My father sat beside be and taught me how to make it.

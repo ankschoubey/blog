@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - information-system
  - for-future-me
 publishDate: 2021-08-01T20:42:15.662278
 title: Quick Refactoring Tips
-permalink: /refactoring/
+slug: /refactoring/
 ---
 
 It may be good to have unit test cases

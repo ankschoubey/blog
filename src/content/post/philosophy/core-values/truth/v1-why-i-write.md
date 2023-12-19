@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - writing
  - non-technical
 publishDate: 2022-12-15T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/why-i-write
+slug: /v1/why-i-write
 title: Why do I write?
 image: /images/v1-why-i-write.jpg
 ---

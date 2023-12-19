@@ -1,13 +1,13 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - productive
  - non-technical
  - time
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added principles from Kanban and other tips
-permalink: /saving-time/
+slug: /saving-time/
 title: Strategies on becoming more productive
 image: /images/saving-time.jpg
 ---

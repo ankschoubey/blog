@@ -1,12 +1,12 @@
 ---
 comments: true
-description: How abstraction, cost and education convert research fields to applied.
+excerpt: How abstraction, cost and education convert research fields to applied.
 tags:
  - philosophical
  - for-future-me
  - baton
 publishDate: 2021-08-29T20:52:08.052481
-permalink: /decentralize-high-tech/
+slug: /decentralize-high-tech/
 title: Decentralization of High Tech
 image: /images/decentralize-high-tech.jpg
 ---

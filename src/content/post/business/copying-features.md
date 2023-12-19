@@ -1,12 +1,12 @@
 ---
-description: An observation of different technology companies
+excerpt: An observation of different technology companies
 title: Copying features and products
 comments: true
 tags:
  - business
 publishDate: 2021-08-01T20:42:15.329202
 use_math: true
-permalink: /copying_products/
+slug: /copying_products/
 ---
 
 While building a product there is a shortcut which many companies take which is they copy features from others.

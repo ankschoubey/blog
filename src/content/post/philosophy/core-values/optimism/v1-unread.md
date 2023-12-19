@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Subtle art of not giving a fuck about stupid things
+excerpt: Subtle art of not giving a fuck about stupid things
 tags:
  - peace
  - non-technical
 publishDate: 2022-12-15T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/messages-unread
+slug: /v1/messages-unread
 title: Keep messages unread
 image: /images/v1-why-i-write.jpg
 ---

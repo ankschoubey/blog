@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Phase 1 in the second part of the live hard program after 75 Hard. I was able to do all the tasks of 75 Hard and 3 other tasks that were needed including the 8 critical taks. In this post, I share my journey and tips.
+excerpt: Phase 1 in the second part of the live hard program after 75 Hard. I was able to do all the tasks of 75 Hard and 3 other tasks that were needed including the 8 critical taks. In this post, I share my journey and tips.
 tags:
  - non-technical
  - responsibility
 publishDate: 2023-08-27T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/phase-1
+slug: /v1/phase-1
 title: Journey Through Phase 1 Challenge of the Live Hard Program
 toc: false
 image: /images/phase1/2.jpg

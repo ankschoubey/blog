@@ -1,7 +1,7 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - collection-of-thoughts
  - testing
@@ -9,7 +9,7 @@ tags:
  - tdd
 title: The philosophy behind testing in software and in general
 publishDate: 2021-08-01T20:42:15.560528
-permalink: /testing/
+slug: /testing/
 image: /images/testing.jpg
 ---
 ![](/images/testing.jpg)

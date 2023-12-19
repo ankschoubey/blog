@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Notes from HealthyGamerGG podcast. Use emotions to solve emotional problems first only then apply logic. (Pathos first; Logos later).
+excerpt: Notes from HealthyGamerGG podcast. Use emotions to solve emotional problems first only then apply logic. (Pathos first; Logos later).
 tags:
  - peace
  - non-technical
 publishDate: 2023-05-06T20:52:08.052481
 last-modified-purpose:
 read-this-when: You are facing a sad or depressive situation.
-permalink: /v1/can-not-logic-your-way-out-of-depression
+slug: /v1/can-not-logic-your-way-out-of-depression
 title: You can’t logic your way out of depression.
 image: /images/v1-can-not-logic-your-way-out-of-depression.jpg
 ---

@@ -1,11 +1,11 @@
 ---
-description: Placeholder 
+excerpt: Placeholder 
 title: Support shows how much the company really care
 comments: true
 tags:
  - business
 use_math: true
-permalink: /support/
+slug: /support/
 publishDate: 2021-08-01T20:42:15.337888
 image: /images/support/1.jpg
 

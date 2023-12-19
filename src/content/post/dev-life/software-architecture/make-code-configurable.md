@@ -1,14 +1,14 @@
 ---
 toc: false
 comments: true
-description: Things that should take 0 coding effort
+excerpt: Things that should take 0 coding effort
 tags:
  - clean-code
  - spring-boot
  - configuration-management
 publishDate: 2022-04-27T20:42:15.360789
 title: Make your code configurable.
-permalink: /code_configurable/
+slug: /code_configurable/
 ---
 
 In one of the posts, I wrote previously I explain how [programming has become configuration](/config/).

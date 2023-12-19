@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - security
 publishDate: 2023-05-31T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/v1-fix-security-bugs-anyways
+slug: /v1/v1-fix-security-bugs-anyways
 title: Fix your security bugs even if it doesn’t affect you
 toc: false
 image: /images/v1-fix-security-bugs-anyways.jpg

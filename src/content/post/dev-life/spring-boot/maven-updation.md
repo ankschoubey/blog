@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - maven
  - build-tool
  - automation
 publishDate: 2022-07-24T20:52:08.052481
 last-modified-purpose:
-permalink: /maven-dependency-upgrade/
+slug: /maven-dependency-upgrade/
 title: Tips on fixing and upgrading Maven Dependencies
 image: /images/maven-dependency-upgrade/header.svg
 toc: false

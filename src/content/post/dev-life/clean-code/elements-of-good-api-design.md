@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - middleware
 publishDate: 2022-02-19T20:52:08.052481
 last-modified-purpose:
-permalink: /good-rest-api-design/
+slug: /good-rest-api-design/
 title: Elements of Good REST API Design
 ---
 

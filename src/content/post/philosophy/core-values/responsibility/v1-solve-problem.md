@@ -1,12 +1,12 @@
 ---
 comments: true
-description: And escape it. It's a more empowering path and maybe the only path.
+excerpt: And escape it. It's a more empowering path and maybe the only path.
 tags:
  - non-technical
  - responsibility
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/actually-solve-the-problem
+slug: /v1/actually-solve-the-problem
 title: Actually solve the problem.
 image: https://i0.wp.com/halflinghobbies.com/wp-content/uploads/2019/07/hho_dragon.webp
 ---

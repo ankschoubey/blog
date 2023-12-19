@@ -1,7 +1,7 @@
 ---
 toc: false
 comments: true
-description: Choose the right tool for the job.
+excerpt: Choose the right tool for the job.
 tags:
  - philosophical
  - decision-making
@@ -9,7 +9,7 @@ tags:
  - systems
 title: There is no one size fits all
 publishDate: 2021-08-01T20:42:15.658574
-permalink: /one-size/
+slug: /one-size/
 image: /images/one-size.jpg
 ---
 ![](/images/one-size.jpg)

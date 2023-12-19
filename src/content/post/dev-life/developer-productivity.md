@@ -1,7 +1,7 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - information-system
  - for-future-me
@@ -9,7 +9,7 @@ tags:
  - favorite
 title: Developer Productivity
 publishDate: 2021-08-01T20:42:15.532481
-permalink: /dev_productivity/
+slug: /dev_productivity/
 image: /images/dev_productivity.jpg
 ---
 ![](/images/dev_productivity.jpg)

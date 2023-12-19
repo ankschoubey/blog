@@ -1,7 +1,7 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - philosophical
  - decision-making
@@ -9,7 +9,7 @@ tags:
  - peace
 title: You need time to think
 publishDate: 2021-08-14T20:42:15.596505
-permalink: /think/
+slug: /think/
 image: /images/think.jpg
 ---
 ![](/images/think.jpg)

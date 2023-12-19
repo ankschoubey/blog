@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Leave when not okay
+excerpt: Leave when not okay
 tags:
  - clean-code
 publishDate: 2019-12-20T20:42:15.088154
 title: Flat is better than nested
-permalink: /flat_is_better/
+slug: /flat_is_better/
 ---
 
 This might be the most important tip of all the tips covered which applies mainly to if-else statements.

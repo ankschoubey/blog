@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: and Logging with style
+excerpt: and Logging with style
 tags:
  - clean-code
 publishDate: 2020-01-06T20:42:15.128460
 title: Exception handling
-permalink: /exception_handing/
+slug: /exception_handing/
 ---
 
 > Errors should never pass silently.

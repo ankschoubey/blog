@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - philosophical
  - non-technical
  - matured
 publishDate: 2022-07-02T20:52:08.052481
-permalink: /core-values/
+slug: /core-values/
 title: Choosing better values
 last-modified-purpose: rewrote entire blogpost
 rewrote-count: 1

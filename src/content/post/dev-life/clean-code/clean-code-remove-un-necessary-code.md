@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: You ain’t gonna need it
+excerpt: You ain’t gonna need it
 tags:
  - clean-code
 publishDate: 2020-01-04T20:42:15.112388
 title: Remove un-necessary code
-permalink: /code_cleanup/
+slug: /code_cleanup/
 ---
 
 # Declare the local variable as close to where it is used and remove un-necessary once

@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - decision-making
  - truth
  - observability
 publishDate: 2022-08-13T20:52:08.052481
 last-modified-purpose:
-permalink: /data-driven-decisions/
+slug: /data-driven-decisions/
 title: Towards Data Driven Decisions
 toc: false
 ---

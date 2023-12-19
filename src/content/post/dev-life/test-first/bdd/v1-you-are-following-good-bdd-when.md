@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - bdd
 publishDate: 2023-03-11T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/you-are-following-good-bdd-when
+slug: /v1/you-are-following-good-bdd-when
 title: You are really doing BDD when
 ---
 

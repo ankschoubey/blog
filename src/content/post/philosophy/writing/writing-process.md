@@ -1,10 +1,10 @@
 ---
-description: This post is stupid but I was asked about it once.
+excerpt: This post is stupid but I was asked about it once.
 title: Writing process (July 2020 Edition)
 comments: true
 publishDate: 2021-08-01T20:42:15.321162
 use_math: true
-permalink: /writing_process_07_2020/
+slug: /writing_process_07_2020/
 ---
 
 

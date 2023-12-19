@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Extending our Movie example creating a REST API with TDD. Scenarios covered are Create, Read, Update and Delete.
+excerpt: Extending our Movie example creating a REST API with TDD. Scenarios covered are Create, Read, Update and Delete.
 tags:
  - testing
  - tdd
 publishDate: 2023-08-17T20:52:08.052481
 last-modified-purpose:
-permalink: /tdd/rest-api-example
+slug: /tdd/rest-api-example
 image: /images/tdd-rest-api-example.png
 image-fit: contain
 title: TDD example for REST API - CRUD

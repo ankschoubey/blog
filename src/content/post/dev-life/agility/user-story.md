@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Details about breaking user story added
+excerpt: Details about breaking user story added
 tags:
  - business
  - agile
 publishDate: 2022-11-21T20:52:08.052481
 last-modified-purpose: Appended Dichotemy of User Story and Technical Tasks
-permalink: /user-stories/
+slug: /user-stories/
 title: Thoughts & Notes on User Stories
 ---
 

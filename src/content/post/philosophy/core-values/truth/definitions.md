@@ -1,14 +1,14 @@
 ---
 toc: false
 comments: true
-description: The same word is different for different people
+excerpt: The same word is different for different people
 tags:
  - decision-making
  - communication
  - truth
 publishDate: 2021-08-01T20:42:15.451427
 title: Definitions
-permalink: /definition/
+slug: /definition/
 ---
 
 There are many terms that are not hardcore logic.

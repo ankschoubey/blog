@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - deep-learning
 title: Easy Jupyter Notebook Tips
 publishDate: 2019-07-29T20:42:15.063562
-permalink: /jupyter_notebook/
+slug: /jupyter_notebook/
 image: /images/2019-07-29-easy-jupyter-notebook-tips/2.png
 ---
 

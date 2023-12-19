@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - microservices
  - distributed-systems
 publishDate: 2022-12-03T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/api-client-sdk
+slug: /v1/api-client-sdk
 title: Why do microservices need an API client sdk for HTTP and Messaging?
 image: /images/v1-api-client/header.png
 ---

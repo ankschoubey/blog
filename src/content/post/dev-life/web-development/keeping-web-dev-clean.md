@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - information-system
 title: Keeping Web Dev Code proper
 publishDate: 2021-08-01T20:42:15.593554
-permalink: /web-dev-clean/
+slug: /web-dev-clean/
 image: /images/web-dev-clean.jpg
 ---
 ![](/images/web-dev-clean.jpg)

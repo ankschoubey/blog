@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Practical Chaos Engineering Part 1
+excerpt: Practical Chaos Engineering Part 1
 tags:
  - chaos-engineering
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
-permalink: /response-type-field/
+slug: /response-type-field/
 title:  A responseType field for all response classes
 toc: false
 image: /images/response-type-field.png

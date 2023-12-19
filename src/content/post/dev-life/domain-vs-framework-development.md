@@ -1,6 +1,6 @@
 ---
 comments: true
-description: A Comparison between Application/Domain vs Framework Development
+excerpt: A Comparison between Application/Domain vs Framework Development
 tags:
  - baton
  - rant
@@ -8,7 +8,7 @@ tags:
  - technical
 publishDate: 2022-10-27T20:52:08.052481
 last-modified-purpose:
-permalink: /domain-vs-framework-development/
+slug: /domain-vs-framework-development/
 title: Why Framework Development Is Biggest Software Development Baton?
 image: /images/domain-vs-framework-development.jpg
 ---

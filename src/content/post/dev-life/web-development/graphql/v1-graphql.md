@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - web-development
  - graphql
 publishDate: 2023-04-06T20:42:15.140795
 title: GraphQL - Understanding its Advantages, Query Types, and Technical Functioning
-permalink: /v1/what-is-graphql/
+slug: /v1/what-is-graphql/
 image: /images/v1-graphql.png
 ---
 

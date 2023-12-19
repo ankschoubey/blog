@@ -1,13 +1,13 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - testing
  - clean-code
  - tdd
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added section on "Don't start the application. Verify everything by writing tests."
-permalink: /making-tdd-easy/
+slug: /making-tdd-easy/
 title: Making TDD and Testing easier
 image: /images/tdd.jpeg
 ---

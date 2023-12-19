@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Instead of seeing failure as a personal flaw or a permanent setback, see it as an opportunity for growth and improvement. Focus on learning from your mistakes and using them to become better in the future.
+excerpt: Instead of seeing failure as a personal flaw or a permanent setback, see it as an opportunity for growth and improvement. Focus on learning from your mistakes and using them to become better in the future.
 tags:
  - peace
  - non-technical
 publishDate: 2023-05-06T20:52:08.052481
 last-modified-purpose:
 read-this-when: You experiences a loss and are thinking about it.
-permalink: /v1/dealing-with-loss
+slug: /v1/dealing-with-loss
 title: Truthful Optimistic approach to bouncing back from major loss
 image: /images/v1-dealing-with-loss.jpg
 ---

@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Only for-money companies
+excerpt: Only for-money companies
 tags:
  - business
 publishDate: 2021-08-01T20:42:15.366196
 title: Facade companies
-permalink: /facade/
+slug: /facade/
 ---
 
 Companies that don’t actually care about solving a problem.

@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - truth
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: 
-permalink: /v1/my-blindspots
+slug: /v1/my-blindspots
 title: My Blindspots
 toc: false
 ---

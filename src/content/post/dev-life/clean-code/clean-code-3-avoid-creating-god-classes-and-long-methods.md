@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Minimalism
+excerpt: Minimalism
 tags:
  - clean-code
 publishDate: 2019-12-25T20:42:15.093981
 title: Avoid creating god classes and long methods
-permalink: /god_classes/
+slug: /god_classes/
 ---
 
 As you gain **experience** as a developer you **start to see repeating patterns** that crop up over and over again in your solutions.

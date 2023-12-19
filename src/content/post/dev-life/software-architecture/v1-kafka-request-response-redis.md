@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Each message sent by a producer would include a unique correlation-id. Once the message is received and processed by the consumer, it will publish a response message back to Kafka with the same correlation-id.
+excerpt: Each message sent by a producer would include a unique correlation-id. Once the message is received and processed by the consumer, it will publish a response message back to Kafka with the same correlation-id.
 tags:
  - web-development
  - software-architecture
 publishDate: 2023-09-07T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/kafka-request-response-redis/
+slug: /v1/kafka-request-response-redis/
 title: Synchronous Request-Response over Kafka with Redis
 image: /images/kafka-request-response-redis.svg
 ---

@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - truth
  - mature
 publishDate: 2022-12-31T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/truth/why-tell-the-truth
+slug: /v1/truth/why-tell-the-truth
 title: Why we should strive to tell the truth always?
 toc: false
 ---

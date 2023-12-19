@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - business
  - collection-of-thoughts
  - decision-making
 title: Business Ethics
-permalink: /business-ethics/
+slug: /business-ethics/
 publishDate: 2021-08-01T20:42:15.545856
 image: /images/business-ethics.jpg
 hide: true

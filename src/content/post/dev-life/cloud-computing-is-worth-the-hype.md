@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Your robot on the internet
+excerpt: Your robot on the internet
 tags:
  - cloud-computing
  - information-system
 title: Cloud is Worth the Hype
 publishDate: 2021-08-01T20:42:15.430842
-permalink: /cloud/
+slug: /cloud/
 image: /images/cloud.jpg
 ---
 ![](/images/cloud.jpg)

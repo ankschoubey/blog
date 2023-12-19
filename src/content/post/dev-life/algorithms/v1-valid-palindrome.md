@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Have 2 pointers. One at the start other at the end. Skip if `!Character.isLetterOrDigit` and compare with `Character.toLowerCase`
+excerpt: Have 2 pointers. One at the start other at the end. Skip if `!Character.isLetterOrDigit` and compare with `Character.toLowerCase`
 tags:
  - algorithm-problems
  - two-pointers
  - easy
 publishDate: 2022-11-6T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/valid-palindrome
+slug: /v1/valid-palindrome
 title: Blind 75 - Valid Palindrome
 ---
 

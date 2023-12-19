@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - collection-of-thoughts
  - drafts
  - truth
 title: Reading Books
-permalink: /read/
+slug: /read/
 publishDate: 2021-08-01T20:42:15.423682
 image: /images/read.jpg
 updated: ['21 Jan 2021','31 Jan 2021']

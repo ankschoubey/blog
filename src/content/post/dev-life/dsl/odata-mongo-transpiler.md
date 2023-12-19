@@ -1,5 +1,5 @@
 ---
-description:  Implementing OData, Utilizing Specifications, and Enhancing API Flexibility.
+excerpt:  Implementing OData, Utilizing Specifications, and Enhancing API Flexibility.
 title: How we implemented OData for MongoDB and use it in OpenAPI
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
 toc: false
 use_math: true
 publishDate: 2023-07-11T20:42:15.220865
-permalink: /odata-mongo-transpiler/
+slug: /odata-mongo-transpiler/
 image: /images/odata-mongo-transpiler.png
 ---
 

@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - testing
  - tdd
 publishDate: 2022-04-27T20:52:08.052481
 last-modified-purpose:
-permalink: /after-tdd/
+slug: /after-tdd/
 title: What to test to write after functional TDD
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: Karma is the action we take, while Karmafal is the result of our actions, and by detaching ourselves from the outcome, we can focus on doing our best and live a more empowered life.
+excerpt: Karma is the action we take, while Karmafal is the result of our actions, and by detaching ourselves from the outcome, we can focus on doing our best and live a more empowered life.
 title: Karma and Karmafal - An Introduction
 comments: true
 tags:
@@ -7,7 +7,7 @@ tags:
  - non-technical
 use_math: true
 publishDate: 2023-04-20T20:42:15.242622
-permalink: /v1/karma-karmafal/
+slug: /v1/karma-karmafal/
 image: /images/v1-karma-karmafal.jpg
 ---
 

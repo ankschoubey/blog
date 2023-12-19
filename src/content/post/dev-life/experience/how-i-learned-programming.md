@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - programming
 title: How I learned basics of programming.
 publishDate: 2021-08-01T20:42:15.515422
-permalink: /learn_programming/
+slug: /learn_programming/
 #image: /images/engineer.jpg
 ---
 

@@ -1,10 +1,10 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 
 publishDate: 2022-05-11T20:52:08.052481
 last-modified-purpose:
-permalink: /new-project/
+slug: /new-project/
 title: Some considerations when setting a new project
 ---
 

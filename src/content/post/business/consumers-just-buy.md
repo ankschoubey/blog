@@ -1,12 +1,12 @@
 ---
-description: For consumers
+excerpt: For consumers
 title: "Just buy it. Don’t build it yourself."
 comments: true
 tags:
  - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.292983
-permalink: /just_buy/
+slug: /just_buy/
 image: /images/2020-07-24-consumers-just-buy/1_switch.jpg
 ---
 

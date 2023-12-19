@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Mitigating the most discoraging part of software development
+excerpt: Mitigating the most discoraging part of software development
 tags:
  - devops
  - tools
 title: A replicable Development Environment with Docker + VS Code
 publishDate: 2021-08-01T20:42:15.533515
-permalink: /development_environment_docker/
+slug: /development_environment_docker/
 image: https://www.simplilearn.com/ice9/free_resources_article_thumb/docker_tutorial_basic_concepts_verview.jpg
 ---
 

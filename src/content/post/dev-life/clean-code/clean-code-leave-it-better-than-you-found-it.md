@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Atomic Habits applied to code. Thanks James Clear.
+excerpt: Atomic Habits applied to code. Thanks James Clear.
 tags:
  - clean-code
  - business
 publishDate: 2020-01-06T20:42:15.137147
 title: Leave it better than you found it
-permalink: /leave_it_better/
+slug: /leave_it_better/
 ---
 
 Code is much more like a work of art/craft that people consider it.

@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Probably the most powerful mental model
+excerpt: Probably the most powerful mental model
 tags:
  - decision-making
  - truth
 publishDate: 2021-08-14T20:52:08.052481
-permalink: /inversion/
+slug: /inversion/
 title: Inversion
 ---
 

@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - database
  - culture
  - ideas
 publishDate: 2020-10-31T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/adoption-of-db-migration
+slug: /v1/adoption-of-db-migration
 title: Easing the process of DB versioning & migration tool adoption
 ---
 

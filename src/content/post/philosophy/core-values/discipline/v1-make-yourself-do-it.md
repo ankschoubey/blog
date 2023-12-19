@@ -1,12 +1,12 @@
 ---
 comments: true
-description: How do you exercise discipline? What stops it? It's emotions. How do you overcome your emotions and short-term impulses?
+excerpt: How do you exercise discipline? What stops it? It's emotions. How do you overcome your emotions and short-term impulses?
 tags:
  - philosophical
  - non-technical
  - discipline
 publishDate: 2023-06-06T20:52:08.052481
-permalink: /v1/make-yourself-do-it/
+slug: /v1/make-yourself-do-it/
 title: Make yourself do it
 last-modified-purpose: 
 image: /images/v1-make-yourself-do-it.jpg

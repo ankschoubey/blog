@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - clean-code
 publishDate: 2022-04-19T20:52:08.052481
 last-modified-purpose:
-permalink: /debugging-effectively/
+slug: /debugging-effectively/
 title: Debugging Effectively
 ---
 

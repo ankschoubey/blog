@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - philosophical
  - collection-of-thoughts
  - peace
 title: Meditation is how you become peaceful all the time
-permalink: /meditation/
+slug: /meditation/
 publishDate: 2021-04-28T20:42:15.624828
 image: /images/meditation.jpg
 ---

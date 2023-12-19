@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Multithreading programming has never been easier.
+excerpt: Multithreading programming has never been easier.
 tags:
  - microservices
  - experience
  - webflux
 publishDate: 2022-07-11T20:52:08.052481
 last-modified-purpose:
-permalink: /reactive-programming/
+slug: /reactive-programming/
 title: Always choose Reactive Programming
 toc: false
 ---

@@ -1,13 +1,13 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - core-values
  - truth
  - non-technical
 publishDate: 2022-02-24T20:52:08.052481
 last-modified-purpose:
-permalink: /truth-stratergies/
+slug: /truth-stratergies/
 title: Strategies on Truth
 image: /images/truth-stratergies.jpg
 ---

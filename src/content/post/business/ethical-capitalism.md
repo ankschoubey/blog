@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: The Game Which Everyone Needs To Win
+excerpt: The Game Which Everyone Needs To Win
 tags:
  - business
  - philosophical
 title: Ethical Capitalism
 publishDate: 2021-08-01T20:42:15.554981
-permalink: /ethical-capitalism/
+slug: /ethical-capitalism/
 image: /images/ethical-capitalism.jpg
 ---
 ![](/images/ethical-capitalism.jpg)

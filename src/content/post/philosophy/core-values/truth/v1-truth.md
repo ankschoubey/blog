@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - truth
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/truth
+slug: /v1/truth
 title: Living a truthful life
 toc: false
 ---

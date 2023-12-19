@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - systems
 publishDate: 2022-12-22T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/systems
+slug: /v1/systems
 title: Creating Systems To Automate Goal Achievement
 toc: false
 ---

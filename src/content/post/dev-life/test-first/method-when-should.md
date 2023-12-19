@@ -1,6 +1,6 @@
 ---
 comments: true
-description: A template for thinking and creating understandable uniform tests
+excerpt: A template for thinking and creating understandable uniform tests
 tags:
  - testing
  - clean-code
@@ -8,7 +8,7 @@ tags:
  - tdd
 publishDate: 2022-03-19T20:52:08.052481
 last-modified-purpose:
-permalink: /method-when-should/
+slug: /method-when-should/
 title: Thinking and writing cleaner tests with method/when/should blocks
 image: /images/method-when-should.png
 ---

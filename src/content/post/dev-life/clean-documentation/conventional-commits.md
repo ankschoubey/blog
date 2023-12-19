@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - clean-code
  - continuous-integration
@@ -8,7 +8,7 @@ tags:
  - code-review
 publishDate: 2022-05-17T20:52:08.052481
 last-modified-purpose:
-permalink: /conventional-commits/
+slug: /conventional-commits/
 title: Writing better commit with conventional commits
 ---
 

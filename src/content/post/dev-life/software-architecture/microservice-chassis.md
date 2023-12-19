@@ -1,11 +1,11 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - dev-productivity
 publishDate: 2022-10-02T20:52:08.052481
 last-modified-purpose:
-permalink: /microservice-chassis/
+slug: /microservice-chassis/
 title: Microservice Chassis
 ---
 

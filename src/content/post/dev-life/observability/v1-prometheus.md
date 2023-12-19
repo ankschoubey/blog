@@ -1,12 +1,12 @@
 ---
 comments: true
-description: The monitoring and time series database
+excerpt: The monitoring and time series database
 tags:
  - observability
  - prometheus
 publishDate: 2022-11-23T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/prometheus
+slug: /v1/prometheus
 title: The Prometheus Cheatsheet
 image: /images/v1-prometheus.png
 ---

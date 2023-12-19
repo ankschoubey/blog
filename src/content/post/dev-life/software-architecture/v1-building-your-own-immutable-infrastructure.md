@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - web-development
  - software-architecture
  - configuration-management
 publishDate: 2023-04-07T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/building-your-own-immutable-infrastructure/
+slug: /v1/building-your-own-immutable-infrastructure/
 title: Immutable Configuration and Infrastructure - What they are and Where Can You Build Your Own
 ---
 

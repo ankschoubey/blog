@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - business
  - marketing
 title: The lifetime of 'Content' is getting smaller
 publishDate: 2021-08-01T20:42:15.415292
-permalink: /content/
+slug: /content/
 image: /images/content.jpg
 ---
 ![](/images/content.jpg)

@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - philosophical
  - systems
 publishDate: 2021-08-01T20:42:15.433097
 title: Correlation between Deep Learning Concepts and Philosophy
-permalink: /dl_lessons/
+slug: /dl_lessons/
 ---
 
 **DL** = **D**eep **L**earning

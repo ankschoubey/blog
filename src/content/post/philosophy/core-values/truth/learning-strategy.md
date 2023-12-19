@@ -1,6 +1,6 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - systems
  - learning
@@ -8,7 +8,7 @@ tags:
  - systems
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose: Added section on Flash Cards
-permalink: /learning-strategy/
+slug: /learning-strategy/
 title: Learning Strategies For Development
 ---
 

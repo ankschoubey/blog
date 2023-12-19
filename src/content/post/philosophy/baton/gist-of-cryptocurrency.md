@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - blockchain
  - information-system
 title: Gist of Cryptocurrencies
 publishDate: 2021-08-01T20:42:15.666464
-permalink: /crypto/
+slug: /crypto/
 image: /images/crypto.jpg
 ---
 ![](/images/crypto.jpg)

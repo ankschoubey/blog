@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - non-technical
  - health
 publishDate: 2022-11-05T20:52:08.052481
 last-modified-purpose:
-permalink: /v2/stress
+slug: /v2/stress
 title: Stress is the root cause of all health problem. Fix it.
 ---
 

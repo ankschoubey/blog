@@ -1,6 +1,6 @@
 ---
 comments: true
-description: Psychology and therapy are evidence-based approaches that can expedite problem-solving. Common misconceptions include the belief that therapy is unnecessary and that therapists solely resolve issues. Addressing these misconceptions aids in determining the need for therapy, either for yourself or someone you know.
+excerpt: Psychology and therapy are evidence-based approaches that can expedite problem-solving. Common misconceptions include the belief that therapy is unnecessary and that therapists solely resolve issues. Addressing these misconceptions aids in determining the need for therapy, either for yourself or someone you know.
 tags:
  - peace
  - non-technical
@@ -8,7 +8,7 @@ tags:
 publishDate: 2023-09-10T20:52:08.052481
 last-modified-purpose:
 read-this-when: 
-permalink: /optimism/why-therapy
+slug: /optimism/why-therapy
 title: Why psychological work and/or therapy are important and shouldn't be ignored?
 image: /images/why-therapy.jpg
 ---

@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - deep-learning
 publishDate: 2020-03-10T20:42:15.143791
 title: 'Kaggle CLI QA: How to download a particular folder'
-permalink: /kaggle_download_folder/
+slug: /kaggle_download_folder/
 ---
 
 **[Harshini on Medium asks](https://medium.com/@harshini2898/nice-article-c1eb575b0baf)**

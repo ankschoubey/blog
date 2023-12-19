@@ -1,14 +1,14 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - decision-making
  - for-future-me
  - baton
 title: Research
 publishDate: 2021-08-01T20:42:15.512366
-permalink: /research/
+slug: /research/
 image: /images/research.jpg
 ---
 ![](/images/research.jpg)

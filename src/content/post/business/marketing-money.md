@@ -1,5 +1,5 @@
 ---
-description: Draft version
+excerpt: Draft version
 title: Marketing Money
 comments: true
 tags:
@@ -7,7 +7,7 @@ tags:
  - marketing
 publishDate: 2021-08-01T20:42:15.236602
 use_math: true
-permalink: /marketing-money/
+slug: /marketing-money/
 ---
 
 ## Word of Mouth

@@ -1,5 +1,5 @@
 ---
-description: Mindsets and statergies to apply exponential progress to life, business and beyond.
+excerpt: Mindsets and statergies to apply exponential progress to life, business and beyond.
 title: Thinking in terms of exponential grow over linear growth
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
  - non-technical
 use_math: true
 publishDate: 2023-07-20T20:42:15.193139
-permalink: /exponential-growth/
+slug: /exponential-growth/
 image: /images/exponential-growth.jpg
 ---
 

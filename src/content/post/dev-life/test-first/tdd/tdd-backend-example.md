@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Learn the foundation of TDD with a simple example explained in depth. 
+excerpt: Learn the foundation of TDD with a simple example explained in depth. 
 tags:
  - testing
  - tdd
 publishDate: 2023-08-13T20:52:08.052481
 last-modified-purpose:
-permalink: /tdd-backend-example
+slug: /tdd-backend-example
 image: /images/tdd-backend-example.svg
 image-fit: contain
 title: TDD example on a backend - Upsert Method

@@ -1,14 +1,14 @@
 ---
 toc: false
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - business
  - collection-of-thoughts
  - decision-making
 title: Employee Ethics
 publishDate: 2021-08-01T20:42:15.550029
-permalink: /employee-ethics/
+slug: /employee-ethics/
 image: /images/employee-ethics.jpg
 ---
 ![](/images/employee-ethics.jpg)

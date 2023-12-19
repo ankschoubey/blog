@@ -1,5 +1,5 @@
 ---
-description: Placeholder 
+excerpt: Placeholder 
 title: Agile and DevOps
 comments: true
 tags:
@@ -8,7 +8,7 @@ tags:
  - business
 publishDate: 2020-05-21T20:42:15.219855
 use_math: true
-permalink: /agile_devops/
+slug: /agile_devops/
 ---
 Agile and DevOps are useful or buzz words depending on who you hear it from.
 

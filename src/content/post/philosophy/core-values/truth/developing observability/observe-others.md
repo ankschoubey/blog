@@ -1,12 +1,12 @@
 ---
-description: Learning faster
+excerpt: Learning faster
 title: Observe other people in action
 comments: true
 tags:
  - truth
 publishDate: 2021-08-01T20:42:15.319898
 use_math: true
-permalink: /observe/
+slug: /observe/
 ---
 
 While doing it yourself is the first step. Observing people is second.

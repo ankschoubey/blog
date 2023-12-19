@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Creative variable names in tests can make them fun and interesting to read.
+excerpt: Creative variable names in tests can make them fun and interesting to read.
 tags:
  - testing
  - tdd
  - clean-code
 publishDate: 2022-06-25T20:52:08.052481
 last-modified-purpose:
-permalink: /creative-variable-names/
+slug: /creative-variable-names/
 title: Writing cleaner tests with creative variable names
 image: /images/creative-variable-names.png
 toc: false

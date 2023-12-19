@@ -1,10 +1,10 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - web-development
 publishDate: 2021-12-04T20:52:08.052481
-permalink: /angular-react-comparison/
+slug: /angular-react-comparison/
 title: Angular and React Comparison
 image: /images/angular-react-comparison.png
 ---

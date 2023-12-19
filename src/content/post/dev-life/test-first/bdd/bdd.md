@@ -1,6 +1,6 @@
 ---
 comments: true
-description: The process that keeps everyone in sync
+excerpt: The process that keeps everyone in sync
 tags:
  - product-development
  - tdd
@@ -8,7 +8,7 @@ tags:
  - bdd
 publishDate: 2022-05-23T20:52:08.052481
 last-modified-purpose:
-permalink: /bdd/
+slug: /bdd/
 title: The Gist of Behavior Driven Development - BDD
 image: /images/bdd.svg
 ---

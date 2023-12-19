@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-description: Comments and Naming Conventions
+excerpt: Comments and Naming Conventions
 tags:
  - clean-code
 publishDate: 2022-08-06T20:42:15.089636
 title: Leave Clues
-permalink: /naming_conventions/
+slug: /naming_conventions/
 last-modified-purpose: "added detail about javadocs"
 ---
 

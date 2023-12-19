@@ -1,13 +1,13 @@
 ---
 comments: true
-description: My experience implementing Kanban Principles.
+excerpt: My experience implementing Kanban Principles.
 tags:
  - lean
  - agile
  - systems
 publishDate: 2023-01-07T20:52:08.052481
 last-modified-purpose:
-permalink: /implementing-kanban/
+slug: /implementing-kanban/
 title: Developing Healthy Habits for Data-Driven Kanban Board
 toc: false
 image: /images/implementing-kanban.svg

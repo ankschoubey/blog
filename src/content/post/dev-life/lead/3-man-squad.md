@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - business
  - teams
  - agile
 publishDate: 2022-03-17T20:52:08.052481
 last-modified-purpose:
-permalink: /3-man-squad/
+slug: /3-man-squad/
 title: The Synchonized 3 Man Squad +/-1
 ---
 

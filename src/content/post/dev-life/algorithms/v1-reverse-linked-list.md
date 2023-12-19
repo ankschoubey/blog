@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Similar to swapping two numbers. Start with prev as null and current and keep swapping next. Return prev because that's the last value.
+excerpt: Similar to swapping two numbers. Start with prev as null and current and keep swapping next. Return prev because that's the last value.
 tags:
  - algorithm-problems
  - arrays
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/reverse-linked-list
+slug: /v1/reverse-linked-list
 title: Blind 75 - Reverse LinkedList
 ---
 

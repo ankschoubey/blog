@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - clean-code
 publishDate: 2022-01-25T20:52:08.052481
 last-modified-purpose:
-permalink: /documentation/
+slug: /documentation/
 title: Maintaining Documentation
 image: https://docs.google.com/drawings/d/e/2PACX-1vS1EYND3yzq_zmJEZ1rEJogTD9tbXucE2k33rcUYIVTcA2ZQZlYfPf_MSVk8kvHZhjcKo7fByRiXFpy/pub?w=453&amp;h=723
 ---

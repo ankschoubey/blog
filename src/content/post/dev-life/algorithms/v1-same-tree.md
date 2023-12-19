@@ -1,12 +1,12 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - algorithm-problems
  - arrays
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
-permalink: /v1/same-tree
+slug: /v1/same-tree
 title: Blind 75 - Same Tree
 ---
 

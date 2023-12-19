@@ -1,12 +1,12 @@
 ---
 comments: true
-description: TDD Example that saved around 2 hours
+excerpt: TDD Example that saved around 2 hours
 tags:
  - tdd-example
  - tdd
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
-permalink: /tdd-over-json/
+slug: /tdd-over-json/
 title: TDD over JSON
 toc: false
 image: /images/tdd-over-json.jpg

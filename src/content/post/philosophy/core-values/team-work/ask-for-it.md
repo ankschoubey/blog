@@ -1,14 +1,14 @@
 ---
 toc: false
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - for-future-me
  - team-work
  - truth
 title: Just ask for it
 publishDate: 2021-08-01T20:42:15.417929
-permalink: /ask/
+slug: /ask/
 image: /images/ask.jpg
 ---
 

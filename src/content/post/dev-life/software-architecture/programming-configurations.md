@@ -1,12 +1,12 @@
 ---
-description: beyond algorithms and data structures
+excerpt: beyond algorithms and data structures
 title: Programming is now Configuring
 comments: true
 tags:
  - configuration-management
 publishDate: 2020-06-29T20:42:15.233506
 use_math: true
-permalink: /config/
+slug: /config/
 ---
 
 ## What we learned when starting out

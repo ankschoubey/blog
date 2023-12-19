@@ -1,12 +1,12 @@
 ---
 comments: true
-description: Placeholder 
+excerpt: Placeholder 
 tags:
  - web-development
  - notes
 publishDate: 2022-10-15T20:52:08.052481
 last-modified-purpose:
-permalink: /HTTP-status-codes/
+slug: /HTTP-status-codes/
 title: Understanding & Using HTTP Status Codes
 image: https://httpstatusdogs.com/img/100.jpg
 ---

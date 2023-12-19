@@ -1,5 +1,5 @@
 ---
-description: We should not avoid good action. Good action has good results in the long term. It may seem easy to avoid good action in the short term. But good action is the only path to the best outcome.
+excerpt: We should not avoid good action. Good action has good results in the long term. It may seem easy to avoid good action in the short term. But good action is the only path to the best outcome.
 title: Keep your Karma Ledger clean
 comments: true
 tags:
@@ -7,7 +7,7 @@ tags:
  - non-technical
 use_math: true
 publishDate: 2023-05-24T20:42:15.242622
-permalink: /v1/karma-ledger/
+slug: /v1/karma-ledger/
 image: /images/v1-karma-ledger.jpg
 read-this-when: you are thinking if there is a reward in good action. Or if you think you can get away by avoiding responsibility.
 ---

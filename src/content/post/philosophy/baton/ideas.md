@@ -1,5 +1,5 @@
 ---
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 title: Ideas
 comments: true
 tags:
@@ -7,7 +7,7 @@ tags:
  - inputs
 use_math: true
 publishDate: 2021-08-01T20:42:15.246053
-permalink: /idea/
+slug: /idea/
 image: https://i2.wp.com/farm6.static.flickr.com/5101/5580291860_748652b4d8_o.gif
 ---
 

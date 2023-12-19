@@ -1,11 +1,11 @@
 ---
 comments: true
-description: 'Placeholder' 
+excerpt: 'Placeholder' 
 tags:
  - tools
 publishDate: 2022-11-20T20:52:08.052481
 last-modified-purpose: added resource on IntelliJ tips
-permalink: /fixing-tools/
+slug: /fixing-tools/
 title: Fixing Tools - IDE, Code Editors, Etc.
 ---
 

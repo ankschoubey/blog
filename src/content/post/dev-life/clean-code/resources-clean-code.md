@@ -1,13 +1,13 @@
 ---
 toc: false
 comments: true
-description: Constructing the simplest possible code
+excerpt: Constructing the simplest possible code
 tags:
  - clean-code
  - tools
 publishDate: 2020-05-11T20:42:15.210883
 title: Clean Code Resources and Tools
-permalink: /clean_code_tools/
+slug: /clean_code_tools/
 ---
 
 **Index**: [Tips on writing Clean Code]({{ site.baseurl }}/clean_code/)
