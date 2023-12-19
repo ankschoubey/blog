@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [crash-course, econ, summary]
+tags: 
+ - crash-course
+ -  econ
+ -  summary]
 title: Specialization and Trade - Crash Course Economics - 2
 permalink: /crash-course/econ/2
 publishDate: 2023-03-04T20:42:15.538277

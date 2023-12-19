@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: Placeholder 
-categories: [business, books, marketing]
+tags: 
+ - business
+ - books
+ - marketing
 title: Summary of Marketing Section from The Personal MBA
 permalink: /marketing-mba/
 publishDate: 2021-08-01T20:42:15.580800

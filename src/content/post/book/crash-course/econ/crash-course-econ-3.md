@@ -2,7 +2,10 @@
 toc: false
 comments: true
 description: 'Placeholder' 
-categories: [crash-course, econ, summary]
+tags: 
+ - crash-course
+ -  econ
+ -  summary
 title: Economic Systems and Macroeconomics - Crash Course Economics - 3
 permalink: /crash-course/econ/3
 publishDate: 2023-03-11T20:42:15.538277

@@ -1,7 +1,10 @@
 ---
 toc: false
 comments: true
-categories: [books, baton, summary]
+tags: 
+ - books
+ -  baton
+ -  summary]
 title: Sapiens Book Summary
 permalink: /sapiens/
 publishDate: 2021-08-01T20:42:15.538277
