@@ -44,10 +44,15 @@ const metadata = {
     id="hero"
     title="Ankush Choubey"
     tagline="Full Stack Developer"
-    actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
+    actions={[
+      { variant: "primary", target: '_blank', text: 'Hire me', href: 'https://www.linkedin.com/in/ankushchoubey/' },
+      { variant: "secondary", target: '_blank', text: 'Tech Blog', href: '/' },
+      { variant: "secondary", target: '_blank', text: 'Life Blog', href: '/' }
+    ]}
   >
     <Fragment slot="subtitle">
-    I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
+      Helping you build <a class="text-blue-700 font-bold" href="/clean-code">clean</a>, <a class="text-blue-700 font-bold"  href="/tdd">bug-free</a>, scalable software <a class="text-blue-700 font-bold" href="/cd">fast</a>!
+    <!-- I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
     <br> <br>
     Through this blog, I share my insights and ideas on software development philosophy and best practices to help fellow developers create high-quality software products.
 
@@ -57,7 +62,7 @@ const metadata = {
 
       I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
       from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
-      captivating realities.
+      captivating realities. -->
     </Fragment>
   </Hero>
 
