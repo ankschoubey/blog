@@ -4,7 +4,7 @@ import { APP_BLOG } from "~/utils/config";
 import Grid from "~/components/blog/Grid.astro";
 
 import { getBlogPermalink } from "~/utils/permalinks";
-import { findLatestPosts } from "~/utils/blog";
+import { findLatestPosts, findPostsBySlugs, findPostsByTag } from "~/utils/blog";
 import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
 import type { Widget } from "~/types";
 import Button from "../ui/Button.astro";
@@ -15,6 +15,7 @@ export interface Props extends Widget {
   linkUrl?: string | URL;
   information?: string;
   count?: number;
+  tag? : string
 }
 
 const {
@@ -23,14 +24,19 @@ const {
   linkUrl = getBlogPermalink(),
   information = await Astro.slots.render("information"),
   count = 4,
-
+  tag,
   id,
   isDark = false,
   classes = {},
   bg = await Astro.slots.render("bg"),
 } = Astro.props;
 
-const posts = APP_BLOG.isEnabled ? await findLatestPosts({ count }) : [];
+let posts = APP_BLOG.isEnabled ? await findLatestPosts({ count }) : [];
+if(tag){
+  posts = await findPostsByTag(tag, count);
+}
+
+// const posts = APP_BLOG.isEnabled ? await findLatestPosts({ count }) : [];
 ---
 
 {

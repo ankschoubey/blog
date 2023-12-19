@@ -32,7 +32,9 @@ const {
               {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
               {testimonial && (
                 <blockquote class="flex-auto">
-                  <p class="text-muted">" {testimonial} "</p>
+                  
+                  {testimonial.split("\n").map(t=>  <p class="text-muted mb-2">{t} </p>)}
+                  
                 </blockquote>
               )}
 

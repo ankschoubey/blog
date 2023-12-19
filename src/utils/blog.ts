@@ -126,6 +126,17 @@ export const fetchPosts = async (): Promise<Array<Post>> => {
   return _posts;
 };
 
+
+/** Custon */
+export const findPostsByTag = async (tag: string, count?: number): Promise<Array<Post>> => {
+  const posts = await fetchPosts();
+  const filteredPosts = posts.filter(post => post.tags?.includes(tag));
+  if(count){
+    return filteredPosts.slice(0, count);
+  }
+  return filteredPosts;
+};
+
 /** */
 export const findPostsBySlugs = async (slugs: Array<string>): Promise<Array<Post>> => {
   if (!Array.isArray(slugs)) return [];
