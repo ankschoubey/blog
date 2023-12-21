@@ -4,7 +4,7 @@ excerpt: Placeholder
 tags:
  - communication
  - non-technical
- - team-work
+ - social-harmony
 publishDate: 2022-08-12T20:52:08.052481
 last-modified-purpose:
 slug: /negotiations/

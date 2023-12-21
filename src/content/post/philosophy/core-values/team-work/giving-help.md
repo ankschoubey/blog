@@ -6,7 +6,7 @@ tags:
  - leadership
  - philosophical
  - business
- - team-work
+ - social-harmony
 publishDate: 2021-08-01T20:42:15.468577
 title: Empowerment/Enabling
 slug: /giving_help/

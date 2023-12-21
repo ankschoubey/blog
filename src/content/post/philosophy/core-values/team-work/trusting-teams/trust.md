@@ -5,7 +5,7 @@ tags:
  - core-values
  - calm
  - non-technical
- - team-work
+ - social-harmony
 publishDate: 2022-07-01T20:52:08.052481
 last-modified-purpose:
 slug: /trust/

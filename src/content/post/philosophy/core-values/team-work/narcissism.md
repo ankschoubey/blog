@@ -5,7 +5,7 @@ tags:
  - psychology
  - philosophy
  - non-technical
- - team-work
+ - social-harmony
 publishDate: 2022-08-18T20:52:08.052481
 last-modified-purpose: added points on controlling aggression
 slug: /narcissism/

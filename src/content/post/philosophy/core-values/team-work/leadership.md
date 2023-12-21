@@ -5,7 +5,7 @@ excerpt: Placeholder
 tags:
  - business
  - leadership
- - team-work
+ - social-harmony
 title: Who is a leader?
 publishDate: 2021-08-01T20:42:15.419969
 slug: /leader/

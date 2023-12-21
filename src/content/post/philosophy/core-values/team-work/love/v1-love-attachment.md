@@ -4,7 +4,7 @@ comments: true
 excerpt: Love is a selfless emotion that focuses on the well-being of the other person, while attachment is a selfish emotion that centers on our own well-being. It's essential to catch ourselves when we act out of attachment and try to shift our focus to acting out of love
 tags:
  - love
- - team-work
+ - social-harmony
  - non-technical
 title: Decoding the difference between healthy love and unhealthy attachment, and choosing healthy love.
 publishDate: 2023-04-28T20:42:15.419969

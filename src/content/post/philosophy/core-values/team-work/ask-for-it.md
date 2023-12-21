@@ -4,7 +4,7 @@ comments: true
 excerpt: Placeholder 
 tags:
  - for-future-me
- - team-work
+ - social-harmony
  - truth
 title: Just ask for it
 publishDate: 2021-08-01T20:42:15.417929

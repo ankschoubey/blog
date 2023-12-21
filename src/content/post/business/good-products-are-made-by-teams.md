@@ -4,7 +4,7 @@ title: Good products are built by teams not individuals
 comments: true
 tags: 
  - business
- - team-work
+ - social-harmony
 use_math: true
 publishDate: 2021-08-01T20:42:15.327198
 slug: /teams/

@@ -2,7 +2,7 @@
 comments: true
 excerpt: Why comparison with others is stupid and why the only person you should compare to is who you were yesterday
 tags:
- - team-work
+ - social-harmony
  - non-technical
 publishDate: 2023-05-01T20:52:08.052481
 last-modified-purpose:

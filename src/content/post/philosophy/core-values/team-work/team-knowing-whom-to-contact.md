@@ -4,7 +4,7 @@ excerpt: Placeholder
 tags:
  - agile
  - collaboration
- - team-work
+ - social-harmony
 publishDate: 2022-09-21T20:52:08.052481
 last-modified-purpose:
 slug: /team-knowing-whom-to-contact/

@@ -5,7 +5,7 @@ excerpt: 'Placeholder'
 tags:
  - philosophical
  - responsibility
- - team-work
+ - social-harmony
 title: Cases To Be Humble
 slug: /humble/
 publishDate: 2021-08-01T20:42:15.643388

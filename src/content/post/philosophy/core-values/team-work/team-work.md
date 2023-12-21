@@ -3,7 +3,7 @@ comments: true
 excerpt: 'Placeholder' 
 tags:
  - core-values
- - team-work
+ - social-harmony
  - non-technical
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added tips for communicating better
