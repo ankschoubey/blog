@@ -1,3 +1,8 @@
+# Commit Format
+
+types: article, page, chore, component
+scope: new, update, seo, image, fix
+
 # 🚀 AstroWind
 
 <img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
