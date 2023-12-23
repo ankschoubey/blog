@@ -2,135 +2,42 @@ import { getPermalink, getBlogPermalink, getAsset, CATEGORY_BASE } from './utils
 
 export const headerData = {
   links: [
-    // {
-    //   text: 'Homes',
-    //   links: [
-    //     {
-    //       text: 'SaaS',
-    //       href: getPermalink('/homes/saas'),
-    //     },
-    //     {
-    //       text: 'Startup',
-    //       href: getPermalink('/homes/startup'),
-    //     },
-    //     {
-    //       text: 'Mobile App',
-    //       href: getPermalink('/homes/mobile-app'),
-    //     },
-    //     {
-    //       text: 'Personal',
-    //       href: getPermalink('/homes/personal'),
-    //     },
-    //   ],
-    // },
-    // {
-    //   text: 'Pages',
-    //   links: [
-    //     {
-    //       text: 'Features (Anchor Link)',
-    //       href: getPermalink('/#features'),
-    //     },
-    //     {
-    //       text: 'Services',
-    //       href: getPermalink('/services'),
-    //     },
-    //     {
-    //       text: 'Pricing',
-    //       href: getPermalink('/pricing'),
-    //     },
-    //     {
-    //       text: 'About us',
-    //       href: getPermalink('/about'),
-    //     },
-    //     {
-    //       text: 'Contact',
-    //       href: getPermalink('/contact'),
-    //     },
-    //     {
-    //       text: 'Terms',
-    //       href: getPermalink('/terms'),
-    //     },
-    //     {
-    //       text: 'Privacy policy',
-    //       href: getPermalink('/privacy'),
-    //     },
-    //   ],
-    // },
-    // {
-    //   text: 'Landing',
-    //   links: [
-    //     {
-    //       text: 'Lead Generation',
-    //       href: getPermalink('/landing/lead-generation'),
-    //     },
-    //     {
-    //       text: 'Long-form Sales',
-    //       href: getPermalink('/landing/sales'),
-    //     },
-    //     {
-    //       text: 'Click-Through',
-    //       href: getPermalink('/landing/click-through'),
-    //     },
-    //     {
-    //       text: 'Product Details (or Services)',
-    //       href: getPermalink('/landing/product'),
-    //     },
-    //     {
-    //       text: 'Coming Soon or Pre-Launch',
-    //       href: getPermalink('/landing/pre-launch'),
-    //     },
-    //     {
-    //       text: 'Subscription',
-    //       href: getPermalink('/landing/subscription'),
-    //     },
-    //   ],
-    // },
     {
-      text: 'Blogs',
-      links: [
-        // {
-        //   text: 'Article',
-        //   href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        // },
-        // {
-        //   text: 'Article (with MDX)',
-        //   href: getPermalink('markdown-elements-demo-post', 'post'),
-        // },
-        // {
-        //   text: 'Category Page',
-        //   href: getPermalink('Personal-Development', 'category'),
-        // },
-        {
-          text: 'Tech',
-          href: getPermalink('technical', 'tag'),
-        },
-        {
-          text: 'Life',
-          href: getPermalink('non-technical', 'tag'),
-        },
-        // {
-        //   text: 'All Blogposts',
-        //   href: getBlogPermalink(),
-        // },
-      ],
-    },
-    {
-      text: "Series",
+      text: "Blogs",
       href: getPermalink(),
       links: [
-        { text: 'Clean Code', href: getPermalink('non-technical', 'tag'), icon: 'tabler:brand-linkedin' },
-        { text: 'TDD', href: "/tdd" },
-        { text: 'Continuous Delivery', href: getPermalink('non-technical', 'tag') },
-        { text: 'Developing Core Values', href: getPermalink('non-technical', 'tag') },
-
+        { text: 'Tech', href: getPermalink('technical', 'tag') },
+        { text: 'Life', href: getPermalink('non-technical', 'tag') }
       ]
-    }
+    },
     // {
-    //   text: 'Widgets',
-    //   href: '#',
+    //   text: "Tech Series",
+    //   href: getPermalink(),
+    //   links: [
+    //     { text: 'Clean Code', href: getPermalink('clean-code', 'tag') },
+    //     { text: 'TDD', href: "/tdd" },
+    //     { text: 'Continuous Delivery', href: getPermalink('non-technical', 'tag') },
+    //   ]
     // },
+    // {
+    //   text: "Life Series",
+    //   href: getPermalink(),
+    //   links: [
+    //     { text: 'Developing Core Values', href: getPermalink('non-technical', 'tag') },
+    //     { text: 'Clarity in Thoughts', href: getPermalink('non-technical', 'tag') },
+    //     { text: 'Responsibility in Actions', href: getPermalink('non-technical', 'tag') },
+    //     { text: 'Optimism in Approach', href: getPermalink('non-technical', 'tag') },
+    //     { text: 'Harmony in Interactions', href: getPermalink('non-technical', 'tag') },
+    //   ]
+    // }
   ],
-  actions: [{ text: 'Hire Me', href: 'https://www.linkedin.com/in/ankushchoubey/', target: '_blank' }],
+  actions: [
+    {
+      text: 'Hire me',
+      target:"_blank",
+      href: 'https://www.linkedin.com/in/ankushchoubey/',
+    },
+  ],
 };
 
 export const footerData = {
@@ -188,7 +95,7 @@ export const footerData = {
     // { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/ankushchoubey/' },
     // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
