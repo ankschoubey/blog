@@ -38,6 +38,8 @@ export const headerData = {
       href: 'https://www.linkedin.com/in/ankushchoubey/',
     },
   ],
+  isSticky: true,
+  showToggleTheme: true,
 };
 
 export const footerData = {
