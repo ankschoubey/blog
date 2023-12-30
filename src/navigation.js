@@ -10,13 +10,14 @@ export const headerData = {
         { text: 'Life', href: getPermalink('non-technical', 'tag') }
       ]
     },
+    { text: 'Test First Test Everything (Series)', href: "/tdd" },
     // {
     //   text: "Tech Series",
-    //   href: getPermalink(),
+    //   // href: getPermalink(),
     //   links: [
-    //     { text: 'Clean Code', href: getPermalink('clean-code', 'tag') },
+    //     // { text: 'Clean Code', href: getPermalink('clean-code', 'tag') },
     //     { text: 'TDD', href: "/tdd" },
-    //     { text: 'Continuous Delivery', href: getPermalink('non-technical', 'tag') },
+    //     // { text: 'Continuous Delivery', href: getPermalink('non-technical', 'tag') },
     //   ]
     // },
     // {

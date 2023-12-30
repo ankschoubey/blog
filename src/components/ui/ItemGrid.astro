@@ -3,6 +3,7 @@ import { twMerge } from 'tailwind-merge';
 import type { ItemGrid } from '~/types';
 import Button from './Button.astro';
 import { Icon } from 'astro-icon/components';
+import Image from '../common/Image.astro';
 
 const { items = [], columns, defaultIcon = '', classes = {} } = Astro.props as ItemGrid;
 
@@ -14,8 +15,8 @@ const {
   icon: defaultIconClass = 'text-primary',
   action: actionClass = '',
 } = classes;
----
 
+---
 {
   items && (
     <div
@@ -32,8 +33,9 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {} }) => (
-        <div>
+      {items.map(({ title, description, image, icon, callToAction, classes: itemClasses = {}, href }) => {
+        const divData = (
+        <div >
           <div class={twMerge('flex flex-row max-w-md', panelClass, itemClasses?.panel)}>
             <div class="flex justify-center">
               {(icon || defaultIcon) && (
@@ -43,7 +45,26 @@ const {
                 />
               )}
             </div>
-            <div class="mt-0.5">
+            <div class="mt-0.5 w-full	">
+              {
+                image && (<div class="relative md:h-64 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
+            
+                    <Image
+                     {...image} 
+                      class="w-full md:h-full rounded shadow-lg bg-white object-contain"
+                      widths={[400, 900]}
+                      width={400}
+                      sizes="(max-width: 900px) 400px, 900px"
+                      aspectRatio="16:9"
+                      layout="cover"
+                      loading="lazy"
+                      decoding="async"
+                      style='object-fit: contain;'
+                    />
+                  </div>    )
+          
+           }
+
               {title && <h3 class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</h3>}
               {description && (
                 <p
@@ -65,7 +86,15 @@ const {
             </div>
           </div>
         </div>
-      ))}
+      )
+
+      if(href){
+        return <a href={href}>
+          {divData}
+          </a>
+      }
+      return divData;
+      })}
     </div>
   )
 }

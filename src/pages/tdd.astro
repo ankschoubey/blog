@@ -3,12 +3,91 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import { getItemFromSlug, type SeriesItems } from '~/utils/customCode.ts/ankushUtils';
 
 const metadata = {
   title: 'TDD',
 };
+
+const content: SeriesItems[] = [
+  {
+    title: 'Getting Started',
+    subtitle: 'Understanding why you TDD and Testing are needed',
+    posts: ['testing'],
+  },
+  {
+    title: 'TDD Level 1: Beginner',
+    subtitle: 'Learning the basics of TDD',
+    posts: ['making-tdd-easy', 'method-when-should', 'tdd-backend-example', 'tdd/rest-api-example'],
+  },
+  {
+    title: 'TDD Level 1: Intermediate',
+    subtitle: 'Expanding our TDD scale by writing cleaner test and writing more tests',
+    posts: [
+      'pre-save-data-validation',
+      'bluring-line-between-unit-integration-test',
+      'test-data-factories',
+      'fluent-assertions',
+      'tdd-over-json',
+      'v1/junit-bug-tracking',
+    ],
+  },
+  {
+    title: 'TDD Level 2.5: UI',
+    subtitle: 'Making Testing on UI Easier',
+    posts: ['tdd/planning-dom', 'tdd/page-object-model'],
+  },
+  {
+    title: 'TDD Level 3: TDD With time',
+    subtitle: 'How to continue with TDD practice with time',
+    posts: ['encounter-a-bug', 'current-tdd-approach'],
+  },
+  {
+    title: 'TDD Level 3: Red Flags and Tools 🚩',
+    subtitle: 'Tools',
+    posts: ['spring-boot-junit-faster'],
+  },
+  {
+    title: 'TDD Level 4: Testing Everything++',
+    subtitle: 'How to test everything and ensure the code is self sustainable and self-correcting',
+    posts: ['testing-design-patterns', 'v1/validate-configuration', 'architecture-testing'],
+  },
+  {
+    title: 'TDD Level 5: BDD',
+    subtitle: 'Behavior Driven Development',
+    posts: [
+      'bdd',
+      'need-for-executable-specification',
+      'writing-better-specs',
+      'v1/you-are-following-good-bdd-when',
+      'v1/bdd-vs-tdd',
+    ],
+  },
+  {
+    title: 'Beyond TDD',
+    subtitle: 'Supporting factors',
+    posts: ['promote-tdd-in-a-team', 'after-tdd', 'dev-workflow', 'mutation-testing', 'chaos-engineering'],
+  },
+];
+
+const resolvedContent = await Promise.all(
+  content.map(async (section) => {
+    const blogpostsResolved = await Promise.all(
+      section.posts.map(async (b, index) => await getItemFromSlug(b, index + 1))
+    );
+    section.items = blogpostsResolved;
+    return section;
+  })
+);
+
+const articleCount = content
+  .map((section) => section.posts.length)
+  .reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+  }, 0);
 ---
 
 <Layout metadata={metadata}>
@@ -24,59 +103,115 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-     Test First <br />
+      Test First <br />
       <span class="text-accent dark:text-white highlight">Test Everything</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Approaching <span class="text-accent font-bold ">Test Driven Development</span> To Become a 5x Developer
+      Approaching <span class="text-accent font-bold">Test Driven Development</span> To Become a 5x Developer <br />
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Statistics about the series"
     stats={[
-      { title: 'Posts', amount: '20' },
-      { title: 'Examples', amount: '5' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Sections', amount: content.length },
+      { title: 'Posts', amount: articleCount + '' },
     ]}
   />
 
-  
-  <!-- Features3 Widget ************** -->
+  <Steps2
+    title="Welcome to Testing First Test Everything series!"
+    subtitle="In this series of articles, you’ll learn how you can increase your development skill by 5 times by learning something that ensures"
+    items={[
+      { title: 'You always produce logical bug-free code.' },
+      {
+        title: 'You produce extremely maintainable code.',
+      },
+      {
+        title: 'You will code at a fast speed.',
+      },
+      {
+        title: 'You produce automatic documentation for anyone else to read.',
+      },
+    ]}
+  />
 
-  <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
-    columns={3}
-    isBeforeContent={true}
+  <Steps
+    id="resume"
+    title="Introduction"
     items={[
       {
-        title: 'Educational',
-        description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+        title: 'Why?',
+        description: `I was a pretty good developer when I learned TDD, but after I spend around 2-3 months learning TDD, I saw that my coding skills became way too sharp. This series covers the philosophy of TDD along with practical examples.`,
+        icon: 'tabler:code',
       },
       {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+        title: "How to Approach?",
+        description: `Try to practice the exercises in the language of your choice and upload them to GitHub 🙂. And if you want just share the link of your repo. I’d love to see it.`,
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Photography',
-        description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+        title: "Free",
+        description: `The series of posts below is completely free 🆓. So, I’d really appreciate it if you share this with your friends via LinkedIn or Twitter, if you find value! This would help get more eyes on the series.`,
+        icon: 'tabler:brand-open-source',
+      },
+      {
+        title: "Share",
+        description: `If you have any questions reach out to me on LinkedIn. And I’ll respond. Your questions and feedback would make things better for everyone.`,
+        icon: 'tabler:share',
       },
     ]}
+    classes={{ container: 'max-w-3xl' }}
   />
 
   <!-- Features3 Widget ************** -->
+  {
+    resolvedContent.map((section) => (
+      <Features3
+        title={section.title}
+        subtitle={section.subtitle}
+        columns={4}
+        isBeforeContent={true}
+        items={section.items}
+      />
+    ))
+  }
 
+  <!-- 
+<Steps2
+title="Achievements"
+subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+isReversed={true}
+callToAction={{
+  text: 'See more',
+  href: '/',
+}}
+items={[
+  {
+    title: 'Global reach',
+    description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+    icon: 'tabler:globe',
+  },
+  {
+    title: 'Positive customer feedback and reviews',
+    description:
+      'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+    icon: 'tabler:message-star',
+  },
+  {
+    title: 'Awards and recognition as industry experts',
+    description:
+      'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+    icon: 'tabler:award',
+  },
+]}
+/> -->
+
+  <!-- Features3 Widget ************** -->
+  <!-- 
   <Features3
     columns={3}
     isAfterContent={true}
@@ -124,60 +259,6 @@ const metadata = {
     }}
   />
 
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Welcome to Testing First Test Everything series!"
-    subtitle="In this series of articles, you’ll learn how you can increase your development skill by 5 times by learning something that ensures:"
-    items={[
-      {
-        title: 'You always produce logical bug-free code.',
-        href: "hello",
-      },
-      {
-        title: 'You produce extremely maintainable code.',
-      },
-      {
-        title: 'You will code at a fast speed.',
-      },
-      {
-        title: 'You produce automatic documentation for anyone else to read.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
-    isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
-    }}
-    items={[
-      {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
-      },
-      {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
-      },
-      {
-        title: 'Awards and recognition as industry experts',
-        description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
 
   <Features2
     title="Our locations"
@@ -203,8 +284,6 @@ const metadata = {
     ]}
   />
 
-  <!-- Features2 Widget ************** -->
-
   <Features2
     title="Technical Support"
     tagline="Contact us"
@@ -223,5 +302,5 @@ const metadata = {
         icon: 'tabler:headset',
       },
     ]}
-  />
+  /> -->
 </Layout>
