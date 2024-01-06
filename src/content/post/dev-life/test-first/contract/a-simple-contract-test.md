@@ -8,7 +8,7 @@ tags:
 publishDate: 2024-01-07T20:52:08.052481
 last-modified-purpose:
 slug: /tdd/simple-contract-test/
-title: A Simple Vanila Contract Test between Backend and Frontend
+title: A Simple Vanilla Contract Test between Backend and Frontend
 image: /images/tdd-simple-contract-test.png
 ---
 
