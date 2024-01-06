@@ -25,7 +25,7 @@ There are two parts to a contract test:
 1. Server: This creates the contract. This contract can be shared with a client.
 2. Client: This consumes the contract and runs its unit tests against it.
 
-# How can one achieve a simple contract?
+## How can one achieve a simple contract?
 
 There are many tools available for contract testing:
 
@@ -44,14 +44,14 @@ Here's the code snippet for Spring Boot.
 
 ```java
 public void exportRestResponse(String resource, HttpMethod httpMethod, HttpStatus httpStatus, String url, WebTestClient.Response responseSpec){
-	String data = responseSpec.expectBody(String.class).getEntityResponse().getBody();
-	... you can also beautify this JSON string.
-	
-	String name = httpMethod + " " + httpStatus + " " + url.replaceAll("\\", "-");
-	... we can't save \ as the file name. So replaced \ with -
-	
-	Path path = new Path("/contracts/"+resource+"/" + name + ".json");
-	FileUtils.save(path, data);
+ String data = responseSpec.expectBody(String.class).getEntityResponse().getBody();
+ ... you can also beautify this JSON string.
+ 
+ String name = httpMethod + " " + httpStatus + " " + url.replaceAll("\\", "-");
+ ... we can't save \ as the file name. So replaced \ with -
+ 
+ Path path = new Path("/contracts/"+resource+"/" + name + ".json");
+ FileUtils.save(path, data);
 }
 ```
 
@@ -82,4 +82,12 @@ I wanted it easy to file a contract, so this is in the file name syntax I adopte
 
 This way, I created a simple contract between the back and front end. These contracts can be copied to the frontend whenever the tests run, and frontend tests can run too.
 
-One can create a simple CI pipeline to automate this further.
+One can create a simple CI pipeline to automate this further. Something like the following:
+
+1. Whenever the backend code get's committed, a CI job runs all the unit tests.
+2. These unit tests create new json contracts.
+3. These JSON contracts get copied to the frontend.
+
+## Conclusion
+
+One need not use a complex library to achieve contract testing between a frontend and a backend. If a good testing process if followed on the backend and frontend tests run over Mocked responses, the backend REST API test responses can be saved to a file and these can serve the basis for frontend tests. Thus, establishing a simple contract.
