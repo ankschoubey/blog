@@ -11,7 +11,6 @@ slug: /slow_computer/
 image: /images/slow_computer.jpg
 ---
 
-![](/images/slow_computer.jpg)
 
 I usually code on slow computers. These things help me keep sane.
 
@@ -23,7 +22,9 @@ I usually code on slow computers. These things help me keep sane.
 
 No GUI software can beat the terminal's speed.
 
-{% include tip.html content=' To speed things up create <code>.sh/.bat</code> files so that you can run repeated commands with a click of a button' %}
+import Tip from '~/components/custom/Tip.astro'
+
+<Tip content='To speed things up create `.sh/.bat` files so that you can run repeated commands with a click of a button' />
 
 ### If your backend is pretty stable, run the packaged file.
 In my case when I am focused on angular development only, I run the `.war` file in a separate terminal.
