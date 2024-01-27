@@ -15,7 +15,7 @@
   "dependencies": {
     "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^4.0.1",
-    "@astrojs/sitemap": "^3.0.3",
+    "@astrojs/sitemap": "^3.0.5",
     "@astrolib/analytics": "^0.5.0",
     "@astrolib/seo": "^1.0.0-beta.5",
     "@fontsource-variable/inter": "^5.0.16",
@@ -23,6 +23,7 @@
     "@types/react-dom": "^18.2.18",
     "astro": "^4.0.3",
     "astro-icon": "^1.0.0-next.2",
+    "astro-robots-txt": "^1.0.0",
     "esbuild": "^0.19.9",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
