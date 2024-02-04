@@ -22,6 +22,7 @@ export interface Post {
   excerpt?: string;
   /**  */
   image?: ImageMetadata | string;
+  hidePostImage?: boolean;
 
   /**  */
   category?: string;

@@ -1,5 +1,4 @@
 ---
-import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -9,67 +8,44 @@ import Layout from '~/layouts/PageLayout.astro';
 import { getItemFromSlug, type SeriesItems } from '~/utils/customCode.ts/ankushUtils';
 
 const metadata = {
-  title: 'TDD',
+  title: 'Clean Code',
 };
 
 const content: SeriesItems[] = [
   {
     title: 'Getting Started',
-    subtitle: 'Understanding why you TDD and Testing are needed',
-    posts: ['testing'],
+    subtitle: '',
+    posts: ['clean_code', 'flat_is_better', 'god_classes', 'complexity', 'code_cleanup','exception_handing', 'leave_it_better'
+  , 'clean_code_tools', 'clean-code-spring-boot', 'refactoring', 'package-json', 'code_configurable', 'conventional-commits', 'disable-stacktrace', 'atomic-commits',
+'naming_conventions','code-reviews', 'response-type-field', 'immutable-objects', 'separate-technical-code', 'v1/plugin-architecture',
+'v1/simple-db', 'v1/api-client-sdk', 'writing-log-messages', 'v1/code-review-checklist', 'v1/separate-service', 'v1/release-semantic-versioning'],
   },
   {
-    title: 'TDD Level 1: Beginner',
-    subtitle: 'Learning the basics of TDD',
-    posts: ['making-tdd-easy', 'method-when-should', 'tdd-backend-example', 'tdd/rest-api-example'],
+    title: 'Clean Tests',
+    subtitle: '',
+    posts: ['writing_test', 'method-when-should', 'test-data-factories', 'fluent-assertions', 'creative-variable-names', 'tdd/page-object-model'],
   },
   {
-    title: 'TDD Level 1: Intermediate',
-    subtitle: 'Expanding our TDD scale by writing cleaner test and writing more tests',
+    title: 'Web Development',
+    subtitle: '',
     posts: [
-      'pre-save-data-validation',
-      'bluring-line-between-unit-integration-test',
-      'test-data-factories',
-      'fluent-assertions',
-      'tdd-over-json',
-      'v1/junit-bug-tracking',
+      'web-dev-clean',
+      'css-tips',
+      'look-at-dom',
+      'good-rest-api-design',
+      'http-status-codes',
+      'tdd/planning-dom',
     ],
   },
   {
-    title: 'TDD Level 2.5: UI',
-    subtitle: 'Making Testing on UI Easier',
-    posts: ['tdd/planning-dom', 'tdd/page-object-model', 'tdd/simple-contract-test'],
+    title: 'Tools',
+    subtitle: '',
+    posts: ['typescript'],
   },
   {
-    title: 'TDD Level 3: TDD With time',
-    subtitle: 'How to continue with TDD practice with time',
-    posts: ['encounter-a-bug', 'current-tdd-approach'],
-  },
-  {
-    title: 'TDD Level 3: Red Flags and Tools 🚩',
-    subtitle: 'Tools',
-    posts: ['spring-boot-junit-faster'],
-  },
-  {
-    title: 'TDD Level 4: Testing Everything++',
-    subtitle: 'How to test everything and ensure the code is self sustainable and self-correcting',
-    posts: ['testing-design-patterns', 'v1/validate-configuration', 'architecture-testing'],
-  },
-  {
-    title: 'TDD Level 5: BDD',
-    subtitle: 'Behavior Driven Development',
-    posts: [
-      'bdd',
-      'need-for-executable-specification',
-      'writing-better-specs',
-      'v1/you-are-following-good-bdd-when',
-      'v1/bdd-vs-tdd',
-    ],
-  },
-  {
-    title: 'Beyond TDD',
-    subtitle: 'Supporting factors',
-    posts: ['promote-tdd-in-a-team', 'after-tdd', 'dev-workflow', 'mutation-testing', 'chaos-engineering'],
+    title: 'Naming Things',
+    subtitle: '',
+    posts: ['naming-design-patterns', 'v1/better-var-name-by-copying'],
   },
 ];
 
@@ -96,19 +72,20 @@ const articleCount = content
   <Hero
     tagline="Ankush's Guide to"
     image={{
-      src: '/images/tdd.png',
       alt: 'Caos Image',
       width: undefined,
       height: undefined,
     }}
   >
     <Fragment slot="title">
-      Test Driven Development <br />
-      <span class="text-accent dark:text-white highlight"> and Beyond</span>
+      Clean 
+      <span class="text-accent dark:text-white highlight">Code</span>
+      <br>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Approaching <span class="text-accent font-bold">Test Driven Development</span> To Become a 5x Developer <br />
+      Creating the <span class="text-accent font-bold">cleanest codebase</span> for you and your teams.<br>
+      <span class="dark:text-orange-400 font-bold">This series is currently in progress</span>
     </Fragment>
   </Hero>
 
@@ -122,8 +99,8 @@ const articleCount = content
     ]}
   />
 
-  <Steps2
-    title="Welcome to Testing First Test Everything series!"
+  <!-- <Steps2
+    title="Welcome to the clean code series!"
     subtitle="In this series of articles, you’ll learn how you can increase your development skill by 5 times by learning something that ensures"
     items={[
       { title: 'You always produce logical bug-free code.' },
@@ -137,9 +114,9 @@ const articleCount = content
         title: 'You produce automatic documentation for anyone else to read.',
       },
     ]}
-  />
+  /> -->
 
-  <Steps
+  <!-- <Steps
     id="resume"
     title="Introduction"
     items={[
@@ -165,7 +142,7 @@ const articleCount = content
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  />
+  /> -->
 
   <!-- Features3 Widget ************** -->
   {

@@ -10,7 +10,9 @@ export const headerData = {
         { text: 'Life', href: getPermalink('non-technical', 'tag') }
       ]
     },
-    { text: 'Test First Test Everything (Series)', href: "/tdd" },
+    { text: 'TDD & Beyond', href: "/tdd" },
+    { text: 'Clean Code', href: "/clean-code" },
+
     // {
     //   text: "Tech Series",
     //   // href: getPermalink(),
