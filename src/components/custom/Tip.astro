@@ -5,10 +5,11 @@ import Tip from './TipComp';
 
 export interface Props {
     content: string;
-    type: string
+    type: string,
+    link?: string
 }
 
-const {content, type='tip'} = Astro.props;
+const {content, type='tip', link} = Astro.props;
 
 const icons = {
     "tip": "tabler:bulb",
@@ -27,6 +28,6 @@ const bgColors = {
 const bgColor = bgColors[type];
 ---
 
-<Tip content={content} bgColor={bgColor}>
+<Tip content={content} bgColor={bgColor} link={link}>
     <Icon name={icon}></Icon>
 </Tip>
