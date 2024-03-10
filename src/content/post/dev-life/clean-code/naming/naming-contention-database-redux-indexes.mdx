@@ -1,0 +1,101 @@
+---
+comments: true
+excerpt: 'Create a clean descriptive index name' 
+tags:
+ - technical
+ - clean-code
+publishDate: 2024-03-10T20:52:08.052481
+last-modified-purpose:
+slug: /software-blog/naming-contention-database-redux-indexes/
+title: Naming Convention for Indexes [Quick Read]
+image: /images/naming-contention-database-redux-indexes.png
+---
+
+I learned this naming convention from Redux Documentation and Web Dev Cody on YouTube.
+
+You can use this convention for
+
+- Any database index
+- Any time you want to create a map for quick retrieval
+
+## "By" Convention
+
+```java
+by({fieldName}{sortOrder}{separatedByAnd})
+```
+
+## In Database
+
+Suppose you have table movies and two MongoDB index
+
+```json
+{"movieId": 1}
+{"movieId": 1, "country": 1, "releaseYear":-1}
+```
+
+Rather than having a naming convention like
+
+```java
+MovieIndex
+MovieCompountIndex
+```
+
+Have a descriptive naming convention that starts with
+
+```java
+ByMovieId
+ByMovieIdAndCountryAndReleaseYearDesc
+```
+
+You can use the same thing in SQL. Just use snake case instead of camel case.
+
+```sql
+by_movie_id
+by_movie_id_and_country_and_release_year_desc
+```
+
+## In Redux
+
+The same convention can be used to create custom indexes in things like Redux.
+
+```json
+movies: {
+  byId: {
+
+    ...
+
+  },
+
+  byMovieIdAndCountryAndReleaseYear:{
+
+    "M-1:india:2024": { // Example
+
+      ...
+
+    },
+
+    ...
+
+  }
+
+}
+```
+
+I'll explain how to create custom indexes in Redux in a later blog post [TODO].
+
+## In Code
+
+Within code, since a map is just an index,
+
+```java
+Map<String, Movie> byMovieId = ...;
+Map<String, Movie> byMovieIdAndCountryAndReleaseYear = ...;
+```
+
+But for code, this may be too much.
+
+***
+
+If you think about it, this is very similar to the JPA naming convention.
+
+**What naming convention do you use for creating indexes?**
