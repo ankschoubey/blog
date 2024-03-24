@@ -19,7 +19,7 @@ export interface ImageProps extends Omit<HTMLAttributes<'img'>, 'src'> {
   srcset?: string | null;
   sizes?: string | null;
   fetchpriority?: 'high' | 'low' | 'auto' | null;
-
+  objectFit: string| null;
   layout?: Layout;
   widths?: number[] | null;
   aspectRatio?: string | number | null;
@@ -113,7 +113,7 @@ const getStyle = ({
   height,
   aspectRatio,
   layout,
-  objectFit = 'cover',
+  objectFit = 'contain',
   objectPosition = 'center',
   background,
 }: {
