@@ -8,7 +8,7 @@ tags:
 publishDate: 2024-03-24T20:52:08.052481
 slug: /software-blog/event-sourcing-spring-boot-implementation
 image: https://mermaid.ink/img/pako:eNptUslu6jAU_RXLKyKRCDIwZPEWr4NaqYNU2k0JC7_4AlFjO3IcWor493ooU16uFMk-PjnnHl_vcC4o4BQvS_GZr4lU6OEl40jXW0WJgkexKeCJMLgSjBFOe7027nnI99HQ9_-gqlG_NCdRN_9WklRrZNkzkJsiB3dkqk03tQL1zOFWCjZTQsIBdgQ4ME9_Gu8QGfMNKQvT2YXk_0S_bdFFXAEHqbUs_xjVJac3G-BqPu-EFwvbi11b9XnP8uozyFs4y3ZU40WqqtxeJOhgnes7Uiu7Jl2tIf9A90vXPbqn6Eko9AIlkBqo9eq8sOPIusd_p78S5GletJCQq0Jw9Pf1hHZKmzrPp5tgRj6oQR19erk7DFbnoOd1X45-ELiPGUhGCqpf8c7AGVZrYJDhVC8pkR8Zzvhe80ijxGzLc5wq2UAfNzbidUF0YnYAK8LfhdDbJSlrt8fpDn_hNA6ieDqOh1EySsIkHA_7eIvT4WgSjEZxmMRRNB3EURjt-_jbKgyCqavJYJyMwzCa7H8AGEscsw?type=png
-title: 5 Step Implementation of Custom Event Sourcing in Spring Boot
+title: 5 Step Implementation of Custom Clean Event Sourcing in Spring Boot (without AggregateRoot)
 ---
 
 <style>
