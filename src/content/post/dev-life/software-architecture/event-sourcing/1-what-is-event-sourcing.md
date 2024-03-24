@@ -6,7 +6,7 @@ tags:
  - devops
  - configuration-management
 publishDate: 2023-12-19T20:52:08.052481
-slug: /what-is-event-sourcing/
+slug: /software-blog/what-is-event-sourcing/
 image: /images/what-is-event-sourcing.png
 title: Understanding Event Sourcing
 ---

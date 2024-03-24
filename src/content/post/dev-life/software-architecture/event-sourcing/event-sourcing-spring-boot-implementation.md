@@ -8,46 +8,40 @@ tags:
 publishDate: 2024-03-24T20:52:08.052481
 slug: /software-blog/event-sourcing-spring-boot-implementation
 image: https://mermaid.ink/img/pako:eNptUslu6jAU_RXLKyKRCDIwZPEWr4NaqYNU2k0JC7_4AlFjO3IcWor493ooU16uFMk-PjnnHl_vcC4o4BQvS_GZr4lU6OEl40jXW0WJgkexKeCJMLgSjBFOe7027nnI99HQ9_-gqlG_NCdRN_9WklRrZNkzkJsiB3dkqk03tQL1zOFWCjZTQsIBdgQ4ME9_Gu8QGfMNKQvT2YXk_0S_bdFFXAEHqbUs_xjVJac3G-BqPu-EFwvbi11b9XnP8uozyFs4y3ZU40WqqtxeJOhgnes7Uiu7Jl2tIf9A90vXPbqn6Eko9AIlkBqo9eq8sOPIusd_p78S5GletJCQq0Jw9Pf1hHZKmzrPp5tgRj6oQR19erk7DFbnoOd1X45-ELiPGUhGCqpf8c7AGVZrYJDhVC8pkR8Zzvhe80ijxGzLc5wq2UAfNzbidUF0YnYAK8LfhdDbJSlrt8fpDn_hNA6ieDqOh1EySsIkHA_7eIvT4WgSjEZxmMRRNB3EURjt-_jbKgyCqavJYJyMwzCa7H8AGEscsw?type=png
-title: Event Sourcing Implementation in Spring Boot from Scratch
+title: 5 Step Implementation of Custom Event Sourcing in Spring Boot
 ---
 
 <style>
   img {
-    background: white
+    background: white;
+    margin: auto
   }
 </style>
 
-In the last post, I described what event sourcing is and what the benefits of doing it are. Event Sourcing helps you:
+In the [last post](/software-blog/what-is-event-sourcing), I described what event sourcing is and what the benefits of doing it are. Event Sourcing helps you:
 
 - Be prepared for the future by creating excellent analytics that are out of the box.
 - Leads to multiple smaller pieces of code over one large piece.
 - It's easier overall compared to regular code.
 - It's cleaner, much more precise, and infinitely reduces the chances of bugs.
 
-This post will discuss how I implemented Event Sourcing in Spring Boot.
+Event sourcing is one of the best pieces of code I have written, something I have been very proud of. I learnt ES from YouTube and implementing a well-architected redux on the front end (which is also message-based). (TODO: Add an article here).
 
-Event sourcing is one of the best pieces of code I have written, something I have been very proud of. I learnt ES as a combination of learning ES from YouTube and implementing a well-architected redux on the front end (which is also message-based) (TODO: Add an article here). I recommend reading my article on why Event Sourcing and Redux are identical.
-
-Note that I did not use existing Spring Related Frameworks and instead created something of my own.
+## Implementing Event Sourcing From Scratch
 
 ES's core is small, but there are pieces to understand precisely. Below, I'll attempt my best to describe ES. Here's what I'll explain:
 
-- Basic Flow of the application
-- Creation of main Event Sourcing Service
-- Creation of Commands
-- Creation of Command Handler
+1. Understanding Basic Flow of the application
+2. Creating an Event Store
+3. Creation of main Event Sourcing Service
+4. Creation of Commands
+5. Creation of Command Handler
 
-There are certain parts of ES that I'd describe later in different blogposts (TODO)
-
-- Chained Commands (Similar to the concept of Redux Thunks)
-- Combine Commands
-- Enhancing data in the event store
-- Resourcing for learning Event Soucing and Message Driven Architecture.
-- How do we implement REST over Event Store? (Including Benefits)
+Note that I did not use existing Spring Related Frameworks and instead created something of my own.
 
 The following is inspired by Axon Framework and multiple YouTube videos.
 
-## The basic flow of the application
+### Step 1: Understand the basic flow of the Event Sourcing
 
 The basic flow of Event sourcing is this.
 
@@ -58,17 +52,11 @@ The basic flow of Event sourcing is this.
 4. After storing it in the Event Store, apply that Command over the domain object.
    - Here, we do not validate since ES includes validated events.
 
-```mermaid
-flowchart  TD
-
-Command  -- Validated -->  Event  -->  EventStore[(EventStore)]  -- apply command -->  DomainObject
-```
-
 For example, suppose you have a `Movie` Domain Object and a command to `UpdateMovieName`. Here's the flow.
 
 ![](https://mermaid.ink/img/pako:eNpNkLFuwjAQhl_l5IlIhAfwwAIdGMoApUMxw9U-iEtsR84lCCHevXFMKZ7O_3369OtuQgdDQopjHS66wsjwsVQehrdrDDK9h97SGh0tgnPoDZQlfGJt085IWFSkz7A6wsjBysA6MGyoJmwpwXN4GrLQvPXkGZKnxZ5GZIy2HCLtJyPevkTFIbHYNPUVdC4hwSVq1hI_7ZPHbnZ6DYviv8M-dwzfP6QZSrhYrqDLpcAP9EFMhaPo0JrhIrd0BiW4IkdKyGE0GM9KKH8fOOw4bK9eC8mxo6nInqXFU0T3Fzbov0J4fO-_NQx8oA?type=png)
 
-[Original](https://mermaid.live/edit#pako:eNpNkLFuwjAQhl_l5IlIhAfwwAIdGMoApUMxw9U-iEtsR84lCCHevXFMKZ7O_3369OtuQgdDQopjHS66wsjwsVQehrdrDDK9h97SGh0tgnPoDZQlfGJt085IWFSkz7A6wsjBysA6MGyoJmwpwXN4GrLQvPXkGZKnxZ5GZIy2HCLtJyPevkTFIbHYNPUVdC4hwSVq1hI_7ZPHbnZ6DYviv8M-dwzfP6QZSrhYrqDLpcAP9EFMhaPo0JrhIrd0BiW4IkdKyGE0GM9KKH8fOOw4bK9eC8mxo6nInqXFU0T3Fzbov0J4fO-_NQx8oA)
+<!-- [Original](https://mermaid.live/edit#pako:eNpNkLFuwjAQhl_l5IlIhAfwwAIdGMoApUMxw9U-iEtsR84lCCHevXFMKZ7O_3369OtuQgdDQopjHS66wsjwsVQehrdrDDK9h97SGh0tgnPoDZQlfGJt085IWFSkz7A6wsjBysA6MGyoJmwpwXN4GrLQvPXkGZKnxZ5GZIy2HCLtJyPevkTFIbHYNPUVdC4hwSVq1hI_7ZPHbnZ6DYviv8M-dwzfP6QZSrhYrqDLpcAP9EFMhaPo0JrhIrd0BiW4IkdKyGE0GM9KKH8fOOw4bK9eC8mxo6nInqXFU0T3Fzbov0J4fO-_NQx8oA) -->
 
 These are typical parts of the above flow.
 
@@ -92,9 +80,9 @@ When a `Command` comes to `EventStoreService.`
 
 ![](https://mermaid.ink/img/pako:eNptUslu6jAU_RXLKyKRCDIwZPEWr4NaqYNU2k0JC7_4AlFjO3IcWor493ooU16uFMk-PjnnHl_vcC4o4BQvS_GZr4lU6OEl40jXW0WJgkexKeCJMLgSjBFOe7027nnI99HQ9_-gqlG_NCdRN_9WklRrZNkzkJsiB3dkqk03tQL1zOFWCjZTQsIBdgQ4ME9_Gu8QGfMNKQvT2YXk_0S_bdFFXAEHqbUs_xjVJac3G-BqPu-EFwvbi11b9XnP8uozyFs4y3ZU40WqqtxeJOhgnes7Uiu7Jl2tIf9A90vXPbqn6Eko9AIlkBqo9eq8sOPIusd_p78S5GletJCQq0Jw9Pf1hHZKmzrPp5tgRj6oQR19erk7DFbnoOd1X45-ELiPGUhGCqpf8c7AGVZrYJDhVC8pkR8Zzvhe80ijxGzLc5wq2UAfNzbidUF0YnYAK8LfhdDbJSlrt8fpDn_hNA6ieDqOh1EySsIkHA_7eIvT4WgSjEZxmMRRNB3EURjt-_jbKgyCqavJYJyMwzCa7H8AGEscsw?type=png)
 
-[Original](https://mermaid.live/edit#pako:eNptUslu6jAU_RXLKyKRCDIwZPEWr4NaqYNU2k0JC7_4AlFjO3IcWor493ooU16uFMk-PjnnHl_vcC4o4BQvS_GZr4lU6OEl40jXW0WJgkexKeCJMLgSjBFOe7027nnI99HQ9_-gqlG_NCdRN_9WklRrZNkzkJsiB3dkqk03tQL1zOFWCjZTQsIBdgQ4ME9_Gu8QGfMNKQvT2YXk_0S_bdFFXAEHqbUs_xjVJac3G-BqPu-EFwvbi11b9XnP8uozyFs4y3ZU40WqqtxeJOhgnes7Uiu7Jl2tIf9A90vXPbqn6Eko9AIlkBqo9eq8sOPIusd_p78S5GletJCQq0Jw9Pf1hHZKmzrPp5tgRj6oQR19erk7DFbnoOd1X45-ELiPGUhGCqpf8c7AGVZrYJDhVC8pkR8Zzvhe80ijxGzLc5wq2UAfNzbidUF0YnYAK8LfhdDbJSlrt8fpDn_hNA6ieDqOh1EySsIkHA_7eIvT4WgSjEZxmMRRNB3EURjt-_jbKgyCqavJYJyMwzCa7H8AGEscsw)
+<!-- [Original](https://mermaid.live/edit#pako:eNptUslu6jAU_RXLKyKRCDIwZPEWr4NaqYNU2k0JC7_4AlFjO3IcWor493ooU16uFMk-PjnnHl_vcC4o4BQvS_GZr4lU6OEl40jXW0WJgkexKeCJMLgSjBFOe7027nnI99HQ9_-gqlG_NCdRN_9WklRrZNkzkJsiB3dkqk03tQL1zOFWCjZTQsIBdgQ4ME9_Gu8QGfMNKQvT2YXk_0S_bdFFXAEHqbUs_xjVJac3G-BqPu-EFwvbi11b9XnP8uozyFs4y3ZU40WqqtxeJOhgnes7Uiu7Jl2tIf9A90vXPbqn6Eko9AIlkBqo9eq8sOPIusd_p78S5GletJCQq0Jw9Pf1hHZKmzrPp5tgRj6oQR19erk7DFbnoOd1X45-ELiPGUhGCqpf8c7AGVZrYJDhVC8pkR8Zzvhe80ijxGzLc5wq2UAfNzbidUF0YnYAK8LfhdDbJSlrt8fpDn_hNA6ieDqOh1EySsIkHA_7eIvT4WgSjEZxmMRRNB3EURjt-_jbKgyCqavJYJyMwzCa7H8AGEscsw) -->
 
-## Making a simple event store
+### Step 2: Making a simple event store
 
 Consider the table below as an event store.
 
@@ -117,7 +105,7 @@ I'll describe how we could enhance data in the event store for better analytics 
 
 Next, I will describe how I built the `CommandHandler`.
 
-### Building CommandHandler interface and implementations
+### Step 3: Building CommandHandler interface and implementations
 
 I created two things that would help me.
 
@@ -194,7 +182,7 @@ void updateMovieCommandTest(){
 }
 ```
 
-### Building EventSourcingService
+### Step 4: Building EventSourcingService
 
 The EventSourcingService is the one which manages the event store and calls the appropriate CommandHandler.
 
@@ -235,7 +223,7 @@ Here's a description of what each method does.
 - `generateSnapshots`
   - `gellAllFromStore` and then bulk save into the Snapshot repo.
 
-### Calling the appropriate handler
+### Step 5: Calling the appropriate handler
 
 In the `putCommand` and `getOneFromStore` sections, we must find a command's appropriate `CommandHandler`. This can be quickly done in Spring Boot by finding a bean for a generic type.
 
@@ -265,6 +253,13 @@ Also, there are specific rules to follow when developing event sourcing. Which I
 
 ## Next
 
+There are certain parts of ES that I'd describe later in different blogposts (TODO)
+
 - Read Rules of Event Sourcing  (TODO)
 - Why I love event sourcing. (TODO)
 - Unit Testing Event Sourcing  (TODO)
+- Chained Commands (Similar to the concept of Redux Thunks)
+- Combine Commands
+- Enhancing data in the event store
+- Resourcing for learning Event Soucing and Message Driven Architecture.
+- How do we implement REST over Event Store? (Including Benefits)
