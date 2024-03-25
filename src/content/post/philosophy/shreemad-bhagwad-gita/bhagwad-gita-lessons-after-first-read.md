@@ -111,19 +111,19 @@ I'll split this into a few sections.
 
 <img src="/images/life-blog/gita/Peacock Feather Separator.png" style="max-height:80px; margin: auto">
 
-## Section 1: **Karma**
+### Section 1: **Karma**
 
-### Do your Karma
+#### Do your Karma
 
 The Gita says that Karma cannot be avoided. No matter how much one detaches. Gita teaches us to detach from the Outcome of our actions, but we have to do our Karma in the best way possible. There is no way to avoid it.
 
-### Detach from the Outcome
+#### Detach from the Outcome
 
 The problem is we get attached to the Outcome. We start doing things because we want to get something out. That's wrong. One should do their Karma because they must do it without attaching themselves to the Outcome.
 
 The task should be completed in itself. And then you leave.
 
-### Why detach from the Outcome: The best result is when you detach from the Outcome
+#### Why detach from the Outcome: The best result is when you detach from the Outcome
 
 When one is detached, they do their tasks to it's best. When we are attached, we fear. This reduces the quality of what we do.
 
@@ -131,10 +131,9 @@ Consider your mental RAM. You are studying for an exam. If you were not worried,
 
 <img src="/images/life-blog/gita/DALL·E Mar 25 Graphical Representation.png" style="max-height:500px; margin: auto">
 
-
 So, do your duty and detach from the Outcome.
 
-### Why detach from Outcome: because you don't have control
+#### Why detach from Outcome: because you don't have control
 
 I used to try to control everything. I used to "manipulate" reality and people to get what I wanted. But I never had any control over them.
 
@@ -144,7 +143,7 @@ So, we leave thinking about the Outcome to Shree Krishna. And trust he'd make th
 
 <img src="/images/life-blog/gita/DALL·E Arjuna Krishna Conversation.png" style="max-height:500px; margin: auto">
 
-### Karma is the offering we make to Shree Krishna
+#### Karma is the offering we make to Shree Krishna
 
 Yagya means offering / sacrifice to God. For Shree Krishna, the highest form of offering is doing your Karma to its best, without attachment and leaving it to Shree Krishna.
 
@@ -156,7 +155,7 @@ Worried about the Outcome? Leave it to Shree Krishna. Your work was to do the Ka
 
 Thinking this way makes doing Karma easy and effortless. And easy and effortless is a theme we see in the Gita. By Easy and Effortless, I mean the mental state of a Yogi.
 
-### Good or Bad in Karma and Pakahnd (fakeness)
+#### Good or Bad in Karma and Pakahnd (fakeness)
 
 In Gita, there is no standard outside metric for good or bad. It's a mix of outside and inside.
 
@@ -170,7 +169,7 @@ You should avoid pakahnd.
 
 When you do something, do not do it for yourself; do it because it needs to be done. Do it as a duty, offer it to God, and leave the rest.
 
-### Summarizing Karma Yog
+#### Summarizing Karma Yog
 
 All in all, do your duty to it's best. Don't worry about the Outcome. Leave it to God. Everything will be fine. You don't have to worry.
 
@@ -180,9 +179,9 @@ So, let go of the Outcome. Everything will be fine. :)
 
 <img src="/images/life-blog/gita/Peacock Feather Separator.png" style="max-height:80px; margin: auto">
 
-## Sthir Buddhi (Stable Mind)
+### Section 2: Sthir Buddhi (Stable Mind)
 
-### Yogi / Siddha Purush
+#### Yogi / Siddha Purush
 
 A Yogi is someone who is flowing with nature. Ups/Downs. It's not rigidity. It's a soft discipline. It's a calm mind in every situation.
 
@@ -206,7 +205,7 @@ Here are different types of Yog.
 - Bhakti Yog (Yoga of Division)
   - One who devotes all his trust to the supreme lord.
 
-### The goal of the Gita is for us to become free from this Maya and the cycle of rebirth
+#### The goal of the Gita is for us to become free from this Maya and the cycle of rebirth
 
 The problem with us humans is we attach ourselves to worldly affairs. When we attach ourselves to worldly affairs, we are effected by it and therefore we cannot concentrate on Yog.
 
@@ -214,7 +213,7 @@ By attaching ourselves to the material universe, we focus on Rajo Gun. Rajo Gun 
 
 The goal the Gita explains is to become free of this attachment, and when we become free of attachment, we attain Mukti. We end the cycle of rebirth.
 
-### Keep your focus on God
+#### Keep your focus on God
 
 To detach from worldly affairs, we need to attach ourselves to a higher power and surrender.
 
@@ -241,7 +240,7 @@ The way Gita is written it's as if God is talking to you. God speaks it. So, whe
 
 You feel invincible concerning worries. The God himself is with me. What do I have to worry about? I need to do my Karma and leave. And keep my mind attached to God. Everything will be fine.
 
-### Dyana (Meditation) and Swasa (Breath)
+#### Dyana (Meditation) and Swasa (Breath)
 
 Gita suggests meditation as a way to control the mind. And it describes a specific protocol for it.
 
@@ -255,7 +254,7 @@ Experiencially, this ultimate control is not rigid. It's a flow (like everything
 
 Meditation and Swasa are something that our current science backs up a lot! [Todo For me: Learn Meditation and Breathwork Protocols from Andrew Huberman and create Meditate one a day]
 
-### Summarizing Sthir Buddi
+#### Summarizing Sthir Buddi
 
 We need to become Sthir Buddhi, someone who is not attached to worldly affairs but does their duty to its best.
 
@@ -267,21 +266,21 @@ Meditate and control your breath.
 
 <img src="/images/life-blog/gita/Peacock Feather Separator.png" style="max-height:80px; margin: auto">
 
-## Our Prakriti / Nature
+### Section 3: Our Prakriti / Nature
 
-### We are not the doer of our actions, it's our nature
+#### We are not the doer of our actions, it's our nature
 
 The Gita says it's not we who initiate our actions; it's our nature.
 
 Look at a person who drinks a lot, sleeps all day, does drugs, etc; what's making him do these things? It's their nature.
 
-### Free ourselves
+#### Free ourselves
 
 The Gita says that the one who recognizes they are not the doer of their action is free.
 
 Here, it means we don't produce the Outcome. Our Prakriti (nature) is the doer of actions.
 
-### The 3 Modes of Prakriti and action
+#### The 3 Modes of Prakriti and action
 
 Our Prakriti comprises 3 Gunas that lead to 3 types of action:
 
@@ -312,7 +311,7 @@ This frame of thinking has been handy for me; when doing actions, if I have been
 
 <img src="/images/life-blog/gita/Gunas Prakriti Visualization.png" style="max-height:500px; margin: auto">
 
-### We can choose
+#### We can choose
 
 According to the Gita, we are born with a set Prakriti. This depends on all of our Karma in the past lifetimes.
 
@@ -320,7 +319,7 @@ But even with this default setting, we can choose our Prakriti.
 
 Our gunas act on us all the time. But by consciously choosing what to allow and what not to allow, we can influence our mool prakriti (core nature) and move towards one another.
 
-### When we choose one, it increases, the other two decreases
+#### When we choose one, it increases, the other two decreases
 
 If we act in Satvgun, Rajo and Tamo will be reduced.
 
@@ -328,7 +327,7 @@ When we choose to act in Rajo, Sato and Tamo reduce.
 
 If we choose Tamo, Stato and Rajo will be reduced.
 
-### Nirgun: Liberation from modes of Prakriti
+#### Nirgun: Liberation from modes of Prakriti
 
 Essentially, Gunnas make us act in specific ways. The Gita says one who can see the effects of Gunnas acting is free from it.
 
@@ -338,7 +337,7 @@ If you are conscious of the fact that your attachment to wealth is not letting y
 
 Do this for enough time, and it'll keep increasing.
 
-### Indriya, Maan Buddi Aatma and Parmatma
+#### Indriya, Maan Buddi Aatma and Parmatma
 
 Our Indriya are our senses; the Gita suggests more than five senses. (I don't remember them on top of the mind). Sight, Sounds, Smell, Taste, Touch.
 
@@ -356,7 +355,7 @@ We must use our intellect (Buddhi) to control our maan (mind's wants). Use Maan 
 
 A way to think about this control is the detachment of our senses from the stimulus, our mind from our senses and our intellect from our mind.
 
-### Summarizing Prakriti and Action
+#### Summarizing Prakriti and Action
 
 When Tamo Gun fully controls our senses. Our mind and intellect don't get space.
 
@@ -371,7 +370,7 @@ We control our mind using our intellect and use our mind to control our senses. 
 
 <img src="/images/life-blog/gita/Peacock Feather Separator.png" style="max-height:80px; margin: auto">
 
-## Vishwaroop (The grand reality of the supreme lord)
+### Section 4: Vishwaroop (The grand reality of the supreme lord)
 
 The Gita has a much better description of what I'll describe, so much so that I was in awe and bliss for three weeks after reading the chapter on Vishwa Roop.
 
@@ -402,13 +401,13 @@ Even the gods and all their powers are enabled by Shree Krishna.
 
 He says even if you worship other gods, you are inevitably worshipping him because he enables all their powers.
 
-### Everything in the material realm is made up of him. But he is more
+#### Everything in the material realm is made up of him. But he is more
 
 The Gita explains Shree Krishna is more than his creations. He controls the whole of existence. But the whole of existence does not prevent him.
 
 He is beyond these things.
 
-### Shree Krishna and I were there all of the time. Our souls are immortal
+#### Shree Krishna and I were there all of the time. Our souls are immortal
 
 Shree Krishna explained that he had told the Bhagwad Gita to the Lord Sun a few thousand years ago. Lord Sun passed the Gita's knowledge to his son and so on for some time. But that knowledge was lost. He is saying it to Arjuna again because Arjun is his devotee.
 
@@ -420,7 +419,7 @@ He says there was no time when Arjun was not there. There was no time when Shree
 
 But Shree Krishna does.
 
-### Formlessness and Creation, Preservation and Destruction
+#### Formlessness and Creation, Preservation and Destruction
 
 Shree Krishna is formless. But it'd be hard for us to perceive him. So, he uses his Yog Maya to create a form for us.
 
@@ -434,7 +433,7 @@ This is where the famous like from Oppenheimer comes from.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pqZqfTOxFhY?si=sD0RNgICrZX-IUU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: auto"></iframe>
 
-### Dharma sansthapanathaya, sambhavami Yuge Yuge
+#### Dharma sansthapanathaya, sambhavami Yuge Yuge
 
 Shree Krishna says that he takes an avatar in every Yug to balance the world and reestablish Dharma.
 
@@ -442,7 +441,7 @@ In Hinduism, time is cyclical. It repeats in 4 parts. Shree Krishna takes his av
 
 Here's another way to think about it: Shree Krishna is in everything and enables all qualities. He says, haar maat mano, yudh karo. (don't feel defeated, fight). Each moment is new. Each moment is an opportunity to reestablish Dharma, and since Shree Krishna is present at all times, he is always there. It's easier to explain this in Hindi. Har pal, Har Yug me Bhagwan bolte hai, vo avatar lete hai, to abhi agar kuch bura bhi hua hai, to vo avatar le rhe.
 
-### Surrenderender unto me, and I will take away all your worries
+#### Surrenderender unto me, and I will take away all your worries
 
 Shree Krishna says, surrender onto me. He will take away all the worries, including the Karmic cycle.
 
@@ -454,7 +453,7 @@ He also said that since other God's powers are derived from him, while they can 
 
 I had been an atheist for some time. One of the things I lacked was trusting that everything would be okay. Often, terms like "Trust in the universe" would make no sense to me. Objectively, for someone reading, it won't make sense. But experientially, now I understand what it is to surrender and have faith. Before, I felt all alone trying to control everything. Now I don't. A superior being is in charge here. I am not in charge. Even if you believe in the Universe, it's the same concept. There is something more significant in charge here; you can sit back, relax and surrender your control of the Outcome.
 
-### Summarizing Vishwaroop
+#### Summarizing Vishwaroop
 
 Shree Krishna is in everything. He is everywhere. Krishna enables everything. He is Sanathan. He was always there. He will always be there.
 
@@ -466,7 +465,7 @@ He says surrender to me.
 
 <img src="/images/life-blog/gita/Peacock Feather Separator.png" style="max-height:80px; margin: auto">
 
-## Agar Arjun jaisa archer ho aud Krishna uske sarthi ho, to Dharma Satya etc. ki hi jeet hoti hai
+### Section 5: Agar Arjun jaisa archer ho aud Krishna uske sarthi ho, to Dharma Satya etc. ki hi jeet hoti hai
 
 Towards the end of Gita, Sanjay says the above.
 
