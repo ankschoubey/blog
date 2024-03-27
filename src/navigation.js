@@ -2,17 +2,18 @@ import { getPermalink, getBlogPermalink, getAsset, CATEGORY_BASE } from './utils
 
 export const headerData = {
   links: [
+
+    { text: 'Software Blog', href: getPermalink('technical', 'tag') },
     {
-      text: "Blogs",
+      text: "Software Series",
       href: getPermalink(),
       links: [
-        { text: 'Tech', href: getPermalink('technical', 'tag') },
-        { text: 'Life', href: getPermalink('non-technical', 'tag') }
+        { text: 'TDD & Beyond', href: "/tdd" },
+        { text: 'Clean Code', href: "/clean-code" },      
       ]
     },
-    { text: 'TDD & Beyond', href: "/tdd" },
-    { text: 'Clean Code', href: "/clean-code" },
-
+    { text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
+    
     // {
     //   text: "Tech Series",
     //   // href: getPermalink(),
