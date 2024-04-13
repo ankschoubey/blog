@@ -6,7 +6,7 @@ tags:
  - responsibility
 publishDate: 2023-08-27T20:52:08.052481
 last-modified-purpose: 
-slug: /v1/phase-1
+slug: /life-blog/phase-1
 title: Journey Through Phase 1 Challenge of the Live Hard Program
 toc: false
 image: /images/phase1/2.jpg
