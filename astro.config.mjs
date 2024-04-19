@@ -40,7 +40,7 @@ export default defineConfig({
     JavaScript: true,
     SVG: true,
     Logger: 1
-  }), react(), robotsTxt()],
+  }), react()],
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
     rehypePlugins: [responsiveTablesRehypePlugin]
