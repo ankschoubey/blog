@@ -1,6 +1,6 @@
 site:
   name: Ankush Choubey
-  site: 'https://www.ankushchoubey.com'
+  site: 'https://www.ankushchoubey.com/'
   base: '/'
   trailingSlash: false
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
@@ -10,7 +10,7 @@ metadata:
   title:
     default: Ankush Choubey
     template: '%s — Ankush Choubey'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Full Stack Developer: Microservices, Architecture, TDD, Domain Driven Design, Spring Boot, React, etc."
   robots:
     index: true
     follow: true
