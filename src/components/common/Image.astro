@@ -51,10 +51,26 @@ if (_image !== null && typeof _image === 'object') {
 }
 
 const imgSrc = image?.src.startsWith("/images")? "../../assets"+image?.src: image?.src;
-const publicImage = !imgSrc?.startsWith("../../assets")
+let publicImage = !imgSrc?.startsWith("../../assets") || true
+
+const skip = [
+  "event",
+  "communication"
+]
+
+for(const skipWord of skip){
+  if(publicImage){
+    break;
+  }
+  publicImage = image?.src.includes(skipWord) || true;
+}
+
 if(!publicImage){
   console.log(imgSrc)
 }
+
+const importedImage = imgSrc && !publicImage? import(imgSrc): null;
+
 ---
-{publicImage &&  <img src={image?.src} {...image.attributes} />}
-{!publicImage && (!image ? <Fragment /> : <OptimizedImage src={import(imgSrc)} {...image.attributes} />)}
+{publicImage &&  <img src={image?.src} {...image?.attributes} />}
+{!publicImage && (!image ? <Fragment /> : <OptimizedImage src={importedImage} {...image?.attributes} />)}
