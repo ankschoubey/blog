@@ -200,13 +200,13 @@ I now had distinct and descriptive variable names that I instantly loved and enj
 I have used a similar approach in other parts:
 
 - I took naming tip libraries such as DevExpress Js while creating custom UI components.
-- Taking tips from Axon Framework for Event Sourcing while implementing my event sourcing framework (todo link here).
+- Taking tips from [Axon Framework for Event Sourcing while implementing my event sourcing framework](/software-blog/event-sourcing-spring-boot-implementation/).
 
 ### 5 - Follow an existing naming convention
 
 In the previous tip, I gave an example of the JPA query naming convention and how I used it in my code.
 
-There are also other naming conventions, such as BEM for CSS. That one can be used. I’d be dedicated to a whole separate blog post on naming conventions and enforcing them within a team. So, I won’t describe much of it here. (todo: link to post).
+There are also other naming conventions, such as BEM for CSS. That one can be used. I’d be dedicated to a whole separate blog post on naming conventions and enforcing them within a team which include information about BEM and finding existing naming conventions. So, I won’t describe much of it here. Read "[Setting up Naming Conventions Within Team](/software-blog/naming-conventions-within-teams/)"
 
 ### 6 - Update and iterate over time
 
