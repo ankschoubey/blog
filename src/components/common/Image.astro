@@ -50,6 +50,8 @@ if (_image !== null && typeof _image === 'object') {
   image = await getImagesOptimized(_image, props);
 }
 
+// Below does not work
+
 const imgSrc = image?.src.startsWith("/images")? "../../assets"+image?.src: image?.src;
 let publicImage = !imgSrc?.startsWith("../../assets") || true
 

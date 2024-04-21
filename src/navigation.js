@@ -37,6 +37,12 @@ export const headerData = {
   ],
   actions: [
     {
+      text: 'Search',
+      // target:"_blank",
+      variant: "primary", 
+      href: '/search',
+    },
+    {
       text: 'Resume',
       target:"_blank",
       variant: "secondary", 

@@ -1,0 +1,27 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Search Ankush Choubey - Full Stack Developer',
+};
+
+import SearchBox from "../components/custom/SearchBox";
+
+const allPosts = Object.values(import.meta.glob('../content/**/*.md', { eager: true }));
+console.log(allPosts)
+---
+
+<Layout {metadata}>
+    <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-7xl">
+
+        <div class="container flex flex-col align-center" style="width: 100%;">
+            <h1 class="text-xl font-bold p-2">Search</h1>
+            <h2 class="text-l font-bold p-2">This page is Currently Being Built</h2>
+            <div>
+                <SearchBox client:only {allPosts}></SearchBox>
+            </div>
+        </div>
+
+</section>
+
+</Layout>
