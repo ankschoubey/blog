@@ -6,7 +6,7 @@ tags:
  - business
 publishDate: 2021-08-01T20:42:15.329202
 use_math: true
-slug: /copying_products/
+slug: /life-blog/copying_products/
 ---
 
 While building a product there is a shortcut which many companies take which is they copy features from others.

@@ -8,7 +8,7 @@ tags:
  - truth
 publishDate: 2021-08-01T20:42:15.451427
 title: Definitions
-slug: /definition/
+slug: /life-blog/definition/
 ---
 
 There are many terms that are not hardcore logic.

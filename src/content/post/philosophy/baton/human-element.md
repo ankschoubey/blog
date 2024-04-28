@@ -6,7 +6,7 @@ tags:
  - tdd
 publishDate: 2022-03-18T20:52:08.052481
 last-modified-purpose:
-slug: /human-intuition/
+slug: /life-blog/human-intuition/
 title: Human Intuition while working in Technology
 ---
 

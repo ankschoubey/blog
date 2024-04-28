@@ -6,11 +6,11 @@ tags:
  - for-future-me
  - baton
 publishDate: 2021-08-29T20:52:08.052481
-slug: /decentralize-high-tech/
+slug: /life-blog/decentralize-high-tech/
 title: Decentralization of High Tech
-image: /images/decentralize-high-tech.jpg
+image: /images/life-blog/decentralize-high-tech.jpg
 ---
-![](/images/decentralize-high-tech.jpg) [^2]
+![](/images/life-blog/decentralize-high-tech.jpg) [^2]
 
 Every sufficiently advanced technology is indistinguishable from magic.[^1] But as more and more people understand and use the technology, the magic fades and it becomes an everyday affair.
 

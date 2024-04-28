@@ -8,10 +8,10 @@ tags:
  - experience
 title: First Hackathon
 publishDate: 2021-08-01T20:42:15.491429
-slug: /first_hackathon/
-image: /images/first_hackathon.jpg
+slug: /software-blog/first_hackathon/
+image: /images/software-blog/first_hackathon.jpg
 ---
-![](/images/first_hackathon.jpg)
+![](/images/software-blog/first_hackathon.jpg)
 
 <sup>Photo by <a href="https://unsplash.com/@synkevych?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Roman Synkevych</a> on <a href="https://unsplash.com/s/photos/code?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>
 

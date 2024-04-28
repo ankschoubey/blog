@@ -9,10 +9,10 @@ tags:
  - configuration-management
 publishDate: 2022-04-27T20:42:15.360789
 title: Make your code configurable.
-slug: /code_configurable/
+slug: /software-blog/code_configurable/
 ---
 
-In one of the posts, I wrote previously I explain how [programming has become configuration](/config/).
+In one of the posts, I wrote previously I explain how [programming has become configuration](/software-blog/config/).
 
 Once you have made your software that might be part of it that might need change. Most changes are simple such as:
 - Increasing the font
@@ -45,4 +45,4 @@ public static final String successMessage = "SUCCESSFUL";
 public String successMessage;
 ```
 
-Similar: [Programming is now Configuring](/config/)
+Similar: [Programming is now Configuring](/software-blog/config/)

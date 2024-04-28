@@ -7,11 +7,11 @@ tags:
  - collection-of-thoughts
  - peace
 title: Meditation is how you become peaceful all the time
-slug: /meditation/
+slug: /life-blog/meditation/
 publishDate: 2021-04-28T20:42:15.624828
-image: /images/meditation.jpg
+image: /images/life-blog/meditation.jpg
 ---
-![](/images/meditation.jpg)
+![](/images/life-blog/meditation.jpg)
 
 [Photo by cottonbro studio](https://www.pexels.com/photo/man-in-red-robe-sitting-on-tree-branch-5386374/)
 

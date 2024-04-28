@@ -7,7 +7,7 @@ tags:
  - non-technical
 use_math: true
 publishDate: 2023-04-20T20:42:15.242622
-slug: /v1/karma-karmafal/
+slug: /life-blog/karma-karmafal/
 image: /images/v1-karma-karmafal.jpg
 ---
 

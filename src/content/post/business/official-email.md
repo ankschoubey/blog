@@ -6,11 +6,11 @@ tags:
  - business
 title: If it's official, communicate via email
 publishDate: 2021-08-01T20:42:15.386733
-slug: /official_email/
-image: /images/official_email/1.jpg
+slug: /life-blog/official_email/
+image: /images/life-blog/official_email/1.jpg
 ---
 
-![](/images/official_email/1.jpg)
+![](/images/life-blog/official_email/1.jpg)
 
 If you are having a deal or an agreement or a negotiation of some kind. **Do it via email**.
 

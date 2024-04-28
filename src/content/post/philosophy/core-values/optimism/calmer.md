@@ -8,7 +8,7 @@ tags:
  - peace
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
-slug: /calmer/
+slug: /life-blog/calmer/
 title: Strategies to be Calmer
 toc: false
 ---

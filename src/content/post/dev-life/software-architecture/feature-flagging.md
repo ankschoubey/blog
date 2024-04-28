@@ -7,13 +7,13 @@ tags:
  - configuration-management
 publishDate: 2022-08-28T20:52:08.052481
 last-modified-purpose:
-slug: /feature-flagging/
+slug: /software-blog/feature-flagging/
 title: Feature Flagging
 toc: false
-image: /images/feature-flagging.jpg
+image: /images/software-blog/feature-flagging.jpg
 ---
 
-![](/images/feature-flagging.jpg)
+![](/images/software-blog/feature-flagging.jpg)
 
 Photo by <a href="https://unsplash.com/@isaactanlishung?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isaac Li Shung Tan</a> on <a href="https://unsplash.com/s/photos/on-off?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 

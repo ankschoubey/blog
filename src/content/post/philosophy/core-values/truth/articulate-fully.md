@@ -7,7 +7,7 @@ tags:
  - non-technical
 publishDate: 2022-06-29T20:52:08.052481
 last-modified-purpose: draft
-slug: /articulate/
+slug: /life-blog/articulate/
 title: Articulate Fully
 ---
 

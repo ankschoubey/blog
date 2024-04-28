@@ -9,9 +9,9 @@ tags:
  - code-review
 publishDate: 2022-07-14T20:52:08.052481
 last-modified-purpose:
-slug: /atomic-commits/
+slug: /software-blog/atomic-commits/
 title: Writing better commits with Atomic Commits
-image: /images/atomic-commits.svg
+image: /images/software-blog/atomic-commits.svg
 toc: false
 ---
 
@@ -57,7 +57,7 @@ feat(api): add endpoint for streaming download /downloads
 2. This push should involve both test and code.
 3. The commit message should be accurate.
 - Each commit should only include a small number of changes.
-- Use a commit format like [conventional commits](/conventional-commits) that separates different types of commits: 
+- Use a commit format like [conventional commits](/software-blog/conventional-commits) that separates different types of commits: 
     - `feat`: feature
     - `refactor`: refactoring
     - `fix`: bug fix

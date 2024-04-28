@@ -8,10 +8,10 @@ tags:
  - information-system
 title: Cloud is Worth the Hype
 publishDate: 2021-08-01T20:42:15.430842
-slug: /cloud/
-image: /images/cloud.jpg
+slug: /software-blog/cloud/
+image: /images/software-blog/cloud.jpg
 ---
-![](/images/cloud.jpg)
+![](/images/software-blog/cloud.jpg)
 
 <sub>Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Taylor Vick</a> on <a href="https://unsplash.com/s/photos/server?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 

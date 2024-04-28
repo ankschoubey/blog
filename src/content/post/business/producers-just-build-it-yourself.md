@@ -6,7 +6,7 @@ tags:
  - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.296625
-slug: /build_it_yourself/
+slug: /software-blog/build_it_yourself/
 image: https://www.teslarati.com/wp-content/uploads/2019/08/tesla-gigafactory-4-europe.jpg
 ---
 

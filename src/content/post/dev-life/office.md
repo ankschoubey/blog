@@ -8,7 +8,7 @@ tags:
  - business
 publishDate: 2021-08-01T20:42:15.471453
 title: Office is just school for adults
-slug: /the_office/
+slug: /software-blog/the_office/
 ---
 
 For many, working 9-5 often is considered non-ideal. Instead, wishing to work for themselves or not to work at all.

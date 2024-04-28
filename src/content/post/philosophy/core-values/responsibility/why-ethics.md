@@ -7,12 +7,12 @@ tags:
  - decision-making
  - mature
 title: Why Ethics? 
-slug: /why_ethics/
+slug: /life-blog/why_ethics/
 publishDate: 2021-08-01T20:42:15.540962
-image: /images/why_ethics.jpg
+image: /images/life-blog/why_ethics.jpg
 excerpt: "Long term impacts"
 ---
-![](/images/why_ethics.jpg)
+![](/images/life-blog/why_ethics.jpg)
 
 <sup>Photo by <a href="https://unsplash.com/@tylerdq?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tyler Quiring</a> on <a href="https://unsplash.com/s/photos/crow?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>
 

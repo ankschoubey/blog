@@ -6,7 +6,7 @@ tags:
  - technical
  - web-development
 publishDate: 2021-08-11T20:52:08.052481
-slug: /package-json/
+slug: /software-blog/package-json/
 title: Tips for working with `package.json`
 ---
 

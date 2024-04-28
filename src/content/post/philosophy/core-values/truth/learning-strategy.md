@@ -8,7 +8,7 @@ tags:
  - systems
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose: Added section on Flash Cards
-slug: /learning-strategy/
+slug: /life-blog/learning-strategy/
 title: Learning Strategies For Development
 ---
 

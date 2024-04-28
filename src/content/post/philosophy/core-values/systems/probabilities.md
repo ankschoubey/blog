@@ -8,15 +8,15 @@ tags:
  - systems
 title: Probabilities
 publishDate: 2021-08-01T20:42:15.402337
-slug: /probabilities/
-image: /images/probabilities.png
+slug: /life-blog/probabilities/
+image: /images/life-blog/probabilities.png
 ---
 
 This article is written at age 23. My views will be more informed in the future.
 
 ***
 
-![](/images/probabilities.png)
+![](/images/life-blog/probabilities.png)
 
 Success can be defined in many ways. This article talks about achievement. 
 
@@ -84,7 +84,7 @@ These are skills that apply to multiple areas and are deeply impactful.
 
 [^1]: Obstacle is the Way by Ryan Holiday
 [^2]: [If it’s not a hit, switch](https://sive.rs/hitswitch) by Derek Siver
-[^3]: [Samurai to Modern Army in 10 years](/samurai/)
+[^3]: [Samurai to Modern Army in 10 years](/life-blog/samurai/)
 [^4]: The Unfair Advantage: How You Already Have What It Takes to Succeed by Ash Ali and Hasan Kubba 
 [^5]: Naval
 [^6]: Derek Sivers

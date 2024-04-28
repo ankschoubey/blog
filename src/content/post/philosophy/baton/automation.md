@@ -6,7 +6,7 @@ tags:
  - business
 publishDate: 2021-08-01T20:42:15.333866
 use_math: true
-slug: /automate/
+slug: /software-blog/automate/
 ---
 
 I see this all the time.

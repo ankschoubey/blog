@@ -6,11 +6,11 @@ tags:
  - non-technical
 title: Piano
 publishDate: 2021-08-01T20:42:15.543379
-slug: /piano/
-image: /images/piano.jpg
+slug: /life-blog/piano/
+image: /images/life-blog/piano.jpg
 ---
-![](/images/piano.jpg)
-<sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@dolodol?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Dolo Iglesias</a> on <a href="https://unsplash.com/s/photos/piano?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
+![](/images/life-blog/piano.jpg)
+<sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@dolodol?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Dolo Iglesias</a> on <a href="https://unsplash.com/s/photos/life-blog/piano?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
 
 In some sense, playing the Piano is manually doing what a speaker does but with higher satisfaction.
 
@@ -32,7 +32,7 @@ It is joyful to open any random song and play it without having to watch a YouTu
 
 The more sheet music you see, the easier it is to read.
 
-{% include image.html file='/images/piano/sharps-flats.png' %}
+{% include image.html file='/images/life-blog/piano/sharps-flats.png' %}
 
 ## Practice
 
@@ -70,7 +70,7 @@ If you think you play well, you'll likely cry seeing Kids on YouTube play better
 
 Learning Piano is a rabbit hole. You might probably not learn everything.
 
-{% include image.html file='/images/piano/messed-solo.png' %}
+{% include image.html file='/images/life-blog/piano/messed-solo.png' %}
 
 ## How I am learning?
 

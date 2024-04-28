@@ -7,7 +7,7 @@ tags:
  - social-harmony
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose:
-slug: /social-confidence/
+slug: /life-blog/social-confidence/
 title: Reason to aim for social confidence
 toc: false
 ---
@@ -37,7 +37,7 @@ There are a few reasons:
 1. Humans are social animals. We are mean't to talk and spend time with people. We aren't lone creatures. Being lone makes is sad. Being with people makes us happier.
 2. We make better decisions with multiple perspectives. Of course those decisions need to be rooted in values. But these multiple perspectives are like multiple lives lived. Having just your own perspective means you have higher chance of failure.
 3. Social confidence doesn't impact clarity of thinking. It improves it. Having good listening skills, being emphatatic, respectful to other peoples opinions and life choices, all make us better as an individual.
-4. Good things are [outcome are social/team efforts](/teams). Rarely individual efforts.
+4. Good things are [outcome are social/team efforts](/software-blog/teams). Rarely individual efforts.
 5. Social confidence comes out as true confidence. And in most cases, it really is true confidence.
 6. Confidence is "I am proud of myself" [^1]. Confidence comes from experience and understanding.
 

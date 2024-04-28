@@ -7,7 +7,7 @@ tags:
  - deep-learning
 publishDate: 2020-05-02T20:42:15.185834
 use_math: true
-slug: /dl_advice/
+slug: /software-blog/dl_advice/
 ---
 
 I do get questions once or twice a month in my friend circle of someone who is thinking of starting to learn Machine Learning or Deep Learning.

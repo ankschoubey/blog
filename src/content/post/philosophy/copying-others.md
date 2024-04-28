@@ -6,7 +6,7 @@ tags:
  - truth
 publishDate: 2015-10-04T20:42:15.058326
 use_math: true
-slug: /copying/
+slug: /life-blog/copying/
 ---
 
 People love having role models --- I have role models too. They include, Steve Jobs (for changing the world), Tim Ferriss (for becoming healthy, wealthy and wise --- 4HB, 4HWW, 4HC), Jony Ive (for beautiful product designs), Narendra Modi (for the power to do good), Warren Buffet (for art of making money), Elon Musk (for becoming Iron Man), Buddha (for Nirvana/inner peace), Marcus Aurelius (for being a good empirer and stoic philosphy), Akira Toriyama (for Dragon Ball)... the list continous.

@@ -6,7 +6,7 @@ tags:
  - non-technical
  - implementing-core-values
 publishDate: 2023-05-06T20:52:08.052481
-slug: /v1/let-other-people-see-your-values/
+slug: /life-blog/let-other-people-see-your-values/
 title: Let other people see your values
 last-modified-purpose:
 image: https://pix4free.org/assets/library/2021-05-25/originals/branding.jpg

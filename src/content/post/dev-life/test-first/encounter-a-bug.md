@@ -7,7 +7,7 @@ tags:
  - tdd
 publishDate: 2022-03-26T20:52:08.052481
 last-modified-purpose:
-slug: /encounter-a-bug/
+slug: /software-blog/encounter-a-bug/
 title: Whenever you encounter a bug
 ---
 

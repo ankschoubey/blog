@@ -6,11 +6,11 @@ tags:
  - non-technical
  - inputs
 publishDate: 2021-09-06T20:52:08.052481
-slug: /internet-distractions/
+slug: /life-blog/internet-distractions/
 title: Making Internet Less Distracting
-image: /images/internet-distractions.jpg
+image: /images/life-blog/internet-distractions.jpg
 ---
-![](/images/internet-distractions.jpg) [^1]
+![](/images/life-blog/internet-distractions.jpg) [^1]
 
 The following should reduce influence of recommender systems significantly. Making internet less distracting and help improve privacy.
 

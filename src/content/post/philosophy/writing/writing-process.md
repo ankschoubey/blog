@@ -4,7 +4,7 @@ title: Writing process (July 2020 Edition)
 comments: true
 publishDate: 2021-08-01T20:42:15.321162
 use_math: true
-slug: /writing_process_07_2020/
+slug: /life-blog/writing_process_07_2020/
 ---
 
 

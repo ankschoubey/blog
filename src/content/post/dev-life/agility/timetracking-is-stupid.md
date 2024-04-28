@@ -8,11 +8,11 @@ tags:
  - time
 title: Time tracking over programmers is counter-productive
 publishDate: 2021-08-01T20:42:15.362418
-slug: /time_tracking/
-image: /images/time_tracking/1.jpg
+slug: /software-blog/time_tracking/
+image: /images/software-blog/time_tracking/1.jpg
 ---
 
-![](/images/time_tracking/1.jpg)
+![](/images/software-blog/time_tracking/1.jpg)
 
 ## "Programming"
 

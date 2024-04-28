@@ -6,7 +6,7 @@ tags:
  - non-technical
  - discipline
 publishDate: 2023-05-22T20:52:08.052481
-slug: /v1/internal-discipline/
+slug: /life-blog/internal-discipline/
 title: Why should you be internally disciplined?
 last-modified-purpose: 
 image: /images/v1-internal-discipline.jpg

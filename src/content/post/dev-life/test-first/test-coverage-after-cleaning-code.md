@@ -7,7 +7,7 @@ tags:
  - information-system
 publishDate: 2021-08-01T20:42:15.500315
 title: Write Tests after Cleaning Code.
-slug: /writing_test/
+slug: /software-blog/writing_test/
 ---
 
 Quality of code determines the quality of the test.

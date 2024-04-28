@@ -7,12 +7,12 @@ tags:
  - social-harmony
 publishDate: 2022-09-21T20:52:08.052481
 last-modified-purpose:
-slug: /team-knowing-whom-to-contact/
+slug: /software-blog/team-knowing-whom-to-contact/
 title: Increase collaboration by knowing whom to contact
 toc: false
-image: /images/team-knowing-whom-to-contact.jpg
+image: /images/software-blog/team-knowing-whom-to-contact.jpg
 ---
-![](/images/team-knowing-whom-to-contact.jpg)
+![](/images/software-blog/team-knowing-whom-to-contact.jpg)
 
 Photo by <a href="https://unsplash.com/@jasongoodman_youxventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Goodman</a> on <a href="https://unsplash.com/s/photos/team?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 

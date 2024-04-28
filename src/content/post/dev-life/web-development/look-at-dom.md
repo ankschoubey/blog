@@ -6,7 +6,7 @@ tags:
  - web-development
 publishDate: 2021-09-23T20:52:08.052481
 last-modified-purpose:
-slug: /look-at-dom/
+slug: /software-blog/look-at-dom/
 title: Web Development Tip - Reverse Engineer by looking at DOM
 ---
 

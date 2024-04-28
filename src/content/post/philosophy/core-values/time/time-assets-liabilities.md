@@ -9,7 +9,7 @@ tags:
  - time
 publishDate: 2022-01-26T20:52:08.052481
 last-modified-purpose:
-slug: /time-assets-and-liabilities/
+slug: /life-blog/time-assets-and-liabilities/
 title: Time Assets and Liabilities
 ---
 

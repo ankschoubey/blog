@@ -234,7 +234,7 @@ We go ahead and modify our code.
 
 We run the code again, and our code passes! We switch back to code up our new scenario.
 
-But before that, we remember, that for creation the response status should not be 200. [It should be 201 CREATED with a location header.](https://www.ankushchoubey.com/good-rest-api-design/ "‌"). So, we aren't done yet, let's make the change, starting first in the code.
+But before that, we remember, that for creation the response status should not be 200. [It should be 201 CREATED with a location header.](https://www.ankushchoubey.com/software-blog/good-rest-api-design/ "‌"). So, we aren't done yet, let's make the change, starting first in the code.
 
 PAUSE. TDD is test-first. Modifying in code isn't test-first. So, let's modify the #testFirst.
 

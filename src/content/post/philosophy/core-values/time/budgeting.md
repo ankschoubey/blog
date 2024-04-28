@@ -8,7 +8,7 @@ tags:
  - systems
 publishDate: 2022-01-28T20:52:08.052481
 last-modified-purpose:
-slug: /personal-budgeting/
+slug: /life-blog/personal-budgeting/
 title: Personal Budgeting
 ---
 

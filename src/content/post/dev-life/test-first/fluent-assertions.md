@@ -8,7 +8,7 @@ tags:
  - clean-code
 publishDate: 2022-05-03T20:52:08.052481
 last-modified-purpose:
-slug: /fluent-assertions/
+slug: /software-blog/fluent-assertions/
 title: Writing cleaner tests with Fluent Assertions
 ---
 

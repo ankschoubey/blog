@@ -7,7 +7,7 @@ tags:
  - testing
 publishDate: 2022-04-03T20:52:08.052481
 last-modified-purpose:
-slug: /bluring-line-between-unit-integration-test/
+slug: /software-blog/bluring-line-between-unit-integration-test/
 title: Avoid Mocks and understand the blurry lines between Unit and Integration Tests
 ---
 

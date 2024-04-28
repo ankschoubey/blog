@@ -8,7 +8,7 @@ tags:
  - webflux
 publishDate: 2022-07-11T20:52:08.052481
 last-modified-purpose:
-slug: /reactive-programming/
+slug: /software-blog/reactive-programming/
 title: Always choose Reactive Programming
 toc: false
 ---

@@ -9,11 +9,11 @@ tags:
  - technical
 publishDate: 2022-10-27T20:52:08.052481
 last-modified-purpose:
-slug: /domain-vs-framework-development/
+slug: /software-blog/domain-vs-framework-development/
 title: Why Framework Development Is Biggest Software Development Baton?
-image: /images/domain-vs-framework-development.jpg
+image: /images/software-blog/domain-vs-framework-development.jpg
 ---
-![](/images/domain-vs-framework-development.jpg)
+![](/images/software-blog/domain-vs-framework-development.jpg)
 
 [Photo by Markus Spiske](https://www.pexels.com/photo/brown-and-white-concrete-building-227729/)
 
@@ -66,7 +66,7 @@ Frameworks like Spring Boot, Platforms like Kubernetes and Cloud Provides like A
 
 # Resources
 
-- [Open Source Software (OSS) - Ankush Choubey](https://www.ankushchoubey.com/open-source/)
+- [Open Source Software (OSS) - Ankush Choubey](https://www.ankushchoubey.com/software-blog/open-source/)
 - [Baton Road - Ankush Choubey](https://www.ankushchoubey.com/baton/)
 - [Building a Framework on top of Spring Boot by Rubén Pahíno - Spring I/O 2022 Sessions - YouTube](https://www.youtube.com/watch?v=1qT__SBWOhA)
 - [The Product-Minded Software Engineer - The Pragmatic Engineer](https://blog.pragmaticengineer.com/the-product-minded-engineer/?ref=hackernoon.com)

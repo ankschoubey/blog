@@ -7,7 +7,7 @@ tags:
  - observability
 publishDate: 2022-08-13T20:52:08.052481
 last-modified-purpose:
-slug: /data-driven-decisions/
+slug: /life-blog/data-driven-decisions/
 title: Towards Data Driven Decisions
 toc: false
 ---

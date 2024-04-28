@@ -10,7 +10,7 @@ tags:
  - systems
 title: Compare yourself with who you were yesterday
 publishDate: 2021-05-04T20:42:15.654723
-slug: /compare/
+slug: /life-blog/compare/
 ---
 
 # Games with no end goal

@@ -27,4 +27,4 @@ It removed a lot of fear, myths, and makes you better by learning from other’s
 
 Biographies are also a path.
 
-*Similar but with a twist*: [When you are just starting out, don’t try to imitate the expert.](/imitating_experts/)
+*Similar but with a twist*: [When you are just starting out, don’t try to imitate the expert.](/life-blog/imitating_experts/)

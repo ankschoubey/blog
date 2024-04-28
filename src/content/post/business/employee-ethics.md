@@ -8,14 +8,14 @@ tags:
  - decision-making
 title: Employee Ethics
 publishDate: 2021-08-01T20:42:15.550029
-slug: /employee-ethics/
-image: /images/employee-ethics.jpg
+slug: /life-blog/employee-ethics/
+image: /images/life-blog/employee-ethics.jpg
 ---
-![](/images/employee-ethics.jpg)
+![](/images/life-blog/employee-ethics.jpg)
 
 <sup style="user-select: auto;">Photo by <a href="https://unsplash.com/@shridhar?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Shridhar Gupta</a> on <a href="https://unsplash.com/s/photos/employee?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sup>
 
-In previous posts, I discussed the [reasons to be ethical](/why_ethics/) and [how it related to businesses](/business-ethics/). For employees, ethics can be summarised with the Principal-Agent Problem.
+In previous posts, I discussed the [reasons to be ethical](/life-blog/why_ethics/) and [how it related to businesses](/software-blog/business-ethics/). For employees, ethics can be summarised with the Principal-Agent Problem.
 
 ### Principal-Agent Problem [^1]
 - The Principal wants agents to act like in the best interest of the agent.

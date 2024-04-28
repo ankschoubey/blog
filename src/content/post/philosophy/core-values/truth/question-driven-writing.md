@@ -7,7 +7,7 @@ tags:
  - truth
 publishDate: 2022-05-13T20:52:08.052481
 last-modified-purpose:
-slug: /question-driven-writing/
+slug: /life-blog/question-driven-writing/
 title: Question Driven Writing
 ---
 

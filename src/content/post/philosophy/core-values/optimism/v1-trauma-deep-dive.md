@@ -8,7 +8,7 @@ tags:
 publishDate: 2023-05-06T20:52:08.052481
 last-modified-purpose:
 read-this-when: 
-slug: /v1/deep-dive-trauma
+slug: /life-blog/deep-dive-trauma
 title: Notes on Here's Why Trauma Is So Common (A Deep Dive Into Understanding Trauma)
 image: https://upload.wikimedia.org/wikipedia/commons/2/24/FurciferPardalisMale.JPG
 ---

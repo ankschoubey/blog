@@ -5,13 +5,13 @@ comments: true
 tags:
  - business
 use_math: true
-slug: /support/
+slug: /software-blog/support/
 publishDate: 2021-08-01T20:42:15.337888
-image: /images/support/1.jpg
+image: /images/software-blog/support/1.jpg
 
 ---
 
-![](/images/support/1.jpg)
+![](/images/software-blog/support/1.jpg)
 
 ## Overlooked but important
 It is a part of a company which is I feel is often overlooked.

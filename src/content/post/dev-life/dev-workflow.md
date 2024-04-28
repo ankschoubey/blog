@@ -7,13 +7,13 @@ tags:
  - tdd
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose: added collaboration points
-slug: /dev-workflow/
+slug: /software-blog/dev-workflow/
 title: Ideal Development Workflow
 toc: false
-image: /images/dev-workflow.jpg
+image: /images/software-blog/dev-workflow.jpg
 ---
 
-![](/images/dev-workflow.jpg)
+![](/images/software-blog/dev-workflow.jpg)
 
 Photo by <a href="https://unsplash.com/@altumcode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AltumCode</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -73,4 +73,4 @@ graph TD
 
 Using the above list I created a template in SwiftEnterprise by Digite, so that the whole team can use it.
 
-![](/images/dev-workflow/se-template.png)
+![](/images/software-blog/dev-workflow/se-template.png)

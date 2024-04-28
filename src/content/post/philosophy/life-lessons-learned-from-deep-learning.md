@@ -7,7 +7,7 @@ tags:
  - systems
 publishDate: 2021-08-01T20:42:15.433097
 title: Correlation between Deep Learning Concepts and Philosophy
-slug: /dl_lessons/
+slug: /life-blog/dl_lessons/
 ---
 
 **DL** = **D**eep **L**earning

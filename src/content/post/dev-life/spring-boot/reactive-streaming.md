@@ -7,7 +7,7 @@ tags:
  - reactive
 publishDate: 2022-07-24T20:52:08.052481
 last-modified-purpose:
-slug: /reactive-streaming/
+slug: /software-blog/reactive-streaming/
 title: When doing reactive programming, 'aim' to have streaming end-to-end
 toc: false
 ---

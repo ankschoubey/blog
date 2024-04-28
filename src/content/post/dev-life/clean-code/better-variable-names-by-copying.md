@@ -6,7 +6,7 @@ tags:
  - clean-code
 publishDate: 2023-03-18T20:52:08.052481
 last-modified-purpose:
-slug: /v1/better-var-name-by-copying/
+slug: /software-blog/better-var-name-by-copying/
 title: Have better variable and method names for technical layer by copying others
 ---
 

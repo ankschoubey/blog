@@ -7,7 +7,7 @@ tags:
  - setup
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: 
-slug: /v1/desk-setup
+slug: /life-blog/desk-setup
 title: Desk Setup
 toc: false
 ---

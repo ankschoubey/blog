@@ -7,10 +7,10 @@ tags:
  - social-harmony
 use_math: true
 publishDate: 2021-08-01T20:42:15.327198
-slug: /teams/
-image: /images/teams/1.jpg
+slug: /software-blog/teams/
+image: /images/software-blog/teams/1.jpg
 ---
-![](/images/teams/1.jpg)
+![](/images/software-blog/teams/1.jpg)
 
 Though it is hard to form a good team, good things are almost always built by teams.
 

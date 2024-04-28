@@ -7,12 +7,12 @@ tags:
  - information-system
 title: Gist of Cryptocurrencies
 publishDate: 2021-08-01T20:42:15.666464
-slug: /crypto/
-image: /images/crypto.jpg
+slug: /software-blog/crypto/
+image: /images/software-blog/crypto.jpg
 ---
-![](/images/crypto.jpg)
+![](/images/software-blog/crypto.jpg)
 
-Photo by <a href="https://unsplash.com/@nick604?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Chong</a> on <a href="https://unsplash.com/s/photos/crypto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@nick604?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Chong</a> on <a href="https://unsplash.com/s/photos/software-blog/crypto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 > INFO: Economics (specially Macro economics) and effects of each and every minor details is beyond my understanding. So I may be off in this post
 

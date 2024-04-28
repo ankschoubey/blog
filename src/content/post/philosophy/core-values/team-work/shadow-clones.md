@@ -7,11 +7,11 @@ tags:
  - non-technical
 publishDate: 2022-05-29T20:52:08.052481
 last-modified-purpose:
-slug: /shadow-clones/
+slug: /life-blog/shadow-clones/
 title: Shadow Clone of Ideas
-image: /images/shadow-clones.jpeg
+image: /images/life-blog/shadow-clones.jpeg
 ---
-![](/images/shadow-clones.jpeg)
+![](/images/life-blog/shadow-clones.jpeg)
 
 Shadow clone is a popular concept in Naruto where a person can clone themselves into multiples. Each clone can then go and do something and once that's done, the clone disappears and the original person would retain the memory of the clone.
 

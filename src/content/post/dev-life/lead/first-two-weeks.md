@@ -4,7 +4,7 @@ excerpt: Placeholder
 
 publishDate: 2022-10-15T20:52:08.052481
 last-modified-purpose:
-slug: /first-two-weeks/
+slug: /software-blog/first-two-weeks/
 title: First 2 Weeks of A New Project
 ---
 
@@ -21,7 +21,7 @@ title: First 2 Weeks of A New Project
     - Spikes and POCs analysed
 - Team analusis and Responisbilities fixed
 - Acceptance Criteraliza Analysis
-    - [Dev Workflow Checklist](/dev-workflow)
+    - [Dev Workflow Checklist](/software-blog/dev-workflow)
 - Basic Rough Design Created
 - How will we scale discussed?
 - Release plans made.

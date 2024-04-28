@@ -8,14 +8,14 @@ tags:
  - clean-code
 publishDate: 2023-03-10T20:52:08.052481
 last-modified-purpose:
-slug: /v1/separate-service/
+slug: /software-blog/separate-service/
 title: Separating Connectors and Service (Business Logic) - A Key Principle for Service Reusability
 image: https://docs.google.com/drawings/d/e/2PACX-1vT3KH3qfLmMQ0DDGtQL8uyol8YhCWqBEc1DJxuGJ5vS9gdNxYKf7vkIgb2ETVHrZOocCTJv4kAFDUtU/pub?w=1300&amp;h=740
 ---
 
 ## Introduction
 
-In a previous post, I talked about [why and how we should separate Domain Layer from Technical code](/separate-technical-code). Here's another version of the same concerning service.
+In a previous post, I talked about [why and how we should separate Domain Layer from Technical code](/software-blog/separate-technical-code). Here's another version of the same concerning service.
 
 A Service that handles the tasks of a RestController isn’t very different from a rest controller.
 

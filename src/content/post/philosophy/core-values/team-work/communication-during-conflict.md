@@ -6,12 +6,12 @@ tags:
  - social-harmony
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose:
-slug: /communication-during-conflict/
+slug: /life-blog/communication-during-conflict/
 title: Communication during conflict
-image: /images/communication-during-conflict.jpg
+image: /images/life-blog/communication-during-conflict.jpg
 toc: false
 ---
-![](/images/communication-during-conflict.jpeg)
+![](/images/life-blog/communication-during-conflict.jpeg)
 
 <sub>Photo by <a href="https://unsplash.com/@conniwenningsimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Constantin Wenning</a> on <a href="https://unsplash.com/s/photos/shake-hands?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sub>
 
@@ -60,7 +60,7 @@ Life is complex and their are nuances. Those nuances need to be understood.
 
 Learn to emphathize.
 
-![](/images/team-work/empathy.jpeg)
+![](/images/life-blog/team-work/empathy.jpeg)
 
 In any case of communication, we can’t be hundred precent certain or 0% certain. Therefore we have to range ourselves between 95% certain and 5% certain.
 

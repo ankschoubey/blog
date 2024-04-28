@@ -8,7 +8,7 @@ tags:
  - database
 title: Solving N+1 Problem in Hibernate
 publishDate: 2021-08-01T20:52:08.052481
-slug: /n-plus-one-hibernate/
+slug: /software-blog/n-plus-one-hibernate/
 image: /images/n-plus-one.svg
 ---
 

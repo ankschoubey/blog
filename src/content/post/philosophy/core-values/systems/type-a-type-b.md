@@ -5,11 +5,11 @@ tags:
  - non-technical
 publishDate: 2022-09-25T20:52:08.052481
 last-modified-purpose:
-slug: /type-a-type-b/
+slug: /life-blog/type-a-type-b/
 title: Aim to be between Type A and B
-image: /images/type-a-type-b.jpg
+image: /images/life-blog/type-a-type-b.jpg
 ---
-![](/images/type-a-type-b.jpg)
+![](/images/life-blog/type-a-type-b.jpg)
 
 Photo by <a href="https://unsplash.com/@glenndiaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Glenn Diaz</a> on <a href="https://unsplash.com/s/photos/workaholic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 

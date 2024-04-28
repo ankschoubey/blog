@@ -7,8 +7,8 @@ tags:
  - programming
 title: How I learned basics of programming.
 publishDate: 2021-08-01T20:42:15.515422
-slug: /learn_programming/
-#image: /images/engineer.jpg
+slug: /software-blog/learn_programming/
+#image: /images/software-blog/engineer.jpg
 ---
 
 The following is a beginner-focused essay.

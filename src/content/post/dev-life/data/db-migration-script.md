@@ -6,7 +6,7 @@ tags:
  - database
 publishDate: 2023-03-03T20:52:08.052481
 last-modified-purpose:
-slug: /db-migration-script/
+slug: /life-blog/db-migration-script/
 title: Migrating DB smoothly with a migration script
 ---
 

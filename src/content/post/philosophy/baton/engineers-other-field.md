@@ -7,8 +7,8 @@ tags:
  - baton
 title: Why Software Engineers Should Enter Other Fields.
 publishDate: 2021-08-01T20:42:15.506448
-slug: /engineer/
-image: /images/engineer.jpg
+slug: /software-blog/engineer/
+image: /images/software-blog/engineer.jpg
 ---
 
 ## Software Engineers
@@ -39,7 +39,7 @@ The reason is likely because these fields require physical products and take lon
 
 The best way to ensure these fields get benefits of innovations in computer technology is to work closely with experts in the field or to get into it ourselves.
 
-![](/images/engineer.jpg)
+![](/images/software-blog/engineer.jpg)
 <sub>Photo by <a href="https://unsplash.com/@nci?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">National Cancer Institute</a> on <a href="https://unsplash.com/s/photos/cells?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 
 [^1]: Tim Ferriss - 4 Hour Body

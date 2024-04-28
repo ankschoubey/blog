@@ -7,12 +7,12 @@ tags:
  - truth
 publishDate: 2022-06-05T20:52:08.052481
 last-modified-purpose:
-slug: /truth-fidility/
+slug: /life-blog/truth-fidility/
 title: Truth and Fidility
-image: /images/truth-fidility.jpg
+image: /images/life-blog/truth-fidility.jpg
 toc: false
 ---
-![](/images/truth-fidility.jpg)
+![](/images/life-blog/truth-fidility.jpg)
 
 <sup>Photo by Paul Skorupskas on Unsplash</sup>
 

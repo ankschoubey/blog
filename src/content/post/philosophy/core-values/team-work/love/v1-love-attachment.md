@@ -8,7 +8,7 @@ tags:
  - non-technical
 title: Decoding the difference between healthy love and unhealthy attachment, and choosing healthy love.
 publishDate: 2023-04-28T20:42:15.419969
-slug: /v1/love-attachment/
+slug: /life-blog/love-attachment/
 image: /images/v1-love-attachment.jpg
 read-this-when: You feel and are not sure about what to do.
 ---

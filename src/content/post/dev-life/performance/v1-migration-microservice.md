@@ -6,13 +6,13 @@ tags:
  - backend
 publishDate: 2023-08-05T20:52:08.052481
 last-modified-purpose:
-slug: /data-migration-microservice/
+slug: /life-blog/data-migration-microservice/
 title: 7 Tips to Optimize a Microservice for Data Migration Job
 toc: false
-image: /images/data-migration-microservice.png
+image: /images/life-blog/data-migration-microservice.png
 ---
 
-I published a post in [March 2023 about how typically DB migrations]([https://www.ankushchoubey.com/db-migration-script/](https://www.ankushchoubey.com/db-migration-script/ "smartCard-inline")  ) take place. The post is considered a direct migration from one DB to the other.
+I published a post in [March 2023 about how typically DB migrations]([https://www.ankushchoubey.com/life-blog/db-migration-script/](https://www.ankushchoubey.com/life-blog/db-migration-script/ "smartCard-inline")  ) take place. The post is considered a direct migration from one DB to the other.
 
 But sometimes, you need to do a lot of things that can only be done by the microservice that would use this data.
 

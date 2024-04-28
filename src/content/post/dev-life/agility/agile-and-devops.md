@@ -9,7 +9,7 @@ tags:
  - business
 publishDate: 2020-05-21T20:42:15.219855
 use_math: true
-slug: /agile_devops/
+slug: /software-blog/agile_devops/
 ---
 Agile and DevOps are useful or buzz words depending on who you hear it from.
 

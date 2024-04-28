@@ -9,7 +9,7 @@ tags:
  - responsibility
 title: Positive effects of doing hard things
 publishDate: 2021-08-01T20:42:15.663278
-slug: /tough/
+slug: /life-blog/tough/
 hide: true
 ---
 

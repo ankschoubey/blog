@@ -7,7 +7,7 @@ tags:
  - deep-learning
 title: Lessons Learned from my first Deep Learning contest
 publishDate: 2019-06-23T20:42:15.062074
-slug: /first_competition/
+slug: /software-blog/first_competition/
 image: /images/2019-06-23-lessons_from_first_deep_learning_competition/1_data_augmentation.png
 ---
 

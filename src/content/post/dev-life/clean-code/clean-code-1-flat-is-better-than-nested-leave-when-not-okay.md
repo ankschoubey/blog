@@ -7,7 +7,7 @@ tags:
  - clean-code
 publishDate: 2019-12-20T20:42:15.088154
 title: Flat is better than nested
-slug: /flat_is_better/
+slug: /software-blog/flat_is_better/
 ---
 
 This might be the most important tip of all the tips covered which applies mainly to if-else statements.
@@ -86,4 +86,4 @@ This is an example of chunking which will be explained more in the next post.
 
 # Resource:
 
-- [Replace Nested Conditional with Guard Clauses](https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html)
+- [Replace Nested Conditional with Guard Clauses](https://software-blog/refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html)

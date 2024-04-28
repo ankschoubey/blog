@@ -9,11 +9,11 @@ tags:
  - non-technical
 use_math: true
 publishDate: 2023-07-20T20:42:15.193139
-slug: /exponential-growth/
-image: /images/exponential-growth.jpg
+slug: /life-blog/exponential-growth/
+image: /images/life-blog/exponential-growth.jpg
 ---
 
-![](/images/exponential-growth.jpg)
+![](/images/life-blog/exponential-growth.jpg)
 
 Photo by [Suzanne D. Williams](https://unsplash.com/@scw1217?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText "‌") on [Unsplash](https://unsplash.com/photos/VMKBFR6r_jg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText "‌")
 

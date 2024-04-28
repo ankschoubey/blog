@@ -7,8 +7,8 @@ tags:
  - tdd
 publishDate: 2023-08-09T20:52:08.052481
 last-modified-purpose:
-slug: /promote-tdd-in-a-team/
-image: /images/promote-tdd-in-a-team.jpg
+slug: /software-blog/promote-tdd-in-a-team/
+image: /images/software-blog/promote-tdd-in-a-team.jpg
 title: How to promote the habit of TDD within a Team
 ---
 
@@ -22,7 +22,7 @@ Doing things alone is nice. But having the whole team do TDD is something else. 
 
 Promoting TDD within the team takes time. And your patience and consistent effort is needed.
 
-![](/images/promote-tdd-in-a-team.jpg)
+![](/images/software-blog/promote-tdd-in-a-team.jpg)
 
 ## TDD is a skill that you develop and a choice that you make [^1]
 

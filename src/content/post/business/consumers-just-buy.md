@@ -6,7 +6,7 @@ tags:
  - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.292983
-slug: /just_buy/
+slug: /life-blog/just_buy/
 image: /images/2020-07-24-consumers-just-buy/1_switch.jpg
 ---
 

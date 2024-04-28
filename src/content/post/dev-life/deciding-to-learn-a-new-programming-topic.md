@@ -9,8 +9,8 @@ tags:
 toc: false
 use_math: true
 publishDate: 2020-05-25T20:42:15.220865
-slug: /new_tech/
-image: /images/new_tech/1.jpg
+slug: /software-blog/new_tech/
+image: /images/software-blog/new_tech/1.jpg
 ---
 
 {% include alert.html text = 'I am writing this as a <strong>reference to my future self</strong> and so <strong>it is highly biased</strong>. <br><br>May be someone else finds this helpful too.' %}
@@ -38,7 +38,7 @@ The benefit of learning by category is that same skills can apply to other categ
 
 Like: My pandas (python) skills helped me a lot during new SQL problems.
 
-![](/images/new_tech/1.jpg)
+![](/images/software-blog/new_tech/1.jpg)
 <sub>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Winkler</a> on <a href="https://unsplash.com/s/photos/programmer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 
 ## Deciding not to learn

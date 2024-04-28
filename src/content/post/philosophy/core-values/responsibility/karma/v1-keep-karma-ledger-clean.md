@@ -7,7 +7,7 @@ tags:
  - non-technical
 use_math: true
 publishDate: 2023-05-24T20:42:15.242622
-slug: /v1/karma-ledger/
+slug: /life-blog/karma-ledger/
 image: /images/v1-karma-ledger.jpg
 read-this-when: you are thinking if there is a reward in good action. Or if you think you can get away by avoiding responsibility.
 ---
@@ -16,7 +16,7 @@ Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medi
   
 > Karma karo fall ki chinta maat karo
 
-In a previous post, I talked about [Karma and Karmafal](https://www.ankushchoubey.com/v1/karma-karmafal/ "‌"). Here is why you should always keep your karma ledger clean despite to inability to control Karmafal.
+In a previous post, I talked about [Karma and Karmafal](https://www.ankushchoubey.com/life-blog/karma-karmafal/ "‌"). Here is why you should always keep your karma ledger clean despite to inability to control Karmafal.
 
 ## Two Outcomes of Karma
 

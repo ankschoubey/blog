@@ -8,10 +8,10 @@ tags:
  - information-system
 title: Applications of Recommender Systems
 publishDate: 2021-08-01T20:42:15.669474
-slug: /recommender-systems/
-image: /images/recommender-systems.jpg
+slug: /software-blog/recommender-systems/
+image: /images/software-blog/recommender-systems.jpg
 ---
-![](/images/recommender-systems.jpg)
+![](/images/software-blog/recommender-systems.jpg)
 Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Deluvio</a> on <a href="https://unsplash.com/s/photos/suggestion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Recommender systems are easiest and probably most lucritive ML Application.

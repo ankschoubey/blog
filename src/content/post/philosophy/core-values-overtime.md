@@ -6,7 +6,7 @@ tags:
  - mature
 publishDate: 2022-10-05T20:52:08.052481
 last-modified-purpose:
-slug: /core-values-overtime/
+slug: /life-blog/core-values-overtime/
 title: Core Values Overtime - Pointers, Motivations
 ---        
 

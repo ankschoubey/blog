@@ -6,12 +6,12 @@ tags:
  - systems
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
-slug: /perfection/
+slug: /life-blog/perfection/
 title: Perfection isn't an attainable goal. We are always a step closer to it.
 toc: false
-image: /images/perfection.svg
+image: /images/life-blog/perfection.svg
 ---
-![](/images/perfection.svg)
+![](/images/life-blog/perfection.svg)
 
 Often we fail to do something because we fear we'll be bad at it.
 

@@ -6,7 +6,7 @@ tags:
  - truth
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
-slug: /advice-that-suggest-being-fake/
+slug: /life-blog/advice-that-suggest-being-fake/
 title: How to take advice that suggests being fake?
 toc: false
 ---

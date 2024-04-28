@@ -13,7 +13,7 @@ image: /images/application-content-debug-spring-boot.png
 
 Often, we have multiple steps in reaching a piece of code to debug. For example, we’d set up infrastructure like doing an API call or setting up a database, Kafka, or something else.
 
-A better way to debug is to [create a unit test](https://www.ankushchoubey.com/encounter-a-bug/) where you call your code with the same set of parameters you want to debug. Once your code is fixed, your test can stay for the future.
+A better way to debug is to [create a unit test](https://www.ankushchoubey.com/software-blog/encounter-a-bug/) where you call your code with the same set of parameters you want to debug. Once your code is fixed, your test can stay for the future.
 
 I usually keep a [template for these regression bug kinds of tests](https://www.ankushchoubey.com/v1/junit-bug-tracking).
 

@@ -7,10 +7,10 @@ tags:
  - marketing
 title: The lifetime of 'Content' is getting smaller
 publishDate: 2021-08-01T20:42:15.415292
-slug: /content/
-image: /images/content.jpg
+slug: /life-blog/content/
+image: /images/life-blog/content.jpg
 ---
-![](/images/content.jpg)
+![](/images/life-blog/content.jpg)
 
 A few years ago there was a lot of rage for getting onto social media.
 

@@ -8,10 +8,10 @@ tags:
  - baton
 title: Research
 publishDate: 2021-08-01T20:42:15.512366
-slug: /research/
-image: /images/research.jpg
+slug: /life-blog/research/
+image: /images/life-blog/research.jpg
 ---
-![](/images/research.jpg)
+![](/images/life-blog/research.jpg)
 
 ## Plateau of progress
 

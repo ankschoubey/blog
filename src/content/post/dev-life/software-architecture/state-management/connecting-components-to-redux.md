@@ -7,7 +7,7 @@ tags:
  - data
  - technical
 publishDate: 2024-01-30T20:52:08.052481
-slug: /optimizing-react-connect-components-redux/
+slug: /software-blog/optimizing-react-connect-components-redux/
 title: Efficiently Connect Components with Redux and Other Stores
 hidePostImage: true
 seo-checklist: {

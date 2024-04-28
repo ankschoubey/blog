@@ -7,12 +7,12 @@ tags:
  - non-technical
  - systems
 title: Physical Exercise
-slug: /exercise/
+slug: /life-blog/exercise/
 publishDate: 2021-08-01T20:42:15.652723
-image: /images/exercise.jpg
+image: /images/life-blog/exercise.jpg
 hide: true
 ---
-![](/images/exercise.jpg)
+![](/images/life-blog/exercise.jpg)
 
 Photo by <a href="https://unsplash.com/@kirillz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kirill</a> on <a href="https://unsplash.com/s/photos/pull-up?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   

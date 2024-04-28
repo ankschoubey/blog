@@ -12,7 +12,7 @@ toc: false
 image: /images/v1-fix-security-bugs-anyways.jpg
 ---
 
-In a previous blog post, I talked about how to [upgrade Maven dependencies](/maven-dependency-upgrade). It specifically mentioned security vulnerabilities in these dependencies to be an important reason to upgrade.
+In a previous blog post, I talked about how to [upgrade Maven dependencies](/software-blog/maven-dependency-upgrade). It specifically mentioned security vulnerabilities in these dependencies to be an important reason to upgrade.
 
 Many times these security bugs do not affect us. For example, suppose a dependency is vulnerable to authentication jacking, and you have set up your system such that only trusted systems can talk to your internal server.
 

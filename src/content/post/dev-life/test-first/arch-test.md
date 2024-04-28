@@ -10,11 +10,11 @@ tags:
  - tdd-example
 publishDate: 2022-08-20T20:52:08.052481
 last-modified-purpose: added details about how I implement ArchUnit tests
-slug: /architecture-testing/
+slug: /software-blog/architecture-testing/
 title: Enforcing Architecture with Architecture Testing
-image: /images/architecture-testing.png
+image: /images/software-blog/architecture-testing.png
 ---
-![](/images/architecture-testing.png)
+![](/images/software-blog/architecture-testing.png)
 
 
 ## Introduction

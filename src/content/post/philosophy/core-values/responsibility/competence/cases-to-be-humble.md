@@ -7,11 +7,11 @@ tags:
  - responsibility
  - social-harmony
 title: Cases To Be Humble
-slug: /humble/
+slug: /life-blog/humble/
 publishDate: 2021-08-01T20:42:15.643388
-image: /images/humble.jpg
+image: /images/life-blog/humble.jpg
 ---
-![](/images/humble.jpg)
+![](/images/life-blog/humble.jpg)
 
 Photo by <a href="https://unsplash.com/@billjelen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bill Jelen</a> on <a href="https://unsplash.com/s/photos/rocket?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   

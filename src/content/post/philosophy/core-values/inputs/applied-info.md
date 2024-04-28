@@ -9,12 +9,12 @@ tags:
  - truth
 title: Research Fast, Understand the Gist, Apply, Iterate, and Move Forward
 publishDate: 2022-10-14T20:42:15.598510
-slug: /applied-info/
-image: /images/applied-info.jpg
+slug: /life-blog/applied-info/
+image: /images/life-blog/applied-info.jpg
 ---
-![](/images/applied-info.jpg)
+![](/images/life-blog/applied-info.jpg)
 
-Photo by <a href="https://unsplash.com/@pro321?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">prottoy hassan</a> on <a href="https://unsplash.com/s/photos/thinking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@pro321?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">prottoy hassan</a> on <a href="https://unsplash.com/s/photos/life-blog/thinking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Information is clutter. Applying information is power.
 
@@ -89,7 +89,7 @@ Some of my favorite mental models are:
 - Circle of Competence
 - Pareto Principle
 
-### [Make Time and Think](/think/)
+### [Make Time and Think](/life-blog/think/)
 
 Thinking means you’ll question things from the first principles. To see if they are valid or not.
 

@@ -7,7 +7,7 @@ tags:
  - software-architecture
 publishDate: 2023-07-06T20:52:08.052481
 last-modified-purpose:
-slug: /v1/business-logic-backend/
+slug: /software-blog/business-logic-backend/
 title: Keep your business logic in the backend. Not frontend.
 ---
 

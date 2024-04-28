@@ -9,7 +9,7 @@ tags:
  - responsibility
 publishDate: 2022-05-31T20:52:08.052481
 last-modified-purpose:
-slug: /freedom/
+slug: /life-blog/freedom/
 title: Ways towards Freedom
 ---
 

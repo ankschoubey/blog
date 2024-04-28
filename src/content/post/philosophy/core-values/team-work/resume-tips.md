@@ -5,7 +5,7 @@ tags:
  - dev
 publishDate: 2022-08-01T20:52:08.052481
 last-modified-purpose:
-slug: /resume-tips/
+slug: /life-blog/resume-tips/
 title: Resume and Linkedin Tips
 toc: false
 hide: true

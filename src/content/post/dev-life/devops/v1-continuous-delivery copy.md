@@ -100,10 +100,10 @@ There are many things that can be the part of delivery pipeline. I'll be adding 
 
 There are several practices that support a continuous delivery. Some include,
 
-- [atomic commits](/atomic-commits)
+- [atomic commits](/software-blog/atomic-commits)
 - [TDD](/tdd)
-- [the kanban](/implementing-kanban) pull system and walk-the-board-from-right strategy,
-- [feature-flagging](/feature-flagging)
+- [the kanban](/life-blog/implementing-kanban) pull system and walk-the-board-from-right strategy,
+- [feature-flagging](/software-blog/feature-flagging)
 - #morePostsSoon
 
 ## **Optional**:  Why not-having a delivery pipeline is risky?
@@ -129,9 +129,9 @@ Dev is not prod. #PRODisPROD Prod is where real users are. Prod is where value i
 
 ## What your first delivery would be?
 
-Your first delivery would be likely something very small and unusable. [An atomic commit](/atomic-commits). A un-responsive login page perhaps.
+Your first delivery would be likely something very small and unusable. [An atomic commit](/software-blog/atomic-commits). A un-responsive login page perhaps.
 
-Having something delivered to PROD, doesn’t mean it has to be available to general public to use. At this stage, you need [feature flagging](/feature-flagging)
+Having something delivered to PROD, doesn’t mean it has to be available to general public to use. At this stage, you need [feature flagging](/software-blog/feature-flagging)
 
 One your software crosses the MVP mark, you can release the flag.
 
@@ -221,7 +221,7 @@ Continuous Delivery is a combination of development improvements and business im
 
 Practices like the following support continuous delivery:
 
-- [atomic commits](/atomic-commits)
+- [atomic commits](/software-blog/atomic-commits)
 - [TDD](/tdd)
-- [the kanban](/implementing-kanban) pull system and walk-the-board-from-right strategy,
-- [feature-flagging](/feature-flagging)
+- [the kanban](/life-blog/implementing-kanban) pull system and walk-the-board-from-right strategy,
+- [feature-flagging](/software-blog/feature-flagging)

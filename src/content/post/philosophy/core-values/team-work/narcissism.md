@@ -8,9 +8,9 @@ tags:
  - social-harmony
 publishDate: 2022-08-18T20:52:08.052481
 last-modified-purpose: added points on controlling aggression
-slug: /narcissism/
+slug: /life-blog/narcissism/
 title: We are all narcissist!
-image: /images/narcissism.jpg
+image: /images/life-blog/narcissism.jpg
 toc: false
 ---
   
@@ -60,7 +60,7 @@ Depression/past trauma can also give rise to narcissism. Trauma need not be some
 
 Narcissism is a form of insecurity. It can be fear of abandonment.
 
-![](/images/narcissism.jpg)
+![](/images/life-blog/narcissism.jpg)
 
 Snakes are beautiful creatures that go about their business. Abstractly they are related to something that can bite and cause harm. We also have snakes of insecurity that manifest as different tendencies.
 

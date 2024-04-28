@@ -7,12 +7,12 @@ tags:
  - reactive-programming
 publishDate: 2022-09-18T20:52:08.052481
 last-modified-purpose:
-slug: /immutable-objects/
+slug: /software-blog/immutable-objects/
 title: Making Object Immutable for Concurrency
 toc: false
-image: /images/immutable-objects.jpg
+image: /images/software-blog/immutable-objects.jpg
 ---
-![](/images/immutable-objects.jpg)
+![](/images/software-blog/immutable-objects.jpg)
 
 <sup>Photo by <a href="https://unsplash.com/@davehoefler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dave Hoefler</a> on <a href="https://unsplash.com/s/photos/stone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sup>
 

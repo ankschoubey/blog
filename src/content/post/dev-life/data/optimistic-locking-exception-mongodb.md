@@ -10,7 +10,7 @@ tags:
  - tdd-example
 publishDate: 2022-04-16T20:52:08.052481
 last-modified-purpose:
-slug: /optimistic-locking-exception-mongodb/
+slug: /software-blog/optimistic-locking-exception-mongodb/
 title: Solving a OptimisticLockingException During Upsert in MongoDB-Spring Webflux
 ---
 

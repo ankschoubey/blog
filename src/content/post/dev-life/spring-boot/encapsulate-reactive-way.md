@@ -7,7 +7,7 @@ tags:
  - spring-boot
 publishDate: 2022-08-15T20:52:08.052481
 last-modified-purpose:
-slug: /encapsulate-blocking-reactive-way/
+slug: /software-blog/encapsulate-blocking-reactive-way/
 title: Encapsulate Blocking Call the Reactor Way
 toc: false
 ---
@@ -38,10 +38,10 @@ Completable futures can be converted to mono. Many java libraries have completab
 
 ## Encapsulate blocking calls
 
-![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/encapsulate-blocking-reactive-way/1.png) 
+![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/1.png) 
 
-![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/encapsulate-blocking-reactive-way/2.png) 
+![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/2.png) 
 
 ## Find if a method is reactive
 
-![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/encapsulate-blocking-reactive-way/3.png) 
+![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/3.png) 

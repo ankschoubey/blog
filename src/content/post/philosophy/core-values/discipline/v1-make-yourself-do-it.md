@@ -6,7 +6,7 @@ tags:
  - non-technical
  - discipline
 publishDate: 2023-06-06T20:52:08.052481
-slug: /v1/make-yourself-do-it/
+slug: /life-blog/make-yourself-do-it/
 title: Make yourself do it
 last-modified-purpose: 
 image: /images/v1-make-yourself-do-it.jpg

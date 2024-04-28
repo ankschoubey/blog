@@ -10,7 +10,7 @@ tags:
 toc: false
 use_math: true
 publishDate: 2020-05-25T20:42:15.220865
-slug: /creating-an-excel-like-language/
+slug: /software-blog/creating-an-excel-like-language/
 image: https://upload.wikimedia.org/wikipedia/commons/e/e2/Spreadsheet.png
 image-fit: contain
 ---

@@ -6,11 +6,11 @@ tags:
  - business
 title: Don’t try to force a sale on people who are not your user base
 publishDate: 2021-08-01T20:42:15.368425
-slug: /forced_sale/
-image: /images/forced_sale/1.jpg
+slug: /life-blog/forced_sale/
+image: /images/life-blog/forced_sale/1.jpg
 ---
 
-![](/images/forced_sale/1.jpg)
+![](/images/life-blog/forced_sale/1.jpg)
 
 These apply to companies which sell "premium"/high cost products.
 

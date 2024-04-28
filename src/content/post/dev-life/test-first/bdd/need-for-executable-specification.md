@@ -7,7 +7,7 @@ tags:
  - product-development
 publishDate: 2022-05-21T20:52:08.052481
 last-modified-purpose:
-slug: /need-for-executable-specification/
+slug: /software-blog/need-for-executable-specification/
 title: The need for executable specifications
 ---
 

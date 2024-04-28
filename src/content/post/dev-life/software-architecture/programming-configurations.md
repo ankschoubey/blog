@@ -7,7 +7,7 @@ tags:
  - configuration-management
 publishDate: 2020-06-29T20:42:15.233506
 use_math: true
-slug: /config/
+slug: /software-blog/config/
 ---
 
 ## What we learned when starting out
@@ -62,4 +62,4 @@ These principles (20%) apply to a small by very important parts (80%):
 - connecting different modules
 - debugging
 
-Similar: [Make your code configurable](/code_configurable/)
+Similar: [Make your code configurable](/software-blog/code_configurable/)

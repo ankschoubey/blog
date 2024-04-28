@@ -6,7 +6,7 @@ tags:
  - dev-productivity
 publishDate: 2022-10-02T20:52:08.052481
 last-modified-purpose:
-slug: /microservice-chassis/
+slug: /software-blog/microservice-chassis/
 title: Microservice Chassis
 ---
 
@@ -32,4 +32,4 @@ Most DevOps concerns, can be handles from within chassis, without touching indiv
 
 # Resources
 
-[Microservice chassis](https://microservices.io/patterns/microservice-chassis.html)
+[Microservice chassis](https://microservices.io/patterns/software-blog/microservice-chassis.html)

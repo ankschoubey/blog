@@ -6,7 +6,7 @@ tags:
  - truth
 publishDate: 2022-05-31T20:52:08.052481
 last-modified-purpose:
-slug: /why-memorize/
+slug: /life-blog/why-memorize/
 title: Why memorizing is still relevant?
 ---
 

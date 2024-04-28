@@ -7,7 +7,7 @@ tags:
  - non-technical
 publishDate: 2022-12-06T20:52:08.052481
 last-modified-purpose:
-slug: /responsibility-stratergies/
+slug: /life-blog/responsibility-stratergies/
 title: Ownership
 image: /images/responsibility.png
 ---

@@ -8,7 +8,7 @@ tags:
  - social-harmony
 publishDate: 2022-07-01T20:52:08.052481
 last-modified-purpose:
-slug: /trust/
+slug: /life-blog/trust/
 title: On Building Trust
 toc: false
 ---

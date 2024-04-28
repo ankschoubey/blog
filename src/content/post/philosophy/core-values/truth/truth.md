@@ -7,11 +7,11 @@ tags:
  - non-technical
 publishDate: 2022-02-24T20:52:08.052481
 last-modified-purpose:
-slug: /truth-stratergies/
+slug: /life-blog/truth-stratergies/
 title: Strategies on Truth
-image: /images/truth-stratergies.jpg
+image: /images/life-blog/truth-stratergies.jpg
 ---
-![](/images/truth-stratergies.jpg)
+![](/images/life-blog/truth-stratergies.jpg)
 [^1]
 
 There are family of algorithms/strategy to seek truth. Each one applies to specific cases

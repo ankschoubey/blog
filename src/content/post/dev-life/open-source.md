@@ -8,10 +8,10 @@ tags:
  - information-system
 title: Open Source Software (OSS)
 publishDate: 2021-08-01T20:42:15.547885
-slug: /open-source/
-image: /images/open-source.jpg
+slug: /software-blog/open-source/
+image: /images/software-blog/open-source.jpg
 ---
-![](/images/open-source.jpg)
+![](/images/software-blog/open-source.jpg)
 
 <sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@richygreat?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Richy Great</a> on <a href="https://unsplash.com/s/photos/github?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
 

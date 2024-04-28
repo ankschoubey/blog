@@ -8,10 +8,10 @@ tags:
  - truth
 title: Who is your audience?
 publishDate: 2021-08-01T20:42:15.434096
-slug: /audience/
-image: /images/audience.jpg
+slug: /life-blog/audience/
+image: /images/life-blog/audience.jpg
 ---
-![](/images/audience.jpg)
+![](/images/life-blog/audience.jpg)
 <sub>Photo by <a href="https://unsplash.com/@wansan_99?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Wan San Yip</a> on <a href="https://unsplash.com/s/photos/performance?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 
 I once was a participant in the Dance group at my school.

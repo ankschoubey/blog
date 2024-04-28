@@ -6,15 +6,15 @@ tags:
  - philosophical
 use_math: true
 publishDate: 2021-08-01T20:42:15.336888
-slug: /samurai/
-image: /images/samurai/1.jpeg
+slug: /life-blog/samurai/
+image: /images/life-blog/samurai/1.jpeg
 ---
 
 > ... if we dig deep in our history and our doctrine, and remember that **we are not descended from fearful men** ... [^1]
 
 <img class='product img'>
 
-![](/images/samurai/1.jpeg)
+![](/images/life-blog/samurai/1.jpeg)
 
 Japan 🇯🇵 was closed to the world for most of history.
 

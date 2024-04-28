@@ -7,7 +7,7 @@ tags:
  - responsibility
 publishDate: 2022-05-02T20:52:08.052481
 last-modified-purpose:
-slug: /good-at-one-thing/
+slug: /life-blog/good-at-one-thing/
 title: Being good at one thing doesn't automatically make you better at another
 ---
 

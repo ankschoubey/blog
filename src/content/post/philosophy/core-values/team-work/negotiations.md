@@ -7,7 +7,7 @@ tags:
  - social-harmony
 publishDate: 2022-08-12T20:52:08.052481
 last-modified-purpose:
-slug: /negotiations/
+slug: /life-blog/negotiations/
 title: Negotiations
 toc: false
 ---

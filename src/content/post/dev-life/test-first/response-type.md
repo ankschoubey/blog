@@ -6,10 +6,10 @@ tags:
  - chaos-engineering
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
-slug: /response-type-field/
+slug: /software-blog/response-type-field/
 title:  A responseType field for all response classes
 toc: false
-image: /images/response-type-field.png
+image: /images/software-blog/response-type-field.png
 ---
 
 The inspiration for this blog post is [API response in a video by Chaos Monkey for Spring Boot](https://youtu.be/7sQiIR9qCdA?t=690)

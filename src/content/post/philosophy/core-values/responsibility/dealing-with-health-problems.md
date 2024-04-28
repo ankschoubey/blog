@@ -7,7 +7,7 @@ tags:
  - systems
 publishDate: 2022-10-25T20:52:08.052481
 last-modified-purpose:
-slug: /dealing-with-health-problems/
+slug: /life-blog/dealing-with-health-problems/
 title: Deal with health problems by becoming a domain expert in the field so that you can collaborate better with doctors
 ---
 

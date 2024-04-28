@@ -7,7 +7,7 @@ tags:
  - clean-code
 publishDate: 2020-01-06T20:42:15.128460
 title: Exception handling
-slug: /exception_handing/
+slug: /software-blog/exception_handing/
 ---
 
 > Errors should never pass silently.

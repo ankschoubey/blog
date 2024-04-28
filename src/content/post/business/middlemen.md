@@ -6,7 +6,7 @@ tags:
  - business
 publishDate: 2021-08-01T20:42:15.347436
 use_math: true
-slug: /middlemen/
+slug: /life-blog/middlemen/
 ---
 
 Middlemen companies provide services from one company to either another company or to consumers. 

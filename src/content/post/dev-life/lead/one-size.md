@@ -10,10 +10,10 @@ tags:
  - systems
 title: There is no one size fits all
 publishDate: 2021-08-01T20:42:15.658574
-slug: /one-size/
-image: /images/one-size.jpg
+slug: /life-blog/one-size/
+image: /images/life-blog/one-size.jpg
 ---
-![](/images/one-size.jpg)
+![](/images/life-blog/one-size.jpg)
 
 Photo by <a href="https://unsplash.com/@toddquackenbush?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Todd Quackenbush</a> on <a href="https://unsplash.com/s/photos/tools?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   

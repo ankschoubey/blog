@@ -8,11 +8,11 @@ tags:
  - testing
 publishDate: 2022-07-30T20:52:08.052481
 last-modified-purpose:
-slug: /spring-boot-junit-faster/
+slug: /software-blog/spring-boot-junit-faster/
 title: Speeding Up Spring Boot/JUnit tests
-image: /images/spring-boot-junit-faster/header.png
+image: /images/software-blog/spring-boot-junit-faster/header.png
 ---
-![JUnit Logo](/images/spring-boot-junit-faster/header.png)
+![JUnit Logo](/images/software-blog/spring-boot-junit-faster/header.png)
 
 {% include note.html content="For beginners: Tests provide fast feedback to your code and ensure everything works as you intended. Rapid tests help get feedback and ensure your integration and deployment pipelines work faster." %}
 

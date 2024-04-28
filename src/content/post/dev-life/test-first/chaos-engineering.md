@@ -7,7 +7,7 @@ tags:
  - tdd
 publishDate: 2022-09-11T20:52:08.052481
 last-modified-purpose:
-slug: /chaos-engineering/
+slug: /software-blog/chaos-engineering/
 title: Chaos Engineering
 toc: false
 image: https://upload.wikimedia.org/wikipedia/commons/3/39/LogoChaosMonkeysNetflix.png
@@ -41,7 +41,7 @@ Chaos Engineering for Spring Boot includes three assaults (latency, exception, k
 
 There are usually common patterns to handle many assaults like CircuitBreaker, which many java libraries provide. Thus, it would require some thought to handle failures on UI too.
 
-![ByteByteGo](/images/chaos-engineering.jpeg)
+![ByteByteGo](/images/software-blog/chaos-engineering.jpeg)
 
 Source: [ByteByteGo](https://bytebytego.com/newsletter)
 

@@ -9,7 +9,7 @@ tags:
  - matured
 publishDate: 2023-02-12T20:52:08.052481
 last-modified-purpose: 
-slug: /v1/my-core-beliefs/
+slug: /life-blog/my-core-beliefs/
 title: My Core Beliefs from Feb 2023
 ---
 

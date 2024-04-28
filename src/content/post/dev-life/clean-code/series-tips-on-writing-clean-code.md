@@ -7,7 +7,7 @@ tags:
  - clean-code
 title: Clean Code
 publishDate: 2019-12-19T20:42:15.086538
-slug: /clean_code/
+slug: /software-blog/clean_code/
 image: /images/2019-12-19-series-tips-on-writing-clean-code/1.png
 ---
 

@@ -5,11 +5,11 @@ tags:
  - technical
  - web-development
 publishDate: 2021-12-04T20:52:08.052481
-slug: /angular-react-comparison/
+slug: /software-blog/angular-react-comparison/
 title: Angular and React Comparison
-image: /images/angular-react-comparison.png
+image: /images/software-blog/angular-react-comparison.png
 ---
-![](/images/angular-react-comparison.png)
+![](/images/software-blog/angular-react-comparison.png)
 
 Angular and React though they are competitors aren’t in a completely fair league. This is because one is a full-fledged framework and one is not. It may be better to compare Angular with a React framework like Next.js.
 

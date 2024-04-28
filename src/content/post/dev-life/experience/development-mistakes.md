@@ -6,12 +6,12 @@ tags:
  - experience
 publishDate: 2022-10-08T20:52:08.052481
 last-modified-purpose:
-slug: /development-mistakes/
+slug: /software-blog/development-mistakes/
 title: 3 Big Development Mistakes That Had Significant Costs Later
-image: /images/development-mistakes.jpg
+image: /images/software-blog/development-mistakes.jpg
 ---
 
-![](/images/development-mistakes.jpg)
+![](/images/software-blog/development-mistakes.jpg)
 
 Photo by <a href="https://unsplash.com/@sickhews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Wes Hicks</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 

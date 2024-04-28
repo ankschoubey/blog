@@ -9,7 +9,7 @@ tags:
  - matured
 publishDate: 2022-07-02T20:52:08.052481
 last-modified-purpose: add Autenticity as fundamental value
-slug: /my-core-values/
+slug: /life-blog/my-core-values/
 title: My Core Values
 ---
 

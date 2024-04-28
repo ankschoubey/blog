@@ -299,7 +299,7 @@ flowchart TD
 
 There are two ways to debug, one is to run the code manually and try to replicate multiple save scenarios by firing the method manually. But this is a non-TDD way.
 
-The #WayOfTDD is, to write a test that generates the same scenario. Since I have faced this scenario before, I'll share what I had done. Below is an excerpt from my article [Solving an OptimisticLockingException During Upsert in MongoDB-Spring Webflux](https://www.ankushchoubey.com/optimistic-locking-exception-mongodb/)
+The #WayOfTDD is, to write a test that generates the same scenario. Since I have faced this scenario before, I'll share what I had done. Below is an excerpt from my article [Solving an OptimisticLockingException During Upsert in MongoDB-Spring Webflux](https://www.ankushchoubey.com/software-blog/optimistic-locking-exception-mongodb/)
 
 I created a test as follows:
 

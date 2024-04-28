@@ -6,7 +6,7 @@ tags:
  - decision-making
  - truth
 publishDate: 2021-08-14T20:52:08.052481
-slug: /inversion/
+slug: /life-blog/inversion/
 title: Inversion
 ---
 

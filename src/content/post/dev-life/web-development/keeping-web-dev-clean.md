@@ -7,10 +7,10 @@ tags:
  - information-system
 title: Keeping Web Dev Code proper
 publishDate: 2021-08-01T20:42:15.593554
-slug: /web-dev-clean/
-image: /images/web-dev-clean.jpg
+slug: /software-blog/web-dev-clean/
+image: /images/software-blog/web-dev-clean.jpg
 ---
-![](/images/web-dev-clean.jpg)
+![](/images/software-blog/web-dev-clean.jpg)
 
 Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/web-development?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   

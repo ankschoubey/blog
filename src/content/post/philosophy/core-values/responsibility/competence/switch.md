@@ -6,12 +6,12 @@ tags:
  - personal
  - responsibility
 title: Always keep yourself ready to switch companies
-slug: /switch-jobs/
+slug: /life-blog/switch-jobs/
 publishDate: 2021-05-26T20:42:15.654723
-image: /images/switch-jobs.jpg
+image: /images/life-blog/switch-jobs.jpg
 hide: true
 ---
-![](/images/switch-jobs.jpg)
+![](/images/life-blog/switch-jobs.jpg)
 
 ## Capitalism
 

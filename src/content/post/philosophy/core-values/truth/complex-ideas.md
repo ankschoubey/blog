@@ -6,7 +6,7 @@ tags:
  - philosophical
  - baton
 publishDate: 2022-08-14T20:52:08.052481
-slug: /complex/
+slug: /software-blog/complex/
 last-modified-purpose: added CI/CD and no-automation
 title: Complex Technologies are extension of Simple Ones
 ---

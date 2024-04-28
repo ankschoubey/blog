@@ -7,7 +7,7 @@ tags:
  - clean-code
 publishDate: 2022-12-27T20:52:08.052481
 last-modified-purpose: added "Validate on the database"
-slug: /pre-save-data-validation/
+slug: /software-blog/pre-save-data-validation/
 title: Pre-save Data Validation
 toc: false
 ---

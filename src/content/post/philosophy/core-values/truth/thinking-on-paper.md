@@ -6,7 +6,7 @@ tags:
  - truth
 publishDate: 2022-05-05T20:52:08.052481
 last-modified-purpose:
-slug: /thinking-on-paper/
+slug: /life-blog/thinking-on-paper/
 title: Thinking on Paper
 ---
 

@@ -6,7 +6,7 @@ tags:
  - clean-code
 publishDate: 2022-04-19T20:52:08.052481
 last-modified-purpose:
-slug: /debugging-effectively/
+slug: /software-blog/debugging-effectively/
 title: Debugging Effectively
 ---
 

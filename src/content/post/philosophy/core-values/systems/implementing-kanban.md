@@ -7,10 +7,10 @@ tags:
  - systems
 publishDate: 2023-01-07T20:52:08.052481
 last-modified-purpose:
-slug: /implementing-kanban/
+slug: /life-blog/implementing-kanban/
 title: Developing Healthy Habits for Data-Driven Kanban Board
 toc: false
-image: /images/implementing-kanban.svg
+image: /images/life-blog/implementing-kanban.svg
 ---
 
 ## Board is the single source of truth

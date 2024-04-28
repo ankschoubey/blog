@@ -8,7 +8,7 @@ tags:
  - graphql
 publishDate: 2023-04-06T20:42:15.140795
 title: GraphQL - Understanding its Advantages, Query Types, and Technical Functioning
-slug: /v1/what-is-graphql/
+slug: /software-blog/what-is-graphql/
 image: /images/v1-graphql.png
 ---
 

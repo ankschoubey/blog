@@ -8,7 +8,7 @@ tags:
  - tdd
 publishDate: 2022-08-07T20:52:08.052481
 last-modified-purpose:
-slug: /mutation-testing/
+slug: /software-blog/mutation-testing/
 title: Mutation Testing
 toc: false
 ---

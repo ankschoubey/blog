@@ -8,12 +8,12 @@ tags:
  - automation
 publishDate: 2022-07-24T20:52:08.052481
 last-modified-purpose:
-slug: /maven-dependency-upgrade/
+slug: /software-blog/maven-dependency-upgrade/
 title: Tips on fixing and upgrading Maven Dependencies
-image: /images/maven-dependency-upgrade/header.svg
+image: /images/software-blog/maven-dependency-upgrade/header.svg
 toc: false
 ---
-![Maven Logo From Wikipedia](/images/maven-dependency-upgrade/header.svg)
+![Maven Logo From Wikipedia](/images/software-blog/maven-dependency-upgrade/header.svg)
 
 {% include note.html content="**For beginners**: Instead of writing your code, you can include code written by other people. This is done by setting up dependencies. Maven is a java build tool that helps streamline and automate dependency management so that you don't have to manually configure things within each machine. Apart from this, maven also helps in testing, and release and has a plugin ecosystem to automate many tasks." %}
 
@@ -37,7 +37,7 @@ It can be hard to know the subdependiencies of a dependency. [Maven Helper](http
 
 It has options to exclude dependies too.
 
-![Maven Helper IntelliJ Plugin](/images/maven-dependency-upgrade/maven_helper.png)
+![Maven Helper IntelliJ Plugin](/images/software-blog/maven-dependency-upgrade/maven_helper.png)
 
 # Run automated tests after updation
 

@@ -8,7 +8,7 @@ tags:
  - for-future-me
 publishDate: 2021-08-01T20:42:15.662278
 title: Quick Refactoring Tips
-slug: /refactoring/
+slug: /software-blog/refactoring/
 ---
 
 It may be good to have unit test cases

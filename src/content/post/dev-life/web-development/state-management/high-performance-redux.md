@@ -422,7 +422,7 @@ This way, the update to the component will be directly managed by the Redux stor
 
 Connect all your components within your project to take/update data directly from/to the Redux store.
 
-Take a look at my article "[Efficiently Connect Components with Redux and Other Stores](https://www.ankushchoubey.com/optimizing-react-connect-components-redux/)" to understand the details and a way to start connecting all your components to the Redux store efficiently.
+Take a look at my article "[Efficiently Connect Components with Redux and Other Stores](https://www.ankushchoubey.com/software-blog/optimizing-react-connect-components-redux/)" to understand the details and a way to start connecting all your components to the Redux store efficiently.
 
 ## Ending
 

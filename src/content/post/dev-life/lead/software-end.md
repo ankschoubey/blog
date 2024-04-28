@@ -8,7 +8,7 @@ tags:
  - business
 publishDate: 2021-08-01T20:42:15.488221
 title: Software project never ends
-slug: /software_end/
+slug: /software-blog/software_end/
 ---
 Building software is having no fixed deadline. Below are some reasons why.
 

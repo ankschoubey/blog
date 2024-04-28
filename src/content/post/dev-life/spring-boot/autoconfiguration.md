@@ -7,12 +7,12 @@ tags:
  - configuration-management
 publishDate: 2022-09-11T20:52:08.052481
 last-modified-purpose:
-slug: /autoconfiguration/
+slug: /software-blog/autoconfiguration/
 title: How AutoConfiguration works in Spring Boot
 toc: false
-image: /images/autoconfiguration.svg
+image: /images/software-blog/autoconfiguration.svg
 ---
-![](/images/autoconfiguration.svg)
+![](/images/software-blog/autoconfiguration.svg)
 
 Everything in Spring Boot is configurable. This was very hard to understand, but here are some pointers that could help.
 

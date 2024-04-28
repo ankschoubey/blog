@@ -10,10 +10,10 @@ tags:
  - favorite
 title: Developer Productivity
 publishDate: 2021-08-01T20:42:15.532481
-slug: /dev_productivity/
-image: /images/dev_productivity.jpg
+slug: /software-blog/dev_productivity/
+image: /images/software-blog/dev_productivity.jpg
 ---
-![](/images/dev_productivity.jpg)
+![](/images/software-blog/dev_productivity.jpg)
 
 <sub>Photo by <a href="https://unsplash.com/@ymoran?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">MORAN</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 

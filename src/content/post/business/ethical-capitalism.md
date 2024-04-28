@@ -7,10 +7,10 @@ tags:
  - philosophical
 title: Ethical Capitalism
 publishDate: 2021-08-01T20:42:15.554981
-slug: /ethical-capitalism/
-image: /images/ethical-capitalism.jpg
+slug: /life-blog/ethical-capitalism/
+image: /images/life-blog/ethical-capitalism.jpg
 ---
-![](/images/ethical-capitalism.jpg)
+![](/images/life-blog/ethical-capitalism.jpg)
 
 <sub>Photo by <a href="https://unsplash.com/@billow926?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">billow926</a> on <a href="https://unsplash.com/s/photos/market?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 

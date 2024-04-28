@@ -8,12 +8,12 @@ tags:
  - testing
 publishDate: 2022-09-25T20:52:08.052481
 last-modified-purpose:
-slug: /testing-design-patterns/
+slug: /software-blog/testing-design-patterns/
 title: How to test interfaces, abstract classes and design patterns?
-image: /images/testing-design-patterns.jpg
+image: /images/software-blog/testing-design-patterns.jpg
 image-fit: contain
 ---
-![](/images/testing-design-patterns.jpg)
+![](/images/software-blog/testing-design-patterns.jpg)
 
 {% include note.html content="For beginners: Design patterns are template solutions to common problems developers face. There are many design patterns; the best known are the 2 Gang of Four (GoF)  object-oriented design patterns." %}
 

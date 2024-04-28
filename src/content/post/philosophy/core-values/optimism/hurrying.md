@@ -8,7 +8,7 @@ tags:
  - peace
 publishDate: 2021-08-01T20:42:15.508582
 title: Hurrying does not help.
-slug: /hurrying/
+slug: /life-blog/hurrying/
 ---
 
 Hurring is similar to stock market investing.

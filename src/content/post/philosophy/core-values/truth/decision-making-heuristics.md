@@ -8,10 +8,10 @@ tags:
  - systems
 title: Decision Making Heuristics
 publishDate: 2021-08-14T20:42:15.644388
-slug: /decision-making-heuristics/
-image: /images/decision-making-heuristics.jpg
+slug: /life-blog/decision-making-heuristics/
+image: /images/life-blog/decision-making-heuristics.jpg
 ---
-![](/images/decision-making-heuristics.jpg)
+![](/images/life-blog/decision-making-heuristics.jpg)
 
 Photo by <a href="https://unsplash.com/@timgraf99?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Graf</a> on <a href="https://unsplash.com/s/photos/compass?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
