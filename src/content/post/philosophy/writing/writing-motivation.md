@@ -15,9 +15,9 @@ image: /images/life-blog/write.jpg
 
 ![](/images/life-blog/write.jpg)
 
-<sup>Photo by <a href="https://unsplash.com/@craftedbygc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Green Chameleon</a> on <a href="https://unsplash.com/s/photos/life-blog/write?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>
+<sup>Photo by <a href="https://unsplash.com/@craftedbygc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Green Chameleon</a> on <a href="https://unsplash.com/s/photos/write?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>
 
-This is collections of posts/thoughts-on-ideas,/life-blog/idea,True,Trues I have come across over the years.
+This is collections of posts/ideas I have come across over the years.
 
 {% include alert.html text = 'These only apply to non-fiction writing' %}
 

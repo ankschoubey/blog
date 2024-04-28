@@ -14,7 +14,7 @@ image: /images/life-blog/think.jpg
 ---
 ![](/images/life-blog/think.jpg)
 
-Photo by <a href="https://unsplash.com/@elijahdhiett?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elijah Hiett</a> on <a href="https://unsplash.com/s/photos/life-blog/think?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@elijahdhiett?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elijah Hiett</a> on <a href="https://unsplash.com/s/photos/think?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 ## Difference between thinking and knowledge
   

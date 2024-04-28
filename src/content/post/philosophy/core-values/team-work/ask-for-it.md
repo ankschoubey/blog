@@ -8,11 +8,11 @@ tags:
  - truth
 title: Just ask for it
 publishDate: 2021-08-01T20:42:15.417929
-slug: /ask/
-image: /images/ask.jpg
+slug: /life-blog/ask-for-help/
+image: /images/life-blog/ask-for-helpjpg
 ---
 
-![](/images/ask.jpg)
+![](/images/life-blog/ask-for-help.jpg)
 
 As I get older I realize one thing that most things you want you can just ask for it.
 

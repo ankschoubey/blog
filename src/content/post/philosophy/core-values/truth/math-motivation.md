@@ -6,11 +6,10 @@ tags:
  - collection-of-thoughts
 use_math: true
 publishDate: 2020-05-04T20:42:15.193139
-slug: /math/
-image: /images/math.jpg
+slug: /life-blog/maths-motivation
+image: /images/life-blog/maths-motivation.jpg
 ---
 
-![](/images/math.jpg)
 
 <sup>Photo by <a href="https://unsplash.com/@thisisengineering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ThisisEngineering RAEng</a> on <a href="https://unsplash.com/s/photos/maths?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>
 

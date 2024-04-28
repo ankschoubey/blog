@@ -41,7 +41,7 @@ He/She
   - sees a problem and proposes a solution
   - takes on responsibilities
   - delivers on them
-  - disagrees with a process/method/thoughts-on-ideas,/life-blog/idea,True,True when it is needed but provides proper reasoning and is ready to discuss over it if needed
+  - disagrees with a process/method/idea when it is needed but provides proper reasoning and is ready to discuss over it if needed
   - debates and let's the best idea win
 
 If someone is stuck, he/she helps them and doesn't just leave them i.e he/she is a good team member.

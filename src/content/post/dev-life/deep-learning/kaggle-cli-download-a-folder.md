@@ -45,7 +45,7 @@ kaggle competitions files -c state-farm-distracted-driver-detection | grep c4 | 
 
 I don’t use the command line regularly. These are the sources I looked:
 
-- [Read values into a shell variable from a pipe](https://stackoverflow.com/questions/2746553/reading-habit,/life-blog/read,True,True-values-into-a-shell-variable-from-a-pipe)
+- [Read values into a shell variable from a pipe](https://stackoverflow.com/questions/2746553/read-values-into-a-shell-variable-from-a-pipe)
 
 - [How to mkdir only if a dir does not already exist?](https://stackoverflow.com/questions/793858/how-to-mkdir-only-if-a-dir-does-not-already-exist)
 

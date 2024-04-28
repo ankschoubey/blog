@@ -4,11 +4,11 @@ excerpt: Placeholder
 
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
-slug: /integrate-external-services/
+slug: /software-blog/integrate-external-services/
 title: Pointers while integrating an external service
-image: /images/integrate-external-services.jpg
+image: /images/software-blog/integrate-external-services.jpg
 ---
-![](/images/integrate-external-services.jpg)
+![](/images/software-blog/integrate-external-services.jpg)
 
 Photo by <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a> on <a href="https://unsplash.com/s/photos/apps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -37,7 +37,7 @@ You'll have to save the token somewhere if it's an OAuth flow.
 
 OAuth flow sounds fancy but it's really easy. You might also find the SDK or an open source libary makes it easy to implement.
 
-![](/images/integrate-external-services/oauth.png)
+![](/images/software-blog/integrate-external-services/oauth.png)
 
 Image Source: [Slack OAuth Flow](https://api.slack.com/legacy/oauth)
 
@@ -61,6 +61,6 @@ If yes, you'll have to work with the Product and Doc team to make sure everythin
 
 # Resources
 
-{% include image.html file='/images/integrate-external-services/ibm.png' caption='Overview of Application Integration' %}
+{% include image.html file='/images/software-blog/integrate-external-services/ibm.png' caption='Overview of Application Integration' %}
 
 Source: [What is Application Integration? - YouTube](https://www.youtube.com/watch?v=rcuu-O02xqE)

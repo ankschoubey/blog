@@ -95,7 +95,7 @@ Python 3.7+ also has **@ dataclass **annotation which auto-generates constructor
 
 - [_Primer on Python Decorator_](https://realpython.com/primer-on-python-decorators/)
 
-- _Source: `[functools](https://docs.python.org/2/library/roi-of-fun,/life-blog/fun,True,Truectools.html#module-functools)` — Higher-order functions and operations on a callable object_
+- _Source: `[functools](https://docs.python.org/2/library/functools.html#module-functools)` — Higher-order functions and operations on a callable object_
 
 - [_The Ultimate Guide to Data Classes in Python 3.7_](https://realpython.com/python-data-classes/)
 

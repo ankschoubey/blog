@@ -6,11 +6,10 @@ tags:
  - software-engineering
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose: Fixed grammatical mistakes
-slug: /reading-documentation/
+slug: /software-blog/reading-documentation/
 title: Thoughts on Reading Documentation
-image: /images/reading-documentation.jpg
+image: /images/software-blog/reading-documentation.jpg
 ---
-![](/images/reading-documentation.jpg)
 
 Photo by <a href="https://unsplash.com/@jilburr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jilbert Ebrahimi</a> on <a href="https://unsplash.com/s/photos/reading-documentation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 

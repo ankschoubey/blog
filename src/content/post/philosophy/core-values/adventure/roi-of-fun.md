@@ -6,7 +6,7 @@ tags:
  - peace
 use_math: true
 publishDate: 2021-08-01T20:42:15.239598
-slug: /fun/
+slug: /life-blog/roi-of-fun/
 image: /images/2020-07-01-roi-of-fun/one_piece_luffy_drawing.jpg
 ---
 

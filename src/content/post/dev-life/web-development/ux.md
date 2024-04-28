@@ -7,10 +7,9 @@ tags:
  - business
 title: User Experience
 publishDate: 2021-08-01T20:42:15.561538
-slug: /ux/
-image: /images/ux.jpg
+slug: /software-blog/thoughts-on-user-experience/
+image: /images/software-blog/thoughts-on-user-experience.jpg
 ---
-![](/images/ux.jpg)
 
 <sup>Photo by <a href="https://unsplash.com/@alvarordesign?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alvaro Reyes</a> on <a href="/s/photos/ux?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sup>
   
@@ -32,7 +31,7 @@ And therefore they won't use your product.
 
 The way to understand what the users want is by sympathizing with the struggles that user's face.
 
-<video src="/images/ux/meme.mp4" width="150" height="300" controls></video>
+<video src="/images/software-blog/thoughts-on-user-experience/meme.mp4" width="150" height="300" controls></video>
 
 ## Test fast
 
@@ -62,6 +61,6 @@ Such things can include reducing the number of steps needed to perform a task.
 
 ## A Checklist for "beauty" of User Interface
 
-{% include image.html file='/images/ux/1.png' caption='As a developer how can I become a better designer.' %}
+{% include image.html file='/images/software-blog/thoughts-on-user-experience/1.png' caption='As a developer how can I become a better designer.' %}
 
 Source: ["As a developer how can I become a better designer?" ANSWERED!](https://www.youtube.com/watch?v=Ha_ooKAWAJI)

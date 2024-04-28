@@ -9,9 +9,9 @@ tags:
  - bdd
 publishDate: 2022-05-23T20:52:08.052481
 last-modified-purpose:
-slug: /bdd/
+slug: /software-blog/gist-of-bdd/
 title: The Gist of Behavior Driven Development - BDD
-image: /images/bdd.svg
+image: /images/software-blog/gist-of-bdd.svg
 ---
 
 # Starting with a User's Problem

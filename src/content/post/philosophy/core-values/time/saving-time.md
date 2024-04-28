@@ -37,7 +37,7 @@ Planning is an essential activity that saves maximum time with least effort.
 
 Ask yourself at every moment: "Is this essential?" / is this essential now?
 
-Often when planning we ignore tasks that can give us long term ROI like learning/reading-habit,/life-blog/read,True,Trueing. Such tasks take huge time in the short term. Some set time within the day (like an hour) should be allocated.
+Often when planning we ignore tasks that can give us long term ROI like learning/reading. Such tasks take huge time in the short term. Some set time within the day (like an hour) should be allocated.
 
 Plans should be a mix of responsibility and rewards. Ask yourself: "If I could have the day I wanted. What would that day look like?"
 

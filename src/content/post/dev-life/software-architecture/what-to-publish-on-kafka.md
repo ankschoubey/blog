@@ -11,7 +11,7 @@ slug: /software-blog/what-when-to-publish/
 title: What and when to publish on message queue
 ---
 
-# Publishing Every Business Entity on each update/life-blog/write. [^1]
+# Publishing Every Business Entity on each update/write. [^1]
 
 Publishing every business entity is especially useful for event-driven systems.
 

@@ -8,10 +8,9 @@ tags:
  - social-harmony
 title: Age is not a perfect measure of experience
 publishDate: 2021-08-01T20:42:15.494363
-slug: /age/
-image: /images/age.jpg
+slug: /life-blog/age-is-not-a-measure-of-experience/
+image: /images/age-is-not-a-measure-of-experience.jpg
 ---
-![](/images/age.jpg)
 
 <sub>Photo by <a href="https://unsplash.com/@paige_cody?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Paige Cody</a> on <a href="https://unsplash.com/s/photos/kids-piano?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 

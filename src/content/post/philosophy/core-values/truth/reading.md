@@ -7,13 +7,12 @@ tags:
  - drafts
  - truth
 title: Reading Books
-slug: /read/
+slug: /life-blog/reading-books/
 publishDate: 2021-08-01T20:42:15.423682
-image: /images/read.jpg
+image: /images/ife-blog/reading-books.jpg
 updated: ['21 Jan 2021','31 Jan 2021']
 ---
 
-![](/images/read.jpg)
 <sub>Photo by <a href="https://unsplash.com/@roadtripwithraj?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Road Trip with Raj</a> on <a href="https://unsplash.com/s/photos/read?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 
 Reading is the nourishment that lets you do think in interesting ways. [^1]

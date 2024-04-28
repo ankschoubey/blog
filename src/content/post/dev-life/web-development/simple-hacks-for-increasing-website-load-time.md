@@ -42,7 +42,7 @@ This ensures that if the content of the file changes, the `md5` checksum will ch
 
 {% include twitter.html content="https://twitter.com/ankschoubey/status/1219613362239049728?ref_src=twsrc%5Etfw" %}
 
-<sup>Advanced tips: [Lazy Loading Images and Video](https://developers.google.com/web/roi-of-fun,/life-blog/fun,True,Truedamentals/performance/lazy-loading-guidance/images-and-video)</sup>
+<sup>Advanced tips: [Lazy Loading Images and Video](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video)</sup>
 
 # Do it fast
 

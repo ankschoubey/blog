@@ -7,11 +7,11 @@ tags:
  - for-future-me
  - responsibility
 title: The Path / Ethics
-slug: /path/
+slug: /life-blog/on-path-ethics/
 publishDate: 2021-08-01T20:42:15.552524
-image: /images/path.jpg
+image: /images/life-blog/on-path-ethics.jpg
 ---
-![](/images/path.jpg)
+![](/images/life-blog/on-path-ethics.jpg)
 <sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@jakeblucker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Jake Blucker</a> on <a href="https://unsplash.com/s/photos/road?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
 
 ## The Path
