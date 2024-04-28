@@ -7,7 +7,7 @@ tags:
  - clean-code
 publishDate: 2022-08-06T20:42:15.089636
 title: Leave Clues
-slug: /naming_conventions/
+slug: /software-blog/naming_conventions/
 last-modified-purpose: "added detail about javadocs"
 ---
 

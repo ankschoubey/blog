@@ -7,7 +7,7 @@ tags:
  - plugin
 publishDate: 2022-11-13T20:52:08.052481
 last-modified-purpose:
-slug: /v1/plugin-architecture
+slug: /software-blog/plugin-architecture
 title: How to develop a robust plugin architecture?
 image: /images/v1-plugin-architecture/header.jpg
 ---

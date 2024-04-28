@@ -7,7 +7,7 @@ tags:
  - deep-learning
 title: Digit Recognition
 publishDate: 2020-03-30T20:42:15.162484
-slug: /mnist/
+slug: /software-blog/mnist/
 image: https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png
 ---
 ***

@@ -10,7 +10,7 @@ tags:
  - tdd
 publishDate: 2022-08-14T20:52:08.052481
 last-modified-purpose:
-slug: /writing-better-specs/
+slug: /software-blog/writing-better-specs/
 title: Writing better BDD specifications
 ---
 
@@ -41,7 +41,7 @@ There are 6 principles for creating good specifications:
 5. Focused
 6. Brief
 
-It's better here to include a link to read more out this than to continue repeating. So posting the link here: [Keep your scenarios BRIEF](https://cucumber.io/blog/bdd/keep-your-scenarios-brief/)
+It's better here to include a link to read more out this than to continue repeating. So posting the link here: [Keep your scenarios BRIEF](https://cucumber.io/blog/gist-of-bdd,/software-blog/bdd,True,True/keep-your-scenarios-brief/)
 
 ## Aim for single assertions (Single "Then") [^1]
 

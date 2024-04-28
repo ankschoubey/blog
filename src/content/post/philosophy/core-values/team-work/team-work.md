@@ -7,11 +7,11 @@ tags:
  - non-technical
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added tips for communicating better
-slug: /team-work/
+slug: /life-blog/team-work/
 title: Strategies on Team Work
-image: /images/team-work/team-work.webp
+image: /images/life-blog/team-work/life-blog/team-work.webp
 ---
-![](/images/team-work/team-work.webp)
+![](/images/life-blog/team-work/life-blog/team-work.webp)
 
 1. Treat others the way you want to be treated. Treat yourself the way you want to be treated.
 

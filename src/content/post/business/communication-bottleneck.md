@@ -7,11 +7,11 @@ tags:
  - communication
 title: Communication Bottleneck in large organizations
 publishDate: 2021-08-01T20:42:15.428392
-slug: /communication_bottleneck/
-image: /images/communication_bottleneck.jpg
+slug: /software-blog/communication_bottleneck/
+image: /images/software-blog/communication_bottleneck.jpg
 ---
 
-![](/images/communication_bottleneck.jpg)
+![](/images/software-blog/communication_bottleneck.jpg)
 
 ## Productivity increase with regards to extra hires
 

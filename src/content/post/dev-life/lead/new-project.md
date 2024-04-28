@@ -4,7 +4,7 @@ excerpt: 'Placeholder'
 
 publishDate: 2022-05-11T20:52:08.052481
 last-modified-purpose:
-slug: /new-project/
+slug: /software-blog/new-project/
 title: Some considerations when setting a new project
 ---
 

@@ -7,7 +7,7 @@ tags:
  - notes
 publishDate: 2022-10-15T20:52:08.052481
 last-modified-purpose:
-slug: /HTTP-status-codes/
+slug: /software-blog/HTTP-status-codes/
 title: Understanding & Using HTTP Status Codes
 image: https://httpstatusdogs.com/img/100.jpg
 ---

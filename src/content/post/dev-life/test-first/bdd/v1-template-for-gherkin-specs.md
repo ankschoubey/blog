@@ -6,7 +6,7 @@ tags:
  - bdd
 publishDate: 2023-01-07T20:52:08.052481
 last-modified-purpose:
-slug: /v1/template-for-gherkin-specs
+slug: /software-blog/template-for-gherkin-specs
 title: Template for Gherkin Specs
 ---
 

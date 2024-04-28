@@ -59,7 +59,7 @@ Logos is truth. Truth cannot hurt you. Truth only leads to clarity. Therefore, L
 
 Suppose someone is trying to help you, but the help they offer is stupid. Many times we just dismiss the help. But we can and I believe it’s much better to help them form their arguments.
 
-You can let them know that you understand they want the best for you (ethos), and you understand their sentiment (pathos) and you respect it (again pathos), and then you explain/ask them how their idea may not be ideal or maybe improved (logos).
+You can let them know that you understand they want the best for you (ethos), and you understand their sentiment (pathos) and you respect it (again pathos), and then you explain/ask-for-help,/life-blog/ask,True,True them how their idea may not be ideal or maybe improved (logos).
 
 ### Developing a better personality by incorporating all three
 

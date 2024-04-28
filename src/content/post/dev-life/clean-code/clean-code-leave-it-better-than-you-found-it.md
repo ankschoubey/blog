@@ -8,7 +8,7 @@ tags:
  - business
 publishDate: 2020-01-06T20:42:15.137147
 title: Leave it better than you found it
-slug: /leave_it_better/
+slug: /software-blog/leave_it_better/
 ---
 
 Code is much more like a work of art/craft that people consider it.

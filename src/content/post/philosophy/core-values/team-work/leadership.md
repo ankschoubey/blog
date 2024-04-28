@@ -8,10 +8,10 @@ tags:
  - social-harmony
 title: Who is a leader?
 publishDate: 2021-08-01T20:42:15.419969
-slug: /leader/
-image: /images/leadership.jpg
+slug: /life-blog/leader/
+image: /images/life-blog/leadership.jpg
 ---
-![](/images/leadership.jpg)
+![](/images/life-blog/leadership.jpg)
 
 <sup>Photo by <a href="https://unsplash.com/@morganspoker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Morgan McKnight</a> on <a href="https://unsplash.com/s/photos/boat-rowing?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>
 
@@ -41,7 +41,7 @@ He/She
   - sees a problem and proposes a solution
   - takes on responsibilities
   - delivers on them
-  - disagrees with a process/method/idea when it is needed but provides proper reasoning and is ready to discuss over it if needed
+  - disagrees with a process/method/thoughts-on-ideas,/life-blog/idea,True,True when it is needed but provides proper reasoning and is ready to discuss over it if needed
   - debates and let's the best idea win
 
 If someone is stuck, he/she helps them and doesn't just leave them i.e he/she is a good team member.

@@ -7,7 +7,7 @@ tags:
  - tdd
 publishDate: 2022-04-27T20:52:08.052481
 last-modified-purpose:
-slug: /after-tdd/
+slug: /software-blog/after-tdd/
 title: What to test to write after functional TDD
 ---
 
@@ -29,7 +29,7 @@ What would happen if 100/500/1000 requests come concurrently?
 
 It's better to think in terms on logarithmic scale here.
 
-I faced this problem [when a record had to be updated concurrenly](/optimistic-locking-exception-mongodb).
+I faced this problem [when a record had to be updated concurrenly](/software-blog/optimistic-locking-exception-mongodb).
 
 # Mutation Testing
 
@@ -47,7 +47,7 @@ Mutation testing assumes that among the mutants being generated, there may be sc
 
 Mutation testing usually takes more time to execute than usual. 
 
-https://testing.googleblog.com/2021/04/mutation-testing.html
+https://software-blog/testing.googleblog.com/2021/04/software-blog/mutation-testing.html
 
 # Chaos Engineering
 

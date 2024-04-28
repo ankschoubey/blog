@@ -7,7 +7,7 @@ tags:
  - non-technical
 publishDate: 2022-06-12T20:52:08.052481
 last-modified-purpose:
-slug: /paper-work-devops/
+slug: /life-blog/paper-work-devops/
 title: Paper work is like DevOps
 hide: true
 toc: false
@@ -21,7 +21,7 @@ Coding is fast. You just learn a bunch of patterns and implement solutions.
 
 DevOps is slower to work on because it requires a bunch of configurations. Those configurations are very specific and have to work a certain way.
 
-Therefore the actually "DevOps" command/configuration would be small but require a lot of pre-reading/experimentation. Once done, the result is huge but daily progress usually seems much slower.
+Therefore the actually "DevOps" command/software-blog/configuration would be small but require a lot of pre-reading/experimentation. Once done, the result is huge but daily progress usually seems much slower.
 
 This feels very similar to paper work be it bank, government, etc. Paper work requires a bunch of skills similar to what's needed with DevOps.
 

@@ -7,11 +7,11 @@ tags:
  - message-queue
 publishDate: 2022-08-07T20:52:08.052481
 last-modified-purpose: added CQRS
-slug: /what-when-to-publish/
+slug: /software-blog/what-when-to-publish/
 title: What and when to publish on message queue
 ---
 
-# Publishing Every Business Entity on each update/write. [^1]
+# Publishing Every Business Entity on each update/life-blog/write. [^1]
 
 Publishing every business entity is especially useful for event-driven systems.
 

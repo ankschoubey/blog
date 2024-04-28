@@ -7,12 +7,12 @@ tags:
  - tdd
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
-slug: /tdd-over-json/
+slug: /software-blog/tdd-over-json/
 title: TDD over JSON
 toc: false
-image: /images/tdd-over-json.jpg
+image: /images/software-blog/tdd-over-json.jpg
 ---
-![](/images/tdd-over-json.jpg)
+![](/images/software-blog/tdd-over-json.jpg)
 Photo by RealToughCandy.com: https://www.pexels.com/photo/man-love-people-woman-11035481/
 
 Somethings TDD isn't straightforward. Here is such a case I faced.

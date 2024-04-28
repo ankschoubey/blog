@@ -6,12 +6,12 @@ tags:
  - baton
  - summary
 title: Sapiens Book Summary
-slug: /sapiens/
+slug: /life-blog/sapiens/
 publishDate: 2021-08-01T20:42:15.538277
-image: https://vialogue.files.wordpress.com/2017/04/sapiens.jpg
+image: https://vialogue.files.wordpress.com/2017/04/life-blog/sapiens.jpg
 excerpt: "The best book I have read in 2020"
 ---
-<img src="https://vialogue.files.wordpress.com/2017/04/sapiens.jpg" alt="" style=" width: 250px;">
+<img src="https://vialogue.files.wordpress.com/2017/04/life-blog/sapiens.jpg" alt="" style=" width: 250px;">
 
 ## Why this summary
 

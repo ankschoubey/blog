@@ -7,11 +7,11 @@ tags:
  - time
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added principles from Kanban and other tips
-slug: /saving-time/
+slug: /life-blog/saving-time/
 title: Strategies on becoming more productive
-image: /images/saving-time.jpg
+image: /images/life-blog/saving-time.jpg
 ---
-![](/images/saving-time.jpg)
+![](/images/life-blog/saving-time.jpg)
 
 <sup> Photo by <a href="https://unsplash.com/@airfocus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">airfocus</a> on <a href="https://unsplash.com/s/photos/kanban?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sup>
 
@@ -37,7 +37,7 @@ Planning is an essential activity that saves maximum time with least effort.
 
 Ask yourself at every moment: "Is this essential?" / is this essential now?
 
-Often when planning we ignore tasks that can give us long term ROI like learning/reading. Such tasks take huge time in the short term. Some set time within the day (like an hour) should be allocated.
+Often when planning we ignore tasks that can give us long term ROI like learning/reading-habit,/life-blog/read,True,Trueing. Such tasks take huge time in the short term. Some set time within the day (like an hour) should be allocated.
 
 Plans should be a mix of responsibility and rewards. Ask yourself: "If I could have the day I wanted. What would that day look like?"
 

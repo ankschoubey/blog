@@ -7,7 +7,7 @@ tags:
  - deep-learning
 publishDate: 2020-03-10T20:42:15.143791
 title: 'Kaggle CLI QA: How to download a particular folder'
-slug: /kaggle_download_folder/
+slug: /software-blog/kaggle_download_folder/
 ---
 
 **[Harshini on Medium asks](https://medium.com/@harshini2898/nice-article-c1eb575b0baf)**
@@ -45,7 +45,7 @@ kaggle competitions files -c state-farm-distracted-driver-detection | grep c4 | 
 
 I don’t use the command line regularly. These are the sources I looked:
 
-- [Read values into a shell variable from a pipe](https://stackoverflow.com/questions/2746553/read-values-into-a-shell-variable-from-a-pipe)
+- [Read values into a shell variable from a pipe](https://stackoverflow.com/questions/2746553/reading-habit,/life-blog/read,True,True-values-into-a-shell-variable-from-a-pipe)
 
 - [How to mkdir only if a dir does not already exist?](https://stackoverflow.com/questions/793858/how-to-mkdir-only-if-a-dir-does-not-already-exist)
 

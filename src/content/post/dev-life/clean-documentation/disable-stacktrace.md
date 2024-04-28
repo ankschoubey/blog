@@ -8,7 +8,7 @@ tags:
  - clean-code
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
-slug: /disable-stacktrace/
+slug: /software-blog/disable-stacktrace/
 title: Writing cleaner logs by Disabling Stack Trace for Expected Response Exceptions
 toc: false
 ---
