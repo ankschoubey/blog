@@ -9,7 +9,7 @@ tags:
  - matured
 publishDate: 2023-02-12T20:52:08.052481
 last-modified-purpose: 
-slug: /life-blog/my-core-values/
+slug: /life-blog/my-core-values-2023-feb/
 title: My Core Values Summary from Feb 2023
 ---
 
