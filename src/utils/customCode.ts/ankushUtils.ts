@@ -20,9 +20,13 @@ export const getItemFromSlug = async (slug: string, index: number | undefined) =
     if(!post){
         throw new Error(`Slug not found : {slug: '${slug}'}`)
     }
-    const item = postToItemConverter(post[0], index);
-
-    return item
+    try{
+        return  postToItemConverter(post[0], index);
+    } catch(e){
+        console.error(`Could Not Load ${slug} `)
+        console.error(e)
+    }
+    return null;
 }
 
 export interface SeriesItems {
