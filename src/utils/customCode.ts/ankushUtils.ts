@@ -24,7 +24,7 @@ export const getItemFromSlug = async (slug: string, index: number | undefined) =
         return  postToItemConverter(post[0], index);
     } catch(e){
         console.error(`Could Not Load ${slug} `)
-        console.error(e)
+        // console.error(e)
     }
     return null;
 }
