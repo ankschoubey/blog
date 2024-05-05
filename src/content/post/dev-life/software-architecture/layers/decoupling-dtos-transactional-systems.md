@@ -15,6 +15,12 @@ image: https://docs.google.com/drawings/d/e/2PACX-1vT3KH3qfLmMQ0DDGtQL8uyol8YhCW
 
 In one of the previous blog posts, I explained why the [service layer should be free of dealing with Requests/Responses and DTOs in general](/software-blog/separate-service/).
 
+The gist of that article was
+
+- The @Controller handles the conversion from Request object to Entity and Entity to Response.
+- The @Service handles the business logic
+- The @Service only deals with entities and not request, response objects and therefore can be used at many places easily.
+
 Back then, I used MongoDB with Spring Boot and NodeJs.
 
 MongoDB didn't have transactions and ACID, so converting was very easy.
@@ -191,7 +197,7 @@ Other interfaces, such as GRPC, Messaging, etc., can also send their converters.
 
 ## Ending: Single Responsibility Preserved
 
-The service layer should not be tied to any view and should be general enough to cater to all.
+The service layer should not be tied to any view and should be general enough to cater to all. It should only deal with business logic.
 
 Transactional poses a unique challenge. If an entity has fields with Lazy fetch, they can't be fetched outside transactional, which is why many codebases tie the service layer to the controller layer.
 
