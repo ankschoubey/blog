@@ -5,6 +5,7 @@ tags:
  - lean
  - agile
  - systems
+ - non-technical
 publishDate: 2023-01-07T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/implementing-kanban/
