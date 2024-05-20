@@ -8,7 +8,7 @@ tags:
  - testing
 publishDate: 2022-07-30T20:52:08.052481
 last-modified-purpose:
-slug: /software-blog/spring-boot-junit-faster/
+slug: /spring-boot-junit-faster/
 title: Speeding Up Spring Boot/JUnit tests
 image: /images/software-blog/spring-boot-junit-faster/header.png
 ---
