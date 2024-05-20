@@ -10,6 +10,12 @@ title: Navigating Global State Management - From Singletons to Redux
 image: https://docs.google.com/drawings/d/e/2PACX-1vQqQK12IsL_D0vkppL8_GWo14aYnNtUNRE5dgJf7SqRQHqNuYUUx8FCkMwgIlYpWW4klMvbJSGhx3Fo/pub?w=1195&h=671
 ---
 
+<style>
+    img {
+       background: #ffffff7a
+    }
+    </style>
+
 When a UI application is complex, it has one or more components and some shared data between those components.
 
 For example, a separate UI component on the left may share the same data as another UI component on the right. When a change happens in one of them, it should affect the other as they share the same data, i.e., the same State.
