@@ -105,10 +105,85 @@ Add a card to the board. You can drag a card from one column to the next until d
 
 Here are a few of the boards I have created.
 
-What Trello Sub-Systems I have created to get most out of Trello?
------------------------------------------------------------------
+## What Trello Sub-Systems I have created to get most out of Trello?
 
-Sub Systems I have created for Trello
+While the basic, Todo, Doing and Done column is good. The problem is of scale [TODO: Link to post on systems here]. As a system gets more efficient, we are able to get more task done until the system chokes up again and we need to optimize.
+
+Therefore, we need to iterate over our system so that it can scale our current needs. While many of the systems are great, note our main aim is high output and not high documentation. So, if productivity can happen in other ways, that's preferrable too. (TODO: Link to my blogpost on Challenge and Systems related to it)
+
+Below are a few systems I use. Some of which I have created myself. Each of this is to help me get more clarity.
+
+> Clarity precedes completing the responsibility
+
+### Clarity of what to do within the task: Card Breakdown
+
+If you have a big task, you want to be able to break down it into smaller achievable tasks.
+
+For example, launching a new website involves
+
+- learning about how to launch
+- signing up for a service
+- defining the content
+- writing the content
+- etc.
+
+A big step is comprised of many smaller steps.
+
+By breaking down a card well, you'll find you are able to do the task better. You are able to understand it in clarity.
+
+There are a few ways to break a task in Trello.
+
+- Into Cards
+- Into Checklists
+
+Usually, if I have a task which is multiple months, I'll break it down into a bunch of smaller cards that I can take action on in about a week.
+
+And for checklist it depends, I may not may not use checklist if the task itself it small. But if a task get's complex, I'll break it down to checklists.
+
+## Clarity of what to do next: Breaking down Todo column into multiple columns
+
+Our basic column layout was todo, doing and done. As you get more productive, you'll find that there are more things to do and your todo list keeps getting bigger and bigger. This is natural because we actually have a lot of things to do in life [TODO link to blogpost].
+
+The problem our TODO list starts getting overwhelming.
+
+But note, as I mentioned in one of my previous blogpost, as long as we focus on what's the most important thing to do and as long as we do it well, we'll get highest amount of productivity we can get.
+
+And we can arrange our Trello system in a way that can help with that.
+
+Instead of a simple TODO column, I split it into multiple columns.
+
+- This week: Includes all the tasks I am focused on this week. (I am relying on this less now. But starting out start with this and see if this is enough. Checkout the dashboard section)
+- Future planning columns: Multiple columns to help me prioritize what to do next.
+
+I keep the left section of the board focused on what I wnat to do and right section of the board for future planning and knowledge units.
+
+Here's how I break down future planning columns. this mostly depends on the domain.
+
+If I am creating a board for health. I'll break down todos differently. For Blogging, I'll break it down differently.
+
+For example for blogging I have
+
+- **Needs Organization**: Just ideas. I need to organize these better.
+- **Needs Refinement**: These are developed ideas that need some refinement.
+- **Ready for Production**: These are clear ideas that are ready for writing.
+
+This way whenever I need to do a talk, I pick up from Ready to Production.
+
+Columns in Travel board are arranged differently.
+
+- One section which has couple of columns for World Tour
+- One section for India
+
+Tip: If you don't know your domain well yet, breakdown create MoSCoW columns: Must Do, Should Do, Can Do, Won’t Do
+
+## Clarity of how to progress
+
+## Chained Task: Clarity of what other tasks need to be done
+
+## Protect Board Clarity: Inbox Card
+
+## Purge from Dashboard
+
 
 Knowing Exactly What To Do: Clarity
 
