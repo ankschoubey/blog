@@ -50,6 +50,8 @@ And while using it, keep a look at this post so that it can help you optimize ev
 
 Again, you don't need to implement everything. #implementWhatResonates.
 
+> Keep things as simple as possible!
+
 ## What is Trello? Why do I use it? And Principle
 
 Trello is a simple Kanban tool I use to organize my life. Tasks are organized into cards and columns are like production pipeline.
@@ -183,7 +185,6 @@ Tip: If you don't know your domain well yet, breakdown create MoSCoW columns: Mu
 ## Protect Board Clarity: Inbox Card
 
 ## Purge from Dashboard
-
 
 Knowing Exactly What To Do: Clarity
 
