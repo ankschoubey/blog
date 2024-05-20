@@ -178,7 +178,11 @@ Columns in Travel board are arranged differently.
 
 Tip: If you don't know your domain well yet, breakdown create MoSCoW columns: Must Do, Should Do, Can Do, Won’t Do
 
-## Clarity of how to progress
+## Clarity of how to progress: Breaking down: In Progress Columns
+
+I want to know the progress of my tasks my just looking at the board.
+
+Start here: https://trello.com/c/ziGgoNip/684-how-i-use-and-organize-my-trello-board Check comment
 
 ## Chained Task: Clarity of what other tasks need to be done
 
