@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { frontmatter } from "../../../dist/chunks/1-month-microservice_7Hyrkh-j.mjs";
 // import Item from '~/components/blog/GridItem.astro';
 
@@ -61,9 +61,17 @@ const SearchBox = ({allPosts}) => {
   const searchButNotFound = !noSearch && filteredPosts.length == 0;
   const found = !noSearch && filteredPosts.length > 0
 
+  useEffect(()=>{
+    setTimeout(()=> {
+      const input = document.querySelector("input");
+      input.focus();
+    }, 80)
+
+  }, [])
+
   return <div className="container flex justify-center flex-col" >
     <form>
-  <input type="text" value={searchQuery} placeholder="Start typing to search" onInput={(e) => {
+  <input autofocus type="text" value={searchQuery} placeholder="Start typing to search" onInput={(e) => {
     setSearchQuery(e.target.value)
     setFilteredPosts(searchPosts(allPosts, e.target.value));
     var searchParams = new URLSearchParams(window.location.search);
@@ -72,7 +80,7 @@ const SearchBox = ({allPosts}) => {
   </form>
 
 <section className="p-4">
-  {noSearch && <p className="text-center font-bold">🔎  Search articles from this blog</p>}
+  {noSearch && <p className="text-center font-bold">🔎  Search {allPosts.length} articles from this blog</p>}
   {searchButNotFound && <p className="text-center font-bold">🔎 No articles found</p>}
 
   {found && (<>

@@ -9,6 +9,7 @@ const {
   text = Astro.slots.render('default'),
   icon = '',
   class: className = '',
+  showText,
   type,
   ...rest
 } = Astro.props as CallToAction;
@@ -19,6 +20,7 @@ const variants = {
   tertiary: 'btn btn-tertiary',
   link: 'cursor-pointer hover:text-primary',
 };
+
 ---
 
 {

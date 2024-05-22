@@ -6,6 +6,7 @@ export const headerData = {
     { text: 'Software Blog', href: getPermalink('technical', 'tag') },
     {
       text: "Software Series",
+      
       href: getPermalink(),
       links: [
         { text: 'TDD & Beyond', href: "/tdd" },
@@ -38,7 +39,8 @@ export const headerData = {
   actions: [
     {
       text: 'Search',
-      // target:"_blank",
+      // target:"_blank",search
+      icon: 'tabler:search',
       variant: "primary", 
       href: '/search',
     },
@@ -49,9 +51,11 @@ export const headerData = {
       href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
     },
     {
-      text: 'Hire me',
       variant: "primary", 
       target:"_blank",
+      text: 'Contact',
+      icon: 'tabler:brand-linkedin',
+      showText: false,
       href: 'https://www.linkedin.com/in/ankushchoubey/',
     },
   ],

@@ -109,16 +109,22 @@ He is an amazing asset for any team and company. I wish him all the very best fo
   <Hero
     id="hero"
     title="Ankush Choubey"
+
     taglineInverted={true}
     tagline="Senior 👨🏻‍💻 Full Stack Developer"
     actions={[
-      { variant: "primary", target: '_blank', text: 'Hire me', href: 'https://www.linkedin.com/in/ankushchoubey/' },
-      { variant: "secondary", text: 'Software Blog', href: getPermalink('technical', 'tag') },
+      { variant: "secondary", text: 'S/W Blog', href: getPermalink('technical', 'tag') },
+      { variant: "primary", target: '_blank', 
+      text: 'Ping Me',
+      icon: 'tabler:brand-linkedin',
+       href: 'https://www.linkedin.com/in/ankushchoubey/' },
       { variant: "secondary", text: 'Life Blog', href: getPermalink('non-technical', 'tag') }
     ]}
   >
     <Fragment slot="subtitle">
       Helping you build <a class="text-blue-700 font-bold" href="/clean-code">clean</a>, <a class="text-blue-700 font-bold"  href="/tdd">bug-free</a>, scalable software <a class="text-blue-700 font-bold" href="/cd">fast</a>!
+      <br>
+      <span class="text-accent dark:text-white highlight"> </span>
     <!-- I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
     <br> <br>
     Through this blog, I share my insights and ideas on software development philosophy and best practices to help fellow developers create high-quality software products.
@@ -226,7 +232,8 @@ He is an amazing asset for any team and company. I wish him all the very best fo
       },
       {
       variant:"primary",
-      text: 'Hire me',
+      text: 'LinkedIn',
+      icon: 'tabler:brand-linkedin',
       href: 'https://www.linkedin.com/in/ankushchoubey/',
     }]}
   />
