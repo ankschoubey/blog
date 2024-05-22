@@ -11,13 +11,15 @@ I aspire to build microservices/microfrontends and deploy to production within a
 
 A microservice should not be super big. If it is, it's not micro anymore.
 
-The idea with One Month Microservice is this. 
+The idea with One Month Microservice is this.
 
 One month and a synchronized-3-man-squad is enough to code up a microservice and deploy to production.
+
 - Assuming 3 weeks of coding.
 - One week of deployment.
 
 If it's takes more than 1 month the following may be reasons,
+
 - Learning curve for the particular microservice is too high
 - New Team
 - Design could be improved
