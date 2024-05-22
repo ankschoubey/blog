@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 
 const noOfLetters = 100;
 function searchPosts(allPosts, query: string) {
-  console.log(allPosts)
-  if(query.trim().length == 0){
+  query = query.trim();
+  if(query.length == 0){
     return []
   }
-  console.log(query)
-  const lowerQuery = query.toLowerCase();
+  const lowerQuery = query.toLowerCase().trim();
   const temp = Object.values(allPosts)
   .map(post => {
     const indexOf = post.searchableContent?.toLowerCase().indexOf(lowerQuery)
