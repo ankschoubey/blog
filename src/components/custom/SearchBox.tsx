@@ -1,6 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
-import { frontmatter } from "../../../dist/chunks/1-month-microservice_7Hyrkh-j.mjs";
-// import Item from '~/components/blog/GridItem.astro';
+import { useEffect, useState } from "react";
 
 const noOfLetters = 100;
 function searchPosts(allPosts, query: string) {
