@@ -30,6 +30,7 @@ function searchPosts(allPosts, query: string) {
     if(containsWordsAfter){
       post.searchSection =post.searchSection +  "..."
     }
+    post.searchSection = `"${post.searchSection}"`
     post.searchSlug = post.frontmatter.slug + "#:~:text=" + query
     return post;
   })
@@ -116,8 +117,8 @@ const SearchBox = ({allPosts}) => {
     }
   </div>
     
-  <p class="text-muted dark:text-slate-400 text-md">{post.frontmatter.excerpt}</p>
-  <p class="text-muted dark:text-slate-700 text-md" dangerouslySetInnerHTML={{ __html: post.searchSection }}></p>
+  <p class="text-muted dark:text-slate-300 text-md">{post.frontmatter.excerpt}</p>
+  <p class="text-muted dark:text-slate-400 py-7px text-md" dangerouslySetInnerHTML={{ __html: post.searchSection }}></p>
   </div>
 
   </div>

@@ -10,7 +10,7 @@ import SearchBox from "../components/custom/SearchBox";
 let allPosts = Object.values(import.meta.glob('../content/**/*.md', { eager: true }));
 allPosts = allPosts.map(post => {
     let text = (post.frontmatter.title + post.frontmatter.except + post.compiledContent());
-    text = text.replace(/<\/[^>]+(>|$)/g, " ").replace(/<[^>]*>?/gm, ' ')
+    text = text.replace("undefined", "\n").replace("<br>", "\n").replace("</p>", "\n").replace(/<\/[^>]+(>|$)/g, " ").replace(/<[^>]*>?/gm, ' ').replace("\n", "<br>")
     return {
         frontmatter: post.frontmatter,
         searchableContent: text.toLowerCase(),
