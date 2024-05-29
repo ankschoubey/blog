@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 const noOfLetters = 100;
+
 function searchPosts(allPosts, query: string) {
   query = query.trim();
   if(query.length == 0){
@@ -24,6 +25,7 @@ function searchPosts(allPosts, query: string) {
     const leftSection = post.searchSection.substring(0, noOfLetters) + "<mark>"
     const rightSection = post.searchSection.substring(noOfLetters,noOfLetters+query.length) + "</mark>"+post.searchSection.substring(noOfLetters+query.length) 
     post.searchSection = leftSection + rightSection;
+    // window.location.hash = "#:~:text=" + query
     if(containsWordsBefore) {
       post.searchSection = "..."+post.searchSection
     }
@@ -64,7 +66,6 @@ const SearchBox = ({allPosts}) => {
       const input = document.querySelector("input");
       input.focus();
     }, 80)
-
   }, [])
 
   return <div className="container flex justify-center flex-col" >
@@ -74,28 +75,27 @@ const SearchBox = ({allPosts}) => {
     setFilteredPosts(searchPosts(allPosts, e.target.value));
     var searchParams = new URLSearchParams(window.location.search);
     searchParams.set("q", e.target.value);
-  }} className="bg-gray-50 border border-gray-300 p-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+  }} className="bg-gray-50 border border-gray-300 p-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-4"/>
   </form>
 
-<section className="p-4">
+<section className="sm:p-2 md:p-4">
   {noSearch && <p className="text-center font-bold">🔎  Search {allPosts.length} articles from this blog</p>}
   {searchButNotFound && <p className="text-center font-bold">🔎 No articles found</p>}
 
   {found && (<>
-    <div className="p-3">
+    <div className="sm:p-2 md:p-3">
       {filteredPosts.map(post => (
         <a href={post.searchSlug}>
-        <article class="mb-6 transition flex gap-2 flex-row">
+        <article class="mb-6 transition flex gap-2 md:flex-row flex-col  ">
             <div class="relative max-h-64 bg-gray-400 dark:bg-slate-700 rounded shadow-lg flex justify-center w-px-350"
 
             >
     {
       post.frontmatter.image && (
-        <a className="w-80 min-w-80">
+        <a className="md:w-40 lg:w-80 min-w-80 flex justify-center items-center">
           <img  src={post.frontmatter.image}
-            class="rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+            class="rounded shadow-lg bg-gray-400 dark:bg-slate-500 h-full"
             style={{
-              height: "256px",
               objectFit: "contain"
             }}
             alt={post.title}
