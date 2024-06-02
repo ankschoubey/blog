@@ -14,74 +14,36 @@ toc: false
 image: /images/life-blog/how-i-use-trello/2024-may-19-sprint-board.png
 ---
 
-This blogpost is currently being written.
+If you've met me, you know how organized I am. A significant part of this is due to systems thinking, which I first learned from Atomic Habits and YouTube. A core part of my life system is Trello.
 
-***
+Over the months, I've iterated on my system and helped friends and family set up their boards. By the end of this post, you'll have created a perfect Kanban Trello board to significantly improve your productivity.
 
-Trello is the application that I use to organize my life. I have been using it for over 1.5 years and for the last 1 year my use as increases substantiously.
+This post focuses on personal productivity, but the principles are similar for team settings.
 
-If you have met me, you know how much organized and systematized I am. A big part of it is systems thinking which I must have first learnt in Atomic Habits or YouTube. A big part of my life system is Trello.
+## Before You Start: How to Implement This Post?
 
-Over the months I have gone through many iterations. And this post aims to explain my steps. I have also helped create board for my friends and family.
-
-By end of the post, you’d have created a perfect Kanban Trello board that will significantly improve your productivity.
-
-While I do use Kanban at work, this post is mostly going to target personal productivity, though the principles won’t change much when working in a team.
-
-As I explain the steps I’ll illustrate reasoning and process.
-
-I use Trello for:
-
-- Prioritizing what to do.
-- Capturing notes.
-- To be on top of things.
-
-There are many principles related to systems and systems thinking that I follow which I'll describe in a separate blogpost. (TODO).
-
-This blogpost will give a brief of what Trello is and what subsystems I have created.
-
-## Before you read further: How to implement this post?
-
-NOTE: You may not use every subsystems I create. The subsystem can make Trello complicated initially. Only use a subsystem when you feel your progress is stuck and you aren't able to get more out of Trello.
-
-Start by reading the description, setting up a Trello account and start using it daily. As you use it, you'll eventually find roadblocks/things that can be improved. Improve them.
-
-And while using it, keep a look at this post so that it can help you optimize even further.
-
-Again, you don't need to implement everything. #implementWhatResonates.
+Trello can be complicated initially. Use only the subsystems that resonate with you. Start by setting up a Trello account and use it daily. Improve the system as you encounter roadblocks.
 
 > Keep things as simple as possible!
 
-## What is Trello? Why do I use it? And Principle
+What is Trello? Why Do I Use It?
+Trello is a simple Kanban tool I use to organize my life. Tasks are organized into cards, and columns act like a production pipeline, moving tasks forward until completion.
 
-Trello is a simple Kanban tool I use to organize my life. Tasks are organized into cards and columns are like production pipeline.
-
-We take a task and move it forward through the column till done.
-
-If you are new to Trello and Kanban, watch the video below. (2x speed recommended)
+If you're new to Trello and Kanban, watch the video below (2x speed recommended).
 
 <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Kanban is a visual way of seeing work. Tasks are represented by cards and stages by columns. A basic board has three columns: To Do, Doing, and Done. Like a car production line, you can create your own stages.
 
-Trello is based on Kanban Principles.
+For example, a content creator's stages might be:
 
-Kanban is based on vehicle production pipeline. Imagine you are a car production pipeline at once stage you have assembly, one stage painting, one stage electronics, etc. Things move from one stage another.
+1. Ideas
+2. Research
+3. Content Creation
+4. Editing
+5. Promotion
+6. Done
 
-If you have multiple cars waiting in a stage, that means it’s something can be improved there.
-
-It’s similar with a Kanban board. Kanban is a visual way of seeing work. Tasks are represented by cards and different stages are represented by column. At it’s basic there are 3 columns: Todo, Doing and Done.
-
-But like a well defined car production line, we can create our own stages.
-
-For example, suppose you are a content creator, for you the stages can look like
-
-- Ideas
-- Research
-- Content Creation
-- Editing
-- Promotion
-- Done
-
-Now, everyone works from the tasks in the board and everyone can view the board to gauge the progress of work.
+Everyone works from the tasks on the board, moving cards through the stages. Now, let's create our first board.
 
 For example, suppose you and 5 other collegues are working on the board. A card would be assigned to each. This card would include: Task, Details, Files, Images, Checklists, etc.
 
@@ -89,13 +51,9 @@ As a person is working on a card, they can work on it and move it to appropriate
 
 This way everything goes from one column stage to another and everyone knows where the card is.
 
-So given this basic knowledge, we’ll start creation of our first board.
+So given this basic knowledge, go ahead and create your first board:
 
-## Action 1: Basic Setup
-
-Steps,
-
-1. Sign-Up to Trello
+1. [Sign-Up to Trello](https://trello.com/ankushchoubey/recommend)
 2. Create a blank board.
 3. Add 3 Columns
 4. Todo, Doing and Done.
@@ -103,19 +61,11 @@ Steps,
 
 Add a card to the board. You can drag a card from one column to the next until done.
 
-## What Boards do I have?
+## Trello Sub-Systems for Maximum Productivity
 
-Here are a few of the boards I have created.
+Trello/Kanban can scale to our needs. If you are getting started a simple setup maybe enough. But as time passes, and you get more productive, you'll find you need to [optimize your system for scale] (TODO: Link To Post) else the system starts choking.
 
-## What Trello Sub-Systems I have created to get most out of Trello?
-
-While the basic, Todo, Doing and Done column is good. The problem is of scale [TODO: Link to post on systems here]. As a system gets more efficient, we are able to get more task done until the system chokes up again and we need to optimize.
-
-Therefore, we need to iterate over our system so that it can scale our current needs. While many of the systems are great, note our main aim is high output and not high documentation. So, if productivity can happen in other ways, that's preferrable too. (TODO: Link to my blogpost on Challenge and Systems related to it)
-
-Below are a few systems I use. Some of which I have created myself. Each of this is to help me get more clarity.
-
-> Clarity precedes completing the responsibility
+Below are a few systems I created and use.
 
 ### Clarity of what to do within the task: Card Breakdown
 
@@ -184,7 +134,6 @@ I want to know the progress of my tasks my just looking at the board.
 
 Start here: <https://trello.com/c/ziGgoNip/684-how-i-use-and-organize-my-trello-board> Check comment
 
-## Chained Task: Clarity of what other tasks need to be done
 
 ## Protect Board Clarity: Inbox Card
 
@@ -199,6 +148,8 @@ Breakdown of cards.
 Checklists
 
 In Progress Columns
+
+## Chained Task: Clarity of what other tasks need to be done
 
 ## Completing a Task Fully: Chained Tasks
 
@@ -251,7 +202,7 @@ Similarly, I remember I had a huge list of "content" to watch. After completely 
 
 Whenever something happens, I think I had learned something to deal with this type of problem, what was it? Then I try to recall. And if I can't recall correctly, I'll go into the card and read my notes. 🎶. And try to implement it in the next few days. #neverGoingBack
 
-More boards
+## More boards
 
 I realized that more boards makes Trello really overwhelming. But by not having more boards, I was really missing out on productivity gains.
 
@@ -288,7 +239,7 @@ Finance Stories usually move faster. Finanial goal achievement is slower over mo
 
 Etc etc. This gives you a satisfaction. You know everything is undercontrol and moving.
 
-Capturing Long Term Goals and Knowledge
+## Capturing Long Term Goals and Knowledge
 
 There are some fundamental knowledge about any domain that are long term and that you would like to he reminded of.
 
@@ -305,7 +256,7 @@ For example my "Finance Flyway" board has these columns at the right
 
 I have more such columns in Finance Flyway. Software Development board also has multiple such columns related to different types of Technology (AWS, Astro, Java, Java Multithreading, etc) Other domains have less.
 
-Making board interesting to use. Images and Dashcards and changing names. #AutoLawOfAttraction
+## Making board interesting to use. Images and Dashcards and changing names. #AutoLawOfAttraction
 
 The board should be interesting and fun to use. Else you'll use it less and less. So this is an important step and you won't want to ignore it cuz it sounds cheesy.
 
