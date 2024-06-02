@@ -110,13 +110,19 @@ Usually, if I have a task which is multiple months, I'll break it down into a bu
 
 And for checklist it depends, I may not may not use checklist if the task itself it small. But if a task get's complex, I'll break it down to checklists.
 
-## Breaking Todo Column Into Multiple Columns
+## Board Structure
 
-Our basic column layout started with "To Do," "Doing," and "Done." As you become more productive, you'll find your "To Do" list growing. This is natural because [there are always many things to accomplish in life] (TODO: Link to Blogpost) .
+The goal of a good board structure is to help you be **extremely organized** and help you in what to do next.
 
-However, a growing "To Do" list can become overwhelming. As long as we [focus on what's the most important thing to do and do it well](/life-blog/exponential-growth), we'll get highest amount of productivity we can get.
+The basic Trello structure includes the following columns:
 
-**Enhancing the "To Do" Column**
+- To Do
+- Doing
+- Done
+
+However, as you get more productive it's better to enhance each column by breaking each into multiple columns.
+
+### **Enhancing the "To Do" Column**
 
 Instead of having a single "To Do" column, consider splitting it into multiple columns to better prioritize tasks:
 
@@ -147,63 +153,119 @@ If you're unsure how to categorize tasks in a new domain, try the MoSCoW method:
 - **Can Do**: Tasks that are nice to do but not urgent.
 - **Won’t Do**: Tasks that are not necessary or relevant at the moment.
 
-By breaking down your tasks and organizing your Trello board effectively, you can manage your workload better and maintain high productivity.
+By customizing columns based on the specific domain, I can prioritize and manage tasks more effectively.
 
-## Breaking In-Progress Column Into Multiple Columns
+### **Enhancing the "Doing" Column**
 
-I want to know the progress of my tasks my just looking at the board.
+A single doing column doesn't indicate how much you have progressed on a task. It's better to have multiple columns.
 
-Start here: <https://trello.com/c/ziGgoNip/684-how-i-use-and-organize-my-trello-board> Check comment
+Initially, I used percentage completions (10% complete, 50% complete, ...), but it was challenging to measure progress accurately. It's better to have a named stage.
 
+As with "To Do" columns split, it's better to develop it by domain.
+
+**Example: Blogging Board**
+
+- **Clarity**
+- **Writing / Recording**
+- **Self Proof Reading, Refinement and Review**
+- **SEO / Promotion / Content Marketing**
+
+Like with MosCow, my default for most boards is:
+
+- **Planning and Research**: Tasks start here, involving initial research and planning.
+- **Learning / Doing**: Active work on the task, including learning and execution.
+- **Feedback and Debrief**: Review and gather feedback to refine the task.
+
+**Example: Fitness Board**
+
+- **Planning, Intellectual Learning and Physical Learning**
+- **Repetition and Sets**
+- **Feedback, Recording, and Debrief: What went well? What can be improved? Improve it / Learn**
+
+This way, I know exactly what stage each task is in and what needs to be done next.
+
+### **Enhancing the "Done" Column**
+
+Completing a task often isn't as straightforward as marking it "done." We want to:
+
+- maximize the outcome we get from a task
+- ensure we complete it fully (nothing left.)
+
+One of the characteristics of Narendra Modi is he follows through until the end. He would make sure he is monitoring things fully. And that is what we need to do to, we have to make sure all tasks are done till the end.
+
+Here are a few columns I have divided "Done" into.
+
+- **Debrief**
+- **Chained Tasks**
+- **Freezed / Auto Pilot**
+- **Done Ledger**
+
+**Debrif Column**
+
+The first step in optimizing learning after a task is to do a quick debrief.
+
+Before *Done* I have a debrief column where I ask myself:
+
+- What went well? (Written in the comment)
+- What can be improved? (Written in the Debrief Tasks Checklist)
+
+This way, I have captured my learning with the task which will enhance my future work.
+
+If there are "Debrief Tasks" I'll more the card to "Chained Tasks" Columns
+
+**Chained Tasks**
+
+Chained Tasks means: "This task is complete, but there are other tasks that got created because of this task that are yet complete. So we can't mark this task as fully complete."
+
+It's important to track these chained tasks to ensure nothing remains undone and everything is followed through to the end.
+
+**Example: Blogpost**
+
+In many of my blogposts including this once, you'll see TODO written. These are blogpost ideas I have related to the post I am currently writing. If a post I write has TODOs, I'll move it to "Chained Tasks" column. And they'll stay in **Chained Tasks** until All other Chained Tasks are Complete.
+
+To manage chained tasks, I use a three-fold system:
+
+- **Chained Column on the Board**: A dedicated column to track all chained tasks.
+- **Checklist for Chained Tasks**: A checklist within the main task card to list all related subtasks.
+- **Chained Label**: A label to easily identify and filter chained tasks across the board.
+
+This system ensures that all tasks are completed fully and thoroughly, following through every detail until the end.
+
+**Frozen / Delegated**
+
+Sometimes,
+
+- tasks are completed but need to be revisited later.
+- Or while doing a task, you realize that the problem will autofix in a few days.
+- Or you have delegated the task to someone else.
+
+For such tasks, I use the "Frozen / Delegated" column. This helps in keeping track of tasks that are on hold but still need attention.
+
+**Closed**
+
+This is a simple column that denotes the task is done a task fully and closed. Meaning I don't have to do anything more on this.
+
+Closed column gives me confidence on my productivity. And there it also has a subname: A Complete Ledger.
+
+**Example of Closed Column on different boards**
+
+- **Life Board**: "Closed / Karma Ledger"
+- **Travel Board**: "Closed / Interesting Life Ledger"
+- **Blogging Board**: "Closed / Thought Clarity Ledger"
+
+Naming it this way has been helpful to me. (TODO: Blogpost on important of naming on human behavior)
+
+**Summarizing Enhancing the "Done" Column**
+
+By organizing the "Done" column into specific categories and maintaining a detailed system for chained tasks, you can ensure comprehensive task management and continuous improvement. And ensure nothing goes out of your mind.
+
+****
+
+## Skip
 
 ## Protect Board Clarity: Inbox Card
 
 ## Purge from Dashboard
-
-Knowing Exactly What To Do: Clarity
-
-Clarity of what exactly to do
-
-Breakdown of cards.
-
-Checklists
-
-In Progress Columns
-
-## Breaking Done Column Into Multiple Column
-
-Completing a Task Fully: Chained Tasks
-
-Many times when we do a the main task, it leads to the creation of more tasks.
-
-For example, suppose you decided to pay off your loan, you went into the bank and enquirer, but the bank says you cannot close your loan at once, you can pay 25% now and after the financial year pay the rest.
-
-Now you did the main task of figuring out but it lead to creation of subtasks. Only when the subtasks are complete you can say the main task is complete.
-
-This is what I call a chain task ⛓️‍💥.
-
-A chained task for me is a task that while doing you realize there are most tasks to be done, the main task is not complete without the chained task.
-
-And I feel chained task are important because you don't want to keep anything undone. You want to complete things fully!
-
-One of the characteristics of Narendra Modi is he follows through until the end. He would make sure he is monitoring things fully. And that is what we need to do to, we have to make sure all tasks are done till the end.
-
-Some other example of chained task:
-
-- When writing a blogpost, I might get new ideas of other blogposts that I want to link up.
-
-My chained tasks system is 3 fold:
-
-- Chained Column on the board
-- A checklist for Chained
-- While doing a task, I'll keep adding chained tasks.
-- Chained Label
-
-Quality Control
-
-Freeze Mode/Automatic
-
-## Learning from the Tasks: Debrief Column and Debrief Task
 
 ## What tasks to pick?
 
