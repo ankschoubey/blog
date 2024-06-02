@@ -9,7 +9,7 @@ tags:
 publishDate: 2024-05-19T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/how-i-use-trello/
-title: How I Optimize Trello For Maximum Personal Productivity 
+title: My 8 Trello Subsystems to Maximize Personal Productivity 
 toc: false
 image: /images/life-blog/how-i-use-trello/2024-may-19-sprint-board.png
 ---
@@ -67,37 +67,44 @@ Trello/Kanban can scale to our needs. If you are getting started a simple setup 
 
 Here are few subsystems I have that help me scale:
 
-- Breaking down Big Tasks into Smaller Tasks
-- Breaking Todo Column Into Multiple Columns
-- Breaking In-Progress Column Into Multiple Columns
-- Breaking Done Column Into Multiple Column
-- Dashboard Board For Faster Planning
-- Debrief Column for Continuous Improvement and Learning
-- Knowledge Base Columns for Long Term Reference
-- Weekly Inbox Card for Quick Capture and Consolidation
+1. ✅ Breaking down Big Tasks into Smaller Tasks
+2. Breaking Todo Column Into Multiple Columns
+3. Breaking In-Progress Column Into Multiple Columns
+4. Breaking Done Column Into Multiple Column
+5. Dashboard Board For Faster Planning
+6. Debrief Column for Continuous Improvement and Learning
+7. Knowledge Base Columns for Long Term Reference
+8. Weekly Inbox Card for Quick Capture and Consolidation
 
 ### Breaking down Big Tasks into Smaller Specific Tasks
 
-A big step is comprised of many smaller steps.
+To tackle large tasks effectively, breaking them down into smaller, achievable tasks is essential.
 
-If you have a big task, you want to be able to break down it into smaller achievable tasks.
+Example: Launching a New Website
+Consider the task of launching a new website. This can be broken down into several specific steps:
 
-For example, launching a new website involves
+- Learning about website launches
+- Signing up for a hosting service
+- Defining the content
+- Writing the content
+- Designing the layout
+- Testing the website
+- Promoting the launch
 
-- learning about how to launch
-- signing up for a service
-- defining the content
-- writing the content
-- etc.
+**Benefits of Breaking Down Tasks**
 
-A big step is comprised of many smaller steps.
+By breaking down a big task into smaller steps, you can:
 
-By breaking down a card well, you'll find you are able to do the task better. You are able to understand with better clarity.
+- **Improve Clarity**: Understand the task better and identify specific actions needed.
+- **Enhance Manageability**: Make the task less overwhelming and more achievable.
+- **Boost Motivation**: Experience a sense of accomplishment as you complete smaller tasks.
 
-There are a few ways to break a task in Trello.
+**Methods in Trello**
 
-- Into Cards
-- Into Checklists
+In Trello, you can break down tasks in two primary ways:
+
+- **Cards**: Create individual cards for each sub-task. This is especially useful for tasks that span multiple weeks or months.
+- **Checklists**: Use checklists within cards for more detailed breakdowns. This is ideal for complex tasks that have many smaller components.
 
 Usually, if I have a task which is multiple months, I'll break it down into a bunch of smaller cards that I can take action on in about a week.
 
@@ -105,39 +112,42 @@ And for checklist it depends, I may not may not use checklist if the task itself
 
 ## Breaking Todo Column Into Multiple Columns
 
-Our basic column layout was todo, doing and done. As you get more productive, you'll find that there are more things to do and your todo list keeps getting bigger and bigger. This is natural because we actually have a lot of things to do in life [TODO link to blogpost].
+Our basic column layout started with "To Do," "Doing," and "Done." As you become more productive, you'll find your "To Do" list growing. This is natural because [there are always many things to accomplish in life] (TODO: Link to Blogpost) .
 
-The problem our TODO list starts getting overwhelming.
+However, a growing "To Do" list can become overwhelming. As long as we [focus on what's the most important thing to do and do it well](/life-blog/exponential-growth), we'll get highest amount of productivity we can get.
 
-But note, as I mentioned in one of my previous blogpost, as long as we focus on what's the most important thing to do and as long as we do it well, we'll get highest amount of productivity we can get.
+**Enhancing the "To Do" Column**
 
-And we can arrange our Trello system in a way that can help with that.
+Instead of having a single "To Do" column, consider splitting it into multiple columns to better prioritize tasks:
 
-Instead of a simple TODO column, I split it into multiple columns.
+- **This Week**: Tasks you aim to complete this week. Initially, this column can help focus your efforts. As you refine your system, you may rely on it less.
+- **Future Planning Columns**: Use multiple columns to prioritize upcoming tasks. This helps keep your current focus clear and your future tasks organized.
 
-- This week: Includes all the tasks I am focused on this week. (I am relying on this less now. But starting out start with this and see if this is enough. Checkout the dashboard section)
-- Future planning columns: Multiple columns to help me prioritize what to do next.
+I organize my Trello board with the left section focused on current tasks and the right section for future planning and knowledge units. Here’s a breakdown of how I manage future planning columns based on different domains:
 
-I keep the left section of the board focused on what I wnat to do and right section of the board for future planning and knowledge units.
+**Example: Blogging Board**
 
-Here's how I break down future planning columns. this mostly depends on the domain.
+- **Needs Organization**: Ideas that need to be sorted and structured.
+- **Needs Refinement**: Developed ideas that require further refinement.
+- **Ready for Production**: Fully developed ideas ready to be executed.
 
-If I am creating a board for health. I'll break down todos differently. For Blogging, I'll break it down differently.
+When it's time to write a blog post, I simply pick a task from the "Ready for Production" column.
 
-For example for blogging I have
+**Example: Travel Board**
 
-- **Needs Organization**: Just ideas. I need to organize these better.
-- **Needs Refinement**: These are developed ideas that need some refinement.
-- **Ready for Production**: These are clear ideas that are ready for writing.
+- World Tour: Columns for planning an international trip.
+- India: Columns for domestic travel plans.
 
-This way whenever I need to do a talk, I pick up from Ready to Production.
+**Tip: Using the MoSCoW Method**
 
-Columns in Travel board are arranged differently.
+If you're unsure how to categorize tasks in a new domain, try the MoSCoW method:
 
-- One section which has couple of columns for World Tour
-- One section for India
+- **Must Do**: Essential tasks that need immediate attention.
+- **Should Do**: Important tasks that should be done but are not critical.
+- **Can Do**: Tasks that are nice to do but not urgent.
+- **Won’t Do**: Tasks that are not necessary or relevant at the moment.
 
-Tip: If you don't know your domain well yet, breakdown create MoSCoW columns: Must Do, Should Do, Can Do, Won’t Do
+By breaking down your tasks and organizing your Trello board effectively, you can manage your workload better and maintain high productivity.
 
 ## Breaking In-Progress Column Into Multiple Columns
 
