@@ -182,7 +182,7 @@ Tip: If you don't know your domain well yet, breakdown create MoSCoW columns: Mu
 
 I want to know the progress of my tasks my just looking at the board.
 
-Start here: https://trello.com/c/ziGgoNip/684-how-i-use-and-organize-my-trello-board Check comment
+Start here: <https://trello.com/c/ziGgoNip/684-how-i-use-and-organize-my-trello-board> Check comment
 
 ## Chained Task: Clarity of what other tasks need to be done
 
@@ -194,125 +194,77 @@ Knowing Exactly What To Do: Clarity
 
 Clarity of what exactly to do
 
-‌
-
 Breakdown of cards.
 
 Checklists
 
 In Progress Columns
 
-Completing a Task Fully: Chained Tasks
-
-‌
+## Completing a Task Fully: Chained Tasks
 
 Many times when we do a the main task, it leads to the creation of more tasks.
 
-‌
-
 For example, suppose you decided to pay off your loan, you went into the bank and enquirer, but the bank says you cannot close your loan at once, you can pay 25% now and after the financial year pay the rest.
-
-‌
 
 Now you did the main task of figuring out but it lead to creation of subtasks. Only when the subtasks are complete you can say the main task is complete.
 
-‌
-
-This os what I call a chain task ⛓️‍💥.
-
-‌
+This is what I call a chain task ⛓️‍💥.
 
 A chained task for me is a task that while doing you realize there are most tasks to be done, the main task is not complete without the chained task.
 
-‌
-
 And I feel chained task are important because you don't want to keep anything undone. You want to complete things fully!
 
-‌
-
 One of the characteristics of Narendra Modi is he follows through until the end. He would make sure he is monitoring things fully. And that is what we need to do to, we have to make sure all tasks are done till the end.
-
-‌
 
 Some other example of chained task:
 
 - When writing a blogpost, I might get new ideas of other blogposts that I want to link up.
 
-‌
-
 My chained tasks system is 3 fold:
 
 - Chained Column on the board
-
 - A checklist for Chained
-
 - While doing a task, I'll keep adding chained tasks.
-
 - Chained Label
 
 Quality Control
 
 Freeze Mode/Automatic
 
-Learning from the Tasks: Debrief Column and Debrief Task
+## Learning from the Tasks: Debrief Column and Debrief Task
 
-What tasks to pick?
+## What tasks to pick?
 
 What task to pick? The task which eliminates need for other tasks.
 
-‌
-
 I try to pick tasks that are the most urgent 🚨 and important first. Then I'll pick a few non-urgent and important tasks.
-
-‌
 
 Initially, I spent a lot of time picking mostly urgent tasks& important. Now it's mostly non-urgent and important.
 
-‌
-
 Non-urgent important tasks are long term tasks. Things like Reading a Book. Implementing a new technique. Setting up my Financial Flywheel. Etc.
-
-‌
 
 If I do these properly, these will free up more time in the future and eliminate all the other tasks.
 
-‌
-
 I once such a task is complete, I'll mostly be deleting a lot of the smaller tasks. For example, I was someone who used to watch a lot of YouTube videos related to social skills and communication, etc. but once I went through therapy, incorporated it's lessons, I no longer needed to watch a lot of those videos. So I deleted them.
-
-‌
 
 Similarly, I remember I had a huge list of "content" to watch. After completely listening to the Bhagwad Gita and incorporating it's lessons, I deleted about 40 cards and tasks. Doing one task well had eliminated 40 cards 🃏 and it still does.
 
-‌
-
 Whenever something happens, I think I had learned something to deal with this type of problem, what was it? Then I try to recall. And if I can't recall correctly, I'll go into the card and read my notes. 🎶. And try to implement it in the next few days. #neverGoingBack
-
-‌
 
 More boards
 
 I realized that more boards makes Trello really overwhelming. But by not having more boards, I was really missing out on productivity gains.
 
 - Good planning
-
 - Ultimately getting progress
 
-‌
-
 I figured out there is no other way, I need to create more boards.
-
-‌
 
 The way I did it was much more organic. I experimented with a few boards. And also deleted a few, for example, I realized Job board wasn't super useful for me because 90% of recruiters ghost and rest reply super late after a month or two. ⏰ . The cards on my Job Search board would remain stale.
 
 So instead I started tracking only when I had passed the initial screening and was giving online tests.
 
-‌
-
 Initially, I also had writing and all other tasks mixed into one board. This made it very overwhelming.
-
-‌
 
 I started by separating Life and Writing. ✍️
 
@@ -320,124 +272,68 @@ Then I realized I need something for Development so I created one called DevLife
 
 These remained my main boards.
 
-‌
-
 Later, I realized I needed ways to improve my health, so I started Body Board.
-
-‌
 
 Then I thought I should also do things in life. I being someone who doesn't go out much. I think It'll be good to get out. Maybe watch shows etc. so I created Experiences board.
 
-‌
-
 Tip is this: anything that is important to you, should be part of trello. If it's small you can keep less number of boards. But as you get more interested, you'll find it's better to split into a separate board.
-
-‌
 
 Note depending on the domain, the speed at which cards move changes.
 
-‌
-
 For example, Travel board tasks will be added over months but will be completed in a week when you actually go to travel. Most of the year you'll spend time planning your travel.
-
-‌
 
 Similarly, Body board will have a lot of goals that take time
 
-‌
-
 Finance Stories usually move faster. Finanial goal achievement is slower over months.
-
-‌
 
 Etc etc. This gives you a satisfaction. You know everything is undercontrol and moving.
 
-‌
-
 Capturing Long Term Goals and Knowledge
 
-‌
-
 There are some fundamental knowledge about any domain that are long term and that you would like to he reminded of.
-
-‌
 
 For this, I have added column with such information.
 
 For example my "Finance Flyway" board has these columns at the right
 
 - Monthly Spending: A card per month for monthly spending
-
 - Money Goals: All my financial goals regarding money.
-
 - Money Formulas: Things like 50:30:20. Rule of 72 etc.
-
 - Money Mindset: Repair over Buy. Protect Electronics. Think of Money as Value.
-
 - Trusted Entities: Companies and People I trust
-
 - Bad Entities: Companies and People I can't trust financially or maybe even personally.
 
-‌
-
 I have more such columns in Finance Flyway. Software Development board also has multiple such columns related to different types of Technology (AWS, Astro, Java, Java Multithreading, etc) Other domains have less.
-
-‌
 
 Making board interesting to use. Images and Dashcards and changing names. #AutoLawOfAttraction
 
 The board should be interesting and fun to use. Else you'll use it less and less. So this is an important step and you won't want to ignore it cuz it sounds cheesy.
 
-‌
-
 There are a few ways to have an interesting board.
-
-‌
 
 You can change the background image to something you like.
 
-‌
-
 You can add images to cards. 🎴. I especially add images to my goal cards. 🎴
-
-‌
 
 Add Dash-cards. Dash-cards is trello power-up that shows you quick count of number of things in a list or based on a certain criteria. I add dash-cards for any list that is significant.
 
 - This week
-
 - In progress
-
 - Done
-
 - Chained Task
-
 - Quality Control
-
 - Each idea column
-
-‌
 
 Also I change the names of columns and boards when I find I am not using it much. For example my finance board had the following names over the months
 
 - Money
-
 - Paisa
-
 - How money works
-
 - Finance
-
 - Financial Flyway (Current)
-
-‌
 
 Changing names gives a new way of looking 👀 at the board. So I keep updating it iteratively.
 
 Dashboard
-
-‌
-
-‌
 
 Inbox Card
