@@ -21,9 +21,10 @@ Trello is a simple Kanban tool I use to organize my life. It helps me:
 - **Optimism**: help me be happy, less stressed, avoid burnout and maintain a history of things I have done.
 - **Flow**: get out of my way to that I can life life (TODO: Link to Flow Blogpost)
 
-I use Trello for almost everything that's important: Writing Blogposts, Traveling, Goals, Learning Tasks, Notes, etc. I think of trello as a efficient production line that can scale to your needs.
+I think of trello as a efficient production line that can help organize almost anything and get it done step by step. And I use it for almost everything from blogpost production, travel inventory, goals, learning, and even tracking psychological/inner child work.
 
-If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post.
+
+If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post. **You don't need to implement everything I suggest, keep things simple and scale if you need.**
 
 ## Optimizing Trello for Maximum Productivity
 
@@ -49,7 +50,7 @@ The basic Trello structure includes the following columns:
 
 ![](https://www.bluecatreports.com/blog/trello-to-do-list/best-board-ever.png)
 
-However, as you get more productive it's better to enhance each column by breaking each into multiple columns.
+I enhance column by splitting it into multiple columns. But this I only do when the number of cards increase. **If the number of cards are less, I'll again switch back to less number of columns**.
 
 ### **Enhancing the "To Do" Column**
 
@@ -99,6 +100,32 @@ If you're unsure how to categorize tasks in a new domain, try the MoSCoW method:
 
 By customizing columns based on the specific domain, I can prioritize and manage tasks more effectively.
 
+**How I pick tasks?**
+
+My philosopy is roughly based on Eisenhower matrix:
+
+- **Urgent & Important Tasks**: Given immediate attention, these tasks impact my goals or responsibilities significantly.
+- **Non-urgent Important Tasks**: Despite being non-urgent, these are crucial for long-term success, reducing future emergencies and smaller tasks.
+
+![](https://i0.wp.com/theblogrelay.com/wp-content/uploads/2021/03/Eisenhower-Matrix.png?resize=1536%2C864&ssl=1)
+
+I try to give highest priority to non-urgent and important as they eliminate smaller tasks and help me be ahead. Some example of such tasks are:
+
+- **Reading**: A book like Design Patterns which will help me understand all of software
+- **Implementing**: A new technique/organization tips like this Trello system which helped me stay extrement organized
+- **Setting up my financial flywheel**: So that I can have enough money to do what's meaningful.
+- **Psychological work**: That helped me be less stressed and improve my day to day well-being.
+- **Communication skills** So that I can have clear thoughts, happier times with people and better opportunities.
+
+Doing these tasks properly frees up more time in the future.
+
+**Example: Self-Help Videos**
+
+- I used to have many self-help videos cards on social skills and communication. Post-therapy, I deleted many of them, freeing up time and mental RAM.
+- Similarly, after studying the Bhagavad Gita, I deleted about 40 related tasks, streamlining my workload.
+
+Essentially, you want to solve the root of the problem. Once solved fully, it'll eliminate all the other problems.
+
 ### **Enhancing the "Doing" Column**
 
 A single doing column doesn't indicate how much you have progressed on a task. It's better to have multiple columns.
@@ -126,7 +153,7 @@ Like with MosCow, my default for most boards is:
 
 - **Planning, Intellectual Learning and Physical Learning**
 - **Repetition and Sets**
-- **Feedback, Recording, and Debrief: What went well? What can be improved? Improve it / Learn**
+- **Feedback, Recording, and Debrief**: What went well? What can be improved? Improve it / Learn
 
 This way, I know exactly what stage each task is in and what needs to be done next.
 
@@ -144,7 +171,7 @@ Here are a few columns I have divided "Done" into.
 - **Debrief**
 - **Chained Tasks**
 - **Freezed / Auto Pilot**
-- **Closes / X Ledger**
+- **Closed / X Ledger**
 
 **Debrif Column**
 
@@ -262,7 +289,7 @@ By breaking down a big task into smaller steps, you can:
 - **Enhance Manageability**: Make the task less overwhelming and more achievable.
 - **Boost Motivation**: Experience a sense of accomplishment as you complete smaller tasks.
 
-**Methods in Trello**
+**How to Break Down Tasks in Trello**
 
 In Trello, you can break down tasks in two primary ways:
 
@@ -273,33 +300,20 @@ Usually, if I have a task which is multiple months, I'll break it down into a bu
 
 And for checklist it depends, I may not may not use checklist if the task itself it small. But if a task get's complex, I'll break it down to checklists.
 
-# Skip
+## Command Center / Dashboard
 
-## Protect Board Clarity: Inbox Card
+As I created multiple boards, I realized I would focus on one area and not the other. I wanted a way to look at multiple boards at once and do what's important in all of them. Which led me to creation of "Command Center / Dashboard" Board.
 
-## Dashboard
+The "Command Center / Dashboard" Board allows me to:
+
+- Manage multiple boards at once
+- Manage my focus on long term goals
+- Track this weeks work via Weekly cards.
+- Contain an weekly inbox card which helps me keep my other boards clean.
 
 ## Purge from Dashboard
 
-## What tasks to pick?
-
-What task to pick? The task which eliminates need for other tasks.
-
-I try to pick tasks that are the most urgent 🚨 and important first. Then I'll pick a few non-urgent and important tasks.
-
-Initially, I spent a lot of time picking mostly urgent tasks& important. Now it's mostly non-urgent and important.
-
-Non-urgent important tasks are long term tasks. Things like Reading a Book. Implementing a new technique. Setting up my Financial Flywheel. Etc.
-
-If I do these properly, these will free up more time in the future and eliminate all the other tasks.
-
-I once such a task is complete, I'll mostly be deleting a lot of the smaller tasks. For example, I was someone who used to watch a lot of YouTube videos related to social skills and communication, etc. but once I went through therapy, incorporated it's lessons, I no longer needed to watch a lot of those videos. So I deleted them.
-
-Similarly, I remember I had a huge list of "content" to watch. After completely listening to the Bhagwad Gita and incorporating it's lessons, I deleted about 40 cards and tasks. Doing one task well had eliminated 40 cards 🃏 and it still does.
-
-Whenever something happens, I think I had learned something to deal with this type of problem, what was it? Then I try to recall. And if I can't recall correctly, I'll go into the card and read my notes. 🎶. And try to implement it in the next few days. #neverGoingBack
-
-## More boards
+## Optional: Creating More Boards
 
 I realized that more boards makes Trello really overwhelming. But by not having more boards, I was really missing out on productivity gains.
 
@@ -336,35 +350,16 @@ Finance Stories usually move faster. Finanial goal achievement is slower over mo
 
 Etc etc. This gives you a satisfaction. You know everything is undercontrol and moving.
 
-## Making board interesting to use. Images and Dashcards and changing names. #AutoLawOfAttraction
+## Optional: Keeping Board Interesting to Use
 
-The board should be interesting and fun to use. Else you'll use it less and less. So this is an important step and you won't want to ignore it cuz it sounds cheesy.
+To make your board interesting to use:
 
-There are a few ways to have an interesting board.
+- Change the background image to something you like.
+- Add images to cards, especially goal cards.
+- Use Dash-cards, a Trello power-up, to show quick counts of items in lists or based on certain criteria.
+- Changing names of columns and boards:
+  - Keep updating names iteratively to give a new perspective on the board.
 
-You can change the background image to something you like.
+Example: My finance board had names like "Money," "Paisa," "How money works," "Finance," and currently "Finance Flyway"
 
-You can add images to cards. 🎴. I especially add images to my goal cards. 🎴
-
-Add Dash-cards. Dash-cards is trello power-up that shows you quick count of number of things in a list or based on a certain criteria. I add dash-cards for any list that is significant.
-
-- This week
-- In progress
-- Done
-- Chained Task
-- Quality Control
-- Each idea column
-
-Also I change the names of columns and boards when I find I am not using it much. For example my finance board had the following names over the months
-
-- Money
-- Paisa
-- How money works
-- Finance
-- Financial Flyway (Current)
-
-Changing names gives a new way of looking 👀 at the board. So I keep updating it iteratively.
-
-Dashboard
-
-Inbox Card
+However, as you get more productive it's better to enhance each column by breaking each into multiple columns.
