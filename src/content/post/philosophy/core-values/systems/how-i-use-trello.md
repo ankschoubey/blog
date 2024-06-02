@@ -65,9 +65,20 @@ Add a card to the board. You can drag a card from one column to the next until d
 
 Trello/Kanban can scale to our needs. If you are getting started a simple setup maybe enough. But as time passes, and you get more productive, you'll find you need to [optimize your system for scale] (TODO: Link To Post) else the system starts choking.
 
-Below are a few systems I created and use.
+Here are few subsystems I have that help me scale:
 
-### Clarity of what to do within the task: Card Breakdown
+- Breaking down Big Tasks into Smaller Tasks
+- Breaking Todo Column Into Multiple Columns
+- Breaking In-Progress Column Into Multiple Columns
+- Breaking Done Column Into Multiple Column
+- Dashboard Board For Faster Planning
+- Debrief Column for Continuous Improvement and Learning
+- Knowledge Base Columns for Long Term Reference
+- Weekly Inbox Card for Quick Capture and Consolidation
+
+### Breaking down Big Tasks into Smaller Specific Tasks
+
+A big step is comprised of many smaller steps.
 
 If you have a big task, you want to be able to break down it into smaller achievable tasks.
 
@@ -81,7 +92,7 @@ For example, launching a new website involves
 
 A big step is comprised of many smaller steps.
 
-By breaking down a card well, you'll find you are able to do the task better. You are able to understand it in clarity.
+By breaking down a card well, you'll find you are able to do the task better. You are able to understand with better clarity.
 
 There are a few ways to break a task in Trello.
 
@@ -92,7 +103,7 @@ Usually, if I have a task which is multiple months, I'll break it down into a bu
 
 And for checklist it depends, I may not may not use checklist if the task itself it small. But if a task get's complex, I'll break it down to checklists.
 
-## Clarity of what to do next: Breaking down Todo column into multiple columns
+## Breaking Todo Column Into Multiple Columns
 
 Our basic column layout was todo, doing and done. As you get more productive, you'll find that there are more things to do and your todo list keeps getting bigger and bigger. This is natural because we actually have a lot of things to do in life [TODO link to blogpost].
 
@@ -128,7 +139,7 @@ Columns in Travel board are arranged differently.
 
 Tip: If you don't know your domain well yet, breakdown create MoSCoW columns: Must Do, Should Do, Can Do, Won’t Do
 
-## Clarity of how to progress: Breaking down: In Progress Columns
+## Breaking In-Progress Column Into Multiple Columns
 
 I want to know the progress of my tasks my just looking at the board.
 
@@ -149,9 +160,9 @@ Checklists
 
 In Progress Columns
 
-## Chained Task: Clarity of what other tasks need to be done
+## Breaking Done Column Into Multiple Column
 
-## Completing a Task Fully: Chained Tasks
+Completing a Task Fully: Chained Tasks
 
 Many times when we do a the main task, it leads to the creation of more tasks.
 
@@ -239,7 +250,7 @@ Finance Stories usually move faster. Finanial goal achievement is slower over mo
 
 Etc etc. This gives you a satisfaction. You know everything is undercontrol and moving.
 
-## Capturing Long Term Goals and Knowledge
+## Knowledge Base Columns for Long Term Reference
 
 There are some fundamental knowledge about any domain that are long term and that you would like to he reminded of.
 
