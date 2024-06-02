@@ -65,6 +65,18 @@ Add a card to the board. You can drag a card from one column to the next until d
 
 Trello/Kanban can scale to our needs. If you are getting started a simple setup maybe enough. But as time passes, and you get more productive, you'll find you need to [optimize your system for scale] (TODO: Link To Post) else the system starts choking.
 
+Here are a few things I have done to optimize my Trello.
+
+Trello/Kanban can scale to meet your needs. If you're just starting, a simple setup may be enough. But as you become more productive, you'll need to [optimize your system for scale](TODO: Link To Post) to prevent it from becoming overwhelming.
+
+Here are a few things I've done to optimize my Trello system:
+
+- **Board Structure**: A well-organized board helps me focus on what needs to be done right now and ensures I complete tasks fully.
+- **Card Structure**: Capturing all necessary information in the card helps me execute tasks to the best of my ability.
+- **Dashboard Board**: This board provides an overview of all tasks across multiple boards, helping me prioritize what's important.
+
+By following these steps and continuously refining your system, you'll be able to maintain high productivity and stay organized.
+
 ## Board Structure
 
 The goal of a good board structure is to help you be **extremely organized** and help you in what to do next.
@@ -74,6 +86,8 @@ The basic Trello structure includes the following columns:
 - To Do
 - Doing
 - Done
+
+![](https://www.bluecatreports.com/blog/trello-to-do-list/best-board-ever.png)
 
 However, as you get more productive it's better to enhance each column by breaking each into multiple columns.
 
@@ -94,10 +108,20 @@ I organize my Trello board with the left section focused on current tasks and th
 
 When it's time to write a blog post, I simply pick a task from the "Ready for Production" column.
 
+![](/how-i-use-trello/Trello Blog YouTube ToDo Split.png)
+
 **Example: Travel Board**
 
 - World Tour: Columns for planning an international trip.
 - India: Columns for domestic travel plans.
+
+**World Tour**
+
+![](/how-i-use-trello/Travel Board World Tour.png)
+
+**Bharat**
+
+![](/how-i-use-trello/Travel Board Bharat.png)
 
 **Tip: Using the MoSCoW Method**
 
@@ -240,9 +264,11 @@ Read:
 
 ****
 
-## Cards
+## Card Structure
 
 In Trello, tasks are divided as cards.
+
+### Card Template
 
 ### Breaking down Big Cards into Smaller Specific Cards
 
