@@ -270,7 +270,10 @@ Read:
 
 In Trello, tasks are divided as cards.
 
-### Card Template
+### Ticket Template
+
+![](/images/life-blog/how-i-use-trello/Ticket Template.png)
+
 
 ### Breaking down Big Cards into Smaller Specific Cards
 
