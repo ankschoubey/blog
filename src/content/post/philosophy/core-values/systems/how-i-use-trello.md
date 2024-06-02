@@ -23,8 +23,13 @@ Trello is a simple Kanban tool I use to organize my life. It helps me:
 
 I think of trello as a efficient production line that can help organize almost anything and get it done step by step. And I use it for almost everything from blogpost production, travel inventory, goals, learning, and even tracking psychological/inner child work.
 
+If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post.
 
-If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post. **You don't need to implement everything I suggest, keep things simple and scale if you need.**
+**You don't need to implement everything I suggest,**
+
+- keep things simple and scale if you need
+- and when you don't need scale down the system and make it simpler.
+- **aim for achieving balance**.
 
 ## Optimizing Trello for Maximum Productivity
 
@@ -310,8 +315,30 @@ The "Command Center / Dashboard" Board allows me to:
 - Manage my focus on long term goals
 - Track this weeks work via Weekly cards.
 - Contain an weekly inbox card which helps me keep my other boards clean.
+- Help me reduce overall number of cards.
 
-## Purge from Dashboard
+It has the following columns:
+
+- **Definely do this week**: Dashcards of varios boards that I need to get done this week
+- **Sets / Reps**: Split into parts
+- **Done for the week**
+- **Global Card Count**: Dashcards for total count on a board
+- **Plans / Goals**: Multi Year Plans
+
+![](/images/life-blog/how-i-use-trello/dashcard-do.png)
+
+I often will purge cards from boards if they are too many.
+
+**Example: Purging Cards from Blog Board**
+
+- I had too many random ideas in my Blog Board and it was very hard to manage.
+- When I added the dashcard to count it, it denoted 480+ ideas. This was too much and I had to purge.
+- Over a few iteretions I purged it down to 94 currently. This is much easier to manage.
+
+I now use the comments section ot see my purge progress:
+
+![](/images/life-blog/how-i-use-trello/purging-blogposts.png)
+
 
 ## Optional: Creating More Boards
 
