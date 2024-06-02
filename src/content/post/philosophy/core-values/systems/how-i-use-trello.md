@@ -108,7 +108,7 @@ I organize my Trello board with the left section focused on current tasks and th
 
 When it's time to write a blog post, I simply pick a task from the "Ready for Production" column.
 
-![](/how-i-use-trello/Trello Blog YouTube ToDo Split.png)
+![](/images/life-blog/how-i-use-trello/Trello Blog YouTube ToDo Split.png)
 
 **Example: Travel Board**
 
@@ -117,11 +117,11 @@ When it's time to write a blog post, I simply pick a task from the "Ready for Pr
 
 **World Tour**
 
-![](/how-i-use-trello/Travel Board World Tour.png)
+![](/images/life-blog/how-i-use-trello/Travel Board World Tour.png)
 
 **Bharat**
 
-![](/how-i-use-trello/Travel Board Bharat.png)
+![](/images/life-blog/how-i-use-trello/Travel Board Bharat.png)
 
 **Tip: Using the MoSCoW Method**
 
@@ -148,6 +148,8 @@ As with "To Do" columns split, it's better to develop it by domain.
 - **Writing / Recording**
 - **Self Proof Reading, Refinement and Review**
 - **SEO / Promotion / Content Marketing**
+
+![](/images/life-blog/how-i-use-trello/Trello Blog Doing.png)
 
 Like with MosCow, my default for most boards is:
 
