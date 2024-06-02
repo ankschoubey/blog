@@ -43,7 +43,9 @@ Here are a few things I've done to optimize my Trello system:
 
 By following these steps and continuously refining your system, you'll be able to maintain high productivity and stay organized.
 
-## Board Structure
+## Board
+
+### Board Structure
 
 The goal of a good board structure is to help you be **extremely organized** and help you in what to do next.
 
@@ -57,7 +59,7 @@ The basic Trello structure includes the following columns:
 
 I enhance column by splitting it into multiple columns. But this I only do when the number of cards increase. **If the number of cards are less, I'll again switch back to less number of columns**.
 
-### **Enhancing the "To Do" Column**
+#### **Enhancing the "To Do" Column**
 
 Instead of having a single "To Do" column, consider splitting it into multiple columns to better prioritize tasks:
 
@@ -131,7 +133,7 @@ Doing these tasks properly frees up more time in the future.
 
 Essentially, you want to solve the root of the problem. Once solved fully, it'll eliminate all the other problems.
 
-### **Enhancing the "Doing" Column**
+#### **Enhancing the "Doing" Column**
 
 A single doing column doesn't indicate how much you have progressed on a task. It's better to have multiple columns.
 
@@ -162,7 +164,7 @@ Like with MosCow, my default for most boards is:
 
 This way, I know exactly what stage each task is in and what needs to be done next.
 
-### **Enhancing the "Done" Column**
+#### **Enhancing the "Done" Column**
 
 Completing a task often isn't as straightforward as marking it "done." We want to:
 
@@ -237,7 +239,7 @@ Naming it this way has been helpful to me. (TODO: Blogpost on important of namin
 
 By organizing the "Done" column into specific categories and maintaining a detailed system for chained tasks, you can ensure comprehensive task management and continuous improvement. And ensure nothing goes out of your mind.
 
-### Enhancing Knowledge Capture (Unfinished Idea: TODO: Improve this aspect then write about it)
+#### Enhancing Knowledge Capture (Unfinished Idea: TODO: Improve this aspect then write about it)
 
 I don't have a very good insight into capturing long term ideas. For example, if I learnt something that I want to acess later.
 
@@ -261,15 +263,69 @@ Read:
 - https://oliconner.medium.com/insight-sprint-part-two-reflections-on-platforms-and-trello-f57050ef6308
 - https://www.youtube.com/watch?v=8yZ7X_ZIHXo (Definitely Do This Week)
 
+## "Command Center / Dashboard" Board
+
+As I created multiple boards, I realized I would focus on one area and not the other. I wanted a way to look at multiple boards at once and do what's important in all of them. Which led me to creation of "Command Center / Dashboard" Board.
+
+The "Command Center / Dashboard" Board allows me to:
+
+- Manage multiple boards at once
+- Manage my focus on long term goals
+- Track this weeks work via Weekly cards.
+- Contain an weekly inbox card which helps me keep my other boards clean.
+- Help me reduce overall number of cards.
+
+It has the following columns:
+
+- **Definely do this week**: Dashcards of varios boards that I need to get done this week
+- **Sets / Reps**: Split into parts
+- **Done for the week**
+- **Global Card Count**: Dashcards for total count on a board
+- **Plans / Goals**: Multi Year Plans
+
+![](/images/life-blog/how-i-use-trello/dashcard-do.png)
+
+I often will purge cards from boards if they are too many.
+
+**Example: Purging Cards from Blog Board**
+
+- I had too many random ideas in my Blog Board and it was very hard to manage.
+- When I added the dashcard to count it, it denoted 480+ ideas. This was too much and I had to purge.
+- Over a few iteretions I purged it down to 94 currently. This is much easier to manage.
+
+I now use the comments section ot see my purge progress:
+
+![](/images/life-blog/how-i-use-trello/purging-blogposts.png)
+
+
 ****
 
-## Card Structure
+## Cards
 
-In Trello, tasks are divided as cards.
+I use cards to,
 
-### Ticket Template
+- track what I am doing
+- include any information I need for doing the task of for future reference.
+
+### Card Structure
+
+In Trello, tasks are divided as cards. I do have multiple card templates but recently I am trying to unify them into one.
+
+They include 4 checklists.
+
+- **🗑️ Categorize this ticket & Delete Me**: Assign Labels When Card is Created. I'll delete this checklist once labels are added.
+- **🗑️ Make this SMART/TDD & Delete Me**: I'll use this checklist when I decide to work on the task. As part of this I'll make this ticket specific, measureable etc by breaking it down properly and assigning a due data.
+- **🚀 Breakdown / Checklist to 30 min tasks**: So that I can do it as pomodoros
+- **🔗 Chained Tasks**: Additional tasks related to this one.
+- **📝 Debrief: What went well? What can be improved? How?**: Any improvements I need to do?
+
+The top two portion is just for planning and can be deleted.
 
 ![](/images/life-blog/how-i-use-trello/Ticket-Template.png)
+
+
+
+### Incorporating ChatGPT Templates in Checklists
 
 ### Breaking down Big Cards into Smaller Specific Cards
 
@@ -304,40 +360,6 @@ In Trello, you can break down tasks in two primary ways:
 Usually, if I have a task which is multiple months, I'll break it down into a bunch of smaller cards that I can take action on in about a week.
 
 And for checklist it depends, I may not may not use checklist if the task itself it small. But if a task get's complex, I'll break it down to checklists.
-
-## Command Center / Dashboard
-
-As I created multiple boards, I realized I would focus on one area and not the other. I wanted a way to look at multiple boards at once and do what's important in all of them. Which led me to creation of "Command Center / Dashboard" Board.
-
-The "Command Center / Dashboard" Board allows me to:
-
-- Manage multiple boards at once
-- Manage my focus on long term goals
-- Track this weeks work via Weekly cards.
-- Contain an weekly inbox card which helps me keep my other boards clean.
-- Help me reduce overall number of cards.
-
-It has the following columns:
-
-- **Definely do this week**: Dashcards of varios boards that I need to get done this week
-- **Sets / Reps**: Split into parts
-- **Done for the week**
-- **Global Card Count**: Dashcards for total count on a board
-- **Plans / Goals**: Multi Year Plans
-
-![](/images/life-blog/how-i-use-trello/dashcard-do.png)
-
-I often will purge cards from boards if they are too many.
-
-**Example: Purging Cards from Blog Board**
-
-- I had too many random ideas in my Blog Board and it was very hard to manage.
-- When I added the dashcard to count it, it denoted 480+ ideas. This was too much and I had to purge.
-- Over a few iteretions I purged it down to 94 currently. This is much easier to manage.
-
-I now use the comments section ot see my purge progress:
-
-![](/images/life-blog/how-i-use-trello/purging-blogposts.png)
 
 
 ## Optional: Creating More Boards
