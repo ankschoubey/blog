@@ -16,12 +16,12 @@ image: https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b0100
 
 Trello is a simple Kanban tool I use to organize my life. It helps me:
 
-- know all the things I need to do.
-- helps me do it efficiently.
-- maintains a history of everything I have done for future reference.
-- help me be extremely organized in everything I do.
+- **Clarity**: gain clarity of what I want to do and how to do it
+- **Responsibility**: help me do it to my best quality I can produce
+- **Optimism**: help me be happy, less stressed, avoid burnout and maintain a history of things I have done.
+- **Flow**: get out of my way to that I can life life (TODO: Link to Flow Blogpost)
 
-I use Trello for almost everything: Writing Blogposts, Traveling, Goals, Learning Tasks, Notes, etc.
+I use Trello for almost everything that's important: Writing Blogposts, Traveling, Goals, Learning Tasks, Notes, etc. I think of trello as a efficient production line that can scale to your needs.
 
 If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post.
 
@@ -72,6 +72,11 @@ When it's time to write a blog post, I simply pick a task from the "Ready for Pr
 
 **Example: Travel Board**
 
+My goal is to travel India and in next few years start my world tour. Also there are something that are not travel related.
+
+So broadly I have these sets:
+
+- Non-Travel
 - World Tour: Columns for planning an international trip.
 - India: Columns for domestic travel plans.
 
