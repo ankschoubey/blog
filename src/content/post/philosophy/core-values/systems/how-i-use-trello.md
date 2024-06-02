@@ -9,65 +9,27 @@ tags:
 publishDate: 2024-05-19T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/how-i-use-trello/
-title: Optimizing Trello for Maximum Personal Productivity 
+title: Structuring My Trello for Maximum Personal Productivity 
 toc: false
-image: /images/life-blog/how-i-use-trello/2024-may-19-sprint-board.png
+image: https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1440&fm=webp
 ---
 
-If you've met me, you know how organized I am. A significant part of this is due to systems thinking, which I first learned from Atomic Habits and YouTube. A core part of my life system is Trello.
+Trello is a simple Kanban tool I use to organize my life. It helps me:
 
-Over the months, I've iterated on my system and helped friends and family set up their boards. By the end of this post, you'll have created a perfect Kanban Trello board to significantly improve your productivity.
+- know all the things I need to do.
+- helps me do it efficiently.
+- maintains a history of everything I have done for future reference.
+- help me be extremely organized in everything I do.
 
-This post focuses on personal productivity, but the principles are similar for team settings.
+I use Trello for almost everything: Writing Blogposts, Traveling, Goals, Learning Tasks, Notes, etc.
 
-## Before You Start: How to Implement This Post?
 
-Trello can be complicated initially. Use only the subsystems that resonate with you. Start by setting up a Trello account and use it daily. Improve the system as you encounter roadblocks.
 
-> Keep things as simple as possible!
-
-What is Trello? Why Do I Use It?
-Trello is a simple Kanban tool I use to organize my life. Tasks are organized into cards, and columns act like a production pipeline, moving tasks forward until completion.
-
-If you're new to Trello and Kanban, watch the video below (2x speed recommended).
-
-<iframe class="aspect-video w-full" src="https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-Kanban is a visual way of seeing work. Tasks are represented by cards and stages by columns. A basic board has three columns: To Do, Doing, and Done. Like a car production line, you can create your own stages.
-
-For example, a content creator's stages might be:
-
-1. Ideas
-2. Research
-3. Content Creation
-4. Editing
-5. Promotion
-6. Done
-
-Everyone works from the tasks on the board, moving cards through the stages. Now, let's create our first board.
-
-For example, suppose you and 5 other collegues are working on the board. A card would be assigned to each. This card would include: Task, Details, Files, Images, Checklists, etc.
-
-As a person is working on a card, they can work on it and move it to appropriate lane. For example, a content creator creates content, moves the card to Editing lane, a editor can pick the task, edit the content, send to promotion column, social media manager can pick card from promotion column and promote.
-
-This way everything goes from one column stage to another and everyone knows where the card is.
-
-So given this basic knowledge, go ahead and create your first board:
-
-1. [Sign-Up to Trello](https://trello.com/ankushchoubey/recommend)
-2. Create a blank board.
-3. Add 3 Columns
-4. Todo, Doing and Done.
-5. And you have your first Trello board ready to work on.
-
-Add a card to the board. You can drag a card from one column to the next until done.
+If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post.
 
 ## Optimizing Trello for Maximum Productivity
 
 Trello/Kanban can scale to our needs. If you are getting started a simple setup maybe enough. But as time passes, and you get more productive, you'll find you need to [optimize your system for scale] (TODO: Link To Post) else the system starts choking.
-
-Here are a few things I have done to optimize my Trello.
-
-Trello/Kanban can scale to meet your needs. If you're just starting, a simple setup may be enough. But as you become more productive, you'll need to [optimize your system for scale](TODO: Link To Post) to prevent it from becoming overwhelming.
 
 Here are a few things I've done to optimize my Trello system:
 
@@ -108,7 +70,7 @@ I organize my Trello board with the left section focused on current tasks and th
 
 When it's time to write a blog post, I simply pick a task from the "Ready for Production" column.
 
-![](/images/life-blog/how-i-use-trello/Trello Blog YouTube ToDo Split.png)
+![](/images/life-blog/how-i-use-trello/Trello-Blog-YouTube-ToDo-Split.png)
 
 **Example: Travel Board**
 
@@ -117,11 +79,11 @@ When it's time to write a blog post, I simply pick a task from the "Ready for Pr
 
 **World Tour**
 
-![](/images/life-blog/how-i-use-trello/Travel Board World Tour.png)
+![](/images/life-blog/how-i-use-trello/Travel-Board-World-Tour.png)
 
 **Bharat**
 
-![](/images/life-blog/how-i-use-trello/Travel Board Bharat.png)
+![](/images/life-blog/how-i-use-trello/Travel-Board-Bharat.png)
 
 **Tip: Using the MoSCoW Method**
 
@@ -149,7 +111,7 @@ As with "To Do" columns split, it's better to develop it by domain.
 - **Self Proof Reading, Refinement and Review**
 - **SEO / Promotion / Content Marketing**
 
-![](/images/life-blog/how-i-use-trello/Trello Blog Doing.png)
+![](/images/life-blog/how-i-use-trello/Trello-Blog-Doing.png)
 
 Like with MosCow, my default for most boards is:
 
@@ -179,7 +141,7 @@ Here are a few columns I have divided "Done" into.
 - **Debrief**
 - **Chained Tasks**
 - **Freezed / Auto Pilot**
-- **Done Ledger**
+- **Closes / X Ledger**
 
 **Debrif Column**
 
@@ -272,8 +234,7 @@ In Trello, tasks are divided as cards.
 
 ### Ticket Template
 
-![](/images/life-blog/how-i-use-trello/Ticket Template.png)
-
+![](/images/life-blog/how-i-use-trello/Ticket-Template.png)
 
 ### Breaking down Big Cards into Smaller Specific Cards
 
