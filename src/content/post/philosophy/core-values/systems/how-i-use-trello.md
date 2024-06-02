@@ -9,7 +9,7 @@ tags:
 publishDate: 2024-05-19T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/how-i-use-trello/
-title: My 8 Trello Subsystems to Maximize Personal Productivity 
+title: Optimizing Trello for Maximum Personal Productivity 
 toc: false
 image: /images/life-blog/how-i-use-trello/2024-may-19-sprint-board.png
 ---
@@ -61,54 +61,9 @@ So given this basic knowledge, go ahead and create your first board:
 
 Add a card to the board. You can drag a card from one column to the next until done.
 
-## Trello Sub-Systems for Maximum Productivity
+## Optimizing Trello for Maximum Productivity
 
 Trello/Kanban can scale to our needs. If you are getting started a simple setup maybe enough. But as time passes, and you get more productive, you'll find you need to [optimize your system for scale] (TODO: Link To Post) else the system starts choking.
-
-Here are few subsystems I have that help me scale:
-
-1. ✅ Breaking down Big Tasks into Smaller Tasks
-2. Breaking Todo Column Into Multiple Columns
-3. Breaking In-Progress Column Into Multiple Columns
-4. Breaking Done Column Into Multiple Column
-5. Dashboard Board For Faster Planning
-6. Debrief Column for Continuous Improvement and Learning
-7. Knowledge Base Columns for Long Term Reference
-8. Weekly Inbox Card for Quick Capture and Consolidation
-
-### Breaking down Big Tasks into Smaller Specific Tasks
-
-To tackle large tasks effectively, breaking them down into smaller, achievable tasks is essential.
-
-Example: Launching a New Website
-Consider the task of launching a new website. This can be broken down into several specific steps:
-
-- Learning about website launches
-- Signing up for a hosting service
-- Defining the content
-- Writing the content
-- Designing the layout
-- Testing the website
-- Promoting the launch
-
-**Benefits of Breaking Down Tasks**
-
-By breaking down a big task into smaller steps, you can:
-
-- **Improve Clarity**: Understand the task better and identify specific actions needed.
-- **Enhance Manageability**: Make the task less overwhelming and more achievable.
-- **Boost Motivation**: Experience a sense of accomplishment as you complete smaller tasks.
-
-**Methods in Trello**
-
-In Trello, you can break down tasks in two primary ways:
-
-- **Cards**: Create individual cards for each sub-task. This is especially useful for tasks that span multiple weeks or months.
-- **Checklists**: Use checklists within cards for more detailed breakdowns. This is ideal for complex tasks that have many smaller components.
-
-Usually, if I have a task which is multiple months, I'll break it down into a bunch of smaller cards that I can take action on in about a week.
-
-And for checklist it depends, I may not may not use checklist if the task itself it small. But if a task get's complex, I'll break it down to checklists.
 
 ## Board Structure
 
@@ -259,11 +214,75 @@ Naming it this way has been helpful to me. (TODO: Blogpost on important of namin
 
 By organizing the "Done" column into specific categories and maintaining a detailed system for chained tasks, you can ensure comprehensive task management and continuous improvement. And ensure nothing goes out of your mind.
 
+### Enhancing Knowledge Capture (Unfinished Idea: TODO: Improve this aspect then write about it)
+
+I don't have a very good insight into capturing long term ideas. For example, if I learnt something that I want to acess later.
+
+There are some fundamental knowledge about any domain that are long term and that you would like to he reminded of.
+
+For this, I have added column with such information.
+
+For example my "Finance Flyway" board has these columns at the right
+
+- **Monthly Spending**: A card per month for monthly spending
+- **Money Goals**: All my financial goals regarding money.
+- **Money Formulas**: Things like 50:30:20. Rule of 72 etc.
+- **Money Mindset**: Repair over Buy. Protect Electronics. Think of Money as Value.
+- **Trusted Entities**: Companies and People I trust
+- **Bad Entities**: Companies and People I can't trust financially or maybe even personally.
+
+I have more such columns in Finance Flyway. Software Development board also has multiple such columns related to different types of Technology (AWS, Astro, Java, Java Multithreading, etc) Other domains have less.
+
+Read:
+
+- https://oliconner.medium.com/insight-sprint-part-two-reflections-on-platforms-and-trello-f57050ef6308
+- https://www.youtube.com/watch?v=8yZ7X_ZIHXo (Definitely Do This Week)
+
 ****
 
-## Skip
+## Cards
+
+In Trello, tasks are divided as cards.
+
+### Breaking down Big Cards into Smaller Specific Cards
+
+To tackle large tasks effectively, breaking them down into smaller, achievable tasks is essential.
+
+Example: Launching a New Website
+Consider the task of launching a new website. This can be broken down into several specific steps:
+
+- Learning about website launches
+- Signing up for a hosting service
+- Defining the content
+- Writing the content
+- Designing the layout
+- Testing the website
+- Promoting the launch
+
+**Benefits of Breaking Down Tasks**
+
+By breaking down a big task into smaller steps, you can:
+
+- **Improve Clarity**: Understand the task better and identify specific actions needed.
+- **Enhance Manageability**: Make the task less overwhelming and more achievable.
+- **Boost Motivation**: Experience a sense of accomplishment as you complete smaller tasks.
+
+**Methods in Trello**
+
+In Trello, you can break down tasks in two primary ways:
+
+- **Cards**: Create individual cards for each sub-task. This is especially useful for tasks that span multiple weeks or months.
+- **Checklists**: Use checklists within cards for more detailed breakdowns. This is ideal for complex tasks that have many smaller components.
+
+Usually, if I have a task which is multiple months, I'll break it down into a bunch of smaller cards that I can take action on in about a week.
+
+And for checklist it depends, I may not may not use checklist if the task itself it small. But if a task get's complex, I'll break it down to checklists.
+
+# Skip
 
 ## Protect Board Clarity: Inbox Card
+
+## Dashboard
 
 ## Purge from Dashboard
 
@@ -321,23 +340,6 @@ Similarly, Body board will have a lot of goals that take time
 Finance Stories usually move faster. Finanial goal achievement is slower over months.
 
 Etc etc. This gives you a satisfaction. You know everything is undercontrol and moving.
-
-## Knowledge Base Columns for Long Term Reference
-
-There are some fundamental knowledge about any domain that are long term and that you would like to he reminded of.
-
-For this, I have added column with such information.
-
-For example my "Finance Flyway" board has these columns at the right
-
-- Monthly Spending: A card per month for monthly spending
-- Money Goals: All my financial goals regarding money.
-- Money Formulas: Things like 50:30:20. Rule of 72 etc.
-- Money Mindset: Repair over Buy. Protect Electronics. Think of Money as Value.
-- Trusted Entities: Companies and People I trust
-- Bad Entities: Companies and People I can't trust financially or maybe even personally.
-
-I have more such columns in Finance Flyway. Software Development board also has multiple such columns related to different types of Technology (AWS, Astro, Java, Java Multithreading, etc) Other domains have less.
 
 ## Making board interesting to use. Images and Dashcards and changing names. #AutoLawOfAttraction
 
