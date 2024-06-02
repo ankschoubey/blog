@@ -1,0 +1,302 @@
+---
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { getItemFromSlug, type SeriesItems } from '~/utils/customCode.ts/ankushUtils';
+
+const metadata = {
+  title: 'Life',
+};
+
+const content: SeriesItems[] = [
+  {
+    title: 'Quick Implementations',
+    subtitle: '',
+    posts: [
+      'life-blog/internet-distractions',
+      'life-blog/advice-that-suggest-being-fake',
+    ],
+  },
+
+  {
+    title: 'Gyaan',
+    subtitle: '',
+    posts: [
+      'optimism/why-therapy',
+      'life-blog/7-tools-for-making-good-love-choices',
+      'life-blog/step-aside-success',
+      'life-blog/deep-dive-trauma',
+      'v1/can-not-logic-your-way-out-of-depression',
+      'life-blog/ethos-pathos-logos',
+      'core-values',
+      'life-blog/badly',
+      'life-blog/bhagwat-gita-lessons-after-first-read',
+      'v1/truth/why-tell-the-truth',
+      'v1/inputs'
+
+    ],
+  },
+  {
+    title: 'Karma',
+    subtitle: '',
+    posts: [
+      'life-blog/internal-discipline',
+      'life-blog/make-yourself-do-it',
+      'v1/75-hard',
+      'life-blog/phase-1',
+      'life-blog/karma-karmafal',
+      'life-blog/karma-ledger',
+      'life-blog/perfection'
+    ],
+  },
+  {
+    title: 'Bhakti',
+    subtitle: '',
+    posts: [
+      'life-blog/where-our-communication-style-come-from',
+      'life-blog/unhealthy-communication-styles',
+      'life-blog/narcissism',
+      'life-blog/love-attachment',
+      'life-blog/social-confidence',
+      'life-blog/boundaries',
+      'life-blog/negotiations',
+      'v1/truth/liars'
+    ],
+  },
+];
+
+const resolvedContent = await Promise.all(
+  content.map(async (section) => {
+    const blogpostsResolved = await Promise.all(
+      section.posts.map(async (b, index) => await getItemFromSlug(b, index + 1))
+    );
+    section.items = blogpostsResolved;
+    return section;
+  })
+);
+
+const articleCount = content
+  .map((section) => section.posts.length)
+  .reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+  }, 0);
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Ankush's Guide to"
+    image={{
+      alt: 'Caos Image',
+      width: undefined,
+      height: undefined,
+    }}
+  >
+    <Fragment slot="title">
+      Life 
+      <span class="text-accent dark:text-white highlight">Code</span>
+      <br>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <!-- Creating the <span class="text-accent font-bold">cleanest codebase</span> for you and your teams.<br> -->
+      <span class="dark:text-orange-400 font-bold">This series is currently in progress</span>
+    </Fragment>
+  </Hero>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Statistics about the series"
+    stats={[
+      { title: 'Sections', amount: content.length },
+      { title: 'Posts', amount: articleCount + '' },
+    ]}
+  />
+
+  <!-- <Steps2
+    title="Welcome to the clean code series!"
+    subtitle="In this series of articles, you’ll learn how you can increase your development skill by 5 times by learning something that ensures"
+    items={[
+      { title: 'You always produce logical bug-free code.' },
+      {
+        title: 'You produce extremely maintainable code.',
+      },
+      {
+        title: 'You will code at a fast speed.',
+      },
+      {
+        title: 'You produce automatic documentation for anyone else to read.',
+      },
+    ]}
+  /> -->
+
+  <!-- <Steps
+    id="resume"
+    title="Introduction"
+    items={[
+      {
+        title: 'Why?',
+        description: `I was a pretty good developer when I learned TDD, but after I spend around 2-3 months learning TDD, I saw that my coding skills became way too sharp. This series covers the philosophy of TDD along with practical examples.`,
+        icon: 'tabler:code',
+      },
+      {
+        title: "How to Approach?",
+        description: `Try to practice the exercises in the language of your choice and upload them to GitHub 🙂. And if you want just share the link of your repo. I’d love to see it.`,
+        icon: 'tabler:bulb',
+      },
+      {
+        title: "Free",
+        description: `The series of posts below is completely free 🆓. So, I’d really appreciate it if you share this with your friends via LinkedIn or Twitter, if you find value! This would help get more eyes on the series.`,
+        icon: 'tabler:brand-open-source',
+      },
+      {
+        title: "Share",
+        description: `If you have any questions reach out to me on LinkedIn. And I’ll respond. Your questions and feedback would make things better for everyone.`,
+        icon: 'tabler:share',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  /> -->
+
+  <!-- Features3 Widget ************** -->
+  {
+    resolvedContent.map((section) => (
+      <Features3
+        title={section.title}
+        subtitle={section.subtitle}
+        columns={4}
+        isBeforeContent={true}
+        items={section.items}
+      />
+    ))
+  }
+
+  <!-- 
+<Steps2
+title="Achievements"
+subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+isReversed={true}
+callToAction={{
+  text: 'See more',
+  href: '/',
+}}
+items={[
+  {
+    title: 'Global reach',
+    description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+    icon: 'tabler:globe',
+  },
+  {
+    title: 'Positive customer feedback and reviews',
+    description:
+      'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+    icon: 'tabler:message-star',
+  },
+  {
+    title: 'Awards and recognition as industry experts',
+    description:
+      'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+    icon: 'tabler:award',
+  },
+]}
+/> -->
+
+  <!-- Features3 Widget ************** -->
+  <!-- 
+  <Features3
+    columns={3}
+    isAfterContent={true}
+    items={[
+      {
+        title: 'E-commerce',
+        description:
+          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Blog',
+        description:
+          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Business',
+        description:
+          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Branding',
+        description:
+          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Medical',
+        description:
+          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Fashion Design',
+        description:
+          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+        icon: 'tabler:template',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Colorful Image',
+    }}
+  />
+
+
+  <Features2
+    title="Our locations"
+    tagline="Find us"
+    columns={4}
+    items={[
+      {
+        title: 'EE.UU',
+        description: '1234 Lorem Ipsum St, 12345, Miami',
+      },
+      {
+        title: 'Spain',
+        description: '5678 Lorem Ipsum St, 56789, Madrid',
+      },
+      {
+        title: 'Australia',
+        description: '9012 Lorem Ipsum St, 90123, Sydney',
+      },
+      {
+        title: 'Brazil',
+        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+      },
+    ]}
+  />
+
+  <Features2
+    title="Technical Support"
+    tagline="Contact us"
+    columns={2}
+    items={[
+      {
+        title: 'Chat with us',
+        description:
+          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
+        icon: 'tabler:messages',
+      },
+      {
+        title: 'Call us',
+        description:
+          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
+        icon: 'tabler:headset',
+      },
+    ]}
+  /> -->
+</Layout>

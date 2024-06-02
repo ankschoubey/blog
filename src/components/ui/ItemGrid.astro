@@ -51,7 +51,7 @@ const {
             
                     <Image
                      {...image} 
-                      class="w-full md:h-full rounded shadow-lg bg-white object-contain"
+                      class="w-full md:h-full rounded shadow-lg bg-white object-cover"
                       widths={[400, 900]}
                       width={400}
                       sizes="(max-width: 900px) 400px, 900px"
@@ -59,7 +59,7 @@ const {
                       layout="cover"
                       loading="lazy"
                       decoding="async"
-                      style='object-fit: contain;'
+                      style='object-fit: cover !important;'
                     />
                   </div>    )
           

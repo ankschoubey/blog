@@ -14,7 +14,8 @@ export const headerData = {
       ]
     },
     { text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
-    
+    { text: 'Life Series', href: "/life" },
+
     // {
     //   text: "Tech Series",
     //   // href: getPermalink(),
