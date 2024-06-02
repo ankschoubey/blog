@@ -1,6 +1,6 @@
 ---
 comments: true
-excerpt: A look at all the subsystems I have created that help me be productive.
+excerpt: A look at Board Structure, Card Structure and Dashboard Board that Help me Stay Organized
 tags:
  - lean
  - agile
@@ -22,8 +22,6 @@ Trello is a simple Kanban tool I use to organize my life. It helps me:
 - help me be extremely organized in everything I do.
 
 I use Trello for almost everything: Writing Blogposts, Traveling, Goals, Learning Tasks, Notes, etc.
-
-
 
 If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post.
 
