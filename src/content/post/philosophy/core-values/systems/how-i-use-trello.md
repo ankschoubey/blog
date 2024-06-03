@@ -19,7 +19,7 @@ Trello is a simple Kanban tool I use to organize my life. It helps me:
 - **Clarity**: gain clarity of what I want to do and how to do it
 - **Responsibility**: help me do it to my best quality I can produce
 - **Optimism**: help me be happy, less stressed, avoid burnout and maintain a history of things I have done.
-- **Flow**: get out of my way to that I can life life (TODO: Link to Flow Blogpost)
+- **Flow**: get out of my way to that I can life life (🔗 TODO: Link to Flow Blogpost)
 
 I think of trello as a efficient production line that can help organize almost anything and get it done step by step. And I use it for almost everything from blogpost production, travel inventory, goals, learning, and even tracking psychological/inner child work.
 
@@ -33,7 +33,7 @@ If you are new to Trello, I recommend you [watch a video](https://www.youtube.co
 
 ## Optimizing Trello for Maximum Productivity
 
-Trello/Kanban can scale to our needs. If you are getting started a simple setup maybe enough. But as time passes, and you get more productive, you'll find you need to [optimize your system for scale] (TODO: Link To Post) else the system starts choking.
+Trello/Kanban can scale to our needs. If you are getting started a simple setup maybe enough. But as time passes, and you get more productive, you'll find you need to [optimize your system for scale] (🔗 TODO: Link To Post) else the system starts choking.
 
 Here are a few things I've done to optimize my Trello system:
 
@@ -201,7 +201,7 @@ It's important to track these chained tasks to ensure nothing remains undone and
 
 **Example: Blogpost**
 
-In many of my blogposts including this once, you'll see TODO written. These are blogpost ideas I have related to the post I am currently writing. If a post I write has TODOs, I'll move it to "Chained Tasks" column. And they'll stay in **Chained Tasks** until All other Chained Tasks are Complete.
+In many of my blogposts including this once, you'll see 🔗 TODO written. These are blogpost ideas I have related to the post I am currently writing. If a post I write has TODOs, I'll move it to "Chained Tasks" column. And they'll stay in **Chained Tasks** until All other Chained Tasks are Complete.
 
 To manage chained tasks, I use a three-fold system:
 
@@ -233,13 +233,13 @@ Closed column gives me confidence on my productivity. And there it also has a su
 - **Travel Board**: "Closed / Interesting Life Ledger"
 - **Blogging Board**: "Closed / Thought Clarity Ledger"
 
-Naming it this way has been helpful to me. (TODO: Blogpost on important of naming on human behavior)
+Naming it this way has been helpful to me. (🔗 TODO: Blogpost on important of naming on human behavior)
 
 **Summarizing Enhancing the "Done" Column**
 
 By organizing the "Done" column into specific categories and maintaining a detailed system for chained tasks, you can ensure comprehensive task management and continuous improvement. And ensure nothing goes out of your mind.
 
-#### Enhancing Knowledge Capture (Unfinished Idea: TODO: Improve this aspect then write about it)
+#### Enhancing Knowledge Capture (Unfinished Idea: 🔗 TODO: Improve this aspect then write about it)
 
 I don't have a very good insight into capturing long term ideas. For example, if I learnt something that I want to acess later.
 
@@ -302,16 +302,36 @@ I now use the comments section ot see my purge progress:
 
 ## Cards
 
+Cards are equivalent to tasks for Trello.
+
 I use cards to,
 
-- track what I am doing
-- include any information I need for doing the task of for future reference.
+- create checklist for
+  - making sure card is created perfectly (S.M.A.R.T and Small)
+  - breaking down tasks into 30 minute chunks
+  - track chained tasks (Tasks that got created because of current task)
+  - debrief tasks
+  - chatgpt prompts that can help me be better
+- comments section for all details including
+  - writing notes on thing I am learning
+  - writing drafts of blogposts
+  - status/progress of the card if it has been on hold for months
+  - debrief of what went well what can be improved
+  - any other informtion
+- and have attachments for any information I need for doing the task of for future reference including
+  - images
+  - website links
+  - documents
+  - procedures
+  - link to other cards
+
+This way, once I open a card, I know exactly what to do and I can refer the card in the future if I need to know how I did something.
 
 ### Card Structure
 
-In Trello, tasks are divided as cards. I do have multiple card templates but recently I am trying to unify them into one.
+Trello allows creation of templates for cards. I do have multiple card templates but recently I am trying to unify them into one. You want to keep the number of template low, similar and simple because they can quickly get overwhelming.
 
-They include 4 checklists.
+I may have around 1-2 template per board with most including the following checklist:
 
 - **🗑️ Categorize this ticket & Delete Me**: Assign Labels When Card is Created. I'll delete this checklist once labels are added.
 - **🗑️ Make this SMART/TDD & Delete Me**: I'll use this checklist when I decide to work on the task. As part of this I'll make this ticket specific, measureable etc by breaking it down properly and assigning a due data.
@@ -323,9 +343,16 @@ The top two portion is just for planning and can be deleted.
 
 ![](/images/life-blog/how-i-use-trello/Ticket-Template.png)
 
+I also have started incorporating ChatGPT Templates into Checklists and other relevant links in my checklists.
 
+**Example: Blogpost Template**
 
-### Incorporating ChatGPT Templates in Checklists
+- Blogpost Template Contains:
+  - Pre-Writing JotForm
+  - A ChatGPT Prompt to Help Generate YouTube Shorts from the blogpost
+  - Post Writing JotForm
+
+[🔗 TODO: Add More ChatGPT Prompts] https://chat.openai.com/?model=gpt-4&q=Your+prompt+goes+here
 
 ### Breaking down Big Cards into Smaller Specific Cards
 
@@ -360,7 +387,6 @@ In Trello, you can break down tasks in two primary ways:
 Usually, if I have a task which is multiple months, I'll break it down into a bunch of smaller cards that I can take action on in about a week.
 
 And for checklist it depends, I may not may not use checklist if the task itself it small. But if a task get's complex, I'll break it down to checklists.
-
 
 ## Optional: Creating More Boards
 
