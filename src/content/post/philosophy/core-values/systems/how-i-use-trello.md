@@ -260,8 +260,8 @@ I have more such columns in Finance Flyway. Software Development board also has 
 
 Read:
 
-- https://oliconner.medium.com/insight-sprint-part-two-reflections-on-platforms-and-trello-f57050ef6308
-- https://www.youtube.com/watch?v=8yZ7X_ZIHXo (Definitely Do This Week)
+- <https://oliconner.medium.com/insight-sprint-part-two-reflections-on-platforms-and-trello-f57050ef6308>
+- <https://www.youtube.com/watch?v=8yZ7X_ZIHXo> (Definitely Do This Week)
 
 ## "Command Center / Dashboard" Board
 
@@ -296,7 +296,6 @@ I often will purge cards from boards if they are too many.
 I now use the comments section ot see my purge progress:
 
 ![](/images/life-blog/how-i-use-trello/purging-blogposts.png)
-
 
 ****
 
@@ -335,11 +334,14 @@ I may have around 1-2 template per board with most including the following check
 
 - **🗑️ Categorize this ticket & Delete Me**: Assign Labels When Card is Created. I'll delete this checklist once labels are added.
 - **🗑️ Make this SMART/TDD & Delete Me**: I'll use this checklist when I decide to work on the task. As part of this I'll make this ticket specific, measureable etc by breaking it down properly and assigning a due data.
+- **☕️ Waiting for**: This includes things that I am waiting for. Could be dependencies on people or on other cards.
 - **🚀 Breakdown / Checklist to 30 min tasks**: So that I can do it as pomodoros
 - **🔗 Chained Tasks**: Additional tasks related to this one.
 - **📝 Debrief: What went well? What can be improved? How?**: Any improvements I need to do?
 
 The top two portion is just for planning and can be deleted.
+
+(The below image was taken before adding '☕️ Waiting For')
 
 ![](/images/life-blog/how-i-use-trello/Ticket-Template.png)
 
@@ -352,7 +354,7 @@ I also have started incorporating ChatGPT Templates into Checklists and other re
   - A ChatGPT Prompt to Help Generate YouTube Shorts from the blogpost
   - Post Writing JotForm
 
-[🔗 TODO: Add More ChatGPT Prompts] https://chat.openai.com/?model=gpt-4&q=Your+prompt+goes+here
+[🔗 TODO: Add More ChatGPT Prompts] <https://chat.openai.com/?model=gpt-4&q=Your+prompt+goes+here>
 
 ### Breaking down Big Cards into Smaller Specific Cards
 
