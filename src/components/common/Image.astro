@@ -52,8 +52,8 @@ if (_image !== null && typeof _image === 'object') {
 
 // Below does not work
 
-// const imgSrc = image?.src.startsWith("/images")? "../../assets"+image?.src: image?.src;
-// let publicImage = !imgSrc?.startsWith("../../assets") || true
+const imgSrc = image?.src.startsWith("/images")? "../../assets"+image?.src: image?.src;
+let publicImage = !imgSrc?.startsWith("../../assets") || true
 
 // const skip = [
 //   "event",
@@ -71,10 +71,14 @@ if (_image !== null && typeof _image === 'object') {
 //   console.log(imgSrc)
 // }
 
-// const importedImage = imgSrc && !publicImage? import(imgSrc): null;
+const importedImage = imgSrc && !publicImage? import(imgSrc): null;
 
-const publicImage = true;
+// const publicImage = true;
+
+// console.log(image?.src)
+// console.log(imgSrc)
+
 
 ---
 {publicImage &&  <img src={image?.src} {...image?.attributes} />}
-<!-- {!publicImage && (!image ? <Fragment /> : <OptimizedImage src={importedImage} {...image?.attributes} />)} -->
+{!publicImage && (!image ? <Fragment /> : <OptimizedImage src={importedImage} {...image?.attributes} />)}

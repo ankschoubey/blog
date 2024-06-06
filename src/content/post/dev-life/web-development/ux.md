@@ -22,12 +22,13 @@ User Experience (UX) is about making a product or service in a way that is usefu
 UX is something that has to be actively worked on. It won't happen automatically.
 
 Because if UX is not good,
+
 - User will get frustrated using the product
 - User will not find the product attractive to use.
 
 And therefore they won't use your product.
 
-## Sympathize with the user.
+## Sympathize with the user
 
 The way to understand what the users want is by sympathizing with the struggles that user's face.
 
@@ -39,11 +40,11 @@ The earlier you can get feedback from the user, the shorter your product develop
 
 The user can only know what he/she likes when he/she can experience the product. But since product development takes resources, prototyping helps to make the process faster.
 
-The fastest way to do it is to create paper prototypes. Paper is inexpensive, quick and has zero learning curve. 
+The fastest way to do it is to create paper prototypes. Paper is inexpensive, quick and has zero learning curve.
 
 You can prototype not just User Interface but also physical products.
 
-Once the paper prototype is created, you can increase the fidelity of the prototypes. 
+Once the paper prototype is created, you can increase the fidelity of the prototypes.
 
 > If a picture can say a thousand words, a prototype can save a thousand meetings.
 
@@ -51,7 +52,7 @@ It's best to involve the end-users as much as possible in the design process.
 
 The prototype also helps engineers to build exactly what the end-users want and reduces overall development time.
 
-## UI is part of UX, not the other way around.
+## UI is part of UX, not the other way around
 
 UX includes more than the User Interface. It includes every interaction the user has with the product or the company.
 
@@ -61,6 +62,8 @@ Such things can include reducing the number of steps needed to perform a task.
 
 ## A Checklist for "beauty" of User Interface
 
-{% include image.html file='/images/software-blog/thoughts-on-user-experience/1.png' caption='As a developer how can I become a better designer.' %}
+![](/images/software-blog/thoughts-on-user-experience/1.png)
+
+*As a developer how can I become a better designer.*
 
 Source: ["As a developer how can I become a better designer?" ANSWERED!](https://www.youtube.com/watch?v=Ha_ooKAWAJI)
