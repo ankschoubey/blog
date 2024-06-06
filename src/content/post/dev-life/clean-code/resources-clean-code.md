@@ -11,7 +11,7 @@ title: Clean Code Resources and Tools
 slug: /software-blog/clean_code_tools/
 ---
 
-**Index**: [Tips on writing Clean Code]({{ site.baseurl }}/software-blog/clean_code/)
+**Index**: [Tips on writing Clean Code](/software-blog/clean_code/)
 
 #### Linters
 

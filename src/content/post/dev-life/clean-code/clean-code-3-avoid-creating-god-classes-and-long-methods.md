@@ -52,8 +52,8 @@ Don’t pass the variables that you don’t need.
 
 Convert it into a factory method
 
-**Previous**: [Leave clues (Naming convention)]({{ site.baseurl }}/clean%20code/2019/12/20/clean-code-2-leave-clues-naming-convention.html)
+**Previous**: [Leave clues (Naming convention)](/clean%20code/2019/12/20/clean-code-2-leave-clues-naming-convention.html)
 
-**Next**: [Make database do the heavy lifting]({{ site.baseurl }}/clean%20code/2019/12/22/clean-code-4-make-the-database-do-the-heavy-lifting.html)
+**Next**: [Make database do the heavy lifting](/clean%20code/2019/12/22/clean-code-4-make-the-database-do-the-heavy-lifting.html)
 
-**Index**: [Tips on writing Clean Code]({{ site.baseurl }}/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)
+**Index**: [Tips on writing Clean Code](/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)

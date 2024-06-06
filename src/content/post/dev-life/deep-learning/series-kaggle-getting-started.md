@@ -67,6 +67,6 @@ o = optimizer
 
 # Index
 
-1. [Digit Recognition]({{ site.baseurl }}/mnist)
+1. [Digit Recognition](/mnist)
 2. Facial Keypoints Detection - *in progress*
 

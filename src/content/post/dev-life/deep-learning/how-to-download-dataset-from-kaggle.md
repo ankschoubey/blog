@@ -28,7 +28,7 @@ $ pip install kaggle
 
 Once you have Kaggle installed, type **kaggle** to check it is installed and you will get an output similar to this
 
-![1_API_credentials]({{ site.baseurl }}/images/2019-08-10-how-to-download-dataset-from-kaggle/1_API_credentials.png)
+![1_API_credentials](/images/2019-08-10-how-to-download-dataset-from-kaggle/1_API_credentials.png)
 
 In the above line, you will see the path (highlighted) of where to put your **kaggle.json** file.
 
@@ -38,11 +38,11 @@ https://www.kaggle.com/<username>/account
 ```
 In the API section, click **Create New API Token**. And copy it the path mentioned in the terminal output.
 
-![2_download_kagglejson]({{ site.baseurl }}/images/2019-08-10-how-to-download-dataset-from-kaggle/2_download_kagglejson.png)
+![2_download_kagglejson](/images/2019-08-10-how-to-download-dataset-from-kaggle/2_download_kagglejson.png)
 
 Type **kaggle** once again to check.
 
-![3_chmod]({{ site.baseurl }}/images/2019-08-10-how-to-download-dataset-from-kaggle/3_chmod.png)
+![3_chmod](/images/2019-08-10-how-to-download-dataset-from-kaggle/3_chmod.png)
 
 In my case, even after copying it was not working. I had the file in place but it did not have the right permissions so I had to type the exact command they gave me. And it started working.
 
@@ -68,9 +68,9 @@ What I do is I explore competitions or datasets via Kaggle website.
 
 To download the dataset, go to **Data** *subtab. *In API section you will find the exact command that you can copy to the terminal to download the entire dataset.
 
-![4_finding_download_command_on_competition_page]({{ site.baseurl }}/images/2019-08-10-how-to-download-dataset-from-kaggle/4_finding_download_command_on_competition_page.png)
+![4_finding_download_command_on_competition_page](/images/2019-08-10-how-to-download-dataset-from-kaggle/4_finding_download_command_on_competition_page.png)
 
-![5_download_command_in_terminal]({{ site.baseurl }}/images/2019-08-10-how-to-download-dataset-from-kaggle/5_download_command_in_terminal.png)
+![5_download_command_in_terminal](/images/2019-08-10-how-to-download-dataset-from-kaggle/5_download_command_in_terminal.png)
 
 The syntax is like
 ```shell
@@ -86,7 +86,7 @@ You cannot provide download multiple files with a single command (as of 2019/Aug
 ```shell
 kaggle competitions download -f <file-name> <competition-name>
 ```
-![6_final_output]({{ site.baseurl }}/images/2019-08-10-how-to-download-dataset-from-kaggle/6_final_output.png)
+![6_final_output](/images/2019-08-10-how-to-download-dataset-from-kaggle/6_final_output.png)
 
 Extract it and start using it.
 

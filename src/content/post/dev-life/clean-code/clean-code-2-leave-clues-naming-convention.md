@@ -59,11 +59,11 @@ Use **pronounceable names**
 
 Source:[ java coding-convention and cleancode](https://www.techie-knowledge.co.in/2013/12/java-coding-convention-and-cleancode.html)
 
-![]({{ site.baseurl }}/images/2019-12-20-clean-code-2-leave-clues-naming-convention/1.png)
+![](/images/2019-12-20-clean-code-2-leave-clues-naming-convention/1.png)
 
 For matrix operations use row columns instead of y and x because in some languages matrix is treated as [y,x]
 
-![]({{ site.baseurl }}/images/2019-12-20-clean-code-2-leave-clues-naming-convention/2.png)
+![](/images/2019-12-20-clean-code-2-leave-clues-naming-convention/2.png)
 
 Source: [Gayle Laakmann McDowell (Cracking the Coding Interview Book)](http://www.crackingthecodinginterview.com/)
 
@@ -89,7 +89,7 @@ Examples,
 
 1. **dto** for Data Transfer Object (pretty common)
 
-![Example based on Spring Boot (Java)]({{ site.baseurl }}/images/2019-12-20-clean-code-2-leave-clues-naming-convention/3.png)
+![Example based on Spring Boot (Java)](/images/2019-12-20-clean-code-2-leave-clues-naming-convention/3.png)
 
 Make sure you use the same abbreviations everywhere in your code aka **one word per concept** **in all classes.**
 
@@ -111,11 +111,11 @@ Better to declare them in a separate constants file.
 
 Constants should be snake_case and CAPITAL.
 
-![List of HTTP status codes]({{ site.baseurl }}/images/2019-12-20-clean-code-2-leave-clues-naming-convention/4.png)
+![List of HTTP status codes](/images/2019-12-20-clean-code-2-leave-clues-naming-convention/4.png)
 
 In the case of Java, enums can also be used to achieve something similar but they will contain a lot of java boilerplate.
 
-![]({{ site.baseurl }}/images/2019-12-20-clean-code-2-leave-clues-naming-convention/5.png)
+![](/images/2019-12-20-clean-code-2-leave-clues-naming-convention/5.png)
 
 There are also language-specific naming conventions involved like:
 
@@ -129,7 +129,7 @@ My aim is not so much about reducing the lines of code. Tests are usually small.
 
 I prefer to keep the end of each method the same. Like:
 
-![Code was taken and modified from Unit tests with Mockito — Tutorial]({{ site.baseurl }}/images/2019-12-20-clean-code-2-leave-clues-naming-convention/6.png)
+![Code was taken and modified from Unit tests with Mockito — Tutorial](/images/2019-12-20-clean-code-2-leave-clues-naming-convention/6.png)
 
 I use Mockito so I skip the first line. The start of the function then is with all stub actions.
 
@@ -145,10 +145,10 @@ I find that for most tasks it is easier to make changes to expected and actual v
 
 An alternative to the above assertion is to write like below which I find to be messy.
 
-![Code was taken and modified from Unit tests with Mockito — Tutorial]({{ site.baseurl }}/images/2019-12-20-clean-code-2-leave-clues-naming-convention/7.png)
+![Code was taken and modified from Unit tests with Mockito — Tutorial](/images/2019-12-20-clean-code-2-leave-clues-naming-convention/7.png)
 
 **Previous**: [Flat is better than nested](clean-code-1-flat-is-better-than-nested-leave-when-not-okay.html)
 
 **Next**: [Avoid creating god classes and long methods](https://medium.com/p/f3d76b1b622a) #NotEnoughChunks
 
-**Index**: [Tips on writing Clean Code]({{ site.baseurl }}/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)
+**Index**: [Tips on writing Clean Code](/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)

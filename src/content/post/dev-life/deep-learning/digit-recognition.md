@@ -346,7 +346,7 @@ And since we are on GPU we can increase our batch size from 64 to much higher.
 
 I experimented with a few sizes from 320…640 and kept an eye on GPU utilization and settled for 512.
 
-![CPU and GPU Utilization. Also, see the number of tabs open.]({{ site.baseurl }}/images/2020-03-30-digit-recognition/1.png)
+![CPU and GPU Utilization. Also, see the number of tabs open.](/images/2020-03-30-digit-recognition/1.png)
 
 I did the same for [num_worker](https://discuss.pytorch.org/t/guidelines-for-assigning-num-workers-to-dataloader/813/2) which specifies the number of threads to load a batch. This is CPU stuff.
 
@@ -388,6 +388,6 @@ resnet18.fc = nn.Sequential(
 ```
 ***
 
-Index: [Series - Kaggle Getting Started]({{ site.baseurl }}/deep%20learning/kaggle/2020/03/30/series-kaggle-getting-started.html)
+Index: [Series - Kaggle Getting Started](/deep%20learning/kaggle/2020/03/30/series-kaggle-getting-started.html)
 
 Next Post: []

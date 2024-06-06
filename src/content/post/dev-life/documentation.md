@@ -19,7 +19,7 @@ So, you want to make sure your documentation is as perfect as possible given the
 
 If the API/Library is going to be used by the public, it needs to be perfect.
 
-![]({{ site.baseurl }}/images/2022-01-25-documentation/shared-between-single-team-multiple.png)
+![](/images/2022-01-25-documentation/shared-between-single-team-multiple.png)
 
 ***
 

@@ -51,31 +51,31 @@ You go ahead and create the classes.
 
 ```java
 @Entity
-public class Movie {
+public class Movie \{
  @Id private String movieId;
  private String movieName;
  @Version private Integer version; // We'll see the use of this @Version in the last section where we need to update our code.
-}
+\}
 ```
 
 **MovieRepository.java**
 
 ```java
-public interface MovieRepository extends JpaRepository<Movie, String>{
+public interface MovieRepository extends JpaRepository<Movie, String>\{
  //This class is currently empty 
-}
+\}
 ```
 
 **MovieService**
 
 ```java
 @Service
-class MovieService {
- public Movie upsert(Movie movie){
+class MovieService \{
+ public Movie upsert(Movie movie)\{
   // Note how we are skipping logic and only developing skeleton code.
   return null;
- }
-}
+ \}
+\}
 ```
 
 ### Step 2: Write the failing test
@@ -95,9 +95,9 @@ To write a skeleton test class for MovieService.
 ```java
 @DataMongoTest
 @Import(MovieService.class)
-class MovieServiceTest{
+class MovieServiceTest\{
  // empty 
-}
+\}
 ```
 
 In TDD, we iterate on scenarios. For each scenario,
@@ -123,13 +123,13 @@ In the test file, I write
  
  @Nested
  @DisplayName("upsert method")
- class UpsertMethod{
+ class UpsertMethod\{
   @Nested
   @DisplayName("WHEN movie is not present")
-  class WhenMovieIsNotPresent{
+  class WhenMovieIsNotPresent\{
    @Test
    @DisplayName("SHOULD insert movie in the database")
-   void shouldInsertMovieInTheDatabase(){
+   void shouldInsertMovieInTheDatabase()\{
     // given: a movie
      Movie unsavedMovie = new Movie("M1", "Avengers");
     //When: upsert the movie
@@ -139,10 +139,10 @@ In the test file, I write
      assertThat(movieFromDatabase)
       .isNotNull()
       .isEqualTo(unsavedMovie);
-   }
-  }
- }
-}
+   \}
+  \}
+ \}
+\}
 ```
 
 The above test is purposefully written using the GIVEN/WHEN/THEN format.
@@ -167,27 +167,27 @@ If our test fails, it means we are doing TDD right. The tests are expected to fa
 
 Now let's write the code only against the test we have written. And note more.
 
-{It's a TDD Red Flag to write more code than what will pass the test. So only write that much code that passes the test. This way, you'll have precise code and precise tests.}
+\{It's a TDD Red Flag to write more code than what will pass the test. So only write that much code that passes the test. This way, you'll have precise code and precise tests.\}
 
 **MovieService.java**
 
 ```java
 @Service
-class MovieService {
+class MovieService \{
  @Autowired
  MovieRepository repo;
 
- public Movie upsert(Movie movie){
+ public Movie upsert(Movie movie)\{
   return repo.save(movie);
- }
-}
+ \}
+\}
 ```
 
 Now that our code is written. As you can see, it didn't take a lot to pass our failing test. We just needed one line. But writing the test ensures that it always passes.
 
 Sometimes, it may seem trivial to write a test for a one-liner. But stick with TDD. The goal here isn't the present. It's future maintainability as multiple developers work on the same codebase and modify behavior. Our tests ensure that our expected behavior is preserved. Later in this blog post, I'll introduce a scenario where we have to modify the test, and you'll see how the test helps.
 
-{% include email_signup_midpost.html title="TDD example on a backend - Upsert Method" %}
+\{% include email_signup_midpost.html title="TDD example on a backend - Upsert Method" %\}
 
 ## Step 4: Run the test
 
@@ -206,14 +206,14 @@ Here is how I'd write the failing test:
 ```java
  @Nested
  @DisplayName("upsert method")
- class UpsertMethod{
+ class UpsertMethod\{
   ... previous test is here
   @Nested
   @DisplayName("WHEN movie is present")
-  class WhenMovieIsNotPresent{
+  class WhenMovieIsNotPresent\{
    @Test
    @DisplayName("SHOULD update the movie in the database")
-   void shouldInsertMovieInTheDatabase(){
+   void shouldInsertMovieInTheDatabase()\{
     // given: a movie
      Movie savedMovie = movieService.upsert(new Movie("M1", "Avengers"));
      String newMovieName = "Avengers: Infinity War";
@@ -225,9 +225,9 @@ Here is how I'd write the failing test:
      assertThat(movieFromDatabase)
       .isNotNull()
       .isEqualTo(unsavedUpdatedMovie);
-   }
-  }
- }
+   \}
+  \}
+ \}
 ```
 
 I run the test and see if it's failing.
@@ -238,20 +238,20 @@ Then I write the code for updating and passing the scenario.
 
 ```java
 @Service
-class MovieService {
+class MovieService \{
  @Autowired
  MovieRepository repo;
 
- public Movie upsert(Movie movie){
+ public Movie upsert(Movie movie)\{
   Movie movieToSave = repo.findById(movie.getId());
-  if(movieToSave != null){
+  if(movieToSave != null)\{
    movieToSave.setMovieName(movie.getName());
-  } else {
+  \} else \{
    movieToSave = movie;
-  }
+  \}
   return repo.save(movieToSave);
- }
-}
+ \}
+\}
 ```
 
 In the above code, we first check in the database to see if the `movie` exists.
@@ -269,7 +269,7 @@ We wrote the failing test. We ran it. We wrote the code against the failing test
 
 The following is a real problem I faced when the `upsert` method was run in parallel.
 
-{This might be a bit advanced for beginner developers. If you are a beginner, read up on what locking means in parallel programming.}
+\{This might be a bit advanced for beginner developers. If you are a beginner, read up on what locking means in parallel programming.\}
 
 Our `movie` microservice is being used by a lot of people at once. And therefore, our `upsert` method is being called many times parallelly. We have started getting MongoDB's **OptimisticLockingException**. All our tests work but they don't get the `OptimisticLockingException`.
 
@@ -277,11 +277,11 @@ The  `OptimisticLockingException` occurs when two different threads try to updat
 
 Pay attention to the version field below.
 
-Suppose data in the database is `{movieId: "M1", movieName: "Avengers", version: 1}`
+Suppose data in the database is `\{movieId: "M1", movieName: "Avengers", version: 1\}`
 
 - This data is read by two threads:
-  - The **first thread** tries to save the record as `{movieId: "M1", movieName: "Avengers: Infinity War", version: 1}`
-  - The **second thread** tries to save the record as `{movieId: "M1", movieName: "Avengers: End Game", version: 1}`
+  - The **first thread** tries to save the record as `\{movieId: "M1", movieName: "Avengers: Infinity War", version: 1\}`
+  - The **second thread** tries to save the record as `\{movieId: "M1", movieName: "Avengers: End Game", version: 1\}`
 
 The version is incremented by MongoDB only when the data is saved. Both threads are trying to update on the same version.
 If one of them is saved, then the version field is incremented and the other one cannot save since it's trying to update a version that does not exist.
@@ -291,7 +291,7 @@ flowchart TD
     Thread1 --> |Update version 1| check
     Thread2 --> |Update version 1| check
     subgraph MongoDB
-        check{is the version in DB same}
+        check\{is the version in DB same\}
         check --> |version is same| update_database[Update Database]--> increment_version[Increment Version]
         check --> |version is different | Throw[Throw an OptimisticLockingException]
     end
@@ -313,7 +313,7 @@ I created a test as follows:
 ```java
 @Nested
 @DisplayName("WHEN upsert is called parallely")
-class WhenUpsertIsCalledParallelyTest{
+class WhenUpsertIsCalledParallelyTest\{
     
     static final Long repeatTimes = 100;
 
@@ -322,20 +322,20 @@ class WhenUpsertIsCalledParallelyTest{
     @RepeatableTest(repeatTimes)                           // Part of Step 1
     @Execution(CONCURRENT)                                 // Part of Step 1
     @DisplayName("SHOULD manipulate a single record")
-    void shouldManipulateASingleRecord(){
+    void shouldManipulateASingleRecord()\{
         // when:
          
             Movie movie = movieService.upsert(new Movie("M1", "Avengers")).block(); // Part of Step 1
         // data collection:
             allVersions.add(movie.getVersion());         // Part of Step 2
-    }
+    \}
 
     @AfterAll
-    static void assertVersionIsRepeatTimes(){
+    static void assertVersionIsRepeatTimes()\{
         assertThat(Collections.max(version))                // Part of Step 3
             .isEqualTo(repeatTimes);
-    }
-}
+    \}
+\}
 ```
 
 After writing this code, I was able to reproduce the `OptimisticLockingException`
@@ -346,18 +346,18 @@ Then I modified the code like this to make it pass.
 
 ```java
 @Service
-class MovieService {
+class MovieService \{
  @Autowired
  MongoOperations mongoOperations;
 
- public Movie upsert(Movie movie){
+ public Movie upsert(Movie movie)\{
   Update updateQuery = new Update()
    .setOnInsert("movieId", movie.getId())
    .set("movieName, movie.getName()); // code to update document
   return mongoOperation.findAndModify(
    query(where("movieId").is(movie.getId())), updateQuery, options().returnNew(true).upsert(true), Movie.class)
- }
-}
+ \}
+\}
 ```
 
 I ran the test and the tests passed.

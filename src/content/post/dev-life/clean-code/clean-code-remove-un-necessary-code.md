@@ -18,13 +18,13 @@ Local variables declared at some different place makes it harder to read the cod
 
 Below are the variations of aRandomFunction which does a bunch of operations (skipped by dots) and on completion returns “Hello” along with the date.
 
-![Bad]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/1.png)
+![Bad](/images/2020-01-04-clean-code-remove-un-necessary-code/1.png)
 
 The local variables **names** and **date** are declared on top of the functions.
 
 The first usage of the functions are somewhere between the function and the last usage is in the return statement.
 
-![Better. 2 lines saved.]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/2.png)
+![Better. 2 lines saved.](/images/2020-01-04-clean-code-remove-un-necessary-code/2.png)
 
 Here **name** and **date** variables are moved to where they are first used.
 
@@ -32,7 +32,7 @@ Let’s say after moving we realize that we do not use the variables between the
 
 So we should move it near the return statement:
 
-![Even Better]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/3.png)
+![Even Better](/images/2020-01-04-clean-code-remove-un-necessary-code/3.png)
 
 
 # Just return it. Don’t store
@@ -43,7 +43,7 @@ Storing in a variable is un-necessary is it is never used.
 
 Rather than storing “hello” in name and a new date in date, we should just return it.
 
-![]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/4.png)
+![](/images/2020-01-04-clean-code-remove-un-necessary-code/4.png)
 
 
 # Remove commented code
@@ -77,7 +77,7 @@ Python and Typescript both support default function arguments.
 
 While not officially supported in Java, one can work around the builder pattern to get similar functionality.
 
-![Source: [Managing Constructor with many parameters]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/5.png)
+![Source: [Managing Constructor with many parameters](/images/2020-01-04-clean-code-remove-un-necessary-code/5.png)
 
 ---
 
@@ -103,7 +103,7 @@ Python 3.7+ also has **@ dataclass **annotation which auto-generates constructor
 
 ## Spring Boot (Java)
 
-![Source: [Spring Annotations Cheat Sheet]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/6.png)
+![Source: [Spring Annotations Cheat Sheet](/images/2020-01-04-clean-code-remove-un-necessary-code/6.png)
 
 ### Java: For JPA
 
@@ -157,15 +157,15 @@ Below is a very complex function. One of them works with List and other with an 
 
 The bad approach is creating the same logic to work with different data structures.
 
-![]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/7.png)
+![](/images/2020-01-04-clean-code-remove-un-necessary-code/7.png)
 
 A better approach is to have one main logic function and convert one data structure to another and then call the main one.
 
-![]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/8.png)
+![](/images/2020-01-04-clean-code-remove-un-necessary-code/8.png)
 
 We can also take advantage of having the same name for both the functions which means less to remember.
 
-![]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/9.png)
+![](/images/2020-01-04-clean-code-remove-un-necessary-code/9.png)
 
 **Probably a bad example #2 of reuse:**
 
@@ -173,11 +173,11 @@ This is similar to the above.
 
 Here suppose you already have a complex function that works on a list of integers, and now you have to make a similar one to work on a single int.
 
-![]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/10.png)
+![](/images/2020-01-04-clean-code-remove-un-necessary-code/10.png)
 
 # Single line boolean evaluation
 
-![]({{ site.baseurl }}/images/2020-01-04-clean-code-remove-un-necessary-code/11.png)
+![](/images/2020-01-04-clean-code-remove-un-necessary-code/11.png)
 
 # Think in terms of Streams
 
@@ -209,8 +209,8 @@ Though the implementation of Java streams and having a single line list comprehe
 
 Base classes are an excellent way to avoid duplications. Make them as generic as possible.
 
-**Previous**: [Make database do the heavy lifting]({{ site.baseurl }}/clean%20code/2019/12/22/clean-code-4-make-the-database-do-the-heavy-lifting.html)
+**Previous**: [Make database do the heavy lifting](/clean%20code/2019/12/22/clean-code-4-make-the-database-do-the-heavy-lifting.html)
 
-**Next**: [Avoid inventing algorithms and data structures]({{ site.baseurl }}/clean%20code/2019/12/25/clean-code-know-thy-complexities-data-structures-and-avoid-inventing-algorithms-especially-for.html)
+**Next**: [Avoid inventing algorithms and data structures](/clean%20code/2019/12/25/clean-code-know-thy-complexities-data-structures-and-avoid-inventing-algorithms-especially-for.html)
 
-**Index**: [Tips on writing Clean Code]({{ site.baseurl }}/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)
+**Index**: [Tips on writing Clean Code](/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)

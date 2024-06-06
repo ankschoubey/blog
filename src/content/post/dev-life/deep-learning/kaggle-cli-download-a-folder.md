@@ -39,7 +39,7 @@ mkdir -p img/train/c4
 ```shell
 kaggle competitions files -c state-farm-distracted-driver-detection | grep c4 | awk ‘{print $1}’ | while read x ; do kaggle competitions download -f $x state-farm-distracted-driver-detection -p img/train/c4 ; done
 ```
-![]({{ site.baseurl }}/images/2020-03-10-hi-harshini/1.png)
+![](/images/2020-03-10-hi-harshini/1.png)
 
 — — — — —
 

@@ -29,7 +29,7 @@ _Similar: [Code better in Jupyter Notebook](https://medium.com/r/1cc5bcf27002)_
 
 Dynamically typed languages like Python are a pain (for me) because they do not provide good auto-complete. This is the best one I have seen so far.
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/1.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/1.png)
 
 ### 2. ️ Jump to Definition
 
@@ -39,7 +39,7 @@ Deep Learning is intimating enough.
 
 You don’t want to remember everything as code. Use the GUI.
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/2.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/2.png)
 
 If a certain file you are looking for you can explore right click and click on copy path.
 
@@ -49,15 +49,15 @@ You can add custom snippets by:
 
 1. Creating a collab notebook with a header followed by a snippet
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/3.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/3.png)
 
 2. Including it in your other notebooks by going to Tools -> Preferences and pasting URL of the custom notebook.
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/4.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/4.png)
 
 3. Search and use your snippet in code snippet section on the left
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/5.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/5.png)
 
 ### 5. Get GPU Info
 
@@ -68,7 +68,7 @@ Type:
 ```
 If you have GPU mounted you will get this reply.
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/6.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/6.png)
 
 In case if you don’t know how to mount GPU:
 
@@ -78,13 +78,13 @@ Click RunTime Menu → Change RunTime→ Hardware Accelerator → Choose GPU
 
 To open a notebook from Github. Go to [https://colab.research.google.com](https://colab.research.google.com/) switch to the Github tab and enter an organization or URL.
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/7.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/7.png)
 
 A much easier way is to use [“Open in Colab” Extension](https://c**hrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo?hl=en) for Chrome
 
 After installation, whenever you find a Jupyter notebook in Github, click the icon of the plugin and it will open in Colab.
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/8.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/8.png)
 
 ### 7. Send email when the task is complete
 
@@ -137,7 +137,7 @@ Installation Step:
 
 1. Install HyperDash on your phone
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/9.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/9.png)
 
 2. Go to your Jupyter notebook and run the below cell
 
@@ -159,7 +159,7 @@ pip install hyperdash && hyperdash login — github
 
 In the app, you can see something like this. While I have included this as a tip, it is not something I have used. Because I have never trained for a very long duration.
 
-![App view]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/10.png)
+![App view](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/10.png)
 
 As per HyperDash website, it also allows detection of the status of your training and can notify when your training completes, fails, crashes or gets disconnected.
 
@@ -167,17 +167,17 @@ As per HyperDash website, it also allows detection of the status of your trainin
 
 This is kind of a filler tip. (Just because I wanted to round off to 10 tips 😜).
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/11.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/11.png)
 
 Go into Tools -> Preferences -> Theme -> Select dark.
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/12.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/12.png)
 
 While the dark mode is cool. I prefer using a light theme.
 
 There is also a Corgi and Kitty mode under Miscellaneous which will add animated Corgis and Kitties in the header.
 
-![]({{ site.baseurl }}/images/2019-08-18-my-top-10-un-popular-google-collab-tips/13.png)
+![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/13.png)
 
 ### Other useful tips:
 
@@ -187,8 +187,8 @@ There is also a Corgi and Kitty mode under Miscellaneous which will add animated
 
 - [8 Tips For Google Colab Notebooks To Take Advantage Of Their Free-of-charge 12GB-RAM GPU](https://dev.to/kriyeng/8-tips-for-google-colab-notebooks-to-take-advantage-of-their-free-of-charge-12gb-ram-gpu-be4).
 
-Previous: [Easy Jupyter Notebook Tips]({{ site.baseurl }}/python/notebook/2019/07/29/easy-jupyter-notebook-tips.html)
+Previous: [Easy Jupyter Notebook Tips](/python/notebook/2019/07/29/easy-jupyter-notebook-tips.html)
 
-Next: [How to Download Dataset from Kaggle]({{ site.baseurl }}/deep%20learning/kaggle/2019/08/10/how-to-download-dataset-from-kaggle.html)
+Next: [How to Download Dataset from Kaggle](/deep%20learning/kaggle/2019/08/10/how-to-download-dataset-from-kaggle.html)
 
 I respond to all my comments. ありがとう

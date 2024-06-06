@@ -15,7 +15,7 @@ Code is much more like a work of art/craft that people consider it.
 
 Knowing the benefits and tips for writing good code will take you only so far. It requires a mindset shift. Looking at the code through an artist’s eye.
 
-![The clean version of the image from the source: Leave it a little better than you found it]({{ site.baseurl }}/images/2020-01-06-clean-code-leave-it-better-than-you-found-it/1.png)
+![The clean version of the image from the source: Leave it a little better than you found it](/images/2020-01-06-clean-code-leave-it-better-than-you-found-it/1.png)
 
 # Incremental Improvements
 
@@ -89,7 +89,7 @@ The support for Python 2 ended (2019) after 20 years of development. Its code is
 
 # Code Reviews
 
-![No code review discussion is relevant without mentioning this.]({{ site.baseurl }}/images/2020-01-06-clean-code-leave-it-better-than-you-found-it/2.png)
+![No code review discussion is relevant without mentioning this.](/images/2020-01-06-clean-code-leave-it-better-than-you-found-it/2.png)
 
 ## Benefits of Code Review
 
@@ -117,6 +117,6 @@ The article also mentions ways to make code reviews much more productive.
 
 - Use peer pressure to your advantage
 
-**Previous**: [Always know why you are catching an exception]({{ site.baseurl }}/clean%20code/2020/01/06/clean-code-exception-handling.html)
+**Previous**: [Always know why you are catching an exception](/clean%20code/2020/01/06/clean-code-exception-handling.html)
 
-**Index**: [Tips on writing Clean Code]({{ site.baseurl }}/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)
+**Index**: [Tips on writing Clean Code](/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)

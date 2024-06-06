@@ -60,7 +60,7 @@ This just makes it much easier to debug. Your function will be doing just one th
 
 Making it general enough will be even helpful so that you can easily use it.
 
-**Example:** [_Separate loop and operation section: Clean Code #1_]({{ site.baseurl }}/clean%20code/2019/12/20/clean-code-1-flat-is-better-than-nested-leave-when-not-okay.html)
+**Example:** [_Separate loop and operation section: Clean Code #1_](/clean%20code/2019/12/20/clean-code-1-flat-is-better-than-nested-leave-when-not-okay.html)
 
 ## Rather than implementing own logic, take 5 minutes to see if your modules already provide the implementation
 
@@ -74,8 +74,8 @@ A library in java which you can find is [Apache Common Lang 3](https://www.baeld
 
 Python has much more abundance. Just google a solution for python and you will probably find a pip package.
 
-**Previous**: [Remove unnecessary code]({{ site.baseurl }}https://medium.com/p/c477707e5be1)
+**Previous**: [Remove unnecessary code](https://medium.com/p/c477707e5be1)
 
-**Next**: [Always know why you are catching an exception]({{ site.baseurl }}https://medium.com/p/a7bca1e66d9e)
+**Next**: [Always know why you are catching an exception](https://medium.com/p/a7bca1e66d9e)
 
-**Index**: [Tips on writing Clean Code]({{ site.baseurl }}/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)
+**Index**: [Tips on writing Clean Code](/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)

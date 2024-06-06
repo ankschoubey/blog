@@ -22,7 +22,7 @@ Try to filter with smaller queries with a smaller number of columns before fetch
 
 For Spring (Java), ideally, use JPA method query things.**\*\*\***
 
-![Source: JPA Repositories Spring.io]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/1.png)
+![Source: JPA Repositories Spring.io](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/1.png)
 
 _Tips: Use tools to make Entities POJO
 
@@ -54,19 +54,19 @@ Note that this is a much simpler version of what you would encounter but I think
 
 There are 3 tables:
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/2.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/2.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/3.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/3.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/4.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/4.png)
 
 **_Suppose you want to find who are male grandparents of children whose name start with ‘A’_**
 
 You can go for some complex query like
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/5.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/5.png)
 
-![Output]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/6.png)
+![Output](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/6.png)
 
 These 33 lines can quickly increase in size when you have too many tables. Multiple shorter queries are always much better than one **big bang query**.
 
@@ -78,32 +78,32 @@ I’ve seen queries which go beyond 100 lines 😖
 
 You could break into something simpler queries like:
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/7.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/7.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/8.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/8.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/9.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/9.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/10.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/10.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/11.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/11.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/12.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/12.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/13.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/13.png)
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/14.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/14.png)
 
 Then code the method yourself to call these in a certain sequence:
 
-![]({{ site.baseurl }}/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/15.png)
+![](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/15.png)
 
 You will find that even though your line of code has increased, the modularity of code has also increased and these functions can be arranged in any way you like.
 
 ---
 
-**Previous**: [Avoid creating god classes and long methods]({{ site.baseurl }}/clean%20code/2019/12/25/clean-code-3-avoid-creating-god-classes-and-long-methods.html)
+**Previous**: [Avoid creating god classes and long methods](/clean%20code/2019/12/25/clean-code-3-avoid-creating-god-classes-and-long-methods.html)
 
 **Next**: [Remove unnecessary code](https://medium.com/p/c477707e5be1)
 
-**Index**: [Tips on writing Clean Code]({{ site.baseurl }}/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)
+**Index**: [Tips on writing Clean Code](/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)

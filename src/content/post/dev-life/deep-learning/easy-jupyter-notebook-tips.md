@@ -51,15 +51,15 @@ This is a no-brainer but I struggled with this for a long time.
 
 Weakly typed programming languages like Python do not work well with code completions provided by IDEs because the type of value return by a function is defined at run-time. IDEs have a hard time figuring out what the return type is.
 
-![]({{ site.baseurl }}/images/2019-07-29-easy-jupyter-notebook-tips/1.png)
+![](/images/2019-07-29-easy-jupyter-notebook-tips/1.png)
 
 But when running Jupyter Notebook you can avoid this by splitting your code into multiple cells instead of one, running them one by one and then hitting `Tab`.
 
-![]({{ site.baseurl }}/images/2019-07-29-easy-jupyter-notebook-tips/2.png)
+![](/images/2019-07-29-easy-jupyter-notebook-tips/2.png)
 
 ## Use _%time_ for measuring the rough speed of cell’s execution
 
-![]({{ site.baseurl }}/images/2019-07-29-easy-jupyter-notebook-tips/3.png)
+![](/images/2019-07-29-easy-jupyter-notebook-tips/3.png)
 
 ---
 

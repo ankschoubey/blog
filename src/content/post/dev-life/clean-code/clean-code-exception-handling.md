@@ -33,7 +33,7 @@ Custom Exception class also makes your logs easier to read.
 
 ## Always know why you are catching an exception…
 
-![TODO: Find and Add YouTube video attribution]({{ site.baseurl }}/images/2020-01-06-clean-code-exception-handling/1.png)
+![TODO: Find and Add YouTube video attribution](/images/2020-01-06-clean-code-exception-handling/1.png)
 
 ## … or just don’t catch it (throws to the caller)
 
@@ -51,7 +51,7 @@ If something is not possible or not supported then:
 
 - raise (Python): **NotImplementedError**
 
-![]({{ site.baseurl }}/images/2020-01-06-clean-code-exception-handling/2.png)
+![](/images/2020-01-06-clean-code-exception-handling/2.png)
 
 ## Global exception handling
 
@@ -70,8 +70,8 @@ The most basic thing to do here is logging the exception.
                 allowfullscreen
               ></iframe>
 
-**Previous**: [Avoid inventing algorithms and data structures]({{ site.baseurl }}/clean%20code/2019/12/25/clean-code-know-thy-complexities-data-structures-and-avoid-inventing-algorithms-especially-for.html)
+**Previous**: [Avoid inventing algorithms and data structures](/clean%20code/2019/12/25/clean-code-know-thy-complexities-data-structures-and-avoid-inventing-algorithms-especially-for.html)
 
-**Next**: [Leave code better than you found it.]({{ site.baseurl }}/clean%20code/2020/01/06/clean-code-leave-it-better-than-you-found-it.html)
+**Next**: [Leave code better than you found it.](/clean%20code/2020/01/06/clean-code-leave-it-better-than-you-found-it.html)
 
-**Index**: [Tips on writing Clean Code]({{ site.baseurl }}/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)
+**Index**: [Tips on writing Clean Code](/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)

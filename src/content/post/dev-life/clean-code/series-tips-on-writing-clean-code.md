@@ -31,7 +31,7 @@ Some ideas I found while experimenting on my own.
 
 You start small. But by the time you reach halfway, it becomes chaotic.
 
-![https://bonkersworld.net/img/2011.11.15_building_software.png]({{ site.baseurl }}/images/2019-12-19-series-tips-on-writing-clean-code/1.png)
+![https://bonkersworld.net/img/2011.11.15_building_software.png](/images/2019-12-19-series-tips-on-writing-clean-code/1.png)
 
 # Reading vs Writing Code
 
@@ -39,7 +39,7 @@ While coding we spend more time reading the existing code than writing the code.
 
 Most of the time you are more likely to modify and improve your code than to produce a new functionality.
 
-![https://sizovs.net/2019/05/29/quality-is-not-negotiable]({{ site.baseurl }}/images/2019-12-19-series-tips-on-writing-clean-code/2.png)
+![https://sizovs.net/2019/05/29/quality-is-not-negotiable](/images/2019-12-19-series-tips-on-writing-clean-code/2.png)
 
 For something we spend the most time on, it is very important that we make the process of reading and understanding our code easier for ourselves and other developers.
 
@@ -61,7 +61,7 @@ If we don’t follow good coding guidelines, we risk initial coding speed for lo
 
 Usually, once you start on a path you are more likely to continue on the same path.
 
-![Some YouTube attribution #FA. Also need to find a sharper image]({{ site.baseurl }}/images/2019-12-19-series-tips-on-writing-clean-code/3.png)
+![Some YouTube attribution #FA. Also need to find a sharper image](/images/2019-12-19-series-tips-on-writing-clean-code/3.png)
 
 # What is Clean code?
 
@@ -86,6 +86,6 @@ Constructing the simplest possible code that would solve your problem.
 {% for post in site.categories['clean-code'] %}
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 <article class="archive-item">
-    <p class="post-meta post-meta-title"><a class="page-meta" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
+    <p class="post-meta post-meta-title"><a class="page-meta" href="{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
 </article>
 {% endfor %}
