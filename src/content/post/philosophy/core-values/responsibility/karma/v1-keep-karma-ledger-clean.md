@@ -16,7 +16,7 @@ Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medi
   
 > Karma karo fall ki chinta maat karo
 
-In a previous post, I talked about [Karma and Karmafal](https://www.ankushchoubey.com/life-blog/karma-karmafal/ "‌"). Here is why you should always keep your karma ledger clean despite to inability to control Karmafal.
+In a previous post, I talked about [Karma and Karmafal](/life-blog/karma-karmafal/ "‌"). Here is why you should always keep your karma ledger clean despite to inability to control Karmafal.
 
 ## Two Outcomes of Karma
 

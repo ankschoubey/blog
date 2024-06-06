@@ -12,7 +12,7 @@ slug: /software-blog/building-your-own-immutable-infrastructure/
 title: Immutable Configuration and Infrastructure - What they are and Where Can You Build Your Own
 ---
 
-In a previous post, I talked about why [immutability is so important](https://www.ankushchoubey.com/software-blog/immutable-objects/ "‌"). After writing that post, I came to see immutability in different forms at many places. One such place is Configuration and Immutable Infrastructure.
+In a previous post, I talked about why [immutability is so important](/software-blog/immutable-objects/ "‌"). After writing that post, I came to see immutability in different forms at many places. One such place is Configuration and Immutable Infrastructure.
 
 Immutable Configuration means, your configuration will not change once deployed. It’ll remain the same. It’s a combination of two things:
 

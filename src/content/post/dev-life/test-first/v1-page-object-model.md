@@ -13,7 +13,7 @@ image: /images/tdd/page-object-model.png
 cover-img-style: "position: relative; height:100%"
 ---
 
-I have covered many testing patterns. Some of them are [Test Data Factories](https://www.ankushchoubey.com/test-data-factories/), [the when/should way](https://www.ankushchoubey.com/method-when-should/) and more. The Page Object Model complements all those patterns.
+I have covered many testing patterns. Some of them are [Test Data Factories](/test-data-factories/), [the when/should way](/method-when-should/) and more. The Page Object Model complements all those patterns.
 
 The Page Object Model is a great way to write clean tests for UI-related code. The POM Pattern is usable with any UI testing, selenium, react tests with enzyme or react testing library, TestCafe, Cypress or other test framework.
 

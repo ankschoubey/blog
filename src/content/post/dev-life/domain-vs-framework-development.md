@@ -66,8 +66,8 @@ Frameworks like Spring Boot, Platforms like Kubernetes and Cloud Provides like A
 
 # Resources
 
-- [Open Source Software (OSS) - Ankush Choubey](https://www.ankushchoubey.com/software-blog/open-source/)
-- [Baton Road - Ankush Choubey](https://www.ankushchoubey.com/baton/)
+- [Open Source Software (OSS) - Ankush Choubey](/software-blog/open-source/)
+- [Baton Road - Ankush Choubey](/baton/)
 - [Building a Framework on top of Spring Boot by Rubén Pahíno - Spring I/O 2022 Sessions - YouTube](https://www.youtube.com/watch?v=1qT__SBWOhA)
 - [The Product-Minded Software Engineer - The Pragmatic Engineer](https://blog.pragmaticengineer.com/the-product-minded-engineer/?ref=hackernoon.com)
 - [How to build domain knowledge - YouTube](https://www.youtube.com/watch?v=Zcdy1BpozW0)

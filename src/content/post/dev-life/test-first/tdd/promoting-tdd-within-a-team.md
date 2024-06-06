@@ -140,7 +140,7 @@ For Code Coverage, keep your minimum code coverage for your build pipeline to 85
 
 Test Format verification would help generate cleaner and more consistent tests. Add the equivalent of the ArchUnit test in your Java code. When someone doesn't follow the test format, this test should fail.
 
-You can find the ArchTest for verifying the given/when/then pattern in the blog post on [method/when/then style](https://www.ankushchoubey.com/method-when-should/).
+You can find the ArchTest for verifying the given/when/then pattern in the blog post on [method/when/then style](/method-when-should/).
 
 [^1]: Rewording Naval Ravikant "Happiness is the skill that you develop and the choice that you make"
 

@@ -29,7 +29,7 @@ I listened to the podcast again and noted down the rules of the Phase 1 challeng
 
 I decided to take a picture early in the morning so that I wouldn't fail it like last time. And I did.
 
-The [75 hard tasks](https://www.ankushchoubey.com/v1/75-hard) were the same as I did before so in this post I'll describe the new activities.
+The [75 hard tasks](/v1/75-hard) were the same as I did before so in this post I'll describe the new activities.
 
 #### 3 Power List
 

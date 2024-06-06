@@ -19,7 +19,7 @@ I am not a psychologist or a therapist. The following are notes from a video fro
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8TkbP4XfggM?si=Tm8ou-nLaWL_KOmu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-This video can be paired up with the previous note I took on [You can’t logic your way out of depression.](https://www.ankushchoubey.com/v1/can-not-logic-your-way-out-of-depression)
+This video can be paired up with the previous note I took on [You can’t logic your way out of depression.](/v1/can-not-logic-your-way-out-of-depression)
 
 ## From 00:09 Trauma manifests as so many problems
 

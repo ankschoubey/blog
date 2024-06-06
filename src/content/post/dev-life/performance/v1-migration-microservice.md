@@ -12,7 +12,7 @@ toc: false
 image: /images/life-blog/data-migration-microservice.png
 ---
 
-I published a post in [March 2023 about how typically DB migrations]([https://www.ankushchoubey.com/life-blog/db-migration-script/](https://www.ankushchoubey.com/life-blog/db-migration-script/ "smartCard-inline")  ) take place. The post is considered a direct migration from one DB to the other.
+I published a post in [March 2023 about how typically DB migrations]([/life-blog/db-migration-script/](/life-blog/db-migration-script/ "smartCard-inline")  ) take place. The post is considered a direct migration from one DB to the other.
 
 But sometimes, you need to do a lot of things that can only be done by the microservice that would use this data.
 

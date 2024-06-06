@@ -60,7 +60,7 @@ Psychological issues are a bit different as they often don't require medication.
 
 ## Anxiety/Depression doesn't mean pagal
 
-A common thing which people think is that anxiety and depression mean pagal! This may be the most common reason why therapy and psychology are often stigmatized. But that's not the case. Even brilliant and intense people can get into thought or behavioural patterns that can keep them stuck or in fear. [On the contrary, the more intelligent you are, the more likely you are to get depressed](https://www.ankushchoubey.com/v1/can-not-logic-your-way-out-of-depression).
+A common thing which people think is that anxiety and depression mean pagal! This may be the most common reason why therapy and psychology are often stigmatized. But that's not the case. Even brilliant and intense people can get into thought or behavioural patterns that can keep them stuck or in fear. [On the contrary, the more intelligent you are, the more likely you are to get depressed](/v1/can-not-logic-your-way-out-of-depression).
 
 And usually, pagal means something that generally happens to someone else. And that people want to avoid becoming pagal. They also think of particular people as pagal.
 

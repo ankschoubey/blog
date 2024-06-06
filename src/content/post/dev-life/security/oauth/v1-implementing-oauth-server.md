@@ -84,7 +84,7 @@ To implement it, I started reading up on Google, but I found it very challenging
       3. How to I validate a JWT Token?
       4. What is RSA algorithm?
          1. I further jumped into learning about RSA via YouTube.
-         2. Here’s my post on RSA: [RSA Algorithm](https://www.ankushchoubey.com/v1/rsa)
+         2. Here’s my post on RSA: [RSA Algorithm](/v1/rsa)
       5. What’s JWK?
       6. What’s the difference between JWE and JWS?
       7. How to define different scopes?
@@ -138,7 +138,7 @@ I also added a record for scopes. Which was something like
 - `scope` → unique name of the scope
 - `description` → unique description of the scope used to show user what to do in the permissions page.
 
-Here’s my post on how I choose to define scopes: [Defining Scopes for your OAuth Service](https://www.ankushchoubey.com/v1/oauth-scopes)
+Here’s my post on how I choose to define scopes: [Defining Scopes for your OAuth Service](/v1/oauth-scopes)
 
 # Nuances
 
@@ -184,6 +184,6 @@ ChatGPT
 
 ### My Blogposts
 
-[Defining Scopes for your OAuth Service](https://www.ankushchoubey.com/v1/oauth-scopes)
+[Defining Scopes for your OAuth Service](/v1/oauth-scopes)
 
-[RSA Algorithm](https://www.ankushchoubey.com/v1/rsa)
+[RSA Algorithm](/v1/rsa)

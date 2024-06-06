@@ -37,4 +37,4 @@ You need to become responsible and develop skills to get there.
 
 # Further Reading
 
-[Responsibility Section of Core Values](https://www.ankushchoubey.com/life-blog/my-core-values/#responsible-for-self-full-accountability-for-myself)
+[Responsibility Section of Core Values](/life-blog/my-core-values/#responsible-for-self-full-accountability-for-myself)

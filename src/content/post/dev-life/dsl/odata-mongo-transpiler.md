@@ -151,6 +151,6 @@ While implementing OData, we came across a few critiques, and it's mainly from t
 
 ## Resources
 
-- [How we created a query and evaluation language similar to Google Sheets and Excel formulas](https://www.ankushchoubey.com/software-blog/creating-an-excel-like-language/)
+- [How we created a query and evaluation language similar to Google Sheets and Excel formulas](/software-blog/creating-an-excel-like-language/)
 - [OData Specification](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html)
 - [GraphQL is not OData](https://jeffhandley.com/2018-09-13/graphql-is-not-odata)
