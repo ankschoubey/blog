@@ -16,7 +16,6 @@ In some sense, playing the Piano is manually doing what a speaker does but with 
 
 If I someday build my own office, I'll put a Piano in it.
 
-
 Be able to play 100% correct notes or the right timing. At least 3 times. Before increasing speed.
 
 Slow speed is where you’ll be focused on musicality and have the highest myelination. Slow is smooth. Smooth is fast.
@@ -24,6 +23,7 @@ Slow speed is where you’ll be focused on musicality and have the highest myeli
 Observe notes and listen to the music. In simply piano you have beats comming in. You’ll find that each beat hits at a tick. Listen to the tick and replicate. You’ll find you don’t need to go faster or slower.
 
 ## Learn sheet music
+
 You don't need to memorize songs if you can read sheet music.
 
 It's much faster to progress in the long run.
@@ -32,7 +32,7 @@ It is joyful to open any random song and play it without having to watch a YouTu
 
 The more sheet music you see, the easier it is to read.
 
-{% include image.html file='/images/life-blog/piano/sharps-flats.png' %}
+![](/images/life-blog/piano/sharps-flats.png)
 
 ## Practice
 
@@ -53,6 +53,7 @@ Learn techniques from many sources.
 Listening/watching the piano music first will helps you learn faster.
 
 ## Being Calm
+
 You'll make mistakes if you are not calm. So always keep calm and check your breath.
 
 Banging your fingers is a sure way to suffer. Stiff hands will become loose as you practice more.
@@ -60,6 +61,7 @@ Banging your fingers is a sure way to suffer. Stiff hands will become loose as y
 You cannot play a specific piece faster physically than the speed at which you can imagine playing it. Mistakes at the piano are often mistakes in thinking.
 
 ## Get proper tools
+
 Get a proper stand and seat. You'll find you play instantly 50% better.
 
 The worst thing you can do to your piano is to put key labels on it.
@@ -70,7 +72,7 @@ If you think you play well, you'll likely cry seeing Kids on YouTube play better
 
 Learning Piano is a rabbit hole. You might probably not learn everything.
 
-{% include image.html file='/images/life-blog/piano/messed-solo.png' %}
+![](/images/life-blog/piano/messed-solo.png)
 
 ## How I am learning?
 

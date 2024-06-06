@@ -57,7 +57,7 @@ Don't talk about yourself badly. Specially when you havent done anything wrong. 
 
 **IDENTITY**: Responsible
 
-{% include image.html file='/images/core-values/responsibility_hand.jpg' %}
+![](/images/core-values/responsibility_hand.jpg)
 
 <sub>What does taking personal responsibility mean?</sub>
 
@@ -87,7 +87,7 @@ An experiment we can do to get started is: `Take on and complete as many respons
 
 **For**: Courage is proper action despite not being fully ready. If you are given an opportunity to be courageous, you are already prepared.
 
-{% include image.html file='/images/core-values/cave-you-seek.jpg' caption='Illustration by Justin Gerard' %}
+![](/images/core-values/cave-you-seek.jpg' caption='Illustration by Justin Gerard)
 [^5]
 
 ## **Truth**: Unhide the fog by becoming truth seeking missile

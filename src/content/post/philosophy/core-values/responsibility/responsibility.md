@@ -45,7 +45,7 @@ An experiment we can do to get started is: `Take on and complete as many respons
 
 **For**: Courage is proper action despite not being fully ready. If you are given an opportunity to be courageous, you are already prepared.
 
-{% include image.html file='/images/core-values/cave-you-seek.jpg' caption='Illustration by Justin Gerard' %}
+![](/images/core-values/cave-you-seek.jpg' caption='Illustration by Justin Gerard)
 [^5]
 
 ## Responsibility and other factors
@@ -70,4 +70,4 @@ specific examples: if your boss,family,partner by themselves are giving you resp
 
 5. Important: Start with local problems that repeat. Don't try to solve something that isn't even a problem of high ROI.
 
-{% include image.html file='/images/core-values/responsibility_hand.jpg' %}
+![](/images/core-values/responsibility_hand.jpg)
