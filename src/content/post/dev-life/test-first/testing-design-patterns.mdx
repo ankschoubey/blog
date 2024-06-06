@@ -13,9 +13,12 @@ title: How to test interfaces, abstract classes and design patterns?
 image: /images/software-blog/testing-design-patterns.jpg
 image-fit: contain
 ---
-![](/images/software-blog/testing-design-patterns.jpg)
+import Tip from "~/components/custom/Tip.astro"
 
-{% include note.html content="For beginners: Design patterns are template solutions to common problems developers face. There are many design patterns; the best known are the 2 Gang of Four (GoF)  object-oriented design patterns." %}
+<Tip
+    content="<b>For beginners:</b> Design patterns are template solutions to common problems developers face. There are many design patterns; the best known are the 2 Gang of Four (GoF)  object-oriented design patterns."
+    type ="note"
+/>
 
 Testing interfaces, abstract classes, and design patterns efficiently can be tricky since parents and children depend on each other. We can write tests to eliminate these dependencies during the test time, making our tests very short and decoupled.
 

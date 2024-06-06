@@ -11,8 +11,8 @@ const Tip: React.FC<TipProps> = ({ bgColor, content, link, children }) => {
         classes += " cursor-pointer"
     } 
     return <div className={classes} >
-        <div className="font-300">{children}</div>
-        <div className="font-300" dangerouslySetInnerHTML={{__html: content}}>
+        <div className="text-xl">{children}</div>
+        <div className="text-base" dangerouslySetInnerHTML={{__html: content}}>
         </div>
     </div>;
 };

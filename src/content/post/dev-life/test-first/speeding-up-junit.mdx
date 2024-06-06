@@ -12,9 +12,12 @@ slug: /spring-boot-junit-faster/
 title: Speeding Up Spring Boot/JUnit tests
 image: /images/software-blog/spring-boot-junit-faster/header.png
 ---
-![JUnit Logo](/images/software-blog/spring-boot-junit-faster/header.png)
+import Tip from "~/components/custom/Tip.astro"
 
-{% include note.html content="For beginners: Tests provide fast feedback to your code and ensure everything works as you intended. Rapid tests help get feedback and ensure your integration and deployment pipelines work faster." %}
+<Tip
+    content="<b>For beginners:</b> Tests provide fast feedback to your code and ensure everything works as you intended. Rapid tests help get feedback and ensure your integration and deployment pipelines work faster."
+    type ="note"
+/>
 
 There are several ways I recently discovered that increase speed on Spring Boot + JUnit tests substantially. From 8 minutes to 3 minutes.
 
@@ -22,13 +25,13 @@ Some of these are
 
 1. Use Right Test Slice (Saved 25% running time)
 2. Speeding up @SpringBootTest and avoiding @DirtiesContext (Saved 25% running time)
-2. Run tests in parallel (Saved 37% running time)
+3. Run tests in parallel (Saved 37% running time)
 
 ***
 
-# **Use Right Test Slice** (Saved 25% running time)
+## **Use Right Test Slice** (Saved 25% running time)
 
-Several runners come with Spring Boot. 
+Several runners come with Spring Boot.
 
 `@SpringBootTest` is the most general of them. Primarily this is used in combination with `@DirtiesContent`, which will restart spring boot after every test class by default which isn't ideal.
 
@@ -41,7 +44,7 @@ We want to load the minimum spring-boot infrastructure as possible and still ens
 3. **Important**: If tests require initializing a single bean. Use `@ExtendWith(SpringRunner.class)` with `@Import` to specify the bean to initialize.
 4. The best case: Aim for Tests that are purely java based and do not involve spring boot, but it isn't possible in every scenario.
 
-# **Speeding up @SpringBootTest and avoiding @DirtiesContext** (Saved 25% running time)
+## **Speeding up @SpringBootTest and avoiding @DirtiesContext** (Saved 25% running time)
 
 `@DirtiesContext` is an annotation that recreated the Spring Context after each test or each test class. To avoid using `@DirtiesContext`, ensure all your tests don't depend on the same data. For this, you can wrap your data creation in a [test data factory](/test-data-factories) and ensure the data produced is random.
 
@@ -53,7 +56,7 @@ Try to use it with `@Import` or `@ContextConfiguration` to limit the creation of
 
 ***
 
-# **Run tests in parallel** (Saved 37% running time)
+## **Run tests in parallel** (Saved 37% running time)
 
 Create a `junit-platform.properties` file in `test/resource/junit-platform.properties` and add the following minimum. [^1]
 
@@ -64,12 +67,13 @@ Now you can either use one of these,
 1. add the following to every class you want to run parallel. `@Execution(CONCURRENT)`
 2. add more to `junit-platform.properties`
 
-```
+```properties
 junit.jupiter.execution.parallel.mode.default = same_thread|concurrent
 junit.jupiter.execution.parallel.mode.classes.default =  same_thread|concurrent
 ```
 
 ![](/images/junit-execution-mode.svg)
+
 [^1]
 
 Some tests can't run parallelly, so I prefer manually adding  `@Execution(CONCURRENT)`.

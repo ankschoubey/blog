@@ -12,11 +12,14 @@ title: Making Object Immutable for Concurrency
 toc: false
 image: /images/software-blog/immutable-objects.jpg
 ---
-![](/images/software-blog/immutable-objects.jpg)
+import Tip from "~/components/custom/Tip.astro"
 
 <sup>Photo by <a href="https://unsplash.com/@davehoefler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dave Hoefler</a> on <a href="https://unsplash.com/s/photos/stone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sup>
 
-{% include note.html content="For beginners: Immutable object means objects whose value can't change. Immutability is the intent of the creator of the object/class, i.e. when coding something up, we need to decide if a particular class should be immutable. Also, immutability is as important in the front end as in the back end. While the below posts explain it in Java, other programming languages have their way of implementing immutability." %}
+<Tip
+    content="<b>For beginners:</b> Immutable object means objects whose value can't change. Immutability is the intent of the creator of the object/class, i.e. when coding something up, we need to decide if a particular class should be immutable. Also, immutability is as important in the front end as in the back end. While the below posts explain it in Java, other programming languages have their way of implementing immutability."
+    type ="note"
+/>
 
 ## **Where Immutability is needed?**
 
@@ -32,14 +35,14 @@ Suppose you have 2 Rest Endpoints. `/someEndpoint` and `/anotherEndpoint` both s
 private String sharedMemory;
 
 @PostMapping("/someEndpoint")
-void postSomething(@RequestBody String value){
+void postSomething(@RequestBody String value)\{
     sharedMemory = value;
     ....
    //some code that uses sharedMemory
 }
 
 @PostMapping("/anotherEndpoint")
-void postSomethingElse(@RequestBody String value){
+void postSomethingElse(@RequestBody String value)\{
     sharedMemory = value;
     ....
    //some code that uses sharedMemory
@@ -68,7 +71,7 @@ Some libraries help create immutable objects, such as [Immutables for Java](http
 
 [Google Guava Library](https://github.com/google/guava/wiki/ImmutableCollectionsExplained) provides many immutable data structure alternatives. The benefit of using these is that they have the same interface as regular java collections.
 
-{% include note.html content="It's best to start with immutable objects and then modify them if needed." %}
+\{% include note.html content="It's best to start with immutable objects and then modify them if needed." %}
 
 ## **Automating Verification** via Unit Tests
 
