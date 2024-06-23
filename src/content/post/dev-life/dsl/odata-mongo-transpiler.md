@@ -14,7 +14,9 @@ slug: /odata-mongo-transpiler/
 image: /images/odata-mongo-transpiler.png
 ---
 
-I have written about how we created a MongoDB transpiler in the following article: [how we made our custom language that transpiles to MongoDB](/software-blog/creating-an-excel-like-language). The same technique was used for OData. This article includes what's different.
+Previously, I have written about how we created a MongoDB transpiler in the following article: [how we made our custom language that transpiles to MongoDB](/software-blog/creating-an-excel-like-language). This includes creating grammar and using Antlr to generate transpiler code. This article is a the specific OData changes we made.
+
+If you are looking for .NET/C# Driver team at MongoDB has been working on an OData extension that allows working with OData easier in ASP.NET Core applications to create REST APIs
 
 OData is used a lot in PowerBI, Tableau, and other reporting applications. Microsoft's Graph API might be the biggest implementation of OData.
 

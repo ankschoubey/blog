@@ -17,6 +17,16 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
 
 
+const ignoredThings = [
+  "/tag",
+  '/contact',
+  '/privacy',
+  '/terms',
+  '/category',
+  '/blog',
+  '/404'
+]
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.site,
@@ -26,7 +36,16 @@ export default defineConfig({
   redirects: redirects,
   integrations: [tailwind({
     applyBaseStyles: false
-  }), sitemap(), mdx(), icon({
+  }), sitemap({
+    filter: page => {
+      for (const item of ignoredThings) {
+        if(page.includes(item)){
+          return false;
+        }
+      }
+      return true;
+    }
+  }), mdx(), icon({
     include: {
       tabler: ['*'],
       'flat-color-icons': ['template', 'gallery', 'approval', 'document', 'advertising', 'currency-exchange', 'voice-presentation', 'business-contact', 'database']
