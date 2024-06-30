@@ -6,12 +6,12 @@ tags:
 - agile
 - systems
 - non-technical
-  publishDate: 2024-05-19T20:52:08.052481
-  last-modified-purpose:
-  slug: /life-blog/how-i-use-trello/
-  title: How I Organize My Trello for Maximum Personal Productivity
-  toc: false
-  image: https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1440&fm=webp
+publishDate: 2024-05-19T20:52:08.052481
+last-modified-purpose:
+slug: /life-blog/how-i-use-trello/
+title: How I Organize My Trello for Maximum Personal Productivity
+toc: false
+image: https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1440&fm=webp
 ---
 
 
