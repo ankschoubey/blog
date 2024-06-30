@@ -14,7 +14,6 @@ toc: false
 image: https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1440&fm=webp
 ---
 
-
 Trello is a simple Kanban tool I use to organize my life. It helps me:
 
 - **Clarity**: gain clarity of what I want to do and how to do it
@@ -26,7 +25,16 @@ I think of Trello as an efficient production line that can help organize almost 
 
 If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post.
 
-In this post, you'll learn how you can use trello efficiently. **You don't need to implement everything I suggest.**
+In this post, you'll learn how you can use trello efficiently.
+- Board Structure
+- Card Structure
+- Command Center / Dashboard Board
+
+I'll also share: 
+- Tips on Creating & Managing Multiple Boards Without Getting Overwhelmed
+- How to Keep Board Interesting to Use
+
+**You don't need to implement everything I suggest.**
 
 - keep things simple and scale if you need
 - When you don't need to scale down the system, make it simpler.
@@ -402,44 +410,33 @@ Here's a fictional example of it: [Mermaid Chart Link](https://mermaid.live/edit
 
 For the checklist, it depends; I may not use the checklist if the task itself is small. But if a task gets complex, I'll break it down into checklists.
 
-## Optional: Creating More Boards
+## Tips on Creating & Managing Multiple Boards Without Getting Overwhelmed
 
 I realized that more boards make Trello overwhelming. But by not having more boards, I was missing out on productivity gains.
 
 - Good planning
 - Ultimately getting progress
 
-I figured out there was no other way; I needed to create more boards.
+I figured out there was no other way; **I needed to create more boards**.
 
-The way I did it was much more organic. I experimented with a few boards. I also deleted a few; for example, I realized the Job board wasn't super useful for me because 90% of recruiters ghost and the rest reply super late after a month or two. ⏰ . The cards on my Job Search board would remain stale.
+The way I did it was much more organic. I experimented with a few boards. I also deleted a few; for example, I realized the **Job** board wasn't super useful for me because 90% of recruiters ghost and the rest reply super late after a month or two. ⏰ . The cards on my Job Search board would remain stale.  So, instead, I started tracking only when I had passed the initial screening and was giving online tests.
 
-So, instead, I started tracking only when I had passed the initial screening and was giving online tests.
+Initially, I also mixed writing and all other tasks into one board. This made it very overwhelming. I started by separating **Life and Writing**. ✍️  Then I realized I needed something for Development, so I created one called **DevLife**. These remained my main boards.
 
-Initially, I also mixed writing and all other tasks into one board. This made it very overwhelming.
+Later, I realized I needed ways to improve my health, so I started **Body Board**. Then I thought I should also do things in life. I am someone who doesn't go out much. I believe It'll be good to get out. Maybe watch shows, etc., so I created an **Experiences** board.
 
-I started by separating Life and Writing. ✍️
+The tip is this: **anything vital to you should be part of Trello**. If it's small you can keep less number of boards. But as you get more interested, you'll find splitting into a separate board is better.
 
-Then I realized I needed something for Development, so I created one called DevLife.
+**Note depending on the domain, the speed at which cards move changes.**
 
-These remained my mainboards.
-
-Later, I realized I needed ways to improve my health, so I started Body Board.
-
-Then I thought I should also do things in life. I am someone who doesn't go out much. I believe It'll be good to get out. Maybe watch shows, etc., so I created an Experiences board.
-
-The tip is this: anything vital to you should be part of Trello. If it's small you can keep less number of boards. But as you get more interested, you'll find splitting into a separate board is better.
-
-Note depending on the domain, the speed at which cards move changes.
-
-For example, travel board tasks will be added over months but will be completed in a week when you go on a trip. Most of the year, you'll spend time planning your travel.
+For example, **travel** board tasks will be added over months but will be completed in a week when you go on a trip. Most of the year, you'll spend time planning your travel.
 
 Similarly, the board will have a lot of goals that will take time.
+- **Finance** Stories usually move faster. Financial goal achievement is slower over months.
 
-Finance Stories usually move faster. Financial goal achievement is slower over months.
+Knowing this gives you a satisfaction. You know everything is under control and moving.
 
-Etc etc. This gives you a satisfaction. You know everything is under control and moving.
-
-## Optional: Keeping Board Interesting to Use
+## How to keep your board interesting to use?
 
 To make your board enjoyable to use:
 
@@ -460,11 +457,17 @@ Even if you don't use Trello, I hope you found the above insights valuable.
 Capture and structure your tasks so that you know what you need to do and why and can progress towards doing it. 
 Create templates that can help you save time. And break down tasks into manageable chunks.
 
-My usual board columns are these:
-1. Planning / Making it easy
-2. Doing Repetitions and Sets
-3. Chained Tasks if Any
-4. Freeze if needed
-5. Debrief: What went well? What did not go well? What can be improved? How?
-6. Closed / Karma Ledger
+Here's a recap of the above article:
 
+- **Board Structure**: Tailor your boards to your needs by enhancing the basic To Do, Doing, and Done columns. Split columns to manage tasks better and use methods like MoSCoW and the Eisenhower Matrix for prioritization.
+  - For Doing/Done, you can split column into following
+  1. Planning / Making it easy
+  2. Doing Repetitions and Sets
+  3. Chained Tasks if Any
+  4. Freeze if needed
+  5. Debrief: What went well? What did not go well? What can be improved? How?
+  6. Closed / Karma Ledger
+- **Card Structure**: Utilize detailed card templates, breaking down large tasks into smaller, manageable chunks. Use checklists and labels to keep everything organized and ensure nothing is overlooked.
+- **Dashboard Board**: If you have multiple boards, create a Command Center keep track of your weekly goals. Use dashcards to monitor progress and keep your boards clean and efficient.
+
+By continuously refining your system, you'll find that Trello can adapt to your evolving needs, helping you maintain high productivity and achieve a balanced, organized life. **Remember, the key is to keep things simple, scale as needed, and always aim for balance.**
