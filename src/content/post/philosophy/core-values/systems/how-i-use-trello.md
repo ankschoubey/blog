@@ -1,6 +1,6 @@
 ~~---
 comments: true
-excerpt: A Look at Board Structure, Card Structure and Dashboard Board that Help Me Stay Organized
+excerpt: A Look at Board Structure, Card Structure and Dashboard Board that Help Me Stay Organized 
 tags:
 - lean
 - agile
@@ -9,7 +9,7 @@ tags:
 publishDate: 2024-05-19T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/how-i-use-trello/
-title: Structuring My Trello for Maximum Personal Productivity
+title: Organizing My Trello for Maximum Personal Productivity
 toc: false
 image: https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1440&fm=webp
 ---
@@ -26,7 +26,7 @@ I think of Trello as an efficient production line that can help organize almost 
 
 If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post.
 
-**You don't need to implement everything I suggest.**
+In this post, you'll learn how you can use trello efficiently. **You don't need to implement everything I suggest.**
 
 - keep things simple and scale if you need
 - When you don't need to scale down the system, make it simpler.
@@ -38,7 +38,7 @@ My system is every evolving. You can assume that my current system is an evolved
 
 Trello/Kanban can scale to our needs. If you are getting started, a simple setup may be enough. But as time passes and you get more productive, you'll find you need to [optimize your system for scale] (🔗 TODO: Link To Post), or else the system starts choking.
 
-Here are a few things I've done to optimize my Trello system:
+Here are a few things I've done to optimize my Trello setup:
 
 - **Board Structure**: A well-organized board helps me focus on what needs to be done now and ensures I complete tasks fully.
 - **Card Structure**: Capturing all necessary information in the card helps me execute tasks to the best of my ability.
