@@ -11,7 +11,7 @@ last-modified-purpose:
 slug: /life-blog/how-i-use-trello/
 title: How I Organize My Trello for Maximum Personal Productivity
 toc: false
-image: https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1440&fm=webp
+image: /images/life-blog/how-i-use-trello/dashcard-do.png
 ---
 
 Trello is a simple Kanban tool I use to organize my life. It helps me:
