@@ -16,7 +16,7 @@ image: /images/odata-mongo-transpiler.png
 
 <a target="_blank" href="https://bit.ly/mongo-aspnetcore-odata" class="mongo-ad block my-5 p-5 border bg-gray-100 text-center transition-shadow hover:shadow-lg dark:bg-gray-800 dark:border-gray-600 flex justify-center items-center gap-2 flex-col-reverse md:flex-row-reverse no-underline">
     <span class="text-lg font-medium text-gray-900 dark:text-gray-200 mb-0">
-<span class="text-blue-700 font-bold dark:text-blue-300">Looking for a .NET/C# Driver?</span><p></p>MongoDB's team developed an OData extension to simplify working with OData in ASP.NET Core for REST APIs.<p></p>Checkout <span class="text-blue-700 font-bold dark:text-blue-300">mongo-aspnetcore-odata</span> GitHub repo!
+<span class="text-blue-700 font-bold dark:text-blue-300">Looking for a .NET/C# Driver?</span><p></p>MongoDB has developed an OData extension to simplify working with OData in ASP.NET Core for REST APIs.<p></p>Checkout <span class="text-blue-700 font-bold dark:text-blue-300">mongo-aspnetcore-odata</span> GitHub repo!
 
 </span>
     </p>
