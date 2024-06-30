@@ -14,6 +14,7 @@ toc: false
 image: https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1440&fm=webp
 ---
 
+
 Trello is a simple Kanban tool I use to organize my life. It helps me:
 
 - **Clarity**: gain clarity of what I want to do and how to do it
@@ -30,6 +31,8 @@ If you are new to Trello, I recommend you [watch a video](https://www.youtube.co
 - keep things simple and scale if you need
 - When you don't need to scale down the system, make it simpler.
 - **aim for achieving balance**.
+
+My system is every evolving. You can assume that my current system is an evolved version of the one below.
 
 ## Optimizing Trello for Maximum Productivity
 
