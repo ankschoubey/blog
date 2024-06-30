@@ -1,4 +1,4 @@
-~~---
+---
 comments: true
 excerpt: A Look at Board Structure, Card Structure and Dashboard Board that Help Me Stay Organized 
 tags:
