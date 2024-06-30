@@ -1,4 +1,4 @@
----
+~~---
 comments: true
 excerpt: A Look at Board Structure, Card Structure and Dashboard Board that Help Me Stay Organized
 tags:
@@ -454,8 +454,14 @@ However, as you get more productive, it's better to enhance each column by break
 
 Even if you don't use Trello, I hope you found the above insights valuable.
 
-Capture and structure your tasks so that you know what you need to do and why and can progress towards doing it.
+Capture and structure your tasks so that you know what you need to do and why and can progress towards doing it. 
+Create templates that can help you save time. And break down tasks into manageable chunks.
 
-Create templates that can help you save time.
+My usual board columns are these:
+1. Planning / Making it easy
+2. Doing Repetitions and Sets
+3. Chained Tasks if Any
+4. Freeze if needed
+5. Debrief: What went well? What did not go well? What can be improved? How?
+6. Closed / Karma Ledger
 
-And break down tasks into manageable chunks.
