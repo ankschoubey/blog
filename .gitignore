@@ -22,3 +22,6 @@ pnpm-debug.log*
 pnpm-lock.yaml
 
 .astro
+/.idea/
+/.idea/.gitignore
+/.idea/modules.xml
