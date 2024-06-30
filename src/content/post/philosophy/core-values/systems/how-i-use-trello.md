@@ -66,6 +66,8 @@ The basic Trello structure includes the following columns:
 - Doing
 - Done
 
+<sub>Image: **Typical Trello Board Structure when starting out.**</sub>
+
 ![](https://www.bluecatreports.com/blog/trello-to-do-list/best-board-ever.png)
 
 I enhance the column by splitting it into multiple columns. But I only do this when the number of cards increases. **If the number of cards is less, I'll again switch back to a number of columns**.
