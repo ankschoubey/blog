@@ -15,22 +15,20 @@ image: /images/odata-mongo-transpiler.png
 ---
 
 <a target="_blank" href="https://bit.ly/mongo-aspnetcore-odata" class="mongo-ad block my-5 p-5 border bg-gray-100 text-center transition-shadow hover:shadow-lg dark:bg-gray-800 dark:border-gray-600 flex justify-center items-center gap-2 flex-col-reverse md:flex-row-reverse no-underline">
-    <span class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-0">
-<span class="text-blue-700 font-bold dark:text-white">Looking for a .NET/C# Driver?</span><p></p>MongoDB's team developed an OData extension to simplify working with OData in ASP.NET Core for REST APIs.<p></p>Checkout <span class="text-blue-700 font-bold dark:text-white">mongo-aspnetcore-odata</span> GitHub repo!
+    <span class="text-lg font-medium text-gray-900 dark:text-gray-200 mb-0">
+<span class="text-blue-700 font-bold dark:text-blue-300">Looking for a .NET/C# Driver?</span><p></p>MongoDB's team developed an OData extension to simplify working with OData in ASP.NET Core for REST APIs.<p></p>Checkout <span class="text-blue-700 font-bold dark:text-blue-300">mongo-aspnetcore-odata</span> GitHub repo!
 
 </span>
     </p>
     <picture class="md:max-w-50">
-          <img src="/images/sponsor/mongodb/MongoDB Fores Green.svg" alt="MongoDB OData Extension" class="mx-auto dark:hidden" style="box-shadow: none;">
-    <img src="/images/sponsor/mongodb/MongoDB Spring Green.svg" alt="MongoDB OData Extension" class="mx-auto hidden dark:block" style="box-shadow: none;">
+          <img src="/images/sponsor/mongodb/MongoDB Fores Green.svg" alt="MongoDB OData Extension" class="mx-auto dark:hidden max-w-1/2 w-full md:w-auto" style="box-shadow: none;">
+      <img src="/images/sponsor/mongodb/MongoDB Spring Green.svg" alt="MongoDB OData Extension" class="mx-auto hidden dark:block max-w-1/2 w-full md:w-auto" style="box-shadow: none;">
     </picture>
 </a>
 
 Previously, I have written about how we created a MongoDB transpiler in the following article: [how we made our custom language that transpiles to MongoDB](/software-blog/creating-an-excel-like-language). This includes creating grammar and using Antlr to generate transpiler code. This article is a the specific OData changes we made.
 
 OData is used a lot in PowerBI, Tableau, and other reporting applications. Microsoft's Graph API might be the biggest implementation of OData.
-
-![](/images/odata-mongo-transpiler.png)
 
 ## Understanding OData?
 
