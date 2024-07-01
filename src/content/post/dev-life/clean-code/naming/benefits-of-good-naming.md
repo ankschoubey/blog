@@ -20,8 +20,8 @@ The Naming convention is more important than any other part of clean code. **Onc
 In this series of posts blog posts, I’ll explain the following:
 
 - Some benefits of Good Naming Convention.
-- [How to start creating good variable names.](/software-blog/good-variable-names) (Available on 2024 Feb 17)
-- [How to create and enforce naming conventions in teams to reap maximum benefit.](/software-blog/naming-conventions-within-teams) (Available on 2024 Feb 24)
+- [How to start creating good variable names.](/software-blog/good-variable-names)
+- [How to create and enforce naming conventions in teams to reap maximum benefit.](/software-blog/naming-conventions-within-teams)
 
 This post will cover the benefits of good naming conventions.
 
@@ -29,7 +29,7 @@ This post will cover the benefits of good naming conventions.
 
 ## 3 Benefits of good naming
 
-### 3rd Benefit: Easily understanding the code does (Add faster here)
+### 3rd Benefit: Easily understanding the code does quickly
 
 Descriptive naming helps us understand the code we want without getting into the details.
 
