@@ -94,6 +94,8 @@ docker run --rm -t tufin/oasdiff breaking https://raw.githubusercontent.com/Tufi
 
 It's also worth reading the [API change management maturity model on their website](https://www.oasdiff.com/blog/maturity-model).
 
+💡 **Note**: You can use contract testing can help in ensuring backward compatibility. But the above method is much more hands free. Contract testing as I have experience it involves a lot of work to maintain.
+
 ### Database Backward Compatibility
 
 While the example below is SQL, consider modifying your database.
@@ -160,6 +162,7 @@ Ensuring backward compatibility is crucial for maintaining a seamless user exper
 - Articles and Blogs:
   - [Understanding Semantic Versioning](https://www.linkedin.com/pulse/understanding-semantic-versioning-guide-developers-ajibola-oseni-/)
   - [Backwards Compatibility Best Practices](https://example.com/backwards-compatibility-best-practices)
+  - [Testing Backward Compatibility for Messages](https://dev.to/kirekov/unit-testing-backward-compatibility-of-message-format-27lj)
 
 For further learning, consider exploring more detailed guides and documentation related to API and database versioning strategies and integrating backward compatibility checks into your CI/CD workflows.
 
