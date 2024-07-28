@@ -9,7 +9,7 @@ tags:
  - tdd
 publishDate: 2024-07-28T20:52:08.052481
 last-modified-purpose:
-slug: /backward-compatibility-ci
+slug: /software-blog/backward-compatibility-ci
 title: Automated Backward Compatibility Testing Strategies for APIs, Libraries and Databases
 image: /images/software-blog/backward-compatibility-ci/oas-diff-header.png
 ---
@@ -24,9 +24,9 @@ When you introduce a new mandatory parameter to an API, clients unaware of this 
 
 In databases, changes can also cause issues. Consider a rolling deployment with ten microservice pods. Updating one pod at a time while all pods share the same database can lead to errors if schema changes are made (e.g., renaming fields, removing columns, changing data types).
 
-![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/u7cjw8py4c629xmexxrt.jpg)
-
 To avoid this, a deprecation/migration process is necessary. This involves deploying updates in multiple steps, ensuring a smooth transition for both clients and servers without downtime.
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/u7cjw8py4c629xmexxrt.jpg)
 
 💡 Extra Info: For [breaking change in a library](https://www.linkedin.com/pulse/understanding-semantic-versioning-guide-developers-ajibola-oseni-/) typically requires incrementing the major version of the software.
 
