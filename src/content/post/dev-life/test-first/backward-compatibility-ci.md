@@ -10,7 +10,7 @@ tags:
 publishDate: 2024-07-28T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/backward-compatibility-ci
-title: Automated Backward Compatibility Testing Strategies for APIs, Libraries and Databases
+title: Automated Backward Compatibility Testing for APIs, Libraries and Databases
 image: /images/software-blog/backward-compatibility-ci/oas-diff-header.png
 ---
 
