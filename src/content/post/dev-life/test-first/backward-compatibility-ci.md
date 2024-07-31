@@ -14,25 +14,29 @@ title: Automated Backward Compatibility Testing for APIs, Libraries and Database
 image: /images/software-blog/backward-compatibility-ci/oas-diff-header.png
 ---
 
-When you have live users, extensive testing is crucial, especially during system migrations. Also, for rolling updates, following a careful deprecation process is essential to avoid API disruptions.
+Extensive testing is crucial when you have live users, especially during system migrations. Also, following a careful deprecation process is essential for rolling updates to avoid API disruptions.
 
-This blog post shares my firsthand experience with backward compatibility issues and covers essential tools for managing API and database compatibility.
+This blog post shares my experience with backward compatibility issues and covers essential tools for managing API and database compatibility.
 
 ## Understanding Backward Compatibility
 
-When you introduce a new mandatory parameter to an API, clients unaware of this change will face 4xx errors. Similarly, removing a field that clients use will result in errors.
+From a developer's perspective, backward compatibility means ensuring that new software versions can operate smoothly with older and existing versions without causing disruptions.
 
-In databases, changes can also cause issues. Consider a rolling deployment with ten microservice pods. Updating one pod at a time while all pods share the same database can lead to errors if schema changes are made (e.g., renaming fields, removing columns, changing data types).
+When you introduce a new mandatory parameter to an API, clients are unaware of this change. They'll face client errors when they send the request using the old format. Similarly, removing a field that clients use will result in errors. Here, the client is anyone who is using your API.
 
-To avoid this, a deprecation/migration process is necessary. This involves deploying updates in multiple steps, ensuring a smooth transition for both clients and servers without downtime.
+However, backward compatibility can also occur if you are interfacing with the old version of your code. For example, certain database changes can also cause issues.
+
+Consider a rolling deployment with ten microservice pods, which means that when a new version of your software is deployed, the old version is removed. If you have ten instances, you may have some running with older versions and some with newer ones. Suppose you perform schema changes on your database, like renaming fields, removing columns, and changing data types. In that case, these can cause breaking changes because your old application version still uses the old format. This is one of the things that personally happened to me.
+
+To avoid such scenarios, a deprecation/migration process is necessary. This involves deploying updates in multiple steps, ensuring smooth client and server transitions without downtime.
 
 ![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/u7cjw8py4c629xmexxrt.jpg)
 
 💡 Extra Info: For [breaking change in a library](https://www.linkedin.com/pulse/understanding-semantic-versioning-guide-developers-ajibola-oseni-/) typically requires incrementing the major version of the software.
 
-### Step by Step Deprecation/Migration of API and Software Libraries
+Below are some of the deprecation steps for APIs and Software Libraries. The most important thing here is that each step is a different deployment/version of the API.
 
-The numbering below denotes deployments/steps.
+### Step-by-Step Deprecation/Migration of API and Software Libraries
 
 #### For removing a field in an API
 
@@ -40,7 +44,7 @@ The numbering below denotes deployments/steps.
  2. Let the clients know that the field is marked as deprecated and will be removed soon. Ideally, provide a date for it.
  3. If the client is internal in the company, ensure the field usage is removed. If the client is external and only a few, provide the same. If you have a lot of clients, keep reminding them and remove the deprecation date decided.
 
-#### A similar process for adding a new mandatory field would be followed.
+#### A similar process for adding a new mandatory field would be followed
 
  1. Add field as non-mandatory.
  2. Inform clients they need to provide the value and set date.
@@ -53,7 +57,7 @@ The numbering below denotes deployments/steps.
  2. Inform clients and ensure they have migrated to use the new field.
  3. Remove the old field when migration is complete.
 
-### Step by Step Deprecation/Migration of Database
+### Step-by-Step Deprecation/Migration of Database
 
 #### For removing a field
 
@@ -64,9 +68,9 @@ The numbering below denotes deployments/steps.
 #### For the addition of new fields or changing data
 
  1. Add a new field to ensure it's non-mandatory.
- 2. Change the server code to write in a new field and read from both the new and old fields.
+ 2. Change the server code to write in a new field and read from the new and old fields.
  3. Move data from the old field to a new field.
- 4. Change the server code to only use new fields and not old fields
+ 4. Change the server code only to use new fields and not old fields
  5. Once ensured, remove the old field.
 
 ## Automated Testing for Backward Compatibility
@@ -92,9 +96,11 @@ docker run --rm -t tufin/oasdiff breaking https://raw.githubusercontent.com/Tufi
 
 ![](/images/software-blog/backward-compatibility-ci/oas-diff.png)
 
-It's also worth reading the [API change management maturity model on their website](https://www.oasdiff.com/blog/maturity-model).
+The above image shows three backward compatibility errors and a few warnings for potential mistakes.
 
-💡 **Note**: You can use contract testing can help in ensuring backward compatibility. But the above method is much more hands free. Contract testing as I have experience it involves a lot of work to maintain.
+oasdiff website also has a guide for [API change management maturity model](https://www.oasdiff.com/blog/maturity-model) that's worth a read.
+
+💡 **Note**: You can use contract testing to help ensure backward compatibility. But the above method is much more hands-free. Contract testing, as I have experience, involves a lot of work to maintain.
 
 ### Database Backward Compatibility
 
@@ -130,9 +136,15 @@ You could get all SQL files between the current branch and main and run the Pyth
 git diff --name-status master...HEAD | grep '\.sql'
 ```
 
+For example, if you upload a new SQL file, `deleteColumn.sql` with a script like the one below, the regex pattern can recognize this as a breaking change.
+
+```SQL
+ALTER TABLE DROP COLUMN name;
+```
+
 ### Libraries Backward Compatibility
 
-You'll find tools for testing backward Compatibility on Google. Here's example of [# Java API Compliance Checker](https://lvc.github.io/japi-compliance-checker/)
+You'll find tools for testing backward Compatibility on Google. Here's an example of [Java API Compliance Checker](https://lvc.github.io/japi-compliance-checker/)
 
 Run the following command and pass your jars:
 
@@ -140,7 +152,7 @@ Run the following command and pass your jars:
 japi-compliance-checker -lib NAME V1.jar V2.jar
 ```
 
-And you'd get a report like this: [Guava Diff 18.0 vs 19.0](https://abi-laboratory.pro/?view=compat_report&lang=java&l=guava&v1=18.0&v2=19.0&obj=6b5ea&kind=bin)
+And you'd get a report like [Guava Diff 18.0 vs 19.0](https://abi-laboratory.pro/?view=compat_report&lang=java&l=guava&v1=18.0&v2=19.0&obj=6b5ea&kind=bin) which could help you be alert of the breaking change.
 
 ![](/images/software-blog/backward-compatibility-ci/guava-diff.png)
 
@@ -164,6 +176,6 @@ Ensuring backward compatibility is crucial for maintaining a seamless user exper
   - [Backwards Compatibility Best Practices](https://example.com/backwards-compatibility-best-practices)
   - [Testing Backward Compatibility for Messages](https://dev.to/kirekov/unit-testing-backward-compatibility-of-message-format-27lj)
 
-For further learning, consider exploring more detailed guides and documentation related to API and database versioning strategies and integrating backward compatibility checks into your CI/CD workflows.
-
 Implementing these strategies ensures a smoother transition during updates and maintains a robust, user-friendly system.
+
+**If you are looking for more testing strategies, check out my [TDD and Beyond Series](/tdd), where I dive deep into how we can create bug-free software.**
