@@ -56,7 +56,7 @@ void testGetAllMoviesStartingWith() {
     List<Movie> expectedMovies = Arrays.asList(
         new Movie("Star Wars"),
         new Movie("Star Trek")
- );
+    );
     when(movieRepository.findAllByNameStartsWith(prefix)).thenReturn(expectedMovies);
 
     // when
