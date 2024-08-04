@@ -72,20 +72,22 @@ As you can see, the prefix "Iron Man" differs from movie names, starting with "S
 
 Also, the `when(movieRepository.findAllByNameStartsWith(prefix)).thenReturn(expectedMovies);` part means **our test is tied to implementation detail** rather than the behaviour.
 
+Since, we have to provide the mocked response and mock, these tests are harder to write as compared to integration tests where we just save and get from the repository directly.
+
 In summary,
 
 - Mocks provide predetermined return values, which might not reflect real scenarios.
 - Mock-based tests are tied to implementation details, not behaviour.
 - Writing and maintaining mock-related code can be cumbersome.
 
-## Alternative: Writing Unit Tests closer to Integration test with `InMemoryRepository`
+## Benefits of Using a Custom InMemory Repository Implementation
 
-If we have an in-memory implementation of a `repository` based on `HashMap` or any other collection, we could have the behaviour of a repository in Unit tests. We won't have to `mock`; we'll be using the repository itself; it's just a different implementation of the repository.
+If we have an in-memory implementation of a `repository` based on `HashMap` or any other collection,
 
-<Tip
-    content="If you want to create the code independently, ask an LLM like ChatGPT or GitHub Copilot to generate the implementation. Check the example in the `InMemoryMovieRepository` section."
-    type ="tip"
-/>
+- we could have the behaviour of a repository in Unit tests.
+- we won't have to `mock`; we'll be using the repository itself; it's just a different implementation of the repository.
+- our tests would be as easy to write an integration or splice test, where we just save to the repository and get from repository.
+- our test accuracy increases
 
 ```java
 @Spy
@@ -128,7 +130,7 @@ Unit tests, on the other hand, are almost instantaneous and have the lowest exec
 
 This article is written explicitly against the use of Mocks for repository tests. You can use Splice or the kind of `InMemoryRepository` suggested below.
 
-## Creating your `InMemoryRepository` with generative AI
+## Creating an `InMemoryRepository` using generative AI
 
 Considering this simplistic implementation of the `JpaRepository` that can be generated with the help of an LLM, we'll use the abstract class as a superclass for our custom repositories.
 
@@ -185,7 +187,7 @@ If you are generating your repository using LLM, here are some tips:
 
 ## For More Accuracy of InMemory Repository
 
-### Add validation for your entity in your repository.
+### Add validation for your entity in your repository
 
 Spring Data performs validation of your entities. Therefore, it makes sense that we perform that validation, too.
 
