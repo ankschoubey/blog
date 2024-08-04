@@ -1,0 +1,301 @@
+---
+comments: true
+excerpt: 'Boost application performance and scalability with effective caching strategies, from basic principles to advanced implementation in Spring Boot.' 
+tags:
+ - technical
+ - distributed-systems
+ - microservices
+publishDate: 2024-08-04T20:52:08.052481
+last-modified-purpose:
+slug: /software-blog/server-side-client/
+title: Everything I know about Server Side Caching
+toc: false
+images: https://docs.google.com/drawings/d/e/2PACX-1vTPGz4ZDnTYTiUgt45IqUddwQRgZmyGPvnmHIlanx_AbUq2fgttahG-KxEeGtIBpopJ3v91tLsJacDF/pub?w=1755&h=880
+---
+
+**TLDR**: Too many DB calls? Cache. When caching, limit to only essential fields.
+
+Caching is one of those cool topics from the outside that's simple on the inside. If you know memoization in dynamic programming, you know caching.
+
+The general rule here is this
+
+> When we have too many DB calls, we should cache.
+
+A cache is just a fast storage when you need some performance.
+
+In general, you should always rely on good database schema for performance. And if something can't be done with good database schema or something requires a real time updation and sync, use a cache. You want to keep our system as small as light as possible, so if tuning your DB is enough for your performance do that.
+
+Below, I'll talk about:
+
+- **Caching Basics**
+  - What's a Cache?
+  - What makes Cache Fast?
+  - Difference between Distributed Cache and Non-Distributed Cache
+  - Write Back Cache / Write Through Cache and How It can Be Implemented in Spring Boot
+    - Thoughts on Implementation of Write Back Cache.
+- **Coding Specifics**
+  - Write Back Cache / Write Through Cache and How It can Be Implemented in Spring Boot
+  - Caching Limited Data
+  - Cache Key
+  - Caching Parameters
+    - TTL
+    - LIFO, FIFO, LFU
+    - Combination
+- **What about client caching vs server caching?**
+- **Some Applications of Server Cache**
+  - Authorization
+  - Real Time Applications (Server Side; Distributed)
+  - Frequently used server data
+  - Frequently Accessed Page Data
+
+## Caching Basics
+
+### What's a Cache?
+
+A cache is data storage faster than database that is used to store frequently used data typically for short period of time.
+
+For example, consider a sports website where a score of a live game is displayed. If thousands of people are on the website, you don't want to read the data from the database each time, because database is designed well for long term storage. You need a data storage that can quickly return value.
+
+### What makes Cache Fast?
+
+The data in the database is stored on disk. Disks are slower than RAM. Caches are mostly in-memory which makes them really fast.
+
+For instance, Redis, a popular distributed cache is around 2x faster on write and 3x read than MongoDB as per [a devs experiment](https://stackoverflow.com/a/5870726)
+
+Caches are in RAM so they are fast. At the same time caches aren't persistent meaning, if a cache server fails, the cache will be lost. Therefore, a lost of caches provide frequent flushing data to disk facility to be fault tolerant.
+
+### Difference between Distributed Cache and Non-Distributed Cache
+
+A distributed cache is a cache shared between multiple systems. A non-distributed cache is a cache within the program itself and is not shared within the system.
+
+For example, suppose you have 3 instances of a application each reading data from the database.
+
+Whenever they read the database, they cache the value because we expect the value will be read again.
+
+![](https://docs.google.com/drawings/d/e/2PACX-1vTPGz4ZDnTYTiUgt45IqUddwQRgZmyGPvnmHIlanx_AbUq2fgttahG-KxEeGtIBpopJ3v91tLsJacDF/pub?w=1755&h=880)
+
+## Coding Specifics
+
+### Write Back Cache / Write Through Cache and How It can Be Implemented in Spring Boot
+
+If you want to update the data, what should you update first, database or the cache?
+
+This leads us to two stratergies for updating data in cache.
+
+- Write Through
+- Write Back
+
+Write through is when you write to the cache first and then write in the database. This is good when you have a real time application.
+
+Write back cache is when you write to the database first then write the updated value in cache. This is simpler as most DBs are heavily constraint meaning if the DB update fails, you don't have to revert the cache.
+
+![](https://docs.google.com/drawings/d/e/2PACX-1vQTLksLPXQkApFKF6Qxuv-fkaL1jJXL9IF4fJ0WzRPH7yUzMzGAhznNYipqHdDIIK3_6CnX3bOediXC/pub?w=1424&h=961)
+
+This is one of the ways to implement a write back cache in spring boot.
+
+Spring boot me we have listeners for whenever db chance happens. When that happens we can write to cache.
+
+1. Create a Entity Event Lister which listens to database changes
+2. Each time something is save, update the database.
+    - You may want to skip update depending on what you use the cache for. If you are using cache for storing frequently used items, you may decide to skip updating cache for less frequent one.
+
+```java
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.CacheManager;
+import org.springframework.context.event.EventListener;
+import org.springframework.data.rest.core.event.AbstractRepositoryEventListener;
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserEventListener extends AbstractRepositoryEventListener<User> {
+
+    @Autowired
+    private CacheManager cacheManager;
+
+    @Override
+    protected void onAfterSave(User entity) {
+        cacheManager.getCache("users").put(entity.getId(), entity);
+    }
+
+    @Override
+    protected void onAfterDelete(User entity) {
+        cacheManager.getCache("users").evict(entity.getId());
+    }
+}
+
+```
+
+Spring Boot also has the following annotation to help with caching
+
+- `@EnableCaching`: Enables Spring's annotation-driven cache management capability.
+- `@Cacheable`: Caches the result of a method based on its parameters.
+- `@CachePut`:  Updates the cache with the method result, ensuring the method is always executed.
+- `@CacheEvict`: Removes one or more entries from the cache, useful for clearing stale data.
+
+#### Thoughts on Implementation of Write Through Cache
+
+The implementation of write through cache would be something similar. The main difference being that if the database call fails, cache is rolled back.
+
+This can't be implemented with Database listeners.
+
+Pseudocode:
+
+```
+// save to cache
+// save to DB
+// if DB fails roll back cache too.
+```
+
+```java
+@Service
+@Transactional
+public class UserService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private CacheManager cacheManager;
+
+    @Cacheable(value = "users", key = "#id")
+    public User getUserById(Long id) {
+        return userRepository.findById(id).orElse(null);
+    }
+
+    public User saveUser(User user) {
+        Cache cache = cacheManager.getCache("users");
+        if (cache != null) {
+            Cache.ValueWrapper valueWrapper = cache.get(user.getId());
+            User cachedUser = valueWrapper != null ? (User) valueWrapper.get() : null;
+
+            // Save to cache first
+            cache.put(user.getId(), user);
+
+            // Save to DB
+            try {
+                return userRepository.save(user);
+            } catch (Exception e) {
+                // Rollback cache if DB save fails
+                if (cachedUser != null) {
+                    cache.put(user.getId(), cachedUser);
+                } else {
+                    cache.evict(user.getId());
+                }
+                throw e;
+            }
+        }
+        return userRepository.save(user); // Fallback if cache is not available
+    }
+}
+```
+
+### Caching Limited Data
+
+Caches have limited storage. So, you only want to cache what's important.
+
+Typically, we only cache a limited amount of data or fields.
+
+**For example**, if you want to display only the first name, last name and image of the user, you don't need to cache in other values related to the user.
+
+### Cache Key
+
+Most caches are large key value pairs.
+
+For instance, Redis (likly the most popular distributed cache) only has one giant key value pair.
+
+If you want to read more about cache keys, read my article: "[Crafting Unique ID from Composite Attributes for Key-Value Pairs (Redis, Map, and even Droppable-Id in React Beautiful DnD)](/software-blog/map-index-guideline)"
+
+### Cache Parameters
+
+Caches usually have parameters associated with it for eviction. This is because caches are stored in memory (RAM) and these is limited RAM storage.
+
+#### TTL: Time To Live
+
+If a TTL is defined, it means cache this value for this much time. After which remove the cache.
+
+#### Access Patterns like LFU, LIFO and FIFO
+
+When the storage get's full and new item is to be inserted, remove either item that is
+
+- LFU: Least Frequently Used
+- LIFO: Last In First Out
+- FIFO: First In First Out
+
+You may use LFU if you want to cache the most frequently accessed.
+
+You may use FIFO if you expect something to be access only for a certain period of time after which other items would be accessed.
+
+#### Combination
+
+You can combine different parameters together. For example, give a TTL of 4 seconds along with LFU.
+
+## What about Client side cache / Server Side Cache?
+
+While this blogpost talks about Server Side Cache, the concepts describe are relevant to client side caching too.
+
+A cache at the server side is called server cache. This means client would still hit the server and get the value. Just the server may not have to access the database but instead get it's value from the server's cache.
+
+In case of client side cache, the client will store data at it's side. Usually, static data like HTML, CSS, Javascript and Images are stored on the client, but operational data could also be stored.
+
+Client caches are usually client specific. And the concepts described above such as cache parameters, write through and write back are applicable to client cache.
+
+Client cache may want to sync up with the server to know if the cache has latest value. In some caches, server may push changes to clients using SSE (server send events) or websockets.
+
+If you want to explore client side caching related to web pages, google the following:
+
+- http header
+  - etag
+  - last modified
+  - cache control
+  - cache max age
+- http status
+  - 304 not modifed
+- browser storage
+  - local storage
+  - session storage
+  - index db
+
+## Some Applications of Server Cache
+
+### Authorization
+
+If you want to maintain a user's logged in session, you may use a cache to store the session value.
+
+1. Whenever the user logs in, authentication server stores the details of the user in the shared cache. Give the user a token.
+2. Whenever user tried to acces the application server, the gateway server will take the token, check the shared cache for user details
+1. if found gateway server forwards the request to application server
+2. else redirects to authentication server for logging in.
+
+To learn more, search "Redis for Session Management".
+
+![[Mermaid Diagram Aug 04.png]]
+
+### Real Time Applications (Server Side; Distributed)
+
+If there are multiple users using a system in real time, the session would be stored in cache.
+
+For example, assume an online game session like scribble.io. Instead of writing to the database which would be slow, game play data would remain in RAM till the duration of the game.
+
+## Data which is access frequently by other services
+
+Suppose you have something like users data that should be accessed by every microservice. Or it's frequently accessed by users.
+
+You could simply cache it.
+
+### Frequently Accessed Page Data
+
+If you have an online store like Amazon with tones of product, you may want to cache the values of the first page.
+
+## Ending
+
+Caching is an essential tool for improving the performance and scalability of applications.
+
+By understanding and implementing the right caching strategies, you can reduce latency, handle higher loads, and provide a better user experience.
+
+However, it’s crucial to balance between the use of caching and maintaining data consistency, ensuring that your application remains robust and reliable.
+
+## Resources
+
+- "Designing Data-Intensive Applications" by Martin Kleppmann
+- [Stack Overflow: Redis vs. MongoDB Performance](https://stackoverflow.com/a/5870726) - A discussion on the performance comparison between Redis and MongoDB.
+- [Crafting Unique ID from Composite Attributes for Key-Value Pairs (Redis, Map, and even Droppable-Id in React Beautiful DnD)](/software-blog/map-index-guideline)
