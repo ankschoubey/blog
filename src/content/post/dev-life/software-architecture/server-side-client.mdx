@@ -10,7 +10,7 @@ last-modified-purpose:
 slug: /software-blog/server-side-client/
 title: Everything I know about Server Side Caching
 toc: false
-images: https://docs.google.com/drawings/d/e/2PACX-1vTPGz4ZDnTYTiUgt45IqUddwQRgZmyGPvnmHIlanx_AbUq2fgttahG-KxEeGtIBpopJ3v91tLsJacDF/pub?w=1755&h=880
+image: https://docs.google.com/drawings/d/e/2PACX-1vTPGz4ZDnTYTiUgt45IqUddwQRgZmyGPvnmHIlanx_AbUq2fgttahG-KxEeGtIBpopJ3v91tLsJacDF/pub?w=1755&h=880
 ---
 
 **TLDR**: Too many DB calls? Cache. When caching, limit to only essential fields.
@@ -263,12 +263,12 @@ If you want to maintain a user's logged in session, you may use a cache to store
 
 1. Whenever the user logs in, authentication server stores the details of the user in the shared cache. Give the user a token.
 2. Whenever user tried to acces the application server, the gateway server will take the token, check the shared cache for user details
-1. if found gateway server forwards the request to application server
-2. else redirects to authentication server for logging in.
+    1. if found gateway server forwards the request to application server
+    2. else redirects to authentication server for logging in.
 
 To learn more, search "Redis for Session Management".
 
-![[Mermaid Diagram Aug 04.png]]
+![](/images/software-blog/redis-for-authorization.png)
 
 ### Real Time Applications (Server Side; Distributed)
 
