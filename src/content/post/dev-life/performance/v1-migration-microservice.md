@@ -6,13 +6,13 @@ tags:
  - backend
 publishDate: 2023-08-05T20:52:08.052481
 last-modified-purpose:
-slug: /life-blog/data-migration-microservice/
+slug: /software-blog/data-migration-microservice/
 title: 7 Tips to Optimize a Microservice for Data Migration Job
 toc: false
-image: /images/life-blog/data-migration-microservice.png
+image: /images/software-blog/data-migration-microservice/data-migration-microservice.png
 ---
 
-I published a post in [March 2023 about how typically DB migrations]([/life-blog/db-migration-script/](/life-blog/db-migration-script/ "smartCard-inline")  ) take place. The post is considered a direct migration from one DB to the other.
+I published a post in [March 2023 about how typically DB migrations](/software-blog/db-migration-script/) take place. The post is considered a direct migration from one DB to the other.
 
 But sometimes, you need to do a lot of things that can only be done by the microservice that would use this data.
 
@@ -30,35 +30,15 @@ Instead of saving one record at a time, save a bunch of records at once.
 
 This increases performance for two reasons a large part of communication is establishing a connection, sending similar metadata, and waiting for a response on a thread. When you do bulk save, you establish 1 connection instead of multiple, you send similar metadata only once instead of individually and you have only one thread waiting for a response instead of everything waiting for a response.
 
-**Diagram of Single Request at a time**
+[**Diagram of Single Request at a time**](https://mermaid.live/edit#pako:eNqdkj1vgzAQhv8KurWAbAOGeMiUvVLZKhY3XAgK2NSYqhTx32uaRlVbRfnwZJ-fe_XodBNsdYkgoMfXAdUWN7WsjGwL5bnzaOqqVrLx8rG32Abr9UOO5g2N8J4WvrcePZLH8gJspJUvssd_yOkjcFTwE9M1o6d3Z_IW9I_E-Z4rjdllY3aLMbvDmF09X3XZVt1iq-6wVeBDi6aVdek2ZVoSCrB7bLEA4a6lNIcCCjU7Tg5W56PagrBmQB-GrpT2tFUgdrLpXbWT6lnrX28QE7yDCDIW8ijjqySjURaTlPswgqAxD5OYcMoZIQnnEZt9-PiKoGFEonSVppzQlFFKXYfRQ7X_Tp8_AYBo7U0)
 
-```mermaid!
-sequenceDiagram
-    Original System->>+Server: Request 1
-    Server->>+Database: Request 1
-    Database-->>-Server: Reply of Request 1
-    Server-->>-Original System: Reply of Request 1
-        Original System->>+Server: Request 2
-    Server->>+Database: Request 2
-    Database-->>-Server: Reply of Request 2
-    Server-->>-Original System: Reply of Request 2
-    Original System->>+Server: Request n
-    Server->>+Database: Request n
-    Database-->>-Server: Reply of Request n
-    Server-->>-Original System: Reply of Request n
-```
+![](/images/software-blog/data-migration-microservice/Diagram-of-Single-Request-at-a-time.png)
 
 Even multiple single requests are passed in parallel, they won't be as fast as bulk because of the number of connections that are needed to manage.
 
-**Diagram of Bulk Request with batch of 1000**
+[**Diagram of Bulk Request with batch of 1000**](https://mermaid.live/edit#pako:eNp9kMFugzAMQH8l8mnTACVQAo0mDlN3nlRuE5cUXIoKhIUwjaH--8JaDp3a-RRbfs-xJ8hVgSCgx48B2xw3lSy1bLKW2HjTVVm1sibp2Bts3CR5SlF_ohbkZaiPZDtDvXne6eThtRSEUUptMVe66B_PinP_TG6kkTvZ4x32FrwgruXdZfIWu3okan-lIf96Lp-YLX9WuqO7vRE40KBuZFXYg02zOgNzwAYzEPZZSH3MIGtPtk8ORqVjm4MwekAHhq6QZjkuiL2se1vtZPuu1FUOYoIvEG7sezyI-TqMWRCvaMQdGEGwFffCFeWM-5SGnAf-yYHvXwXzAhpE6yjilEU-Y8wSWg3l4WI__QDIKpjF)
 
-```mermaid!
-sequenceDiagram
-    Original System->>+Server: Bulk Request<br>(Eg: 1000 Records)
-    Server->>+Database: Bulk Request<br>(Eg:  1000 Records)
-    Database-->>-Server: Reply of Bulk Request <br>(Eg:  1000 Records)
-    Server-->>-Original System: Reply of Bulk Request<br>(Eg: 1000 Records)
-```
+![](/images/software-blog/data-migration-microservice/Diagram-of-Bulk-Request-with-batch-of-1000.png)
 
 Apart from this, databases are optimized for bulk operations, and therefore bulk operations are faster.
 
@@ -68,17 +48,9 @@ When doing bulk operations, you need to ensure everything in the pipeline is in 
 
 If you have twenty steps in your pipeline and 19 of them are bulk and one is sequential, then the sequential step would be a bottleneck to the whole system.
 
-```mermaid!
-sequenceDiagram
-    Bulk ->>+ Bulk Receiver: Bulk of 100 Records
-    Bulk Receiver ->>+ Sequencial System: First Record
-    Sequencial System-->>-Bulk Receiver: First Record Reply
-    Bulk Receiver ->>+ Sequencial System: Second Record
-    Sequencial System-->>-Bulk Receiver: Second Record Reply
-    Bulk Receiver ->>+ Sequencial System: nth Record
-    Sequencial System-->>-Bulk Receiver: nth Record Reply
-    Bulk Receiver-->>-Bulk: Response to Bulk of 100 Records
-```
+[Diagram of Bulk Processing](https://mermaid.live/edit#pako:eNqVkstugzAQRX8FzbYQ2TwM8SKLquoHlF3FxoJJQAGb2qYqRfx7nZK0SR8LvPHM6J57FzMTlKpC4GDwZUBZ4kMjDlp0hfTcux_aoxfsdndL9YQlNq-o-dKqvUcJOU2VrswVcdEtaL44N6L18tFY7Lj32Ghjz-DC_RIFjg1-pF5j7uvbcU1o7jhZrU-94dbHSluvz_yG_g38wrgbmV5Jg55Vf20GfOhQd6Kp3J6nk1UBtsYOC-CurIQ-FlDI2enEYFU-yhK41QP6MPSVsJebAL4XrXHTXshnpW564BO8AQ-ycMOijG2TjEZZTFLmwwicxmyTxIRRFhKSMBaFsw_vnxZ0E5Eo3aYpIzQNKaWO0Go41Gf3-QMvO9nR)
+
+![]/images/software-blog/data-migration-microservice/Diagram-of-Bulk-Processing.png)
 
 So, try to make sure every step is bulk, if you need to fetch data from the database, fetch them all at once.
 
@@ -92,13 +64,9 @@ If you have a large number of things to transfer, rather than migrating synchron
 
 The message queue will sit between the source system and the destination system. The data from the source system would be migrated to the buffer. The destination system can independently pick up resources from the buffer when it's ready and can process them.
 
-```mermaid!
-flowchart LR
-    SourceSystem[fa:fa-server Source System] -->|fa:fa-play Push| MessageQueue[fa:fa-database Message Queue \n \n Acts as a buffer that \nstores multiple messages] --> |fa:fa-play fa:fa-pause Poll when ready| Receiving[fa:fa-code Receiving System Instance 1]
-    MessageQueue --> |fa:fa-play fa:fa-pause Poll when ready| Receiving2[fa:fa-code Receiving System Instance 2]
-    MessageQueue -->|fa:fa-play fa:fa-pause Poll when ready| Receiving3[fa:fa-code Receiving System Instance 3]
-    MessageQueue --> |fa:fa-play fa:fa-pause Poll when ready| Receiving4[fa:fa-code Receiving System Instance n]
-```
+[Diagram](https://mermaid.live/edit#pako:eNqtkk1PwzAMhv-K5fM2Ne2Wjh6QkLgggQTsBt3Ba921om2mfGyUbf-dbCsCDkgDESWS4zf2kzfKFjOVMyZY1GqTlaQt3D6mLfgxU05nPOuM5ea5oKSgoWG9Zt0rcJLmMBxe7k76qqYO7p0pd3DHxtCSHxw77qtzsrQgwx8aHEVIPe6wrjJrgPyEhSsKj7El2YNirNJsoHG1rVY1Q3MqN0cyfEX3ITkPuVd1DZuSW9BMebeDR864Wlftsr_OwfhnsncDNx5HrXcn5qdn-Grkj8DwPGL4A_H3wOg8YPR_FsfnEds5DrBh3VCV-0-3PfBTtCU3nGLiw5z0S4ppu_fnyFk169oME6sdD9Ct_A_i64qWmhr0tNr47IraJ6W-7THZ4ismw2k4ktFUXkymIpqOg1gOsMNEjOVoMg6kkGEQTKSMwv0A344txCgKovgijmUg4lAI4Su0csuy775_B9TAFHU)
+
+![](/images/software-blog/data-migration-microservice/buffer.png)
 
 This has the following advantage: The receiving system can autoscale.
 
