@@ -54,7 +54,7 @@ Below, I'll talk about:
 
 A cache is data storage faster than database that is used to store frequently used data typically for short period of time.
 
-For example, consider a sports website where a score of a live game is displayed. If thousands of people are on the website, you don't want to read the data from the database each time, because database is designed well for long term storage. You need a data storage that can quickly return value.
+Consider a sports website where a score of a live game is displayed. If thousands of people are on the website, you don't want to read the data from the database each time, because database is designed well for long term storage. You need a data storage that can quickly return value.
 
 ### What makes Cache Fast?
 
@@ -62,42 +62,37 @@ The data in the database is stored on disk. Disks are slower than RAM. Caches ar
 
 For instance, Redis, a popular distributed cache is around 2x faster on write and 3x read than MongoDB as per [a devs experiment](https://stackoverflow.com/a/5870726)
 
-Caches are in RAM so they are fast. At the same time caches aren't persistent meaning, if a cache server fails, the cache will be lost. Therefore, a lost of caches provide frequent flushing data to disk facility to be fault tolerant.
+Caches are in RAM so they are fast. At the same time caches aren't persistent, meaning, if a cache server fails, the cache will be lost. Therefore, many caches provide facility to flush data to disk which can make them a bit fault tolerant.
 
 ### Difference between Distributed Cache and Non-Distributed Cache
 
 A distributed cache is a cache shared between multiple systems. A non-distributed cache is a cache within the program itself and is not shared within the system.
 
-For example, suppose you have 3 instances of a application each reading data from the database.
-
-Whenever they read the database, they cache the value because we expect the value will be read again.
+Suppose you have 3 instances of a application each reading data from the database. Whenever they read the database, they cache the value because we expect the value will be read again.
 
 ![](https://docs.google.com/drawings/d/e/2PACX-1vTPGz4ZDnTYTiUgt45IqUddwQRgZmyGPvnmHIlanx_AbUq2fgttahG-KxEeGtIBpopJ3v91tLsJacDF/pub?w=1755&h=880)
 
 ## Coding Specifics
 
-### Write Back Cache / Write Through Cache and How It can Be Implemented in Spring Boot
+### Write-Back Cache / Write-Through Cache and how to implement in Spring Boot
 
-If you want to update the data, what should you update first, database or the cache?
+If you want to update the data, what should you update first, database or the cache? This leads us to two strategies for updating data in cache.
 
-This leads us to two stratergies for updating data in cache.
-
-- Write Through
-- Write Back
-
-Write through is when you write to the cache first and then write in the database. This is good when you have a real time application.
-
-Write back cache is when you write to the database first then write the updated value in cache. This is simpler as most DBs are heavily constraint meaning if the DB update fails, you don't have to revert the cache.
+- **Write-Through**: Write to the cache first and then write in the database.
+  - Good when you have a real time application.
+- **Write-Back**: Write to the database first then write the updated value in cache.
+  - Simpler as most DBs are heavily constraint meaning if the DB update fails, you don't have to revert the cache.
 
 ![](https://docs.google.com/drawings/d/e/2PACX-1vQTLksLPXQkApFKF6Qxuv-fkaL1jJXL9IF4fJ0WzRPH7yUzMzGAhznNYipqHdDIIK3_6CnX3bOediXC/pub?w=1424&h=961)
 
-This is one of the ways to implement a write back cache in spring boot.
+**Implementing Write-Back Cache in Spring Boot**
 
-Spring boot me we have listeners for whenever db chance happens. When that happens we can write to cache.
+This is one of the ways to implement write-back cache. You want to listen to changes done on the database and update the cache accordingly. Spring Boot provides event lister to listen to whenever DB changes happen.
 
 1. Create a Entity Event Lister which listens to database changes
 2. Each time something is save, update the database.
-    - You may want to skip update depending on what you use the cache for. If you are using cache for storing frequently used items, you may decide to skip updating cache for less frequent one.
+    - You may want to skip update depending on what you use the cache for.
+    - For instance, if you are using cache for storing frequently used items, you may decide to skip updating cache for less frequent one.
 
 ```java
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,10 +102,9 @@ import org.springframework.data.rest.core.event.AbstractRepositoryEventListener;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class UserEventListener extends AbstractRepositoryEventListener<User> {
-
-    @Autowired
-    private CacheManager cacheManager;
+    private final CacheManager cacheManager;
 
     @Override
     protected void onAfterSave(User entity) {
@@ -125,7 +119,7 @@ public class UserEventListener extends AbstractRepositoryEventListener<User> {
 
 ```
 
-Spring Boot also has the following annotation to help with caching
+Spring Boot also has the following annotation to help with caching which means you don't have to use `cacheManager` directly.
 
 - `@EnableCaching`: Enables Spring's annotation-driven cache management capability.
 - `@Cacheable`: Caches the result of a method based on its parameters.
@@ -148,14 +142,10 @@ Pseudocode:
 
 ```java
 @Service
-@Transactional
+@RequiredArgsConstructor
 public class UserService {
-
-    @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
-    private CacheManager cacheManager;
+    private final UserRepository userRepository;
+    private final CacheManager cacheManager;
 
     @Cacheable(value = "users", key = "#id")
     public User getUserById(Long id) {
@@ -199,27 +189,23 @@ Typically, we only cache a limited amount of data or fields.
 
 ### Cache Key
 
-Most caches are large key value pairs.
-
-For instance, Redis (likly the most popular distributed cache) only has one giant key value pair.
+Unlike database with multiple tables, most caches (like Redis) are a single giant key-value pair. This means you have to name the key in a way that helps you differentiate different type of data in the cache else your data will collidate.
 
 If you want to read more about cache keys, read my article: "[Crafting Unique ID from Composite Attributes for Key-Value Pairs (Redis, Map, and even Droppable-Id in React Beautiful DnD)](/software-blog/map-index-guideline)"
 
 ### Cache Parameters
 
-Caches usually have parameters associated with it for eviction. This is because caches are stored in memory (RAM) and these is limited RAM storage.
+Caches usually have parameters associated with it for eviction. This is because caches are mostly in-memory (RAM) which are limited because they are costly.
 
-#### TTL: Time To Live
+- **TTL**: Time To Live
+  - TTL defines how long should data be cached for.
+  - After the TTL ends, the data will be removed from the cache.
 
-If a TTL is defined, it means cache this value for this much time. After which remove the cache.
-
-#### Access Patterns like LFU, LIFO and FIFO
-
-When the storage get's full and new item is to be inserted, remove either item that is
-
-- LFU: Least Frequently Used
-- LIFO: Last In First Out
-- FIFO: First In First Out
+- **Access Patterns like LFU, LIFO and FIFO**
+  - When the storage get's full and new item is to be inserted, remove either item that is
+    - LFU: Least Frequently Used
+    - LIFO: Last In First Out
+    - FIFO: First In First Out
 
 You may use LFU if you want to cache the most frequently accessed.
 
@@ -227,7 +213,7 @@ You may use FIFO if you expect something to be access only for a certain period 
 
 #### Combination
 
-You can combine different parameters together. For example, give a TTL of 4 seconds along with LFU.
+You can combine different parameters together. **For example**, give a TTL of 4 seconds along with LFU.
 
 ## What about Client side cache / Server Side Cache?
 
@@ -274,7 +260,7 @@ To learn more, search "Redis for Session Management".
 
 If there are multiple users using a system in real time, the session would be stored in cache.
 
-For example, assume an online game session like scribble.io. Instead of writing to the database which would be slow, game play data would remain in RAM till the duration of the game.
+Consider an online game session like scribble.io. Instead of writing to the database which would be slow, game play data would remain in RAM till the duration of the game.
 
 ## Data which is access frequently by other services
 
