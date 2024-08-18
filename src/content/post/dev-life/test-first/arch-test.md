@@ -1,6 +1,6 @@
 ---
 comments: true
-excerpt: "Architecture is a crucial pillar of accelerating product delivery. It's hard to keep a team in sync with architecture over time.<br><br>
+excerpt: "Architecture is a crucial pillar of accelerating product delivery. It's hard to keep a team in sync with architecture over time.
 Architectural testing can enforce architectural decisions as simple tests, dramatically reducing code review effort and extending code maintainability."
 tags:
  - technical
