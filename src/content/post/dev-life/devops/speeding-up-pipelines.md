@@ -15,19 +15,17 @@ image: /images/software-blog/speeding-up-pipelines.svg
 
 Disclaimer: I have primarily worked on Jenkins. But the tips mentioned aren’t Jenkins specific. It seems though that pipelines tools that come with SCM services like Gitlab are better.
 
-# Why we should have a speedy pipeline?
+## Why we should have a speedy pipeline?
 
 Pipelines such as CI and deployment are used very frequently. We don’t want these pipelines to be slow because we can’t push changes faster. And sometimes developers have to wait for a pipeline to finish before doing something else. #developerMoneyHoney
 
-# How can we speedup our pipelines?
+## How can we speedup our pipelines?
 
 - Eliminate unnecessary steps: Look at each step in your pipeline and eliminate unnecessary ones.
-
 - Optimize each step: After elimination, look at each step and optimize.
-
 - Run steps in parallel: this is specially true for tests/sonar things. Run them in parallel.
 
-# For example: a problem I faced was with pipeline for java.
+## For example: a problem I faced was with pipeline for java
 
 there were 3 steps
 

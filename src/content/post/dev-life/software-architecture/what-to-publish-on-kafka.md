@@ -11,7 +11,7 @@ slug: /software-blog/what-when-to-publish/
 title: What and when to publish on message queue
 ---
 
-# Publishing Every Business Entity on each update/write. [^1]
+## Publishing Every Business Entity on each update/write. [^1]
 
 Publishing every business entity is especially useful for event-driven systems.
 
@@ -36,7 +36,7 @@ class SampleEntityDataPublisher implements ReactiveAfterSaveCallback<SampleEntit
 
 Above, Spring Webflux code, publishOn and subscribe ensure that publishing will run in a separate thread and doesn't affect the execution of the main thread.
 
-# Publishing Commands
+## Publishing Commands
 
 In the CQRS pattern, we publish every command instead of the end state. It's the consumer's responsibility to choose how to interpret that command.
 
