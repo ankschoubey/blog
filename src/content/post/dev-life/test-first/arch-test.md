@@ -14,7 +14,6 @@ slug: /software-blog/architecture-testing/
 title: Enforcing Architecture with Architecture Testing
 image: /images/software-blog/architecture-testing.png
 ---
-![](/images/software-blog/architecture-testing.png)
 
 ## Introduction
 
@@ -67,7 +66,7 @@ With architecture testing, the work of an architect now expands and can live lon
 
 I try to implement this the same way.
 
-For example, I want all tests to be really fast. [I had written an article about it](spring-boot-junit-faster/). And one of the ways is that it requires avoiding `@DirtiesContext` in Spring Boot. And forcing the developer to choose between parallel execution and non-parallel execution.
+For example, I want all tests to be really fast. [I had written an article about it](/software-blog/spring-boot-junit-faster/). And one of the ways is that it requires avoiding `@DirtiesContext` in Spring Boot. And forcing the developer to choose between parallel execution and non-parallel execution.
 
 I can share it with the team and hope everyone follows it.
 

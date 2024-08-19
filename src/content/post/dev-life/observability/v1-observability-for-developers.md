@@ -10,7 +10,7 @@ slug: /v1/observability-for-developers
 title: Observability For Developers
 ---
 
-# What is observability, and why is it needed?
+## What is observability, and why is it needed?
 
 Observability are tools that help understand how an application is running.
 
@@ -32,7 +32,7 @@ For a real life example, you can see Slack's status which shows if slack is up o
 
 <https://status.slack.com/>
 
-# What are the pillars of observability, and why do they make sense?
+## What are the pillars of observability, and why do they make sense?
 
 There are three main pillars of observability.
 
@@ -46,7 +46,7 @@ Logs are the application logs. One must ensure that logs are properly added to t
 
 Traces are the visualization of request flows between multiple microservices (MS). For example, MS1 triggered MS2, MS2 triggered MS3 and MS4.
 
-# What are the different observability tools?
+## What are the different observability tools?
 
 There are different pieces involved in observability.
 
@@ -71,22 +71,22 @@ There are different pieces involved in observability.
 
 **DataDog**: A paid tool similar to Graphana.
 
-# What's the architecture of Graphana?
+## What's the architecture of Graphana?
 
-# What are the basic Graphana features one should utilise?
+## What are the basic Graphana features one should utilise?
 
 At the basic, one should be able to read logs. This is where most developers stop.
 
 [Graphana Logs]
 
-# How to set up dashboards in the best way?
+## How to set up dashboards in the best way?
 
 The dashboard is where you'll see all your metrics visualized.
 You want to visualize it in such a way that you can get to the problems faster.
 
 Make sure you segregate the most important metrics dashboard has only useful information
 
-# How to set up alerts in the best way?
+## How to set up alerts in the best way?
 
 Assume that most people don't know what to do.
 
@@ -94,7 +94,7 @@ Your alert should provide:
 Context: What happened exactly?
 Next Step: What to do next?
 
-# How to use Graphana to debug a scenario?
+## How to use Graphana to debug a scenario?
 
 Here is what's a typical flow:
 
@@ -106,4 +106,4 @@ Here is what's a typical flow:
 
 Learn PromQL.
 
-# How can Chaos Engineering help
+## How can Chaos Engineering help
