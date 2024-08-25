@@ -1,0 +1,122 @@
+---
+comments: true
+excerpt:  "Explore two approaches for creating and naming commands in command-based systems, balancing domain logic with structured formats."
+tags:
+ - technical
+ - event-sourcing
+publishDate: 2024-08-25T20:52:08.052481
+slug: /software-blog/best-practices-command-naming-event-sourcing/
+title: How to Choose and Name Commands in a Command-based System?
+---
+import Tip from "~/components/custom/Tip.astro"
+
+In a service-based system, methods are typically grouped by resource, making them easy to find. However, in a command-based system, like event sourcing, we deal with many small command classes, which can complicate naming and organization.
+
+1. How do we decide which commands to create?
+2. How do we name commands for easy discovery?
+3. How do we ensure consistency in naming?
+4. How do we balance clarity for both developers and business users?
+
+The following post attempts to answer these questions. This is not an exhaustive list. If you know something do post a comment below.
+
+## Approaches for Creating and Naming Commands
+
+### 1. Creating Commands Based on Domain Language & Use Case
+
+Consider the use cases of your application. If you are building a banking application, you may have the following use cases.
+
+- Create Savings Account
+- Close Savings Account
+- Add Deposit
+- Transfer
+- etc
+
+You convert all the use cases from your business requirements / PRD into a command.
+
+- `CreateSavingsAccount`
+- `CloseSavingsAccount`
+- `AddDeposit`
+- `Transfer`
+- etc
+
+#### Pros & Cons
+
+**Can we decide what commands to create?**
+
+- 👍 Yes, commands map directly to business use cases.
+
+**How do we decide what the name of the command is?**
+
+- 👎 It may be challenging to name commands if the requirements aren't precise.
+- 👍 With precise requirements, naming commands becomes easier.
+
+**Would you understand what the command is doing?**
+
+- 👎  From the developer's perspective: No.
+- 👍 From a business perspective: Yes.
+
+**Can you find the commands easily?**
+
+- 👎 It can be challenging to find existing commands as the codebase grows without a consistent naming format.
+
+<Tip content="<b>#MoreYouKnow</b>: Know the difference between a command and an event: A command is something we want to perform, while an event is something that has happened. For example, `SignupUser` is a command, and after the user is signed up, you might have `UserSignedUpEvent`." type="tip" />
+
+### 2. Creating Commands in a Structured Format
+
+My other blog post detailed this approach: [Event Sourcing - Good Naming Convention](https://www.ankushchoubey.com/software-blog/event-sourcing-naming-convention/). Here's a format I often use:
+
+```java
+{Create/Update/Delete}{Entity}{FieldName}
+```
+
+- Create Savings Account -> `CreateSavingsAccount`
+- Close Savings Account -> `UpdateCloseSavingsAccount`
+- Add Deposit -> `UpdateAccountAddDeposit`
+- Transfer -> `UpdateAccountTransferFund`
+
+### Can we decide what commands to create?
+
+#### Pros & Cons
+
+**Can we decide what commands to create?**
+
+- 👍 You can still do a 1:1 mapping with business use cases.
+- 👎 Since we are not following business language, we may end up creating more commands than necessary.
+
+**How do we decide on the command name?**
+
+- 👍 This format simplifies the process of naming new commands.
+- 👎 It can be challenging to name non-entity actions like "Sending an email." You might end up with names like SendEmailAction, but SendEmail is simpler and more domain-specific.
+
+**Would you understand what the command is doing?**
+
+- 👍 From a developer’s perspective: Yes, command names are more precise, e.g., UpdateMovieReleaseDate.
+- 👎 From a business perspective: No, names may sound robotic like UpdateCloseSavingsAccount.
+
+**Can you find the commands easily?**
+
+- 👍 Easier to find existing commands as the format narrows down your search to create, update, or delete actions.
+- 👎 As the codebase grows, finding names can still be challenging without consistency.
+
+## My thoughts
+
+While domain-specific command naming is excellent, I want to strike a balance.
+
+- **To know what command to create**: Rely on domain logic.
+- **For naming the command**: Rely on a consistent format.
+
+For example, in a user management system, instead of SignupUser, I’d name it `CreateUser`, even if a signup API is triggering it.
+
+<Tip content="Commands follow a similar pattern to service methods, with a `\{Verb}\{Noun}` format. So, `SendEmailCommand` is better than `EmailSendCommand`, which sounds more like an event." type="note" />
+
+## Ending
+
+- **Domain-specific commands**: Harder to name but more aligned with business language, offering greater clarity in some contexts
+- **Format-based commands**: Consistent and easier to enforce using tools like ArchUnit.
+
+There’s no one-size-fits-all solution. Both approaches have pros and cons. Let me know in the comments if you have a better approach or naming convention.
+
+## Resources
+
+- [Event Sourcing - Good Naming Convention](https://www.ankushchoubey.com/software-blog/event-sourcing-naming-convention/).
+- Worth Reading: [What and when to publish on message queue](https://www.ankushchoubey.com/software-blog/what-when-to-publish) (Note this is not specific to Command pattern)
