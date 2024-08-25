@@ -162,7 +162,9 @@ And the probability is high that such a command exists since everyone uses the s
 
 Note: I created a command that focused on updating attributes. You could also create `Command`s that focus on the domain. For example, consider a banking command.
 
-- Instead of `UpdateAccountRemainingC`, which focuses on attributes, you could create `UpdateAccountCreditC` or simply `CreditAccountC`. This depends on what's right for your domain. I'll be writing a separate blog post on what commands to create [Todo]
+- Instead of `UpdateAccountRemainingC`, which focuses on attributes, you could create `UpdateAccountCreditC` or simply `CreditAccountC`. This depends on what's right for your domain. Read my article: [How to Choose and Name Commands](/software-blog/best-practices-command-naming-event-sourcing/)
+
+'ll be writing a separate blog post on what commands to create [Todo]
 
 ## Combining Package Name and New Naming Convention
 
