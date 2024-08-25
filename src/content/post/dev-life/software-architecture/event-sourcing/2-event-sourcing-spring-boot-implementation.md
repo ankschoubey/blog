@@ -245,7 +245,7 @@ Like any design pattern, it may take time first to understand all the pieces of 
 
 Once the framework has been created, it rarely gets modified as much. The framework remains the same, and the functionality of what you want to do gets extended via the Command and Command Handlers you create. (Open Close Principle).
 
-Once you have created a framework like the above, you only need to create a bunch of Commands and CommandHandlers to handle them. There is no need ever to touch the Event Sourcing base code. It'll just work. I'll be writing a guide on how you can decide what commands to create.b (TODO)
+Once you have created a framework like the above, you only need to create a bunch of Commands and CommandHandlers to handle them. There is no need ever to touch the Event Sourcing base code. It'll just work. Read my article on [how you can decide what commands to create](/software-blog/best-practices-command-naming-event-sourcing).
 
 Also, there are specific rules to follow when developing event sourcing. Which I'll share in an upcoming post. (TODO)
 
