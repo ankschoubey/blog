@@ -45,12 +45,12 @@ export const headerData = {
       variant: "primary", 
       href: '/search',
     },
-    {
-      text: 'Resume',
-      target:"_blank",
-      variant: "secondary", 
-      href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
-    },
+    // {
+    //   text: 'Resume',
+    //   target:"_blank",
+    //   variant: "secondary", 
+    //   href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
+    // },
     {
       variant: "primary", 
       target:"_blank",
