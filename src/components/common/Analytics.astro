@@ -8,3 +8,13 @@ import { ANALYTICS } from '~/utils/config';
     <GoogleAnalytics id={String(ANALYTICS.vendors.googleAnalytics.id)} partytown={ANALYTICS?.vendors?.googleAnalytics?.partytown} />
   ) : null
 }
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3V8XD5HMMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3V8XD5HMMR');
+</script>
