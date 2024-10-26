@@ -11,8 +11,9 @@ slug: /software-blog/domain-specific-assertions/
 title: Writing Cleaner Test with Domain-Specific Assertions
 image: /images/software-blog/domain-specific-assertions.png
 ---
+import Tip from "~/components/custom/Tip.astro"
 
-Tests need to be as clean as the code we write. A clean test is faster to write, easier to understand, debug, maintainable, and extensible. i.e. a clean test has similar qualities as clean code.
+Tests need to be as clean as the code we write. A clean test is faster to write, easier to understand, debug, maintainable, and extensible.
 
 Personally, I see more care applied to code than tests. When I write new tests in a Test file that lacks specific encapsulations, I mostly spend 3-4 times more time writing tests and still being under-confident about the tests.
 
@@ -38,7 +39,7 @@ blog DomainSpecifAssertions extends FluentAssertions 🙃
 
 ## Introducing Domain Specific Assertions
 
-When using assertJ or any other testing library we typically get something some value from expected and get some value from actual and try to match them.
+When using AssertJ or any other testing library we typically get some value from expected and get some value from actual and try to match them.
 
 **Example**:
 
@@ -47,7 +48,7 @@ When using assertJ or any other testing library we typically get something some 
 assertThat(movie.getName()).isEqualTo(expectedMovie.getName());
 ```
 
-We may have some assertions which are repeated often.
+And we may have some assertions which are repeated often.
 
 For **example**, suppose we always assert the actor names something like this.
 
@@ -72,7 +73,7 @@ assertThat(movie)
 
 Use this implementation or use the LLM prompt I have provided in the next section.
 
-### Step 1. Create a class that extends AbstractAssert
+### Step 1. Create a class that extends `AbstractAssert`
 
 ```java
 class MovieAssert extends AbstractAssert<MovieAssert, Movie> {
@@ -89,7 +90,6 @@ class MovieAssert extends AbstractAssert<MovieAssert, Movie> {
 
  public MovieAssert hasActorWithName(String actorName){
   var actors = movie.getActor().stream().map(a -> a.getName()).toList();
-  assertThat(actors).contains(”Tom Cruize”);
   if(!actors.contains(actorName)){
    failWithMessage("Expected movie anme to be %s but was %s", name, actual.getName());
  }
@@ -97,13 +97,16 @@ class MovieAssert extends AbstractAssert<MovieAssert, Movie> {
 
  ... more methods here...
 
- ... the more complex your assertions are, the better it is to encapsulate it within a method here ...
+ The more complex your assertions are, the better it is to encapsulate them within a method here.
 }
 ```
 
-Note: Even though it feels like we are writing more code, it's actually the same amount of code we would have written with a typical assertion helper method. The beauty of AssertJ extension is how clean and domain-specific assertions become.
+<Tip
+    content="<b>Note: It's the same amount of characters</b><br><ul><li>Even though it feels like we are writing more code, it's the same amount of code we would have written with a typical assertion helper method.</li><li>The beauty of AssertJ extension is how clean and domain-specific assertions become.</li></ul>"
+    type ="note"
+/>
 
-## Step 2. Create a base class and add an assertThat method
+## Step 2. Create a base class and add an `assertThat` method
 
 ```java
 class BaseAssertions extends Assertions {
@@ -137,7 +140,32 @@ class MovieTest extends BaseAssertions{
 }
 ```
 
-Something to think about: I think such a thing is also easy to create in typescript. You just need to extend check the type and return the right value.
+<Tip
+    content="<b>Something to think about: How you'd do this in other languages</b><br><ul><li>I think such a thing is also easy to create in typescript.</li><li>You just need to extend check the type and return the right value.</li></ul>"
+    type ="tip"
+/>
+
+## Step 4. Optional: Create a custom base class
+
+You can create a base class out of common patterns of assertions. Assume the following method in a base class.
+
+```java
+<T> void assertObjectEquals(String fieldName, T actual, T expected){
+  boolean isEqual = Objects.equals(actual, expected);
+  if(!isEqual){
+       failWithMessage("Expected %s to be %s but was %s", fieldName, expected, actual);
+ }
+}
+```
+
+This way most of your Domain Specific Assertion class will just delegate to their methods in your parent class.
+
+Here are some that I think can be added:
+
+- `booleanEquals(String fieldName, Boolean object, Boolean object)`
+- `isNull(String fieldName, T object)`
+- `notNull(String fieldName, T object)`
+- `listContains(String fieldName, Collection<T> collection, T object)`
 
 ## What to generate Domain Specific Assertions
 
@@ -178,6 +206,18 @@ For fields that are other tables add another method that takes UUID.
 has{fieldName}(UUID id) then compare by field.getId() with the id passed
 
 Make sure to use String formatting.
+
+Make use of the following base interface.
+
+```java
+interface DomainSpecificAssertionHelper {
+  default <T> void assertObjectEquals(String fieldName, T actual, T expected){
+    boolean isEqual = Objects.equals(actual, expected);
+    if(!isEqual){
+         failWithMessage("Expected %s to be %s but was %s", fieldName, expected, actual);
+ }
+ }
+}
 ```
 
 This can help you create a skeleton. But you'll need to add the custom methods if your assertions are complex.
@@ -188,8 +228,8 @@ This can help you create a skeleton. But you'll need to add the custom methods i
 - We can write cleaner assertions by creating our own domain-specific assertion
 - To create domain-specific assertion for AssertJ
 
- 1. Create a class that extends AbstractAssert
- 2. Create a base class with the assertThat method which will create our Domain Specific assertion class
+ 1. Create a class that extends `AbstractAssert`
+ 2. Create a base class with the `assertThat` method which will create our Domain Specific assertion class
  3. Extend your test class with the base class and use
 
 - Instead of writing the code yourself, use an LLM to generate the code for you.
@@ -199,7 +239,7 @@ Look out for more blog posts coming in the future.
 
 ## Resources
 
- I stand on the shoulders of experts
+I stand on the shoulders of experts.
 
 - Petri Kainulainen - [Writing Clean Tests - Replace Assertions with a Domain-Specific Language](https://www.petrikainulainen.net/programming/testing/writing-clean-tests-replace-assertions-with-a-domain-specific-language/)
 - [AssertJ Assertions Generator](https://joel-costigliola.github.io/assertj/assertj-assertions-generator.html)
