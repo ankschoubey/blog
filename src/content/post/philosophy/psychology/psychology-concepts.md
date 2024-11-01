@@ -6,7 +6,7 @@ tags:
  - optimism
  - psychology
 publishDate: 2024-10-27T20:52:08.052481
-slug: /life-blog/how-i-process-emotions-psychology/
+slug: /life-blog/psychology-concepts/
 title: Psychological Concepts, Techniques and I How "Process My Emotions"
 image: /images/life-blog/psychology-concepts.jpg
 ---
