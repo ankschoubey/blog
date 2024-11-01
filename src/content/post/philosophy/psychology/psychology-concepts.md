@@ -15,13 +15,13 @@ I really wanted to write a series of blog posts on how I process my emotions. Th
 
 I am no psychologist and if you are suffering from mental illness [you should approach one](/optimism/why-therapy).
 
-At the same time, I believe you should learn the psychological concepts in depth cuz they give a deeper understanding of how you work and also how others work.
+At the same time, I believe you should learn the psychological concepts well cuz they give a deeper understanding of how you work and also how others work.
 
 Below I describe a few concepts and provide a few resources. In general, learn this concept in detail from a video or blog by psychologists. A lot of these concepts were introduced to me by [my therapist](https://in.linkedin.com/in/ishita-kulkarni-520381166?trk=public_post_feed-actor-name).
 
 The must-watch video recommendation here is the YouTube channel of [Dr. Alok Kanojia a Harvard Based Psychotherapist](https://www.youtube.com/@HealthyGamerGG).
 
-**It's possible to learn these skills and learn to be a more stable-minded and free person**
+**It's possible to learn these skills and learn to be a more stable-minded and free person**. Think of this blogpost as a gateway to some of these concepts that you can put into your mental toolkit. As time goes on, adapt and develop some of your own.
 
 ## Index
 
@@ -37,9 +37,12 @@ The must-watch video recommendation here is the YouTube channel of [Dr. Alok Kan
   - **2.2 RAIN method for Redical Acceptance**
   - **2.3 Journaling**
   - **2.4 EFT**
-3. How I process my Emotions
-4. My progress with emotional processing
-5. Ending: What to do next
+3. Schools of Psychology
+  - **3.1 Cognitive Behavioral Theraphy** (CBT)
+  - **3.2 Dialectic Behavioral Theraphy** (DBT)
+4. How I process my Emotions
+5. My progress with emotional processing
+6. Ending: What to do next
 
 ## 1. **Useful Psychology Concepts**
 
@@ -87,8 +90,9 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
   - The picture you had in your mind was of a really good friendship and a deep vulnerable connection. But now they say they have always hated you and everything you do. And they say 2 or three more mean things.
   - This can make you start questioning not just one moment but the entire last 10 years.
   - This will be too hard for you to think about so, your brain activates a defense mechanism and makes you not think about it.
-- The way to get over cognitive distortions is to synchronize the truths by creating a sort of sentence
-  - TK
+- The way to get over cognitive distortions is to synchronize the truths by creating a sort of sentence something that balances both sides and connects some way.
+
+> I and my friend had a good connect till now. But it seems they are not enjoying anymore and want space. They do say they didn't enjoy the connection till now but that is something I'll have to contemplate on. For now, I can let them be.
 
 ### 1.4 **Coping Mechanisms**
 
@@ -166,6 +170,10 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
 
 After watching  [read my notes](/life-blog/deep-dive-trauma) for revision.
 
+There is also something called as **Generational Trauma** which is something passed on from family members to younger children. For this I would recommend watching [Dr. Ramini's channel](https://www.youtube.com/@DoctorRamani).
+
+An aspect of trauma which doesn't get talked about often is experiencing malevolence in the world. I believe [Jordan Peterson does explain it much better](https://www.youtube.com/results?search_query=jordan+peterson+trauma)
+
 ## 2. **Useful Psychology Tools**
 
 ### 2.1 **Emotion Trackers**
@@ -198,7 +206,40 @@ I also used to use [How we feel](https://howwefeel.org/) app which helped me dev
 
 - Typing or writing down how you are feeling can help you get over your cognitive dissonance and emotional troubles much faster.
 
-## 3. How I typically process emotions (mainly trauma)
+## 3. Schools/Modules of Psychology
+
+Psychology is mostly divided into modules. And it can be interesting to look at different models to increase your knowledge futher.
+
+**The truth is I haven't looked deep enough**. I know things on the surface of these modules. And it has been so long that I have forgotten most of it. I'll visit them if and when need arises. What I would recommended is just search bout these concepts on YouTube and gain a general understanding of it.
+
+Each module introduces a varity of techniques.
+
+I have touched upon two schools during my theraphy sessions.
+
+### 3.1 Cognitive Behavioral Theraphy (CBT)
+
+CBT is based on a premis that emotions are connected to behavior and thoughts and influencing one of those can impact the other.
+
+![](https://www.simplypsychology.org/wp-content/uploads/CBT.jpg)
+
+[Image Source](https://www.simplypsychology.org/cognitive-therapy.html)
+
+For me, knowing that thoughts, behavior and emotions are interconnected helps.
+
+- Sometimes trying to process emotion doesn't work because the underlying belief is the cause of the problem. At that time, cognitive reframe has helped me.
+- Similarly specially with anxiety, changing behaviors such as decided not to take a decision late at nights or when I am sleepy has really helped.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jz55Uk9EH6U?si=DUdy2No7AJHN97Sh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### 3.2 Dialectic Behaviour Theraphy (DBT)
+
+The `Radical Acceptance` tool that I have talked about earlier comes from the distress chapter of DBT.
+
+DBT has a whole module called Distress Tolerance that can help is managing emotions.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hDJi86n9-Rk?si=0PCYP99-nMco_-8m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## 4. How I typically process emotions (mainly trauma)
 
 I combine a lot of tools and techniques mentioned above. When I was learning the techniques I used to do it consciously. Now it's much more automatic.
 
@@ -226,7 +267,7 @@ TODO: mention that in initial days you needed to look at emotion wheel or use th
 
 Mention TODO: I also used to use [How we feel](https://howwefeel.org/) app which helped me developed deep emotional awareness.
 
-## 4. My progress
+## 5. My progress
 
 - Initially, when I had depression I used to do these for multiple hours a day. I would even reach out to friends.
 - Once all the **major** things were resolved, I found there was nothing to process. So, I happened to take a few months break.
@@ -237,7 +278,7 @@ Mention TODO: I also used to use [How we feel](https://howwefeel.org/) app which
   - Though mostly I don't need to do journal or EFT.
   - I am in touch with my body and mind all the time and can detect any disturbance ASAP and do a quick RAIN or cognitive reframe.
 
-## 5. Ending: What to do next?
+## 6. Ending: What to do next?
 
 Above I have described different concepts that I believe people should know and I have provided the resources I used.
 
@@ -247,7 +288,7 @@ As a next step, I suggest,
 
 Whatever you are struggling with search YouTube for it. My only suggestion would be to listen to psychologists.
 
-Also, a good mental model is: If you know about a problem and solution for multiple years but haven't fixed the problem, then you likely don't know the problem or the solution. You need to seek to understand the problem from a completely new POV that you don't know and try out a solution that you don't know.
+Also, a good mental model is: **If you know about a problem and solution for multiple years but haven't fixed the problem, then you likely don't know the problem or the solution**. You need to seek to understand the problem from a completely new POV that you don't know and try out a solution that you don't know.
 
 In the past, I have searched for
 
@@ -266,7 +307,7 @@ In the past, I have searched for
 - [Kati Morton](https://www.youtube.com/@Katimorton)
 - [Andrew Huberman](https://www.youtube.com/@hubermanlab/videos)
 
-**#2. Start processing your emotions. Whatever they are aim to come to inbox zero**
+**#2. Start processing your emotions anyways. Just aim towards inbox zero**
 
 It's possible. I am on the path of it. Deal with every psychological problem you have fully.
 
