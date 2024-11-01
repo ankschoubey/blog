@@ -6,10 +6,17 @@ tags:
  - optimism
  - psychology
 publishDate: 2024-10-27T20:52:08.052481
-slug: /life-blog/psychology-concepts/
-title: 6 Concepts and 4 Psychological Techniques I Use To "Process My Emotions"
+slug: /life-blog/how-i-process-emotions-psychology/
+title: Psychological Concepts, Techniques and I How "Process My Emotions"
 image: /images/life-blog/psychology-concepts.jpg
 ---
+
+<style>
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9 !important;
+  }
+</style>
 
 I really wanted to write a series of blog posts on how I process my emotions. The problem is writing such a series is really hard given there are so many concepts.
 
@@ -19,27 +26,37 @@ At the same time, I believe you should learn the psychological concepts well cuz
 
 Below I describe a few concepts and provide a few resources. In general, learn this concept in detail from a video or blog by psychologists. A lot of these concepts were introduced to me by [my therapist](https://in.linkedin.com/in/ishita-kulkarni-520381166?trk=public_post_feed-actor-name).
 
-The must-watch video recommendation here is the YouTube channel of [Dr. Alok Kanojia a Harvard Based Psychotherapist](https://www.youtube.com/@HealthyGamerGG).
+
 
 **It's possible to learn these skills and learn to be a more stable-minded and free person**. Think of this blogpost as a gateway to some of these concepts that you can put into your mental toolkit. As time goes on, adapt and develop some of your own.
 
-## Index
+## Read this inject and then jump around
+
+This blogpost includes a lot of details so jump around and watch the recommended videos you find interesting.
+
+If you wanna start with one watch the video in the journal or "How I process my emotions" section.
 
 1. Useful Psychology Concepts
-  - **1.1 Cognitive Distortion**: Splitting facts from emotions
-  - **1.2 Defense Mechanisms**: Brain/Ego trying to protect itself.
-  - **1.3 Cognitive Dissonance**: State where the brain cannot make sense of two counter truths
-  - **1.4 Coping Mechanisms**: Your toolbox for processing emotions
-  - **1.5 Fight Flight Freeze Fawn**
-  - **1.6 Trauma**: Body/Mind acts like it's under stress based on something that happened a long time ago which isn't present now
+
+- **1.1 Cognitive Distortion**: Splitting facts from emotions
+- **1.2 Defense Mechanisms**: Brain/Ego trying to protect itself.
+- **1.3 Cognitive Dissonance**: State where the brain cannot make sense of two counter truths
+- **1.4 Coping Mechanisms**: Your toolbox for processing emotions
+- **1.5 Stress Response:** Fight Flight Freeze Fawn
+- **1.6 Trauma**: Body/Mind acts like it's under stress based on something that happened a long time ago which isn't present now
+
 2. Useful Psychology Tools
-  - **2.1 Emotion Wheel**
-  - **2.2 RAIN method for Redical Acceptance**
-  - **2.3 Journaling**
-  - **2.4 EFT**
+
+- **2.1 Emotion Wheel**
+- **2.2 RAIN method for Redical Acceptance**
+- **2.3 Journaling**
+- **2.4 EFT**
+
 3. Schools of Psychology
-  - **3.1 Cognitive Behavioral Theraphy** (CBT)
-  - **3.2 Dialectic Behavioral Theraphy** (DBT)
+
+- **3.1 Cognitive Behavioral Theraphy** (CBT)
+- **3.2 Dialectic Behavioral Theraphy** (DBT)
+
 4. How I process my Emotions
 5. My progress with emotional processing
 6. Ending: What to do next
@@ -65,7 +82,7 @@ The must-watch video recommendation here is the YouTube channel of [Dr. Alok Kan
   - **Labeling**
 - There are about 9-10 other cognitive distortions. Watch this 5-minute video to know them and how to counter them.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DA0Pbe1Lz-c?si=gBz0IWmqWmrkqlaN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/DA0Pbe1Lz-c?si=gBz0IWmqWmrkqlaN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 1.2 **Defense Mechanisms**
 
@@ -99,11 +116,6 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
 #### Your toolbox for processing emotions
 
 - Coping mechanisms are ways to deal with emotional troubles.
-- Coping mechanisms can be
-  - Adaptive (helpful)
-    - Example: Exercise.
-  - Maladaptive (not helpful)
-    - Eg: Alchohol. Or even Excessive Exercise.
 - They can be categorized into 5 parts
   - **Emotional**
     - Trying to work on the emotions.
@@ -111,10 +123,10 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
       - Crying
       - Journalling
       - etc
-  - **Problem solving**
-    - Solve the problem that's troubling you.
+  - **Problem solving**: (Outcome needs to be under control)
+    - Finding an alternative solution is healthy problem based.
     - This does not work when the problem is not under your control. Using this if the problem is not under your control will backfire.
-  - **Meaning based**
+  - **Meaning based** (Depends on your beliefs and values. Useful when you things are outside your control)
     - You try to find a value-based meaning behind what happened.
     - This is useful when the problem is not under your control.
   - **Social**
@@ -124,12 +136,20 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
     - Avoiding the problem.
     - Eg:
       - Exercise Alchohol
+- They can be categoriezed
+  - Adaptive (helpful)
+    - Example: Exercise.
+  - Maladaptive (not helpful)
+    - Eg: Alchohol. Or even Excessive Exercise.
+  - All the 5 types of coping mechanisms can be adaptive or maladaptive.
 - Recommendations
   - You need to discover coping mechanisms that work for you.
   - Read about different adaptive (helpful) and nonadaptive (not helpful) coping mechanisms here.
+    - [Healthy Coping: 24 Mechanisms & Skills For Positive Coping](https://positivepsychology.com/coping/)
   - Read this list of coping mechanisms choose a few and practice. See what works.
+    - [10+ Coping Skills Worksheets for Adults and Youth (+ PDFs)](https://positivepsychology.com/coping-skills-worksheets/)
 
-### 1.5 **Fight Flight Freeze Fawn**
+### 1.5 **Stress Response: Fight Flight Freeze Fawn**
 
 - Apart from Defense Mechanisms there are common responses when we are threatened.
 - Our brain assumes we are around a physical danger and can respond with one of these:
@@ -143,7 +163,9 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
 - **Fawn**
   - When dealing with a person who makes us treated, the brain people pleases/agrees to whatever the other person says because it feels it's a real threat.
   - This can cause someone to stay in a toxic relationship.
-- Recommended video: 9 min.
+- Recommended video: 11 min.
+
+<iframe src="https://www.youtube.com/embed/OP6SXMr-6_g?si=h1ySzaPb-JA1ZXMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 1.6 **Trauma**: Most Important Topic
 
@@ -162,11 +184,10 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
 
 - We all have some trauma big or small.
 - There are many many methods to deal with trauma. I recommend watching the video first.
--
 
 **MUST WATCH**: 39 minutes will save you **multiple weeks and months**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8TkbP4XfggM?si=03TvC-oMvue12a5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/8TkbP4XfggM?si=03TvC-oMvue12a5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 After watching  [read my notes](/life-blog/deep-dive-trauma) for revision.
 
@@ -189,6 +210,11 @@ I also used to use [How we feel](https://howwefeel.org/) app which helped me dev
 
 - Radical Acceptance is acceptance of emotions and allowing ourselves to feel the emotion without judgment.
 - This can teach our body to be okay with emotions and that feeling bad is okay.
+
+To know why the importance of acceptance watch:
+
+<iframe  src="https://www.youtube.com/embed/V8oFemGi5EY?si=QdDfBGdQtUCjSssK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 - This I believe is the first step to processing emotions.
 - I don't use the acronyms mentally but it can be useful to understand.
   - Recognize
@@ -196,15 +222,84 @@ I also used to use [How we feel](https://howwefeel.org/) app which helped me dev
   - Investigate with care
   - Nurture with self-compassion
 
+Here's the technique: 
+
+<iframe src="https://www.youtube.com/embed/AgoZGt1bgVw?si=73Mo6oEgtoADThZN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### 2.3 **EFT**: Emotional Freedom Technique
 
 - EFT/Tapping is tapping at a specific part of your body like your forehead.
 - If there
 - Recommended video
 
+<iframe src="https://www.youtube.com/embed/rE3pcyfqCtA?si=kPCz8pFCFcySVOb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### 2.4 **Journaling** your emotions
 
-- Typing or writing down how you are feeling can help you get over your cognitive dissonance and emotional troubles much faster.
+Typing or writing down how you are feeling can help you get over your cognitive dissonance and emotional troubles much faster.
+
+I learned the details of how to journal here.
+
+<iframe src="https://www.youtube.com/embed/7AywxObPgeM?si=PeOuXm433G8ht2In" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I used journalling the most to process my emotions.
+
+### 2.5 Cognitive Reframing
+
+Cognitive Reframing is a top level coping mechanism. I use it all the time.
+
+For me the first step is always RAIN (radical acceptance) of my emotion followed by a combination of Journaling or Cognitive Reframe.
+
+<iframe src="https://www.youtube.com/embed/Ddfgq3K4_vY?si=aU5YkHsHPzWUyeQD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### 2.5 Downward Arrow and Socratic Questioning
+
+> until we make our subconsious conscious, it’ll continue to run out lives.
+
+**~ Carl Jung.**
+
+Core belief are person’s deeply head belief that are under the surface that can reveal a lot about the person.
+
+Understanding and changing core beliefs that cause problems can he helpful here.
+
+I don't strictly use these techniques by the book. But there are some elements of it that I use.
+
+#### Downward Arrow
+
+In downward arrow, you start with something that stresses and then ask, If this were true then what? And continue answering it. Until you arrive at a core belief referred to self.
+
+[Link to Practice PDF](https://static1.squarespace.com/static/594033e9893fc090cfc24412/t/5b5a52ff8a922d49a13b813e/1532646144195/DOWNWARD+ARROW+WORKSHEET.pdf)
+
+Assume this frictional example
+
+- I don't want to tell my mother that I want to leave engineering and do medical.
+  - If I did tell her, then what?
+    - Then she would be angry on me.
+      - If she were angry on me, then what?
+        - Then I would be very sad.
+          - Why would you be sad.
+            - Cuz I believe my mother is the only one who understands me.
+
+Read this PDF for some examples: [Downward Arrow](https://deploymentpsych.org/sites/default/files/member_resource/Downward_Arrow.pdf)
+
+Once a core belief is understood, other techniques can be used.
+
+#### Socratic Questioning
+
+In Socratic Question, you don’t have a specific aim. They are open ended question to come to truth. So there is no agenda as such.
+
+Questions can be of following types:
+
+1. Clarifying Thought: What do you mean by this?
+2. Challenging Assuptions: How do you know?
+3. Examining Evidence/Rationale: Can you give me an example?
+4. Considering Alternative Perspective: What is the counterargument?
+5. Considering Implications and Consequences: What are the consequences of that?
+6. Meta Questions
+
+Read details about it in the following post: [Socratic Questioning](https://positivepsychology.com/socratic-questioning/). More on types here: [6 types of Socratic Questions](https://websites.umich.edu/~elements/probsolv/strategy/cthinking.htm)
+
+I believe I use socratic questioning much more unconsciously now.
 
 ## 3. Schools/Modules of Psychology
 
@@ -220,7 +315,7 @@ I have touched upon two schools during my theraphy sessions.
 
 CBT is based on a premis that emotions are connected to behavior and thoughts and influencing one of those can impact the other.
 
-![](https://www.simplypsychology.org/wp-content/uploads/CBT.jpg)
+<img src ="https://www.simplypsychology.org/wp-content/uploads/CBT.jpg" style="max-width: 300px">
 
 [Image Source](https://www.simplypsychology.org/cognitive-therapy.html)
 
@@ -229,7 +324,7 @@ For me, knowing that thoughts, behavior and emotions are interconnected helps.
 - Sometimes trying to process emotion doesn't work because the underlying belief is the cause of the problem. At that time, cognitive reframe has helped me.
 - Similarly specially with anxiety, changing behaviors such as decided not to take a decision late at nights or when I am sleepy has really helped.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Jz55Uk9EH6U?si=DUdy2No7AJHN97Sh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/Jz55Uk9EH6U?si=DUdy2No7AJHN97Sh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 3.2 Dialectic Behaviour Theraphy (DBT)
 
@@ -237,19 +332,24 @@ The `Radical Acceptance` tool that I have talked about earlier comes from the di
 
 DBT has a whole module called Distress Tolerance that can help is managing emotions.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hDJi86n9-Rk?si=0PCYP99-nMco_-8m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/hDJi86n9-Rk?si=0PCYP99-nMco_-8m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 4. How I typically process emotions (mainly trauma)
 
+The place I have learned to mainly "Process my Emotions" is the following video:
+
+<iframe  src="https://www.youtube.com/embed/7AywxObPgeM?si=PeOuXm433G8ht2In" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 I combine a lot of tools and techniques mentioned above. When I was learning the techniques I used to do it consciously. Now it's much more automatic.
 
-I always observe my mind and body to how it's feeling.
+1. I always observe my mind and body to how it's feeling.
+- At first I didn't know what I was feeling so, I would look at emotion wheel or use [How We Feel](https://howwefeel.org/) app.
+- Sometimes I would also assume I am not doing okay
+  - For example, if I wasn't able to focus for a few hours or I had tears in my eyes, I would ask myself if I am doing okay.
 
-TODO: mention that in initial days you needed to look at emotion wheel or use the How we feel app.
-
-1. If I think I have a cognitive distortion cuz as catastrophizing I'll ask myself counter questions.
-2. If I think I am having some kind of dissonance, I'll try to think through and cover the range of thought.
-3. If I have a lot of older sadder memories or trauma. If I observe myself skipping time. Or suddenly crying.
+2. If I think I have a cognitive distortion cuz as catastrophizing I'll ask myself counter questions.
+3. If I think I am having some kind of dissonance, I'll try to think through and cover the range of thought.
+4. If I have a lot of older sadder memories or trauma. If I observe myself skipping time. Or suddenly crying.
 
 - I'll assume it's some trauma or sadness. I try to feel my body (i.e. a form of RAIN method)
 - If needed I'll follow it up with journaling.
@@ -258,14 +358,12 @@ TODO: mention that in initial days you needed to look at emotion wheel or use th
 - Typically in a day or two I'll be fully fine not even recalling what was making me sad. Or if I do recall, that even will be `desensitized`.
 - Initially, I only journaled about my feelings and events. Now, I mostly combine with cognitive reframe at the end. (cognitive reframing is a kind of thought-based coping mechanism.)
 
-4. In case I am not able to think through the sadness,
+5. In case I am not able to think through the sadness,
 
 - I'll use EFT which can help me think clearly.
 
-5. If I am not able to be in control which used to happen when I was in deep depression,
-1. I'll try to consciously distract myself for a little bit a few hours (i.e. avoidance-based) but in a day or two automatically revisit and try to process with one of the ways
-
-Mention TODO: I also used to use [How we feel](https://howwefeel.org/) app which helped me developed deep emotional awareness.
+6. If I am not able to be in control which used to happen when I was in deep depression,
+7. I'll try to consciously distract myself for a little bit a few hours (i.e. avoidance-based) but in a day or two automatically revisit and try to process with one of the ways
 
 ## 5. My progress
 
@@ -273,9 +371,9 @@ Mention TODO: I also used to use [How we feel](https://howwefeel.org/) app which
 - Once all the **major** things were resolved, I found there was nothing to process. So, I happened to take a few months break.
 - Then a few **medium** things appeared. Which I processed.
 - Later some really tiny things.
-- And now almost **negligible** things.
+- And now almost **negligible/nano** things.
   - I still do the process. I don't want backlog to grow and I would like to always have my mental clarity.
-  - Though mostly I don't need to do journal or EFT.
+  - Though mostly I don't need to do journal or EFT. But when required I do use them.
   - I am in touch with my body and mind all the time and can detect any disturbance ASAP and do a quick RAIN or cognitive reframe.
 
 ## 6. Ending: What to do next?
@@ -315,7 +413,7 @@ And have no new backlog. It's one thing to have problems from the past. But it's
 
 I hope this blog post served you and gave you my perspective on the insights I have learned. I am grateful for many of my friends,  [my therapist](https://in.linkedin.com/in/ishita-kulkarni-520381166?trk=public_post_feed-actor-name), and many many internet resources especially Dr. Kanoj and Dr. Ramini who supported me during my difficult times. No amount of thanks is going to cut it. 🙂
 
-This blog post doesn't cover the topic of thinking rational thoughts cognitive reframing and spirituality. Cognitive reframing can cement your emotional healing and make it complete. And seeking and understanding spiritual concepts from Shreemad Bhagwad Gita has been my main gateway for a lot of cognitive regrame. I'll be writing a blog post on it soon. (TODO)
+This blog post doesn't cover the topic of thinking rational thoughts cognitive reframing and spirituality. Cognitive reframing can cement your emotional healing and make it complete. And seeking and understanding spiritual concepts from Shreemad Bhagwad Gita has been my main gateway for a lot of cognitive reframe.
 
 From whatever you are going through. May you find the strength and techniques that can help you navigate this mental terrain! Wishing you all the best!
 
