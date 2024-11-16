@@ -5,7 +5,8 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "unifiedjs.vscode-mdx",
-    "davidanson.vscode-markdownlint"
+    "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one"
   ],
   "unwantedRecommendations": []
 }

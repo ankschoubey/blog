@@ -18,6 +18,7 @@
     "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.markdownlint": true
-  }
+    "source.fixAll.markdownlint": "explicit"
+  },
+  "markdown.extension.completion.root": "/src/public/"
 }
