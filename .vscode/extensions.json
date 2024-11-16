@@ -6,7 +6,10 @@
     "esbenp.prettier-vscode",
     "unifiedjs.vscode-mdx",
     "davidanson.vscode-markdownlint",
-    "yzhang.markdown-all-in-one"
+    "yzhang.markdown-all-in-one",
+    "janschulte.better-seo",
+    "vsc-zoctarine.markdown-fiction-writer",
+    "andyhuzhill.typewriterscrollmode"
   ],
   "unwantedRecommendations": []
 }

@@ -63,6 +63,8 @@ tags:
     - technical
     - non-technical
 publishDate: $current_date
+gpt: chatgpt url
+trello: ""
 ---
 EOF
 
