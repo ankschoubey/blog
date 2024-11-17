@@ -65,6 +65,8 @@ tags:
 publishDate: $current_date
 gpt: chatgpt url
 trello: ""
+seo_keywords: 
+seo_descriptions: 
 ---
 EOF
 
