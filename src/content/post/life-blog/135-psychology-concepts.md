@@ -18,21 +18,34 @@ image: /images/life-blog/psychology-concepts.jpg
   }
 </style>
 
+## Why learn these hard sounding words? (Spoiler: The actual concepts are very simple.)
+
 I really wanted to write a series of blog posts on how I process my emotions. The problem is writing such a series is really hard given there are so many concepts.
 
-I am no psychologist and if you are suffering from mental illness [you should approach one](/optimism/why-therapy).
+**I am no psychologist** and if you are suffering from a mental illness [you should really approach one](/optimism/why-therapy).
 
 At the same time, I believe you should learn the psychological concepts well cuz they give a deeper understanding of how you work and also how others work.
 
-Below I describe a few concepts and provide a few resources. In general, learn this concept in detail from a video or blog by psychologists. A lot of these concepts were introduced to me by [my therapist](https://in.linkedin.com/in/ishita-kulkarni-520381166?trk=public_post_feed-actor-name).
+I have observed people attending theraphy but not learning these concepts continue to face the same issues.
 
+What you'll gain by learning these concepts is that you can choose your own adventure in exploring and understanding your own self and healing better. It's like you didn't know how to read and suddently you have the tools and language to read, understand and implement.
 
+A common complain is this is too hard. Life is simple. Why make it complicated by knowing these hard sounding words.
+
+In practice I have found
+
+1. **Learning these is easy**! The concepts are pretty simple and specially interesting if you are trying to understand yourself. Plus, it's a one time thing. Once you know the gist of these you may dive deeper into particular topics.
+2. We often suffer because we don't understand. Once we start understanding things become easier.
+
+Below I describe a few concepts and provide a few resources. You can learn this concept in detail from a video or blog by psychologists. A lot of these concepts were introduced to me by [my therapist](https://in.linkedin.com/in/ishita-kulkarni-520381166?trk=public_post_feed-actor-name).
 
 **It's possible to learn these skills and learn to be a more stable-minded and free person**. Think of this blogpost as a gateway to some of these concepts that you can put into your mental toolkit. As time goes on, adapt and develop some of your own.
 
-## Read this inject and then jump around
+Also, note the things I describe aren't exhaustive, there are still things I discover, learn from YouTube/Blogs or sometimes even connect with my therapist if I am not able to process myself. I am always trying to fill gaps and process deeper emotions which requires more study.
 
-This blogpost includes a lot of details so jump around and watch the recommended videos you find interesting.
+## How to Read this Blogpost: Read this index and then jump around
+
+This blogpost includes a lot of details so jump around and watch the recommended videos you find interesting. Also, this includes some terms to search and learn more from. This are marked as `this`. For example, `cognitive distortion`. You can search YouTube or Google for these phrases.
 
 If you wanna start with one watch the video in the journal or "How I process my emotions" section.
 
@@ -42,7 +55,7 @@ If you wanna start with one watch the video in the journal or "How I process my 
 - **1.2 Defense Mechanisms**: Brain/Ego trying to protect itself.
 - **1.3 Cognitive Dissonance**: State where the brain cannot make sense of two counter truths
 - **1.4 Coping Mechanisms**: Your toolbox for processing emotions
-- **1.5 Stress Response:** Fight Flight Freeze Fawn
+- **1.5 Nervious System and Regulation:** Fight Flight Freeze Fawn
 - **1.6 Trauma**: Body/Mind acts like it's under stress based on something that happened a long time ago which isn't present now
 
 2. Useful Psychology Tools
@@ -67,7 +80,7 @@ If you wanna start with one watch the video in the journal or "How I process my 
 
 #### Splitting facts from emotions
 
-- Cognitive Distortions are biases of our brain where your brain feels your emotions are valid and tell something about the real world when in reality you don't have evidence.
+- `Cognitive Distortions` are biases of our brain where your brain feels your emotions are valid and tell something about the real world when in reality you don't have evidence.
 - If you have lots of cognitive distortions in a fixed period, or have a high intensity of it, you are likely to get depressed.
 - Cognitive distortions can be broken by asking counter questions and answering them which can lead to deeper realizations of reality.
 - Some types of Cognitive Distortions are:
@@ -88,16 +101,18 @@ If you wanna start with one watch the video in the journal or "How I process my 
 
 #### Brain/Ego trying to protect itself
 
-- Defense Mechanisms are the brain's way of trying to protect itself in an unhealthy way.
+- `Defense Mechanisms` are the brain's way of trying to protect itself in an unhealthy way.
 - Some types of Defense Mechanisms are:
   - **Sublimation**
     - Eg: Consciously or unconsciously
-  - Projection
+  - **Projection**
     - Eg: You make others panic when you are in panic.
 - A part of healing emotionally is to learn to come across a similar situation and now have your defense mechanisms fired up.
 - It can be helpful to know these as they can help you identify behaviors in yourself.
 
-### 1.3 **Cognitive Dissonance**
+Read more at: [Defense Mechanisms in Psychology Explained (+ Examples)](https://positivepsychology.com/defense-mechanisms-in-psychology/)
+
+### 1.3 **`Cognitive Dissonance`**
 
 #### State where the brain cannot make sense of two counter truths
 
@@ -115,7 +130,7 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
 
 #### Your toolbox for processing emotions
 
-- Coping mechanisms are ways to deal with emotional troubles.
+- `Coping mechanism`s are ways to deal with emotional troubles.
 - They can be categorized into 5 parts
   - **Emotional**
     - Trying to work on the emotions.
@@ -149,10 +164,21 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
   - Read this list of coping mechanisms choose a few and practice. See what works.
     - [10+ Coping Skills Worksheets for Adults and Youth (+ PDFs)](https://positivepsychology.com/coping-skills-worksheets/)
 
-### 1.5 **Stress Response: Fight Flight Freeze Fawn**
+### 1.5 Nervous System Regulation and Stress Responses
 
-- Apart from Defense Mechanisms there are common responses when we are threatened.
-- Our brain assumes we are around a physical danger and can respond with one of these:
+`Nervous system` is a brain system that either makes you relaxed or have a heightened awareness.
+
+We have two types of nervous system responses:
+
+- `Parasympatethic`: relaxed.
+- `Sympathetic`: stressed.
+
+The sympathetic response could be one of the following.
+
+Apart from Defense Mechanisms there are common responses when we are threatened.
+
+When our brain assumes we are around a physical danger and can respond with one of these:
+
 - **Fight**:
   - Blood supply shifts from the brain and digestion to the legs and heart making heart rate increase.
   - Body is ready to fight.
@@ -167,11 +193,15 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
 
 <iframe src="https://www.youtube.com/embed/OP6SXMr-6_g?si=h1ySzaPb-JA1ZXMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+In nature, sympathetic nervous system is activated for small bursts. (for example: when you see a Tiger and need to run.). But in our modern world small problems which are not life threatning can be interpretted by body as a strength. This can cause `Nervous System Dysregulation` i.e. even if no treat exists the body feels like it's under stress.
+
+What we need to learn to do is learn to regulate our nervous system better. And if we have a dysregulated nervous system, focus on `healing our nervous system`.
+
 ### 1.6 **Trauma**: Most Important Topic
 
 #### Body/Mind acts like it's under stress based on something that happened a long time ago which isn't present now
 
-- Trauma can be harder to identify. It's the great chameleon of mental illness because it can manifest as many things.
+- `Trauma` can be harder to identify. It's the great chameleon of mental illness because it can manifest as many things.
 
 1. **Chronic Depression:** Someone depressed their whole life.
 2. **Impulsivity** or Lack of unifying direction.
@@ -189,7 +219,7 @@ For example, assume you had a 10-year friendship but your friend suddenly turned
 
 <iframe  src="https://www.youtube.com/embed/8TkbP4XfggM?si=03TvC-oMvue12a5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-After watching  [read my notes](/life-blog/deep-dive-trauma) for revision.
+After watching [read my notes](/life-blog/deep-dive-trauma) for revision.
 
 There is also something called as **Generational Trauma** which is something passed on from family members to younger children. For this I would recommend watching [Dr. Ramini's channel](https://www.youtube.com/@DoctorRamani).
 
@@ -197,18 +227,42 @@ An aspect of trauma which doesn't get talked about often is experiencing malevol
 
 ## 2. **Useful Psychology Tools**
 
-### 2.1 **Emotion Trackers**
+### 2.1 Most Important: Learning to Feel your Emotions
 
-- This will help you identify emotions better
-- It's a diagram that can help you identify your emotions.
-- This is useful to know as a concept even if you don't use it regularly.
-- Recommended blog
+`How to feel emotions` is probably the most important skill you need to learn. This can help you how emotions are affecting you, changing, choose appropriate response rather than react and also feel safe.
 
-I also used to use [How we feel](https://howwefeel.org/) app which helped me developed deep emotional awareness.
+Try to feel about how you are feeling right now and try to get deeper into it. It's easier if you can verbalize how you are feeling.
 
-### 2.2 **RAIN method for Radical Acceptance**
+Here's a sample of how I would feel my emotion and verbalize it. Assume I am facing a difficult emotion. Mostly I would close my eyes and think
 
-- Radical Acceptance is acceptance of emotions and allowing ourselves to feel the emotion without judgment.
+> This feel panic.
+> I am feeling uncomfortable somewhere in my head. near my forehead. It's like a tangled thread ball. It hurts.
+> Also, I feel a slight pressure in breathing near my mouth.
+
+In my experience, most smaller emotions will get auto-processed when you just allow yourself to feel. Also, there is no alternative to not feeling your emotions long term.
+
+The other techniques work to extend this core skill of feeling your feelings.
+
+### 2.2 **Labeling emotions**
+
+Labeling your emotions like Anger, Sadness, etc can help you understand the nature of how you feeling and process better. The more detailed you can be the better it is.
+
+Eventually, you'll be able to understand your emotional state in an instant.
+
+This will allow you to seek help easily. When you can describe how you feel better, it's easier to ask a therapist for the exact help you need or search with the right terms on YouTube/Google.
+
+Some emotions require special form of processing, which means the techniques would change a little. In my case I recognized,
+
+- Trauma: Requires more feeling of feeling in the moment, thinking things through.
+- Anxiety: Requires trauma processing paired with long term mindset change.
+- Anger: Requires more looking behind the anger for core feelings and then processing it and letting go in some cases.
+- Fears: Requires gradual exposure theraphy.
+
+When I was starting out, I relied most on [How we feel](https://howwefeel.org/) app for this. But you could also use an `emotion wheel`.
+
+### 2.3 **RAIN method for Radical Acceptance**
+
+- `Radical Acceptance` is acceptance of emotions and allowing ourselves to feel the emotion without judgment.
 - This can teach our body to be okay with emotions and that feeling bad is okay.
 
 To know why the importance of acceptance watch:
@@ -222,19 +276,22 @@ To know why the importance of acceptance watch:
   - Investigate with care
   - Nurture with self-compassion
 
-Here's the technique: 
+Here's the technique:
 
 <iframe src="https://www.youtube.com/embed/AgoZGt1bgVw?si=73Mo6oEgtoADThZN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### 2.3 **EFT**: Emotional Freedom Technique
+The most important thing in RAIN is learning to feel. I'll explain this further in the next section.
 
-- EFT/Tapping is tapping at a specific part of your body like your forehead.
-- If there
+### 2.4 **EFT**: Emotional Freedom Technique
+
+- `EFT`/Tapping is tapping at a specific part of your body like your forehead.
+- Recently, EFT has been my most used technique to process emotions.
+- When we are stressed, the mind tends to jump on defense mechanisms. Part of healing is to allow the mind to stay with the thought/emotion without defense mechanisms being activated. In EFT, because we are physically tapping parts of our body, the brain gives more important to this physical aspect and so, when we think in such a state, we can think things through without defense mechanism being activate. This cause the brain to become desensitized i.e the next time we happen to think about the same thing, it won't trigger the same emotions.
 - Recommended video
 
 <iframe src="https://www.youtube.com/embed/rE3pcyfqCtA?si=kPCz8pFCFcySVOb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### 2.4 **Journaling** your emotions
+### 2.5 **Journaling** your emotions
 
 Typing or writing down how you are feeling can help you get over your cognitive dissonance and emotional troubles much faster.
 
@@ -246,7 +303,7 @@ I used journalling the most to process my emotions.
 
 ### 2.5 Cognitive Reframing
 
-Cognitive Reframing is a top level coping mechanism. I use it all the time.
+`Cognitive Reframing` is a top level coping mechanism. I use it all the time.
 
 For me the first step is always RAIN (radical acceptance) of my emotion followed by a combination of Journaling or Cognitive Reframe.
 
@@ -305,7 +362,7 @@ I believe I use socratic questioning much more unconsciously now.
 
 Psychology is mostly divided into modules. And it can be interesting to look at different models to increase your knowledge futher.
 
-**The truth is I haven't looked deep enough**. I know things on the surface of these modules. And it has been so long that I have forgotten most of it. I'll visit them if and when need arises. What I would recommended is just search bout these concepts on YouTube and gain a general understanding of it.
+**The truth is I haven't looked deep enough**. I know things on the surface of these modules. And it has been so long that I have forgotten most of it. I'll visit them if and when need arises. What I would recommended is just search about these concepts on YouTube and gain a general understanding of it.
 
 Each module introduces a varity of techniques.
 
@@ -313,7 +370,7 @@ I have touched upon two schools during my theraphy sessions.
 
 ### 3.1 Cognitive Behavioral Theraphy (CBT)
 
-CBT is based on a premis that emotions are connected to behavior and thoughts and influencing one of those can impact the other.
+`CBT` is based on a premis that emotions are connected to behavior and thoughts and influencing one of those can impact the other.
 
 <img src ="https://www.simplypsychology.org/wp-content/uploads/CBT.jpg" style="max-width: 300px">
 
@@ -343,6 +400,7 @@ The place I have learned to mainly "Process my Emotions" is the following video:
 I combine a lot of tools and techniques mentioned above. When I was learning the techniques I used to do it consciously. Now it's much more automatic.
 
 1. I always observe my mind and body to how it's feeling.
+
 - At first I didn't know what I was feeling so, I would look at emotion wheel or use [How We Feel](https://howwefeel.org/) app.
 - Sometimes I would also assume I am not doing okay
   - For example, if I wasn't able to focus for a few hours or I had tears in my eyes, I would ask myself if I am doing okay.
