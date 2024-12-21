@@ -60,10 +60,11 @@ If you wanna start with one watch the video in the journal or "How I process my 
 
 2. Useful Psychology Tools
 
-- **2.1 Emotion Wheel**
-- **2.2 RAIN method for Radical Acceptance**
-- **2.3 Journaling**
-- **2.4 EFT**
+- **2.1 Most Important: Learning to Feel Your Emotions**
+- **2.2 Emotion Wheel**
+- **2.3 RAIN method for Radical Acceptance**
+- **2.4 Journaling**
+- **2.5 EFT**
 
 3. Schools of Psychology
 
@@ -227,7 +228,7 @@ An aspect of trauma that doesn't get talked about often is experiencing malevole
 
 ## 2. **Useful Psychology Tools**
 
-### 2.1 Most Important: Learning to Feel Your Emotions
+### 2.1 Most Important: **Learning to Feel Your Emotions**
 
 `How to feel emotions` is probably the most important skill you need to learn. This can help you understand how emotions are affecting you, choose appropriate responses rather than react, and also feel safe.
 
