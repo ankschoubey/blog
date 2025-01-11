@@ -71,3 +71,5 @@ seo_descriptions:
 EOF
 
 echo "New blog post created: $new_filepath"
+
+code $new_filepath
