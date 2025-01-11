@@ -118,7 +118,7 @@ Note how we always use `private final`. We could remove it useing an experimenta
 
 By default the fieldsDefault is declared like this
 
-```
+```java
 @FieldDefaults(access=PRIVATE, makeFinal=true)
 public class OrderService
 ```
