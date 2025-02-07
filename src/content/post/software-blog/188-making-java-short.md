@@ -10,7 +10,7 @@ publishDate: 2025-01-11T20:49:37.015737
 gpt: chatgpt url
 trello: ""
 seo_keywords: 
-seo_descriptions: 
+seo_descriptions:  s
 ---
 
 Our code is pretty big, even though in reality they only do a small thing.
