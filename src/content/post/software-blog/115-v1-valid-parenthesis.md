@@ -2,9 +2,9 @@
 comments: true
 excerpt: God-level solution - iterate.<br>If an opening bracket is found, put the closing bracket in a stack.<br>If the closing bracket is found, pop and check for equality.
 tags:
- - technical
- - algorithm-problems
- - stack
+  - technical
+  - algorithm-problems
+  - stack
 publishDate: 2022-11-06T20:52:08.052481
 last-modified-purpose:
 slug: /v1/valid-parentheses
@@ -44,11 +44,11 @@ class Solution {
                 stack.addLast(c);
                 continue;
             }
-                        
+
             if(stack.size()==0){
                 return false;
             }
-            
+
             Character top = stack.removeLast();
             if(c == ']' && top!='['){
                 return false;
@@ -76,7 +76,8 @@ iterate. if an opening bracket is found, put the closing bracket in a stack. if 
 
 > same 9 years education, why are u outstanding ?
 
-> 
+>
+
 ```java
 boolean isValid(String s) {
   if ((s.length() & 1) == 1) return false;

@@ -2,8 +2,8 @@
 comments: true
 excerpt: A cartoon can teach you about importance of self-discovery, aligning with one's conscience, and facing challenges voluntarily.
 tags:
- - non-technical
- - truth
+  - non-technical
+  - truth
 publishDate: 2023-12-10T20:52:08.052481
 last-modified-purpose:
 slug: /v1/truth/pinocchio
@@ -34,7 +34,7 @@ And to help him along the path, he was gifted a conscience. Gemini The Cricket. 
 
 To become a complete boy, Pinnocheo would have to listen to his conscience and choose the path of being selfless, honest and courageous. If he does all these, he'll become a complete boy one day.
 
-Fairy wishes the best of luck to both Pinnocheo and the conscience. 
+Fairy wishes the best of luck to both Pinnocheo and the conscience.
 
 {%- include lesson.html content="Both a person and conscience take a journey together. i.e. they both learn and grow with time and experience." -%}
 
@@ -62,21 +62,21 @@ Honest John sees Pinocchio as a gold mine and takes advantage of him. #goldDigge
 
 {%- include lesson.html content="sometimes people see you as a gold mine, so they decide to take advantage of you." -%}
 
-He traps Pinocchio and eats the apple that was given to him by his father. Pinocchio doesn't even get concerned with his apple being eaten away. Honest John is acting too well. Pinocchio thinks he is a good man. 
+He traps Pinocchio and eats the apple that was given to him by his father. Pinocchio doesn't even get concerned with his apple being eaten away. Honest John is acting too well. Pinocchio thinks he is a good man.
 
 {%- include lesson.html content="People with Malavelant intent work Charmly. No one acts dishonestly in front of you. Until you are away from all drama and can exclude a person's charm to look at their action, you will stay trapped." -%}
 
-Then Honest John entices him to become an actor. He says he'll be world famous. Pinocchio has the awareness that he needs to go to school, but eventually, after Honest Johns's persistence, he gets enticed. And goes along with Honest John. Happily, 
+Then Honest John entices him to become an actor. He says he'll be world famous. Pinocchio has the awareness that he needs to go to school, but eventually, after Honest Johns's persistence, he gets enticed. And goes along with Honest John. Happily,
 
 {%- include lesson.html content="We are happy even if we don't realize we are going to lose. And sometimes we are too satisfied. Maybe if it sounds too good to be true, it is." -%}
 
 His conscience suddenly sees Pinocchio and Honest John walking and singing happily. He slowly goes to Pinocchio while avoiding honest John, trying to hint at him. You had to go to the school.
 
-Pinocchio sees Gemini (conscience) and reveals to Honest John that he is there. The first thing honest John tries to do is get rid of Gemini. 
+Pinocchio sees Gemini (conscience) and reveals to Honest John that he is there. The first thing honest John tries to do is get rid of Gemini.
 
 {%- include lesson.html content="People who are evil start first by taking away your autonomy. Avoid that." -%}
 
-Gemini Cricket manages to get rid of Honest John and talks of Pinocchio when he is alone. Gemini rarely talks in front of other people except the fairy. In front of others, especially people he thinks are doing wrong. Here, the sprite could be equated to god. 
+Gemini Cricket manages to get rid of Honest John and talks of Pinocchio when he is alone. Gemini rarely talks in front of other people except the fairy. In front of others, especially people he thinks are doing wrong. Here, the sprite could be equated to god.
 
 {%- include lesson.html content="Your conscience talks to you when you allow for some silence." -%}
 
@@ -118,7 +118,7 @@ To get out of darkness, Pinnocheo did not use brute force. He doesn't have the s
 
 We should, too. We often can't attack the whale directly; we must be smart about it. Look around us. Be humble to use things that we didn't use before and ask for help about things from people we have never asked before. And do our best even if we don't know enough.
 
-Finally, Pinocchio and his father get out of the whale's belly. The whale chases them even after for some time. But they can protect themselves enough so they don't get eaten again. 
+Finally, Pinocchio and his father get out of the whale's belly. The whale chases them even after for some time. But they can protect themselves enough so they don't get eaten again.
 
 {%- include lesson.html content="Once you get out of darkness, it's not like it's all bright instantly. You must solidify the light so that darkness doesn't get over you. The best way to do this is to understand it fully and transcend it 🙂." -%}
 
@@ -132,7 +132,7 @@ He saved his father from the belly of the whale. He exercised courage despite ma
 
 Eventually, he becomes a real boy. This can be thought of as he entirely fulfilled his potential.
 
-***
+---
 
 By following some of his examples, we can fulfill our potential too. 💎🙂
 
@@ -140,7 +140,7 @@ If you haven't watched Pinocchio. I recommend you do, and if you have watched it
 
 Is there any other movie you know that's similar and philosophical?
 
-***
+---
 
 More lessons:
 

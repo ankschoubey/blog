@@ -1,9 +1,9 @@
 ---
 excerpt: For consumers
-title: "Just buy it. Don’t build it yourself."
+title: 'Just buy it. Don’t build it yourself.'
 comments: true
 tags:
- - business
+  - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.292983
 slug: /life-blog/just_buy/
@@ -18,6 +18,7 @@ If a product already exists, don’t build it yourself from scratch.
 I got excited by Rasberry Pi and Arduino boards a couple of years ago.
 
 I bought them all and built:
+
 - “Smart” switchboard which I can control from my phone.
 - A retro raspberry pi gaming setup with an old ps3 controller.
 

@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - decision-making
- - truth
- - observability
+  - decision-making
+  - truth
+  - observability
 publishDate: 2022-08-13T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/data-driven-decisions/
@@ -12,9 +12,9 @@ title: Towards Data Driven Decisions
 toc: false
 ---
 
-# What are Data Driven Decisions? 
+# What are Data Driven Decisions?
 
-Data-Driven decisions are the ability to formulate and make decisions out of the data from the real world. 
+Data-Driven decisions are the ability to formulate and make decisions out of the data from the real world.
 
 # Why am I interested in Data Driven Decisions?
 
@@ -37,12 +37,14 @@ Data-driven decisions can be totally quantity or qualitative.
 Qualitative decisions can be converted to qualitative if they are in the form of a questionnaire.
 
 Qualitative:
-- Agile Maturity 
+
+- Agile Maturity
 
 Quantitative:
+
 - DORA
 - Agile Metrics
 - Pomodoros sessions
 
 - Custom
-    - [Tracking progress on Grokking Coding Interview](https://docs.google.com/spreadsheets/d/1YsS40schcRMpdaqmuDj_UhGGv4e0S3N7oDOlrIincpw/edit?usp=sharing)
+  - [Tracking progress on Grokking Coding Interview](https://docs.google.com/spreadsheets/d/1YsS40schcRMpdaqmuDj_UhGGv4e0S3N7oDOlrIincpw/edit?usp=sharing)

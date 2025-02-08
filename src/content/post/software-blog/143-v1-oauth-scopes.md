@@ -1,12 +1,12 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - security
- - oauth
+  - technical
+  - security
+  - oauth
 publishDate: 2023-02-01T20:52:08.052481
-last-modified-purpose: 
+last-modified-purpose:
 slug: /v1/oauth-scopes
 title: Defining Scopes for your OAuth Service
 toc: false

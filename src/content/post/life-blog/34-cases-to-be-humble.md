@@ -1,20 +1,21 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - responsibility
- - social-harmony
+  - philosophical
+  - responsibility
+  - social-harmony
 title: Cases To Be Humble
 slug: /life-blog/humble/
 publishDate: 2021-08-01T20:42:15.643388
 image: /images/life-blog/humble.jpg
 ---
+
 ![](/images/life-blog/humble.jpg)
 
 Photo by <a href="https://unsplash.com/@billjelen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bill Jelen</a> on <a href="https://unsplash.com/s/photos/rocket?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
 You know very little. Collective human knowledge is much larger.
 
 There are people much better than you who believe they don’t know everything. Listen to Elon Musk once and you’ll know.

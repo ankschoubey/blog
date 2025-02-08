@@ -1,13 +1,13 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - testing
- - software-engineering
- - product-development
- - bdd
- - tdd
+  - technical
+  - testing
+  - software-engineering
+  - product-development
+  - bdd
+  - tdd
 publishDate: 2022-08-14T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/writing-better-specs/

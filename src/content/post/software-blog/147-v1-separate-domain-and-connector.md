@@ -2,10 +2,10 @@
 comments: true
 excerpt: Separating connectors from business logic in a service-oriented architecture promotes reusability and single responsibility.
 tags:
- - technical
- - web-development
- - ddd
- - clean-code
+  - technical
+  - web-development
+  - ddd
+  - clean-code
 publishDate: 2023-03-10T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/separate-service/
@@ -25,7 +25,7 @@ But if Service handles rest controller responses, it isn’t very different.
 
 ## An ideal service
 
-![https://docs.google.com/drawings/d/e/2PACX-1vT3KH3qfLmMQ0DDGtQL8uyol8YhCWqBEc1DJxuGJ5vS9gdNxYKf7vkIgb2ETVHrZOocCTJv4kAFDUtU/pub?w=1300&amp;h=740](https://docs.google.com/drawings/d/e/2PACX-1vT3KH3qfLmMQ0DDGtQL8uyol8YhCWqBEc1DJxuGJ5vS9gdNxYKf7vkIgb2ETVHrZOocCTJv4kAFDUtU/pub?w=1300&amp;h=740)
+![https://docs.google.com/drawings/d/e/2PACX-1vT3KH3qfLmMQ0DDGtQL8uyol8YhCWqBEc1DJxuGJ5vS9gdNxYKf7vkIgb2ETVHrZOocCTJv4kAFDUtU/pub?w=1300&h=740](https://docs.google.com/drawings/d/e/2PACX-1vT3KH3qfLmMQ0DDGtQL8uyol8YhCWqBEc1DJxuGJ5vS9gdNxYKf7vkIgb2ETVHrZOocCTJv4kAFDUtU/pub?w=1300&h=740)
 
 Here’s how you separate connectors from the business logic.
 

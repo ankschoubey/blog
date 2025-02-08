@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Guidelines for generating clean, unique ID fields from composite attributes to enhance application maintainability and scalability, using encapsulated functions and semantically meaningful IDs.' 
+excerpt: 'Guidelines for generating clean, unique ID fields from composite attributes to enhance application maintainability and scalability, using encapsulated functions and semantically meaningful IDs.'
 tags:
- - technical
- - clean-code
- - indexes
+  - technical
+  - clean-code
+  - indexes
 publishDate: 2024-03-28T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/map-index-guideline/
@@ -52,16 +52,16 @@ While working, you'd often have to extend this key value map and add more fields
 **Bad**
 
 ```typescript
-const movies = {}
-const saveMovie = (movie: Movie)=>{
- const key = movie.year + ":" + movie.name;
- movies[key] = movie;
- return movie;
-}
+const movies = {};
+const saveMovie = (movie: Movie) => {
+  const key = movie.year + ':' + movie.name;
+  movies[key] = movie;
+  return movie;
+};
 const findMovieByYearAndName = (year: string, name: string) => {
- const key = year + ":" + name;
- return movie[key]
-}
+  const key = year + ':' + name;
+  return movie[key];
+};
 ```
 
 In the above code, if the key generation is changed, we'd have to change it everywhere manually.
@@ -69,17 +69,17 @@ In the above code, if the key generation is changed, we'd have to change it ever
 **Good**
 
 ```typescript
-const movies = {}
-const movieKeyGen = (year: string, name: string) =>{
- return year + ":" + name;
-}
-const saveMovie = (movie: Movie)=>{
- movies[movieKeyGen(movie.year, movie.name)] = movie;
- return movie;
-}
+const movies = {};
+const movieKeyGen = (year: string, name: string) => {
+  return year + ':' + name;
+};
+const saveMovie = (movie: Movie) => {
+  movies[movieKeyGen(movie.year, movie.name)] = movie;
+  return movie;
+};
 const findMovieByYearAndName = (year: string, name: string) => {
- return movies[movieKeyGen(year, name)]
-}
+  return movies[movieKeyGen(year, name)];
+};
 ```
 
 In the above code, we'll get an instant compile time error when new arguments are added to `movieKeyGen`.

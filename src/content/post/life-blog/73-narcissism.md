@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: Everyone has snakes. We have it too. 
+excerpt: Everyone has snakes. We have it too.
 tags:
- - psychology
- - philosophy
- - non-technical
- - social-harmony
+  - psychology
+  - philosophy
+  - non-technical
+  - social-harmony
 publishDate: 2022-08-18T20:52:08.052481
 last-modified-purpose: added points on controlling aggression
 slug: /life-blog/narcissism/
@@ -13,7 +13,7 @@ title: We are all narcissist!
 image: /images/life-blog/narcissism.jpg
 toc: false
 ---
-  
+
 ## What is narcissistic?
 
 Narcissism is a high form of selfishness wrapped in moral virtue.
@@ -65,7 +65,6 @@ Narcissism is a form of insecurity. It can be fear of abandonment.
 Snakes are beautiful creatures that go about their business. Abstractly they are related to something that can bite and cause harm. We also have snakes of insecurity that manifest as different tendencies.
 
 Photo by <a href="https://unsplash.com/@sippakorn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sippakorn yamkasikorn</a> on <a href="https://unsplash.com/photos/YrUvoXDQuW0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
 
 ## How can we be less narcissistic?
 

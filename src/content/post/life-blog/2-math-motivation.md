@@ -1,15 +1,14 @@
 ---
-excerpt: Placeholder 
+excerpt: Placeholder
 title: Math motivation
 comments: true
 tags:
- - collection-of-thoughts
+  - collection-of-thoughts
 use_math: true
 publishDate: 2020-05-04T20:42:15.193139
 slug: /life-blog/maths-motivation
 image: /images/life-blog/maths-motivation.jpg
 ---
-
 
 <sup>Photo by <a href="https://unsplash.com/@thisisengineering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ThisisEngineering RAEng</a> on <a href="https://unsplash.com/s/photos/maths?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>
 
@@ -19,7 +18,7 @@ I have been collecting a lot of notes on the topic for the last 6-8 months and r
 
 This should be a good time to publish the list and see how things evolve.
 
-* * *
+---
 
 ## Maths is a language that applies to the real world
 
@@ -31,7 +30,7 @@ Perhaps we can think, teach, and learn like it’s natural.
 
 ### It is the same for everyone
 
-* * *
+---
 
 ## Maths is everywhere. Even if you don’t notice.
 
@@ -41,40 +40,40 @@ You have to learn it once and use it everywhere.
 
 Plus you can learn it from anywhere.
 
-* * *
+---
 
 ## Emphasis on maths from home 🏡[^1]
 
 People in Spanish class who come from 🏡s where Spanish is spoken are going to be better from day one☝️ . 🧮 is the same.
 
-* * *
+---
 
 ## Maths is useful and fun
 
 ### It makes you more popular.
 
-*   It is cool when others are silently looking for their calculator and you just say the answer.
+- It is cool when others are silently looking for their calculator and you just say the answer.
 
 ### Run the numbers! [^3]
 
-*   You can verify a lot of facts by just running the calculating things in your head.
+- You can verify a lot of facts by just running the calculating things in your head.
 
 ### Maths Is a Playground [^4]
 
 if you stop✋🏽 and look 👀.
 
-*   You can explore the patterns on 🌊 🐚.
-*   Play with tiles and shapes.
-*   Categories objects in bizarre and creative ways.
-*   Do puzzles 🧩.
-*   Do origami.
-*   Study the patterns in music 🎶.
-*   Study the structure of trees🌳s.
-*   🎨. 🧶.
-*   Create secret codes.
-*   Program 🖥.
+- You can explore the patterns on 🌊 🐚.
+- Play with tiles and shapes.
+- Categories objects in bizarre and creative ways.
+- Do puzzles 🧩.
+- Do origami.
+- Study the patterns in music 🎶.
+- Study the structure of trees🌳s.
+- 🎨. 🧶.
+- Create secret codes.
+- Program 🖥.
 
-* * *
+---
 
 ## Math is reasoning not memorizing or speed
 
@@ -88,7 +87,7 @@ There is no single right way to solve it.
 
 ### Maths is boring when it is taught incompletely [^6]
 
-aka *we* know only a handful of processes
+aka _we_ know only a handful of processes
 
 Processes are like cookbook knowledge 👨‍🍳📖
 
@@ -102,27 +101,28 @@ Knowing the processes is important but does not make you good at maths.
 2.  ​**Operations (**​Arithmetic; all others are derived from them)
 3.  **Laws** (applies to all numbers)
 
-*   Commutative
-*   Associative
-*   Distributive
-*   Identity
+- Commutative
+- Associative
+- Distributive
+- Identity
 
 If you know these ​**you can construct the process on the fly**​.
 
-* * *
+---
 
 ## When learning Maths
 
 ### Bring your ✍🏽 pen and 📝 paper [^5]
 
-###  Maths becomes hard when you move away from the real 🌎 and abstract it *beyond recognition*. [^9]
+### Maths becomes hard when you move away from the real 🌎 and abstract it _beyond recognition_. [^9]
 
 ### Like any problem, you can sleep on numbers.
+
 Go away for a while. Rest.
 
 ### Are you studying maths for an exam?
 
-*   Or are you exploring it because it’s fun???
+- Or are you exploring it because it’s fun???
 
 There are advantages to each.
 
@@ -138,7 +138,7 @@ Balance is the key. ⚖️
 
 ### The best way to study math is to have constant exposure to it. [^5]
 
-***
+---
 
 [^1]: [You're Not Bad At Math, You're Just Lazy](https://www.youtube.com/watch?v=tg0Z--pmPog)
 [^2]: [Naval's tweet on Math](https://twitter.com/naval/status/924404740183805953?s=20)
@@ -150,17 +150,19 @@ Balance is the key. ⚖️
 [^8]: [Richard Feynman talks about Algebra](https://www.youtube.com/watch?v=VW6LYuli7VU&feature=share)
 [^9]: [What is Mathematics?](https://www.youtube.com/watch?v=64643Op6WJo)
 [^10]: [Why Math is Important](https://www.youtube.com/watch?v=KX608C2RZek)
-***
+
+---
 
 Unformed Thoughts:
 Math requires
+
 - concentration + focus + patience + feedback + testing
 
 Cultivate a habit of looking at math and make a conscious effort.
 
 Concepts from Clean Code apply to maths to create clean maths. The cleaner your maths is the easier it will be.
 
-Simplify formulas. Most formulas are intuitive and they are not as big when you break them up into their separate formulas. 
+Simplify formulas. Most formulas are intuitive and they are not as big when you break them up into their separate formulas.
 
 Know numbers in all their forms. Variables. Functions.
 
@@ -173,6 +175,5 @@ Most people won't use maths beyond basic arithmetic and aptitude tests. But the 
 Programming is Maths. You just have the computer do the work.
 
 The kind of maths you are likely to use in daily life is arithmetic and once asked in aptitude tests.
-
 
 Learn as you go but study the maths angle early

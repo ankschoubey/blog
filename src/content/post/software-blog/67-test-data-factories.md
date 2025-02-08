@@ -2,10 +2,10 @@
 comments: true
 excerpt: Consolidating object creation, mock of methods and more.
 tags:
- - technical
- - testing
- - clean-code
- - tdd
+  - technical
+  - testing
+  - clean-code
+  - tdd
 publishDate: 2022-05-03T20:52:08.052481
 last-modified-purpose:
 slug: /test-data-factories/
@@ -52,7 +52,7 @@ In tests you initialize each field manually,
 
 ```java
 @Test //TEST 1
-@DisplayName("SHOULD {someAssertion}") 
+@DisplayName("SHOULD {someAssertion}")
 void should{SomeAssertion}(){
     SampleDataClass sampleData = new SampleDataClass("name", "field2", "field3", ...);
 
@@ -60,7 +60,7 @@ void should{SomeAssertion}(){
 }
 
 @Test //TEST 2
-@DisplayName("SHOULD {second Assertions}") 
+@DisplayName("SHOULD {second Assertions}")
 void should{second Assertions}(){
     SampleDataClass sampleData = new SampleDataClass("anotherName", "field2", "field3", ...);
 
@@ -84,7 +84,7 @@ class SampleDataTestFactory{
         }
 
         public static aSampleDataClass(String name){ // this is the only place where class is initialized
-            return new SampleDataClass("name", "field2", "field3", ...); 
+            return new SampleDataClass("name", "field2", "field3", ...);
         }
     }
 }
@@ -100,7 +100,7 @@ So now your tests can look something like this:
 
 ```java
 @Test //TEST 1
-@DisplayName("SHOULD {someAssertion}") 
+@DisplayName("SHOULD {someAssertion}")
 void should{SomeAssertion}(){
     SampleDataClass sampleData = SampleDataTestFactory.Given.aSampleDataClass();
 
@@ -108,7 +108,7 @@ void should{SomeAssertion}(){
 }
 
 @Test //TEST 2
-@DisplayName("SHOULD {second Assertions}") 
+@DisplayName("SHOULD {second Assertions}")
 void should{second Assertions}(){
     SampleDataClass sampleData = SampleDataTestFactory.Given.aSampleDataClass("anotherName");
 

@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - configuration-management
- - release-cycle
+  - technical
+  - configuration-management
+  - release-cycle
 publishDate: 2023-03-30T20:52:08.052481
 last-modified-purpose:
 slug: /v1/release-semantic-versioning
@@ -58,7 +58,7 @@ So here’s what I did,
 
 1. Remove `-SNAPSHOT` from the development snapshot.
 2. if the release is `major`, increment `major` and set `minor` and `patch` to `0`.
-if the release is minor`, set` patch`to`0`
+   if the release is minor`, set` patch`to`0`
 3. If the release is `patch`, do nothing.
 
 Now, the patch version would just be the same as the snapshot with `-`SNAPSHOT` removed.

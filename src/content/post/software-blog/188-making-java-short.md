@@ -4,20 +4,20 @@ excerpt: Thoughts on making Java clear and precise
 slug: /software-blog/making-java-short/
 images: /images/software-blog/making-java-short.png
 tags:
-    - technical
-    - non-technical
+  - technical
+  - non-technical
 publishDate: 2025-01-11T20:49:37.015737
 gpt: chatgpt url
-trello: ""
-seo_keywords: 
-seo_descriptions:  s
+trello: ''
+seo_keywords:
+seo_descriptions: s
 ---
 
 Our code is pretty big, even though in reality they only do a small thing.
 
 I have realized there are two main reason why our codebases are bloat, boilerplate and long variable names.
 
- I have come to a belief that a knowledge of what a mid sized company’s codebase can be merged into a single book.
+I have come to a belief that a knowledge of what a mid sized company’s codebase can be merged into a single book.
 
 I’ll explain how I came to that conclusion and as you’ll see I’m pushing things to their limit but I think it’s doable. In the end this kind of leads to a DSL of sorts.
 
@@ -49,7 +49,7 @@ public class OrderService {
  public OrderResponse processOrderPayment(OrderId orderId, UserId userId, int amount){
   Preconditions.notNull(orderId);
   Preconditions.positive(amount);
-  
+
   final Optional<Payment> recentPayment = paymentService.getRecentPayment(userId, amount);
 
   if(recentPayment.isEmpty()){
@@ -63,7 +63,7 @@ public class OrderService {
 
   final Order savedOrder = orderRepository.save(order);
 
-  return orderMapper.map(savedOrder);  
+  return orderMapper.map(savedOrder);
  }
 }
 ```
@@ -86,12 +86,12 @@ public class OrderService {
  private final PaymentService paymentService;
  private final OrderRepository orderRepository;
  private final OrderMapper orderMapper;
- 
+
  @Transactional
  public OrderResponse processOrderPayment(OrderId orderId, UserId userId, int amount){
   Preconditions.notNull(orderId);
   Preconditions.positive(amount);
-  
+
   val recentPayment = paymentService.getRecentPayment(userId, amount);
 
   if(recentPayment.isEmpty()){
@@ -103,8 +103,8 @@ public class OrderService {
 
   order.amountReceived(amount);
   val savedOrder = orderRepository.save(order);
-  
-  return orderMapper.map(savedOrder);  
+
+  return orderMapper.map(savedOrder);
  }
 }
 ```
@@ -139,12 +139,12 @@ public class OrderService {
  PaymentService paymentService;
  OrderRepository orderRepository;
  OrderMapper orderMapper;
- 
+
  @Transactional
  public OrderResponse processOrderPayment(OrderId orderId, UserId userId, int amount){
   Preconditions.notNull(orderId);
   Preconditions.positive(amount);
-  
+
   val recentPayment = paymentService.getRecentPayment(userId, amount);
 
   if(recentPayment.isEmpty()){
@@ -156,8 +156,8 @@ public class OrderService {
 
   order.amountReceived(amount);
   val savedOrder = orderRepository.save(order);
-  
-  return orderMapper.map(savedOrder);  
+
+  return orderMapper.map(savedOrder);
  }
 }
 ```
@@ -181,13 +181,13 @@ public class OrderService {
  PaymentService paymentService;
  OrderRepository orderRepository;
  OrderMapper orderMapper;
- 
+
  @Transactional
  public OrderResponse processOrderPayment(OrderId orderId, UserId userId, int amount){
   Preconditions.notNull(userId);
   Preconditions.notNull(orderId);
   Preconditions.positive(amount);
-  
+
   val recentPayment = paymentService.getRecentPayment(userId, amount);
 
   if(recentPayment.isEmpty()){
@@ -198,8 +198,8 @@ public class OrderService {
    .orElseThrow(()-> new NotFoundException("Assume a message"));
 
   order.amountReceived(amount);
- 
-  return orderMapper.map(order);  
+
+  return orderMapper.map(order);
  }
 }
 ```
@@ -221,13 +221,13 @@ public class OrderService {
  PaymentService paymentService;
  OrderRepository orderRepository;
  OrderMapper orderMapper;
- 
+
  @Transactional
  public OrderResponse processOrderPayment(OrderId orderId, UserId userId, int amount){
   notNull(userId);
   notNull(orderId);
   positive(amount);
-  
+
   paymentService.getRecentPayment(userId, amount).orElseThrow(()-> new NotFoundException("...message...");
   }
 
@@ -235,8 +235,8 @@ public class OrderService {
    .orElseThrow(()-> new NotFoundException("...message..."));
 
   order.amountReceived(amount);
- 
-  return orderMapper.map(order);  
+
+  return orderMapper.map(order);
  }
 }
 ```
@@ -284,21 +284,21 @@ public class OrderService {
  PaymentService paymentService;
  OrderRepository orderRepository;
  OrderMapper orderMapper;
- 
+
  @Transactional
  public OrderResponse processOrderPayment(OrderId orderId, UserId userId, int amount){
   checkNotNull(userId);
   checkNotNull(orderId);
   checkPositive(amount);
-  
+
   paymentService.getRecentPayment(userId, amount).orThrowNotFound();
 
   val order = orderRepository.findById(orderId)
    .orThrowNotFound();
 
    order.amountReceived(amount);
- 
-  return orderMapper.map(order);  
+
+  return orderMapper.map(order);
  }
 }
 ```
@@ -319,20 +319,20 @@ public class OrderS {
  PaymentService paymentService;
  OrderRepository orderRepository;
  OrderMapper orderMapper;
- 
+
  @Transactional
  public OrderResponse processOrderPayment(OrderId orderId, UserId userId, int amount){
   checkNotNull(userId);
   checkNotNull(orderId);
   checkPositive(amount);
-  
+
   paymentService.getRecentPayment(userId, amount).orThrowNotFound();
 
   val order = orderRepository.findById(orderId)
    .orThrowNotFound()
    .amountReceived(amount);
- 
-  return orderMapper.map(order);  
+
+  return orderMapper.map(order);
  }
 }
 ```
@@ -368,7 +368,7 @@ public class OrderService {
  PaymentS paymentS;
  OrderR orderR;
  OrderM orderM;
- 
+
  @Transactional
  public OrderRes processOrderPayment(OrderId orderId, UserId userId, int amount){
   paymentS.getRecentPayment(userId.nn(), amount.positive()).orThrowNotFound();
@@ -376,8 +376,8 @@ public class OrderService {
   val order = orderR.findById(orderId.nn())
    .orThrowNotFound()
    .amountReceived(amount);
- 
-  return orderM.map(order);  
+
+  return orderM.map(order);
  }
 }
 ```
@@ -396,7 +396,7 @@ public class OrderService {
  PaymentS paymentS;
  OrderR orderR;
  OrderM orderM;
- 
+
  @Transactional
  public OrderRes processOrderPayment(OrderId orderId, UserId userId, @Positive int amount){
   paymentS.getRecentPayment(userId, amount).orThrowNotFound();
@@ -404,8 +404,8 @@ public class OrderService {
   val order = orderR.findById(orderId)
    .orThrowNotFound()
    .amountReceived(amount);
- 
-  return orderM.map(order);  
+
+  return orderM.map(order);
  }
 }
 ```
@@ -431,8 +431,8 @@ public class OrderService {
 
   val order = orderR.byId(orderId)
   .amountReceived(amount);
- 
-  return orderM.map(order);  
+
+  return orderM.map(order);
  }
 }
 ```

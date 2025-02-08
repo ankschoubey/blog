@@ -2,12 +2,12 @@
 comments: true
 excerpt: Notes from HealthyGamerGG podcast. If there is one thing we need to learn about how to play the game of life well, understand trauma.
 tags:
- - peace
- - non-technical
- - psychology
+  - peace
+  - non-technical
+  - psychology
 publishDate: 2023-05-06T20:52:08.052481
 last-modified-purpose:
-read-this-when: 
+read-this-when:
 slug: /life-blog/deep-dive-trauma
 title: Notes on Here's Why Trauma Is So Common (A Deep Dive Into Understanding Trauma)
 image: https://upload.wikimedia.org/wikipedia/commons/2/24/FurciferPardalisMale.JPG

@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - web-development
+  - technical
+  - web-development
 publishDate: 2021-08-11T20:52:08.052481
 slug: /software-blog/package-json/
 title: Tips for working with `package.json`
@@ -47,7 +47,7 @@ If you are going to use a registry like Nexus to manage packages, it makes sense
 This can be done in 2 ways:
 
 - Using `--registry`
-`npm install --registry <link-to-repository>`
+  `npm install --registry <link-to-repository>`
 
 - Creating a project level `.npmrc` file
 
@@ -75,4 +75,4 @@ Installations: `npm i -g pnpm`
 
 Usage: `pnpm install`
 
-`pnpm` is a disk efficient package manager which stored all node_module packages in one place and used  sim links for installing within projects. If you have a same package in multiple project, `pnpm` will make sure to download and store it only once. 
+`pnpm` is a disk efficient package manager which stored all node_module packages in one place and used sim links for installing within projects. If you have a same package in multiple project, `pnpm` will make sure to download and store it only once.

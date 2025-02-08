@@ -3,8 +3,8 @@ excerpt: We should not avoid good action. Good action has good results in the lo
 title: Keep your Karma Ledger clean
 comments: true
 tags:
- - responsibility
- - non-technical
+  - responsibility
+  - non-technical
 use_math: true
 publishDate: 2023-05-24T20:42:15.242622
 slug: /life-blog/karma-ledger/
@@ -13,10 +13,10 @@ read-this-when: you are thinking if there is a reward in good action. Or if you 
 ---
 
 Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/photos/CKlHKtCJZKk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
 > Karma karo fall ki chinta maat karo
 
-In a previous post, I talked about [Karma and Karmafal](/life-blog/karma-karmafal/ "‌"). Here is why you should always keep your karma ledger clean despite to inability to control Karmafal.
+In a previous post, I talked about [Karma and Karmafal](/life-blog/karma-karmafal/ '‌'). Here is why you should always keep your karma ledger clean despite to inability to control Karmafal.
 
 ## Two Outcomes of Karma
 
@@ -51,7 +51,7 @@ We may believe we don’t know enough. But if we trained ourselves (karma), when
 
 If you didn’t perform a crime, you are free from it.
 
-### Silent and Slow Support 
+### Silent and Slow Support
 
 Similarly, let's say you showed told the truth at every moment. Now, you have built trust with the people around you. You have developed trustworthy friends slowly. That trust is because of your Karma.
 

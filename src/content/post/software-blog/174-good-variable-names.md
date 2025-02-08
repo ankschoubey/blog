@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Easy approaches to help you come up with descriptive clean names' 
+excerpt: 'Easy approaches to help you come up with descriptive clean names'
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2024-02-17T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/good-variable-names/
@@ -189,7 +189,7 @@ I had created a separate file for the repository. Still, as my methods grew, it 
 
 I had method names such as `getUser`. Now, getting a user can be done by `userId`, and it can be done by email. So I had `getUserWithEmail`. As more code was added, it was getting tough. (I know I cannot develop a good example. But you probably get the point). I slowly had many methods that looked similar but did very different things.
 
-It had started to annoy me. A few days later, it clicked. I could use the same method names I am familiar with in Spring Boot. [https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html "smartCard-inline")   . It included a very standard naming convention for creating a method. I went and renamed all my methods to the JPA convention.
+It had started to annoy me. A few days later, it clicked. I could use the same method names I am familiar with in Spring Boot. [https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html 'smartCard-inline') . It included a very standard naming convention for creating a method. I went and renamed all my methods to the JPA convention.
 
 - `getUser` to `findOneByUserId`.
 - `getUserWithEmail` to `findOneByEmail`

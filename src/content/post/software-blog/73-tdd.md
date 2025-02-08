@@ -1,17 +1,18 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - testing
- - clean-code
- - tdd
+  - technical
+  - testing
+  - clean-code
+  - tdd
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added section on "Don't start the application. Verify everything by writing tests."
 slug: /software-blog/making-tdd-easy/
 title: Making TDD and Testing easier
 image: /images/tdd.jpeg
 ---
+
 ![](/images/tdd.jpeg)
 
 Software engineering isn't only about code. It's engineering
@@ -37,6 +38,7 @@ Both tests and code written with TDD is cleaner and precise.
 TDD leads to extremely fast feedback.
 
 ## The Three Laws of TDD
+
 1. You are not allowed to write any production code unless it is to make a failing unit test pass.
 2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
@@ -100,7 +102,7 @@ Instead of verifying by starting the application then going to browser or databa
 
 Starting the application and testing is usually a longer process than writing a test. Plus, their is a compounding time saving when rerunning the test instead of manual verification.
 
-[^1]: [Anadi Misra](https://www.linkedin.com/in/ACoAAAGmNOsBErk1_7cbjUHllOPVUE5M-NvcOKc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bd5ZjyftfQoKiUju1OpMyEA%3D%3D) 
+[^1]: [Anadi Misra](https://www.linkedin.com/in/ACoAAAGmNOsBErk1_7cbjUHllOPVUE5M-NvcOKc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bd5ZjyftfQoKiUju1OpMyEA%3D%3D)
 
 # More Resources:
 

@@ -1,15 +1,16 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - blockchain
- - information-system
+  - blockchain
+  - information-system
 title: Gist of Cryptocurrencies
 publishDate: 2021-08-01T20:42:15.666464
 slug: /software-blog/crypto/
 image: /images/software-blog/crypto.jpg
 ---
+
 ![](/images/software-blog/crypto.jpg)
 
 Photo by <a href="https://unsplash.com/@nick604?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Chong</a> on <a href="https://unsplash.com/s/photos/software-blog/crypto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -18,7 +19,7 @@ Photo by <a href="https://unsplash.com/@nick604?utm_source=unsplash&utm_medium=r
 
 ## Money
 
-Money 💰 is a form of value. 
+Money 💰 is a form of value.
 
 A money is valid only if enough people are willing to enchange it for goods/services.
 
@@ -30,17 +31,18 @@ Money is only valuable when it is limited. If there is infinite money, the value
 
 **Simplified example**
 
-Imagine there if there is 1000 unit of a currency in circulation. 
+Imagine there if there is 1000 unit of a currency in circulation.
 
 At this place, 1 unit buys you a house.
 
-Let’s suppose, the government decided to print more money and now 1000 more printed units are being added. 
+Let’s suppose, the government decided to print more money and now 1000 more printed units are being added.
 
 Now, the same house will hypothetically require 2 units of currency.
 
 The value of single unit was reduced by half.
 
 ## Commodity Currency
+
 To avoid this, previously gold was used to set an upper limit. For each note you could exchange it for a real gold kept somewhere safe. This is called commodity currency.
 
 There were even gold coins. If you had gold even if you don't believe in the currency, you could still use it in other ways because gold was valuable.

@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - non-technical
- - implementing-core-values
+  - philosophical
+  - non-technical
+  - implementing-core-values
 publishDate: 2023-05-06T20:52:08.052481
 slug: /life-blog/follow-your-values/
 title: Let the world do what it wants to do, you follow your core values
@@ -31,4 +31,3 @@ If you have carefully selected your core values, you believe these are your best
 ![](/images/v1-follow-your-values.jpg)
 
 Photo by <a href="https://unsplash.com/@thegreatnima?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">nima hatami</a> on <a href="https://unsplash.com/photos/UcQsXKYNgHI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  

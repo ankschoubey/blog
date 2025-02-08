@@ -1,16 +1,17 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - productive
- - non-technical
- - time
+  - productive
+  - non-technical
+  - time
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added principles from Kanban and other tips
 slug: /life-blog/saving-time/
 title: Strategies on becoming more productive
 image: /images/life-blog/saving-time.jpg
 ---
+
 ![](/images/life-blog/saving-time.jpg)
 
 <sup> Photo by <a href="https://unsplash.com/@airfocus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">airfocus</a> on <a href="https://unsplash.com/s/photos/kanban?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sup>
@@ -23,13 +24,13 @@ For example:
 
 1. All travel within November
 2. Working harder on Monday, Tuesday and Thursday. Relaxing a bit of Wednesday and Friday.
-    - All blogging tasks on Sunday.
-    - Major studying on Weekends.
+   - All blogging tasks on Sunday.
+   - Major studying on Weekends.
 3. Day
-    - Important focused tasks during first half of the day without any distractions
-    - Meetings/Collaboration during second half of the day
-    - Stopping work at 6 PM
-    - Family/Relaxation/Recovery time post 6.
+   - Important focused tasks during first half of the day without any distractions
+   - Meetings/Collaboration during second half of the day
+   - Stopping work at 6 PM
+   - Family/Relaxation/Recovery time post 6.
 
 # Plan and only do what's essential
 
@@ -77,7 +78,7 @@ Once the task is estimated to hours, pomodoro or something similar can be used.
 
 # Focused hours/**pomodoro**s
 
-Pomodoros are most effective way to get tasks done. 
+Pomodoros are most effective way to get tasks done.
 
 Pomodoro incorporates both Mono-tasking and recalibration.
 
@@ -92,6 +93,7 @@ Learn to let things wait.
 Keep a list of distractions in a separate list. These are things that make you want to stop/block your particular card/task and switch to it. Or it can be something else you need to do.
 
 This could include:
+
 1. A person you want to follow up or help
 2. A task that needs to be done
 3. Something that needs to be ordered.

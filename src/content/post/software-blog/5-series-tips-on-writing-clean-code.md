@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: constructing the simplest possible code that would solve your problem resulting in an increase in productivity by producing higher quality in less time.
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 title: Clean Code
 publishDate: 2019-12-19T20:42:15.086538
 slug: /software-blog/clean_code/
@@ -84,7 +84,8 @@ Constructing the simplest possible code that would solve your problem.
 ## More posts in this series
 
 {% for post in site.categories['clean-code'] %}
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
 <article class="archive-item">
     <p class="post-meta post-meta-title"><a class="page-meta" href="{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
 </article>

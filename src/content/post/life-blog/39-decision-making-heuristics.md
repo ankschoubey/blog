@@ -1,16 +1,17 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - decision-making
- - collection-of-thoughts
- - systems
+  - decision-making
+  - collection-of-thoughts
+  - systems
 title: Decision Making Heuristics
 publishDate: 2021-08-14T20:42:15.644388
 slug: /life-blog/decision-making-heuristics/
 image: /images/life-blog/decision-making-heuristics.jpg
 ---
+
 ![](/images/life-blog/decision-making-heuristics.jpg)
 
 Photo by <a href="https://unsplash.com/@timgraf99?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Graf</a> on <a href="https://unsplash.com/s/photos/compass?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -36,7 +37,8 @@ So apply for multiple jobs, learn multiple skills, meet multiple people, try mul
 If you can gain 2x, 10x from the decision and the loss in negligible or reversible, the potential upside is much much higher.
 
 ## If you need to make a big decision and you can’t decided, say No. [^1]
-Modern world is abundant with opportunities. You’ll find another one.  
+
+Modern world is abundant with opportunities. You’ll find another one.
 
 ## If there are multiple similar options and each seem similar, take the path that seems the hardest in the short term. [^1]
 
@@ -56,16 +58,18 @@ Don't be implulsive
 
 ## Be decisive
 
-Every decision is choosing one thing over other things.  You won't always have 100% information.
+Every decision is choosing one thing over other things. You won't always have 100% information.
 
 Be decisive: Temporary fix to a temporary problem becomes a permanent problem.
 
 ## Metrics
 
 # Extreme decision are rarely good.
+
 Even if you think mathematically, extreme decisions would lie on the edge of all the possible decisions you can make. In almost any case, you have more number of non-extreme decisions you can make during any decisions. So probabilistically since number of extreme decisions are low, chances that they must he good is low. On one level this analysis is dumb too.
 
 ## Say no to many things
+
 The goal of a decision to do something is to have high ROI than from doing other things.
 
 [^1]: [Naval Ravikant](https://www.youtube.com/watch?v=3tnOc32k7Ac)

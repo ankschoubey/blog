@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - communication
- - non-technical
- - social-harmony
+  - communication
+  - non-technical
+  - social-harmony
 publishDate: 2022-08-12T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/negotiations/
@@ -20,7 +20,7 @@ It isn't about winning. It's about Win-Win!
 
 We can't just think about ourselves. We have to think about everyone. A philosophical argument can be this: What's good for others is good for me.
 
-Not convinced? Yeah. The philosophical argument isn't persuasive enough here. 
+Not convinced? Yeah. The philosophical argument isn't persuasive enough here.
 
 If you think about it carefully, someone can only follow a plan if he/she feels satisfied and convinced of its merits.
 
@@ -33,8 +33,9 @@ Therefore, the probability that negotiation is reached and followed through is e
 ## Is it that important to learn to negotiate?
 
 Negotiation happens in every stage of life. And many times a day.
+
 - Monetary negotiations are the most transparent form of negotiations.
-- Negotiations happen beyond money matters too. Things like marriage, friendships, idea proposals, etc. 
+- Negotiations happen beyond money matters too. Things like marriage, friendships, idea proposals, etc.
 - Conflicts are also a negotiation of sorts.
 - Even you negotiate with yourself to get work done. Like, oh, why do I not want to do this? Can I work for 5 min?
 
@@ -44,15 +45,16 @@ The rules of negotiations change and depend on the situation at hand. You can't 
 
 ## What do negotiations involve?
 
-Negotiation involves many steps: 
+Negotiation involves many steps:
+
 1. Knowing
-    - What you want.
-    - What does the other person want?
-    - What's common in the market? 
-    - What's practical?
+   - What you want.
+   - What does the other person want?
+   - What's common in the market?
+   - What's practical?
 2. Communication
-    - Expressing what you want clearly without reducing or overdoing it.
-    - Listening and understanding what the other person really wants. Asking them questions to understand more of why they want something. #startWithWhy. Good listening skills play a huge part here.
+   - Expressing what you want clearly without reducing or overdoing it.
+   - Listening and understanding what the other person really wants. Asking them questions to understand more of why they want something. #startWithWhy. Good listening skills play a huge part here.
 3. Discuss possible scenarios, outcomes, compromises or different angles.
 4. Accepting, being content and following through on your part
 5. Hoping the other person feels accepted, content and follows through.

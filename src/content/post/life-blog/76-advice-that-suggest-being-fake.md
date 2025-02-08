@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - truth
+  - non-technical
+  - truth
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/advice-that-suggest-being-fake/

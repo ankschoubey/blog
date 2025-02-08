@@ -3,8 +3,8 @@ excerpt: or Machine Learning
 title: Advice for those who want to learn Deep Learning
 comments: true
 tags:
- - technical
- - deep-learning
+  - technical
+  - deep-learning
 publishDate: 2020-05-02T20:42:15.185834
 use_math: true
 slug: /software-blog/dl_advice/
@@ -12,17 +12,18 @@ slug: /software-blog/dl_advice/
 
 I do get questions once or twice a month in my friend circle of someone who is thinking of starting to learn Machine Learning or Deep Learning.
 
-​**I am not an expert**​. *Nor do I have a DL job*. But I do know enough that I can work with a DL team and build something over a few months.
+​**I am not an expert**​. _Nor do I have a DL job_. But I do know enough that I can work with a DL team and build something over a few months.
 
 Hopefully, this answers all of your questions.
 
-* * *
+---
 
 ## <input type="checkbox"> Don't learn Machine Learning
 
 You don't need to know ML before learning DL.
-+ It's dumb.
-+ It is getting rapidly replaced by DL. Therefore, turning irrelevant.
+
+- It's dumb.
+- It is getting rapidly replaced by DL. Therefore, turning irrelevant.
 
 Lot of times people build a complex hand made ML solution just to get little bit higher metrics.
 In the [long run a simple DL model be better](https://medium.com/modern-nlp/risk-and-counter-intuition-in-data-science-1a21a792ad95).
@@ -39,7 +40,7 @@ We have computers in the 21st century.
 
 Knowing where to use it and what it does is enough.
 
-## <input type="checkbox">  Material beats the Method.
+## <input type="checkbox"> Material beats the Method.
 
 Learn from the latest courses and use the latest tools.
 
@@ -48,7 +49,8 @@ This is a fast-changing field. 2-year-old stuff is mostly irrelevant.
 It is probably good to mix your learning from multiple sources.
 
 Recommended Course:
-- Top Down Approach: [https://www.fast.ai/](https://www.fast.ai/) 
+
+- Top Down Approach: [https://www.fast.ai/](https://www.fast.ai/)
 - Bottom Up Approach: [Andrew Ng's Coursera Course](https://www.coursera.org/specializations/deep-learning)
 
 Recommended next read: <a href="https://hackernoon.com/how-not-to-do-fast-ai-or-any-ml-mooc-3d34a7e0ab8c" target="_blank">How not to do Fast.ai (or any ML MOOC)</a>

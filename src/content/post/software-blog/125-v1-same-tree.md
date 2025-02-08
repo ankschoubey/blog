@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - algorithm-problems
- - arrays
+  - technical
+  - algorithm-problems
+  - arrays
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/same-tree

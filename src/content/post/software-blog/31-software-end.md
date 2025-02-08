@@ -3,13 +3,14 @@ toc: false
 comments: true
 excerpt: Unless you stop
 tags:
- - technical
- - information-system
- - business
+  - technical
+  - information-system
+  - business
 publishDate: 2021-08-01T20:42:15.488221
 title: Software project never ends
 slug: /software-blog/software_end/
 ---
+
 Building software is having no fixed deadline. Below are some reasons why.
 
 ## Software vs Physical Products
@@ -25,6 +26,7 @@ The software can be modified and improved at any time.
 ## There is always something to do
 
 When you look for problems to solve, you're sure to find something.
+
 - Optimize code.
 - Clean code up and make ready for the future.
 - Fix bugs.

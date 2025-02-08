@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - information-system
+  - technical
+  - information-system
 publishDate: 2021-08-01T20:42:15.500315
 title: Write Tests after Cleaning Code.
 slug: /software-blog/writing_test/

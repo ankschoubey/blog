@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: Baby steps towards competitions
 tags:
- - technical
- - deep-learning
+  - technical
+  - deep-learning
 title: Series  Kaggle Getting Started
 publishDate: 2020-03-30T20:42:15.164522
 slug: /software-blog/kaggle_getting_started/
@@ -68,5 +68,4 @@ o = optimizer
 # Index
 
 1. [Digit Recognition](/mnist)
-2. Facial Keypoints Detection - *in progress*
-
+2. Facial Keypoints Detection - _in progress_

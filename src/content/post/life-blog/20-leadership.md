@@ -1,16 +1,17 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - business
- - leadership
- - social-harmony
+  - business
+  - leadership
+  - social-harmony
 title: Who is a leader?
 publishDate: 2021-08-01T20:42:15.419969
 slug: /life-blog/leader/
 image: /images/life-blog/leadership.jpg
 ---
+
 ![](/images/life-blog/leadership.jpg)
 
 <sup>Photo by <a href="https://unsplash.com/@morganspoker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Morgan McKnight</a> on <a href="https://unsplash.com/s/photos/boat-rowing?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>
@@ -38,17 +39,17 @@ Pain to ideas/people around them and always wants things to be their way because
 A person who chooses to be a leader regardless of their position in the organization.
 
 He/She
-  - sees a problem and proposes a solution
-  - takes on responsibilities
-  - delivers on them
-  - disagrees with a process/method/idea when it is needed but provides proper reasoning and is ready to discuss over it if needed
-  - debates and let's the best idea win
+
+- sees a problem and proposes a solution
+- takes on responsibilities
+- delivers on them
+- disagrees with a process/method/idea when it is needed but provides proper reasoning and is ready to discuss over it if needed
+- debates and let's the best idea win
 
 If someone is stuck, he/she helps them and doesn't just leave them i.e he/she is a good team member.
 
 Treats everyone the same regardless of their title.
 
-***
+---
 
-*It is fun to see people's behavior around you and think about what type of leader they are.*
-
+_It is fun to see people's behavior around you and think about what type of leader they are._

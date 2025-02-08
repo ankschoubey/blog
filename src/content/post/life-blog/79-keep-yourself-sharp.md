@@ -1,20 +1,21 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - responsibility
- - systems
+  - non-technical
+  - responsibility
+  - systems
 publishDate: 2022-10-08T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/keep-yourself-sharp/
 title: Keep Yourself Polished All the Time
 image: /images/life-blog/keep-yourself-sharp.jpg
 ---
+
 ![](/images/life-blog/keep-yourself-sharp.jpg)
 
 Photo by <a href="https://unsplash.com/@huntersrace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hunters Race</a> on <a href="https://unsplash.com/s/photos/suit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
 # The need to keep ourselves polished
 
 It is always now! However, your past must have been; however, the future must be. The reality of your life is always now.

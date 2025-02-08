@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - experience
+  - technical
+  - experience
 publishDate: 2022-10-08T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/development-mistakes/

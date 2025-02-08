@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: Game of Deep Learning was an image recognition challenge on AnalyticsVidya. The task was to classify 5 different types of Ships (Cargo, Military, Carrier, Cruise, and Tankers)
 tags:
- - technical
- - deep-learning
+  - technical
+  - deep-learning
 title: Lessons Learned from my first Deep Learning contest
 publishDate: 2019-06-23T20:42:15.062074
 slug: /software-blog/first_competition/
@@ -23,13 +23,11 @@ Therefore, I decided to complete Fast.ai's Deep Learning for Coders.
 
 The contest was a month ago from this writing. I had the time to really sit and figure out what went well and what didn't.
 
-Approach
-========
+# Approach
 
 Here was my approach which I did in stages:
 
-Step 1: Make models
--------------------
+## Step 1: Make models
 
 1\. **Make a simple resnet50 model**. And make sure input and output submission file are correct.
 
@@ -63,11 +61,9 @@ Ensemble making environment: Local
 
 [Code: ankschoubey/AnalyticsVidya_Game_Of_Deep_Learning](https://github.com/ankschoubey/AnalyticsVidya_Game_Of_Deep_Learning)
 
-Lessons and Mistakes Learned
-============================
+# Lessons and Mistakes Learned
 
-Code
-----
+## Code
 
 **Environment**
 
@@ -79,7 +75,7 @@ Code
 
 **Should have used discriminative learning rate.**
 
--   Transfer learning without discriminative learning rate is stupid.
+- Transfer learning without discriminative learning rate is stupid.
 
 **Refactor code early before replicating the kernel**
 
@@ -115,12 +111,11 @@ Kind of dumb to mention this: I did not use the F1 score. Rather relied on accur
 
 - I believe that an ensemble of ResNet and DenseNet would have been wonderful.
 
-Data
-----
+## Data
 
 **Look at the data and use good augmentation**
 
--   I saw some images were grey scale and old. I might have got a higher score if I had taken time
+- I saw some images were grey scale and old. I might have got a higher score if I had taken time
 
 ![1_data_augmentation](/images/2019-06-23-lessons_from_first_deep_learning_competition/1_data_augmentation.png)
 

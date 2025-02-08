@@ -2,15 +2,15 @@
 comments: true
 excerpt: Page Object Model can be used with any testing framework to write cleaner and simpler tests that are fast to write.
 tags:
- - technical
- - testing
- - tdd
+  - technical
+  - testing
+  - tdd
 publishDate: 2023-08-28T20:52:08.052481
 last-modified-purpose:
 slug: /tdd/page-object-model
 title: Write Cleaner UI Tests with Page Object Model Pattern
 image: /images/tdd/page-object-model.png
-cover-img-style: "position: relative; height:100%"
+cover-img-style: 'position: relative; height:100%'
 ---
 
 I have covered many testing patterns. Some of them are [Test Data Factories](/test-data-factories/), [the when/should way](/method-when-should/) and more. The Page Object Model complements all those patterns.
@@ -50,21 +50,20 @@ The Page Object Model encapsulated everything related to a component or a page i
 To illustrate the POM, we can create a separate `MovieListPageObject`.
 
 ```typescript
-class MovieListPageObject{
- constructor(wrapper){
-  this.wrapper = wrapper;
- }
- getColumnHeader(index: number){
-  const selector = this.wrapper.find("div .random-css-selector")
-       .at(index);
-  return selector.find("tr th span[data-value='some data value']");
- }
- clickColumnHeader(index: number){
-  return this.getColumnHeader(index).click();
- }
- expectColumnHeaderName(index: number, expectedValue: string){
-  expect(this.getColumnHeader().text()).toEqual(value);
- }
+class MovieListPageObject {
+  constructor(wrapper) {
+    this.wrapper = wrapper;
+  }
+  getColumnHeader(index: number) {
+    const selector = this.wrapper.find('div .random-css-selector').at(index);
+    return selector.find("tr th span[data-value='some data value']");
+  }
+  clickColumnHeader(index: number) {
+    return this.getColumnHeader(index).click();
+  }
+  expectColumnHeaderName(index: number, expectedValue: string) {
+    expect(this.getColumnHeader().text()).toEqual(value);
+  }
 }
 ```
 
@@ -109,10 +108,10 @@ In the above test, I'd also create a `mount{Component}` method to return the Pag
 Declare the `mountMovieList` somewhere.
 
 ```typescript
-const mountMovieList = (reactElement:ReactElement)=> {
- const wrapper = mount(reactElement)
- return new MovieListPageObject(wrapper);
-}
+const mountMovieList = (reactElement: ReactElement) => {
+  const wrapper = mount(reactElement);
+  return new MovieListPageObject(wrapper);
+};
 ```
 
 {%- include tip.html content="A good rule of thumb is to make sure tests do not contain any CSS DOM Element Selectors. All selectors should be within the page object." -%}

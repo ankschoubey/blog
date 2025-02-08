@@ -2,12 +2,12 @@
 comments: true
 excerpt: Practical Chaos Engineering Part 1
 tags:
- - technical
- - chaos-engineering
+  - technical
+  - chaos-engineering
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/response-type-field/
-title:  A responseType field for all response classes
+title: A responseType field for all response classes
 toc: false
 image: /images/software-blog/response-type-field.png
 ---
@@ -16,7 +16,7 @@ The inspiration for this blog post is [API response in a video by Chaos Monkey f
 
 A typical pattern for handling network assaults is Circuit Breaker.
 
-A circuit breaker would replace a network delay or failure code with a fallback code, making the code resilient. 
+A circuit breaker would replace a network delay or failure code with a fallback code, making the code resilient.
 
 Ideally, the user is indicated when fallback data is used.
 
@@ -30,17 +30,19 @@ This can be as simple as adding a `responseMetadata` field within HTTP Response.
     responseMetadata: {
         type: "STALE", // STALE, LATEST, FALLBACK
         updatedDate: "{dateObject}"
-    } 
+    }
     ...
 }
 ```
 
-`type` could be 
+`type` could be
+
 - `STALE` for old data
 - `LATEST` to indicate the data is current
 - `FALLBACK` indicates neither `LATEST` nor `STATE`.
 
-an `updatedDate` field 
+an `updatedDate` field
+
 - date of when something is updated
 
 The frontend or client could read the `responseMetadata` and show a message to the user indicating that old data.

@@ -1,17 +1,18 @@
 ---
 comments: true
-excerpt: "Domain-specific assertions can help create an extremely clean test base. Learn how to create your own manually or with LLM."
+excerpt: 'Domain-specific assertions can help create an extremely clean test base. Learn how to create your own manually or with LLM.'
 tags:
- - technical
- - clean-code
- - testing
- - LLM-prompt
+  - technical
+  - clean-code
+  - testing
+  - LLM-prompt
 publishDate: 2024-09-28T20:52:08.052481
 slug: /software-blog/domain-specific-assertions/
 title: Writing Cleaner Test with Domain-Specific Assertions
 image: /images/software-blog/domain-specific-assertions.png
 ---
-import Tip from "~/components/custom/Tip.astro"
+
+import Tip from '~/components/custom/Tip.astro';
 
 Tests need to be as clean as the code we write. A clean test is faster to write, easier to understand, debug, maintainable, and extensible.
 
@@ -66,7 +67,7 @@ Luckily, AssertJ provides an [AbstractAssert](https://joel-costigliola.github.io
 assertThat(movie)
  .hasName(expectedMovie.getName())
  .hasActorWithName(”Tom Cruize”);
-// 86 characters 
+// 86 characters
 ```
 
 ## Implementation
@@ -102,15 +103,15 @@ class MovieAssert extends AbstractAssert<MovieAssert, Movie> {
 ```
 
 <Tip
-    content="<b>Note: It's the same amount of characters</b><br><ul><li>Even though it feels like we are writing more code, it's the same amount of code we would have written with a typical assertion helper method.</li><li>The beauty of AssertJ extension is how clean and domain-specific assertions become.</li></ul>"
-    type ="note"
+  content="<b>Note: It's the same amount of characters</b><br><ul><li>Even though it feels like we are writing more code, it's the same amount of code we would have written with a typical assertion helper method.</li><li>The beauty of AssertJ extension is how clean and domain-specific assertions become.</li></ul>"
+  type="note"
 />
 
 ## Step 2. Create a base class and add an `assertThat` method
 
 ```java
 class BaseAssertions extends Assertions {
- 
+
  public MovieAssert assertThat(Movie movie){
   return new MovieAssert(movie)
  }
@@ -128,10 +129,10 @@ class MovieTest extends BaseAssertions{
  void addActor_shouldAddActorToMovie(){
   // given
   Movie movie = new TestMovieBuilder().build();
-  
+
   // when
   movie.addActor("NTR Jr");
-  
+
   // then
   assertThat(movie)
  .hasActorWithName("NTR Jr")
@@ -141,8 +142,8 @@ class MovieTest extends BaseAssertions{
 ```
 
 <Tip
-    content="<b>Something to think about: How you'd do this in other languages</b><br><ul><li>I think such a thing is also easy to create in typescript.</li><li>You just need to extend check the type and return the right value.</li></ul>"
-    type ="tip"
+  content="<b>Something to think about: How you'd do this in other languages</b><br><ul><li>I think such a thing is also easy to create in typescript.</li><li>You just need to extend check the type and return the right value.</li></ul>"
+  type="tip"
 />
 
 ## Step 4. Optional: Create a custom base class
@@ -180,18 +181,18 @@ You can generate these domain-specific assertions for all things you assert whic
 There are two ways to auto-generate these domain-specific assertions.
 
 1. Using LLMs like GitHub Copilot
-2. Using [AssertJ Assertions generator](<https://joel-costigliola.github.io/assertj/assertj-assertions-generator.html>)
+2. Using [AssertJ Assertions generator](https://joel-costigliola.github.io/assertj/assertj-assertions-generator.html)
 
 - currently does not work with Java 17. They plan to launch a newer version soon.
 
 For generating with LLM you can use the following prompt. Add more details to it as needed.
 
-```java
+````java
 ## Task
 
 Generate Domain Specific Assertions
 
-## Details: 
+## Details:
 
 Generate a domain-specific assertion for this class for AssertJ. Extend AbstractAssert.
 
@@ -218,7 +219,7 @@ interface DomainSpecificAssertionHelper {
  }
  }
 }
-```
+````
 
 This can help you create a skeleton. But you'll need to add the custom methods if your assertions are complex.
 
@@ -228,9 +229,9 @@ This can help you create a skeleton. But you'll need to add the custom methods i
 - We can write cleaner assertions by creating our own domain-specific assertion
 - To create domain-specific assertion for AssertJ
 
- 1. Create a class that extends `AbstractAssert`
- 2. Create a base class with the `assertThat` method which will create our Domain Specific assertion class
- 3. Extend your test class with the base class and use
+1.  Create a class that extends `AbstractAssert`
+2.  Create a base class with the `assertThat` method which will create our Domain Specific assertion class
+3.  Extend your test class with the base class and use
 
 - Instead of writing the code yourself, use an LLM to generate the code for you.
   - Or look out for the release of a newer version of [AssertJ assertions generator](https://joel-costigliola.github.io/assertj/assertj-assertions-generator.html)

@@ -2,11 +2,11 @@
 comments: true
 excerpt: Ensuring backward compatibility through structured deprecation processes and automated testing minimizes disruptions during system updates and migrations.
 tags:
- - technical
- - api
- - backward-compatibility
- - ci
- - tdd
+  - technical
+  - api
+  - backward-compatibility
+  - ci
+  - tdd
 publishDate: 2024-07-28T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/backward-compatibility-ci
@@ -40,38 +40,38 @@ Below are some of the deprecation steps for APIs and Software Libraries. The mos
 
 #### For removing a field in an API
 
- 1. Mark the field as deprecated.
- 2. Let the clients know that the field is marked as deprecated and will be removed soon. Ideally, provide a date for it.
- 3. If the client is internal in the company, ensure the field usage is removed. If the client is external and only a few, provide the same. If you have a lot of clients, keep reminding them and remove the deprecation date decided.
+1.  Mark the field as deprecated.
+2.  Let the clients know that the field is marked as deprecated and will be removed soon. Ideally, provide a date for it.
+3.  If the client is internal in the company, ensure the field usage is removed. If the client is external and only a few, provide the same. If you have a lot of clients, keep reminding them and remove the deprecation date decided.
 
 #### A similar process for adding a new mandatory field would be followed
 
- 1. Add field as non-mandatory.
- 2. Inform clients they need to provide the value and set date.
- 3. Remind them regularly or ensure the field is added.
- 4. Mark the field as mandatory.
+1.  Add field as non-mandatory.
+2.  Inform clients they need to provide the value and set date.
+3.  Remind them regularly or ensure the field is added.
+4.  Mark the field as mandatory.
 
 #### For renaming of field
 
- 1. Add the field without removing the old field. Mark the old field name as deprecated.
- 2. Inform clients and ensure they have migrated to use the new field.
- 3. Remove the old field when migration is complete.
+1.  Add the field without removing the old field. Mark the old field name as deprecated.
+2.  Inform clients and ensure they have migrated to use the new field.
+3.  Remove the old field when migration is complete.
 
 ### Step-by-Step Deprecation/Migration of Database
 
 #### For removing a field
 
- 1. Ensure all clients/server code doesn't use the field.
- 2. Clients are often also BI tools that read the data from DB directly.
- 3. Once ensured, remove the field.
+1.  Ensure all clients/server code doesn't use the field.
+2.  Clients are often also BI tools that read the data from DB directly.
+3.  Once ensured, remove the field.
 
 #### For the addition of new fields or changing data
 
- 1. Add a new field to ensure it's non-mandatory.
- 2. Change the server code to write in a new field and read from the new and old fields.
- 3. Move data from the old field to a new field.
- 4. Change the server code only to use new fields and not old fields
- 5. Once ensured, remove the old field.
+1.  Add a new field to ensure it's non-mandatory.
+2.  Change the server code to write in a new field and read from the new and old fields.
+3.  Move data from the old field to a new field.
+4.  Change the server code only to use new fields and not old fields
+5.  Once ensured, remove the old field.
 
 ## Automated Testing for Backward Compatibility
 

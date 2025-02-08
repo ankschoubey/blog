@@ -3,8 +3,8 @@ excerpt: Karma is the action we take, while Karmafal is the result of our action
 title: Karma and Karmafal - An Introduction
 comments: true
 tags:
- - responsibility
- - non-technical
+  - responsibility
+  - non-technical
 use_math: true
 publishDate: 2023-04-20T20:42:15.242622
 slug: /life-blog/karma-karmafal/
@@ -41,7 +41,7 @@ This also keeps you free. When you are not attached to the outcome means that yo
 
 We control how we play. We don’t control if it rains or not, we control if we go for a run. We don’t control if we get 1000 views, we control how well we present our ideas.
 
-***
+---
 
 ## Further Reading
 

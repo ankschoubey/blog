@@ -1,17 +1,17 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - non-technical
- - implementing-core-values
+  - philosophical
+  - non-technical
+  - implementing-core-values
 publishDate: 2023-05-17T20:52:08.052481
 slug: /life-blog/core-values-are-not-optional/
 title: Core Values are Not Optional
 last-modified-purpose:
 read-this-when: you feel it's okay to not follow your core values just this once.
 image: /images/v1-core-values-are-not-optional.jpg
----  
+---
 
 We start as protected children. We are protected again from the ups and downs of life. As we grow old, this protection is lifted.
 

@@ -2,32 +2,31 @@
 import { Icon } from 'astro-icon/components';
 import Tip from './TipComp';
 
-
 export interface Props {
-    content: string;
-    type: string,
-    link?: string
+  content: string;
+  type: string;
+  link?: string;
 }
 
-const {content, type='tip', link} = Astro.props;
+const { content, type = 'tip', link } = Astro.props;
 
 const icons = {
-    "tip": "tabler:bulb",
-    "info": "tabler:info-circle",
-    "note": "tabler:note",
-    "alert": "tabler:note",
-}
-const icon= icons[type];
+  tip: 'tabler:bulb',
+  info: 'tabler:info-circle',
+  note: 'tabler:note',
+  alert: 'tabler:note',
+};
+const icon = icons[type];
 
 const bgColors = {
-    "tip": "bg-yellow-100",
-    "info": "bg-blue-100",
-    "note": "bg-green-100",
-    "alert": "tabler:note",
-}
+  tip: 'bg-yellow-100',
+  info: 'bg-blue-100',
+  note: 'bg-green-100',
+  alert: 'tabler:note',
+};
 const bgColor = bgColors[type];
 ---
 
 <Tip content={content} bgColor={bgColor} link={link}>
-    <Icon name={icon}></Icon>
+  <Icon name={icon} />
 </Tip>

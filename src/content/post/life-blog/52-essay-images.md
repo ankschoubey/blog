@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - writing
- - non-technical
- - truth
+  - writing
+  - non-technical
+  - truth
 publishDate: 2022-05-13T20:52:08.052481
 last-modified-purpose:
 slug: /essay-images/
@@ -13,7 +13,6 @@ title: Choosing Images/Diagrams in Essays
 
 # Why we should have images and diagrams?
 
-
 Images and Diagrams make our essays more rememberable and can be used to illustrate concepts that are hard to describe in words.
 
 # How we should choose images/diagrams?
@@ -21,7 +20,6 @@ Images and Diagrams make our essays more rememberable and can be used to illustr
 # Which image/diagram type is better for illustrating the point?
 
 An image or a diagram should complement the writing but not distract from the writing. The image/diagram should be linked to what’s been written.
-
 
 Choosing images and diagrams very much depends on the contents of the essay.
 

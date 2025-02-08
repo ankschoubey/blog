@@ -1,23 +1,22 @@
 ---
 comments: true
-excerpt: 'A state management library like Redux, Recoil, etc., can help you manage application state for large applications. These come with their own set of challenges that can be eliminated with good design.' 
+excerpt: 'A state management library like Redux, Recoil, etc., can help you manage application state for large applications. These come with their own set of challenges that can be eliminated with good design.'
 tags:
- - front-end
- - performance
- - data
- - technical
+  - front-end
+  - performance
+  - data
+  - technical
 publishDate: 2024-01-30T20:52:08.052481
 slug: /software-blog/optimizing-react-connect-components-redux/
 title: Efficiently Connect Components with Redux and Other Stores
 hidePostImage: true
-seo-checklist: {
+seo-checklist:
+  {
     search-intent-type: informational,
     search-intent-ideal-googler: 'someone who wants to search how he can efficiently connect all his/her components with redux',
     main-target-keyword: 'connect components to redux',
-    supporting-keywords: [
-        'performance', 'state management', 'ui', 'react', 'redux', 'recoil'
-    ]
-}
+    supporting-keywords: ['performance', 'state management', 'ui', 'react', 'redux', 'recoil'],
+  }
 image: https://miro.medium.com/v2/resize:fit:4800/format:webp/1*BjzznWiWyk7RNPMQ6Kp0vQ.png
 ---
 
@@ -100,7 +99,7 @@ const ChildComponent = (props)=> {
 Create a separate `MovieSelectors.ts` file.
 
 ```typescript
-export const selectMovieById = movieId => state => state.movies.byId[props.movieId];
+export const selectMovieById = (movieId) => (state) => state.movies.byId[props.movieId];
 ```
 
 Here, Components do not get coupled to the schema in the store.
@@ -173,8 +172,8 @@ In JavaScript, certain types are serializable, for example, strings and numbers.
 Therefore
 
 ```typescript
-"string1" === "string1" // returns true
-1 === 2 // return false
+'string1' === 'string1'; // returns true
+1 === 2; // return false
 ```
 
 Some types are not serializable, like objects.

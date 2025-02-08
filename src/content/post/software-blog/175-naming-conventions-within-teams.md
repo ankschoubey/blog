@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Creating a good naming convention that can help you and your team maintain a clean codebase' 
+excerpt: 'Creating a good naming convention that can help you and your team maintain a clean codebase'
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2024-02-24T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/naming-conventions-within-teams/
@@ -88,7 +88,7 @@ Find such methods and see what is shared between them.
 
 Some familiar places are:
 
-- Common to Both Frontend  and Backend
+- Common to Both Frontend and Backend
   - Different Types of Pojos
     - Request Pojos
     - Response Pojos
@@ -252,7 +252,7 @@ For example, suppose you have a list of movies. I can come up with the following
 - `.movie-list__item`
 - `.movie-list__item--selected`
 
-I no longer have to think about how to name a DOM element and what CSS class should be. While I’d now prefer using tailwind instead of a CSS file, BEM is now my default way of thinking about components and [I find it very helpful when creating a DOM](/tdd/planning-dom "‌").
+I no longer have to think about how to name a DOM element and what CSS class should be. While I’d now prefer using tailwind instead of a CSS file, BEM is now my default way of thinking about components and [I find it very helpful when creating a DOM](/tdd/planning-dom '‌').
 
 If you google, you’ll find many naming conventions. You may even find patterns.
 
@@ -299,7 +299,7 @@ Suppose I, as a #techLead, want the names of my controller methods to look like 
 
 This is something I discussed in my previous post.
 
-Here’s how I can write an arch unit test using the [Arch Unit Library](https://www.archunit.org/ "‌") in Java
+Here’s how I can write an arch unit test using the [Arch Unit Library](https://www.archunit.org/ '‌') in Java
 
 ```java
 @Test

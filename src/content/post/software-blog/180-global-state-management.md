@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Discover the transition from singleton patterns to advanced state management with Redux. Learn why modern libraries offer superior scalability and maintainability for UI applications' 
+excerpt: 'Discover the transition from singleton patterns to advanced state management with Redux. Learn why modern libraries offer superior scalability and maintainability for UI applications'
 tags:
- - technical
- - web-development
+  - technical
+  - web-development
 publishDate: 2024-04-12T20:52:08.052481
 slug: /software-blog/navigating-global-state-management
 title: Navigating Global State Management - From Singletons to Redux

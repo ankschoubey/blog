@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - truth
+  - philosophical
+  - truth
 title: Develop your own opinions and reasonings
 publishDate: 2021-05-03T20:42:15.650028
 slug: /life-blog/original-opinion/

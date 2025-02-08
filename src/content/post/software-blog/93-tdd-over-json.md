@@ -2,9 +2,9 @@
 comments: true
 excerpt: TDD Example that saved around 2 hours
 tags:
- - technical
- - tdd-example
- - tdd
+  - technical
+  - tdd-example
+  - tdd
 publishDate: 2022-09-08T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/tdd-over-json/
@@ -12,6 +12,7 @@ title: TDD over JSON
 toc: false
 image: /images/software-blog/tdd-over-json.jpg
 ---
+
 ![](/images/software-blog/tdd-over-json.jpg)
 Photo by RealToughCandy.com: https://www.pexels.com/photo/man-love-people-woman-11035481/
 
@@ -39,7 +40,7 @@ I followed the method/when/then format to create a test and added the following 
 
 Source: [StackOverflow: The best way to compare two JSON files in Java](https://stackoverflow.com/a/33481923)
 
-Now I know what the final state of my POJO should be. 
+Now I know what the final state of my POJO should be.
 
 I went and updated the POJO to reflect the expected JSON.
 

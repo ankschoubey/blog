@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - distributed-systems
- - microservices
+  - technical
+  - distributed-systems
+  - microservices
 publishDate: 2022-06-25T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/rule-of_thumb-distributed-systems/

@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - time
+  - non-technical
+  - time
 publishDate: 2022-12-22T20:52:08.052481
 last-modified-purpose:
 slug: /v1/productive

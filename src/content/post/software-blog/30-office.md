@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - philosophical
- - business
+  - technical
+  - philosophical
+  - business
 publishDate: 2021-08-01T20:42:15.471453
 title: Office is just school for adults
 slug: /software-blog/the_office/

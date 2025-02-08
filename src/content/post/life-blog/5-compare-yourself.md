@@ -3,11 +3,11 @@ toc: false
 comments: true
 excerpt: 'placeholder'
 tags:
- - philosophical
- - for-future-me
- - personal
- - responsibility
- - systems
+  - philosophical
+  - for-future-me
+  - personal
+  - responsibility
+  - systems
 title: Compare yourself with who you were yesterday
 publishDate: 2021-05-04T20:42:15.654723
 slug: /life-blog/compare/
@@ -25,7 +25,7 @@ By comparing with yourself, you have a fair and proper baseline. [^3]
 
 # Escape competition through authenticity [^2]
 
-If you are playing someone else’s game, you’ll be worst at it. 
+If you are playing someone else’s game, you’ll be worst at it.
 
 If they are entering your game, they’ll be worst at it. No one can compete you for being you [^2].
 

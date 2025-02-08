@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - programming
- - time
+  - technical
+  - programming
+  - time
 title: Time tracking over programmers is counter-productive
 publishDate: 2021-08-01T20:42:15.362418
 slug: /software-blog/time_tracking/
@@ -31,6 +31,7 @@ But don’t implement something without giving it thought. Take time to get your
 ## Why time-tracking is counter-productive?
 
 The reason I say time-tracking is counter-productive is:
+
 - Somedays you realize you have written a bunch of code and it works but works like crap but you cannot do better.
 - Then the next day you come back to it... it’s still ugly.
 - Some days later you realize that the work you have been doing for the past several days is already done in an Open Source Module.

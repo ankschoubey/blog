@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: Probably the most powerful mental model
 tags:
- - decision-making
- - truth
+  - decision-making
+  - truth
 publishDate: 2021-08-14T20:52:08.052481
 slug: /life-blog/inversion/
 title: Inversion
@@ -26,9 +26,10 @@ Inversion is a technique that helps understand the other side in a much more str
 
 In inversion, you invert the argument or statement.
 
-For example: 
+For example:
 
-If you want to plan to do X. 
+If you want to plan to do X.
+
 - Straight Way of Thinking: How will I achieve X
 - Inversion: How will I fail at achieving C
 

@@ -5,11 +5,10 @@
     "allowJs": true,
     "baseUrl": "/Users/ankushchoubey/Documents/GitHub/astrowindblog",
     "paths": {
-      "~/*": [
-        "src/*"
-      ],
+      "~/*": ["src/*"],
       "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@content/*": ["src/content/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

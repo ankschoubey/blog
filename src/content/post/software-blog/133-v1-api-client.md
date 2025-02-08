@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - microservices
- - distributed-systems
+  - technical
+  - microservices
+  - distributed-systems
 publishDate: 2022-12-03T20:52:08.052481
 last-modified-purpose:
 slug: /v1/api-client-sdk
@@ -13,6 +13,7 @@ image: /images/v1-api-client/header.png
 ---
 
 ![Amazon SDK](/images/v1-api-client/header.png)
+
 <pre>Amazon SDK</pre>
 
 ## How does microservice usage ramp up?

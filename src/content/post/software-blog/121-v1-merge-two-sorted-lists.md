@@ -2,10 +2,10 @@
 comments: true
 excerpt: Iterate over both and store minimum one in current; Increment in the list from where minimum came. Once one of the lists is empty, empty the other one.
 tags:
- - technical
- - algorithm-problems
- - linked-list
- - easy
+  - technical
+  - algorithm-problems
+  - linked-list
+  - easy
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/merge-two-sorted-lists
@@ -32,10 +32,10 @@ This solution is highly unoptimized.
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode head = null;
         ListNode current = null;
-        
+
         while(list1!=null && list2!=null){
             ListNode minimum = null;
-            
+
             if(list1.val < list2.val){
                 minimum = list1;
                 list1 = list1.next;
@@ -43,7 +43,7 @@ This solution is highly unoptimized.
                 minimum = list2;
                 list2 = list2.next;
             }
-            
+
             if(head == null){
                 head = minimum;
                 current = minimum;
@@ -52,8 +52,8 @@ This solution is highly unoptimized.
             current.next = minimum;
             current = current.next;
         }
-        
-        ListNode remaining = list1!=null? list1: list2; 
+
+        ListNode remaining = list1!=null? list1: list2;
         while(remaining!=null){ // this iteration is unneccessary
             if(current == null){
                 current = remaining;
@@ -64,7 +64,7 @@ This solution is highly unoptimized.
             }
             remaining = remaining.next;
         }
-        
+
         return head;
     }
 ```
@@ -79,7 +79,7 @@ Lines of code: 16
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode preHead = new ListNode(-1);
         ListNode current = preHead;
-        while(list1!=null && list2!=null){            
+        while(list1!=null && list2!=null){
             if(list1.val < list2.val){
                 current.next = list1;
                 list1 = list1.next;
@@ -89,7 +89,7 @@ Lines of code: 16
             }
             current = current.next;
         }
-        
+
         current.next = list1!=null? list1: list2;
         return preHead.next;
     }

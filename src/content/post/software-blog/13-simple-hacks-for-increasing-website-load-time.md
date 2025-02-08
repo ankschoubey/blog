@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: For those who don’t require Google level optimization
 tags:
- - technical
- - web-development
+  - technical
+  - web-development
 publishDate: 2020-02-22T20:42:15.140795
 title: Simple Hacks for increasing website load time
 slug: /software-blog/load_time/
@@ -13,7 +13,6 @@ slug: /software-blog/load_time/
 # Reduce bundle size
 
 ## [Always use compression: at least `gzip`](https://twitter.com/ankschoubey/status/1229795313994461187?ref_src=twsrc%5Etfw)
-
 
 Always compress. The configuration is set in the webserver.
 
@@ -46,10 +45,9 @@ This ensures that if the content of the file changes, the `md5` checksum will ch
 
 # Do it fast
 
-## [Fetch `js` and `css` asynchronously](https://twitter.com/ankschoubey/status/1229793732418920449?s=20) <sup>[*Source*](https://flaviocopes.com/javascript-async-defer/#the-position-matters)</sup>
+## [Fetch `js` and `css` asynchronously](https://twitter.com/ankschoubey/status/1229793732418920449?s=20) <sup>[_Source_](https://flaviocopes.com/javascript-async-defer/#the-position-matters)</sup>
 
-
-When fetching ``js`` add `async defer` to `script` tag. This will fetch multiple `js` files in parallel. 
+When fetching `js` add `async defer` to `script` tag. This will fetch multiple `js` files in parallel.
 
 Keep `script` tag in the header for this.
 

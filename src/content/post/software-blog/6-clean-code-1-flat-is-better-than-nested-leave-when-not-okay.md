@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: Leave when not okay
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2019-12-20T20:42:15.088154
 title: Flat is better than nested
 slug: /software-blog/flat_is_better/

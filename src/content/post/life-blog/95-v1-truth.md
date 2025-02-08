@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - truth
+  - non-technical
+  - truth
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/truth
@@ -14,7 +14,6 @@ toc: false
 Treat this article as a buffet. Start with the introduction and then read the sections until you feel you get the gist. Then jump to the next.
 
 ## Introduction
-
 
 There are two parts to truth:
 
@@ -124,7 +123,6 @@ Use simpler straight forward words.
 You can’t make others see the truth easily. Saying, “You don’t want to look at truth” might be helpful sometimes but not often. This is because truth is filtered by many personal biases and personal knowledge.
 
 For example, if someone has not experience pain of a loss, they won’t realize what you are going through. They won’t be able to empathize. And similarly, in such situations, you won’t be able to empathize with them.
-
 
 ## Optional: Nuances about Truth
 

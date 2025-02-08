@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - spring-boot
- - database
- - information-system
+  - technical
+  - spring-boot
+  - database
+  - information-system
 publishDate: 2021-06-12T20:42:15.674574
 title: Faster SQL Batch Save in Spring Data JPA
 slug: /software-blog/batch-save-spring-jpa/
@@ -29,6 +29,7 @@ spring.jpa.properties.hibernate.format_sql=true
 Spring Data JPA allows for storing multiple records at once but multiple things have to be set first.
 
 ### 1. Switch to Sequence Generator for primary key
+
 Batch writes does not work with `GenerationType.IDENTITY`.
 
 Make using sequence_generator
@@ -41,7 +42,7 @@ Make using sequence_generator
 
 The {allocationSize} is how many writes you wish to do at once in case of a large list of entities.
 
-#### 2. Create the sequence in your database 
+#### 2. Create the sequence in your database
 
 Make sure that increment size is equal to {allocatedSize} used in `@GenerateValue`
 
@@ -77,7 +78,7 @@ We want to save a list of 500 entities to the database.
 
 JPA asks database for value of sequence.
 
-Database return value of 1. 
+Database return value of 1.
 
 JPA knows that the next increment is at 1000 so, it can fill in values between 1 and 1000.
 

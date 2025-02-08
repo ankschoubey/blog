@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - baton
+  - philosophical
+  - baton
 publishDate: 2022-08-14T20:52:08.052481
 slug: /software-blog/complex/
 last-modified-purpose: added CI/CD and no-automation
@@ -33,4 +33,3 @@ You don't need to add to many things to just automate pushing something to an en
 Similarly, you can let go of automation early on.
 
 For example: calculating DORA metrics by hand
-

@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: Minimalism
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2019-12-25T20:42:15.093981
 title: Avoid creating god classes and long methods
 slug: /software-blog/god_classes/

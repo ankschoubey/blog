@@ -2,10 +2,10 @@
 comments: true
 excerpt: Creative variable names in tests can make them fun and interesting to read.
 tags:
- - technical
- - testing
- - tdd
- - clean-code
+  - technical
+  - testing
+  - tdd
+  - clean-code
 publishDate: 2022-06-25T20:52:08.052481
 last-modified-purpose:
 slug: /creative-variable-names/
@@ -14,7 +14,7 @@ image: /images/creative-variable-names.png
 toc: false
 ---
 
-Variable and method names provide a context that makes it easy to understand a piece of code. 
+Variable and method names provide a context that makes it easy to understand a piece of code.
 
 Typically in code, it's enough to have the same variable name as the class name.
 
@@ -25,7 +25,6 @@ User user = new User(request.getFirstName(), request.getLastName());
 ```
 
 This looks good in code but gets messy in tests especially when there are multiple instances of the same object.
-
 
 ```java
 User user1 = new User("user 1 first name", "user 1 last name", ...10 other fields...);
@@ -71,6 +70,6 @@ User steveRoggers = UserTestData.Given.aUser("Steve", "Roggers");
 // someAssertionThatUses tonyStark And steveRogers
 ```
 
-Now within assertion, the developer will know the exact data in both the `User` objects. 
+Now within assertion, the developer will know the exact data in both the `User` objects.
 
 This not only makes tests cleaner but also makes them funny and exciting to read.

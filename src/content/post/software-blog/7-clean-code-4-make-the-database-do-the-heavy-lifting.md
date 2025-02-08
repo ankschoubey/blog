@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: You cannot compete with SQL
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2019-12-22T20:42:15.091119
 title: Make the database do the heavy lifting
 slug: /sql_is_fast/
@@ -24,7 +24,7 @@ For Spring (Java), ideally, use JPA method query things.**\*\*\***
 
 ![Source: JPA Repositories Spring.io](/images/2019-12-22-clean-code-4-make-the-database-do-the-heavy-lifting/1.png)
 
-_Tips: Use tools to make Entities POJO
+\_Tips: Use tools to make Entities POJO
 
 > youtube: https://www.youtube.com/watch?v=LrbaDRcu3Y0
 

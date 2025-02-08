@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - web-development
- - graphql
+  - technical
+  - web-development
+  - graphql
 publishDate: 2023-04-06T20:42:15.140795
 title: GraphQL - Understanding its Advantages, Query Types, and Technical Functioning
 slug: /software-blog/what-is-graphql/
@@ -157,7 +157,7 @@ Here, `createUser` would be called with the `username` as "Tony Stark" and only 
 
 ## How does a Graph QL work technically?
 
-GraphQL operates on a single endpoint, typically `/graphql`, that receives `POST` requests with a `JSON` body containing a `query` field, which specifies the data to be retrieved or modified, and an optional `variables` field for passing in arguments. 
+GraphQL operates on a single endpoint, typically `/graphql`, that receives `POST` requests with a `JSON` body containing a `query` field, which specifies the data to be retrieved or modified, and an optional `variables` field for passing in arguments.
 
 ```json
 {

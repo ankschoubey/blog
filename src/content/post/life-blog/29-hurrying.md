@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - decision-making
- - for-future-me
- - peace
+  - decision-making
+  - for-future-me
+  - peace
 publishDate: 2021-08-01T20:42:15.508582
 title: Hurrying does not help.
 slug: /life-blog/hurrying/
@@ -23,7 +23,7 @@ If you read too fast, you won't have enough comprehension.
 
 If you push yourself to work, you'll burn out.
 
-There is a point before you rush called the minimum effective dose (MED) [^1]. 
+There is a point before you rush called the minimum effective dose (MED) [^1].
 
 If you go beyond MED the speed will fast but progress will be slow.
 If you go below MED the speed will be slow and progress will be slow.

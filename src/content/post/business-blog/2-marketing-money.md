@@ -3,14 +3,15 @@ excerpt: Draft version
 title: Marketing Money
 comments: true
 tags:
- - business
- - marketing
+  - business
+  - marketing
 publishDate: 2021-08-01T20:42:15.236602
 use_math: true
 slug: /life-blog/marketing-money/
 ---
 
 ## Word of Mouth
+
 I understand that there are more things in the world then technology products but for a lot of technology products I don't like ads.
 
 Tesla does it the best.

@@ -1,25 +1,26 @@
 ---
-excerpt: Placeholder 
+excerpt: Placeholder
 title: Agile and DevOps
 comments: true
 tags:
- - technical
- - agile
- - devops
- - business
+  - technical
+  - agile
+  - devops
+  - business
 publishDate: 2020-05-21T20:42:15.219855
 use_math: true
 slug: /software-blog/agile_devops/
 ---
+
 Agile and DevOps are useful or buzz words depending on who you hear it from.
 
 The 2 can be thought of as effectiveness and efficiency respectively.
 
-***
+---
 
 ## **DevOps**: How to do
 
-DevOps deals with reducing the developer’s headaches by setting up processes and environments (+ mindset) to produce high-quality software. It can be useful to think of DevOps as an  [infinity loop](https://www.instana.com/media/ci-cd-loop-1024x456.png)  which only developers deal with.
+DevOps deals with reducing the developer’s headaches by setting up processes and environments (+ mindset) to produce high-quality software. It can be useful to think of DevOps as an [infinity loop](https://www.instana.com/media/ci-cd-loop-1024x456.png) which only developers deal with.
 
 High-quality software is the once that:
 
@@ -29,7 +30,7 @@ High-quality software is the once that:
 
 It is important for organizations to deliver new features faster and keep their software up to date. The speed of this software delivery will determine how fast the companies make changes.
 
-***
+---
 
 ## **Agile**: What to do
 
@@ -41,7 +42,7 @@ It helps in knowing and understanding requirements quickly and effectively and g
 
 Agile involves everyone. It does not matter is someone is technical or not.
 
-***
+---
 
 ## **Textbook**: What to not do
 

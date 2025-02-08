@@ -3,16 +3,15 @@ toc: false
 comments: true
 excerpt: कर्म करो और फल की चिंता मत करो
 tags:
- - love
- - social-harmony
- - non-technical
+  - love
+  - social-harmony
+  - non-technical
 title: 7 Tools To Make Good Love Choices
 publishDate: 2023-03-25T20:42:15.419969
 slug: /life-blog/7-tools-for-making-good-love-choices/
 image: /images/tommy-love.jpeg
 read-this-when: you want to neutralize your thoughts and make good long term decisions.
 ---
-
 
 I wrote these 7 tools as a way to advise a friend. These came from the struggle and learning I had over the months.
 

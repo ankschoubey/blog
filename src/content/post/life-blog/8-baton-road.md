@@ -3,8 +3,8 @@ excerpt: How humanity progresses.
 title: Baton Road
 comments: true
 tags:
- - favorite
- - responsibility
+  - favorite
+  - responsibility
 use_math: true
 publishDate: 2021-08-01T20:42:15.242622
 slug: /baton/
@@ -38,6 +38,7 @@ The future generations will not have to deal with many of the problems he is sol
 The baton is not limited to technology. Every field connects to every other. Advances in any will improve every.
 
 Every moment happens once. [^1]
+
 - The next Steve Jobs won't start a hardware business.
 - The next Zuckerberg won't build a social network.
 - The next Elon Musk won't set up an electric car company.

@@ -3,7 +3,7 @@ excerpt: For producers
 title: "If it is a core part of your business, don't outsource, build it yourself."
 comments: true
 tags:
- - business
+  - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.296625
 slug: /software-blog/build_it_yourself/

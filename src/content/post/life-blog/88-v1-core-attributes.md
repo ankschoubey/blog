@@ -2,7 +2,7 @@
 comments: true
 excerpt: Developing better instinctive reactions to unknown situations
 tags:
- - non-technical
+  - non-technical
 publishDate: 2022-11-23T20:52:08.052481
 last-modified-purpose:
 slug: /v1/core-attributes

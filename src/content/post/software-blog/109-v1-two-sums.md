@@ -2,9 +2,9 @@
 comments: true
 excerpt: Make a map of item and index. Check if target - currentItem exists.
 tags:
- - technical
- - algorithm-problems
- - arrays
+  - technical
+  - algorithm-problems
+  - arrays
 publishDate: 2022-10-29T20:52:08.052481
 last-modified-purpose:
 slug: /v1/two-sums
@@ -27,7 +27,7 @@ Make sure not to use the same index twice.
 
 ### O(n^2) solution. O(1) space complexity
 
-Have two loops. 
+Have two loops.
 One at the first element. Others will check other elements to the right of the first index.
 
 Repeat until the index is found.
@@ -44,8 +44,8 @@ If it exists, then you have found the element.
 
 ```java
 class Solution {
-    
-    public int[] bruteForceOn2(int[] nums, int target){ 
+
+    public int[] bruteForceOn2(int[] nums, int target){
         // Time Complexity: O(n^2)
         // Space Complexity: O(1)
         /*
@@ -61,7 +61,7 @@ class Solution {
         }
         return null;
     }
-    
+
     public int[] optimized(int[] nums, int target){
          // Time Complexity: O(n)
         // Space Complexity: O(n)
@@ -70,7 +70,7 @@ class Solution {
         Memory Usage: 45.7 MB, less than 31.53% of Java online submissions for Two Sum
         */
         Map<Integer, Integer> indexes = new HashMap<>();
-        
+
         for(int i = 0; i< nums.length; i++){
             int currentNumber = nums[i];
             int neededNumber = target - currentNumber;
@@ -79,10 +79,10 @@ class Solution {
             }
             indexes.put(currentNumber, i);
         }
-        
+
         return null;
     }
-    
+
     public int[] twoSum(int[] nums, int target) {
         //return bruteForceOn2(nums, target);
         return optimized(nums, target);

@@ -2,10 +2,10 @@
 comments: true
 excerpt: Swap left and right. Then repeat for those nodes.
 tags:
- - technical
- - algorithm-problems
- - binary-tree
- - east
+  - technical
+  - algorithm-problems
+  - binary-tree
+  - east
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/invert-binary-tree

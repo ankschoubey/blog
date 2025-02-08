@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - dev-productivity
+  - technical
+  - dev-productivity
 publishDate: 2022-10-02T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/microservice-chassis/

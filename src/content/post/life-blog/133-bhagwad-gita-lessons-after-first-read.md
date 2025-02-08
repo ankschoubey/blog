@@ -31,7 +31,6 @@ I currently need to improve in reading the Devanagari script. So, I kept it down
 
 <img src="/images/life-blog/gita/Bhag.png" style="max-height:400px; margin: auto">
 
-
 [Link to Bhagwad Gita Podcast](https://www.listennotes.com/podcasts/bhagavad-gita-spydor-studios-l2I3eToQdAi/)
 
 ## What effects did Gita have on me?
@@ -333,7 +332,7 @@ Essentially, Gunnas make us act in specific ways. The Gita says one who can see 
 
 This state is called Nirgun, meaning free of the control of gunnas.
 
-If you are conscious of the fact that your attachment to wealth is not letting you donate money to where it's necessary,  Even though your Maan (mind) wants to act in a certain way, you can use your Buddi (brain) to control it and choose something else.
+If you are conscious of the fact that your attachment to wealth is not letting you donate money to where it's necessary, Even though your Maan (mind) wants to act in a certain way, you can use your Buddi (brain) to control it and choose something else.
 
 Do this for enough time, and it'll keep increasing.
 
@@ -366,7 +365,6 @@ Sato leads us to the best possible way to allow our intellect to be in control.
 And Nirgun is the state where our intellect is actually under control.
 
 We control our mind using our intellect and use our mind to control our senses. And we take our intellect and focus on our conscious experience and God.
-
 
 <img src="/images/life-blog/gita/Peacock Feather Separator.png" style="max-height:80px; margin: auto">
 

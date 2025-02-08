@@ -2,11 +2,11 @@
 comments: true
 excerpt: The process that keeps everyone in sync
 tags:
- - technical
- - product-development
- - tdd
- - testing
- - bdd
+  - technical
+  - product-development
+  - tdd
+  - testing
+  - bdd
 publishDate: 2022-05-23T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/gist-of-bdd/
@@ -32,7 +32,7 @@ The specification is a document that describes what features are to be built exa
 
 This would be a single source of direction. If something is in the spec file, it has to be built that way. If it's not in the spec file, it should not be built.
 
-The spec file keeps the entire organization in sync. 
+The spec file keeps the entire organization in sync.
 
 - The product team uses it to finalize features.
 - The development team used to know what to work on.
@@ -52,7 +52,7 @@ The creation of specifications is a collaborative process, involving different t
 
 In reality, it's best not to start by collaborating. It’s best for a single person on the product team to write down specification files.
 
-This is because he/she knows the business better than others and typically has effective communication skills. It’s likely not the best way to test the English skills of a developer or a tester ;). 
+This is because he/she knows the business better than others and typically has effective communication skills. It’s likely not the best way to test the English skills of a developer or a tester ;).
 
 A product person would likely write in simple business terms that are understandable to all stakeholders. And since he/she understands best, the initial draft spec file would be out faster.
 
@@ -97,11 +97,12 @@ graph LR
     Code --> |keeps code and specs in sync| S
 
 ```
+
 # Specifications by Example
 
 This also leads us to the point of how to write better specifications. The standard practice is this, described by examples. An example is how a user would interact with the system we have built. Examples solve the ambiguity. The keyword scenario is an example.
 
-Rather than writing, a file of up to 25 MB can be uploaded. 
+Rather than writing, a file of up to 25 MB can be uploaded.
 
 We can write as an example:
 
@@ -113,6 +114,7 @@ We can write as an example:
 - **And** should not be visible in the files list
 
 **Scenario**: Allow upload of file less than equal to 25 MB
+
 - **Given** I am on the file management page
 - **When** I upload a 25 MB file
 - **Then** the file should be uploaded

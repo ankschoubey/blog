@@ -3,12 +3,12 @@ toc: false
 comments: true
 excerpt: Comments and Naming Conventions
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2022-08-06T20:42:15.089636
 title: Leave Clues
 slug: /software-blog/naming_conventions/
-last-modified-purpose: "added detail about javadocs"
+last-modified-purpose: 'added detail about javadocs'
 ---
 
 These apply to name everything: variables, class names, methods, packages, etc.

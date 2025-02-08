@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - architecture
- - plugin
+  - technical
+  - architecture
+  - plugin
 publishDate: 2023-03-03T20:52:08.052481
 last-modified-purpose:
 slug: /v1/internal-vs-external-plugin
@@ -46,8 +46,6 @@ The only difference between external_app and the internal feature would be that 
 This means, once you create a scope, it’s fixed.
 
 And this simplifies your development a lot.
-
-
 
 ---
 

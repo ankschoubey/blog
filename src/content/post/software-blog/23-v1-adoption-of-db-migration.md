@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - database
- - culture
- - ideas
+  - technical
+  - database
+  - culture
+  - ideas
 publishDate: 2020-10-31T20:52:08.052481
 last-modified-purpose:
 slug: /v1/adoption-of-db-migration
@@ -13,6 +13,7 @@ title: Easing the process of DB versioning & migration tool adoption
 ---
 
 Likely reasons for Liquibase non-adoption
+
 - Multistep step process
 - Experimentation while creating statements
 - Creating rollback
@@ -35,15 +36,18 @@ or
 A simple web tool can be created which only developers would use to automatically generate output in Liquibase or another format which can be executed on a DB.
 
 ### Features:
+
 - Generation of Liquibase script
 
 As described above
+
 - Execution of DDL scripts on DB
 - DDL commands can only be executed via the tool.
 
 Along with a message for why the change was made along with the developer id. Optionally, if DDL is associated with a story or a git branch then that info can also be added.
 
 ### Logs
+
 - Like Kibana: An easy way to track all the DDL changes in a DB.
 
 Similar to logs easily available and searchable.

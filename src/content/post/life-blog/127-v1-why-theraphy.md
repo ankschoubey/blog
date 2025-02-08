@@ -2,19 +2,18 @@
 comments: true
 excerpt: Psychology and therapy are evidence-based approaches that can expedite problem-solving. Common misconceptions include the belief that therapy is unnecessary and that therapists solely resolve issues. Addressing these misconceptions aids in determining the need for therapy, either for yourself or someone you know.
 tags:
- - peace
- - non-technical
- - psychology
+  - peace
+  - non-technical
+  - psychology
 publishDate: 2023-09-10T20:52:08.052481
 last-modified-purpose:
-read-this-when: 
+read-this-when:
 slug: /optimism/why-therapy
 title: Why psychological work and/or therapy are important and shouldn't be ignored?
 image: /images/why-therapy.jpg
 ---
 
 Photo by <a href="https://unsplash.com/@ashlynciara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ashlyn Ciara</a> on <a href="https://unsplash.com/photos/WA_O4UAUfxc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
 
 **I am not a therapist or a medical professional**. I didn't go to therapy for a long time and didn't understand when to go for it. The reasoning was likely that I didn't understand what psychology is and what psychological work means.
 
@@ -65,12 +64,13 @@ A common thing which people think is that anxiety and depression mean pagal! Thi
 And usually, pagal means something that generally happens to someone else. And that people want to avoid becoming pagal. They also think of particular people as pagal.
 
 Pagal is a very loaded term and something that people fear because they don't understand it.
+
 - Does being angry make you pagal?
 - Does being scared and worried make you pagal?
 
 If you study psychological issues, you realize most are simple. You could say schizophrenia is pagal where people see abnormality in reality. But that's an extreme case.
 
-Most people who avoid therapy or psychological work avoid it for more superficial reasons like trauma trying to justify saying their condition is not that bad that it can't be handled themselves. 
+Most people who avoid therapy or psychological work avoid it for more superficial reasons like trauma trying to justify saying their condition is not that bad that it can't be handled themselves.
 
 That may be true. But if you go to a therapist and do psychological work, you could have half the time to go through a solution yourself. And you know you'll be given proper treatment given their scientific problem.
 
@@ -104,13 +104,13 @@ You can sort out and solve the root cause of your psychological troubles with so
 
 Psychological treatments aren't quick fixes, and they require work. Most psych treatment doesn't involve medication, so people don't believe it.
 
-You get good grades if you have studied hard for an exam. For this, you may have paid extra tuition, and you trust that the tuition teacher can teach you something or help you in a way that would lead to faster progress. The tutor does not give you brain pills to make you smarter. Neither tutor goes and gives the exam on your behalf. 
+You get good grades if you have studied hard for an exam. For this, you may have paid extra tuition, and you trust that the tuition teacher can teach you something or help you in a way that would lead to faster progress. The tutor does not give you brain pills to make you smarter. Neither tutor goes and gives the exam on your behalf.
 
 The tutor's role is to help you form your thoughts through understanding so that you can pass the exam yourself. Once the exam ends, the tutor is no longer needed, and you can do something else.
 
 Similarly, if you go to therapy to learn how to do psychological work so that you don't need to go to the therapist again and again, once the problem is fixed, it's fixed.
 
-The therapist won't solve the problems for you. But they'll help you form your thoughts and make them more scientific. 
+The therapist won't solve the problems for you. But they'll help you form your thoughts and make them more scientific.
 
 ## Ending: Get it over with and go do something else.
 

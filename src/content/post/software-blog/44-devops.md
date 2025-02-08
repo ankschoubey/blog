@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - devops
- - information-system
+  - technical
+  - devops
+  - information-system
 publishDate: 2021-08-01T20:42:15.672411
 title: Gist of DevOps
 slug: /software-blog/devops/
@@ -13,7 +13,7 @@ slug: /software-blog/devops/
 
 <div style='display: none'>
 
-My dear younger self, 
+My dear younger self,
 
 You believed DevOps is bs and a buzzword. It kind of is. But it is highly valuable and important too.
 
@@ -25,14 +25,15 @@ In this post, I’ll try to convince you why upper management likes DevOps so mu
 
 </div>
 
-
 ## Where did DevOps come from?
 
-There are 2 separate engineers. 
+There are 2 separate engineers.
+
 - One who made the product -> Developer
 - The other who made sure the product is running properly -> Operations Engineer
 
 Operations Engineer's role included:
+
 - Deploying application to server
 - Making sure it is operating properly
 
@@ -55,20 +56,23 @@ DevOps also get’s merged with security and called DevSecOps. Security is usual
 You cannot copy another organizations DevOps structure as it is. Your organization and products are unique. Make your own style. Don’t copy everything that google or facebook do, though you can learn a lot from them.
 
 Since DevOps relies so much on automation tools, some things can be achieved faster.
+
 - Increase compliance
 - Streamlining of processes
 - Automating repeatable tasks
 
 All the tools and practices results to:
+
 - Increasing speed of deployments
-    - Very important to stay ahead of competition even if core of business is not software.
+  - Very important to stay ahead of competition even if core of business is not software.
 - Increasing quality of software
-    - Allowing making changes easily and reducing bugs
+  - Allowing making changes easily and reducing bugs
 - Reducing cost of discovery and fixing issues
-    - Bugs discovered faster can be fixed early
-    - All this reduces downtime.
+  - Bugs discovered faster can be fixed early
+  - All this reduces downtime.
 
 Some DevOps practices and accompanying tool that are very helpful are.
+
 - Build Automation: Jenkins
 - DB Automation: Liquibase, Flyway
 - Code Linting: Sonar, CAST

@@ -1,20 +1,22 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - business
- - books
- - marketing
+  - business
+  - books
+  - marketing
 title: Summary of Marketing Section from The Personal MBA
 slug: /life-blog/marketing-mba/
 publishDate: 2021-08-01T20:42:15.580800
 image: /images/mba.jpg
 hide: true
 ---
+
 ![](/images/mba.jpg)
 
 # Marketing
+
 Marketing is about finding the right prospespects, keeping their attention and make them interested in what you have to offer. Every business needs to do it because no matter how good your product is, you won't have profit until your customers can find you.
 
 **Direct-Marketing** sometimes reduces the lines between itself and sales because it reduces amount of time to close the deal.
@@ -29,11 +31,11 @@ The number 1 rule of marketing is that attention is limited and every other comp
 
 People are only interested in things they like and the things that are important to them. Therefore high quality attention is important. And high quality attention must be earned.
 
-At the same time, the aim is not be popular. The aim is to increase profits. So if you can get yourself on TV, you'll be popular but you'll waste a lot of time not finding the **right customer**. 
+At the same time, the aim is not be popular. The aim is to increase profits. So if you can get yourself on TV, you'll be popular but you'll waste a lot of time not finding the **right customer**.
 
 ### Receptivity
 
-People ignore what they don't care about. 
+People ignore what they don't care about.
 
 Receptiveless is how open a person is to your message. There are three parts to this: message, timing and medium
 
@@ -66,6 +68,7 @@ The threshhold for this maybe low or high depending on your environment and type
 You need to be sensitive to how much your probable customer cares about your offer.
 
 There are 5 levels to this:
+
 1. Unaware
 2. Problem Aware
 3. Solution Aware: Knows solution but not aware of specific offer
@@ -98,7 +101,7 @@ Ideally your funnel should remove bad customer. Bad onces will consume un-necces
 
 After that you can focus on better serving the right once.
 
-The prospect who is not right for you may be right for your competitors. You don't have to be jumpy about not serving bad prospects, help them by refer them to competitors. 
+The prospect who is not right for you may be right for your competitors. You don't have to be jumpy about not serving bad prospects, help them by refer them to competitors.
 
 ### Point of Market Entry
 
@@ -112,7 +115,7 @@ Point of entry is the reason why organic and paid-ad search are so valuable.
 
 ### Addressability
 
-There are certain problems and types of prospects that open up in public. These can be sensitive issues. 
+There are certain problems and types of prospects that open up in public. These can be sensitive issues.
 
 So you're not going to find a TV Ad style boadcast to do much of a trick or expect a viral word of mouth recommendation.
 
@@ -122,7 +125,7 @@ For example for sensitive health issues, doctors are an easy medium to get to yo
 
 Nowadays people also Google the solution to their problem, therefore targetted ads are also useful.
 
-Addressability is how easy it is to get in touch with your prospects. Ideally you wannt high addressibility. 
+Addressability is how easy it is to get in touch with your prospects. Ideally you wannt high addressibility.
 
 If you choose an already addressable market, you'll reduce your efforts significantly.
 
@@ -130,7 +133,7 @@ If you choose an already addressable market, you'll reduce your efforts signific
 
 Desire is one of the part of marketing that get's people off. If someone does not desire your product, no one will purchase it.
 
-Scammy marketters are people who promise a product which is different for what they deliver. But it is almost impossible to sell someone something that they don't desire. 
+Scammy marketters are people who promise a product which is different for what they deliver. But it is almost impossible to sell someone something that they don't desire.
 
 Your goal is not to appeal to people who don't desire, it is to find people who can convince themself of how your offer will benifit them.
 
@@ -152,7 +155,7 @@ Framing a natural form of communication. There is always some sort of compressio
 
 Framing your communication to be persuasive and exact can get the point accross faster while honoring the listener.
 
-Framing is not same as deciet, you are not lying. 
+Framing is not same as deciet, you are not lying.
 
 While framing make sure that the listener know what they need to know because if not done it will harm your reputation.
 
@@ -181,6 +184,7 @@ The smaller your message, the less likely people are to forget it.
 Hook is a small enough message that keeps people's attention and conways to them what you are offereing and who you are. It also makes it easy for people to tell about you to their firends.
 
 Examples:
+
 - A million songs in your pocket -> IPod
 - 4 hour work week
 
@@ -211,7 +215,7 @@ Therefore testomonials, case studies and other stories make it easy for customer
 
 If your position is to agree with everyone else, then you'll become boring.
 
-Controvery means taking a stand for something you care about even if people disagree with it. Controversy promote discussion and attract peopl'e attention. 
+Controvery means taking a stand for something you care about even if people disagree with it. Controversy promote discussion and attract peopl'e attention.
 
 Not all controversty is good. As logn as you are able to maintain a sense of bigger picture of how you're trying to help, a bit of controvery can create useful awareness.
 

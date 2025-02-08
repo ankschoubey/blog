@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - programming
+  - technical
+  - programming
 title: How I learned basics of programming.
 publishDate: 2021-08-01T20:42:15.515422
 slug: /software-blog/learn_programming/
@@ -29,7 +29,7 @@ I had to prepare for a job interview and coding competitions. So I started pract
 
 I knew syntax pretty well but could not write code myself. I always needed a tutorial.
 
-I came across a YouTube series and book of the same name:  [Think Like A Programmer](https://www.youtube.com/playlist?list=PLKQ5LYb497AZIZe9dBWy8GwLluVaMQVj0).
+I came across a YouTube series and book of the same name: [Think Like A Programmer](https://www.youtube.com/playlist?list=PLKQ5LYb497AZIZe9dBWy8GwLluVaMQVj0).
 
 I watched all the videos, read books and tried applying them. I was not good initially thought I had learned some ways to estimate what end program would look.
 
@@ -58,6 +58,7 @@ I did not solve all the problems. I had read through the theory.
 I build all my academic projects myself without asking for help. That helped me a lot.
 
 I was trying to build things for myself. Like
+
 - a python script that would automatically empty desktop.
 - A python selenium script that would log in to Facebook and wish Happy Birthday to people.
 - A script to download Anime.

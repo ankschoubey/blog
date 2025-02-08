@@ -1,16 +1,16 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - non-technical
- - truth
+  - non-technical
+  - truth
 publishDate: 2022-05-31T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/why-memorize/
 title: Why memorizing is still relevant?
 ---
 
-There is a cognitive bias called the Google Effect. 
+There is a cognitive bias called the Google Effect.
 
 It means that if we know where to find the information, we won’t try to remember it. Instead, we’ll roughly know the location of where to find it.
 

@@ -10,7 +10,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
-
+import links from '../../src/content/ankushLinks';
 const metadata = {
   title: 'Personal Homepage Demo',
 };
@@ -26,13 +26,13 @@ const metadata = {
         { text: 'Hire Me', href: '#resume' },
         // { text: 'Porfolio', href: '#porfolio' },
         {
-          text: "Blog",
+          text: 'Blog',
           href: getPermalink(),
           links: [
             { text: 'Tech Posts', href: getPermalink('technical', 'tag') },
-            { text: 'Life Posts', href: getPermalink('non-technical', 'tag') }
-          ]
-        }
+            { text: 'Life Posts', href: getPermalink('non-technical', 'tag') },
+          ],
+        },
         // { text: 'Tech Posts', href: getPermalink('technical', 'tag') },
         // { text: 'Life Posts', href: getPermalink('non-technical', 'tag') },
         // { text: 'Blog', href: '#blog' },
@@ -57,14 +57,17 @@ const metadata = {
     taglineInverted={true}
     tagline="Full Stack Developer"
     actions={[
-      { variant: "primary", target: '_blank', text: 'Hire me', href: 'https://www.linkedin.com/in/ankushchoubey/' },
-      { variant: "secondary", text: 'Software Blog', href: getPermalink('technical', 'tag') },
-      { variant: "secondary", text: 'Life Blog', href: getPermalink('non-technical', 'tag') }
+      { variant: 'primary', target: '_blank', text: 'Hire me', href: links.linkedInProfile },
+      { variant: 'secondary', text: 'Software Blog', href: getPermalink('technical', 'tag') },
+      { variant: 'secondary', text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
     ]}
   >
     <Fragment slot="subtitle">
-      Helping you build <a class="text-blue-700 font-bold" href="/clean-code">clean</a>, <a class="text-blue-700 font-bold"  href="/tdd">bug-free</a>, scalable software <a class="text-blue-700 font-bold" href="/cd">fast</a>!
-    <!-- I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
+      Helping you build <a class="font-bold text-blue-700" href="/clean-code">clean</a>, <a
+        class="font-bold text-blue-700"
+        href="/tdd">bug-free</a
+      >, scalable software <a class="font-bold text-blue-700" href="/cd">fast</a>!
+      <!-- I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
     <br> <br>
     Through this blog, I share my insights and ideas on software development philosophy and best practices to help fellow developers create high-quality software products.
 
@@ -78,37 +81,39 @@ const metadata = {
     </Fragment>
   </Hero>
 
-   <!-- BlogLatestPost Widget **************** -->
+  <!-- BlogLatestPost Widget **************** -->
 
-
-
-
-      <BlogLatestPosts
-      id="tech-blog"
-      tag="technical"
-      title="Software Posts"
-      information={`From TDD, BDD, DevOps, etc.`}
-      linkText='View Software Development Posts'
-      linkUrl={getPermalink("technical", "tag")}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </BlogLatestPosts>
-    <Hero tagline="Life & Self Improvement">
-    <Fragment slot="subtitle">
-       <br>
-        I write a lot about philosophy and life too.<br>
-        <br>
-        My main focus as been my 4 core values<br><br> <span class="text-white-700 dark:text-black-800 font-bold">🔭 Clarity</span>,  <span class="text-orange-700 font-bold">💎 Responsibility</span>, 🫀 <span class="text-green-700 font-bold">Optimism</span> and 🫱🏻‍🫲🏾 <span class="text-blue-700 font-bold">Social</span>.
+  <BlogLatestPosts
+    id="tech-blog"
+    tag="technical"
+    title="Software Posts"
+    information={`From TDD, BDD, DevOps, etc.`}
+    linkText="View Software Development Posts"
+    linkUrl={getPermalink('technical', 'tag')}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-    </Hero>
-    <BlogLatestPosts
+  </BlogLatestPosts>
+  <Hero tagline="Life & Self Improvement">
+    <Fragment slot="subtitle">
+      <br />
+       I write a lot about philosophy and life too.<br />
+      <br />
+       My main focus as been my 4 core values<br /><br />
+      <span class="text-white-700 dark:text-black-800 font-bold">🔭 Clarity</span>, <span
+        class="font-bold text-orange-700">💎 Responsibility</span
+      >, 🫀 <span class="font-bold text-green-700">Optimism</span> and 🫱🏻‍🫲🏾 <span class="font-bold text-blue-700"
+        >Social</span
+      >.
+    </Fragment>
+  </Hero>
+  <BlogLatestPosts
     id="non-tech-blog"
     tag="non-technical"
     title="Life Posts"
     information={`Range from topics such as Truth, Discipline, Karma, Social, Psychology, Challenges to everything that's not software engineering`}
-    linkUrl={getPermalink("non-technical", "tag")}
+    linkUrl={getPermalink('non-technical', 'tag')}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -126,9 +131,9 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'LinkedIn',
-          href: 'https://www.linkedin.com/in/ankushchoubey/',
+          href: links.linkedInProfile,
         },
-      }
+      },
     ]}
     image={{
       src: 'https://www.ankushchoubey.com/images/profile.png',
@@ -136,25 +141,24 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h3>
-      I specialise in building reactive event-driven microservices with Spring Boot. My experience also includes front-end development with Angular and React, as well as working with Microsoft SQL and MongoDB. I am able to switch between front-end, back-end, and database seamlessly.
-
-      I have a diploma in Computer Engineering and a Bachelor's degree in Computer Science. I had been very passionate for machine learning and deep learning but transitioned to full-stack development.
-      
-      I have experience in all stages of the software development life cycle, including requirement gathering, analysis and design, and deployment. I am skilled in designing maintainable and extensible code architectures.
-      
-      I am getting better at working with Docker and Kubernetes for deployments, and building efficient CI and deployment pipelines is an area of interest for me. I also have experience with agile methodologies, code quality, and Test-Driven Development.
-      
-      I am a passionate developer who is always eager to learn new technologies and practices. I share my learning experiences on my blog, ankushchoubey.com, and welcome visitors to say hi.      
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">About me</h3>
+       I specialise in building reactive event-driven microservices with Spring Boot. My experience also includes
+      front-end development with Angular and React, as well as working with Microsoft SQL and MongoDB. I am able to
+      switch between front-end, back-end, and database seamlessly. I have a diploma in Computer Engineering and a
+      Bachelor's degree in Computer Science. I had been very passionate for machine learning and deep learning but
+      transitioned to full-stack development. I have experience in all stages of the software development life cycle,
+      including requirement gathering, analysis and design, and deployment. I am skilled in designing maintainable and
+      extensible code architectures. I am getting better at working with Docker and Kubernetes for deployments, and
+      building efficient CI and deployment pipelines is an area of interest for me. I also have experience with agile
+      methodologies, code quality, and Test-Driven Development. I am a passionate developer who is always eager to learn
+      new technologies and practices. I share my learning experiences on my blog, ankushchoubey.com, and welcome
+      visitors to say hi.
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-
-
 
   <!-- Steps Widget ****************** -->
 
@@ -274,7 +278,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">
         Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
       </h3>
     </Fragment>
@@ -312,7 +316,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">
         Project 2: <br /><span class="text-2xl">Event poster for art & music festival</span>
       </h3>
     </Fragment>
@@ -349,7 +353,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">
         Project 3: <br /><span class="text-2xl">E-commerce website redesign for fashion brand</span>
       </h3>
     </Fragment>
@@ -432,11 +436,12 @@ He is an amazing asset for any team and company. I wish him all the very best fo
   <CallToAction
     title="Let's create together"
     subtitle="Ready to transform your vision into captivating designs?"
-    actions={[{
-      variant:"primary",
-      text: 'Hire me',
-      href: '/',
-    }]}
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hire me',
+        href: '/',
+      },
+    ]}
   />
-
 </Layout>

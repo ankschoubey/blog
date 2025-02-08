@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - leadership
- - philosophical
- - business
- - social-harmony
+  - leadership
+  - philosophical
+  - business
+  - social-harmony
 publishDate: 2021-08-01T20:42:15.468577
 title: Empowerment/Enabling
 slug: /life-blog/giving_help/
@@ -16,7 +16,7 @@ The answers by themselves are not that important.
 
 The process for finding the answer is more important so that they can replicate the process later.
 
-Over-dependence is a  bottleneck. Always providing ready-made solutions seems to turn people weak and dependent.
+Over-dependence is a bottleneck. Always providing ready-made solutions seems to turn people weak and dependent.
 
 And it is your responsibility [^1] to make them capable of themselves finding the answers and making informed decisions.
 

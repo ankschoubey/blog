@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: "Emotional mastery isn’t just about willpower; it’s about strategy. While emotions can feel overwhelming, psychology offers practical tools to regain control and navigate them with clarity."
+excerpt: 'Emotional mastery isn’t just about willpower; it’s about strategy. While emotions can feel overwhelming, psychology offers practical tools to regain control and navigate them with clarity.'
 tags:
- - non-technical
- - optimism
- - psychology
+  - non-technical
+  - optimism
+  - psychology
 publishDate: 2024-10-27T20:52:08.052481
 slug: /life-blog/psychology-concepts/
 title: Psychological Terms and Principles I Use to Understand and Process My Emotions
@@ -119,7 +119,7 @@ Read more at: [Defense Mechanisms in Psychology Explained (+ Examples)](https://
 
 - The brain has a nature of making sense of things around us. But sometimes if the evidence presented by the brain is too counter to its belief it can cause a kind of split in the brain which can be a really painful experience.
 - If you have enough splits (i.e. your brain is fractured into multiple parts), you won't be able to think thoughts clearly, and this would likely have led to some kind of trauma.
-For example, assume you had a 10-year friendship but your friend suddenly turned #toxic.
+  For example, assume you had a 10-year friendship but your friend suddenly turned #toxic.
   - The picture you had in your mind was of a really good friendship and a deep vulnerable connection. But now they say they have always hated you and everything you do. And they say 2 or three more mean things.
   - This can make you start questioning not just one moment but the entire last 10 years.
   - This will be too hard for you to think about so, your brain activates a defense mechanism and makes you not think about it.
@@ -471,7 +471,7 @@ It's possible. I am on the path of it. Deal with every psychological problem you
 
 And have no new backlog. It's one thing to have problems from the past. But it's really unproductive to not process new things as they come because they'll fill up your backlog.
 
-I hope this blog post served you and gave you my perspective on the insights I have learned. I am grateful for many of my friends,  [my therapist](https://in.linkedin.com/in/ishita-kulkarni-520381166?trk=public_post_feed-actor-name), and many many internet resources especially Dr. Kanoj and Dr. Ramini who supported me during my difficult times. No amount of thanks is going to cut it. 🙂
+I hope this blog post served you and gave you my perspective on the insights I have learned. I am grateful for many of my friends, [my therapist](https://in.linkedin.com/in/ishita-kulkarni-520381166?trk=public_post_feed-actor-name), and many many internet resources especially Dr. Kanoj and Dr. Ramini who supported me during my difficult times. No amount of thanks is going to cut it. 🙂
 
 This blog post doesn't cover the topic of thinking rational thoughts cognitive reframing and spirituality. Cognitive reframing can cement your emotional healing and make it complete. Seeking and understanding spiritual concepts from Shreemad Bhagwad Gita has been my main gateway for a lot of cognitive reframing.
 

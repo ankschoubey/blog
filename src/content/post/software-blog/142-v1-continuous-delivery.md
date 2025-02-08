@@ -2,9 +2,9 @@
 comments: true
 excerpt: How Zero-To-One is relevant in software development, why you should make Deployment&Delivery Pipeline first and how to make releases un-cool.
 tags:
- - technical
- - devops
- - continuous-delivery
+  - technical
+  - devops
+  - continuous-delivery
 publishDate: 2023-01-14T20:52:08.052481
 last-modified-purpose: Added notes from other blogs
 slug: /v1/continuous-delivery
@@ -23,7 +23,7 @@ Because till something is released, we developers secretly know the work we did 
 
 This routine is a cycle of Manual Deployment.
 
-![](/images/v1-continuous-delivery/emotional cycle of manual delivery_.png)
+![](/images/v1-continuous-delivery/emotional cycle of manual delivery\_.png)
 
 Source: Atlassian (Linked below.).
 
@@ -87,9 +87,9 @@ For example, let's say a team adopts continous delivery.
 1. On their first day, a developer commits and his code reaches from dev, qa, uat to PROD and users start using it. It so happened that their was a logical bug in the code deployed.
 2. Rather than scraping the continous delivery pipeline, the team decides to find why the problem was caused and improve the pipeline. They find that the code quality itself was low and their were logical bugs.
 3. To fix this issue from happening in the future, the team adopted better engineering practices.
-    - They add Sonar lint, a popular linter to quicky check and ensure code meets standard.
-    - They also adopt TDD and enforced a rule that build passes only when the test coverage is 80%.
-    - Now, the problem for fixed for life.
+   - They add Sonar lint, a popular linter to quicky check and ensure code meets standard.
+   - They also adopt TDD and enforced a rule that build passes only when the test coverage is 80%.
+   - Now, the problem for fixed for life.
 4. Sonar Lint became a step in the delivery pipeline. And TDD became a habit.
 
 The next time a developer comes and commits something, the stages in the delivery pipeline ensures that the code is deliverable.
@@ -106,7 +106,7 @@ There are several practices that support a continuous delivery. Some include,
 - [feature-flagging](/software-blog/feature-flagging)
 - #morePostsSoon
 
-## **Optional**:  Why not-having a delivery pipeline is risky?
+## **Optional**: Why not-having a delivery pipeline is risky?
 
 In previous section we covered how quality improves with a continous delivery pipeline. Here are reason why the amount of risk of not having a continuous delivery pipeline is higher.
 

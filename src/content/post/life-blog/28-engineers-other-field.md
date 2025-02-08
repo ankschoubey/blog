@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - information-system
- - baton
+  - information-system
+  - baton
 title: Why Software Engineers Should Enter Other Fields.
 publishDate: 2021-08-01T20:42:15.506448
 slug: /software-blog/engineer/
@@ -32,6 +32,7 @@ A technical person does not know what problems to solve. The result is that time
 Some fields have slow progress rate. There is a long delay in medical research getting to production (Approx 20 year [^1]). There hasn't been much innovation in the field even in engineering fields like Civil engineer or biotechnology.
 
 The reason is likely because these fields require physical products and take longer to build and test. A technology solution can help speed up some of their processes.
+
 - Graphics Modelling and Simulations to speed to testing
 - Data Organization and Retrieval Systems to make sure the right information is accessed.
 - Deep Learning Models to help search for replacing overdependence of specialized hardware.

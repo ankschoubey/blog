@@ -2,16 +2,16 @@
 comments: true
 excerpt: A step by step algorithm
 tags:
- - technical
- - testing
- - tdd
+  - technical
+  - testing
+  - tdd
 publishDate: 2022-03-04T20:52:08.052481
 last-modified-purpose:
 slug: /current-tdd-approach/
 title: My current approach to TDD
 ---
 
-This is my current approach to TDD. 
+This is my current approach to TDD.
 
 ## For new development:
 
@@ -20,8 +20,9 @@ This is my current approach to TDD.
 3. I hit Ctrl+Shift+T in IntelliJ to quickly create a corresponding test file. I will using the same keyboard pattern to to quickly switch between test and code while doing TDD.
 4. I go Ctrl+Shift+T into the class and write the name of method and arguments it may return. The actual return value is set to null.
 5. I Ctrl+Shift+T into the test and write the name of method as follows and mention the "WHEN" and "SHOULD" blocks. I don't know all "WHEN"/"SHOULD" blocks so I'll write them as time goes.
+
 - "WHEN" blocks define conditions
-- "SHOULD" blocks are atomic and assertable. 
+- "SHOULD" blocks are atomic and assertable.
 
 ```java
 class MainTestClass{
@@ -66,9 +67,9 @@ class MainTestClass{
 3. I add or a new "WHEN" or "SHOULD" or "x method" class
 4. And then repeat the cycle again.
 
-***
+---
 
-*Relevant Further Reading*:
+_Relevant Further Reading_:
 
 - [TDD](/tdd)
 - [Writing Clean and Fast Unit Tests](/clean-fast-unit-tests)

@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - health
- - systems
+  - non-technical
+  - health
+  - systems
 publishDate: 2022-10-25T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/dealing-with-health-problems/

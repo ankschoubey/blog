@@ -2,21 +2,22 @@
 comments: true
 excerpt: From 8 minutes to less than 3 minutes.
 tags:
- - technical
- - spring-boot
- - tdd
- - testing
+  - technical
+  - spring-boot
+  - tdd
+  - testing
 publishDate: 2022-07-30T20:52:08.052481
 last-modified-purpose:
 slug: /spring-boot-junit-faster/
 title: Speeding Up Spring Boot/JUnit tests
 image: /images/software-blog/spring-boot-junit-faster/header.png
 ---
-import Tip from "~/components/custom/Tip.astro"
+
+import Tip from '~/components/custom/Tip.astro';
 
 <Tip
-    content="<b>For beginners:</b> Tests provide fast feedback to your code and ensure everything works as you intended. Rapid tests help get feedback and ensure your integration and deployment pipelines work faster."
-    type ="note"
+  content="<b>For beginners:</b> Tests provide fast feedback to your code and ensure everything works as you intended. Rapid tests help get feedback and ensure your integration and deployment pipelines work faster."
+  type="note"
 />
 
 There are several ways I recently discovered that increase speed on Spring Boot + JUnit tests substantially. From 8 minutes to 3 minutes.
@@ -27,7 +28,7 @@ Some of these are
 2. Speeding up @SpringBootTest and avoiding @DirtiesContext (Saved 25% running time)
 3. Run tests in parallel (Saved 37% running time)
 
-***
+---
 
 ## **Use Right Test Slice** (Saved 25% running time)
 
@@ -48,13 +49,13 @@ We want to load the minimum spring-boot infrastructure as possible and still ens
 
 `@DirtiesContext` is an annotation that recreated the Spring Context after each test or each test class. To avoid using `@DirtiesContext`, ensure all your tests don't depend on the same data. For this, you can wrap your data creation in a [test data factory](/test-data-factories) and ensure the data produced is random.
 
-As previously mentioned, one should avoid using `@SpringBootTest`, but if you can't do without it, ensure you use `WebEnvironment.MOCK`  without `@DirtiesContext`.
+As previously mentioned, one should avoid using `@SpringBootTest`, but if you can't do without it, ensure you use `WebEnvironment.MOCK` without `@DirtiesContext`.
 
 `@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)`
 
 Try to use it with `@Import` or `@ContextConfiguration` to limit the creation of beans.
 
-***
+---
 
 ## **Run tests in parallel** (Saved 37% running time)
 
@@ -76,13 +77,13 @@ junit.jupiter.execution.parallel.mode.classes.default =  same_thread|concurrent
 
 [^1]
 
-Some tests can't run parallelly, so I prefer manually adding  `@Execution(CONCURRENT)`.
+Some tests can't run parallelly, so I prefer manually adding `@Execution(CONCURRENT)`.
 
 I found data tests with `@DataMongoTest` by asserting over different data.
 
 Another positive side effect of having `@Execution(CONCURRENT)` is that these tests run first. And since these tests are faster than the SAME_THREAD mode, they lead to instant feedback.
 
-***
+---
 
 What are some other ways to speed up JUnit performance?
 

@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Learn how to optimize your Redux store for peak performance with clear steps and practical tips.' 
+excerpt: 'Learn how to optimize your Redux store for peak performance with clear steps and practical tips.'
 tags:
- - technical
- - web-development
+  - technical
+  - web-development
 publishDate: 2024-04-21T20:52:08.052481
 slug: /software-blog/high-performance-redux
 title: Blueprint for a High-Performance Redux Store
@@ -241,10 +241,10 @@ Here's how the same update function from above would work:
 
 ```typescript
 // Redux Toolkit Format
-  updateNotes: (payload) => {
-    const {noteId, data} = payload;
-    state.notes.byId[noteId]=data;
-  }
+updateNotes: (payload) => {
+  const { noteId, data } = payload;
+  state.notes.byId[noteId] = data;
+};
 ```
 
 As you can see, we accessed the data and updated it in O(1) complexity.
@@ -252,9 +252,9 @@ As you can see, we accessed the data and updated it in O(1) complexity.
 Similarly, we'd access data in O(1) complexity.
 
 ```typescript
-const selectNote = (noteId) => state => {
+const selectNote = (noteId) => (state) => {
   return state.notes.byId[noteId];
-}
+};
 ```
 
 #### Concluding Step 2
@@ -308,9 +308,9 @@ movies: {
 If you want to select a movie by year, it would be in O(1).
 
 ```typescript
-const selectMovieIdsByYear = year => state => {
+const selectMovieIdsByYear = (year) => (state) => {
   return state.movies.byYear[year];
-}
+};
 ```
 
 This way, you avoided O(n) for O(1) time complexity.
@@ -382,7 +382,7 @@ Consider the following Redux State
 Here is the primary selector
 
 ```typescript
-const selectBookById = bookId => state => state.books.byId[bookId]
+const selectBookById = (bookId) => (state) => state.books.byId[bookId];
 ```
 
 Create a cached selector with useSelector
@@ -391,8 +391,8 @@ Create a cached selector with useSelector
 import { createSelector } from '@reduxjs/toolkit';
 
 const computeCostOfBooks = createSelector(
-    (state, bookIds) => bookIds.map(bookId => selectBookById(bookId)(state)),
-    (books) => books.reduce((sum, book) => sum + book.cost, 0)
+  (state, bookIds) => bookIds.map((bookId) => selectBookById(bookId)(state)),
+  (books) => books.reduce((sum, book) => sum + book.cost, 0)
 );
 ```
 
@@ -400,7 +400,7 @@ Usage
 
 ```typescript
 // Assuming the Redux state is available as `state`
-const selectedBookIds = [1, 3];  // Example: IDs of books to sum costs for
+const selectedBookIds = [1, 3]; // Example: IDs of books to sum costs for
 const totalCost = getBooksCostSum(state, selectedBookIds);
 console.log(totalCost); // Output will be 400 (100 + 300)
 ```

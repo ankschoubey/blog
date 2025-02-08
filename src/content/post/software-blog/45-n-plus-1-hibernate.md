@@ -3,9 +3,9 @@ toc: false
 comments: true
 excerpt: Speed up fetching of child entities
 tags:
- - technical
- - spring-boot
- - database
+  - technical
+  - spring-boot
+  - database
 title: Solving N+1 Problem in Hibernate
 publishDate: 2021-08-01T20:52:08.052481
 slug: /software-blog/n-plus-one-hibernate/
@@ -28,12 +28,12 @@ spring.jpa.properties.hibernate.format_sql=true
 
 So if you have 2 records for parent and 4 corresponding child records.
 
-A total of 2*8 separate queries wil be run.
+A total of 2\*8 separate queries wil be run.
 
 ![](/images/n-plus-one.svg)
 
 | Query Number | Purpose                                       |
-|--------------|-----------------------------------------------|
+| ------------ | --------------------------------------------- |
 | 1            | Fetch Parent Entity: id_1                     |
 | 2            | Fetch Child Associated with parent id_1: id_a |
 | 3            | Fetch Child Associated with parent id_1: id_b |
@@ -45,7 +45,7 @@ A total of 2*8 separate queries wil be run.
 
 If similarly you have a 1000 records and 10 corresponding child records.
 
-Then 1000*10 = 10,000 queries will be run.
+Then 1000\*10 = 10,000 queries will be run.
 
 This is inefficient.
 

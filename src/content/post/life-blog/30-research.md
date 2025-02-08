@@ -1,16 +1,17 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - decision-making
- - for-future-me
- - baton
+  - decision-making
+  - for-future-me
+  - baton
 title: Research
 publishDate: 2021-08-01T20:42:15.512366
 slug: /life-blog/research/
 image: /images/life-blog/research.jpg
 ---
+
 ![](/images/life-blog/research.jpg)
 
 ## Plateau of progress
@@ -33,7 +34,7 @@ It's likely how people define it. You just have to work at something. And if you
 
 The reason research gets a bad entitlement of because of ready-made solutions and the things that are already been discovered/made.
 
-We miss the point that all the polished discoveries we see today had humble beginnings. 
+We miss the point that all the polished discoveries we see today had humble beginnings.
 
 I would argue that if the discovery you made or a solution you made even is it already exist and you didn't know about it is still an act of research. You may even find some improvements.
 

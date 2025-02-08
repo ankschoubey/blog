@@ -1,19 +1,21 @@
 ---
-excerpt: Placeholder 
-title: "Environment Focused: For-Profit vs Non-Profits"
+excerpt: Placeholder
+title: 'Environment Focused: For-Profit vs Non-Profits'
 comments: true
 tags:
- - business
- - non-profit
+  - business
+  - non-profit
 use_math: true
 publishDate: 2021-08-01T20:42:15.260601
 slug: /life-blog/environment/
 image: /images/life-blog/environment.jpg
 ---
+
 ![](/images/life-blog/environment.jpg)
 <sub>Photo by <a href="https://unsplash.com/@charliedeets?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Charlie Deets</a> on <a href="https://unsplash.com/s/photos/tesla?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 
 Many environments non-profit do not achieve what they set out to do.
+
 - They have sub-par performance.
 - They don't bring optimal solutions to the table. The solution they declare often involves compromise.
 - They are part of cancel culture.

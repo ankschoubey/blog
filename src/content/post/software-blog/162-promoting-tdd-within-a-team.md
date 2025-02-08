@@ -2,9 +2,9 @@
 comments: true
 excerpt: Promoting TDD within a team requires patience, consistent effort, and a focus on creating a positive and supportive environment for learning and improvement.
 tags:
- - technical
- - testing
- - tdd
+  - technical
+  - testing
+  - tdd
 publishDate: 2023-08-09T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/promote-tdd-in-a-team/
@@ -145,4 +145,3 @@ You can find the ArchTest for verifying the given/when/then pattern in the blog 
 [^1]: Rewording Naval Ravikant "Happiness is the skill that you develop and the choice that you make"
 
 Photo by <a href="https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Austin Distel</a> on <a href="https://unsplash.com/photos/wD1LRb9OeEo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  

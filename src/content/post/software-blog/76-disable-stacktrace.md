@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - logging
- - spring-boot
- - clean-code
+  - technical
+  - logging
+  - spring-boot
+  - clean-code
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/disable-stacktrace/
@@ -32,13 +32,13 @@ The problem here is logs. Whenever exception is thrown, the log contains entire 
 
 But these kind of exceptions are expected exceptions, in some sense they aren't exceptions at all.
 
-So, we can instead disable stack trace by adding the following to our exception class [Source: StackOverflow](https://stackoverflow.com/questions/2317983/how-to-disable-stack-trace-generation-in-a-java-program). 
+So, we can instead disable stack trace by adding the following to our exception class [Source: StackOverflow](https://stackoverflow.com/questions/2317983/how-to-disable-stack-trace-generation-in-a-java-program).
 
 ```java
     @Override
     public Throwable fillInStackTrace() {
         return this;
-    }     
+    }
 ```
 
 To make things better, we can create a custom exception class as follows
@@ -48,6 +48,6 @@ abstract class ExpectedResponseException extends RuntimeException{
     @Override
     public Throwable fillInStackTrace() {
         return this;
-    }   
+    }
 }
 ```

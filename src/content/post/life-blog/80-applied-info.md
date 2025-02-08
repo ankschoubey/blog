@@ -1,17 +1,18 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - decision-making
- - collection-of-thoughts
- - non-technical
- - truth
+  - decision-making
+  - collection-of-thoughts
+  - non-technical
+  - truth
 title: Research Fast, Understand the Gist, Apply, Iterate, and Move Forward
 publishDate: 2022-10-14T20:42:15.598510
 slug: /life-blog/applied-info/
 image: /images/life-blog/applied-info.jpg
 ---
+
 ![](/images/life-blog/applied-info.jpg)
 
 Photo by <a href="https://unsplash.com/@pro321?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">prottoy hassan</a> on <a href="https://unsplash.com/s/photos/life-blog/thinking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -25,7 +26,7 @@ The more applicable information you can find, the more you can apply them and ma
 Information if not applied is meaningless unless it is your profession to find and document new information.
 
 By applying information faster, you will solve your problems faster or at-least move towards solving your problems faster.
-  
+
 The information that is not applied will be forgotten.
 
 You don't always have time to sit and learn/consume something end to end. There is a high need for having on site learning mindset. Because it is the most optimal in terms of learning, applying and time.

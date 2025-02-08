@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - inputs
+  - non-technical
+  - inputs
 publishDate: 2023-01-14T20:52:08.052481
-last-modified-purpose: 
+last-modified-purpose:
 slug: /v1/chatgpt-assist
 title: How I use ChatGPT as an AI Assist?
 toc: false
@@ -38,6 +38,6 @@ Explain me like I am 5 or comparing one thing to another on a particular aspect 
 
 I think AI is revolutionising us. This is really really huge. And I really love being a part of this. I totally understand, the disruption this is causing and going to cause is much much more than we anticipated, and it’s only going to get started. Jobs would evolve and have to evolve because that’s the only way to stay relevant.
 
-***
+---
 
 This is just 2023, what would happen in upcoming years? Damn. It’s a fun time to be alive.---So that was all about ChatGPT, I have asked it many personal questions that I wouldn’t have asked to anyone. And it has helped me a lot. Thank you OpenAI. I hope I can contribute to the world in as useful way and you do.

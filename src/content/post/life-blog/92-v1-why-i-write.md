@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - writing
- - non-technical
+  - writing
+  - non-technical
 publishDate: 2022-12-15T20:52:08.052481
 last-modified-purpose:
 slug: /v1/why-i-write

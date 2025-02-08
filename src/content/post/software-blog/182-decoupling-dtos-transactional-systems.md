@@ -2,10 +2,10 @@
 comments: true
 excerpt: Efficient strategies for managing data transformation within Spring Boot and RDBMS environments, optimizing response handling and maintaining transactional integrity.
 tags:
- - technical
- - web-development
- - ddd
- - clean-code
+  - technical
+  - web-development
+  - ddd
+  - clean-code
 publishDate: 2024-05-05T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/decoupling-dtos-transactional-systems/

@@ -1,6 +1,6 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
@@ -8,6 +8,7 @@ slug: /software-blog/integrate-external-services/
 title: Pointers while integrating an external service
 image: /images/software-blog/integrate-external-services.jpg
 ---
+
 ![](/images/software-blog/integrate-external-services.jpg)
 
 Photo by <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a> on <a href="https://unsplash.com/s/photos/apps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

@@ -1,14 +1,15 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - web-development
+  - technical
+  - web-development
 publishDate: 2021-12-04T20:52:08.052481
 slug: /software-blog/angular-react-comparison/
 title: Angular and React Comparison
 image: /images/software-blog/angular-react-comparison.png
 ---
+
 ![](/images/software-blog/angular-react-comparison.png)
 
 Angular and React though they are competitors aren’t in a completely fair league. This is because one is a full-fledged framework and one is not. It may be better to compare Angular with a React framework like Next.js.
@@ -43,6 +44,6 @@ The code structure is much better in angular projects.
 
 Every angular project is structured similarly.
 
-By default, CSS management is also better in angular. Every component has its own CSS. Parent components can have the same CSS namings and it would not affect child components unless specified (:host ::ng-deep). 
+By default, CSS management is also better in angular. Every component has its own CSS. Parent components can have the same CSS namings and it would not affect child components unless specified (:host ::ng-deep).
 
 React can also do this by using css modules.

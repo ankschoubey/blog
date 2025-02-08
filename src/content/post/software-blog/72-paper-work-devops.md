@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - personal
- - non-technical
+  - technical
+  - personal
+  - non-technical
 publishDate: 2022-06-12T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/paper-work-devops/

@@ -2,9 +2,9 @@
 comments: true
 excerpt: Loop twice.<br>first right to left while multiplying.<br>Then second left to right while multiplying.<br>This can be done in a single array and one extra product variable
 tags:
- - technical
- - algorithm-problems
- - arrays
+  - technical
+  - algorithm-problems
+  - arrays
 publishDate: 2022-11-04T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/product-of-array-except-self/

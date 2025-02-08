@@ -3,15 +3,18 @@ toc: false
 comments: true
 excerpt: 'MNIST: Kaggle Getting Started'
 tags:
- - technical
- - deep-learning
+  - technical
+  - deep-learning
 title: Digit Recognition
 publishDate: 2020-03-30T20:42:15.162484
 slug: /software-blog/mnist/
 image: https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png
 ---
-***
+
+---
+
 ### How to read this?
+
 1. Skim through the [Pre-requisites](https://medium.com/p/c06251780b)
 
 1. Open each commit notebook then read the explanations.
@@ -24,7 +27,7 @@ image: https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png
 
 1. Still, **stuck**?? **highlight the explanation and comment**. I will get back to your query.
 
-***
+---
 
 ### [Commit Version 2](https://www.kaggle.com/ankschoubey/20200324-pytorch-mnist?scriptVersionId=30660257): Getting Input and Generating Submission File
 
@@ -386,7 +389,8 @@ resnet18.fc = nn.Sequential(
     nn.Linear(lin_in, 10)
 )
 ```
-***
+
+---
 
 Index: [Series - Kaggle Getting Started](/deep%20learning/kaggle/2020/03/30/series-kaggle-getting-started.html)
 

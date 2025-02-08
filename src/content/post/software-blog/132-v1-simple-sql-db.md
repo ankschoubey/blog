@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - database
- - information-system
+  - technical
+  - database
+  - information-system
 title: Keeping database simple
 last-modified-purpose: appended Markdown to "Keep Data within Database Platform Independent"
 publishDate: 2022-12-03T20:42:15.673574

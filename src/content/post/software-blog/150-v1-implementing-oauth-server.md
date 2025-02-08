@@ -2,11 +2,11 @@
 comments: true
 excerpt: Implementing OAuth server is easier than it looks and it saves money in the long run.
 tags:
- - technical
- - security
- - oauth
+  - technical
+  - security
+  - oauth
 publishDate: 2023-03-22T20:52:08.052481
-last-modified-purpose: 
+last-modified-purpose:
 slug: /v1/implementing-oauth
 title: Implementing an OAuth Server Manually
 toc: false
@@ -131,7 +131,6 @@ For generating JWTs I had to learn what `PEM` file is.
 ---
 
 I also had to create a public `JWK endpoint` which my api gateway would access to validate the token. `JWK` is a standard way of sharing public keys for JWT token.
-
 
 I also added a record for scopes. Which was something like
 

@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - configuration-management
+  - technical
+  - configuration-management
 publishDate: 2023-03-26T20:52:08.052481
 last-modified-purpose:
 slug: /v1/avoid-or-mitigate-deleting
@@ -42,9 +42,9 @@ rolling restart. I could have used rolling restart here to just restart one depl
 
 **This way only when the new is ready we delete the old.**
 
-***
+---
 
-I found a parallel of this principle in git. 
+I found a parallel of this principle in git.
 
 I "proud" myself for not learning git well. Instead of resolving a complex merge between the dev and the upper branch. I would delete the upper branch.
 

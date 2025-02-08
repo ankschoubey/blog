@@ -2,8 +2,8 @@
 toc: false
 excerpt: especially for maths
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2019-12-25T20:42:15.097026
 title: Avoid inventing algorithms and data structures
 slug: /software-blog/complexity/

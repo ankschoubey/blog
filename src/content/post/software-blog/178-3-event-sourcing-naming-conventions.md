@@ -2,10 +2,10 @@
 comments: true
 excerpt: Find out a naming convention and package structure to generate clean event sourcing code.
 tags:
- - Technical
- - event-sourcing
- - architecture
- - arch-unit-example
+  - Technical
+  - event-sourcing
+  - architecture
+  - arch-unit-example
 publishDate: 2024-03-27T20:52:08.052481
 slug: /software-blog/event-sourcing-naming-convention
 title: Event Sourcing - Good Naming Convention, File Organization and Enforcing with ArchUnit tests
@@ -243,4 +243,4 @@ The number of `Command`s and `CommandHandler`s will explode, so you need some wa
 
 Organize it such that you know precisely where each code will go. This will help you and your team be highly productive when creating an event-driven system.
 
-Use ArchUnit tests which can help you structure and provide better maintainability to your code base. 
+Use ArchUnit tests which can help you structure and provide better maintainability to your code base.

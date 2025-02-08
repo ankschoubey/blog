@@ -2,14 +2,15 @@
 comments: true
 excerpt: A much better alternative to Javascript
 tags:
- - technical
- - web-development
+  - technical
+  - web-development
 publishDate: 2021-12-01T20:52:08.052481
 slug: /typescript
 title: Typescript
 image: /images/typescript.svg
 last-modified-purpose: More details added
 ---
+
 ![](/images/typescript.svg)
 
 Typescript is probably my favorite programming language. Switching from typescript to javascript should save around 60% of a developers time.
@@ -26,7 +27,7 @@ Typescript only adds a few extra features which are convenient for developers.
 
 Probably the main reason to use typescript is this.
 
-Having typechecks remove unneccesary errors. Types makes code more predictable. 
+Having typechecks remove unneccesary errors. Types makes code more predictable.
 
 Dynamically typed programming language have bad IDE support.
 
@@ -37,16 +38,17 @@ VS Code has fantastic support for Typescript with typeaheads which are and will 
 Every typescript project has a "tsconfig.json" file which can be used to control everything typescript can do.
 
 These include but are not limited to:
+
 - Where to put the final output
 - Ability to choose how strict the language is aka enable/disable following
-    - null checks
-    - any assignments
-    - etc
+  - null checks
+  - any assignments
+  - etc
 - Shortcut paths
 
 ## Typescript compiles to JS
 
-You don't miss anything with typescript because in the end it compiles down to javascript. 
+You don't miss anything with typescript because in the end it compiles down to javascript.
 
 You can choose which version of javascript to compile into from `tsconfig.json` file.
 
@@ -62,7 +64,7 @@ So that as the application grows, the connections stay strong. And if parameters
 
 This is missing in Dynamically typed languages like Javascript. But is available with a static checker like typescript.
 
-------
+---
 
 Typescript does only a few things:
 

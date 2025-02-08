@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Implementing event sourcing in Spring Boot from scratch is easy. You just need to understand some core concepts.' 
+excerpt: 'Implementing event sourcing in Spring Boot from scratch is easy. You just need to understand some core concepts.'
 tags:
- - technical
- - event-sourcing
- - architecture
+  - technical
+  - event-sourcing
+  - architecture
 publishDate: 2024-03-24T20:52:08.052481
 slug: /software-blog/event-sourcing-spring-boot-implementation
 image: /images/software-blog/event-sourcing/event-sourcing-spring-boot-implementation.png
@@ -87,7 +87,7 @@ When a `Command` comes to `EventStoreService.`
 Consider the table below as an event store.
 
 | UserId | StreamId | StreamVersion | EntityType | EventName               | Command                                 |
-|--------|----------|---------------|------------|-------------------------|-----------------------------------------|
+| ------ | -------- | ------------- | ---------- | ----------------------- | --------------------------------------- |
 | 1      | 1        | 1             | Movie      | MovieCreated            | {movieName: "James Bond", movieId: "7"} |
 | 1      | 1        | 2             | Movie      | MovieNameUpdated        | {movieName: "Skyfall"}                  |
 | 1      | 2        | 1             | Movie      | MovieCreated            | {movieName: "Top Gun", movieId: "8"}    |
@@ -227,7 +227,7 @@ Here's a description of what each method does.
 
 In the `putCommand` and `getOneFromStore` sections, we must find a command's appropriate `CommandHandler`. This can be quickly done in Spring Boot by finding a bean for a generic type.
 
-Source [https://stackoverflow.com/a/69813143](https://stackoverflow.com/a/69813143 "smartCard-inline")
+Source [https://stackoverflow.com/a/69813143](https://stackoverflow.com/a/69813143 'smartCard-inline')
 
 ```java
 @Autowired
@@ -255,9 +255,9 @@ Also, there are specific rules to follow when developing event sourcing. Which I
 
 There are certain parts of ES that I'd describe later in different blogposts (TODO)
 
-- Read Rules of Event Sourcing  (TODO)
+- Read Rules of Event Sourcing (TODO)
 - Why I love event sourcing. (TODO)
-- Unit Testing Event Sourcing  (TODO)
+- Unit Testing Event Sourcing (TODO)
 - Chained Commands (Similar to the concept of Redux Thunks)
 - Combine Commands
 - Enhancing data in the event store

@@ -2,10 +2,10 @@
 comments: true
 excerpt: Check if root is same as subtree or root.left is same or root.right is same;
 tags:
- - technical
- - algorithm-problems
- - tree
- - easy
+  - technical
+  - algorithm-problems
+  - tree
+  - easy
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/subtree-of-another-tree
@@ -20,7 +20,7 @@ Check if one tree is a subtree of another.
 
 ## Approaches
 
-### O(n*2) time; O(1) space; 12 lines
+### O(n\*2) time; O(1) space; 12 lines
 
 Check if root is same as subtree or root.left is same or root.right is same;
 
@@ -33,7 +33,7 @@ Half the solution is from [Same Tree](/v1/same-tree)
         }
         if(one == null || two == null){
             return false;
-        }   
+        }
         return one.val == two.val && isSame(one.left, two.left) && isSame(one.right, two.right);
     }
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {

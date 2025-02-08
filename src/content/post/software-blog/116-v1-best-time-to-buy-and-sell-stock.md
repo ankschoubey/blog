@@ -2,10 +2,10 @@
 comments: true
 excerpt: Make sure the left pointer is always the lowest yet. Keep checking the difference between left and right. And return max.
 tags:
- - technical
- - algorithm-problems
- - sliding-window
- - easy
+  - technical
+  - algorithm-problems
+  - sliding-window
+  - easy
 publishDate: 2022-11-13T20:52:08.052481
 last-modified-purpose:
 slug: /v1/best-time-to-buy-and-sell-stock

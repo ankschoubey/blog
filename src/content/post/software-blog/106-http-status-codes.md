@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - web-development
- - notes
+  - technical
+  - web-development
+  - notes
 publishDate: 2022-10-15T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/HTTP-status-codes/
@@ -24,7 +24,7 @@ Not all status codes are directly browser compatible. You can find the [list of 
 
 HTTP Status Codes are also helpful when you are building a client yourself.
 
-For example: For the retry mechanism, you might retry a few times if there is a 5xx  Server Error but might not retry if it's a 4xx client error
+For example: For the retry mechanism, you might retry a few times if there is a 5xx Server Error but might not retry if it's a 4xx client error
 
 ## Types
 

@@ -2,9 +2,9 @@
 comments: true
 excerpt: Each message sent by a producer would include a unique correlation-id. Once the message is received and processed by the consumer, it will publish a response message back to Kafka with the same correlation-id.
 tags:
- - technical
- - web-development
- - software-architecture
+  - technical
+  - web-development
+  - software-architecture
 publishDate: 2023-09-07T20:52:08.052481
 last-modified-purpose:
 slug: /v1/kafka-request-response-redis/

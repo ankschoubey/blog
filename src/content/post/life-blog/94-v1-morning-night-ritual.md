@@ -2,8 +2,8 @@
 comments: true
 excerpt: Why morning and night rituals are essential? Why they aren’t replaceable by mid-day activity? And how to plan them optimally for 500x return on investment?
 tags:
- - non-technical
- - time
+  - non-technical
+  - time
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/morning-night-ritual
@@ -18,7 +18,7 @@ Morning and Night are essential time because they provide the start and end to t
 
 By starting the day of right, we can increase the probability of having a good day. By ending the day right, we can increase the probability of having a good next day.
 
-The morning and the nights can be well planned and be more structured than  mid days where plans have to adopt day to day.
+The morning and the nights can be well planned and be more structured than mid days where plans have to adopt day to day.
 
 Because of this stability provided by a stable structure, they can become essential tools to take care of our needs, reset and work on long-term goals which we miss in daily mid-day planning.
 
@@ -29,7 +29,7 @@ The morning and nights are more personal and handled individually than mid days.
 Here are the 3 parts we need to plan:
 
 1. Morning should provide a jump start to the day.
-2. A good night sleep should be in adequote amount  and provide essential rest and relaxation
+2. A good night sleep should be in adequote amount and provide essential rest and relaxation
 3. Night ritual: Should prepare us to have a good next day and ease in the process towards relaxation.
 
 Here my take on how to plan:
@@ -41,7 +41,7 @@ Here my take on how to plan:
 3. **Take care of Hygiene**. Drink Water. Poop. Brush. Wash Face. Sit for 20 minutes. You want to sit only once in a day right? Don’t bring your phone. You likely have unprocessed thoughts from the good night sleep you had. And you have a good space to pause and reflect. :)
 4. **Go out in the sun**. Sun is vital for our body. It improves your mood, produces more testosterone, manages circadian rhythm and helps you sleep better at night. Therefore, get as much sunlight as possible. It’s better to the rest of the activities in sun. Expose as much of your skin to the sun as possible.
 5. **Exercise**. It can be little. 5-6 minutes. Or the 7-minute workout. Just get yourself moving.
-6. Now you can **g**o have a shower**. hot+cold bath. Relax your body. And get dressed and sharp.
+6. Now you can **g**o have a shower\*\*. hot+cold bath. Relax your body. And get dressed and sharp.
 7. Post-exercise your mind is likely active and with bath and being properly dressed, it’s ready to be sharpened.
 8. **Read and reflect**. Read about 10-20 minutes of something that you are reading. This is non-fiction.
 9. **Meditate**. This can be guided. Make yourself calmer.
@@ -57,7 +57,7 @@ The goal is to have a relaxing sleep to start next day right.
 
 Like morning, start your night ritual at 1.5 hours before bed minimum.
 
-The activities we have at night are all of relaxing nature.  It also serves as a place to handle small things that we won’t have to think about in the morning.
+The activities we have at night are all of relaxing nature. It also serves as a place to handle small things that we won’t have to think about in the morning.
 
 If dinner at your home is prepared by someone else, you can adjust activities in this list. Just make sure it’s consistent and stable.
 

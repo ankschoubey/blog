@@ -2,15 +2,16 @@
 toc: false
 comments: true
 tags:
- - books
- - baton
- - summary
+  - books
+  - baton
+  - summary
 title: Sapiens Book Summary
 slug: /life-blog/sapiens/
 publishDate: 2021-08-01T20:42:15.538277
 image: https://vialogue.files.wordpress.com/2017/04/sapiens.jpg
-excerpt: "The best book I have read in 2020"
+excerpt: 'The best book I have read in 2020'
 ---
+
 <img src="https://vialogue.files.wordpress.com/2017/04/sapiens.jpg" alt="" style=" width: 250px;">
 
 ## Why this summary
@@ -33,15 +34,15 @@ It also presents arguments and counter-arguments in a way that tries to explain 
 
 1. We had a lot of cousin humans. Once upon a time, Around **six species of humans** roamed the earth at the once.
 1. **We are not unique**. 3 billion years ago our universe was born. It will stay for billions. We are not even the human species that has survived the longest (as of yet).
-2. There are countless species. We are just specie that got lucky thanks to our intellect and imagined realities.
+1. There are countless species. We are just specie that got lucky thanks to our intellect and imagined realities.
 
 ### Imagined Realities
 
 3. **History is random**. There are cause and effect to certain events but there is no reason why history could not have turned in some other way.
 4. Religion is a recent thing. (10,000 years ago).
-7. The way we interact and work together with stranger and form groups larger than 150 is by imaging things.
-5. **Societal constructs** like nation, company, ethics, etc are imagined realities shared by billions. It's so strong that we act according to them in the real world.
-6. **There is no justice in history**. Even a human right is an imagined construct. There is nothing in biology that suggest it to be a truth. These constructs do help keep people sane.
+5. The way we interact and work together with stranger and form groups larger than 150 is by imaging things.
+6. **Societal constructs** like nation, company, ethics, etc are imagined realities shared by billions. It's so strong that we act according to them in the real world.
+7. **There is no justice in history**. Even a human right is an imagined construct. There is nothing in biology that suggest it to be a truth. These constructs do help keep people sane.
 
 ### Destroyer of Species
 
@@ -62,8 +63,8 @@ It also presents arguments and counter-arguments in a way that tries to explain 
 
 1. The **scientific revolution was a result of Europeans accepting that they are ignorant**. That they don't know things.
 1. The reason the Scientific revolution took place in Europe instead of India or China (even if Asia controlled 80% of world GDP) is because of social constructs.
-2. **Asians did not accept their ignorance** and did not venture out to find answers to things they did not know.
-3. New material discovered increase progress rapidly.
+1. **Asians did not accept their ignorance** and did not venture out to find answers to things they did not know.
+1. New material discovered increase progress rapidly.
 
 ### Unification
 

@@ -1,12 +1,12 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - clean-code
- - spring-boot
- - database
+  - technical
+  - clean-code
+  - spring-boot
+  - database
 publishDate: 2021-06-12T20:42:15.692681
 title: Art of Reducing Lines of Code in Java/Spring Boot
 slug: /software-blog/clean-code-spring-boot/
@@ -21,6 +21,7 @@ Use this if you don't use Spring Boot with Kotlin. This will module will reduce 
 Lombok allows you to generate java boilerplate at runtime by using Annotations such as: @ToString, @EqualsAndHashCode, @Getter/@Setter, etc.
 
 My favorite onces are
+
 - **@Data**: A shortcut for @ToString, @EqualsAndHashCode, @Getter on all fields, and @Setter on all non-final fields, and @RequiredArgsConstructor.
 - **@Cleanup**: Automatically calls close() method in case of Streams and Connections.
 

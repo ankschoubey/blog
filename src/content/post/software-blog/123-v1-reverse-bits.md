@@ -2,10 +2,10 @@
 comments: true
 excerpt: Get the last bit of value from the original. append to the reverse one. shift reverse one to the left. instead of adding, you can do `or` because after the shift last value will be 0. Imp - iterate 32 times only.
 tags:
- - technical
- - algorithm-problems
- - blind-75
- - bit-manipulation
+  - technical
+  - algorithm-problems
+  - blind-75
+  - bit-manipulation
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/reverse-bits
@@ -28,7 +28,7 @@ Get the last bit of value from the original. append to the reverse one. shift re
     public int reverseBits(int n) {
         int rev = 0;
         for (int i = 0; i < 32; i++) {
-            rev = (rev << 1) + (n&1);            
+            rev = (rev << 1) + (n&1);
             n = n>>1;
         }
         return rev;

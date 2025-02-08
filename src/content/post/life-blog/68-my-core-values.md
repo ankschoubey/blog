@@ -2,11 +2,11 @@
 comments: true
 excerpt: The fundamental operating system
 tags:
- - philosophical
- - for-future-me
- - decision-making
- - non-technical
- - matured
+  - philosophical
+  - for-future-me
+  - decision-making
+  - non-technical
+  - matured
 publishDate: 2022-07-02T20:52:08.052481
 last-modified-purpose: add Autenticity as fundamental value
 slug: /life-blog/my-core-values/
@@ -19,7 +19,7 @@ I want things to be as "sorted" in the long term as possible without being super
 
 ![My core values](/images/core-values.png)
 
-***
+---
 
 ## **Authenticity**: Being okay with not being perfect
 
@@ -77,13 +77,13 @@ So, at every moment of the day, everything that happens to you, live as though y
 
 <sub>What happens when we don't pick up responsibility?</sub>
 
-Not picking up responsibility is neither good to us and neither good to others. It's wasted potential. It's  all the things that we could have done, all the good we could have accomplished that could make everyone lives better, but we instead choose the alternative.
+Not picking up responsibility is neither good to us and neither good to others. It's wasted potential. It's all the things that we could have done, all the good we could have accomplished that could make everyone lives better, but we instead choose the alternative.
 
 It's better to try and fail that to not try at all. `1> 0;`
 
 An experiment we can do to get started is: `Take on and complete as many responsibilities/opportunities thrown towards you in a week and see what happens.`
 
-**Role Models**:  Peter Parker (Andrew Garfield), Jordan Peterson
+**Role Models**: Peter Parker (Andrew Garfield), Jordan Peterson
 
 **For**: Courage is proper action despite not being fully ready. If you are given an opportunity to be courageous, you are already prepared.
 
@@ -144,7 +144,7 @@ You need to be peaceful if you want things to be good long term. Develop detachm
 
 If you don't believe that you can achieve ultimate peace (Nirwana), you'll have a hard time finding it.
 
-**Role Models**:  Naval Ravikant, Sam Harris, Kapil Gupta, Sadhguru
+**Role Models**: Naval Ravikant, Sam Harris, Kapil Gupta, Sadhguru
 
 **Books**: Subtle at of not giving a fuck by Mark Manson
 
@@ -321,7 +321,7 @@ It’s just more fun to live playfully and interact with the world and make sens
 
 - Being too serious
 
-***
+---
 
 I am trying make these values my second nature by forming habits. The ideal goal is identity level change [^4] but it will take time which is why I haven't published my post on it.
 

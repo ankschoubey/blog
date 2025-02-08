@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - spring-boot
- - message-queue
+  - technical
+  - spring-boot
+  - message-queue
 publishDate: 2022-08-07T20:52:08.052481
 last-modified-purpose: added CQRS
 slug: /software-blog/what-when-to-publish/
@@ -17,7 +17,7 @@ Publishing every business entity is especially useful for event-driven systems.
 
 Rather than writing code to publish after each saves manually, we can use event listeners. Event listeners would run a piece of code each time a specific event like database save occurs.
 
-For example: Spring Data Mongo has `AbstractEventListener` and `ReactiveAfterSaveCallback`. 
+For example: Spring Data Mongo has `AbstractEventListener` and `ReactiveAfterSaveCallback`.
 
 ```java
 class SampleEntityDataPublisher implements ReactiveAfterSaveCallback<SampleEntity>{

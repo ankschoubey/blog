@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: A Look at Board Structure, Card Structure and Dashboard Board that Help Me Stay Organized 
+excerpt: A Look at Board Structure, Card Structure and Dashboard Board that Help Me Stay Organized
 tags:
-- lean
-- agile
-- systems
-- non-technical
+  - lean
+  - agile
+  - systems
+  - non-technical
 publishDate: 2024-05-19T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/how-i-use-trello/
@@ -23,14 +23,16 @@ Trello is a simple Kanban tool I use to organize my life. It helps me:
 
 I think of Trello as an efficient production line that can help organize almost anything and get it done step by step. I use it for nearly everything, from blogpost production to travel inventory, goals, learning, and tracking psychological/inner child work.
 
-If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&amp;start=12) and [create a simple Trello board]((https://trello.com/ankushchoubey/recommend)) before reading this post.
+If you are new to Trello, I recommend you [watch a video](https://www.youtube.com/embed/l3F3l3psqXY?si=JRes4P_YLCh6f7K1&start=12) and [create a simple Trello board](<(https://trello.com/ankushchoubey/recommend)>) before reading this post.
 
 In this post, you'll learn how you can use trello efficiently.
+
 - Board Structure
 - Card Structure
 - Command Center / Dashboard Board
 
-I'll also share: 
+I'll also share:
+
 - Tips on Creating & Managing Multiple Boards Without Getting Overwhelmed
 - How to Keep Board Interesting to Use
 
@@ -197,7 +199,7 @@ Here are a few columns I have divided "Done" into.
 
 The first step in optimizing learning after a task is a quick debrief.
 
-Before *Done* I have a debrief column where I ask myself:
+Before _Done_ I have a debrief column where I ask myself:
 
 - What went well? (Written in the comment)
 - What can be improved? (Written in the Debrief Tasks Checklist)
@@ -310,7 +312,7 @@ I now use the comments section to see my purge progress:
 
 ![](/images/life-blog/how-i-use-trello/purging-blogposts.png)
 
-****
+---
 
 ## Cards
 
@@ -397,11 +399,12 @@ In Trello, you can break down tasks in two primary ways:
 - **Cards**: Create individual cards for each sub-task. This is especially useful for tasks that span multiple weeks or months.
 - **Checklists**: Use checklists within cards for more detailed breakdowns. This is ideal for complex tasks that have many smaller components.
 
-Usually, if I have a task that takes multiple months, I'll break it down into smaller cards that I can take action on in about a week.  Recently, I found it hard to break down tasks, so I found a way to break down tasks called Work Breakdown Structure (WBS).
+Usually, if I have a task that takes multiple months, I'll break it down into smaller cards that I can take action on in about a week. Recently, I found it hard to break down tasks, so I found a way to break down tasks called Work Breakdown Structure (WBS).
 
 I hope to use this for tasks that are hard.
 
 **Steps**:
+
 1. You create a flow diagram and split each big task into smaller tasks
 2. Iterate until all tasks are small
 3. Convert tasks into cards and work on them.
@@ -421,9 +424,9 @@ I realized that more boards make Trello overwhelming. But by not having more boa
 
 I figured out there was no other way; **I needed to create more boards**.
 
-The way I did it was much more organic. I experimented with a few boards. I also deleted a few; for example, I realized the **Job** board wasn't super useful for me because 90% of recruiters ghost and the rest reply super late after a month or two. ⏰ . The cards on my Job Search board would remain stale.  So, instead, I started tracking only when I had passed the initial screening and was giving online tests.
+The way I did it was much more organic. I experimented with a few boards. I also deleted a few; for example, I realized the **Job** board wasn't super useful for me because 90% of recruiters ghost and the rest reply super late after a month or two. ⏰ . The cards on my Job Search board would remain stale. So, instead, I started tracking only when I had passed the initial screening and was giving online tests.
 
-Initially, I also mixed writing and all other tasks into one board. This made it very overwhelming. I started by separating **Life and Writing**. ✍️  Then I realized I needed something for Development, so I created one called **DevLife**. These remained my main boards.
+Initially, I also mixed writing and all other tasks into one board. This made it very overwhelming. I started by separating **Life and Writing**. ✍️ Then I realized I needed something for Development, so I created one called **DevLife**. These remained my main boards.
 
 Later, I realized I needed ways to improve my health, so I started **Body Board**. Then I thought I should also do things in life. I am someone who doesn't go out much. I believe It'll be good to get out. Maybe watch shows, etc., so I created an **Experiences** board.
 
@@ -434,6 +437,7 @@ The tip is this: **anything vital to you should be part of Trello**. If it's sma
 For example, **travel** board tasks will be added over months but will be completed in a week when you go on a trip. Most of the year, you'll spend time planning your travel.
 
 Similarly, the board will have a lot of goals that will take time.
+
 - **Finance** Stories usually move faster. Financial goal achievement is slower over months.
 
 Knowing this gives you a satisfaction. You know everything is under control and moving.
@@ -456,7 +460,7 @@ However, as you get more productive, it's better to enhance each column by break
 
 Even if you don't use Trello, I hope you found the above insights valuable.
 
-Capture and structure your tasks so that you know what you need to do and why and can progress towards doing it. 
+Capture and structure your tasks so that you know what you need to do and why and can progress towards doing it.
 Create templates that can help you save time. And break down tasks into manageable chunks.
 
 Here's a recap of the above article:

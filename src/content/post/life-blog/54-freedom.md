@@ -1,12 +1,12 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - exploration
- - non-technical
- - peace
- - responsibility
+  - philosophical
+  - exploration
+  - non-technical
+  - peace
+  - responsibility
 publishDate: 2022-05-31T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/freedom/
@@ -69,4 +69,4 @@ If you win the game, you become free of it.
 
 Freedom is a feeling. It may be that you are truly free but just don't feel like it.
 
-The ultimate freedom is freedom from the mind. 
+The ultimate freedom is freedom from the mind.

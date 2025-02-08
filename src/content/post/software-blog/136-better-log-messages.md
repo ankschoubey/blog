@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/writing-log-messages/
@@ -14,7 +14,7 @@ Logs are every important when trying to debug an application. With proper logs, 
 
 This post covers server side logs.
 
-***
+---
 
 ## **When to Log**
 
@@ -25,6 +25,7 @@ Logging too much can make your code ugly and slow. Logging to little makes it ha
 These are some places where you may consider logging. 4th is non-compromisable though it is autoset by most programming languages.
 
 There are 4 main places to log:
+
 1. Conditionals -> Log level DEBUG
 2. Loops -> Log level DEBUG
 3. Major Processes -> Log level INFO
@@ -32,7 +33,7 @@ There are 4 main places to log:
 
 After writing a piece a code, look at it and add logs wherever needed.
 
-***
+---
 
 ## **How to log**
 

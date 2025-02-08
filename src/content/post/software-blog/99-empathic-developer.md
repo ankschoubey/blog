@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - collaboration
+  - technical
+  - collaboration
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/empathic-developer/
@@ -11,6 +11,7 @@ title: Be a more empathic developer
 toc: false
 image: /images/software-blog/empathic-developer.jpg
 ---
+
 ![](/images/software-blog/empathic-developer.jpg)
 
 Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/developer-team?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

@@ -1,16 +1,17 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - for-future-me
- - responsibility
+  - philosophical
+  - for-future-me
+  - responsibility
 title: The Path / Ethics
 slug: /life-blog/on-path-ethics/
 publishDate: 2021-08-01T20:42:15.552524
 image: /images/life-blog/on-path-ethics.jpg
 ---
+
 ![](/images/life-blog/on-path-ethics.jpg)
 <sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@jakeblucker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Jake Blucker</a> on <a href="https://unsplash.com/s/photos/road?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
 
@@ -18,7 +19,7 @@ image: /images/life-blog/on-path-ethics.jpg
 
 The path is trying to be the best version of yourself.
 
-## Why 
+## Why
 
 If you are not the best you can be, you create or neglect problems. These problems accumulate and will make you suffer. And it's not just you who will suffer. It will engulf all the people around you.
 
@@ -40,11 +41,11 @@ So if you are cleaning your room, planning the day, meditating, etc. You are on 
 
 You have to give up who you are to be who you want to be.
 
-> The boy shall die and the man will live.  [^2]
+> The boy shall die and the man will live. [^2]
 
 ### The Dark Side
 
-The dark side is the easy path. It's a path devoid of responsibility. Blame, complain and general disinterest is forms of the dark side. 
+The dark side is the easy path. It's a path devoid of responsibility. Blame, complain and general disinterest is forms of the dark side.
 
 ### Humility
 
@@ -55,7 +56,8 @@ if not one overestimated himself.
 One should try fixing problems around him starting from the smallest. Smallest problems like making your bed make a man humble.
 
 ### Taking on the burden
-There is a difference between being handed something and taking it on voluntarily. 
+
+There is a difference between being handed something and taking it on voluntarily.
 
 One should take on the burden voluntarily because what is neglected is rushes in when things go bad. [^3]
 
@@ -66,15 +68,15 @@ Be the one who does things. Who solves the problems. Not the one who just reacts
 ## Are you on the path?
 
 > Fast, lift, sprint, stretch, and meditate.
-> 
+>
 > Build, sell, write, create, invest, and own.
-> 
+>
 > Read, reflect, love, seek truth, and ignore society.
-> 
+>
 > Make these habits. Say no to everything else.
-> 
+>
 > Avoid debt, jail, addiction, disgrace, shortcuts, and media.
-> 
+>
 > Relax. Victory is assured. [^1]
 
 How do you know if you are on the path?

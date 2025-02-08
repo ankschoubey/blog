@@ -2,7 +2,7 @@
 comments: true
 excerpt: Do you want to have high salary? or Do you want to have a good career? or Both?
 tags:
- - dev
+  - dev
 publishDate: 2022-08-01T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/resume-tips/
@@ -10,9 +10,10 @@ title: Resume and Linkedin Tips
 toc: false
 hide: true
 ---
+
 Here are some resume tips. Most apply to software engineering roles.
 
-Always 
+Always
 
 # LinkedIn
 
@@ -46,7 +47,6 @@ You'll have to apply for to apply for too many jobs and ask too many referrals. 
 
 [Here's the above once in template](https://www.getmagical.com/share/shortcuts?shareId=fb2d1e6b-49d5-4999-aa10-b5262a9dd01f&utm_source=referral&utm_campaign=share_referral_magical_pro_beta_default&utm_medium=copy_link)
 
-
 # Resume
 
 ## Have an ATS Friendly resume format
@@ -60,6 +60,7 @@ Find items to add to your resume. At work, look for things that will look good o
 You are likely selling yourself short. Write down everything you do. Then find our things your employeer might need.
 
 Don't be shy to add what you are doing right now.
+
 - Example: In-process of implementing a continuous delivery pipeline.
 - This is also because it takes time to find a job. So it maybe 1-2 months before someone picks your resume. At that point resume is already outdated.
 
@@ -67,7 +68,7 @@ Find other people resume by searching something like: [www.linkedin.com "microso
 
 ## Getting wordings right.
 
-Use Grammarly. The Premium version will give you more points. 
+Use Grammarly. The Premium version will give you more points.
 
 Use active voice always.
 
@@ -91,7 +92,7 @@ https://www.fullstackresume.com/
 
 # Applying for Jobs
 
-- LinkedIn: [NathanDuma/LinkedIn-Easy-Apply-Bot: Automate LinkedIn Easy Apply job applications and answer application-specific questions.](https://github.com/NathanDuma/LinkedIn-Easy-Apply-Bot) You're welcome! 
+- LinkedIn: [NathanDuma/LinkedIn-Easy-Apply-Bot: Automate LinkedIn Easy Apply job applications and answer application-specific questions.](https://github.com/NathanDuma/LinkedIn-Easy-Apply-Bot) You're welcome!
 - AngelList: [Easy Apply - Chrome Web Store](https://chrome.google.com/webstore/detail/easy-apply/pgdkaehkejiaemknlpknmjioedpjaphg)
 
 You have to look for a more targetted approach rather than treating it like a black box.
@@ -99,7 +100,6 @@ You have to look for a more targetted approach rather than treating it like a bl
 ## Target companies so that you avoid wasting time. #whiteBoxApproach.
 
 It’s more effective to search for “best software companies in x country” or “companies that sponsor visa in x” country. And apply there first.
-
 
 # Offers
 

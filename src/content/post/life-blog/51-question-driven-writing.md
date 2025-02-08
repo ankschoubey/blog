@@ -2,9 +2,9 @@
 comments: true
 excerpt: Improving quality and speed of writing by transferring a well-known software development practice.
 tags:
- - non-technical
- - writing
- - truth
+  - non-technical
+  - writing
+  - truth
 publishDate: 2022-05-13T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/question-driven-writing/
@@ -32,9 +32,9 @@ QDW also naturally breaks up paragraphs and groups related paragraphs together. 
 QDW forces us to have one main idea per essay.
 
 <sub>How to do QDW?
-To do QDW, start by writing the topic name. And all the questions you have related to the topic. 
+To do QDW, start by writing the topic name. And all the questions you have related to the topic.
 
-Once you have a bunch of them written down, start answering them. 
+Once you have a bunch of them written down, start answering them.
 
 You’ll find some questions that can be grouped, group them.
 

@@ -2,10 +2,10 @@
 comments: true
 excerpt: Multithreading programming has never been easier.
 tags:
- - technical
- - microservices
- - experience
- - webflux
+  - technical
+  - microservices
+  - experience
+  - webflux
 publishDate: 2022-07-11T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/reactive-programming/
@@ -23,7 +23,7 @@ In reactive programming, during IO operations, the thread is auto-switched. Ther
 
 This means that reactive code has a higher throughput overall depending on the number of IO operations. Reactive code is typically several magnitudes faster and consumes fewer resources overall.
 
-Also, traditional code doesn't work on streaming data. If you fetch a list of records from a database, the entire list has to be loaded before you can act on it. 
+Also, traditional code doesn't work on streaming data. If you fetch a list of records from a database, the entire list has to be loaded before you can act on it.
 
 In reactive, however, you can work with streams of data. So, you can start performing operations on data you have received till now without waiting for the rest of the data.
 
@@ -47,12 +47,12 @@ I have used Project Reactor Spring Webflux and RxJS in Angular with both the exp
 
 A much cleaner coding experience
 
-One of the reason is it seems all reactive libraries are a sort of functional pipeline. One stage with another. 
+One of the reason is it seems all reactive libraries are a sort of functional pipeline. One stage with another.
 
-Each stage is a pure function and ideally doesn't have any side effects. 
+Each stage is a pure function and ideally doesn't have any side effects.
 
 You can think of it like a scope.
 
 I very much agree with this video I found on Youtube. With project reactor, everything is just a Flux from start to end. No need to wrap things into different convertor classes. Everything is just Publisher.
 
-Multithreading programming has never been easier. 
+Multithreading programming has never been easier.

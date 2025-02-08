@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - leadership
- - responsibility
- - social-harmony
+  - leadership
+  - responsibility
+  - social-harmony
 title: Age is not a perfect measure of experience
 publishDate: 2021-08-01T20:42:15.494363
 slug: /life-blog/age-is-not-a-measure-of-experience/
@@ -20,7 +20,7 @@ Some kids learn hard skills like playing the piano at a very young age. They oft
 
 This categorization assumes that the child is born with talents and ignores the fact that he/she has to spend years learning the skill.
 
-Most child piano prodigies start at age 4, by the time they are age 10  they already have 6 years of Piano experience. No doubt they have skills.
+Most child piano prodigies start at age 4, by the time they are age 10 they already have 6 years of Piano experience. No doubt they have skills.
 
 ## People who learn faster
 

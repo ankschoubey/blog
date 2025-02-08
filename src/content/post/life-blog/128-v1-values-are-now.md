@@ -3,8 +3,8 @@ excerpt: Give up on thinking about the outcome. Do what needs to be done. Follow
 title: Values are 'now'. Act!
 comments: true
 tags:
- - responsibility
- - non-technical
+  - responsibility
+  - non-technical
 use_math: true
 publishDate: 2023-09-30T20:42:15.242622
 slug: /v1/values-are-now/

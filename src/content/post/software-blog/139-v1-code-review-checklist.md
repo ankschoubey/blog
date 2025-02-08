@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - engineering
+  - technical
+  - engineering
 publishDate: 2022-12-31T20:52:08.052481
 last-modified-purpose:
 slug: /v1/code-review-checklist

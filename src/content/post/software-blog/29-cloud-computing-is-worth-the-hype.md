@@ -3,14 +3,15 @@ toc: false
 comments: true
 excerpt: Your robot on the internet
 tags:
- - technical
- - cloud-computing
- - information-system
+  - technical
+  - cloud-computing
+  - information-system
 title: Cloud is Worth the Hype
 publishDate: 2021-08-01T20:42:15.430842
 slug: /software-blog/cloud/
 image: /images/software-blog/cloud.jpg
 ---
+
 ![](/images/software-blog/cloud.jpg)
 
 <sub>Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Taylor Vick</a> on <a href="https://unsplash.com/s/photos/server?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
@@ -28,6 +29,7 @@ Cloud is anyway cheaper than building and maintaining your server.
 The cost can be optimized further by setting up things properly.
 
 Cost is impacted by decisions such as:
+
 - Pay per minute
 - Different cost for different configuration
 - Pay per GB of data stored

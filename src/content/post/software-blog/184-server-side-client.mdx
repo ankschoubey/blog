@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Boost application performance and scalability with effective caching strategies, from basic principles to advanced implementation in Spring Boot.' 
+excerpt: 'Boost application performance and scalability with effective caching strategies, from basic principles to advanced implementation in Spring Boot.'
 tags:
- - technical
- - distributed-systems
- - microservices
+  - technical
+  - distributed-systems
+  - microservices
 publishDate: 2024-08-04T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/server-side-client/
@@ -91,8 +91,8 @@ This is one of the ways to implement a write-back cache. You want to listen to c
 
 1. Create an Entity Event Lister which listens to database changes
 2. Each time something is saved, update the database.
-    - You may want to skip updates depending on what you use the cache for.
-    - For instance, if you use a cache to store frequently used items, you may skip updating the cache for less frequent ones.
+   - You may want to skip updates depending on what you use the cache for.
+   - For instance, if you use a cache to store frequently used items, you may skip updating the cache for less frequent ones.
 
 ```java
 import org.springframework.beans.factory.annotation.Autowired;
@@ -122,7 +122,7 @@ Spring Boot also has the following annotation to help with caching, which means 
 
 - `@EnableCaching`: Enables Spring's annotation-driven cache management capability.
 - `@Cacheable`: Caches the result of a method based on its parameters.
-- `@CachePut`:  Updates the cache with the method result, ensuring the method is always executed.
+- `@CachePut`: Updates the cache with the method result, ensuring the method is always executed.
 - `@CacheEvict`: Removes one or more entries from the cache, which is useful for clearing stale data.
 
 #### Thoughts on the Implementation of Write-Through Cache
@@ -219,6 +219,7 @@ Caches usually have parameters associated with eviction. This is because caches 
 You can combine different parameters. **For example**, give a TTL of 4 seconds along with LFU.
 
 - **TTL**: Time To Live
+
   - TTL defines how long data should be cached.
   - After the TTL ends, the data will be removed from the cache.
 
@@ -307,7 +308,7 @@ However, balancing caching and maintaining data consistency is crucial, ensuring
 - [Stack Overflow: Redis vs. MongoDB Performance](https://stackoverflow.com/a/5870726) - A discussion on the performance comparison between Redis and MongoDB.
 - [Crafting Unique ID from Composite Attributes for Key-Value Pairs (Redis, Map, and even Droppable-Id in React Beautiful DnD)](/software-blog/map-index-guideline)
 
-***
+---
 
 I hope this blog post helps you understand service-side caching better. If you want to improve the performance of your web application, consider reading the following blog posts:
 

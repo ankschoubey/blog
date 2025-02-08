@@ -2,9 +2,9 @@
 comments: true
 excerpt: Notes from Avoiding Reactor Meltdown
 tags:
- - technical
- - reactive
- - spring-boot
+  - technical
+  - reactive
+  - spring-boot
 publishDate: 2022-08-15T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/encapsulate-blocking-reactive-way/
@@ -14,7 +14,7 @@ toc: false
 
 The one rule you aren't allowed to break with project reactor is this: Don't Block over Event Loop!
 
-Event loops are main threads that shouldn’t be blocked. 
+Event loops are main threads that shouldn’t be blocked.
 
 If there is a blocking code, they should be run on a separate thread.
 
@@ -38,10 +38,10 @@ Completable futures can be converted to mono. Many java libraries have completab
 
 ## Encapsulate blocking calls
 
-![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/1.png) 
+![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/1.png)
 
-![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/2.png) 
+![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/2.png)
 
 ## Find if a method is reactive
 
-![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/3.png) 
+![Screenshot_2022-07-17_at_12.23.22_PM.png](/images/software-blog/encapsulate-blocking-reactive-way/3.png)

@@ -3,9 +3,9 @@ toc: false
 comments: true
 excerpt: of "success"
 tags:
- - baton
- - for-future-me
- - systems
+  - baton
+  - for-future-me
+  - systems
 title: Probabilities
 publishDate: 2021-08-01T20:42:15.402337
 slug: /life-blog/probabilities/
@@ -14,11 +14,11 @@ image: /images/life-blog/probabilities.png
 
 This article is written at age 23. My views will be more informed in the future.
 
-***
+---
 
 ![](/images/life-blog/probabilities.png)
 
-Success can be defined in many ways. This article talks about achievement. 
+Success can be defined in many ways. This article talks about achievement.
 
 ## Randomness and Survivorship bias
 
@@ -37,7 +37,6 @@ Then you spend 4 years trying to follow the path of starvation and lose about 5-
 Now someday you hear someone close to you or a friend of friend lose 9 Kg in a month. And he did not take medications or had surgery but a good diet plan which was expertly supervised.
 
 You might have "struggled more" but someone was "lucky" enough to have resources (doctors) that lead to better results in less time.
-
 
 # Probabilities
 
@@ -66,6 +65,7 @@ If a process/method you are following does not work, it will likely not work in 
 These are things you can control and develop
 
 ### The Not So Unfair Luck [^4]
+
 - Mindset
   - Being calm and disciplined
 - Education
@@ -73,7 +73,9 @@ These are things you can control and develop
   - Help people
 
 ### **Multiplying Skills** [^5] [^6]
+
 These are skills that apply to multiple areas and are deeply impactful.
+
 - Maths
 - Learning Faster
 - Communication
@@ -85,6 +87,6 @@ These are skills that apply to multiple areas and are deeply impactful.
 [^1]: Obstacle is the Way by Ryan Holiday
 [^2]: [If it’s not a hit, switch](https://sive.rs/hitswitch) by Derek Siver
 [^3]: [Samurai to Modern Army in 10 years](/life-blog/samurai/)
-[^4]: The Unfair Advantage: How You Already Have What It Takes to Succeed by Ash Ali and Hasan Kubba 
+[^4]: The Unfair Advantage: How You Already Have What It Takes to Succeed by Ash Ali and Hasan Kubba
 [^5]: Naval
 [^6]: Derek Sivers

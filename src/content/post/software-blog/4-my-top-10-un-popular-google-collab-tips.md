@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - deep-learning
+  - technical
+  - deep-learning
 title: 10 Google Collab Tips
 publishDate: 2019-09-18T20:42:15.084538
 slug: /collab/
@@ -66,6 +66,7 @@ Type:
 ```shell
 !nvidia-smi
 ```
+
 If you have GPU mounted you will get this reply.
 
 ![](/images/2019-08-18-my-top-10-un-popular-google-collab-tips/6.png)

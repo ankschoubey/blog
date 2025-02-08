@@ -1,12 +1,12 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - 200-500-words
- - tdd
- - testing
- - clean-code
+  - technical
+  - 200-500-words
+  - tdd
+  - testing
+  - clean-code
 publishDate: 2022-11-6T20:52:08.052481
 last-modified-purpose:
 slug: /v1/junit-bug-tracking
@@ -35,10 +35,10 @@ This is the template I use to track bugs in tests.
         void {AssertionDescription}Test(){
             // GIVEN
                 {code for setting conditions described in WHEN block}
-    
+
             // WHEN
                 {code for running actions}
-            
+
             // THEN
                 {code for assertions}
         }

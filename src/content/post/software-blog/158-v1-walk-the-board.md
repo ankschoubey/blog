@@ -2,11 +2,11 @@
 comments: true
 excerpt: I believe walking the board is an important step towards facilitating Continuous Delivery. The standup format facilitates perfection in updates, focused on one card at a time which is closer to completion and takes less time to complete.
 tags:
- - technical
- - business
- - agile
+  - technical
+  - business
+  - agile
 publishDate: 2023-07-02T20:52:08.052481
-last-modified-purpose: 
+last-modified-purpose:
 slug: /v1/walk-the-board/
 title: Efficient Standups - Achieving Clarity through Walk-The-Board Standups
 image: /images/v1-walk-the-board.jpg
@@ -65,7 +65,7 @@ For example, Thor, Tony, and Steve worked on the same card, Defeating Thanos. Al
 3. **Steve**: Yesterday, I worked on defeating Thanos. Today I'll work on defeating Thanos. No impediments.
 
 Tony and Steve can also shorten their updates.
-If **Thor** says,  yesterday, I worked on defeating Thanos. Today I'll work on defeating Thanos. No impediments.
+If **Thor** says, yesterday, I worked on defeating Thanos. Today I'll work on defeating Thanos. No impediments.
 
 Tony and Steve could say, I have the same updates as Thor.
 
@@ -140,7 +140,7 @@ Tip: It's helpful to enforce picking just one card and pulling it to completion.
 
 Walk the Board took a few weeks for us to adopt. We started by practicing Walk the Board one day before the standup.
 
-We polished each update to be in the following format, 
+We polished each update to be in the following format,
 
 ```
 Regarding, {cardname}, {update}
@@ -152,23 +152,25 @@ We restricted telling about our days and focused on talking about the work itsel
 
 It took us around 4 weeks to perfect walk the board.
 
-
 ## What was the impact of the Walk-The-Board approach?
 
 When I first saw the video of the Walk the Board method. I was instantly in love with it because it addressed the problem I always faced. Preparing to talk about what I am going to say next is overhead. I have to remember everything that I did yesterday, and there are fewer props.
- 
+
 Here are some other effects I observed:
 
 ### Consolidated Updates
-- Each person might be working on different swim lanes (i.e., Different Parts of the value stream), and by default, we hear updates about all of them. While doing walk the board, we went swim-line by swim-lane.  
-- This meant all topics were discussed together in a swim lane regardless of how many different teams the members belonged to.  
+
+- Each person might be working on different swim lanes (i.e., Different Parts of the value stream), and by default, we hear updates about all of them. While doing walk the board, we went swim-line by swim-lane.
+- This meant all topics were discussed together in a swim lane regardless of how many different teams the members belonged to.
 
 ### Team Update
 
 It felt like a team update rather than a status update. It doesn’t matter what you did the day before. What matters is how much progress you have made.
 
 ### Shorter time for updates
+
 Updates with walk-the-board are much shorter than the traditional 3 question update. These updates were must shorter and on point.
 
 ### Finishing a card.
+
 We started focusing on getting cards done over picking up new cards. Though this also involved a lot of deliberate effort.

@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - security
- - compliance
- - system-design
+  - technical
+  - security
+  - compliance
+  - system-design
 publishDate: 2022-12-08T20:52:08.052481
 last-modified-purpose:
 slug: /v1/gdpr

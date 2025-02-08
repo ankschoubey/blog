@@ -2,9 +2,9 @@
 comments: true
 excerpt: Similar to swapping two numbers. Start with prev as null and current and keep swapping next. Return prev because that's the last value.
 tags:
- - technical
- - algorithm-problems
- - arrays
+  - technical
+  - algorithm-problems
+  - arrays
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/reverse-linked-list
@@ -29,15 +29,15 @@ Similar to swapping two numbers. Start with prev as null and current and keep sw
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode current = head;
-        
+
         while(current!=null){
             ListNode tempCurrent = current.next;
-            
+
             current.next = prev;
             prev = current;
-            
+
             current = tempCurrent;
         }
-        return prev;        
+        return prev;
     }
 ```

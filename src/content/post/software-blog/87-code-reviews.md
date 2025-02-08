@@ -1,15 +1,16 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - software-engineering
- - clean-code
+  - technical
+  - software-engineering
+  - clean-code
 publishDate: 2022-08-20T20:52:08.052481
 last-modified-purpose: code review template
 slug: /software-blog/code-reviews/
 title: Code Reviews and Pair Programming
 ---
+
 Code reviews allow having a much high quality of code. And pair programming is the best way to do code reviews.
 
 Typically, if less code is being reviewed then more bugs are found. If more code is reviewed, reviewer gets lazy.

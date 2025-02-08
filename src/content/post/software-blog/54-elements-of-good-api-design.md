@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - middleware
+  - technical
+  - middleware
 publishDate: 2022-02-19T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/good-rest-api-design/
@@ -20,7 +20,7 @@ An HTTP Rest endpoint is divided into following.
 
 # Naming
 
-A good API design has good naming. 
+A good API design has good naming.
 
 You want to always have API that refer t some “items”/”entity” nouns
 
@@ -41,6 +41,7 @@ Any good API has upper format rather than lower.
 Always have plural names
 
 # Request
+
 ## Request Methods
 
 Now that name is sorted, how to we call these, let’s say we want to delete duck, in the bad way we could have had an API like /deleteDuckById
@@ -63,7 +64,7 @@ Ideally, POST isn’t supposed to be bulk insert.
 
 ## Request Headers
 
-Some common onces are 
+Some common onces are
 
 `content-length`
 

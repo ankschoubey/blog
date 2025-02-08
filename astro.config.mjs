@@ -12,20 +12,16 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/uti
 import { redirects } from './src/redirects.ts';
 
 import { ANALYTICS, SITE } from './src/utils/config.ts';
-import react from "@astrojs/react";
+import react from '@astrojs/react';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
+const whenExternalScripts = (items = []) =>
+  ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown
+    ? Array.isArray(items)
+      ? items.map((item) => item())
+      : [items()]
+    : [];
 
-
-const ignoredThings = [
-  "/tag",
-  '/contact',
-  '/privacy',
-  '/terms',
-  '/category',
-  '/blog',
-  '/404'
-]
+const ignoredThings = ['/tag', '/contact', '/privacy', '/terms', '/category', '/blog', '/404'];
 
 // https://astro.build/config
 export default defineConfig({
@@ -34,43 +30,64 @@ export default defineConfig({
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'static',
   redirects: redirects,
-  integrations: [tailwind({
-    applyBaseStyles: false
-  }), sitemap({
-    filter: page => {
-      for (const item of ignoredThings) {
-        if(page.includes(item)){
-          return false;
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    sitemap({
+      filter: (page) => {
+        for (const item of ignoredThings) {
+          if (page.includes(item)) {
+            return false;
+          }
         }
-      }
-      return true;
-    }
-  }), mdx(), icon({
-    include: {
-      tabler: ['*'],
-      'flat-color-icons': ['template', 'gallery', 'approval', 'document', 'advertising', 'currency-exchange', 'voice-presentation', 'business-contact', 'database']
-    }
-  }), ...whenExternalScripts(() => partytown({
-    config: {
-      forward: ['dataLayer.push']
-    }
-  })), tasks(), compress({
-    CSS: true,
-    HTML: false,
-    Image: false,
-    JavaScript: true,
-    SVG: true,
-    Logger: 1
-  }), react()],
+        return true;
+      },
+    }),
+    mdx(),
+    icon({
+      include: {
+        tabler: ['*'],
+        'flat-color-icons': [
+          'template',
+          'gallery',
+          'approval',
+          'document',
+          'advertising',
+          'currency-exchange',
+          'voice-presentation',
+          'business-contact',
+          'database',
+        ],
+      },
+    }),
+    ...whenExternalScripts(() =>
+      partytown({
+        config: {
+          forward: ['dataLayer.push'],
+        },
+      })
+    ),
+    tasks(),
+    compress({
+      CSS: true,
+      HTML: false,
+      Image: false,
+      JavaScript: true,
+      SVG: true,
+      Logger: 1,
+    }),
+    react(),
+  ],
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
-    rehypePlugins: [responsiveTablesRehypePlugin]
+    rehypePlugins: [responsiveTablesRehypePlugin],
   },
   vite: {
     resolve: {
       alias: {
-        '~': path.resolve(__dirname, './src')
-      }
-    }
-  }
+        '~': path.resolve(__dirname, './src'),
+      },
+    },
+  },
 });

@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2023-03-18T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/better-var-name-by-copying/

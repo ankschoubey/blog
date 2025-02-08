@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - collaborations
+  - technical
+  - collaborations
 publishDate: 2022-10-20T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/increase-collaboration-for-developers/

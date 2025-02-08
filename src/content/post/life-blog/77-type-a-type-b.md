@@ -1,18 +1,18 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
+  - non-technical
 publishDate: 2022-09-25T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/type-a-type-b/
 title: Aim to be between Type A and B
 image: /images/life-blog/type-a-type-b.jpg
 ---
+
 ![](/images/life-blog/type-a-type-b.jpg)
 
 Photo by <a href="https://unsplash.com/@glenndiaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Glenn Diaz</a> on <a href="https://unsplash.com/s/photos/workaholic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
 
 # What are the benefits of having different personalities?
 
@@ -21,6 +21,7 @@ Humans come in man shapes and sized and varied personalities. It's not possible 
 In 1 situation, one personality works best. In another situation, another personality works best.
 
 There are many ways to categorize personality. A few I know are:
+
 1. Myers Briggs Personality Assement
 2. Big 5
 3. Dark Triad
@@ -70,6 +71,7 @@ I love high-quality code. And whenever I join a project, it's very hard at first
 Whenever I jump to a new project, I have the same expectation of high productivity and quality from day one. This demotivates me and makes me go slower than I would like. But as days go by, this project also reaches a good perfect state. When I revisit the previous one, I find improvements I could do there which I learned from this one. I wouldn't have ever understood that if I hadn't made the jump. #grateful
 
 ## How does this relate to the concept of order and chaos?
+
 Type A: Order
 Type B: Chaos
 

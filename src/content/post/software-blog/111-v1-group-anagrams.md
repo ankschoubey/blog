@@ -1,10 +1,10 @@
 ---
 comments: true
 excerpt: compare the count of letters in each word and put group them in a map
-tags: 
- - algorithm-problems
- - arrays
- - medium
+tags:
+  - algorithm-problems
+  - arrays
+  - medium
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
 slug: /v1/group-anagrams
@@ -25,25 +25,26 @@ Given a set of strings. Return anagrams in group.
 
 ### O(n) time complexity. O(n) space complexity
 
-O(N*26) time complexity.
+O(N\*26) time complexity.
 
 compare the count of letters in each word and put group them in a map
 
 ### Code, if any
 
 ## Works but okay, okay
+
 ```java
 class Solution {
-    
+
     private String getLetterCount(String str){
         int[] count = new int[26];
-        
+
         for(char c: str.toCharArray()){
             count[c-'a']++;
         }
         return Arrays.toString(count);
     }
-    
+
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> groups = new HashMap<>();
         for(String str: strs){
@@ -52,22 +53,24 @@ class Solution {
             list.add(str);
             groups.put(letterCount, list);
         }
-        
-        return new ArrayList<>(groups.values());   
+
+        return new ArrayList<>(groups.values());
     }
 }
 ```
 
 Optimizations:
-rather than: Arrays.toString(count); 
+rather than: Arrays.toString(count);
 could have been: new String(count)
 
 rather than:
+
 ```java
             List<String> list = groups.getOrDefault(letterCount, new ArrayList<>());
             list.add(str);
             groups.put(letterCount, list);
 ```
+
 could have been:
 
 ```

@@ -2,17 +2,18 @@
 comments: true
 excerpt: A Comparison between Application/Domain vs Framework Development
 tags:
- - technical
- - baton
- - rant
- - 200-500-words
- - technical
+  - technical
+  - baton
+  - rant
+  - 200-500-words
+  - technical
 publishDate: 2022-10-27T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/domain-vs-framework-development/
 title: Why Framework Development Is Biggest Software Development Baton?
 image: /images/software-blog/domain-vs-framework-development.jpg
 ---
+
 ![](/images/software-blog/domain-vs-framework-development.jpg)
 
 [Photo by Markus Spiske](https://www.pexels.com/photo/brown-and-white-concrete-building-227729/)
@@ -26,6 +27,7 @@ You can be an application developer, which means you'll solve problems related t
 You'll have to talk to domain experts. And your customers would likely be business users.
 
 The skills needed here are:
+
 - Understanding the domain.
 - Designing solutions for the domain.
 - Regular interaction with domain experts.

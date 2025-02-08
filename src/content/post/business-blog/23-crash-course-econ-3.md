@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
-tags: 
- - crash-course
- -  econ
- -  summary
+excerpt: 'Placeholder'
+tags:
+  - crash-course
+  - econ
+  - summary
 title: Economic Systems and Macroeconomics - Crash Course Economics - 3
 slug: /crash-course/econ/3
 publishDate: 2023-03-11T20:42:15.538277
@@ -14,7 +14,8 @@ publishDate: 2023-03-11T20:42:15.538277
 ![](https://www.youtube.com/watch?v=B43YEW2FvDs)
 
 Like rolling stones tell us, we can’t get all that we want. because there are limited resources so we have to make choices.
-***
+
+---
 
 There are 3 types of resource according to Karl Marx.
 
@@ -28,25 +29,24 @@ And economic system allows for
 - How we produce it?
 - Who gets it?
 
-
 There are two types of Economy based on who controls the resources and what the system allows.
 
 - Command Economy
 - Free Market Economy
 
-***
+---
 
 Adam Smith said
 
 > It's not from the benevolance of the butcher, the brewer or the baker that we expect our dinner, but from their regard to their own self interest.
 
-***
+---
 
 Command Economy is controlled by the government. It decides what to do.
 
 Free Market Economy is where a companies decides what they can produce based on the profits they receive.
 
-***
+---
 
 **Invisible Hand**: The unintended social benefit resulting from individual actions.
 
@@ -56,7 +56,7 @@ For example, if 1 of 2 competing car brands make better products, they’ll have
 
 Similar is not the case with command economy. Government can make a car and have no competition but it doesn’t have any special need to innovate.
 
-***
+---
 
 Planned/Command Economy is not all bad. Because there are many things Free Market economy can’t handle.
 
@@ -75,15 +75,15 @@ Modern economies are neither completely free or planned, there's a spectrum of g
 We should not fix ourselves to one ideology or another and rather focus on what get’s the job done at the time.
 
 > It doesn't matter if a cat is black or white, if it caches mice, it is a good cat.
-~ Deng Xiaoping
+> ~ Deng Xiaoping
 
-***
+---
 
 While we could absolutely abolish many things like poverty with a command economy, remember that in economic terms we always have trade-offs because we always have scares limited resources.
 
 So, spending money to abolish poverty could lead to less money spend on health care or less money on security so a war that leads to more poverty!
 
-***
+---
 
 ## Circular Flow Model
 

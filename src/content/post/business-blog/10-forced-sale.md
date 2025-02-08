@@ -1,9 +1,9 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - business
+  - business
 title: Don’t try to force a sale on people who are not your user base
 publishDate: 2021-08-01T20:42:15.368425
 slug: /life-blog/forced_sale/
@@ -33,6 +33,7 @@ They are middlemen, they don’t care about the customers. They care about sales
 But for companies which sell products themselves, they risk one every important factor.
 
 What happens when user does not like your product?
+
 - He was half sure about buying your product.
 - Now he will tell everyone in his connection to not purchase your product.
 - Plus he’ll also mention to them not to fall for your “sales presentation”.

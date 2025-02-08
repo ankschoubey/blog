@@ -1,16 +1,17 @@
 ---
 toc: false
 comments: true
-excerpt: "Rephrase: Who is your customer?"
+excerpt: 'Rephrase: Who is your customer?'
 tags:
- - marketing
- - communication
- - truth
+  - marketing
+  - communication
+  - truth
 title: Who is your audience?
 publishDate: 2021-08-01T20:42:15.434096
 slug: /life-blog/audience/
 image: /images/life-blog/audience.jpg
 ---
+
 ![](/images/life-blog/audience.jpg)
 <sub>Photo by <a href="https://unsplash.com/@wansan_99?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Wan San Yip</a> on <a href="https://unsplash.com/s/photos/performance?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
 
@@ -29,4 +30,3 @@ The students at the school listened to Hindi songs. We were forcing English song
 Now when “performing”, I try to keep this in mind.
 
 I recently had an opportunity to play the Piano at an office event. I had decided to play classical as that would best show my skills. But my audience had probably never given much thought to Vivaldi or Beethoven. So I picked Perfect by Ed Sheeran. It was an easy song. But the audience loved more than I had expected.
-

@@ -1,16 +1,17 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - architecture
- - plugin
+  - technical
+  - architecture
+  - plugin
 publishDate: 2022-11-13T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/plugin-architecture
 title: How to develop a robust plugin architecture?
 image: /images/v1-plugin-architecture/header.jpg
 ---
+
 ![](/images/v1-plugin-architecture/header.jpg)
 
 Photo by <a href="https://unsplash.com/@justin_morgan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Justin Morgan</a> on <a href="https://unsplash.com/s/photos/plugin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

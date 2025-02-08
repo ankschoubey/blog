@@ -1,20 +1,21 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - decision-making
- - peace
+  - philosophical
+  - decision-making
+  - peace
 publishDate: 2021-08-16T20:52:08.052481
 slug: /life-blog/questions-false/
-title: "All Questions are False"
+title: 'All Questions are False'
 image: /images/life-blog/questions-false.jpg
 ---
+
 ![](/images/life-blog/questions-false.jpg)
 
 Photo by <a href="https://unsplash.com/@shotbycerqueira?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shot by Cerqueira</a> on <a href="https://unsplash.com/s/photos/meditation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
 Habits, routines and our way of thinking protects us from a certain group of problems. The more broad they are, the more number of problems they can take care. Therefore, it become important to explore un-explored ideas.
 
 This has been a reason why I have been trying to get gist of Indian philosophers to the degree that does not include metaphysical claims.
@@ -25,15 +26,16 @@ One of the patterns that has been repeated over and over is that every problem i
 
 <iframe width="300" height="315" src="https://www.youtube.com/embed/nj8E9Sgs8F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> All questions are false, unreal, nonessential, because **life is not a problem to be solved; it is a mystery to be lived**. 
-> Only the fools go on questioning and go on thinking that some answers will help them. 
-> No answer is going to help you; every answer will create more questions. 
+> All questions are false, unreal, nonessential, because **life is not a problem to be solved; it is a mystery to be lived**.
+> Only the fools go on questioning and go on thinking that some answers will help them.
+> No answer is going to help you; every answer will create more questions.
 
 ~ Osho
 
-## 2 Features of Being a Human that Lead to Questions 
+## 2 Features of Being a Human that Lead to Questions
 
 Sadhguru would say something like:
+
 - All problems and suffering come from 2 features of being a human being: Extremely vivid memory and fantastic imagination.
 - You are suffering your capabilities.
 
@@ -48,15 +50,16 @@ Sadhguru would say something like:
 ## Question of Meaning of Life
 
 When asked about meaning of life, Sam Harris would say something like:
-- One is only concerned with questions like the meaning of life if what they are doing in the present moment is not good enough to demand their full attention. 
-- By becoming aware of the present moment we enjoy what life really is in the present. 
+
+- One is only concerned with questions like the meaning of life if what they are doing in the present moment is not good enough to demand their full attention.
+- By becoming aware of the present moment we enjoy what life really is in the present.
 - And we have this power at any time of the day.
 
 ## You don't have to have an opinion
 
 You don't have to have a personal opinion about everything.
 
-## Not exhaustive 
+## Not exhaustive
 
 Apart from Osho, Sadhguru and Sam would have a similar belief:
 

@@ -2,8 +2,8 @@
 comments: true
 excerpt: Why comparison with others is stupid and why the only person you should compare to is who you were yesterday
 tags:
- - social-harmony
- - non-technical
+  - social-harmony
+  - non-technical
 publishDate: 2023-05-01T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/step-aside-success/
@@ -22,7 +22,7 @@ As I have gotten older, I have resolved my jealousy of other people of similar a
 
 ![](/images/v1-step-aside-success.jpg)
 
-Photo by [Dietmar Becker](https://unsplash.com/@dietmarbecker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText "‌") on [Unsplash](https://unsplash.com/s/photos/comparison?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText "‌")
+Photo by [Dietmar Becker](https://unsplash.com/@dietmarbecker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText '‌') on [Unsplash](https://unsplash.com/s/photos/comparison?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText '‌')
 
 ## Comparison with others is a stupid game
 

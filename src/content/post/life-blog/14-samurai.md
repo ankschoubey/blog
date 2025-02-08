@@ -3,7 +3,7 @@ excerpt: Forced to upgrade
 title: Samurai to Modern Army in 10 years
 comments: true
 tags:
- - philosophical
+  - philosophical
 use_math: true
 publishDate: 2021-08-01T20:42:15.336888
 slug: /life-blog/samurai/
@@ -41,6 +41,7 @@ It took Europe around 100 years to upgrade, going through multiple revolutions d
 For Japan, there were many missteps along the way but in 10 years, they went from a culture of the swordsman to a modern one and were never colonized.
 
 There are a few lessons that can be taken from this over-simplistic snippet. These can be applied to business and life in general.
+
 - **Always upgrade ourself to deal with current and future problems**
 - Be flexible enough
 - [Learn by observing others](/observe)
@@ -50,11 +51,12 @@ There are a few lessons that can be taken from this over-simplistic snippet. The
 
 There were a lot of missteps with their way and the way the world was in general. I recommend listening to [Hardcore History: Super Nova in the East](https://www.dancarlin.com/product/hardcore-history-62-supernova-in-the-east-i/)
 
-Hardcore History is a long podcast. I think the below clip captures the essence of this post. *(Go fullscreen!)*
+Hardcore History is a long podcast. I think the below clip captures the essence of this post. _(Go fullscreen!)_
 
 {% include youtube.html content='b_iU_gnn28U' %}
 
 This post and its content were inspired by:
+
 - One Piece: Wano Arc
 - Ghosts of Tsushima [^2]
 - [Hardcore History: Super Nova in the East](https://www.dancarlin.com/product/hardcore-history-62-supernova-in-the-east-i/) (cannot recommend this enough)

@@ -2,9 +2,9 @@
 comments: true
 excerpt: Response during unit tests can be saved in files which can be used for Testing UI.
 tags:
- - technical
- - tdd
- - testing
+  - technical
+  - tdd
+  - testing
 publishDate: 2024-01-07T20:52:08.052481
 last-modified-purpose:
 slug: /tdd/simple-contract-test/
@@ -46,10 +46,10 @@ Here's the code snippet for Spring Boot.
 public void exportRestResponse(String resource, HttpMethod httpMethod, HttpStatus httpStatus, String url, WebTestClient.Response responseSpec){
  String data = responseSpec.expectBody(String.class).getEntityResponse().getBody();
  ... you can also beautify this JSON string.
- 
+
  String name = httpMethod + " " + httpStatus + " " + url.replaceAll("\\", "-");
  ... we can't save \ as the file name. So replaced \ with -
- 
+
  Path path = new Path("/contracts/"+resource+"/" + name + ".json");
  FileUtils.save(path, data);
 }

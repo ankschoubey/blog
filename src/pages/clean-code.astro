@@ -15,15 +15,47 @@ const content: SeriesItems[] = [
   {
     title: 'Getting Started',
     subtitle: '',
-    posts: ['software-blog/clean_code', 'software-blog/flat_is_better', 'software-blog/god_classes', 'software-blog/complexity', 'software-blog/code_cleanup','software-blog/exception_handing', 'software-blog/leave_it_better'
-  , 'software-blog/clean_code_tools', 'software-blog/clean-code-spring-boot', 'software-blog/refactoring', 'software-blog/package-json', 'software-blog/code_configurable', 'software-blog/conventional-commits', 'software-blog/disable-stacktrace', 'software-blog/atomic-commits',
-'software-blog/naming_conventions','software-blog/code-reviews', 'software-blog/response-type-field', 'software-blog/immutable-objects', 'software-blog/separate-technical-code', 'software-blog/plugin-architecture',
-'v1/simple-db', 'v1/api-client-sdk', 'software-blog/writing-log-messages', 'v1/code-review-checklist', 'software-blog/separate-service', 'v1/release-semantic-versioning'],
+    posts: [
+      'software-blog/clean_code',
+      'software-blog/flat_is_better',
+      'software-blog/god_classes',
+      'software-blog/complexity',
+      'software-blog/code_cleanup',
+      'software-blog/exception_handing',
+      'software-blog/leave_it_better',
+      'software-blog/clean_code_tools',
+      'software-blog/clean-code-spring-boot',
+      'software-blog/refactoring',
+      'software-blog/package-json',
+      'software-blog/code_configurable',
+      'software-blog/conventional-commits',
+      'software-blog/disable-stacktrace',
+      'software-blog/atomic-commits',
+      'software-blog/naming_conventions',
+      'software-blog/code-reviews',
+      'software-blog/response-type-field',
+      'software-blog/immutable-objects',
+      'software-blog/separate-technical-code',
+      'software-blog/plugin-architecture',
+      'v1/simple-db',
+      'v1/api-client-sdk',
+      'software-blog/writing-log-messages',
+      'v1/code-review-checklist',
+      'software-blog/separate-service',
+      'v1/release-semantic-versioning',
+    ],
   },
   {
     title: 'Clean Tests',
     subtitle: '',
-    posts: ['software-blog/writing_test', 'method-when-should', 'test-data-factories', 'software-blog/fluent-assertions', 'creative-variable-names', 'tdd/page-object-model'],
+    posts: [
+      'software-blog/writing_test',
+      'method-when-should',
+      'test-data-factories',
+      'software-blog/fluent-assertions',
+      'creative-variable-names',
+      'tdd/page-object-model',
+    ],
   },
   {
     title: 'Web Development',
@@ -45,7 +77,14 @@ const content: SeriesItems[] = [
   {
     title: 'Naming Things',
     subtitle: '',
-    posts: ['software-blog/benefits-of-good-naming','software-blog/good-variable-names','software-blog/naming-conventions-within-teams','naming-design-patterns', 'software-blog/better-var-name-by-copying', 'software-blog/naming-contention-database-redux-indexes'],
+    posts: [
+      'software-blog/benefits-of-good-naming',
+      'software-blog/good-variable-names',
+      'software-blog/naming-conventions-within-teams',
+      'naming-design-patterns',
+      'software-blog/better-var-name-by-copying',
+      'software-blog/naming-contention-database-redux-indexes',
+    ],
   },
 ];
 
@@ -78,14 +117,14 @@ const articleCount = content
     }}
   >
     <Fragment slot="title">
-      Clean 
-      <span class="text-accent dark:text-white highlight">Code</span>
-      <br>
+      Clean
+      <span class="highlight text-accent dark:text-white">Code</span>
+      <br />
     </Fragment>
 
     <Fragment slot="subtitle">
-      Creating the <span class="text-accent font-bold">cleanest codebase</span> for you and your teams.<br>
-      <span class="dark:text-orange-400 font-bold">This series is currently in progress</span>
+      Creating the <span class="font-bold text-accent">cleanest codebase</span> for you and your teams.<br />
+      <span class="font-bold dark:text-orange-400">This series is currently in progress</span>
     </Fragment>
   </Hero>
 

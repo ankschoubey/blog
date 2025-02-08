@@ -2,8 +2,8 @@
 comments: true
 excerpt: Notes from HealthyGamerGG podcast. Use emotions to solve emotional problems first only then apply logic. (Pathos first; Logos later).
 tags:
- - peace
- - non-technical
+  - peace
+  - non-technical
 publishDate: 2023-05-06T20:52:08.052481
 last-modified-purpose:
 read-this-when: You are facing a sad or depressive situation.
@@ -46,9 +46,8 @@ He also said that the processing of emotions can be crying too. After that, you 
 
 He recommends meditation (focusing on the breath) for logical people. That’s the only way to clean the perceptions.
 
-
 [Source: HealthyGamerGG](https://www.youtube.com/watch?v=PmGIwRvcIrg)
 
-***
+---
 
-This problem is also something I learned about people with high conscientiousness.  They tend to tear themselves apart psychologically trying to find what caused the problem so that it won’t repeat. And it's hard on them
+This problem is also something I learned about people with high conscientiousness. They tend to tear themselves apart psychologically trying to find what caused the problem so that it won’t repeat. And it's hard on them

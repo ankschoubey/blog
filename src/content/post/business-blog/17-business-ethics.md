@@ -1,17 +1,18 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - business
- - collection-of-thoughts
- - decision-making
+  - business
+  - collection-of-thoughts
+  - decision-making
 title: Business Ethics
 slug: /software-blog/business-ethics/
 publishDate: 2021-08-01T20:42:15.545856
 image: /images/software-blog/business-ethics.jpg
 hide: true
 ---
+
 ![](/images/software-blog/business-ethics.jpg)
 
 <sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@charles_forerunner?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Charles Forerunner</a> on <a href="https://unsplash.com/s/photos/business?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
@@ -21,11 +22,13 @@ In the [previous post](/life-blog/why_ethics/), I discussed the reasons to be et
 ## Competition and Revenues
 
 Most profitable companies create a monopoly. [^8]
+
 - Example: Google, Facebook, Amazon
 
 Monopolies are bad for innovation long term. Competition is good for innovation.
 
-Often publically traded companies listening to shareholders focus on short term gains while neglecting ethics. 
+Often publically traded companies listening to shareholders focus on short term gains while neglecting ethics.
+
 - Example: Slave Trading Companies during the Colonial Era. [^10]
 - Recent Example:
   - Facebook is known for copying features from smaller competitors then purchasing them
@@ -34,6 +37,7 @@ Often publically traded companies listening to shareholders focus on short term 
     - Forcing business to be sold to Amazon by selling the same product at a massive loss and waiting for a competitor to go bankrupt before restoring price. [^3]
 
 Some companies choose to stay private, avoiding being influenced by shareholders.
+
 - Example: SpaceX
 
 If your business is no longer needed, pivot and move to something else.

@@ -1,12 +1,12 @@
 ---
-excerpt:  Implementing OData, Utilizing Specifications, and Enhancing API Flexibility.
+excerpt: Implementing OData, Utilizing Specifications, and Enhancing API Flexibility.
 title: How we implemented OData for MongoDB and use it in OpenAPI
 comments: true
 tags:
- - technical
- - clean-code
- - dsl
- - developer-diary
+  - technical
+  - clean-code
+  - dsl
+  - developer-diary
 toc: false
 use_math: true
 publishDate: 2023-07-11T20:42:15.220865
@@ -64,7 +64,7 @@ OData has different system parameters. Here are a few you should know.
 - `$count`: return just a count
 - `$top`: return top n values only
 - `$skip`: skip top n values return the rest
-- More is mentioned in [OData specifications](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html "‌")
+- More is mentioned in [OData specifications](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html '‌')
 
 These allow the client to specify what kind of data it should return.
 
@@ -107,7 +107,7 @@ To handle these use cases of embedded params (one param within another). We had 
 
 Luckily, we were able to find OData grammar on GitHub. We were able to modify it to implement only the cases we wanted to implement.
 
-[OData Grammar Github](https://github.com/luca-vercelli/odata-jpa-mini/blob/master/odata-jpa-mini/src/main/antlr4/odata/antlr/ODataLexer.g4 "‌")
+[OData Grammar Github](https://github.com/luca-vercelli/odata-jpa-mini/blob/master/odata-jpa-mini/src/main/antlr4/odata/antlr/ODataLexer.g4 '‌')
 
 ### OData Specifications
 
@@ -115,7 +115,7 @@ In our previous expression language, the syntax was similar to Excel and Google 
 
 With OData, we had a well-documented specification which we knew was perfected over time. We had to worry less about the design of the grammar.
 
-[Link to OData Documentation](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html "‌")
+[Link to OData Documentation](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html '‌')
 
 ## Not implementing the complete spec
 
@@ -152,7 +152,7 @@ This way, we were able to use the same grammar and cater to OData and OpenAPI.
 
 ## Critiques of OData
 
-While implementing OData, we came across a few critiques, and it's mainly from this article. [GraphQL is not OData](https://jeffhandley.com/2018-09-13/graphql-is-not-odata "‌")
+While implementing OData, we came across a few critiques, and it's mainly from this article. [GraphQL is not OData](https://jeffhandley.com/2018-09-13/graphql-is-not-odata '‌')
 
 - OData has too many things open by default.
 - You need to restrict it. There are security problems, especially with OData being able to run functions. And operations like Sorting on a non-indexed field can bring down the whole system's DoS.

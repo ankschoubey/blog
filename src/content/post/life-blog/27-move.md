@@ -1,15 +1,16 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - decision-making
- - systems
+  - decision-making
+  - systems
 title: Plan quickly. Move fast. Break things.
 publishDate: 2021-08-01T20:42:15.497285
 slug: /life-blog/plan-quickly-and-move-fast/
 image: /images/life-blog/plan-quickly-and-move-fast.jpg
 ---
+
 ![](/images//life-blog/plan-quickly-and-move-fast.jpg)
 
 <sup>Photo by <a href="https://unsplash.com/@chaseelliottclark?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Chase Clark</a> on <a href="https://unsplash.com/s/photos/move?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sup>

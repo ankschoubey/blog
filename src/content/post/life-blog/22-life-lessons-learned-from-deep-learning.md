@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - philosophical
- - systems
+  - philosophical
+  - systems
 publishDate: 2021-08-01T20:42:15.433097
 title: Correlation between Deep Learning Concepts and Philosophy
 slug: /life-blog/dl_lessons/
@@ -70,7 +70,7 @@ slug: /life-blog/dl_lessons/
 
 ## Batch size
 
-**DL:**  Number of items processed before the DL model is updated.
+**DL:** Number of items processed before the DL model is updated.
 
 **P:** Try to understand different perspectives at any given time to avoid any biases
 

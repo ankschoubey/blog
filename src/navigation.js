@@ -1,20 +1,25 @@
 import { getPermalink, getBlogPermalink, getAsset, CATEGORY_BASE } from './utils/permalinks';
 
+import ankushLinks from './content/ankushLinks'
 export const headerData = {
   links: [
-
-    { text: 'Software Blog', href: getPermalink('technical', 'tag') },
     {
-      text: "Software Series",
-      
+      text: 'Software',
+
       href: getPermalink(),
       links: [
-        { text: 'TDD & Beyond', href: "/tdd" },
-        { text: 'Clean Code', href: "/clean-code" },      
-      ]
+        { text: 'Blog', href: getPermalink('technical', 'tag') },
+        { text: 'TDD & Beyond Series', href: '/tdd' },
+        { text: 'Clean Code Series', href: '/clean-code' },
+      ],
     },
-    { text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
-    { text: 'Life Series', href: "/life" },
+    {
+      text: 'Life',
+      links: [
+        { text: 'Blog', href: getPermalink('non-technical', 'tag') },
+        { text: 'Series', href: '/life' },
+      ],
+    },
 
     // {
     //   text: "Tech Series",
@@ -42,22 +47,22 @@ export const headerData = {
       text: 'Search',
       // target:"_blank",search
       icon: 'tabler:search',
-      variant: "primary", 
+      variant: 'primary',
       href: '/search',
     },
     // {
     //   text: 'Resume',
     //   target:"_blank",
-    //   variant: "secondary", 
+    //   variant: "secondary",
     //   href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
     // },
     {
-      variant: "primary", 
-      target:"_blank",
+      variant: 'primary',
+      target: '_blank',
       text: 'Contact',
       icon: 'tabler:brand-linkedin',
       showText: false,
-      href: 'https://www.linkedin.com/in/ankushchoubey/',
+      href: ankushLinks.so,
     },
   ],
   isSticky: true,
@@ -120,9 +125,8 @@ export const footerData = {
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/ankushchoubey/' },
     // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/ankschoubey' },
   ],
-  footNote: `
-    <span class="text-blue-600 dark:text-gray-200">Made using AstroWinds theme for the special people that support me.</span>
-  `,
+  footNote: ``,
+  //     <span class="text-blue-600 dark:text-gray-200">Made using AstroWinds theme for the special people that support me.</span>
 };

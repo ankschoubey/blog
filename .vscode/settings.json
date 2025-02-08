@@ -12,7 +12,8 @@
   },
   "prettier.documentSelectors": ["**/*.astro"],
   "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "yaml.schemas": {
     "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
@@ -20,5 +21,16 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": "explicit"
   },
-  "markdown.extension.completion.root": "/src/public/"
+  "markdown.extension.completion.root": "/src/public/",
+  "[markdown]": {
+    "editor.cursorSurroundingLines": 0,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
 }

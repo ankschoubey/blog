@@ -2,12 +2,12 @@
 comments: true
 excerpt: count all numbers. sort. and return top k. Use streams to make it cleaner. or use bucket sort.
 tags:
- - technical
- - algorithm-problems
- - arrays
- - medium
- - heap
- - bucket-sort
+  - technical
+  - algorithm-problems
+  - arrays
+  - medium
+  - heap
+  - bucket-sort
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
 slug: /v1/top-k-frequent-elements
@@ -36,7 +36,7 @@ Get k numbers repeated most often.
 
 ## All Approaches and Explanations in English
 
-### O(n*log n)
+### O(n\*log n)
 
 count all numbers. sort. and return top k. Use streams to make it cleaner.
 
@@ -64,6 +64,7 @@ class Solution {
     }
 }
 ```
-## Heap Solution O(k*log(n)
+
+## Heap Solution O(k\*log(n)
 
 ## Bucket Sort

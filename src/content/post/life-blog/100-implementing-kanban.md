@@ -2,10 +2,10 @@
 comments: true
 excerpt: My experience implementing Kanban Principles.
 tags:
- - lean
- - agile
- - systems
- - non-technical
+  - lean
+  - agile
+  - systems
+  - non-technical
 publishDate: 2023-01-07T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/implementing-kanban/
@@ -62,8 +62,6 @@ In practice,
 
 - Look at the board, look at the right most items and start working on them first.
 - If you have a new task, add a card to the start of the board (the backlog) but don't start working on it just yet. Come back to your current card and finish it.
-
-
 
 [Agile Daily Standup - How To Walk the Board (aka Walk the Wall) - YouTube](https://www.youtube.com/watch?v=316qdj10j9M)
 

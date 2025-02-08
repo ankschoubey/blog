@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - devops
+  - technical
+  - devops
 publishDate: 2022-08-20T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/speeding-up-pipelines/
@@ -11,6 +11,7 @@ title: Speed up Pipelines
 toc: false
 image: /images/software-blog/speeding-up-pipelines.svg
 ---
+
 ![](/images/software-blog/speeding-up-pipelines.svg)
 
 Disclaimer: I have primarily worked on Jenkins. But the tips mentioned aren’t Jenkins specific. It seems though that pipelines tools that come with SCM services like Gitlab are better.

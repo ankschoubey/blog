@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: Learn the foundation of TDD with a simple example explained in depth. 
+excerpt: Learn the foundation of TDD with a simple example explained in depth.
 tags:
- - technical
- - testing
- - tdd
+  - technical
+  - testing
+  - tdd
 publishDate: 2023-08-13T20:52:08.052481
 last-modified-purpose:
 slug: /tdd-backend-example
@@ -25,7 +25,7 @@ The post can seem a bit exaggerated. In many places "good Java" practices will n
 
 Here's the problem statement.
 
-You have a "movies" table in the database. The table stores all values related to a movie.  You want only one entry for each movie. If the data for a movie is present, you just update the data. If the data is not present, you insert the data. In both cases, it'll return the data from the database.
+You have a "movies" table in the database. The table stores all values related to a movie. You want only one entry for each movie. If the data for a movie is present, you just update the data. If the data is not present, you insert the data. In both cases, it'll return the data from the database.
 
 In MongoDB, terms this is called an "upsert" operation. So we'll try to write an upsert method ourselves with TDD.
 
@@ -62,7 +62,7 @@ public class Movie \{
 
 ```java
 public interface MovieRepository extends JpaRepository<Movie, String>\{
- //This class is currently empty 
+ //This class is currently empty
 \}
 ```
 
@@ -96,7 +96,7 @@ To write a skeleton test class for MovieService.
 @DataMongoTest
 @Import(MovieService.class)
 class MovieServiceTest\{
- // empty 
+ // empty
 \}
 ```
 
@@ -107,9 +107,7 @@ In TDD, we iterate on scenarios. For each scenario,
 3. Then write the code that will pass our test.
 4. This covers our one scenario.
 
-We repeat steps 1 to 4 for each scenario. For upsert, we kind of have two scenarios.
-5. If the data is not present, you insert the data.
-6. If the data for a movie is present, you just update the data.
+We repeat steps 1 to 4 for each scenario. For upsert, we kind of have two scenarios. 5. If the data is not present, you insert the data. 6. If the data for a movie is present, you just update the data.
 
 When you are doing TDD yourself, it's helpful to identify scenarios that would help you get started. I have explained the scenarios in detail here <insert link>.
 
@@ -120,7 +118,7 @@ In the test file, I write
 ```java
  @Autowired MovieService movieService;
  @Autowired MovieRepository movieRepository;
- 
+
  @Nested
  @DisplayName("upsert method")
  class UpsertMethod\{
@@ -273,7 +271,7 @@ The following is a real problem I faced when the `upsert` method was run in para
 
 Our `movie` microservice is being used by a lot of people at once. And therefore, our `upsert` method is being called many times parallelly. We have started getting MongoDB's **OptimisticLockingException**. All our tests work but they don't get the `OptimisticLockingException`.
 
-The  `OptimisticLockingException` occurs when two different threads try to update the same row in a MongoDB database.
+The `OptimisticLockingException` occurs when two different threads try to update the same row in a MongoDB database.
 
 Pay attention to the version field below.
 
@@ -314,7 +312,7 @@ I created a test as follows:
 @Nested
 @DisplayName("WHEN upsert is called parallely")
 class WhenUpsertIsCalledParallelyTest\{
-    
+
     static final Long repeatTimes = 100;
 
     static final List<Long> allVersions = new ArrayList<>();
@@ -324,7 +322,7 @@ class WhenUpsertIsCalledParallelyTest\{
     @DisplayName("SHOULD manipulate a single record")
     void shouldManipulateASingleRecord()\{
         // when:
-         
+
             Movie movie = movieService.upsert(new Movie("M1", "Avengers")).block(); // Part of Step 1
         // data collection:
             allVersions.add(movie.getVersion());         // Part of Step 2
@@ -373,10 +371,7 @@ We went from understanding the problem to developing the solution in a TDD way.
 3. We wrote our code against the failing test enough to pass it.
 4. Our test passed and we repeated the cycle for all the scenarios.
 
-Later, we realized a new problem in our code, and replicated it,
-5. We came up with a hypothesis.
-6. Wrote a test to validate the hypothesis
-7. Wrote the code against the test to pass it.
+Later, we realized a new problem in our code, and replicated it, 5. We came up with a hypothesis. 6. Wrote a test to validate the hypothesis 7. Wrote the code against the test to pass it.
 
 You have learned something that's truly the foundation of writing good code. In upcoming blog posts, we'll see how to test REST APIs, frontends, etc.
 

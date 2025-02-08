@@ -1,16 +1,17 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - core-values
- - truth
- - non-technical
+  - core-values
+  - truth
+  - non-technical
 publishDate: 2022-02-24T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/truth-stratergies/
 title: Strategies on Truth
 image: /images/life-blog/truth-stratergies.jpg
 ---
+
 ![](/images/life-blog/truth-stratergies.jpg)
 [^1]
 
@@ -52,6 +53,4 @@ If you have done something, it’s a truth.
 
 This is along the lines of why sharing what we are going to do isn’t complete truth yet.
 
-
 [^1]: Photo by <a href="https://unsplash.com/@brunovdkraan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bruno van der Kraan</a> on <a href="https://unsplash.com/s/photos/truth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  

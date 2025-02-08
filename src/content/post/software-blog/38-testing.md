@@ -1,18 +1,19 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - collection-of-thoughts
- - testing
- - truth
- - tdd
+  - technical
+  - collection-of-thoughts
+  - testing
+  - truth
+  - tdd
 title: The philosophy behind testing in software and in general
 publishDate: 2021-08-01T20:42:15.560528
 slug: /software-blog/testing/
 image: /images/software-blog/testing.jpg
 ---
+
 ![](/images/software-blog/testing.jpg)
 
 <sup style="user-select: auto;">Photo by <a href="https://unsplash.com/@mykjohnson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Mykenzie Johnson</a> on <a href="https://unsplash.com/s/photos/testing?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sup>
@@ -43,7 +44,7 @@ Writing unit tests first only works well when you know exactly what you want to 
 
 You could invert the last line . If you can't write tests first, you need to learn.
 
-Every new bug should get a new test written first. (adapted from Facebook Engineering)  
+Every new bug should get a new test written first. (adapted from Facebook Engineering)
 
 Keep your overall QC process as automated as possible.
 

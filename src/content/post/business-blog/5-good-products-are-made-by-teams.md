@@ -2,14 +2,15 @@
 excerpt: Usually
 title: Good products are built by teams not individuals
 comments: true
-tags: 
- - business
- - social-harmony
+tags:
+  - business
+  - social-harmony
 use_math: true
 publishDate: 2021-08-01T20:42:15.327198
 slug: /software-blog/teams/
 image: /images/software-blog/teams/1.jpg
 ---
+
 ![](/images/software-blog/teams/1.jpg)
 
 Though it is hard to form a good team, good things are almost always built by teams.
@@ -23,13 +24,14 @@ And we cannot expect to be right all the time. If we want smart people to be aro
 Plus, it is easier to get work done in cross-functional teams.
 
 Something you may not like is liked by someone else. Your weakness can be covered up by someone's strength.
+
 - I can code the big picture but I miss out on the details. Usually, another team member catches them and corrects them.
 - I was bad at explaining myself in meetings early in my career. A senior used to back me up.
 - Similarly, I cover up for specific tasks for other members.
 
 The advice I would give my past self when I joined work:
-> Resist the urge to be a solitary wise man. Be a good neighbor instead. [^2]
 
+> Resist the urge to be a solitary wise man. Be a good neighbor instead. [^2]
 
 <sup>I stumbled upon this thinking about a tweet proposing that every startup should have at least 1 female co-founder.</sup>
 
@@ -39,4 +41,3 @@ The advice I would give my past self when I joined work:
 
 [^1]: [Steve Jobs on Managing People](https://www.youtube.com/watch?v=f60dheI4ARg)
 [^2]: Ryan Holiday
-

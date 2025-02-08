@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - communication
- - social-harmony
- - non-technical
+  - communication
+  - social-harmony
+  - non-technical
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/boundaries/
@@ -34,7 +34,7 @@ You'll set different boundaries for different people. And it has to be that way 
 
 For family, boundaries are small.
 
-For collegues, boundaries are bigger. 
+For collegues, boundaries are bigger.
 
 For example, you don't need to feel super sad for offending someone at work over work reasons.
 

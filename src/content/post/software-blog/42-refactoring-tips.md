@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - information-system
- - for-future-me
+  - technical
+  - information-system
+  - for-future-me
 publishDate: 2021-08-01T20:42:15.662278
 title: Quick Refactoring Tips
 slug: /software-blog/refactoring/

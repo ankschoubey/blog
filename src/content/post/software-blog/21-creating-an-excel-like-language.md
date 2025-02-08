@@ -3,10 +3,10 @@ excerpt: Using the best current programming language creation-tool.
 title: How we created a query and evaluation language similar to Google Sheets and Excel formulas
 comments: true
 tags:
- - technical
- - clean-code
- - dsl
- - developer-diary
+  - technical
+  - clean-code
+  - dsl
+  - developer-diary
 toc: false
 use_math: true
 publishDate: 2020-05-25T20:42:15.220865
@@ -273,7 +273,6 @@ The compiler world is better difficult but for simpler use cases like ours, it w
 
 ## Resources
 
-[I wrote a programming language. Here’s how you can, too.](https://www.freecodecamp.org/news/the-programming-language-pipeline-91d3f449c919/ "‌")
+[I wrote a programming language. Here’s how you can, too.](https://www.freecodecamp.org/news/the-programming-language-pipeline-91d3f449c919/ '‌')
 
-[Complete Guide to Domain-Specific Languages](https://tomassetti.me/domain-specific-languages/ "‌")
-
+[Complete Guide to Domain-Specific Languages](https://tomassetti.me/domain-specific-languages/ '‌')

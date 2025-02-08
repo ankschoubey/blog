@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - systems
+  - non-technical
+  - systems
 publishDate: 2022-12-22T20:52:08.052481
 last-modified-purpose:
 slug: /v1/systems
@@ -69,7 +69,6 @@ Level **5: Mimic the real world** until you feel confident to go out into a real
 Level **6: Graduate** but sometimes return to one of the previous steps to iterate.
 
 // REFLECT and improve
-
 
 Remember, your training needs to be targetted and focused. Only by removing redistractions and targetting you'll have enough myelination in your brain to truly focus and grasp what you are learning.
 

@@ -1,6 +1,6 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 publishDate: 2022-03-21T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/one-month-microservice/

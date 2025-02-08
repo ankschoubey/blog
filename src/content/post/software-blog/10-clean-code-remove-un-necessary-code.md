@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: You ain’t gonna need it
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2020-01-04T20:42:15.112388
 title: Remove un-necessary code
 slug: /software-blog/code_cleanup/
@@ -34,7 +34,6 @@ So we should move it near the return statement:
 
 ![Even Better](/images/2020-01-04-clean-code-remove-un-necessary-code/3.png)
 
-
 # Just return it. Don’t store
 
 Continuing from the previous example:
@@ -45,14 +44,11 @@ Rather than storing “hello” in name and a new date in date, we should just r
 
 ![](/images/2020-01-04-clean-code-remove-un-necessary-code/4.png)
 
-
 # Remove commented code
 
 In case you do need to refer to the exact code you can always check it in your version control.
 
-
 # Remove functions and variables which you do not use.
-
 
 # Variable argument lengths
 

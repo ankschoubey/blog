@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - core-values
- - calm
- - non-technical
- - peace
+  - core-values
+  - calm
+  - non-technical
+  - peace
 publishDate: 2022-06-28T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/calmer/
@@ -15,15 +15,16 @@ toc: false
 
 # Learn to be calmer and neutral
 
-As soon as you catch yourself getting overly emotional. Go neutral. 
+As soon as you catch yourself getting overly emotional. Go neutral.
 
 Aim for no high no low. For moments at a time.
 
 Once you become neutral, you are in 50% better state to make a good decision.
 
-Think about what made you particularly high or low: 
+Think about what made you particularly high or low:
+
 - Was it because someone allows you to cry and listen to your sad life where you avoided responsibility?
-- Was it impression of someone? 
+- Was it impression of someone?
 
 Go neutral in thise situations.
 
@@ -74,13 +75,14 @@ Ask yourself, are you insecure or someone made you insecure? Was it a person, ad
 Remember: Insecurity = Someone is trying to sell you something.
 
 A practice to do is, question every ad.
+
 - Does it make sense.
 
 You become more secure when no one can sell you anything.
 
 Asking logical questions is a good way to eliminate insecurities.
 
-**Example 1** Living in a different city: If you are being told to get out of your city to live in some other place? you can view this two ways, why are you asked to get out of city? Is it because other people feel they are making a better choice? Does there choice align with your values or are they having a better value? Are they actually making a better choice? Can this be tested someway? 
+**Example 1** Living in a different city: If you are being told to get out of your city to live in some other place? you can view this two ways, why are you asked to get out of city? Is it because other people feel they are making a better choice? Does there choice align with your values or are they having a better value? Are they actually making a better choice? Can this be tested someway?
 
 **Example 2** Rejected: You got rejected. Now you feel you suck. You lack something that everyone has. Why? Because it seems that everyone is doing something, getting married, talking to someone, traveling, etc. And here you are alone and lonely. How many people do you know who are normal and single? What was the reason you were rejected? How common is rejection? Did Mark Manson or someone you look up to get rejected? Aren't use in a community of normal, very normal people that got rejected? Can you be rejected for the wrong reasons? If Mark Manson or someone else got rejected, how much do they suck? Isn't rejection a normal part of life?
 
@@ -93,7 +95,6 @@ Asking logical questions is a good way to eliminate insecurities.
 # Meditate
 
 Meditate regularly. 3 times a week minimum.
-
 
 # Break things down with logic
 

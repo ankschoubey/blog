@@ -2,8 +2,8 @@
 comments: true
 excerpt: And escape it. It's a more empowering path and maybe the only path.
 tags:
- - non-technical
- - responsibility
+  - non-technical
+  - responsibility
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/actually-solve-the-problem
@@ -13,7 +13,7 @@ image: https://i0.wp.com/halflinghobbies.com/wp-content/uploads/2019/07/hho_drag
 
 ## People
 
-What’s with people  who try to ease situations without ever solving the problem?
+What’s with people who try to ease situations without ever solving the problem?
 
 It’s like “Oh tumhara maan nahi hai? Maat karo”.
 

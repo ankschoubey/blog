@@ -2,10 +2,10 @@
 comments: true
 excerpt: Why traditional roles of men and women are relevant?
 tags:
- - non-technical
- - responsibility
+  - non-technical
+  - responsibility
 publishDate: 2023-01-31T20:52:08.052481
-last-modified-purpose: 
+last-modified-purpose:
 slug: /v1/traditional-roles
 title: Nihilism of The Modern Age. And Traditional Roles to the Rescue.
 toc: false
@@ -23,7 +23,7 @@ This post will provide a guide to needs to do i.e. duties. Duties are a traditio
 ## Why we should look at traditional roles?
 
 > The more you look at the history and the past, the more you can see the future.
->~ Winston Churchil.
+> ~ Winston Churchil.
 
 Things that have worked for several years have value in them. It’s not always the case that what’s new has value.
 

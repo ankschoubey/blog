@@ -3,7 +3,7 @@ toc: false
 comments: true
 excerpt: Only for-money companies
 tags:
- - business
+  - business
 publishDate: 2021-08-01T20:42:15.366196
 title: Facade companies
 slug: /life-blog/facade/

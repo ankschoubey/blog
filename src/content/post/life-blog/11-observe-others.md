@@ -3,7 +3,7 @@ excerpt: Learning faster
 title: Observe other people in action
 comments: true
 tags:
- - truth
+  - truth
 publishDate: 2021-08-01T20:42:15.319898
 use_math: true
 slug: /observe/
@@ -27,4 +27,4 @@ It removed a lot of fear, myths, and makes you better by learning from other’s
 
 Biographies are also a path.
 
-*Similar but with a twist*: [When you are just starting out, don’t try to imitate the expert.](/life-blog/imitating_experts/)
+_Similar but with a twist_: [When you are just starting out, don’t try to imitate the expert.](/life-blog/imitating_experts/)

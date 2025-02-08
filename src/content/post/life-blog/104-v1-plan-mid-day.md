@@ -1,12 +1,12 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - time
- - planning
+  - non-technical
+  - time
+  - planning
 publishDate: 2023-01-14T20:52:08.052481
-last-modified-purpose: 
+last-modified-purpose:
 slug: /v1/plan-mid-day
 title: How to plan mid-day?
 toc: false

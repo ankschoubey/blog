@@ -2,10 +2,10 @@
 comments: true
 excerpt: Testing interfaces, abstract classes, and design patterns efficiently can be tricky since parents and children depend on each other.<br><br>We can write tests to eliminate these dependencies during the test time, making our tests very short and decoupled.
 tags:
- - technical
- - design-patterns
- - tdd
- - testing
+  - technical
+  - design-patterns
+  - tdd
+  - testing
 publishDate: 2022-09-25T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/testing-design-patterns/
@@ -13,11 +13,12 @@ title: How to test interfaces, abstract classes and design patterns?
 image: /images/software-blog/testing-design-patterns.jpg
 image-fit: contain
 ---
-import Tip from "~/components/custom/Tip.astro"
+
+import Tip from '~/components/custom/Tip.astro';
 
 <Tip
-    content="<b>For beginners:</b> Design patterns are template solutions to common problems developers face. There are many design patterns; the best known are the 2 Gang of Four (GoF)  object-oriented design patterns."
-    type ="note"
+  content="<b>For beginners:</b> Design patterns are template solutions to common problems developers face. There are many design patterns; the best known are the 2 Gang of Four (GoF)  object-oriented design patterns."
+  type="note"
 />
 
 Testing interfaces, abstract classes, and design patterns efficiently can be tricky since parents and children depend on each other. We can write tests to eliminate these dependencies during the test time, making our tests very short and decoupled.
@@ -62,7 +63,7 @@ Unit testing a pattern can be tricky since things are so abstract.
 
 Testing all the concrete and parent classes together will make our tests very dependent on the parent and will be hard to maintain.
 
-The trick here is to test both separately. 
+The trick here is to test both separately.
 
 ## Testing abstract class
 
@@ -85,6 +86,7 @@ Vehicle vehicle = new DummyVehicleImpl();
 
 // 3. Use the dummy implementation to assert the parent.
 ```
+
 The steps to test composition is also similar.
 
 ## Testing children
@@ -101,8 +103,8 @@ class TeslaTests{
 }
 ```
 
-***
+---
 
-What do you think about this approach? Is there a better approach to testing abstract classes and design patterns? Do let me know what you think. 
+What do you think about this approach? Is there a better approach to testing abstract classes and design patterns? Do let me know what you think.
 
 Thank you for reading so far.

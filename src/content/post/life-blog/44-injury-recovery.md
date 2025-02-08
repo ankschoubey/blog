@@ -1,22 +1,23 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - health
- - systems
+  - health
+  - systems
 title: How to recover from physical injuries faster
 slug: /physical-injury/
 publishDate: 2022-01-09T20:42:15.557734
 image: /images/physical-injury.jpg
 ---
+
 Photo by <a href="https://unsplash.com/@yangmiao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">yang miao</a> on <a href="https://unsplash.com/s/photos/injury?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-To recover from physical injuries faster like tightness and muscle soreness, your blood should be flowing well. 
+To recover from physical injuries faster like tightness and muscle soreness, your blood should be flowing well.
 
 There are someways to do it and all of them are important to do and lead to similar level of benifits:
 
-## Massage 
+## Massage
 
 It does not have to have a lot of pressure. It can be as soft as possible. Even little bit will help.
 
@@ -26,17 +27,17 @@ If you cannot directly massage the area in pain, massage the area around it. Thi
 
 Source: [What Exactly is Foam Rolling and Why Should I Roll?](https://www.youtube.com/watch?v=DzSU2FiFKTM)
 
-1. Atlease 1 minute in an area 
+1. Atlease 1 minute in an area
 2. divide the area into two zone
-    - apply technique to each zone slowly while remembering to breath
+   - apply technique to each zone slowly while remembering to breath
 3. 3 Motions: Rolling, Spans and Streaches
-    - Rolling: Roll back and forth a few inches at a time
-    - Spans: If you reach a tight area wave
-    - Streach: Compress the area and streach in full range of motion
+   - Rolling: Roll back and forth a few inches at a time
+   - Spans: If you reach a tight area wave
+   - Streach: Compress the area and streach in full range of motion
 
 A> Always start from ground up.
 B> Breath slowly.
-C> Consistency is better than intensity. Before 
+C> Consistency is better than intensity. Before
 
 ## Cold Exposure
 

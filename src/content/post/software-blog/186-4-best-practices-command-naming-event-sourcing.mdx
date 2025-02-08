@@ -1,15 +1,16 @@
 ---
 comments: true
-excerpt:  "Explore two approaches for creating and naming commands in command-based systems, balancing domain logic with structured formats."
+excerpt: 'Explore two approaches for creating and naming commands in command-based systems, balancing domain logic with structured formats.'
 tags:
- - technical
- - event-sourcing
+  - technical
+  - event-sourcing
 publishDate: 2024-08-25T20:52:08.052481
 slug: /software-blog/best-practices-command-naming-event-sourcing/
 title: How to Choose and Name Commands for Event Sourcing or CQRS
 image: /images/software-blog/best-practices-command-naming-event-sourcing.png
 ---
-import Tip from "~/components/custom/Tip.astro"
+
+import Tip from '~/components/custom/Tip.astro';
 
 In a codebase made of many service classes, methods are typically grouped by resource, making them easy to find. Eg, all methods related to `User` would be in `UserService`. However, in a command-based systems, like event sourcing, we deal with many small command classes, which can complicate naming and organization.
 
@@ -28,12 +29,12 @@ You convert all the use cases from your business requirements / PRD into a comma
 
 For example, if you are building a banking application, you may have the following use cases.
 
-| **Business Use Case**        | **Domain Specific Command**            |
-|------------------------------|------------------------|
-| Create Savings Account        | `CreateSavingsAccount` |
-| Close Savings Account         | `CloseSavingsAccount`  |
-| Add Deposit                   | `AddDeposit`           |
-| Transfer Funds                | `TransferFunds`        |
+| **Business Use Case**  | **Domain Specific Command** |
+| ---------------------- | --------------------------- |
+| Create Savings Account | `CreateSavingsAccount`      |
+| Close Savings Account  | `CloseSavingsAccount`       |
+| Add Deposit            | `AddDeposit`                |
+| Transfer Funds         | `TransferFunds`             |
 
 <Tip content="Think of each atomic operation in the business use-case" type="tip" />
 
@@ -57,7 +58,10 @@ For example, if you are building a banking application, you may have the followi
 
 - 👎 It can be challenging to find existing commands as the codebase grows without a consistent naming format.
 
-<Tip content="<b>#MoreYouKnow</b>: Know the difference between a command and an event: A command is something we want to perform, while an event is something that has happened. For example, <b>SignupUser</b> is a command, and after the user is signed up, you might have <b>UserSignedUpEvent</b>." type="tip" />
+<Tip
+  content="<b>#MoreYouKnow</b>: Know the difference between a command and an event: A command is something we want to perform, while an event is something that has happened. For example, <b>SignupUser</b> is a command, and after the user is signed up, you might have <b>UserSignedUpEvent</b>."
+  type="tip"
+/>
 
 ### 2. Creating Commands in a Structured Format
 
@@ -67,12 +71,12 @@ Here's a format I often use which I described in my blog: [Event Sourcing - Good
 {Create/Update/Delete}{Entity}{FieldName}
 ```
 
-| **Business Use Case**        | **Command**                 |
-|------------------------------|-----------------------------|
-| Create Savings Account        | `CreateSavingsAccount`      |
-| Close Savings Account         | `UpdateCloseSavingsAccount` |
-| Add Deposit                   | `UpdateAccountAddDeposit`   |
-| Transfer                      | `UpdateAccountTransferFund` |
+| **Business Use Case**  | **Command**                 |
+| ---------------------- | --------------------------- |
+| Create Savings Account | `CreateSavingsAccount`      |
+| Close Savings Account  | `UpdateCloseSavingsAccount` |
+| Add Deposit            | `UpdateAccountAddDeposit`   |
+| Transfer               | `UpdateAccountTransferFund` |
 
 #### Pros & Cons
 
@@ -109,7 +113,10 @@ There’s no one-size-fits-all solution. Both approaches have pros and cons. Per
 - **For naming the command**: Rely on a consistent format still use as much domain specific language as possible.
   - Instead of `SignupUser`, I’d name it `CreateUser`, even if a `POST /signup` is triggering it.
 
-<Tip content="**General Tip**: Commands always follow a similar pattern to service methods, with a <b>{Verb}{Noun}</b> format. So, <b>SendEmailCommand</b> is better than <b>EmailSendCommand</b>, which sounds more like an event." type="note" />
+<Tip
+  content="**General Tip**: Commands always follow a similar pattern to service methods, with a <b>{Verb}{Noun}</b> format. So, <b>SendEmailCommand</b> is better than <b>EmailSendCommand</b>, which sounds more like an event."
+  type="note"
+/>
 
 What I presented is no way exhaustive. If you know a better approach do let me know in the comments below.
 

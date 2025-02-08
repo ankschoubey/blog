@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: and why communication policy is essential
 tags:
- - business
- - communication
+  - business
+  - communication
 title: Communication Bottleneck in large organizations
 publishDate: 2021-08-01T20:42:15.428392
 slug: /software-blog/communication_bottleneck/
@@ -44,6 +44,7 @@ The focus should be on reducing as many human middlemen as possible.
 ### To reduce the number of people involved in accessing information
 
 These help employees find the information themselves first.
+
 - Proper Documentation
 - Recorded Lectures
 
@@ -54,17 +55,20 @@ A simple FAQ/Wiki page is a good starting point.
 Meetings are usually justified regardless of whether the meeting is focused or whether people involved in the meeting are related to it.
 
 Somethings that always make meetings more productive:
+
 - Having an Agenda
 - Timeboxing
 - Having a limited number of people
 
 ### Contacting Policy
+
 Most people don't need information fast. Rather most expect clarity in 2 things:
+
 - Who to contact for what sort of information.
 - By when are they expected to get a response.
 
 ### Faster lanes for getting feedbacks and suggestions
+
 In larger companies, it becomes difficult to find problems on an individual employee level. An employee may have a really good suggestion/idea. This type of feedbacks should reach the right people as quickly as possible.
 
 Having open to all suggestions/feedbacks forms is a kind of faster late to make this possible.
-

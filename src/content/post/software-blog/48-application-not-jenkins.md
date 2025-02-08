@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - devops
- - configuration-management
+  - technical
+  - devops
+  - configuration-management
 publishDate: 2021-09-23T20:52:08.052481
 slug: /software-blog/configuration-within-application/
 title: Keep most of your configuration within application not Jenkins

@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - database
- - no-sql
+  - technical
+  - database
+  - no-sql
 publishDate: 2022-12-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/sql-and-no-sql

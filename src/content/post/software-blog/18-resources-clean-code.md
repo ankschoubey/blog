@@ -3,9 +3,9 @@ toc: false
 comments: true
 excerpt: Constructing the simplest possible code
 tags:
- - technical
- - clean-code
- - tools
+  - technical
+  - clean-code
+  - tools
 publishDate: 2020-05-11T20:42:15.210883
 title: Clean Code Resources and Tools
 slug: /software-blog/clean_code_tools/

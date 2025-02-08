@@ -1,15 +1,14 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - bdd
+  - technical
+  - bdd
 publishDate: 2023-01-07T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/template-for-gherkin-specs
 title: Template for Gherkin Specs
 ---
-
 
 ```feature
 @tagPlaceholder1 @tagPlaceholder2
@@ -28,13 +27,13 @@ Feature: A new feature
   Open Issues -
   Side Note -
 
-  Personas (if needed) -    - User 
+  Personas (if needed) -    - User
         Age -
-        Background - 
-  Scenario: 
+        Background -
+  Scenario:
     Mock UI - NA
     Card Number - NA
-    
+
     Technical Note - NA
       Testing Note - NA
     Marketing Note - NA
@@ -44,7 +43,6 @@ Feature: A new feature
      When {present tense}
      Then {future tense}
 ```
-
 
 # More Resources to check out to update this article:
 

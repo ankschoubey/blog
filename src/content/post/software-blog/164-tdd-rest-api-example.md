@@ -2,25 +2,25 @@
 comments: true
 excerpt: Extending our Movie example creating a REST API with TDD. Scenarios covered are Create, Read, Update and Delete.
 tags:
- - technical
- - testing
- - tdd
+  - technical
+  - testing
+  - tdd
 publishDate: 2023-08-17T20:52:08.052481
 last-modified-purpose:
 slug: /tdd/rest-api-example
 image: /images/tdd-rest-api-example.png
 image-fit: contain
 title: TDD example for REST API - CRUD
-cover-img-style: "position: relative; height:100%"
+cover-img-style: 'position: relative; height:100%'
 ---
 
-Before reading the current blog post, make sure you have read the previous blog post on [TDD example on a backend with Upsert Method](/tdd-backend-example "‌") as it provides explains the thinking and the TDD stages in depth. The same thinking and stages would be used in this blog post but this post won't explain those steps in depth. Rather the post will focus on providing new information specific to REST APIs.
+Before reading the current blog post, make sure you have read the previous blog post on [TDD example on a backend with Upsert Method](/tdd-backend-example '‌') as it provides explains the thinking and the TDD stages in depth. The same thinking and stages would be used in this blog post but this post won't explain those steps in depth. Rather the post will focus on providing new information specific to REST APIs.
 
 Like the last post, this post will only focus on the TDD aspect and therefore will be lost on other aspects. In particular, for this post, it's API Security and how HTTP Status and Responses are used. Though I'll mention what could have been done better when I come to the post.
 
 ## Continuing with the Movie example
 
-In the previous post on [TDD on Upsert Method](/tdd-backend-example "‌") we created a simple method in **MovieService.java** that can **upsert** data in the DB.
+In the previous post on [TDD on Upsert Method](/tdd-backend-example '‌') we created a simple method in **MovieService.java** that can **upsert** data in the DB.
 
 The signature of the methods is as follows:
 
@@ -34,9 +34,9 @@ We decide to create a simple CRUD operation on Movie. Let's start with CREATE.
 
 ## Step 1: Planning
 
-Planning is the first stage for us. The better we plan the less we'll have to pivot later. In the upsert example, we planned and created a skeleton. Here we'll plan and create a structure for our  APIs. This would be a mini-version of the API First Approach.
+Planning is the first stage for us. The better we plan the less we'll have to pivot later. In the upsert example, we planned and created a skeleton. Here we'll plan and create a structure for our APIs. This would be a mini-version of the API First Approach.
 
-While, I am writing the CRUD API signatures below, in real life I can plan directly within the test file using [api/when/should blocks](/method-when-should/ "‌"). You'll see the usage of the format in the APIs below.
+While, I am writing the CRUD API signatures below, in real life I can plan directly within the test file using [api/when/should blocks](/method-when-should/ '‌'). You'll see the usage of the format in the APIs below.
 
 We need to CRUD for movies via REST. Our resource is `Movie` therefore our endpoint would be `/movies`.
 
@@ -163,7 +163,7 @@ In Spring Boot, Controllers defined the REST APIs. We'll start with a **MovieCon
 class MovieControllerTest{
  @Autowired
  WebTestClient webTestClient;
- 
+
  @Autowired
  MovieRepository movieRepository;
 
@@ -189,7 +189,7 @@ class MovieControllerTest{
                     .isNotNull()
                     .isEqualTo(unsavedMovie);
         }
-    } 
+    }
 }
 ```
 
@@ -234,7 +234,7 @@ We go ahead and modify our code.
 
 We run the code again, and our code passes! We switch back to code up our new scenario.
 
-But before that, we remember, that for creation the response status should not be 200. [It should be 201 CREATED with a location header.](/software-blog/good-rest-api-design/ "‌"). So, we aren't done yet, let's make the change, starting first in the code.
+But before that, we remember, that for creation the response status should not be 200. [It should be 201 CREATED with a location header.](/software-blog/good-rest-api-design/ '‌'). So, we aren't done yet, let's make the change, starting first in the code.
 
 PAUSE. TDD is test-first. Modifying in code isn't test-first. So, let's modify the #testFirst.
 
@@ -262,7 +262,7 @@ We'll do TDD for one scenario at a time. Starting with getting all movies
 ```java
  @Autowired
  MovieService movieService;
- 
+
  @Nested
     @Displayname("GET /movies")
     class GetMoviesMethod{
@@ -284,10 +284,10 @@ We'll do TDD for one scenario at a time. Starting with getting all movies
                .hasSize(2)
                .contains(avengers, oppenheimer);
         }
-    } 
+    }
 ```
 
-You may have noticed I set the variables as `avengers` and `oppenheimer`. I find writing the variable names related to domain or movies [keeps tests interesting and fun, and at the same time](/creative-variable-names/ "‌"), it's closer to the actual movie domain.
+You may have noticed I set the variables as `avengers` and `oppenheimer`. I find writing the variable names related to domain or movies [keeps tests interesting and fun, and at the same time](/creative-variable-names/ '‌'), it's closer to the actual movie domain.
 
 Let's write the code,
 
@@ -299,9 +299,9 @@ Let's write the code,
  class MovieController{
   @Autowired
   MovieService movieService;
-  
+
   // POST /movies code is here
- 
+
   @GetMapping
   ResponseEntity<List<Movie>> getMovies(){
    return ResponseEntity.ok().body(movieService.getAll());
@@ -309,7 +309,7 @@ Let's write the code,
  }
 ```
 
-Actually, we forgot to add `getAll` method in the movie service. At this point, we'll go ahead and write a `MovieService::getAll` test and then the method while following TDD.  After that's done we'll come to the controller test again and run it and fix it until it passes.
+Actually, we forgot to add `getAll` method in the movie service. At this point, we'll go ahead and write a `MovieService::getAll` test and then the method while following TDD. After that's done we'll come to the controller test again and run it and fix it until it passes.
 
 ## Let's pause
 
@@ -320,7 +320,7 @@ Every time we write the test first even if it's a small change. And even when we
 There is a one-on-one mapping between the code and its test. So
 
 - **MovieController** -> **MovieControllerTest**.
-- **MovieService** -> **MovieServiceTest** ([MovieService was covered in the previous post on Upsert](/tdd-backend-example "‌"))
+- **MovieService** -> **MovieServiceTest** ([MovieService was covered in the previous post on Upsert](/tdd-backend-example '‌'))
   //TODO
 
 In the rest of the blogpost I'll just write test and code, just glance through it to understand it. It's pretty simple. If you have doubts, you always write a comment and I'll respond and update the post if needed.
@@ -349,7 +349,7 @@ GET a single movie
               assertThat(responseMovie)
                .isEqualTo(oppenheimer);
         }
-    } 
+    }
 ```
 
 **MovieController.java**
@@ -393,7 +393,7 @@ We'll do TDD for creating the `MovieService::getOne` method with the repository.
                 assertThat(inceptionFromDB.getMovieName())
                     .isEqualTo(inceptionUpdated.getMovieName());
         }
-    } 
+    }
 ```
 
 **MovieController.java**
@@ -405,7 +405,7 @@ We'll do TDD for creating the `MovieService::getOne` method with the repository.
   }
 ```
 
-You may have noticed I did some duplicate bad code. I usually [separate request, response, and entity objects](/2023/01/07/Separating_Request,_Entity_and_Response.html "‌"), but this isn't a scope for that so skipping for now.
+You may have noticed I did some duplicate bad code. I usually [separate request, response, and entity objects](/2023/01/07/Separating_Request,_Entity_and_Response.html '‌'), but this isn't a scope for that so skipping for now.
 
 ### Delete
 
@@ -432,7 +432,7 @@ You may have noticed I did some duplicate bad code. I usually [separate request,
                 assertThat(inceptionFromDB)
            .isNull();
         }
-    } 
+    }
 ```
 
 **MovieController.java**

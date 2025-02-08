@@ -3,7 +3,7 @@ excerpt: and design
 title: User Interfaces
 comments: true
 tags:
- - business
+  - business
 publishDate: 2020-06-23T20:42:15.230335
 use_math: true
 slug: /software-blog/thoughts-on-user-interfaces/
@@ -28,8 +28,9 @@ The area under the curve remains the same [^1] that is why it is so useful.
 This is not specific to UI, this is general to any design including once in the physical world.
 
 Something I had a real wonder at was the lights at the back of vehicles. They are just so simple yet I could not imagine any better alternative.
- - left-right lights
- - red lights for brake
+
+- left-right lights
+- red lights for brake
 
 ## Interfaces
 
@@ -61,7 +62,7 @@ Their way of thinking is essentially making technology invisible.
 
 It feels just like Magic [^3]! It just works!
 
-***
+---
 
 [^1]: [Elon Musk On How To Be Most Useful](https://www.youtube.com/watch?v=Om5XuTbXP1U)
 [^2]: [Apple's Sir Jony Ive's top tips for success - CBBC](https://www.youtube.com/watch?v=yOcuYYw4sRs)

@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - testing
- - tdd
+  - technical
+  - testing
+  - tdd
 publishDate: 2022-04-27T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/after-tdd/
@@ -45,7 +45,7 @@ Mutation testing assumes that among the mutants being generated, there may be sc
 
 <sub>How to use mutation testing?</sub>
 
-Mutation testing usually takes more time to execute than usual. 
+Mutation testing usually takes more time to execute than usual.
 
 https://software-blog/testing.googleblog.com/2021/04/software-blog/mutation-testing.html
 

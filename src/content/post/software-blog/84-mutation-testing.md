@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - testing
- - clean-code
- - tdd
+  - technical
+  - testing
+  - clean-code
+  - tdd
 publishDate: 2022-08-07T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/mutation-testing/

@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - security
+  - technical
+  - security
 publishDate: 2023-05-31T20:52:08.052481
-last-modified-purpose: 
+last-modified-purpose:
 slug: /v1/v1-fix-security-bugs-anyways
 title: Fix your security bugs even if it doesn’t affect you
 toc: false
@@ -27,4 +27,3 @@ Therefore, just fix it. It takes 10 minutes to upgrade to a minor patch.
 Check if the upgrade is available, and upgrade it.
 
 Photo by <a href="https://unsplash.com/@growtika?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Growtika</a> on <a href="https://unsplash.com/s/photos/security-bug?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  

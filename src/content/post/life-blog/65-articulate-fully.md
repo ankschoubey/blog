@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - core-values
- - truth
- - non-technical
+  - core-values
+  - truth
+  - non-technical
 publishDate: 2022-06-29T20:52:08.052481
 last-modified-purpose: draft
 slug: /life-blog/articulate/
@@ -43,7 +43,7 @@ while contemplating you want to fix certain variables about your problem, and th
 
 I find the best way to contemplate is to perform at formal sitting meditation with eyes closed.
 
-## Talk/Explain to someone else 
+## Talk/Explain to someone else
 
 ## Close your eyes
 

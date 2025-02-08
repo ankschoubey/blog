@@ -3,10 +3,10 @@ toc: false
 comments: true
 excerpt: Things that should take 0 coding effort
 tags:
- - technical
- - clean-code
- - spring-boot
- - configuration-management
+  - technical
+  - clean-code
+  - spring-boot
+  - configuration-management
 publishDate: 2022-04-27T20:42:15.360789
 title: Make your code configurable.
 slug: /software-blog/code_configurable/
@@ -15,6 +15,7 @@ slug: /software-blog/code_configurable/
 In one of the posts, I wrote previously I explain how [programming has become configuration](/software-blog/config/).
 
 Once you have made your software that might be part of it that might need change. Most changes are simple such as:
+
 - Increasing the font
 - Changing colors
 - Somethings that work should work on specific environments or domains

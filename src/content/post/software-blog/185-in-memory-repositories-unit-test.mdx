@@ -1,18 +1,19 @@
 ---
 comments: true
-excerpt: "Increasing accuracy of your Unit Tests and making them as easy to write as Integration Tests."
+excerpt: 'Increasing accuracy of your Unit Tests and making them as easy to write as Integration Tests.'
 tags:
- - technical
- - clean-code
- - testing
- - tdd
- - tdd-example
+  - technical
+  - clean-code
+  - testing
+  - tdd
+  - tdd-example
 publishDate: 2024-08-04T20:52:08.052481
 slug: /software-blog/in-memory-repositories-unit-test/
 title: Create In-Memory Repository based on HashMap for Unit Tests Using Generative AI Instead of Mocking
 image: /images/software-blog/in-memory-repository-unit-test.png
 ---
-import Tip from "~/components/custom/Tip.astro"
+
+import Tip from '~/components/custom/Tip.astro';
 
 While integration tests are easier to write and more accurate, they are slower than unit tests. Each second added to the build time will stay with the application's lifetime. <sup>[^1]</sup> So, we want to prefer writing more unit tests.
 
@@ -31,7 +32,7 @@ Consider the writing test for the following class.
 ```java
 @Service
 class MovieService{
- @Autowired 
+ @Autowired
  private MovieRepository movieRepository;
 
  List<Movie> getAllMoviesStartingWith(String prefix){
@@ -112,8 +113,8 @@ void testGetAllMoviesStartingWith() {
 In the above, you'd have an integration test if you replace `@Spy` with either `@Autowired` or `@SpyBean` and replace `@InjectMock` with `@Autowired`.
 
 <Tip
-    content="You can have a test configuration where a unit test can be run as an integration test. This is beyond the scope of this post."
-    type ="tip"
+  content="You can have a test configuration where a unit test can be run as an integration test. This is beyond the scope of this post."
+  type="tip"
 />
 
 ## What about Splice tests?
@@ -122,7 +123,7 @@ Splice tests like `@DataMongoTest` or `@DataJpaTest` can be a good alternative t
 
 In my testing, if `@SpringBootTest` took 16 seconds to start. `@DataMongoTest` took 3 seconds to start. In a large project with thousands of test files, you'd want to save that 3 seconds because it adds up quickly.
 
-3 seconds *100 test classes = 5 minutes of startup time.
+3 seconds \*100 test classes = 5 minutes of startup time.
 
 Granted, it won't be 5 minutes in real life because spring caches test context.
 
@@ -144,7 +145,7 @@ public abstract class InMemoryJpaRepository<T,ID> implements JpaRepository<T, Id
   inmemoryDatabase.put(entity.getId(), entity);
   return entity;
  }
- 
+
  @override
  Optional<T> findById(ID id){
   return Optional.nullable(inmemoryDatabase.getOrElse(id, null));

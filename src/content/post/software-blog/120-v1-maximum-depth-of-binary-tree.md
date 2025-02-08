@@ -2,10 +2,10 @@
 comments: true
 excerpt: go to each depth, incrementing a depth counter by 1. return max of it.
 tags:
- - technical
- - algorithm-problems
- - binary-tree
- - easy
+  - technical
+  - algorithm-problems
+  - binary-tree
+  - easy
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/maximum-depth-of-binary-tree
@@ -19,6 +19,7 @@ Find the maximum depth of the binary tree.
 [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
 # Approaches
+
 # O(n) time. O(1) space. 10 lines.
 
 go to each depth, incrementing a depth counter by 1. return max of it.
@@ -30,7 +31,7 @@ go to each depth, incrementing a depth counter by 1. return max of it.
         }
         int nextDepth = depth+1;
         return Math.max(maxDepth(root.left, nextDepth), maxDepth(root.right,nextDepth));
-        
+
     }
     public int maxDepth(TreeNode root) {
         return maxDepth(root, 0);

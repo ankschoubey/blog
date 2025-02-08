@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'The Naming convention is more important than any other part of clean code. Once you nail the name, everything else fits precisely!' 
+excerpt: 'The Naming convention is more important than any other part of clean code. Once you nail the name, everything else fits precisely!'
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2024-02-10T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/benefits-of-good-naming/

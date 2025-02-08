@@ -3,8 +3,8 @@ toc: false
 comments: true
 excerpt: and Logging with style
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2020-01-06T20:42:15.128460
 title: Exception handling
 slug: /software-blog/exception_handing/

@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - communication
- - social-harmony
+  - communication
+  - social-harmony
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/communication-during-conflict/
@@ -11,6 +11,7 @@ title: Communication during conflict
 image: /images/life-blog/communication-during-conflict.jpg
 toc: false
 ---
+
 ![](/images/life-blog/communication-during-conflict.jpeg)
 
 <sub>Photo by <a href="https://unsplash.com/@conniwenningsimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Constantin Wenning</a> on <a href="https://unsplash.com/s/photos/shake-hands?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sub>
@@ -19,11 +20,11 @@ There are two parts to communication: listening and speaking. And these roles ch
 
 In any communication any form, there is a some amount of context loss. But in some communication context loss is much higher.
 
-This is because of the way sentences are phrased. Or how is someone is nervous communicating. Or what pre-assumptions someone has made which could and could not be due to lack of information. 
+This is because of the way sentences are phrased. Or how is someone is nervous communicating. Or what pre-assumptions someone has made which could and could not be due to lack of information.
 
 This could be us. Or this could be the other person.
 
-We can’t control how the other person understands. Not fully at-least. But we could try to present ourselves in a way that the other person feels more open to talk, express and communicate. 
+We can’t control how the other person understands. Not fully at-least. But we could try to present ourselves in a way that the other person feels more open to talk, express and communicate.
 
 By choosing the right medium, listening better and articulating properly; one can reach close to 100% retention of information.
 
@@ -35,8 +36,8 @@ The tone of voice, facial expressions, body language, etc provide useful informa
 
 Therefore, cutting these features out of communication can be problematic in certain cases.
 
-Texting: Should not be used for emotional communication no matter how hard it feels. If it’s becoming hard, transition:Logistics 
-Calls: Normal. Emotional. 
+Texting: Should not be used for emotional communication no matter how hard it feels. If it’s becoming hard, transition:Logistics
+Calls: Normal. Emotional.
 Video: Better
 In Person: Best. Aim for in-person communication.
 
@@ -54,7 +55,7 @@ No matter how silly on mundane something seems. It maybe of value to the other p
 
 ## Understand the problem instead of giving solution
 
-Often we try to suggest a solution to something that’s not even a problem. It’s like Hammer 🔨. Wack. And nothing works. Because it wasn’t supposed to. 
+Often we try to suggest a solution to something that’s not even a problem. It’s like Hammer 🔨. Wack. And nothing works. Because it wasn’t supposed to.
 
 Life is complex and their are nuances. Those nuances need to be understood.
 
@@ -80,7 +81,7 @@ Tell them to calm down. And that way you can understand them a bit better.
 
 Rather than interrupting, wait for when the person has stopped. Even if they are are saying something that you don’t agree with. Let them speak completely. This not only helps understand the other person better, this is more respectful.
 
-## Don’t present your arguments early on. 
+## Don’t present your arguments early on.
 
 This makes someone jump to a different tangium. Your goal is to understand their points.
 
@@ -100,7 +101,7 @@ Often someone interrupts us or are in a emotional state and are continuing to ta
 
 ## If you don't understand something, re-iterate what the person is saying and ask if it's right.
 
-Specially in complex or emotional issues, understanding someone is hard. Doing the aboves means that you'd have understood better and the person knows you have understood better. 
+Specially in complex or emotional issues, understanding someone is hard. Doing the aboves means that you'd have understood better and the person knows you have understood better.
 
 ## Ask neutral questions
 
@@ -151,7 +152,6 @@ Ask instead of commanding.
 
 We don’t want to cross someone’s boundary. It’s not worth it.
 
-
 ## Don't attack the person
 
 Everyone is human. Attack the specific activity and explain why.
@@ -162,5 +162,6 @@ Everyone has an ego. You too. And everyone is trying to figure things out with i
 
 Connect with them later. Lighten the mood. Tell them sorry with parts you messed up or slipped. Try to reach understanding.
 
-***
+---
+
 These things have to be automatic. It isn't ideal to keep thinking about these. Pick on one area at a time to work on.

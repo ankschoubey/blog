@@ -1,9 +1,9 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - business
+  - business
 title: Businesses are for making money
 publishDate: 2021-08-01T20:42:15.385051
 slug: /life-blog/for_profit/
@@ -17,6 +17,7 @@ I often argue on the point of companies should providing value.
 But on one level, maybe one of the most important thing is all companies are there to make money.
 
 ## Providing "Value": Employee POV
+
 Providing value is often never well defined and there can be many ways to look at it.
 
 Even employees working in a company getting a steady paycheck, raising a family, having health insurance for themselves and their family is a valuable thing.

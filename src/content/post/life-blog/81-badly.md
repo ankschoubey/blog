@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - peace
+  - non-technical
+  - peace
 publishDate: 2022-10-25T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/badly/

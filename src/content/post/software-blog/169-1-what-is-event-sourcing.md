@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Event Sourcing is a paradigm where the entire state of an application is derived by replaying a series of events, providing benefits such as accurate auditing and schema flexibility.' 
+excerpt: 'Event Sourcing is a paradigm where the entire state of an application is derived by replaying a series of events, providing benefits such as accurate auditing and schema flexibility.'
 tags:
- - technical
- - devops
- - configuration-management
+  - technical
+  - devops
+  - configuration-management
 publishDate: 2023-12-19T20:52:08.052481
 slug: /software-blog/what-is-event-sourcing/
 image: /images/what-is-event-sourcing.png
@@ -41,10 +41,10 @@ When you want to get the current state of the application, replay all the events
 
 For example, for a movie
 
-| Event Type              | Event Data                                       | Resultant State                                   |
-|-------------------------|--------------------------------------------------|---------------------------------------------------|
-| CreateMovie Event       | `{movieId: 1, name: "Batman", year: 2007, version: 0}` | `{movieId: 1, name: "Batman", year: 2007, version: 0}` |
-| UpdateMovieName Event   | `{movieId: 1, name: "Batman Begins", version: 1}`  | `{movieId: 1, name: "Batman Begins", year: 2007, version: 1}` |
+| Event Type            | Event Data                                             | Resultant State                                               |
+| --------------------- | ------------------------------------------------------ | ------------------------------------------------------------- |
+| CreateMovie Event     | `{movieId: 1, name: "Batman", year: 2007, version: 0}` | `{movieId: 1, name: "Batman", year: 2007, version: 0}`        |
+| UpdateMovieName Event | `{movieId: 1, name: "Batman Begins", version: 1}`      | `{movieId: 1, name: "Batman Begins", year: 2007, version: 1}` |
 
 To get the current state of `movieId` 1, combine all events related to `movieId` 1:
 
@@ -104,10 +104,9 @@ More simplified: save the Event in the database instead of keeping the final sta
   - Since we can replay events, we can change the schema for the current state. For example, we need some data in some format for faster reading; we can replay events, create our read-specific fast data, and keep it in DB.
   - We can also generate multiple schemas based on the same Event.
 
-
 ## Resources
 
 - [Event Sourcing • Martin Fowler • YOW! 2016](https://www.youtube.com/watch?v=ck7t592bvBg)
-    - Also explains some gotchas with implementing Event Sourcing.
+  - Also explains some gotchas with implementing Event Sourcing.
 - [Event Sourcing Explained](https://www.youtube.com/watch?v=yFjzGRb8NOk)
-    - A visual video
+  - A visual video

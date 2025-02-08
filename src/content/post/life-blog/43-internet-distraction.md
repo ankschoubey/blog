@@ -3,13 +3,14 @@ toc: false
 comments: true
 excerpt: Dodge Recommender Systems
 tags:
- - non-technical
- - inputs
+  - non-technical
+  - inputs
 publishDate: 2021-09-06T20:52:08.052481
 slug: /life-blog/internet-distractions/
 title: Making Internet Less Distracting
 image: /images/life-blog/internet-distractions.jpg
 ---
+
 ![](/images/life-blog/internet-distractions.jpg) [^1]
 
 The following should reduce influence of recommender systems significantly. Making internet less distracting and help improve privacy.
@@ -60,4 +61,3 @@ Once you realize you had opened a distracting website. Take a moment to notice, 
 Was it because something that requires relatively-hard thinking came along and your brain decided to switch to something known and easy?
 
 [^1]: Photo by <a href="https://unsplash.com/@flyd2069?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">FLY:D</a> on <a href="https://unsplash.com/s/photos/data-security?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  

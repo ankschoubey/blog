@@ -1,16 +1,17 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - applications-of-ml
- - information-system
+  - technical
+  - applications-of-ml
+  - information-system
 title: Applications of Recommender Systems
 publishDate: 2021-08-01T20:42:15.669474
 slug: /software-blog/recommender-systems/
 image: /images/software-blog/recommender-systems.jpg
 ---
+
 ![](/images/software-blog/recommender-systems.jpg)
 Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Deluvio</a> on <a href="https://unsplash.com/s/photos/suggestion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -26,9 +27,10 @@ In social media, it would be used to recommended content/people similar to once 
 
 For E-Commerce companies, the focus is on recommended you the product you'll likely purchase.
 
-Recommender systems are also used at a smaller scale like Keyboard Suggestions on your phone. 
+Recommender systems are also used at a smaller scale like Keyboard Suggestions on your phone.
 
 For Enterprise, recommender systems can help improve productivity by a lot.
+
 - By having documents/data grouped, the right information can found faster.
 - By having similar documents groups/recommended, comparing between documents can be made simpler.
 

@@ -3,17 +3,19 @@ toc: false
 comments: true
 excerpt: Recognition
 tags:
- - business
+  - business
 title: Give credit where credit is due
 publishDate: 2021-08-01T20:42:15.426183
 slug: /recognition/
 image: https://images.unsplash.com/photo-1593505681742-8cbb6f44de25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80
 ---
+
 ![](https://images.unsplash.com/photo-1593505681742-8cbb6f44de25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80)
 
 Praised should be distributed well.
 
 There are many types of employees.
+
 - Some are bad at work they do. Just bad.
 - Some who are bad at work they do. But listen to feedback and try to improve themselves.
 - Some who have been working hard behind the scenes but aren't popular.

@@ -1,9 +1,9 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - time
+  - time
 publishDate: 2021-08-01T20:42:15.377623
 title: Opportunity Cost
 slug: /opportunity/

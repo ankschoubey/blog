@@ -1,7 +1,7 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 title: My First Program
 publishDate: 2021-05-03T20:42:15.693687
 slug: /software-blog/first-program/
@@ -45,6 +45,6 @@ I created a room layout. A rectangular box in middle and 3 lines from corner of 
 
 When I pressed up key, the image zoomed in. I hoped to make more changes such that it would looked like that old Wolf Dom Game.
 
-***
+---
 
 My first real taste of programming was first year of Diploma (11th Grade) in C language.

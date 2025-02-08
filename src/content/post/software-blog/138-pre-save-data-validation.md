@@ -2,9 +2,9 @@
 comments: true
 excerpt: Data validation at various stages minimizes bugs and unnecessary overhead, ensuring consistent and accurate information flow.
 tags:
- - technical
- - data
- - clean-code
+  - technical
+  - data
+  - clean-code
 publishDate: 2022-12-27T20:52:08.052481
 last-modified-purpose: added "Validate on the database"
 slug: /software-blog/pre-save-data-validation/
@@ -15,6 +15,7 @@ toc: false
 It's imperative to have good data validations in place. Because often, data leads to more bugs even when logic works correctly.
 
 Data errors can be:
+
 1. null values in the database or from an external system
 2. expecting values to be positive by getting negative ones.
 3. expecting a field to have a specific format but getting something else
@@ -25,7 +26,7 @@ Therefore, we should ensure that data is validated before it reaches DB.
 
 # Only allows certain data
 
-You minimize data problems by only allowing it for specific fields. 
+You minimize data problems by only allowing it for specific fields.
 
 On a UI, it could be dropdowns, date fields with range, and auto-completion options.
 
@@ -53,6 +54,6 @@ SQL already provides a good schema structure that makes it easy for validation. 
 
 I faced an issue where mongodb's upsert operation inserted multiple records instead of updating one. This was a common mongodb issue.
 
-To fix this I used, added `unique=true` for compound index I had made. 
+To fix this I used, added `unique=true` for compound index I had made.
 
 For DB validation, make sure that you mark things as unique wherever they need to be unique. Similarly, other key related contraints should be used.

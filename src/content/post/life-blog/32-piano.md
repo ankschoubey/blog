@@ -1,14 +1,15 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - non-technical
+  - non-technical
 title: Piano
 publishDate: 2021-08-01T20:42:15.543379
 slug: /life-blog/piano/
 image: /images/life-blog/piano.jpg
 ---
+
 ![](/images/life-blog/piano.jpg)
 <sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@dolodol?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Dolo Iglesias</a> on <a href="https://unsplash.com/s/photos/life-blog/piano?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
 

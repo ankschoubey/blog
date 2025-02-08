@@ -2,9 +2,9 @@
 comments: true
 excerpt: Understanding and extending spring boot with custom AutoConfiguration
 tags:
- - technical
- - spring-boot
- - configuration-management
+  - technical
+  - spring-boot
+  - configuration-management
 publishDate: 2022-09-11T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/autoconfiguration/
@@ -12,6 +12,7 @@ title: How AutoConfiguration works in Spring Boot
 toc: false
 image: /images/software-blog/autoconfiguration.svg
 ---
+
 ![](/images/software-blog/autoconfiguration.svg)
 
 Everything in Spring Boot is configurable. This was very hard to understand, but here are some pointers that could help.
@@ -24,7 +25,7 @@ Beans can be thought of as singleton classes. i.e. classes where only one instan
 
 `@Beans` are created and managed by BeanFactory. And there is a Bean injector which injects beans where they are needed.
 
-So, for example, you have a class A and a class B. 
+So, for example, you have a class A and a class B.
 
 class B is composed of class A, and you have added `@Autowired` to it.
 

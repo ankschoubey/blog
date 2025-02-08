@@ -1,29 +1,30 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - collection-of-thoughts
- - peace
+  - philosophical
+  - collection-of-thoughts
+  - peace
 title: Meditation is how you become peaceful all the time
 slug: /life-blog/meditation/
 publishDate: 2021-04-28T20:42:15.624828
 image: /images/life-blog/meditation.jpg
 ---
+
 ![](/images/life-blog/meditation.jpg)
 
 [Photo by cottonbro studio](https://www.pexels.com/photo/man-in-red-robe-sitting-on-tree-branch-5386374/)
 
 # What is meditation
 
-Meditation is a activity which is weird for many. It can seem stupid or woo woo. 
+Meditation is a activity which is weird for many. It can seem stupid or woo woo.
 
 There is nothing in meditation that will give you insights about physical universe/galaxy.
 
 Meditation (investigation of mind) can be separated from religious concepts. You need not believe something to meditate.
 
-You can be mindful and disciplined at the same time. 
+You can be mindful and disciplined at the same time.
 
 The best time to meditate is when you feel discomfort. Detach become mindful of your thoughts and the you'll realize the thought cycle is stupid and will go on forever with one thing after another.
 
@@ -35,9 +36,9 @@ Give yourself 10 minutes, other things can wait.
 
 One you have learned how to truly meditate, You’ll have to tune it up from time to time.
 
-Meditating at the same time and place is useful. 
+Meditating at the same time and place is useful.
 
-Have formal sitting practice in the morning before you do any major task. 
+Have formal sitting practice in the morning before you do any major task.
 
 # How
 
@@ -56,4 +57,3 @@ Your goal while meditating is not be become a meditator. Your goals is to invest
 The progress of meditating is seen when you are not formally meditating. It includes a calmness if things you do.
 
 Don’t be rigid while meditating. Let yourself flow.
-

@@ -2,10 +2,10 @@
 comments: true
 excerpt: Create a set and put items in one by one while checking if `num` is already there.
 tags:
- - technical
- - algorithm-problems
- - arrays
- - easy
+  - technical
+  - algorithm-problems
+  - arrays
+  - easy
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
 slug: /v1/contains-duplicate

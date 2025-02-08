@@ -3,7 +3,7 @@ toc: false
 comments: true
 excerpt: Non-repudiation
 tags:
- - business
+  - business
 title: If it's official, communicate via email
 publishDate: 2021-08-01T20:42:15.386733
 slug: /life-blog/official_email/

@@ -2,11 +2,11 @@
 comments: true
 excerpt: With TDD, you don't find any logical bugs. The remaining types of bugs are data bugs and configuration bugs. This article discusses configuration validations to find and fix config bugs.
 tags:
- - technical
- - testing
- - devops
- - configuration-management
- - tdd
+  - technical
+  - testing
+  - devops
+  - configuration-management
+  - tdd
 publishDate: 2023-05-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/validate-configuration
@@ -35,8 +35,8 @@ For example: Helm has a linter which can be used by the command `helm lint`
 
 Here are some more:
 
-- [Validating Kubernetes YAML for best practice and policies](https://learnk8s.io/validating-kubernetes-yaml "‌")
-- [Dockerfile Linter](https://github.com/hadolint/hadolint "‌")
+- [Validating Kubernetes YAML for best practice and policies](https://learnk8s.io/validating-kubernetes-yaml '‌')
+- [Dockerfile Linter](https://github.com/hadolint/hadolint '‌')
 
 ## Dry run
 

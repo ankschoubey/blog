@@ -2,9 +2,9 @@
 comments: true
 excerpt: Have a fast pointer and a slow pointer. fast increases by 2. slow increases by 1. if both become the same then the cycle exists. if fast one reaches end then no cycle exists.
 tags:
- - technical
- - algorithm-problems
- - linked-list
+  - technical
+  - algorithm-problems
+  - linked-list
 publishDate: 2022-11-16T20:52:08.052481
 last-modified-purpose:
 slug: /v1/linked-list-cycle
@@ -18,6 +18,7 @@ Check if the given LinkedList is cyclic.
 [Link](https://leetcode.com/problems/linked-list-cycle/)
 
 # Approaches
+
 ## O(n) time complexity; O(1) space complexity
 
 Have a fast pointer and a slow pointer. fast increases by 2. slow increases by 1. if both become the same, then the cycle exists. if fast one reaches the end then no cycle exists.
@@ -66,7 +67,7 @@ Lines of code 8:
 
 ## Without 2 pointers solution
 
-Source: [Java O(1) Memory solution - LeetCode Discuss](https://leetcode.com/problems/linked-list-cycle/discuss/2810093/Java-O(1)-Memory-solution)
+Source: [Java O(1) Memory solution - LeetCode Discuss](<https://leetcode.com/problems/linked-list-cycle/discuss/2810093/Java-O(1)-Memory-solution>)
 
 Modify the value in the list to something that can't occur. Check if the current value is that value.
 

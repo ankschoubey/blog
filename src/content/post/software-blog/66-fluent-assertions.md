@@ -2,10 +2,10 @@
 comments: true
 excerpt: Fluent Assertions make tests highly readable and English-like, presenting a concise structure that simplifies comprehension
 tags:
- - technical
- - testing
- - tdd
- - clean-code
+  - technical
+  - testing
+  - tdd
+  - clean-code
 publishDate: 2022-05-03T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/fluent-assertions/
@@ -38,4 +38,3 @@ assertThat(jsonMessage)
 The JUnit assertion is bulkier and will continue to get much bulkier with more assertion.
 
 The AssertJ fluent assertion on other hand is grouped, contains helper methods that do not require specially conversion of object for common comparision.
-

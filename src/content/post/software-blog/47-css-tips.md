@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - web-development
+  - technical
+  - web-development
 publishDate: 2021-09-13T20:52:08.052481
 slug: /software-blog/css-tips/
 title: CSS Tips

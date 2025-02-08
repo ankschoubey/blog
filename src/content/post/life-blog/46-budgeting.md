@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - core-values
- - time-matters
- - non-technical
- - systems
+  - core-values
+  - time-matters
+  - non-technical
+  - systems
 publishDate: 2022-01-28T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/personal-budgeting/
@@ -23,7 +23,7 @@ Usually, these discussions assume that spending the complete budget allocated is
 
 The same can be applied to resources of one's #life.
 
-***
+---
 
 I believe these are the most important resources a person spends on.
 
@@ -40,7 +40,7 @@ For attention, the game becomes imaginary.
 There are a few ways to imagine this:
 
 1. Count the number of decisions in a day:
-    - Imagine you have 100 decision points in a day.
-    The more number decisions you take, the probability of you making a bad decision increases.
+   - Imagine you have 100 decision points in a day.
+     The more number decisions you take, the probability of you making a bad decision increases.
 2. Number of context switching
-    - Multitasking is the worst
+   - Multitasking is the worst

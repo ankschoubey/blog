@@ -1,10 +1,10 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - deep-learning
+  - technical
+  - deep-learning
 title: Easy Jupyter Notebook Tips
 publishDate: 2019-07-29T20:42:15.063562
 slug: /jupyter_notebook/

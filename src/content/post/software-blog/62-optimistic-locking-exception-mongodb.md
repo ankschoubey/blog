@@ -1,13 +1,13 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - database
- - mongodb
- - spring-boot
- - tdd
- - tdd-example
+  - technical
+  - database
+  - mongodb
+  - spring-boot
+  - tdd
+  - tdd-example
 publishDate: 2022-04-16T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/optimistic-locking-exception-mongodb/
@@ -18,14 +18,15 @@ I faced a unique problem and it is worth writing about. The cause was parallel a
 
 # **Problem**
 
-I had a `@Document` which had to be manupilated. 
+I had a `@Document` which had to be manupilated.
 
 The `@Document` had a repository which extended `ReactiveMongoRepository`.
 
 So it was something like this
 
 **SampleDocument.java**
-``` java
+
+```java
 @Document("sample_document")
 class SampleDocument{
     @Version
@@ -56,9 +57,9 @@ repository.findByCustomId(someString)   // Step 1
     // manipulation of document         // Step 2
     return Mono.just(sampleDocument)
 })
-.flatmap(sampleDocument -> 
+.flatmap(sampleDocument ->
     repository.save(sampleDocument)     // Step 3
-); 
+);
 ```
 
 As you can see, the code to fetch the document (Step 1) and to save (Step 3) back are two separate lines. Between the lines are steps to manipulate the document (Step 2).
@@ -73,8 +74,7 @@ This would specially be true where there are lots of upsert/update queries.
 
 # **Solution**
 
-To fix this I switched to manually writing an update query and executing with `MongoOperation`. 
-
+To fix this I switched to manually writing an update query and executing with `MongoOperation`.
 
 ```java
 Update updateQuery = new Update(). // code to update document
@@ -96,7 +96,7 @@ So I created a unit test as follows.
 
 1. Manipulate documents parallel. This was done with `@RepeatableTest` and `@Execution(CONCURENT)`
 2. Assertion wasn't straight forward with `@RepeatableTest` so I instead collected all version in a static list.
-3. After all `@RepeatableTests` were over I asserted if version was as expected. 
+3. After all `@RepeatableTests` were over I asserted if version was as expected.
 4. I ran the code and saw `OptimisticLockingException` occuring and assertion failing.
 5. I replaced `repository` `find` and `save` with `MongoOperation` `update` as described above.
 6. The test passed.
@@ -105,7 +105,7 @@ So I created a unit test as follows.
 @Nested
 @DisplayName("WHEN upsert is called parallely")
 class WhenUpsertIsCalledParallelyTest{
-    
+
     static final Long repeatTimes = 100;
 
     static final List<Long> allVersions = new ArrayList<>();

@@ -2,15 +2,16 @@
 comments: true
 excerpt: The more personal responsibility you take on and fullfil, the more incontrol you’ll feel. This will give you strength and power.
 tags:
- - core-values
- - responsibility
- - non-technical
+  - core-values
+  - responsibility
+  - non-technical
 publishDate: 2022-12-06T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/responsibility-stratergies/
 title: Ownership
 image: /images/responsibility.png
 ---
+
 **IDENTITY**: Responsible
 
 ![](/images/responsibility.png)
@@ -35,13 +36,13 @@ So, at every moment of the day, everything that happens to you, live as though y
 
 <sub>What happens when we don't pick up responsibility?</sub>
 
-Not picking up responsibility is neither good to us and neither good to others. It's wasted potential. It's  all the things that we could have done, all the good we could have accomplished that could make everyone lives better, but we instead choose the alternative.
+Not picking up responsibility is neither good to us and neither good to others. It's wasted potential. It's all the things that we could have done, all the good we could have accomplished that could make everyone lives better, but we instead choose the alternative.
 
 It's better to try and fail that to not try at all. `1> 0;`
 
 An experiment we can do to get started is: `Take on and complete as many responsibilities/opportunities thrown towards you in a week and see what happens.`
 
-**Role Models**:  Peter Parker (Andrew Garfield), Jordan Peterson
+**Role Models**: Peter Parker (Andrew Garfield), Jordan Peterson
 
 **For**: Courage is proper action despite not being fully ready. If you are given an opportunity to be courageous, you are already prepared.
 

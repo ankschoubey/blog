@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - for-future-me
- - social-harmony
- - truth
+  - for-future-me
+  - social-harmony
+  - truth
 title: Just ask for it
 publishDate: 2021-08-01T20:42:15.417929
 slug: /life-blog/ask-for-help/
@@ -17,12 +17,15 @@ image: /images/life-blog/ask-for-helpjpg
 As I get older I realize one thing that most things you want you can just ask for it.
 
 #### **Do you want an opportunity?**
+
 Ask the person in charge.
 
 #### **Do you want to get a refund or have a customer complain?**
+
 Say it. Don’t hide.
 
 #### **Want a bit of specific advice from someone celebrity figure you admire?**
+
 Text/Tweet at them (Keep it short at quick)
 
 #### Everyone is there to help.

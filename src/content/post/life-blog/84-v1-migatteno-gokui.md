@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - health
+  - non-technical
+  - health
 publishDate: 2022-11-05T20:52:08.052481
 last-modified-purpose:
 slug: /v2/migatteno-gokui

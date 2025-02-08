@@ -11,138 +11,67 @@ import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 import { headerData } from '~/navigation';
+import ankushLinks from '~/content/ankushLinks';
 
 const metadata = {
   title: 'Ankush Choubey - Full Stack Developer',
 };
 
-const testimonialsData = [
-      {
-        testimonial: `It’s rare that you come across standout talent like Ankush. I had the pleasure of working with Ankush for almost two years in a very highly visible and complex application.\n\nI really appreciate energy, enthusiasm, pro-activeness which Ankush brings in the team. He always try to look a modern way/tool/framework to solve the problem. You can trust him with any complex problem and he will come with multiple approaches to solve the problem.
-\n\n
-His approach to make reusable components, write cleaner code and finding ways to remove boilerplate code is really fantastic.
-\n\n
-He is an amazing asset for any team and company. I wish him all the very best for his future assignments.
-`,
-        name: 'Sanoj Kumar',
-        job: 'Principal Software Architect',
-        relation: "Ankush reported to Sanoj at TCS",
-        image: {
-          src: '/recommendations/sanoj-kumar--linkedin-profile-pic.jpeg',
-          alt: 'Sanoj Singh Picture',
-        },
-      },
-      {
-        testimonial: `Ankush has been exceptional throughout the Labor Cost Portal Project , understanding the macro and documenting all the key items and making sure all key aspects are covered in the new application logic. He is always open to take challenges and solves production issues in small span of time. He effectively communicates the changes to BRM.`,
-        name: 'Soumya Biswas',
-        job: 'Technical Architect',
-        relation: "Ankush reported to Soumya at TCS",
-        image: {
-          src: '/recommendations/soumya-biswas-linkedin-profile-pic.jpeg',
-          alt: 'Soumya Biswas Picture',
-        },
-      },
-      {
-        testimonial: `I had the pleasure of working with Ankush on a project where we utilized Java, Spring Boot, and Angular. Ankush was a quick learner and showed a great curiosity to understand the reasons behind things, which made him a valuable member of the team. His dedication and ability to learn new technologies quickly made a positive impact on the project. I would highly recommend Ankush as a skilled and motivated developer who is always eager to take on new challenges and deliver results.`,
-        name: 'Umang Budhwar',
-        job: 'Senior Software Engineer',
-        relation: "Ankush and Umang worked together at TCS",
-        image: {
-          src: '/recommendations/umang-budhwar-linkedin-profile-pic.jpeg',
-          alt: 'Umang Budhwar Profile Picture',
-        },
-      },
-      {
-        testimonial: `Ankush has been the ultimate guide, coworker, and buddy over our awesome 2-year work journey. He's the go-to person for TDD, code quality, and all things trendy in tech. Super keen to learn and always up for sharing tech wisdom, Ankush is the perfect coding partner and a pro at reviewing your code. Whenever I'm stuck with Spring Boot, microservices, Spring WebFlux, React, or Redux, he's the wizard I turn to. Ankush is the guy who not only cracks business-critical problems but does it with a chill vibe. I wholeheartedly recommend him as a highly skilled and reliable professional.`,
-        name: 'Diksha',
-        job: 'Full Stack Developer',
-        relation: "Ankush and Diksha worked together at NimbleWork",
-        image: {
-          src: '/recommendations/diksha-linkedin-profile-pic.jpeg',
-          alt: 'Diksha Profile Picture',
-        },
-      },
-      {
-        testimonial: `Ankush is a wonderful teammate. He consistently advocates for Test-Driven Development (TDD), Continuous Delivery and emphasizes the importance of clean code. He mentors his juniors in the most helpful way possible. His passion for collaborative work is evident through his enthusiasm for bonding over projects, engaging in pair programming sessions, and generously sharing best practices or new development strategies. His dedication to fostering a positive and productive work environment makes him an asset to any team.`,
-        name: 'Anisa Patra',
-        job: 'Full Stack Developer',
-        relation: "Ankush and Anisa worked together at NimbleWork",
-        image: {
-          src: '/recommendations/anisa-patra-linkedin-profile-pic.jpeg',
-          alt: 'Anisa Patra Profile Picture',
-        },
-      },
-      {
-        testimonial: `Ankush is a highly enthusiastic, energetic and a fast learner.He has the capability to quickly grasp the necessary domain, technology and process knowledge to deliver the right product at the right time.He volunteers for many of the account level initiatives and brings out of the box ideas for better execution.`,
-        name: 'Priya Jayachandran',
-        job: 'Agile Coach @ UBS',
-        relation: "Priya was Ankush's Manager at TCS",
-        image: {
-          src: '/recommendations/priya-jayachandran-linkedin-profile-pic.jpeg',
-          alt: 'Priya Jayachandran Image',
-        },
-      },
-      {
-        testimonial: `Ankush is very hard working and go-to person for technical stuffs. A very techno savvy person and a good coder indeed! He always come up with good solution. I had very good experience working with him past couple years !!`,
-        name: 'Deepa Mandal',
-        job: 'Program Manager at TCS',
-        relation: "Deepa was Ankush's Manager at TCS",
-        image: {
-          src: '/recommendations/deepa-mandal-linkedin-profile-pic.jpeg',
-          alt: 'Deepa Mandal',
-        },
-      },
-      {
-        testimonial: `Hi Ankush,Appreciate your work done for CSF Forms project! The pieces you worked here were critical and you delivered them well . Keep up the good work.Thanks,Ritu`,
-        name: 'Rituparna Ghosh',
-        job: 'BRM at TCS',
-        relation: "Rituparna was BRM at Sony Pictures USA",
-        image: {
-          src: '/recommendations/woman-profile-pic.png',
-          attribution: {
-            url: "https://www.freepik.com/icon/woman_2922566#fromView=keyword&term=Female&page=1&position=3&uuid=889e96ee-a25b-4dfa-a349-7fe200c47923",
-            text: "Icon by Vitaly Gorbachev"
-          },
-          alt: 'Alex Foster Image',
-        },
-      },
-    ];
+let topHeaderActions = [
+  { variant: 'secondary', text: 'S/W Blog', href: getPermalink('technical', 'tag') },
+  {
+    variant: 'primary',
+    target: '_blank',
+    text: 'Ping Me',
+    icon: 'tabler:brand-linkedin',
+    href: 'https://www.linkedin.com/in/ankushchoubey/',
+  },
+  { variant: 'secondary', text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
+];
+
+let img = { src: 'IMG_0463.jpg', alt: 'img' };
+
+var modifiedHeaderDate = {
+  ...headerData,
+  links: [],
+  actions: [
+    {
+      text: 'Search',
+      // target:"_blank",search
+      icon: 'tabler:search',
+      variant: 'primary',
+      href: '/search',
+    },
+  ],
+};
 ---
 
 <Layout metadata={metadata}>
   <Fragment slot="announcement"></Fragment>
   <Fragment slot="header">
-    <Header
-      {...headerData}
-    />
+    <Header {...modifiedHeaderDate} />
   </Fragment>
 
   <!-- Hero2 Widget ******************* -->
 
-
   <Hero
     id="hero"
     title="Ankush Choubey"
-    image={{src: "IMG_0463.jpg", alt: "img"}}
     taglineInverted={true}
-    tagline="Senior 👨🏻‍💻 Full Stack Developer"
-    actions={[
-      { variant: "secondary", text: 'S/W Blog', href: getPermalink('technical', 'tag') },
-      { variant: "primary", target: '_blank', 
-      text: 'Ping Me',
-      icon: 'tabler:brand-linkedin',
-       href: 'https://www.linkedin.com/in/ankushchoubey/' },
-      { variant: "secondary", text: 'Life Blog', href: getPermalink('non-technical', 'tag') }
-    ]}
+    tagline="Full Stack Developer"
+    actions={topHeaderActions}
   >
     <Fragment slot="subtitle">
-      Helping you build <a class="text-blue-700 font-bold" href="/clean-code">clean</a>, <a class="text-blue-700 font-bold"  href="/tdd">bug-free</a>, scalable software <a class="text-blue-700 font-bold" href="/cd">fast</a>!
+      Helping you build <a class="font-bold text-blue-700" href="/clean-code">clean</a>, <a
+        class="font-bold text-blue-700"
+        href="/tdd">bug-free</a
+      >, scalable software <a class="font-bold text-blue-700" href="/cd">fast</a>!
 
-      <br><br>
+      <br /><br />
       <!-- <span class="font-bold"><a class="text-blue-700 font-bold" href="https://www.linkedin.com/in/ankushchoubey/">🇮🇳 Hiring</a>: If you are looking for a remote backend-java developer role in India?</span> -->
-      <br>
-      <span class="text-accent dark:text-white highlight"> </span>
-    <!-- I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
+      <br />
+      <span class="highlight text-accent dark:text-white"> </span>
+      <!-- I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
     <br> <br>
     Through this blog, I share my insights and ideas on software development philosophy and best practices to help fellow developers create high-quality software products.
 
@@ -156,88 +85,91 @@ He is an amazing asset for any team and company. I wish him all the very best fo
     </Fragment>
   </Hero>
 
-   <!-- BlogLatestPost Widget **************** -->
+  <!-- BlogLatestPost Widget **************** -->
 
-
-
-      <BlogLatestPosts
-      id="tech-blog"
-      tag="technical"
-      title="Software Posts"
-      information={`From TDD, BDD, DevOps, etc.`}
-      linkText='View Software Development Posts'
-      linkUrl={getPermalink("technical", "tag")}
-
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </BlogLatestPosts>
-    <Hero tagline="Life & Self Improvement" 
-    >
-    <Fragment slot="subtitle">
-       <br>
-        I write a lot about philosophy and life too.<br>
-        <br>
-        My main focus recently has been <strike>my 4 core values</strike> <b>Shreemad Bhagwat Gita 🍃</b><br><br> 
-        <sup><strike><span class="text-white-700 dark:text-black-800 font-bold text-1">🔭 Clarity</span>,  <span class="text-orange-700 font-bold">💎 Responsibility</span>, 🫀 <span class="text-green-700 font-bold">Optimism</span> and 🫱🏻‍🫲🏾 <a class="text-blue-700 font-bold hover:bg-slate-200 dark:hover:bg-slate-900 " href={getPermalink('social-harmony', 'tag')}>Social</a>.</strike>
-        </sup>
-        <span class="text-white-700 dark:text-black-800 font-bold text-1">🔭 Gyaan</span>. <span class="text-orange-700 font-bold">💎 Karma</span>. 🫀 <span class="text-green-700 font-bold">Bhakti</span>.<br>
-        <br>
-        <b>कर्म</b>ण्येवाधिकारस्ते मा फलेषु कदाचन। <br>
-        मा कर्मफलहेतुर्भुर्मा ते संगोऽस्त्वकर्मणि॥ <br>
-        <br>
-        <!-- <sup> -->
-        You have every right to work but not expecting the fruits out of it. <br>
-        Let the focus be not on the fruits and never be inactive.
-      <!-- </sup> -->
-
+  <BlogLatestPosts
+    id="tech-blog"
+    tag="technical"
+    title="Software Posts"
+    information={`From TDD, BDD, DevOps, etc.`}
+    linkText="View Software Development Posts"
+    linkUrl={getPermalink('technical', 'tag')}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-    </Hero>
+  </BlogLatestPosts>
+  <Hero tagline="Life & Self Improvement">
+    <Fragment slot="subtitle">
+      <br />
+       I write a lot about philosophy and life too.<br />
+      <br />
+       My main focus recently has been <strike>my 4 core values</strike>
+      <b>Shreemad Bhagwat Gita 🍃</b><br /><br />
+      <sup
+        ><strike
+          ><span class="text-white-700 dark:text-black-800 text-1 font-bold">🔭 Clarity</span>, <span
+            class="font-bold text-orange-700">💎 Responsibility</span
+          >, 🫀 <span class="font-bold text-green-700">Optimism</span> and 🫱🏻‍🫲🏾 <a
+            class="font-bold text-blue-700 hover:bg-slate-200 dark:hover:bg-slate-900"
+            href={getPermalink('social-harmony', 'tag')}>Social</a
+          >.</strike
+        >
+      </sup>
+      <span class="text-white-700 dark:text-black-800 text-1 font-bold">🔭 Gyaan</span>. <span
+        class="font-bold text-orange-700">💎 Karma</span
+      >. 🫀 <span class="font-bold text-green-700">Bhakti</span>.<br />
+      <br />
+      <b>कर्म</b>ण्येवाधिकारस्ते मा फलेषु कदाचन। <br />
+       मा कर्मफलहेतुर्भुर्मा ते संगोऽस्त्वकर्मणि॥ <br />
+      <br />
+      <!-- <sup> -->
+       You have every right to work but not expecting the fruits out of it. <br />
+       Let the focus be not on the fruits and never be inactive.
+      <!-- </sup> -->
+    </Fragment>
+  </Hero>
 
-    <script>
-      function isInViewport(element) {
-    // Get the bounding client rectangle position in the viewport
-    var bounding = element.getBoundingClientRect();
-    
-    // Checking part. Here the code checks if it's *fully* visible
-    // Edit this part if you just want a partial visibility
-    if (
+  <script>
+    function isInViewport(element) {
+      // Get the bounding client rectangle position in the viewport
+      var bounding = element.getBoundingClientRect();
+
+      // Checking part. Here the code checks if it's *fully* visible
+      // Edit this part if you just want a partial visibility
+      if (
         bounding.top >= 0 &&
         bounding.left >= 0 &&
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    ) {
+      ) {
         // console.log('In the viewport! :)');
         return true;
-    } else {
+      } else {
         // console.log('Not in the viewport. :(');
         return false;
+      }
     }
-}
 
-const strike1 = document.getElementsByTagName("strike")[0];
+    const strike1 = document.getElementsByTagName('strike')[0];
 
-// window.addEventListener('scroll', function (event) {
-//     if (isInViewport(strike1)) {
-//       setTimeout(()=> {
-        document.getElementsByTagName("strike")[0].style.display = 'none'
-        document.getElementsByTagName("strike")[1].style.display = 'none'
-        // console.log("done")
-//       }, 1000)
-//       // update the element display
-//     }
-// }, false);
-
-
-      
-    </script>
-    <BlogLatestPosts
+    // window.addEventListener('scroll', function (event) {
+    //     if (isInViewport(strike1)) {
+    //       setTimeout(()=> {
+    document.getElementsByTagName('strike')[0].style.display = 'none';
+    document.getElementsByTagName('strike')[1].style.display = 'none';
+    // console.log("done")
+    //       }, 1000)
+    //       // update the element display
+    //     }
+    // }, false);
+  </script>
+  <BlogLatestPosts
     id="non-tech-blog"
     tag="non-technical"
     title="Life Posts"
     information={`Range from topics such as Truth, Discipline, Karma, Social, Psychology, Challenges to everything that's not software engineering`}
-    linkUrl={getPermalink("non-technical", "tag")}
+    linkUrl={getPermalink('non-technical', 'tag')}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -257,7 +189,7 @@ const strike1 = document.getElementsByTagName("strike")[0];
           text: 'LinkedIn',
           href: 'https://www.linkedin.com/in/ankushchoubey/',
         },
-      }
+      },
     ]}
     image={{
       src: 'profile.PNG',
@@ -265,13 +197,14 @@ const strike1 = document.getElementsByTagName("strike")[0];
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h3>
-        I am 27 y.o. full stack developer from Mumbai, India.<br><br>
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">About me</h3>
+       I am 27 y.o. full stack developer from Mumbai, India.<br /><br />
 
-        I'm very curious by nature and can explore random topics non-stop.<br><br>
-        Some areas of my current (Dec 2023) interest are Boxing, Running, Writing and the Bhagwad Gita.<br><br>
+       I'm very curious by nature and can explore random topics non-stop.<br /><br />
+       Some areas of my current (Dec 2023) interest are Boxing, Running, Writing and the Bhagwad Gita.<br /><br />
 
-      As a full stack developer, I love both front-end and backend. I am equally good in both. And my interests is producing bug free code as fast as possible. Especially within teams.            
+       As a full stack developer, I love both front-end and backend. I am equally good in both. And my interests is producing
+      bug free code as fast as possible. Especially within teams.
     </Fragment>
 
     <Fragment slot="bg">
@@ -284,7 +217,7 @@ const strike1 = document.getElementsByTagName("strike")[0];
   <Testimonials
     title="Recommendations and Appreciation"
     subtitle="Discover what fellow collegues have to say about their experiences working with me."
-    testimonials={testimonialsData}
+    testimonials={ankushLinks.testimonials}
   />
 
   <!-- CallToAction Widget *********** -->
@@ -296,16 +229,15 @@ const strike1 = document.getElementsByTagName("strike")[0];
       //  {
       //   text: 'Resume',
       //   target:"_blank",
-      //   variant: "secondary", 
+      //   variant: "secondary",
       //   href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
       // },
       {
-      variant:"primary",
-      text: 'LinkedIn',
-      icon: 'tabler:brand-linkedin',
-      href: 'https://www.linkedin.com/in/ankushchoubey/',
-    }]}
+        variant: 'primary',
+        text: 'LinkedIn',
+        icon: 'tabler:brand-linkedin',
+        href: 'https://www.linkedin.com/in/ankushchoubey/',
+      },
+    ]}
   />
-
 </Layout>
-../components/custom/SearchBox.tsx

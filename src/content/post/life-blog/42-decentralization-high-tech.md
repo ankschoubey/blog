@@ -2,14 +2,15 @@
 comments: true
 excerpt: How abstraction, cost and education convert research fields to applied.
 tags:
- - philosophical
- - for-future-me
- - baton
+  - philosophical
+  - for-future-me
+  - baton
 publishDate: 2021-08-29T20:52:08.052481
 slug: /life-blog/decentralize-high-tech/
 title: Decentralization of High Tech
 image: /images/life-blog/decentralize-high-tech.jpg
 ---
+
 ![](/images/life-blog/decentralize-high-tech.jpg) [^2]
 
 Every sufficiently advanced technology is indistinguishable from magic.[^1] But as more and more people understand and use the technology, the magic fades and it becomes an everyday affair.
@@ -68,4 +69,3 @@ I believe once SpaceX reaches Mars, we’ll go through a similar cycle for space
 
 [^2]: Photo by <a href="https://unsplash.com/@forestkatsch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Forest Katsch</a> on <a href="https://unsplash.com/s/photos/starship?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 [^1]: Steve Jobs
-  

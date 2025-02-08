@@ -32,6 +32,7 @@ Anagram means one word can be made by re-arranging another word.
 check if the length is the same.
 find the difference in the count of letters in both numbers.
 since there are only 26 letters, you can count in a single int array of 26. index = char - 'a'
+
 ### Code, if any
 
 ```java
@@ -40,9 +41,9 @@ class Solution {
         if(s.length() != t.length()){
             return false;
         }
-        
+
         int[] counts = new int[26];
-        
+
         for(int i = 0; i<s.length(); i++){
             counts[s.charAt(i) - 'a']++;
             counts[t.charAt(i) - 'a']--;

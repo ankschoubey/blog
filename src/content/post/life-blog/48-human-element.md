@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - non-technical
- - tdd
+  - non-technical
+  - tdd
 publishDate: 2022-03-18T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/human-intuition/
@@ -14,7 +14,7 @@ Often when talking about process improvement, we focus on only technology elemen
 
 Human element is ignored. This is understandable. technology can enforce rules that improve the process easily. Technology can also remove a lot of human evidence.
 
-Developing the human intuition is about understanding why something is being done more than how something is being done. 
+Developing the human intuition is about understanding why something is being done more than how something is being done.
 
 Because once someone understands why something is done, they can suggest ways to prove it for themselves locally.
 

@@ -2,9 +2,9 @@
 comments: true
 excerpt: The distinction between unit and integration tests blurs with embedded implementations, combining accuracy from both while overcoming limitations of traditional mocks and infra-heavy integration tests.
 tags:
- - technical
- - tdd
- - testing
+  - technical
+  - tdd
+  - testing
 publishDate: 2022-04-03T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/bluring-line-between-unit-integration-test/

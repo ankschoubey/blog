@@ -1,16 +1,17 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - health
+  - non-technical
+  - health
 publishDate: 2022-10-30T20:52:08.052481
 last-modified-purpose:
 slug: /v2/core-values
 title: Core Values V2
 ---
 
-Choosing: 
+Choosing:
+
 - 🔭 Truth over Fog
 - 🦾 Strength over Weakness
 - 🍃 Systems O(n) over Bruteforce O(n^3)
@@ -18,7 +19,7 @@ Choosing:
 - 👥 Team over Lone Wolf
 
 |                | Anti-Value       | Noun Form   | Decision Making Question            | Adverb                 | Makes Me                | Comparitive                                                       |
-|----------------|------------------|-------------|-------------------------------------|------------------------|-------------------------|-------------------------------------------------------------------|
+| -------------- | ---------------- | ----------- | ----------------------------------- | ---------------------- | ----------------------- | ----------------------------------------------------------------- |
 | Clarity        | Fake             | Clear       | What would a clear person do?       | Truthful Clarity       | A clear thinker         | Clarity over Fog                                                  |
 | Responsibility | Avoidance        | Responsible | What would a responsible person do? |                        | Reliable and dependable | Responsibility over Instant-Gratification; Strength over Weakness |
 | Inputs         | Infinite Choices | Focused     | What would a focused person do?     | Filtered Inputs        |                         | Quality over Quantity                                             |

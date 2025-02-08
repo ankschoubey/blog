@@ -1,11 +1,11 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
-tags: 
- - crash-course
- - econ
- - summary
+excerpt: 'Placeholder'
+tags:
+  - crash-course
+  - econ
+  - summary
 title: Specialization and Trade - Crash Course Economics - 2
 slug: /life-blog/crash-course/econ/2
 publishDate: 2023-03-04T20:42:15.538277
@@ -30,18 +30,18 @@ If China can produce 100 planes or 800 shoes with the same effort, china for eve
 
 It may seem that the US is better off here and should not trade, but if the US trades planes for shoes, they'll be better off (need to learn here)
 
-***
+---
 
 Point outside the PPF curve is an impossibility
 The point inside the PPF curve is inefficiency.
 How do you maximize efficiency?
 By specializing and trading.
 
-***
+---
 
 Self-sufficiency is inefficiency
 
-***
+---
 
 Wellness can be predicted by a variety of many economic predictors like GDP per capita, employee, and ent rate, by this we see statistically, most improvements came after Industrial Revolution.
 

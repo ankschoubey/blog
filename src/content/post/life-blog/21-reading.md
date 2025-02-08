@@ -1,16 +1,16 @@
 ---
 toc: false
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - collection-of-thoughts
- - drafts
- - truth
+  - collection-of-thoughts
+  - drafts
+  - truth
 title: Reading Books
 slug: /life-blog/reading-books/
 publishDate: 2021-08-01T20:42:15.423682
 image: /images/ife-blog/reading-books.jpg
-updated: ['21 Jan 2021','31 Jan 2021']
+updated: ['21 Jan 2021', '31 Jan 2021']
 ---
 
 <sub>Photo by <a href="https://unsplash.com/@roadtripwithraj?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Road Trip with Raj</a> on <a href="https://unsplash.com/s/photos/read?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></sub>
@@ -29,6 +29,7 @@ Reading is also an antidote to shortened attention span.
 If you can really read, then you can read way faster than you can listen or watch.
 
 ## Habit
+
 Keeping distractions away while reading helps.
 
 To start, read anything. Even a page better than no page.
@@ -50,9 +51,11 @@ If you don't know a word in the book, learn it right there and there. If you don
 If you are going to read a series of 📚 then learn each new word. The same word will be used later.
 
 ## Selecting books to read
+
 Reading from different categories is an easy way to broaden your perspective.
 
 Always be reading at least 2 books, fiction, and non-fiction.
+
 - Non-fiction: Makes you more informed and puts things into action.
 - Fiction: Makes you less boring and counteracts the overthinking created by non-fiction.
 
@@ -60,13 +63,13 @@ Don't buy non-fiction books that have just been released. Let the reviews come i
 
 If the right book is selected, it is worth paying the price.
 
-Reading foundational books like History of something or mathematics rather than diving into the latest trends allows you to broaden your understanding and remember faster [^5][^1]. 
+Reading foundational books like History of something or mathematics rather than diving into the latest trends allows you to broaden your understanding and remember faster [^5][^1].
 
 ## Speed Reading
 
 Reading speed increases naturally as you get into a habit of reading regularly.
 
-Your reading speed is higher when you read a topic you are familiar with. It is slower when you read something new. 
+Your reading speed is higher when you read a topic you are familiar with. It is slower when you read something new.
 
 Therefore if you are speed reading, it is probably not worth reading that book. [^1]
 
@@ -87,6 +90,7 @@ If you don't understand a certain section or a concept, google/youtube it and cl
 ## Memorize
 
 Book notes make it easy to non-only reason but to memorize the gist of the book.
+
 - Don't copy-paste. Write in your own words. It should be your thoughts.
 
 The narrative makes it easy to remember. Some non-fiction books have a narrative too.

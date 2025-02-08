@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2022-01-25T20:52:08.052481
 last-modified-purpose:
 slug: /documentation/
@@ -21,13 +21,11 @@ If the API/Library is going to be used by the public, it needs to be perfect.
 
 ![](/images/2022-01-25-documentation/shared-between-single-team-multiple.png)
 
-***
+---
 
 The biggest problem is maintaining up-to-date documentation. These are a few things I have learned recently about this:
 
 <img style="float: left; width: 300px;" src="https://docs.google.com/drawings/d/e/2PACX-1vS1EYND3yzq_zmJEZ1rEJogTD9tbXucE2k33rcUYIVTcA2ZQZlYfPf_MSVk8kvHZhjcKo7fByRiXFpy/pub?w=453&amp;h=723">
-
-
 
 ## 1. The best way to document is to automate
 
@@ -35,7 +33,7 @@ Tools like Swagger for APIs and storybook from UI components make it very easy t
 
 ## 2. Encourage use of your own documentation
 
-Using your own documentation would help you find and fix bugs in it. 
+Using your own documentation would help you find and fix bugs in it.
 
 For example, You could encourage your team to use Swagger UI instead of Post Man for testing APIs.
 

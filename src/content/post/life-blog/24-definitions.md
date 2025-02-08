@@ -3,9 +3,9 @@ toc: false
 comments: true
 excerpt: The same word is different for different people
 tags:
- - decision-making
- - communication
- - truth
+  - decision-making
+  - communication
+  - truth
 publishDate: 2021-08-01T20:42:15.451427
 title: Definitions
 slug: /life-blog/definition/

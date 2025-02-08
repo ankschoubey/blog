@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - non-technical
- - implementing-core-values
+  - philosophical
+  - non-technical
+  - implementing-core-values
 publishDate: 2023-05-06T20:52:08.052481
 slug: /life-blog/remind-yourself-of-your-core-values/
 title: Remind yourself of your core values at all times.

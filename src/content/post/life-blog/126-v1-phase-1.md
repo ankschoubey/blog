@@ -2,15 +2,15 @@
 comments: true
 excerpt: Phase 1 in the second part of the live hard program after 75 Hard. I was able to do all the tasks of 75 Hard and 3 other tasks that were needed including the 8 critical taks. In this post, I share my journey and tips.
 tags:
- - non-technical
- - responsibility
+  - non-technical
+  - responsibility
 publishDate: 2023-08-27T20:52:08.052481
-last-modified-purpose: 
+last-modified-purpose:
 slug: /life-blog/phase-1
 title: Journey Through Phase 1 Challenge of the Live Hard Program
 toc: false
 image: /images/phase1/2.jpg
-cover-img-style: "position: relative; height:100%"
+cover-img-style: 'position: relative; height:100%'
 ---
 
 ### Why did I do the phase 1 challenge?
@@ -174,7 +174,7 @@ My confidence went up infinitely. And it's hard to understand why. People have b
 
 WhatsApp is not necessary.
 
-###  It's more fun to switch between work and fun than to just do either
+### It's more fun to switch between work and fun than to just do either
 
 The switch between work when doing the challenge and having fun in life when not doing the challenge really makes a big difference.
 
@@ -209,4 +209,3 @@ The amount of productivity was infinite and I want to continue it.
 ### 30 days of Munching and Traveling
 
 I want to enjoy life for 30 days so I have a list of activities.
-

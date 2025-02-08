@@ -1,16 +1,17 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - non-technical
- - rant
- - responsibility
+  - non-technical
+  - rant
+  - responsibility
 publishDate: 2022-11-05T20:52:08.052481
 last-modified-purpose:
 slug: /v2/good-intentions-good-action
 title: You can have good intentions but still do the wrong things. So, keep moving towards good action too.
 image: /images/good-intentions-good-action.jpg
 ---
+
 ![](/images/good-intentions-good-action.jpg)
 
 # Why sometimes having good intentions is not enough?

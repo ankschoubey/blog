@@ -1,11 +1,11 @@
 ---
 comments: true
-excerpt: Placeholder 
+excerpt: Placeholder
 tags:
- - technical
- - business
- - teams
- - agile
+  - technical
+  - business
+  - teams
+  - agile
 publishDate: 2022-03-17T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/3-man-squad/

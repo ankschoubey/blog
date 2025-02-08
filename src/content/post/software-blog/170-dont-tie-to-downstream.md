@@ -1,16 +1,15 @@
 ---
 comments: true
-excerpt: "Be careful not to introduce high coupling between microservices." 
+excerpt: 'Be careful not to introduce high coupling between microservices.'
 tags:
- - technical
- - architecture
- - message-queue
+  - technical
+  - architecture
+  - message-queue
 publishDate: 2023-12-26T20:52:08.052481
 last-modified-purpose: added CQRS
 slug: /dont-tie-micro-service-to-downstream/
 title: Thinking Microservices - Don't tie yourself to one or more downstream (consumer)
 image: /images/dont-tie-micro-service-to-downstream.jpg
-
 ---
 
 ## Monolith and The Habits of Coupling
@@ -89,6 +88,6 @@ To not tie yourself to the upstream, separate your upstream-related code from yo
 
 For downstream, the task is more design and non-technical.
 
-***
+---
 
 Photo by <a href="https://unsplash.com/@growtika?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Growtika</a> on <a href="https://unsplash.com/photos/a-group-of-blue-boxes-ZfVyuV8l7WU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

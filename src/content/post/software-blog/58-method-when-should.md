@@ -2,11 +2,11 @@
 comments: true
 excerpt: A template for thinking and creating understandable uniform tests
 tags:
- - technical
- - testing
- - clean-code
- - favorite
- - tdd
+  - technical
+  - testing
+  - clean-code
+  - favorite
+  - tdd
 publishDate: 2022-03-19T20:52:08.052481
 last-modified-purpose:
 slug: /method-when-should/
@@ -63,7 +63,7 @@ Having specific blocks means that test descriptions are always written a certain
 
 Blocks group tests together, making them easier to find.
 
-Also, when tests run in IDE like IntelliJ, the output is much cleaner. The example section above is a good representation of this. 
+Also, when tests run in IDE like IntelliJ, the output is much cleaner. The example section above is a good representation of this.
 
 # Template for JUnit
 
@@ -73,20 +73,20 @@ class {NameOfClass}Tests{
     @Nested
     @DisplayName("{methodName} method")
     class {MethodName}Tests{
-     
+
         @Nested
         @DisplayName("WHEN {condition description}")
         class {ConditionDescription}Tests{
-        
+
             @Nested
             @DisplayName("SHOULD {assertion description}")
             void {AssertionDescription}Test(){
                 // GIVEN
                     {code for setting conditions describe in WHEN block}
-          
+
                 // WHEN
                     {code for running actions}
-                
+
                 // THEN
                     {code for assertions}
             }

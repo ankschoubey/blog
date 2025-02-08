@@ -1,10 +1,10 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - philosophical
- - non-technical
- - truth
+  - philosophical
+  - non-technical
+  - truth
 publishDate: 2022-06-05T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/truth-fidility/
@@ -12,6 +12,7 @@ title: Truth and Fidility
 image: /images/life-blog/truth-fidility.jpg
 toc: false
 ---
+
 ![](/images/life-blog/truth-fidility.jpg)
 
 <sup>Photo by Paul Skorupskas on Unsplash</sup>
@@ -42,10 +43,10 @@ This has been my recent experience with many things: testing, philosophy, and ra
 
 My experience has been it's very hard to switch to a normal model.
 
-- Things I learned that made me truthful and more rational seem to destroy many of my friendships. 
-    - At the same time reveals more of my flaws which I can't un-see and would have to fix.
+- Things I learned that made me truthful and more rational seem to destroy many of my friendships.
+  - At the same time reveals more of my flaws which I can't un-see and would have to fix.
 - Things I learned about philosophy seem to make me weirder.
-- Things  I learned about testing: well makes me want to test everything and despise code that hasn't been written with TDD.
+- Things I learned about testing: well makes me want to test everything and despise code that hasn't been written with TDD.
 
 # Is it worth the cost?
 

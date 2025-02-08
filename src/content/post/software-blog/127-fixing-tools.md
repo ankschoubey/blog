@@ -1,16 +1,16 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - tools
+  - technical
+  - tools
 publishDate: 2022-11-20T20:52:08.052481
 last-modified-purpose: added resource on IntelliJ tips
 slug: /software-blog/fixing-tools/
 title: Fixing Tools - IDE, Code Editors, Etc.
 ---
 
-Mastering an IDE means knowing and using features, shortcuts, plugins, etc. 
+Mastering an IDE means knowing and using features, shortcuts, plugins, etc.
 
 It takes too many interations and years to learn and master a new tools. As you know IDE in detail, your productivity level increases tremendously.
 
@@ -19,6 +19,7 @@ Switching between IDE and Code Editors have very low impact if all of them essen
 This is similar to [my approach for deciding to learn a programming topic](/software-blog/new_tech).
 
 A good IDE should provide:
+
 1. Lots of feature to reduce coding effort
 2. Plugin Support
 3. Frequent Updates

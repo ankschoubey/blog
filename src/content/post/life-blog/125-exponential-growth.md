@@ -3,17 +3,17 @@ excerpt: Mindsets and statergies to apply exponential progress to life, business
 title: Thinking in terms of exponential grow over linear growth
 comments: true
 tags:
- - planning
- - systems
- - clarity
- - non-technical
+  - planning
+  - systems
+  - clarity
+  - non-technical
 use_math: true
 publishDate: 2023-07-20T20:42:15.193139
 slug: /life-blog/exponential-growth/
 image: /images/life-blog/exponential-growth.jpg
 ---
 
-Photo by [Suzanne D. Williams](https://unsplash.com/@scw1217?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText "‌") on [Unsplash](https://unsplash.com/photos/VMKBFR6r_jg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText "‌")
+Photo by [Suzanne D. Williams](https://unsplash.com/@scw1217?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText '‌') on [Unsplash](https://unsplash.com/photos/VMKBFR6r_jg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText '‌')
 
 ## Thinking Exponentially
 
@@ -31,9 +31,9 @@ The exponential growth is kind of the upper quadrants of Eisenhower's matrix.
 
 ## Lesson 1: Not all tasks are equal. Some tasks are more important than other tasks.
 
-We, humans, are very linear thinkers. We think that if we do X things, its output will be X*constant.
+We, humans, are very linear thinkers. We think that if we do X things, its output will be X\*constant.
 
-For example, if we do X tasks, we'll have X*constant = Y value.
+For example, if we do X tasks, we'll have X\*constant = Y value.
 
 This is why we have 20 things on our bucket list, we feel all of them are equally important. And just doing them is enough.
 
@@ -57,7 +57,7 @@ Pick the most important task. If you are unable to decide what's the best, pick 
 
 ## Second Lesson: Doing one thing well eliminated 20 other things.
 
-Now, towards the second lesson. Given our premise of assuming 1 task is equal to X points, if we do N tasks it'll be X*N points. A linear growth. We learned that certain tasks are more important than other tasks.
+Now, towards the second lesson. Given our premise of assuming 1 task is equal to X points, if we do N tasks it'll be X\*N points. A linear growth. We learned that certain tasks are more important than other tasks.
 
 Now, here's something interesting. You might know many people who just get certifications. For example, they may have one certification in AWS Cloud Practitioner, then they get a Certificate related to AWS Solution Architect. And so on and so on. They continue to acquire certificates. Why?
 

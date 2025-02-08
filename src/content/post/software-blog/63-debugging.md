@@ -1,9 +1,9 @@
 ---
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - technical
- - clean-code
+  - technical
+  - clean-code
 publishDate: 2022-04-19T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/debugging-effectively/
@@ -23,16 +23,15 @@ This wastes stupid amount of time. Usually, configuration bugs can be mitigated 
 
 If you’d like to be more methodical, add it to your bug card.
 
-# Look at logs. 
+# Look at logs.
 
 Set appropriate log level for the packages involved. If it's harder to understand.
 
-
-# Isolate the code/problem. 
+# Isolate the code/problem.
 
 - Does error come on one setting/env/deployment but not other? If yes: why so?
 
-# Learn to use debugger mode and trace. 
+# Learn to use debugger mode and trace.
 
 Fixing your debugging tool may help.
 
@@ -59,7 +58,7 @@ or
 Ask:
 
 - Ask People who may know.
-- Teams who may have faced the issue. 
+- Teams who may have faced the issue.
 
 Or read stack overflow or github issues.
 

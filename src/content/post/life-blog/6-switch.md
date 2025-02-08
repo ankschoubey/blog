@@ -1,16 +1,17 @@
 ---
 toc: false
 comments: true
-excerpt: 'Placeholder' 
+excerpt: 'Placeholder'
 tags:
- - personal
- - responsibility
+  - personal
+  - responsibility
 title: Always keep yourself ready to switch companies
 slug: /life-blog/switch-jobs/
 publishDate: 2021-05-26T20:42:15.654723
 image: /images/life-blog/switch-jobs.jpg
 hide: true
 ---
+
 ![](/images/life-blog/switch-jobs.jpg)
 
 ## Capitalism

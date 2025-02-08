@@ -2,15 +2,15 @@
 comments: true
 excerpt: BEM, TDD, and thoughtful design supercharge web development by streamlining UI DOM planning for maximum efficiency.
 tags:
- - technical
- - web-development
- - tdd
+  - technical
+  - web-development
+  - tdd
 publishDate: 2023-10-28T20:52:08.052481
 last-modified-purpose:
 slug: /tdd/planning-dom/
 title: 5 Step Process to Planning and Building a UI DOM Efficiently with Boxes, BEM and TDD
 image: /images/planning-dom/step-3-css-naming.png
-cover-img-style: "position: relative; height:100%"
+cover-img-style: 'position: relative; height:100%'
 ---
 
 I recently had to develop a complex table layout. I had coded it directly without planning, and later, I found a lot of stuff that needed to be included.
@@ -71,7 +71,7 @@ The syntax is like this `.{block}__{element}--{modifier}`
 
 If {block}, {element} or {modifier} is multiply words, then it can be split by hyphens `-`.
 
-Block is the main functionality; for example, since we are building a homepage, we could name our  `{block}` `home.`
+Block is the main functionality; for example, since we are building a homepage, we could name our `{block}` `home.`
 
 Elements are parts of the Block. For our `home` block, we could have `{element} 's could be`logo`,`search-box`,`footer`, etc.
 
