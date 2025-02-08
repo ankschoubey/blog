@@ -3,6 +3,7 @@ const data = {
     twitter: 'https://twitter.com/ankushchoubey',
     linkedIn: 'https://www.linkedin.com/in/ankushchoubey/',
   },
+  totalExperience: '6 years',
   testimonials: [
     {
       testimonial: `It’s rare that you come across standout talent like Ankush. I had the pleasure of working with Ankush for almost two years in a very highly visible and complex application.\n\nI really appreciate energy, enthusiasm, pro-activeness which Ankush brings in the team. He always try to look a modern way/tool/framework to solve the problem. You can trust him with any complex problem and he will come with multiple approaches to solve the problem.
