@@ -26,3 +26,9 @@ pnpm-lock.yaml
 /.idea/.gitignore
 /.idea/modules.xml
 bun.lockb
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
