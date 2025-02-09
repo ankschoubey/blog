@@ -14,182 +14,182 @@ import { headerData } from '~/navigation';
 import ankushLinks from '~/content/ankushLinks';
 
 const metadata = {
-  title: 'Ankush Choubey - Full Stack Developer',
+	title: 'Ankush Choubey - Full Stack Developer',
 };
 
 let topHeaderActions = [
-  { variant: 'secondary', text: 'S/W Blog', href: getPermalink('technical', 'tag') },
-  {
-    variant: 'primary',
-    target: '_blank',
-    text: 'Connect',
-    icon: 'tabler:brand-linkedin',
-    href: ankushLinks.socialMedia.linkedIn,
-  },
-  { variant: 'secondary', text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
+	{ variant: 'secondary', text: 'S/W Blog', href: getPermalink('technical', 'tag') },
+	{
+		variant: 'primary',
+		target: '_blank',
+		text: 'Connect',
+		icon: 'tabler:brand-linkedin',
+		href: ankushLinks.socialMedia.linkedIn,
+	},
+	{ variant: 'secondary', text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
 ];
 
 let img = { src: 'IMG_0463.jpg', alt: 'img' };
 
 var modifiedHeaderDate = {
-  ...headerData,
-  links: [],
-  actions: [
-    {
-      text: 'Search',
-      // target:"_blank",search
-      icon: 'tabler:search',
-      variant: 'primary',
-      href: '/search',
-    },
-  ],
+	...headerData,
+	links: [],
+	actions: [
+		{
+			text: 'Search',
+			// target:"_blank",search
+			icon: 'tabler:search',
+			variant: 'primary',
+			href: '/search',
+		},
+	],
 };
 ---
 
 <Layout metadata={metadata}>
-  <Fragment slot="announcement"></Fragment>
-  <Fragment slot="header">
-    <Header {...modifiedHeaderDate} />
-  </Fragment>
+	<Fragment slot="announcement"></Fragment>
+	<Fragment slot="header">
+		<Header {...modifiedHeaderDate} />
+	</Fragment>
 
-  <!-- Hero2 Widget ******************* -->
+	<!-- Hero2 Widget ******************* -->
 
-  <Hero
-    id="hero"
-    title="Ankush Choubey"
-    taglineInverted={true}
-    tagline="Full Stack Developer"
-    actions={topHeaderActions}
-  >
-    <Fragment slot="subtitle">
-      Helping you build <a class="font-bold text-blue-700" href="/clean-code">clean</a>, <a
-        class="font-bold text-blue-700"
-        href="/tdd">bug-free</a
-      >, scalable software <a class="font-bold text-blue-700" href="/cd">fast</a>!
+	<Hero
+		id="hero"
+		title="Ankush Choubey"
+		taglineInverted={true}
+		tagline="Full Stack Developer"
+		actions={topHeaderActions}
+	>
+		<Fragment slot="subtitle">
+			Helping you build <a class="font-bold text-blue-700" href="/clean-code">clean</a>, <a
+				class="font-bold text-blue-700"
+				href="/tdd">bug-free</a
+			>, scalable software <a class="font-bold text-blue-700" href="/cd">fast</a>!
 
-      <br /><br />
-      <!-- <span class="font-bold"><a class="text-blue-700 font-bold" href="https://www.linkedin.com/in/ankushchoubey/">🇮🇳 Hiring</a>: If you are looking for a remote backend-java developer role in India?</span> -->
-      <br />
-      <span class="highlight text-accent dark:text-white"> </span>
+			<br /><br />
+			<!-- <span class="font-bold"><a class="text-blue-700 font-bold" href="https://www.linkedin.com/in/ankushchoubey/">🇮🇳 Hiring</a>: If you are looking for a remote backend-java developer role in India?</span> -->
+			<br />
+			<!-- <span class="highlight text-accent dark:text-white"> </span>
        I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing
       test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
-      <br />
-       Through this blog, I share my insights and ideas on software development philosophy and best practices to help
+      <br /> -->
+			<!-- Through this blog, I share my insights and ideas on software development philosophy and best practices to help
       fellow developers create high-quality software products. My goal is to help you write 🧹 clean & 🐞 bug-free code
       every time and support you in swiftly delivering your 👨🏻‍💻 code to production! Hire me for consulting, speaking and
-      developer roles by contacting me on LinkedIn logo.
-    </Fragment>
-  </Hero>
+      developer roles by contacting me on LinkedIn logo. -->
+		</Fragment>
+	</Hero>
 
-  <!-- BlogLatestPost Widget **************** -->
+	<!-- BlogLatestPost Widget **************** -->
 
-  <BlogLatestPosts
-    id="tech-blog"
-    tag="technical"
-    title="Software Posts"
-    information={`From TDD, BDD, DevOps, etc.`}
-    linkText="View Software Development Posts"
-    linkUrl={getPermalink('technical', 'tag')}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts>
-  <Hero tagline="Life & Self Improvement">
-    <Fragment slot="subtitle">
-      <br />
-       I write a lot about philosophy and life too.<br />
-      <br />
-       My main focus recently has been <strike>my 4 core values</strike>
-      <b>Shreemad Bhagwat Gita 🍃</b><br /><br />
-      <sup
-        ><strike
-          ><span class="text-white-700 dark:text-black-800 text-1 font-bold">🔭 Clarity</span>, <span
-            class="font-bold text-orange-700">💎 Responsibility</span
-          >, 🫀 <span class="font-bold text-green-700">Optimism</span> and 🫱🏻‍🫲🏾 <a
-            class="font-bold text-blue-700 hover:bg-slate-200 dark:hover:bg-slate-900"
-            href={getPermalink('social-harmony', 'tag')}>Social</a
-          >.</strike
-        >
-      </sup>
-      <span class="text-white-700 dark:text-black-800 text-1 font-bold">🔭 Gyaan</span>. <span
-        class="font-bold text-orange-700">💎 Karma</span
-      >. 🫀 <span class="font-bold text-green-700">Bhakti</span>.<br />
-      <br />
-      <b>कर्म</b>ण्येवाधिकारस्ते मा फलेषु कदाचन। <br />
-       मा कर्मफलहेतुर्भुर्मा ते संगोऽस्त्वकर्मणि॥ <br />
-      <br />
-      <!-- <sup> -->
-       You have every right to work but not expecting the fruits out of it. <br />
-       Let the focus be not on the fruits and never be inactive.
-      <!-- </sup> -->
-    </Fragment>
-  </Hero>
-  <BlogLatestPosts
-    id="non-tech-blog"
-    tag="non-technical"
-    title="Life Posts"
-    information={`Range from topics such as Truth, Discipline, Karma, Social, Psychology, Challenges to everything that's not software engineering`}
-    linkUrl={getPermalink('non-technical', 'tag')}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts>
-  <Content
-    id="about"
-    columns={3}
-    items={[
-      {
-        icon: 'tabler:brand-linkedin',
-        callToAction: {
-          target: '_blank',
-          text: 'LinkedIn',
-          href: 'https://www.linkedin.com/in/ankushchoubey/',
-        },
-      },
-    ]}
-    image={{
-      src: 'profile.PNG',
-      alt: 'Photo of Ankush Choubey',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">About me</h3>
-       I am 27 y.o. full stack developer from Mumbai, India.<br /><br />
+	<BlogLatestPosts
+		id="tech-blog"
+		tag="technical"
+		title="Software Posts"
+		information={`From TDD, BDD, DevOps, etc.`}
+		linkText="View Software Development Posts"
+		linkUrl={getPermalink('technical', 'tag')}
+	>
+		<Fragment slot="bg">
+			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+		</Fragment>
+	</BlogLatestPosts>
+	<Hero tagline="Life & Self Improvement">
+		<Fragment slot="subtitle">
+			<br />
+			 I write a lot about philosophy and life too.<br />
+			<br />
+			 My main focus recently has been <strike>my 4 core values</strike>
+			<b>Shreemad Bhagwat Gita 🍃</b><br /><br />
+			<sup
+				><strike
+					><span class="text-white-700 dark:text-black-800 text-1 font-bold">🔭 Clarity</span>, <span
+						class="font-bold text-orange-700">💎 Responsibility</span
+					>, 🫀 <span class="font-bold text-green-700">Optimism</span> and 🫱🏻‍🫲🏾 <a
+						class="font-bold text-blue-700 hover:bg-slate-200 dark:hover:bg-slate-900"
+						href={getPermalink('social-harmony', 'tag')}>Social</a
+					>.</strike
+				>
+			</sup>
+			<span class="text-white-700 dark:text-black-800 text-1 font-bold">🔭 Gyaan</span>. <span
+				class="font-bold text-orange-700">💎 Karma</span
+			>. 🫀 <span class="font-bold text-green-700">Bhakti</span>.<br />
+			<br />
+			<b>कर्म</b>ण्येवाधिकारस्ते मा फलेषु कदाचन। <br />
+			 मा कर्मफलहेतुर्भुर्मा ते संगोऽस्त्वकर्मणि॥ <br />
+			<br />
+			<!-- <sup> -->
+			 You have every right to work but not expecting the fruits out of it. <br />
+			 Let the focus be not on the fruits and never be inactive.
+			<!-- </sup> -->
+		</Fragment>
+	</Hero>
+	<BlogLatestPosts
+		id="non-tech-blog"
+		tag="non-technical"
+		title="Life Posts"
+		information={`Range from topics such as Truth, Discipline, Karma, Social, Psychology, Challenges to everything that's not software engineering`}
+		linkUrl={getPermalink('non-technical', 'tag')}
+	>
+		<Fragment slot="bg">
+			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+		</Fragment>
+	</BlogLatestPosts>
+	<Content
+		id="about"
+		columns={3}
+		items={[
+			{
+				icon: 'tabler:brand-linkedin',
+				callToAction: {
+					target: '_blank',
+					text: 'LinkedIn',
+					href: 'https://www.linkedin.com/in/ankushchoubey/',
+				},
+			},
+		]}
+		image={{
+			src: 'profile.PNG',
+			alt: 'Photo of Ankush Choubey',
+		}}
+	>
+		<Fragment slot="content">
+			<h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">About me</h3>
+			 I am 27 y.o. full stack developer from Mumbai, India.<br /><br />
 
-       I'm very curious by nature and can explore random topics non-stop.<br /><br />
-       Some areas of my current (Dec 2023) interest are Boxing, Running, Writing and the Bhagwad Gita.<br /><br />
+			 I'm very curious by nature and can explore random topics non-stop.<br /><br />
+			 Some areas of my current (Dec 2023) interest are Boxing, Running, Writing and the Bhagwad Gita.<br /><br />
 
-       As a full stack developer, I love both front-end and backend. I am equally good in both. And my interests is producing
-      bug free code as fast as possible. Especially within teams.
-    </Fragment>
+			 As a full stack developer, I love both front-end and backend. I am equally good in both. And my interests is producing
+			bug free code as fast as possible. Especially within teams.
+		</Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-  <Testimonials
-    title="Recommendations and Appreciation"
-    subtitle="Discover what fellow collegues have to say about their experiences working with me."
-    testimonials={ankushLinks.testimonials}
-  />
-  <CallToAction
-    title="Let's create together"
-    subtitle="Want help with setting up TDD within an organization, designing a complex system or something else?"
-    actions={[
-      //  {
-      //   text: 'Resume',
-      //   target:"_blank",
-      //   variant: "secondary",
-      //   href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
-      // },
-      {
-        variant: 'primary',
-        text: 'LinkedIn',
-        icon: 'tabler:brand-linkedin',
-        href: 'https://www.linkedin.com/in/ankushchoubey/',
-      },
-    ]}
-  />
+		<Fragment slot="bg">
+			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+		</Fragment>
+	</Content>
+	<Testimonials
+		title="Recommendations and Appreciation"
+		subtitle="Discover what fellow collegues have to say about their experiences working with me."
+		testimonials={ankushLinks.testimonials}
+	/>
+	<CallToAction
+		title="Let's create together"
+		subtitle="Want help with setting up TDD within an organization, designing a complex system or something else?"
+		actions={[
+			//  {
+			//   text: 'Resume',
+			//   target:"_blank",
+			//   variant: "secondary",
+			//   href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
+			// },
+			{
+				variant: 'primary',
+				text: 'LinkedIn',
+				icon: 'tabler:brand-linkedin',
+				href: 'https://www.linkedin.com/in/ankushchoubey/',
+			},
+		]}
+	/>
 </Layout>
