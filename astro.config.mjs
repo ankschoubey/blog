@@ -34,16 +34,6 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap({
-      filter: (page) => {
-        for (const item of ignoredThings) {
-          if (page.includes(item)) {
-            return false;
-          }
-        }
-        return true;
-      },
-    }),
     mdx(),
     icon({
       include: {
