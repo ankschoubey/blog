@@ -5,7 +5,6 @@ slug: /software-blog/making-java-short/
 images: /images/software-blog/making-java-short.png
 tags:
   - technical
-  - non-technical
 publishDate: 2025-01-11T20:49:37.015737
 gpt: chatgpt url
 trello: ''
