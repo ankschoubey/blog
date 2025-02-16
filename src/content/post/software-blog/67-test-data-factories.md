@@ -8,7 +8,7 @@ tags:
   - tdd
 publishDate: 2022-05-03T20:52:08.052481
 last-modified-purpose:
-slug: /test-data-factories/
+slug: /software-blog/test-data-factories
 title: Writing cleaner tests with Test Data Factories
 image: /images/test-data-factories.png
 ---
