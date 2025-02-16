@@ -50,7 +50,6 @@ export const redirects = {
   '/life-blog/who-is-a-leader': LEADER,
   '/life-blog/ideas': IDEAS,
   '/life-blog/giving_help/': GIVING_HELP,
-  '/life-blog/exercise/': PHYSICAL_EXERCISE,
   '/life-blog/develop-your-own-opinions-and-reasonings': OWN_OPINION,
   '/life-blog/benefits-of-exercising': PHYSICAL_EXERCISE,
   '/life-blog/benefits-exercising': PHYSICAL_EXERCISE,
