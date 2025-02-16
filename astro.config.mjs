@@ -9,7 +9,7 @@ import compress from 'astro-compress';
 import icon from 'astro-icon';
 import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
-import { redirects } from './src/redirects.ts';
+import { redirectsMap } from './src/redirects.ts';
 
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 import react from '@astrojs/react';
@@ -29,7 +29,7 @@ export default defineConfig({
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'static',
-  redirects: redirects,
+  redirects: redirectsMap,
   integrations: [
     tailwind({
       applyBaseStyles: false,
