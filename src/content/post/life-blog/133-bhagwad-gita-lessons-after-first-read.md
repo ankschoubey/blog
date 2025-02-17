@@ -6,6 +6,27 @@ image: /images/life-blog/gita/DALL·E Serene Morning Scene.webp
 tags:
   - non-technical
   - bhagwad-gita
+seoKeywords:
+  - Bhagavad Gita
+  - Geeta
+  - श्रीमद्भगवद्गीता
+  - bhagavad gita
+  - the gita
+  - bhagavad gita bhagavad gita
+  - geeta bhagwat geeta
+  - bhagwat geeta
+  - the bhagavad gita
+  - gita holy book
+  - the bhagavad
+  - the holy gita
+  - bhagavad gita in english
+  - bhagavad gita as it is
+  - bhagwat geeta in english
+  - gita in english
+  - geeta in english
+  - bhagawat geeta in english
+  - bhagavad
+  - bg as it is
 slug: /life-blog/bhagwat-gita-lessons-after-first-read
 ---
 
