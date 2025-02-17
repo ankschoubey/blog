@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 import {SeoCheck} from "seord";
 import { slugSort } from '../slug-priority';
 import { LIMIT, LIMIT_TO_SLUG } from '../testConfig';
+import exp from 'constants';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const contentDir = join(__dirname, '../../src/content');
@@ -67,7 +68,7 @@ const iterateFrontMatters = () =>  markdownFiles.map((file) => getFrontMatter(fi
 
 const frontMatterTest = (name: string, idealCase: (frontMatter: FrontMatter) => boolean, printDetails: (frontMatter: FrontMatter) => {}) => {
     test(name, async ({page}) => {
-        let failingFrontMatters:any = iterateFrontMatters()
+        let failingFrontMatters = iterateFrontMatters()
             .filter(frontMatter => idealCase(frontMatter))
             .map(frontMatter => {
                 return {
@@ -80,7 +81,7 @@ const frontMatterTest = (name: string, idealCase: (frontMatter: FrontMatter) => 
             .slice(0, LIMIT);
 
             if(LIMIT_TO_SLUG.length != 0) {
-                failingFrontMatters = failingFrontMatters.find(result => result.slug.includes(LIMIT_TO_SLUG));
+                failingFrontMatters = failingFrontMatters.filter(result => result.slug.includes(LIMIT_TO_SLUG));
             }
     
 
@@ -135,13 +136,23 @@ test('SEO analysis', async ({page}) => {
             warnings: messages.warnings
         }
     });
-    let results:any = await Promise.all(allAnalysis);
+    let results = await Promise.all(allAnalysis);
     results.sort((a, b) => slugSort(a.frontmatter.slug, b.frontmatter.slug))
         .slice(0, LIMIT);
 
         if(LIMIT_TO_SLUG.length != 0) {
-            results = results.find(result => result.frontmatter.slug.includes(LIMIT_TO_SLUG));
+            results = results.filter(result => result.frontmatter.slug.includes(LIMIT_TO_SLUG));
         }
 
-    console.log(results);
+
+    const first = results[0];
+    console.log(first);
+    expect(first.warnings).toEqual([]);
+
+    expect(first.analysis.keywordDensity).toBeLessThanOrEqual(2);
+    expect(first.analysis.keywordDensity).toBeGreaterThanOrEqual(1);
+
+    expect(first.minorWarnings).toEqual([]);
+    expect(first.warnings).toEqual([]);
+    expect(first.goodPoints).toEqual([]);
 });

@@ -31,7 +31,7 @@ seoKeywords:
 slug: /life-blog/first-read-shreemad-bhagavad-gita-lessons
 ---
 
-## Shreemad Bhagwad Gita Introduction
+## Shreemad Bhagavad Gita Introduction
 
 The Gita is among the most sacred books in Hindu scripture and includes the conversation between the warrior Arjun and Supreme Lord Shree Krishna on the battlefield of Kurukshetra about 5000 years ago. The conversation lasted for about 45 minutes to an hour or so. But the wisdom spoken and presented has inspired generations to come.
 
@@ -39,9 +39,9 @@ Gita is more than a religious text. It's a way of living.
 
 Writing a single blog post about Gita would only capture some of its essence. And I'm not qualified enough to talk about the lessons of the Gita. Reading the source is the best way to learn.
 
-Below, I'll make my humble attempt to express what I currently understand from the Bhagwat Gita.
+Below, I'll make my humble attempt to express what I currently understand from the Bhagavad Gita.
 
-## How did I come to the Gita?
+## How did I come to the Bhagavad Gita?
 
 I have heard of Gita for years, but my fascination grew over the last 1.5 years when I faced life's problems. I got told by an astrologer to read the Gita, but I didn't keep it on top of my head. Over the years, random reels on YouTube have inspired me and helped me for months. These would lead me to contemplate certain aspects for months. They were ideas that stuck with me. Mainly, it was about how Gita treats humans, not something so important, which is something my anxiously attached brain was really fascinated by. Humans are not important? Duty is more important. Also, from what I heard, Gita was straightforward. Yet, despite everything, I didn't read the Gita.
 
@@ -49,11 +49,11 @@ Finally, as I couldn't find a solution to my existential crisis, I decided to pi
 
 <img src="/images/life-blog/gita/Bhagwad G.png" style="max-height:400px; margin: auto">
 
-I currently need to improve in reading the Devanagari script. So, I kept it down. I found a podcast for the Bhagwat Gita. And this is what I listened to slowly and deeply over three months, from October 2023 to Dec 2023.
+I currently need to improve in reading the Devanagari script. So, I kept it down. I found a podcast for the Bhagavad Gita. And this is what I listened to slowly and deeply over three months, from October 2023 to Dec 2023.
 
 <img src="/images/life-blog/gita/Bhag.png" style="max-height:400px; margin: auto">
 
-[Link to Bhagwad Gita Podcast](https://www.listennotes.com/podcasts/bhagavad-gita-spydor-studios-l2I3eToQdAi/)
+[Link to Bhagavad Gita Podcast](https://www.listennotes.com/podcasts/bhagavad-gita-spydor-studios-l2I3eToQdAi/)
 
 ## What effects did Gita have on me?
 
@@ -72,7 +72,7 @@ Within the three months, three significant events happened to me personally.
 
 - In October, I was reluctant to face a fear. It was because the action gave me a lot of trauma. On a day in October, I just faced it. Here's the magical bit, I was afraid. I didn't want to do. But I did it in an instant. And when I did it, my heart was pounding, and I was worried things would go wrong. But they didn't. They were peaceful. It was as if God himself did it. I didn't do it. God did.
 - In November, the same thing repeated. I again felt like I did not do it. God did. Even though, at both times, I was doing the action.
-- In December, I finished listening to the Bhagwat Gita fully. Three days before, I knew and understood what was going to happen. What do I need to do? 🧘‍♂️ It was as if Krishna was standing beside me and saying don't care about the Outcome. Take your bow. And shoot. 🏹 And so I did. I did what I needed to do. And I left. And I didn't regret my decision one bit.
+- In December, I finished listening to the Bhagavad Gita fully. Three days before, I knew and understood what was going to happen. What do I need to do? 🧘‍♂️ It was as if Krishna was standing beside me and saying don't care about the Outcome. Take your bow. And shoot. 🏹 And so I did. I did what I needed to do. And I left. And I didn't regret my decision one bit.
 
 ### Removal of Doubts
 
