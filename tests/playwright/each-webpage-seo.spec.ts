@@ -6,7 +6,7 @@ import { join } from 'path';
 import { fileURLToPath } from 'url';
 import {SeoCheck} from "seord";
 import { slugSort } from '../slug-priority';
-import { LIMIT } from '../testConfig';
+import { LIMIT, LIMIT_TO_SLUG } from '../testConfig';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const contentDir = join(__dirname, '../../src/content');
@@ -36,6 +36,7 @@ interface FrontMatter {
     publishDate: Date;
     image: string;
     excerpt: string;
+    mainKeyword: string;
     seoKeywords: string[];
 }
 
@@ -66,7 +67,7 @@ const iterateFrontMatters = () =>  markdownFiles.map((file) => getFrontMatter(fi
 
 const frontMatterTest = (name: string, idealCase: (frontMatter: FrontMatter) => boolean, printDetails: (frontMatter: FrontMatter) => {}) => {
     test(name, async ({page}) => {
-        const failingFrontMatters = iterateFrontMatters()
+        let failingFrontMatters:any = iterateFrontMatters()
             .filter(frontMatter => idealCase(frontMatter))
             .map(frontMatter => {
                 return {
@@ -77,6 +78,11 @@ const frontMatterTest = (name: string, idealCase: (frontMatter: FrontMatter) => 
             })
             .sort((a, b) => slugSort(a.slug, b.slug))
             .slice(0, LIMIT);
+
+            if(LIMIT_TO_SLUG.length != 0) {
+                failingFrontMatters = failingFrontMatters.find(result => result.slug.includes(LIMIT_TO_SLUG));
+            }
+    
 
         expect(failingFrontMatters).toEqual([]);
     });
@@ -106,7 +112,7 @@ test('SEO analysis', async ({page}) => {
         const contentJson = {
             title: frontMatter.title,
             htmlText: html as string,
-            keyword: '',
+            keyword: frontMatter.mainKeyword || '',
             subKeywords: frontMatter.seoKeywords || [],
             metaDescription: frontMatter.excerpt,
             languageCode: 'en',
@@ -129,8 +135,13 @@ test('SEO analysis', async ({page}) => {
             warnings: messages.warnings
         }
     });
-    const results = await Promise.all(allAnalysis);
+    let results:any = await Promise.all(allAnalysis);
     results.sort((a, b) => slugSort(a.frontmatter.slug, b.frontmatter.slug))
         .slice(0, LIMIT);
+
+        if(LIMIT_TO_SLUG.length != 0) {
+            results = results.find(result => result.frontmatter.slug.includes(LIMIT_TO_SLUG));
+        }
+
     console.log(results);
 });

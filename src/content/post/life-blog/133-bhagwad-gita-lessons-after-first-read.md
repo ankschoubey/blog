@@ -1,11 +1,12 @@
 ---
 publishDate: 2024-03-25T00:00:00Z
-title: Lessons from First Read of Shreemad Bhagwad Gita
-excerpt: Discover the profound lessons and transformative journey through my first encounter with the Bhagavad Gita, a timeless spiritual guide that offers wisdom on duty, action, and the path to true fulfillment.
+title: Wisdom & Lessons from My First Read of Shreemad Bhagavad Gita
+excerpt: The Bhagavad Gita, from the Mahabharat, shares Krishna’s wisdom to Arjun on Karma, duty, and fulfillment. A timeless Hinduism guide for self-discovery.
 image: /images/life-blog/gita/DALL·E Serene Morning Scene.webp
+mainKeyword: Bhagavad Gita
 tags:
   - non-technical
-  - bhagwad-gita
+  - bhagavad-gita
 seoKeywords:
   - Bhagavad Gita
   - Geeta
@@ -27,7 +28,7 @@ seoKeywords:
   - bhagawat geeta in english
   - bhagavad
   - bg as it is
-slug: /life-blog/bhagwat-gita-lessons-after-first-read
+slug: /life-blog/first-read-shreemad-bhagavad-gita-lessons
 ---
 
 ## Gita Introduction

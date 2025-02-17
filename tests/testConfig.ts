@@ -6,3 +6,4 @@ export const PROD = SITE.site;
 export const CURRENT_ENV_URL = PROD;
 
 export const LIMIT = 5;
+export const LIMIT_TO_SLUG = 'bhagwat-gita'

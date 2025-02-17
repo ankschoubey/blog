@@ -17,6 +17,7 @@ const GIVING_HELP = '/life-blog/giving_help'
 const FORCED_SALED = '/life-blog/forced_sale';
 export const redirects = {
   // source: destination
+  '/life-blog/bhagwat-gita-lessons-after-first-read': '/life-blog/first-read-shreemad-bhagavad-gita-lessons',
   '/tdd-post': '/tdd',
   '/tdd-p': '/tdd',
   '/writing-meaningful-log-messages': MEANINGFUL_LOG_MESSAGES,
