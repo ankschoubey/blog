@@ -31,9 +31,9 @@ seoKeywords:
 slug: /life-blog/first-read-shreemad-bhagavad-gita-lessons
 ---
 
-## Gita Introduction
+## Shreemad Bhagwad Gita Introduction
 
-Shrimad Bhagwat Gita is among the most sacred books in Hindu scripture and includes the conversation between the warrior Arjun and Supreme Lord Shree Krishna on the battlefield of Kurukshetra about 5000 years ago. The conversation lasted for about 45 minutes to an hour or so. But the wisdom spoken and presented has inspired generations to come.
+The Gita is among the most sacred books in Hindu scripture and includes the conversation between the warrior Arjun and Supreme Lord Shree Krishna on the battlefield of Kurukshetra about 5000 years ago. The conversation lasted for about 45 minutes to an hour or so. But the wisdom spoken and presented has inspired generations to come.
 
 Gita is more than a religious text. It's a way of living.
 
