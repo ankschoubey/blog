@@ -12,9 +12,7 @@ slug: /software-blog/open-source/
 image: /images/software-blog/open-source.jpg
 ---
 
-![](/images/software-blog/open-source.jpg)
-
-<sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@richygreat?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Richy Great</a> on <a href="https://unsplash.com/s/photos/github?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
+[^2]
 
 The more I think about open source, the more confusing things get. In some sense, Open Source projects are pretty similar to Non-Profits.
 
@@ -74,3 +72,5 @@ When choosing an open-source project, check GitHub issues first. [^1]
 Also, open-source projects do get abandoned which does not happen with paid products.
 
 [^1]: [Flutter EXPOSED: Extreme JANKY animations. "A nightmare framework"](https://www.youtube.com/watch?v=L3iqmyoogfA&list=WL&index=21)
+
+[^2]: <sub style="user-select: auto;">Photo by <a href="https://unsplash.com/@richygreat?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Richy Great</a> on <a href="https://unsplash.com/s/photos/github?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="user-select: auto;">Unsplash</a></sub>
