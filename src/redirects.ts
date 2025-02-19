@@ -15,7 +15,11 @@ const LEARNING_STRATEGIES_FOR_DEVELOPMENT = '/software-blog/learn_programming';
 const LEADER = '/life-blog/leader';
 const GIVING_HELP = '/life-blog/giving_help'
 const FORCED_SALED = '/life-blog/forced_sale';
+const OPEN_SOURCE_SOFTWARE = '/software-blog/open-source';
 export const redirects = {
+  '/open-source-software': OPEN_SOURCE_SOFTWARE,// 2025 Feb 19 after looking at google analytics
+  '/oss': OPEN_SOURCE_SOFTWARE,
+  '/posts/deciding-to-learn-a-programming-topic': DECIDING_TO_LEARN_PROGRAMMING_TOPIC,
   // source: destination
   '/life-blog/bhagwat-gita-lessons-after-first-read': '/life-blog/first-read-shreemad-bhagavad-gita-lessons',
   '/tdd-post': '/tdd',
