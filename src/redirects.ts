@@ -1,11 +1,13 @@
 //https://stackoverflow.com/a/77688978
 
+import { SITE } from "./utils/config";
+
 const MEANINGFUL_LOG_MESSAGES = '/software-blog/writing-log-messages';
 const RSA = '/v1/rsa';
 const N_PLUS_1_PROBLEM = '/software-blog/n-plus-one-hibernate';
-const DECIDING_TO_LEARN_PROGRAMMING_TOPIC = '/software-blog/new_tech/'
+const DECIDING_TO_LEARN_PROGRAMMING_TOPIC = '/software-blog/new_tech'
 const BDD_VS_TDD = '/software-blog/bdd-vs-tdd';
-const OWN_OPINION = '/life-blog/original-opinion/';
+const OWN_OPINION = '/life-blog/original-opinion';
 const PHYSICAL_EXERCISE = '/life-blog/exercise';
 const IDEAS = '/life-blog/thoughts-on-ideas';
 const ACTUALLY_SOLVE_THE_PROBLEM = '/v1/actually-solve-the-problem';
@@ -17,6 +19,8 @@ const GIVING_HELP = '/life-blog/giving_help'
 const FORCED_SALED = '/life-blog/forced_sale';
 const OPEN_SOURCE_SOFTWARE = '/software-blog/open-source';
 export const redirects = {
+  '/empowerment-enabling': '/life-blog/giving_help',
+  // '/images/spring-boot-junit-faster/header.png': '/images/software-blog/spring-boot-junit-faster/header.jpg',
   '/open-source-software': OPEN_SOURCE_SOFTWARE,// 2025 Feb 19 after looking at google analytics
   '/oss': OPEN_SOURCE_SOFTWARE,
   '/posts/deciding-to-learn-a-programming-topic': DECIDING_TO_LEARN_PROGRAMMING_TOPIC,
@@ -87,9 +91,9 @@ export const redirectsMap = Object.keys(redirects).reduce((acc, key) => {
 
   let value = redirects[key];
   if (value.startsWith('/')) {
-    // value = value.substring(1);
+    value = value.substring(1);
   }
-  acc[key] = { destination: value, status: 308 };
+  acc[key] = { destination:  SITE.base + value, status: 308 };
 
   // acc[key] = { destination: redirects[key], permanent: true };
   return acc;
