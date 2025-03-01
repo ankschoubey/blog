@@ -19,7 +19,7 @@ const GIVING_HELP = '/life-blog/giving_help'
 const FORCED_SALED = '/life-blog/forced_sale';
 const OPEN_SOURCE_SOFTWARE = '/software-blog/open-source';
 export const redirects = {
-  '/empowerment-enabling': '/life-blog/giving_help',
+  '/empowerment-enabling': GIVING_HELP,
   // '/images/spring-boot-junit-faster/header.png': '/images/software-blog/spring-boot-junit-faster/header.jpg',
   '/open-source-software': OPEN_SOURCE_SOFTWARE,// 2025 Feb 19 after looking at google analytics
   '/oss': OPEN_SOURCE_SOFTWARE,
@@ -58,7 +58,6 @@ export const redirects = {
   // '/life/': '/life/',
   '/life-blog/who-is-a-leader': LEADER,
   '/life-blog/ideas': IDEAS,
-  '/life-blog/giving_help/': GIVING_HELP,
   '/life-blog/develop-your-own-opinions-and-reasonings': OWN_OPINION,
   '/life-blog/benefits-of-exercising': PHYSICAL_EXERCISE,
   '/life-blog/benefits-exercising': PHYSICAL_EXERCISE,
