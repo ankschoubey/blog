@@ -19,6 +19,7 @@ const GIVING_HELP = '/life-blog/giving_help'
 const FORCED_SALED = '/life-blog/forced_sale';
 const OPEN_SOURCE_SOFTWARE = '/software-blog/open-source';
 export const redirects = {
+  '/inversion': '/life-blog/inversion',
   '/empowerment-enabling': GIVING_HELP,
   // '/images/spring-boot-junit-faster/header.png': '/images/software-blog/spring-boot-junit-faster/header.jpg',
   '/open-source-software': OPEN_SOURCE_SOFTWARE,// 2025 Feb 19 after looking at google analytics
