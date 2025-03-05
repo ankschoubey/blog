@@ -15,39 +15,73 @@ A good test pyramid ensures that our tests are fast.
 
 Typically, we have 3 main types of tests
 
-1. Unit
-2. Integration
-3. E2E
+1. **Unit**: Involves testing only a particular method / class
+2. **Integration**: Involves multiple components
+3. **E2E**: Either done API down or UI down
 
 There are some hybrids called slice testing in the middle.
 
 Our aim should be to that the
 
-- Number of Unit Test is more than Number of Integration Test which should be more than Number of E2E.
+- `Number of Unit Test` > `Number of Integration Test` > `Number of E2E`
 
 This is because Unit Tests are the fastest. Integration Tests are a slower and E2E are the slowest.
 
-I believe that tests on a codebase should not take more than 3-5 minutes. Because going beyond it, we lose our attention span and things pile up.
+Ideally, a test suite should complete in under 3-5 minutes to maintain developer focus and agility. Going beyond it, we lose our attention span and things pile up.
+
+An ideal test pyramid looks like this:
+
+```java
+▲  End-to-End (E2E) Tests  (~5-10%)
+▲▲  Integration Tests      (~30-40%)
+▲▲▲  Unit Tests            (~50-60%)
+```
 
 Below, I describe some ways with which I have been ensuring a good test pyramid.
 
 ## How I ensure a good test pyramid?
 
-1. Entities -> Unit test of Entity and all its behaviors.
-   1. No Integration Test Required Here
-   2. This is a good spot to create a Test\{Entity}Builder for future tests.
-   3. Covers about 50% of tests
-2. Service/Handlers
-   1. If Repository methods and API Clients are simple (Next 30-40% tests)
-      1. Unit Test: Hashmap-based InMemoryRepositories
-         1. Reduces mock usage. Makes writing tests simpler
-      2. Mocked API Clients
-   2. If Repository methods are complex (customQuery/criteria Api)
-3. Integration Test with DB and actual API call. (5-10% of all tests)
-   1. API client from another microservice is integration tested.
-4. Anything architectural is also tested.
-5. Any failures on Play / Prod will have a new test written.
-6. Any code review point that is syntactical goes to below KB for future automation
+The following describes backend approach for ensuring good test pyramid. But similar can be extrapolated for frontend.
+
+### **Entities** -> Unit Tested
+
+Entities are the foundation of your domain logic, and their behaviors should be thoroughly unit tested to ensure correctness and maintainability. Since entities should be self-contained and encapsulate business rules, they do not require integration tests.
+
+- **Ensure Entities Are Non-Anemic** → Entities should encapsulate behavior, not just data. Anemic models lead to bloated service layers and weaker domain modeling.
+- **No Integration Tests Needed** → Entities should not rely on external dependencies like databases or services.
+- **Use Test{Entity}Builder for Reusability** → A builder pattern simplifies test setup and ensures consistency across multiple test cases.
+
+### **Service/Handlers**
+
+1. If Repository methods and API Clients are simple
+   1. Covers next **30-40%** tests
+   2. Unit Test: [Hashmap-based InMemoryRepositories](/software-blog/in-memory-repositories-unit-test)
+      1. Reduces mock usage. Makes writing tests simpler
+   3. Mocked API Clients
+2. If Repository methods are complex (customQuery/criteria Api)
+   1. Integration Test with DB and actual API call. (5-10% of all tests)
+
+### **API clients**
+
+from another microservice is integration tested
+
+### **Architecture Testing**
+
+Anything architectural is also tested mostly with [ArchUnit](https://www.ankushchoubey.com/software-blog/architecture-testing)
+
+### **#Failure-Driven Testing**
+
+Any failures on Staging / Prod will have a new test written
+
+### Bonus Tip: **Automate Code Review Learnings**
+
+Any code review point that is syntactical goes to a knowledge base for future automation
+
+## Ending
+
+A well-balanced Testing Pyramid ensures fast feedback, reliable software, and efficient development cycles. Prioritizing unit tests keeps execution times low, while integration and E2E tests catch cross-component issues.
+
+By adopting in-memory repositories, failure-driven testing, and automation, developers can accelerate test execution while maintaining high software quality.
 
 ## Resources
 
