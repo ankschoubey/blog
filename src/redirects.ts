@@ -18,7 +18,10 @@ const LEADER = '/life-blog/leader';
 const GIVING_HELP = '/life-blog/giving_help'
 const FORCED_SALED = '/life-blog/forced_sale';
 const OPEN_SOURCE_SOFTWARE = '/software-blog/open-source';
+const CHAOS_ENGINEERING = '/software-blog/chaos-engineering';
 export const redirects = {
+  '/software-blog/chaos-engineering-for-spring-boot': CHAOS_ENGINEERING,
+  '/chaos-engineering': CHAOS_ENGINEERING,
   '/inversion': '/life-blog/inversion',
   '/empowerment-enabling': GIVING_HELP,
   // '/images/spring-boot-junit-faster/header.png': '/images/software-blog/spring-boot-junit-faster/header.jpg',
