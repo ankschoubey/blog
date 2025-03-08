@@ -73,3 +73,4 @@ For mutation coverage, my current answer is that sometimes mutation results aren
 ## Resource
 
 - [PIT - Mutation Testing Library for Java](https://pitest.org/quickstart/mutators/)
+- [How to setup PIT Mutation Testing in Multi Module Maven Project?](/software-blog/pit-mutation-testing-setup)
