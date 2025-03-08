@@ -33,7 +33,9 @@ Mutation Testing allows for finding missed assertions in test and  bugs in code.
 
 - We write test against a piece of code.
 - When the code changes, the test should fail.
-- Mutation Testing changes the code a little and sees if our existing test fail. Each change is called a `mutant`.
+
+Mutation Testing changes the code a little and sees if our existing test fail. Each change is called a `mutant`.
+
 - If the test fails, we say `mutant` is `killed`. This is good.
 - If the test still passes, we say `mutant` `survived`. This is bad.
 - Our aim is to reduce `survived` mutants.
