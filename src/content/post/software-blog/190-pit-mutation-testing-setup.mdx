@@ -21,6 +21,14 @@ seo_keywords:
 seo_descriptions: 
 ---
 
+Writing unit tests is a crucial part of software development, but how do we know if our tests are truly effective? Code coverage tools show which lines of code were executed, but they don’t tell us if the tests are meaningful or catch real issues.
+
+This is where Mutation Testing comes in. It introduces small changes to your code (called mutants) and checks if your tests detect them. If they don’t, it means your test suite isn’t strong enough!
+
+In this guide, we’ll walk through setting up PIT Mutation Testing in a multi-module Maven project, ensuring that your tests are as robust as possible.
+
+## How mutation coverage works
+
 Mutation Testing allows for finding missed assertions in test and  bugs in code. This is how it works:
 
 - We write test against a piece of code.
@@ -29,6 +37,10 @@ Mutation Testing allows for finding missed assertions in test and  bugs in code.
 - If the test fails, we say `mutant` is `killed`. This is good.
 - If the test still passes, we say `mutant` `survived`. This is bad.
 - Our aim is to reduce `survived` mutants.
+
+```java
+Original Code → Modify Code (Mutant) → Run Tests → Pass? (Bad) / Fail? (Good)
+```
 
 This will ensure our code is bug free and our test is high quality.
 
@@ -96,3 +108,11 @@ If you want to run in a specific module, then you can add the module name in the
 **Step 6**: Find the report in `/target/pit-reports/index.html`
 
 **Step 7**: Open the `index.html` file in the browser.
+
+## Final Thoughts
+
+Mutation Testing is an excellent way to validate the effectiveness of your test suite. Unlike traditional code coverage, it doesn’t just tell you which lines of code were executed but also checks if your tests are strong enough to detect actual code changes.
+
+By integrating PIT Mutation Testing in your Maven multi-module project, you ensure that your tests provide real value, catching missed assertions and hidden bugs before they reach production.
+
+💬 Have questions or insights? Drop a comment below! Also, read my other blogposts [TDD](/tdd)
