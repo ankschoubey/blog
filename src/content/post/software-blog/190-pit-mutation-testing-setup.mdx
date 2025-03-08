@@ -54,31 +54,29 @@ To setup mutation testing for your Maven Multimodule project, this is how you ca
 
 ```xml
 <plugins>
- <plugin>
-  <groupId>org.pitest</groupId>
-  <artifactId> pitest-maven</artifantId>
-  <version>{check version info below}</version>
-  <dependencies>
-   <dependency>
-   <groupId>org.pitest</groupId>
-   <artifactId> pitest-junit5-plugin</artifantId>
-   <version>{check version info below}</version>
-  </dependency>
-  <dependencies>
-
-  <configuration>
-   <targetClasses>
-    <param>com.your.package.path.*<param>
-   </targetClasses>
-   <targetTests>
-    <param>com.your.test.package.path.*<param>
-   </targetTests>
-   <excludeTestClasses>
- <param>com.your.test.package.path.*Integration*<param>
-       </excludeTestClasses>
-  </configuration>
- <plugin>
-
+    <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>{check version info below}</version>
+        <dependencies>
+            <dependency>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-junit5-plugin</artifactId>
+                <version>{check version info below}</version>
+            </dependency>
+        </dependencies>
+        <configuration>
+            <targetClasses>
+                <param>com.your.package.path.*</param>
+            </targetClasses>
+            <targetTests>
+                <param>com.your.test.package.path.*</param>
+            </targetTests>
+            <excludeTestClasses>
+                <param>com.your.test.package.path.*Integration*</param>
+            </excludeTestClasses>
+        </configuration>
+    </plugin>
 </plugins>
 ```
 
