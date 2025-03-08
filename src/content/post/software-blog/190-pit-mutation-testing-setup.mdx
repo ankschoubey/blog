@@ -1,0 +1,90 @@
+---
+title: How to setup PIT Mutation Testing in Multi Module Maven Project?
+excerpt: 
+slug: /software-blog/pit-mutation-testing-setup/
+image: /images/software-blog/pit-mutation-testing-setup.png
+tags:
+    - technical
+    - non-technical
+publishDate: 2025-03-08T20:17:15.027837
+gpt: chatgpt url
+trello: ""
+seo_keywords: 
+seo_descriptions: 
+---
+
+Mutation Testing allows for finding missed assertions in test and  bugs in code. This is how it works:
+
+- We write test against a piece of code.
+- When the code changes, the test should fail.
+- Mutation Testing changes the code a little and sees if our existing test fail. Each change is called a `mutant`.
+- If the test fails, we say `mutant` is `killed`. This is good.
+- If the test still passes, we say `mutant` `survived`. This is bad.
+- Our aim is to reduce `survived` mutants.
+
+This will ensure our code is bug free and our test is high quality.
+
+## Setting PIT Mutation Testing for Java
+
+To setup mutation testing for your Maven Multimodule project, this is how you can do it.
+
+**Step 1**: Add the following to the `pom.xml` of the your module.
+
+```xml
+<plugins>
+ <plugin>
+  <groupId>org.pitest</groupId>
+  <artifactId> pitest-maven</artifantId>
+  <version>{check version info below}</version>
+  <dependencies>
+   <dependency>
+   <groupId>org.pitest</groupId>
+   <artifactId> pitest-junit5-plugin</artifantId>
+   <version>{check version info below}</version>
+  </dependency>
+  <dependencies>
+
+  <configuration>
+   <targetClasses>
+    <param>com.your.package.path.*<param>
+   </targetClasses>
+   <targetTests>
+    <param>com.your.test.package.path.*<param>
+   </targetTests>
+   <excludeTestClasses>
+ <param>com.your.test.package.path.*Integration*<param>
+       </excludeTestClasses>
+  </configuration>
+ <plugin>
+
+</plugins>
+```
+
+For version numbers checkout the following links:
+
+- [pitest-maven on mvn repository](https://mvnrepository.com/artifact/org.pitest/pitest-maven)
+- [pitest-junit5-plugin on mvn repository](https://mvnrepository.com/artifact/org.pitest/pitest-junit5-plugin)
+
+**Step 2**: Skip all integration tests
+
+Ensure that you don't run Integration Tests. The `excludeTestClasses` will help you filter them out.
+
+I name add `Integration` to my Integration tests name so that it can be skipped with `*Integration*` pattern
+
+**Step 3**: Ensure all your tests pass.
+
+pitest won't run unless your test passes.
+
+**Step 4**: Run `mvn install -DskipTests`
+
+This will create bytecode files that `pitest` will read.  `-DskipTests` just skips running all the tests again.
+
+**Step 5**: Run `mvn org.pitest:pitest-maven:mutationCoverage`
+
+If you want to run in a specific module, then you can add the module name in the end
+
+`mvn org.pitest:pitest-maven:mutationCoverage -pl {module-name}`
+
+**Step 6**: Find the report in `/target/pit-reports/index.html`
+
+**Step 7**: Open the `index.html` file in the browser.
