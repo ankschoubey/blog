@@ -74,6 +74,8 @@ export const redirects = {
   '/develop-your-own-opinions-and-reasonings': OWN_OPINION,
   '/definitions': '/life-blog/definition',
   '/deciding-to-learn-a-programming-topic': DECIDING_TO_LEARN_PROGRAMMING_TOPIC,
+  '/deciding-learning-programming-topic': DECIDING_TO_LEARN_PROGRAMMING_TOPIC,
+  '/blog/deciding-to-learn-a-programming-topic': DECIDING_TO_LEARN_PROGRAMMING_TOPIC,
   '/blog/writing-meaningful-log-messages': MEANINGFUL_LOG_MESSAGES,
   '/blog/learning-strategies-for-development': LEARNING_STRATEGIES_FOR_DEVELOPMENT,
   '/blog/develop-your-own-opinions-and-reasonings': OWN_OPINION,
