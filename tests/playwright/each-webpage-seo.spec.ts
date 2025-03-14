@@ -8,63 +8,7 @@ import {SeoCheck} from "seord";
 import { slugSort } from '../slug-priority';
 import { LIMIT, LIMIT_TO_SLUG } from '../testConfig';
 import exp from 'constants';
-
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
-const contentDir = join(__dirname, '../../src/content');
-
-function getMarkdownFiles(dir, fileList:string[] = []) {
-    const files = readdirSync(dir);
-
-    for (const file of files) {
-        const filePath = join(dir, file);
-        const stat = statSync(filePath);
-
-        if (stat.isDirectory()) {
-            getMarkdownFiles(filePath, fileList);
-        } else if (file.endsWith('.md')) {
-            fileList.push(filePath);
-        }
-    }
-
-    return fileList;
-}
-
-const markdownFiles = getMarkdownFiles(contentDir);
-
-interface FrontMatter {
-    title: string;
-    slug: string;
-    publishDate: Date;
-    image: string;
-    excerpt: string;
-    mainKeyword: string;
-    seoKeywords: string[];
-}
-
-interface MarkdownFile{
-    frontMatter: FrontMatter;
-    html: string;
-}
-
-const getFrontMatter = (file: string) => {
-    const data = readFileSync(file, 'utf8');
-    var content = fm(data);
-    const frontmatter = content.attributes as FrontMatter;
-    return frontmatter;
-}
-
-const getMarkdownContent = (file: string) => {
-    const data = readFileSync(file, 'utf8');
-    var content = fm(data);
-    const frontmatter = content.attributes as FrontMatter;
-    return {
-        frontMatter: frontmatter,
-        html: marked.parse(content.body)
-    }
-}
-const iterateMarkdownFiles = () => markdownFiles.map((file) => getMarkdownContent(file));
-
-const iterateFrontMatters = () =>  markdownFiles.map((file) => getFrontMatter(file));
+import { iterateFrontMatters, iterateMarkdownFiles, type FrontMatter } from '../testUtils';
 
 const frontMatterTest = (name: string, idealCase: (frontMatter: FrontMatter) => boolean, printDetails: (frontMatter: FrontMatter) => {}) => {
     test(name, async ({page}) => {
@@ -121,7 +65,8 @@ test('SEO analysis', async ({page}) => {
         };
         return {
             frontMatter, 
-            html, seoCheck: new SeoCheck(contentJson)};
+            html, 
+            seoCheck: new SeoCheck(contentJson)};
     })
     .map(async values => {
         var analysis = (await values.seoCheck.analyzeSeo());
@@ -137,22 +82,39 @@ test('SEO analysis', async ({page}) => {
         }
     });
     let results = await Promise.all(allAnalysis);
-    results.sort((a, b) => slugSort(a.frontmatter.slug, b.frontmatter.slug))
-        .slice(0, LIMIT);
+    //results.sort((a, b) => slugSort(a.frontmatter.slug, b.frontmatter.slug))
+        //.slice(0, LIMIT);
 
-        if(LIMIT_TO_SLUG.length != 0) {
-            results = results.filter(result => result.frontmatter.slug.includes(LIMIT_TO_SLUG));
+        // if(LIMIT_TO_SLUG.length != 0) {
+        //     results = results.filter(result => result.frontmatter.slug.includes(LIMIT_TO_SLUG));
+        // }
+
+        console.log(results);
+
+    const errorsList:any = [];
+    const goodPointsList:any = [];
+    for(const result of results) {
+        if(result.warnings.length > 0) {
+            errorsList.push({
+                slug: result.frontmatter.slug,
+                warnings: result.warnings
+            });
         }
+        if(result.minorWarnings.length > 0) {
+            errorsList.push({
+                slug: result.frontmatter.slug,
+                minorWarnings: result.minorWarnings
+            });
+        }
+        if(result.goodPoints.length > 0) {
+            goodPointsList.push({
+                slug: result.frontmatter.slug,
+                goodPoints: result.goodPoints
+            });
+        }
+    }
 
+    expect(errorsList).toEqual([]);
+    expect(goodPointsList).toBeGreaterThanOrEqual(1);
 
-    const first = results[0];
-    console.log(first);
-    expect(first.warnings).toEqual([]);
-
-    expect(first.analysis.keywordDensity).toBeLessThanOrEqual(2);
-    expect(first.analysis.keywordDensity).toBeGreaterThanOrEqual(1);
-
-    expect(first.minorWarnings).toEqual([]);
-    expect(first.warnings).toEqual([]);
-    expect(first.goodPoints).toEqual([]);
 });

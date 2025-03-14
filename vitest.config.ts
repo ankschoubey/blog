@@ -7,5 +7,13 @@ export default getViteConfig({
 		// globals: true,
         // skip /tests/playwright folder
         // files: '/tests/**/*.spec.{ts,tsx}',
+		globals: true,
+		exclude: [
+			'./tests/playwright/**/*',
+		],
+		include: [
+			'./tests/*.spec.{ts,tsx}',
+		],
+		watch: true,
 	},
 });
