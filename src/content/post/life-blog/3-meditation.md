@@ -17,7 +17,7 @@ image: /images/life-blog/meditation.jpg
 
 [Photo by cottonbro studio](https://www.pexels.com/photo/man-in-red-robe-sitting-on-tree-branch-5386374/)
 
-# What is meditation
+## What is meditation
 
 Meditation is a activity which is weird for many. It can seem stupid or woo woo.
 
@@ -29,7 +29,7 @@ You can be mindful and disciplined at the same time.
 
 The best time to meditate is when you feel discomfort. Detach become mindful of your thoughts and the you'll realize the thought cycle is stupid and will go on forever with one thing after another.
 
-# Being regular
+## Being regular
 
 If you don’t have 10 minute to meditate 🧘🏽‍♂️, you should meditate for an hour.
 
@@ -41,7 +41,7 @@ Meditating at the same time and place is useful.
 
 Have formal sitting practice in the morning before you do any major task.
 
-# How
+## How
 
 There is no one perfect meditation. Different forms/formats of meditation will make you better at every form of meditation.
 
@@ -51,7 +51,7 @@ Meditation can be practiced anywhere and at any time. While eating, brushing, ta
 
 When you meditate with open eyes 👀, it’s okay to look here and there. Recognize the intention to look. Where is the intention coming from.
 
-# Goal and Progress
+## Goal and Progress
 
 Your goal while meditating is not be become a meditator. Your goals is to investigate your mind truthfully.
 

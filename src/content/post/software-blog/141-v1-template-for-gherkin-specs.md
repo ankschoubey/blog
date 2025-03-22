@@ -44,6 +44,6 @@ Feature: A new feature
      Then {future tense}
 ```
 
-# More Resources to check out to update this article:
+## More Resources to check out to update this article:
 
 [A practical guide to writing technical specs - Stack Overflow Blog](https://stackoverflow.blog/2020/04/06/a-practical-guide-to-writing-technical-specs/)

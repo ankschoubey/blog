@@ -49,7 +49,7 @@ For Example: In YouTube you can,
 
 I found that Google services are good at providing these kind of features and changing these settings have an immediate effect. Facebook Products and Amazon hide a lot of details.
 
-# Resources
+## Resources
 
 - [Remove the explore page from Instagram on iOS : ios](https://www.reddit.com/r/ios/comments/t780bt/remove_the_explore_page_from_instagram_on_ios/)
 - [Block Site - Stay Focused - Chrome Web Store](https://chrome.google.com/webstore/detail/block-site-stay-focused/offfjidagceabmodhpcngpemnnlojnhn)

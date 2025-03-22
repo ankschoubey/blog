@@ -19,7 +19,7 @@ Therefore it's very important to have an effective productive meeting.
 
 There are some ways to have effective meetings:
 
-# **Set the context**
+## **Set the context**
 
 Most meetings aren't as effective because the people involved don't have the context behind what is being discussed.
 
@@ -34,7 +34,7 @@ This can be solved in a few ways:
     - Why we are doing what we are doing?
     - What do we intend to get out of this meeting?
 
-# **Be prepared early by maintaining notes**
+## **Be prepared early by maintaining notes**
 
 Be prepared for the meeting yourself. You could create a google sheet (sheets.new) for each important recurring meeting.
 
@@ -44,13 +44,13 @@ Retrospective meeting happens at the end of every sprint or every release. Since
 
 So, instead have a google sheet with your Retrospective format and fill in info there. So that you'll have a set of useful points to add to the retrospective.
 
-# **Encourage Discussion**
+## **Encourage Discussion**
 
 - **Round Robin Asking/Sharing Inputs**
   - Many people are shy and don't speak up. To get everyone involved discuss concepts/questions in a round-robin fashion.
   - You could even ask specific people who may be too silent "What do you think about this?"
 
-# **Keep it short/exact**
+## **Keep it short/exact**
 
 - **Set time on the calendar**
   - It's unproductive to wonder when the meeting is.
@@ -60,7 +60,7 @@ So, instead have a google sheet with your Retrospective format and fill in info 
   - The longer the meeting drags on, the more everyone will feel bored and start losing attention.
   - If the meeting is dragging out longer, take a break. 10 minutes should be good enough.
 
-# **Set the Next Actions**
+## **Set the Next Actions**
 
 Towards the end of the meeting:
 

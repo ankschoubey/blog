@@ -16,7 +16,7 @@ A streaming microservice works on streams of data rather than waiting for entire
 
 This means by definition streaming is much high performance and therefore a good aim to have.
 
-# Example of Streaming and Non-Streaming Reactive Implementation
+## Example of Streaming and Non-Streaming Reactive Implementation
 
 Suppose you have an application that shows a list of movies to users. The application comprises a frontend user view and a backend that talks to a database.
 
@@ -81,7 +81,7 @@ HTML:
 <li *ngFor="let movie of movies | async; index as i">\{\{ movie.name }}</li>
 ```
 
-# When is streaming not-efficient
+## When is streaming not-efficient
 
 There are some cases where streaming isn't effective or can be used like:
 

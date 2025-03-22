@@ -15,7 +15,7 @@ Knowledge is power. The more data points you have, the more informed decisions y
 
 For anything major, collaborate with your doctor.
 
-# #preventationIsBetterThanCure
+## #preventationIsBetterThanCure
 
 Health problems may seem small at first. But they get big swift.
 
@@ -34,7 +34,7 @@ Try to manage it yourself.
 
 Get started with home remedies right away. Why wait and suffer?
 
-# Collect Data
+## Collect Data
 
 In all of life, collecting data is the most important thing.
 
@@ -62,7 +62,7 @@ You can collect data as:
   - Sleep
   - Things specific to your problem
 
-# Take your meds
+## Take your meds
 
 Get into a system to take your meds? Alarms on phones are good.
 
@@ -78,7 +78,7 @@ Some meds have side effects.
 
 Make sure the basics (sleep, food[high protein like chicken], water, exercise) are in place if not already. These will help you speed up your recovery.
 
-# Tests
+## Tests
 
 Tests can verify many diseases.
 

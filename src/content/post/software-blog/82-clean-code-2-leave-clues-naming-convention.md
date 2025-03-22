@@ -67,7 +67,7 @@ For matrix operations use row columns instead of y and x because in some languag
 
 Source: [Gayle Laakmann McDowell (Cracking the Coding Interview Book)](http://www.crackingthecodinginterview.com/)
 
-# Abbreviations and short forms
+## Abbreviations and short forms
 
 Many people try to optimize for the vertical space of the screen but forget horizontal space.
 

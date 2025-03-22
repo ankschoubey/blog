@@ -10,7 +10,7 @@ slug: /v2/stress
 title: Stress is the root cause of all health problem. Fix it.
 ---
 
-# Identifying stress?
+## Identifying stress?
 
 Stress can have serious effects on health.
 
@@ -27,7 +27,7 @@ But if you are cronically stressed, this can have a huge effect on you.
 
 If you are depressed, imagine what a depression person looks like and what he does. Then do everything opposite.
 
-# What to do when you are stressed?
+## What to do when you are stressed?
 
 Take a step back and go for a walk
 

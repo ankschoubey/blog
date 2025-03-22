@@ -10,7 +10,7 @@ slug: /v1/morning-night-ritual
 title: Designing and implementing a Morning and Night Rituals for optimal life
 ---
 
-# Designing a Morning and Night Ritual for optimal life
+## Designing a Morning and Night Ritual for optimal life
 
 ## Why morning and night rituals are essential? Why they aren’t replaceable by mid-day activity?
 

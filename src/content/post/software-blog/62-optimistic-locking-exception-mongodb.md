@@ -16,7 +16,7 @@ title: Solving a OptimisticLockingException During Upsert in MongoDB-Spring Webf
 
 I faced a unique problem and it is worth writing about. The cause was parallel access and saving of a single document that caused `OptimisticLockingException`.
 
-# **Problem**
+## **Problem**
 
 I had a `@Document` which had to be manupilated.
 
@@ -72,7 +72,7 @@ In a concurrent environment like webflux when multiple thread are reading from t
 
 This would specially be true where there are lots of upsert/update queries.
 
-# **Solution**
+## **Solution**
 
 To fix this I switched to manually writing an update query and executing with `MongoOperation`.
 
@@ -86,7 +86,7 @@ Instead of 2 different DB actions. It became one DB Action.
 
 The update query does not need to bring data back to Webflux server to manipulate the document. The document is manipulated at Database only. The database is therefore responsible for ordering the updates which was fine in my case.
 
-# **Extra**: Finding root cause and fixing with TDD
+## **Extra**: Finding root cause and fixing with TDD
 
 I'm gonna try to provide examples of TDD wherever possible.
 

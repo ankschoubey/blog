@@ -13,11 +13,11 @@ title: Towards Data Driven Decisions
 toc: false
 ---
 
-# What are Data Driven Decisions?
+## What are Data Driven Decisions?
 
 Data-Driven decisions are the ability to formulate and make decisions out of the data from the real world.
 
-# Why am I interested in Data Driven Decisions?
+## Why am I interested in Data Driven Decisions?
 
 For 2 years in my college, I was very driven to become a data scientist. During that time, I worked a lot with data. Not just looking at data but understanding it. So I have an intuitive sense of it.
 
@@ -31,7 +31,7 @@ I am also interested in Data-Driven Decisions for deciding what feature to work 
 
 An interest of mine is Observability in distributed systems.
 
-# What are some preliminary observations I have about data-driven decisions?
+## What are some preliminary observations I have about data-driven decisions?
 
 Data-driven decisions can be totally quantity or qualitative.
 

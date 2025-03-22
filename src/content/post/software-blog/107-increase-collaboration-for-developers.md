@@ -10,13 +10,13 @@ slug: /software-blog/increase-collaboration-for-developers/
 title: Increase collaboration for Developers
 ---
 
-# Give everyone access to every other repo
+## Give everyone access to every other repo
 
 Allow them to fork and update code and return with a merge request.
 
 Allowing access also helps share snippet of code. Like how to test A would be available in one repo and can be shared.
 
-# Embrace every level of DevOps
+## Embrace every level of DevOps
 
 That's easy. Each DevOps stage breaks some silo down.
 
@@ -27,14 +27,14 @@ That's easy. Each DevOps stage breaks some silo down.
 - DevDevDevDevOpsOpsOpsOps
 - AgileOps
 
-# Embrace a cycle of continuous code review
+## Embrace a cycle of continuous code review
 
 Have a continuous humanised code review cycle
 
 - Code review should be a continuous cycle
 - Code review should be humanised
 
-# If you see an error. Report it to the right person/place/raise ticket right away
+## If you see an error. Report it to the right person/place/raise ticket right away
 
 Who ever you want to increase collaboration with should be on speed-dial or pinned.
 

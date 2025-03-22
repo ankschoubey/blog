@@ -13,7 +13,7 @@ title: Strategies to be Calmer
 toc: false
 ---
 
-# Learn to be calmer and neutral
+## Learn to be calmer and neutral
 
 As soon as you catch yourself getting overly emotional. Go neutral.
 
@@ -28,7 +28,7 @@ Think about what made you particularly high or low:
 
 Go neutral in thise situations.
 
-# Choose your battles wisely
+## Choose your battles wisely
 
 Recognize what you are giving a fuck about. Is it really worth giving a fuck about?
 
@@ -36,7 +36,7 @@ Is it a good value? is it something external?
 
 Does it even align with your values?
 
-# Slow down
+## Slow down
 
 You aren't running a race. Take things slow and steady.
 
@@ -48,15 +48,15 @@ Don't rush from one thing to the next to the next. Take pauses.
 
 Habit of rushing is a dirty high.
 
-# Learning to let things wait
+## Learning to let things wait
 
 You don't have to answer notification right there.
 
-# Reflect
+## Reflect
 
 Reflect on moments you got worked up or where someone else got worked up. Was it worth the fight.
 
-# Calm down
+## Calm down
 
 If you don't know what to say. Calm down. Maybe take a break. And then tell the truth truthfully and in a good way.
 
@@ -64,7 +64,7 @@ Become neutral. Aim to be non-reactive to threats on any kind be it people, even
 
 Calm down and thing.
 
-# Explore and eliminate insecurities
+## Explore and eliminate insecurities
 
 Insecurity is chasing the impossible.
 
@@ -86,17 +86,17 @@ Asking logical questions is a good way to eliminate insecurities.
 
 **Example 2** Rejected: You got rejected. Now you feel you suck. You lack something that everyone has. Why? Because it seems that everyone is doing something, getting married, talking to someone, traveling, etc. And here you are alone and lonely. How many people do you know who are normal and single? What was the reason you were rejected? How common is rejection? Did Mark Manson or someone you look up to get rejected? Aren't use in a community of normal, very normal people that got rejected? Can you be rejected for the wrong reasons? If Mark Manson or someone else got rejected, how much do they suck? Isn't rejection a normal part of life?
 
-# Panic Mode
+## Panic Mode
 
 - Aim to calm down and go neutral
 - Recognize your blessings
 - Breathe.
 
-# Meditate
+## Meditate
 
 Meditate regularly. 3 times a week minimum.
 
-# Break things down with logic
+## Break things down with logic
 
 1. Is it really that bad?
 

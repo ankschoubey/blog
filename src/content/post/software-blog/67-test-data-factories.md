@@ -13,7 +13,7 @@ title: Writing cleaner tests with Test Data Factories
 image: /images/test-data-factories.png
 ---
 
-# **Problem**
+## **Problem**
 
 A typical information-system application goes like this:
 
@@ -72,7 +72,7 @@ void should{second Assertions}(){
 
 Here if you have to modify of add a new field, you'll have a hard time.
 
-# **Solution**: Simple Test Data Factory
+## **Solution**: Simple Test Data Factory
 
 Instead, you can create a Test Data Factory. Something like
 
@@ -122,7 +122,7 @@ Note that both Tests use a different simple factory method. One doesn't care wha
 
 Most of my test factories would initialize data randomly unless explicit value is needed which is very rare.
 
-# **Extending Further**
+## **Extending Further**
 
 Intially, I started with the just creating test data but then I realized I could club more common things in the Test Factory.
 

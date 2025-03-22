@@ -15,7 +15,7 @@ image: https://upload.wikimedia.org/wikipedia/commons/3/39/LogoChaosMonkeysNetfl
 
 ![](https://upload.wikimedia.org/wikipedia/commons/3/39/LogoChaosMonkeysNetflix.png)
 
-# What is Chaos Engineering?
+## What is Chaos Engineering?
 
 When we do TDD, we reduce logical bugs. With Chaos Engineering, we'll improve resilience.
 
@@ -30,7 +30,7 @@ There are some Kube-specific services too.
 
 Chaos Engineering for Spring Boot includes three assaults (latency, exception, kill app) that directly attack @service @controller @repository.
 
-# How would this help?
+## How would this help?
 
 - It will make sure we are handling more failures #gracefully.
 
@@ -38,7 +38,7 @@ Chaos Engineering for Spring Boot includes three assaults (latency, exception, k
 
 - Many times, when an error happens, the user doesn't get an indication that something went wrong.
 
-# Handling chaos
+## Handling chaos
 
 There are usually common patterns to handle many assaults like CircuitBreaker, which many java libraries provide. Thus, it would require some thought to handle failures on UI too.
 
@@ -56,7 +56,7 @@ Chaos Engineering helps us understand and improve observability.
 
 - Having a library that automates some aspects of Chaos Engineering can proactively improve resiliency (and reduce the cognitive overload of having everyone learn and follow chaos engineering)
 
-# Resources
+## Resources
 
 - [Chaos Engineering for Spring Boot](https://codecentric.github.io/chaos-monkey-spring-boot/)
 - [Gremlin](https://www.gremlin.com/)

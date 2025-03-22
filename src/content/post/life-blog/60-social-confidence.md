@@ -14,14 +14,14 @@ toc: false
 
 The reason to have social confidence is this: If you don't, no one takes you or your arguments seriously.
 
-# What is social confidence?
+## What is social confidence?
 
 There are two types of confidence:
 
 - epistemic confidence: being confident about being right
 - social confidence: being confident your role and expressions in social situations
 
-# Why epistemic confidence is the wrong value to aim for?
+## Why epistemic confidence is the wrong value to aim for?
 
 There are a few reasons:
 
@@ -32,7 +32,7 @@ There are a few reasons:
 5. Epistemic Confidence comes out as arrogance. And in many cases it really in arrogance.
 6. Arrogance is "I am better than you" [^1]. Arrogance is routed in insecurity.
 
-# Why social confidence is a better value to aim for?
+## Why social confidence is a better value to aim for?
 
 1. Humans are social animals. We are mean't to talk and spend time with people. We aren't lone creatures. Being lone makes is sad. Being with people makes us happier.
 2. We make better decisions with multiple perspectives. Of course those decisions need to be rooted in values. But these multiple perspectives are like multiple lives lived. Having just your own perspective means you have higher chance of failure.
@@ -41,7 +41,7 @@ There are a few reasons:
 5. Social confidence comes out as true confidence. And in most cases, it really is true confidence.
 6. Confidence is "I am proud of myself" [^1]. Confidence comes from experience and understanding.
 
-# Parts to Social Confidence
+## Parts to Social Confidence
 
 1. Slowing down and ability to be calm
 2. Being comfortable in social situations. aka you are able to be yourself.

@@ -14,7 +14,7 @@ title: The Gist of Behavior Driven Development - BDD
 image: /images/software-blog/gist-of-bdd.svg
 ---
 
-# Starting with a User's Problem
+## Starting with a User's Problem
 
 Like any product development, the primary task is to solve a user’s problem. So you should start with the user's problem and discuss how it could be solved.
 
@@ -26,7 +26,7 @@ Once the problem is defined well and some solutions are agreed upon, one may sta
 
 Once the solution is finalized, you can start defining specifications.
 
-# The document that keeps everyone in sync
+## The document that keeps everyone in sync
 
 The specification is a document that describes what features are to be built exactly.
 
@@ -46,7 +46,7 @@ Without a specification file, everyone is confused. No one person can know every
 
 Since the spec file keeps so many people in sync, details for those specific teams should also be mentioned.
 
-# Creation of Specifications
+## Creation of Specifications
 
 The creation of specifications is a collaborative process, involving different teams. Especially Product, Development, and QA, also known as the three amigos.
 
@@ -58,13 +58,13 @@ A product person would likely write in simple business terms that are understand
 
 Next, the 3 Amigos can be followed to gain better clarification and add more information.
 
-# Too many directions
+## Too many directions
 
 A problem someone writing the spec file can face is too many branches. The team collaborates and discovers 10 different potential paths. There is no need to travel all the paths.
 
 Though the business and solution would have been validated, real validation happens when the user starts using the product. Therefore we should limit the number of features, and for that, it’s wise not to even write details of features we think are possible or good to have. #focus
 
-# Executable Specs
+## Executable Specs
 
 The modern way of maintaining spec files is by using feature files like Gherkin.
 
@@ -98,7 +98,7 @@ graph LR
 
 ```
 
-# Specifications by Example
+## Specifications by Example
 
 This also leads us to the point of how to write better specifications. The standard practice is this, described by examples. An example is how a user would interact with the system we have built. Examples solve the ambiguity. The keyword scenario is an example.
 
@@ -122,13 +122,13 @@ We can write as an example:
 
 Therefore in the above case, two examples/scenarios were generated, success and failure.
 
-# Behavior-Driven Development
+## Behavior-Driven Development
 
 Many other tips can make scenarios cleaner and more specific. The cleaner and more specific the scenarios are, the easier it will be for everyone to collaborate and build better products.
 
 This whole journey encompasses BDD. BDD isn’t as specific as Test-Driven Development. The scope of BDD is much much larger and encompasses the whole product lifecycle from defining problems and validating to development and everything in between.
 
-# More Resources:
+## More Resources:
 
 [Questions and Answers Regarding BDD](https://specflow.org/learn/given-when-then-with-style/)
 

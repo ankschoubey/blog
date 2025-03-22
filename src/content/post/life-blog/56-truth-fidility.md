@@ -17,7 +17,7 @@ toc: false
 
 <sup>Photo by Paul Skorupskas on Unsplash</sup>
 
-# Naivity
+## Naivity
 
 There are many things we take for granted
 
@@ -27,7 +27,7 @@ There are many things we take for granted
 
 We believe all these things are very simple and easy. Many of them truly are simple because they have been abstracted.
 
-# What happens when you learn about a topic
+## What happens when you learn about a topic
 
 But once you know about a topic in detail and try to study it in detail you realize that there are a lot of intricacies and nuances.
 
@@ -39,7 +39,7 @@ In some sense, you could say the truth keeps getting truer.
 
 This has been my recent experience with many things: testing, philosophy, and rationality.
 
-# It makes it hard to go back to a simpler version
+## It makes it hard to go back to a simpler version
 
 My experience has been it's very hard to switch to a normal model.
 
@@ -48,7 +48,7 @@ My experience has been it's very hard to switch to a normal model.
 - Things I learned about philosophy seem to make me weirder.
 - Things I learned about testing: well makes me want to test everything and despise code that hasn't been written with TDD.
 
-# Is it worth the cost?
+## Is it worth the cost?
 
 I'm not sure yet if all this is worth the cost.
 

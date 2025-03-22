@@ -21,7 +21,7 @@ I’ll explain OAuth in layman’s terms in the beginning and then go on to expl
 
 OAuth is easier to implement than developers think. There are a lot of jargons involved. But you'll find at its core it's very easy and cost-effective.
 
-# What is OAuth? And where it is used?
+## What is OAuth? And where it is used?
 
 OAuth is a protocol for allowing access to a user’s data to a third party app.
 
@@ -33,7 +33,7 @@ You may have seen screen pages like these where you allow one application to acc
 
 The above image is from redirecting to "authorize“ url.
 
-# How is OAuth different from Login? And how does it work
+## How is OAuth different from Login? And how does it work
 
 A normal login just requires username and password.
 
@@ -53,7 +53,7 @@ The `Authorization Token` would include information that we have the permission 
 
 Note: From here on things would get technical
 
-# How I implemented the OAuth Server myself
+## How I implemented the OAuth Server myself
 
 I’ll split the next parts into:
 
@@ -139,7 +139,7 @@ I also added a record for scopes. Which was something like
 
 Here’s my post on how I choose to define scopes: [Defining Scopes for your OAuth Service](/v1/oauth-scopes)
 
-# Nuances
+## Nuances
 
 ## OAuth works protocol is snake cased
 
@@ -161,13 +161,13 @@ For example, the `token` endpoint would always be in the following format.
 
 We can’t extend the format by adding our own stuff. But mandatory things would be preserved as it is. For that I had to read up the main OAuth specs a few times.
 
-# My thoughts
+## My thoughts
 
 After implementing OAuth server myself, I feel confident about other protocols. Protocols may seem too technical but at their core they are really easy.
 
 Implementing OAuth helped me understand and get better at computer security. And also, helped me step into a much better principle developer role.
 
-# Resources
+## Resources
 
 Jump around these
 

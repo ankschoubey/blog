@@ -84,6 +84,6 @@ This is an example of chunking which will be explained more in the next post.
 
 **Index**: [Tips on writing Clean Code](/software%20development/clean%20code/2019/12/19/series-tips-on-writing-clean-code.html)
 
-# Resource:
+## Resource:
 
 - [Replace Nested Conditional with Guard Clauses](https://software-blog/refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html)

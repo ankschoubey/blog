@@ -14,7 +14,7 @@ image: /images/mba.jpg
 hide: true
 ---
 
-# Marketing
+## Marketing
 
 Marketing is about finding the right prospespects, keeping their attention and make them interested in what you have to offer. Every business needs to do it because no matter how good your product is, you won't have profit until your customers can find you.
 

@@ -14,11 +14,11 @@ title: Thinking and writing cleaner tests with method/when/should blocks
 image: /images/method-when-should.png
 ---
 
-# Problem Description
+## Problem Description
 
 Often tests code style is ignored. Having different test writing styles makes it harder to write quality tests. Tests quality is as important as code. This post explores a effective template I developed to help write cleaner tests and keep them uniform.
 
-# method/when/should blocks
+## method/when/should blocks
 
 there are 3 main blocks. each block in nested within parent block.
 
@@ -37,7 +37,7 @@ there are 3 main blocks. each block in nested within parent block.
 
 You may have noticed **WHEN**, **SHOULD** and **AND** are capitalized. This is by design. This helps highlight logic.
 
-# Examples
+## Examples
 
 1 - **We are creating a method which inserts new value if id does not exists in database else updates existing value.class**
 
@@ -55,7 +55,7 @@ You may have noticed **WHEN**, **SHOULD** and **AND** are capitalized. This is b
   - **WHEN** data exists
     - **SHOULD** display list of item names
 
-# Benefits
+## Benefits
 
 method/when/should block is perfect companion for TDD, is language agnostic and can be easily used with templating features like IntelliJ's live template.
 
@@ -65,7 +65,7 @@ Blocks group tests together, making them easier to find.
 
 Also, when tests run in IDE like IntelliJ, the output is much cleaner. The example section above is a good representation of this.
 
-# Template for JUnit
+## Template for JUnit
 
 ```java
 class {NameOfClass}Tests{
@@ -99,7 +99,7 @@ Given, When and Then are mini-blocks. The code will be written after an tab inte
 
 <!-- <script src="https://gist.github.com/ankschoubey/ea3cb41308c19f56c69eb40d7e05cec1.js"></script> -->
 
-# More extentions
+## More extentions
 
 **AND block**: Describes more conditions for **WHEN** block.
 

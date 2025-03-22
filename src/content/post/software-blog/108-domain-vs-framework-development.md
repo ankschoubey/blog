@@ -20,7 +20,7 @@ image: /images/software-blog/domain-vs-framework-development.jpg
 
 I wrote an article called [The Baton Road](/baton). Baton is my way of conceptualizing human progress and how to have a significant impact.
 
-# What is Application Development?
+## What is Application Development?
 
 You can be an application developer, which means you'll solve problems related to a particular domain.
 
@@ -42,7 +42,7 @@ Domain Developers need to be [product-minded](https://blog.pragmaticengineer.com
 
 Also, they should be able to know the [nuances](https://github.com/kdeldycke/awesome-falsehood) of the domain.
 
-# What is Framework Development?
+## What is Framework Development?
 
 These are developers that make the tools used by domain developers. These can be - IDE, Libraries, Frameworks, Microservice Chassis, DevOps and platform development.
 
@@ -50,7 +50,7 @@ At a high level, this can be something like Spring Boot framework, Kubernetes pl
 
 At a company level, there is always a standard code and microservice chassis that can be abstracted away to make everyone else's code lighter.
 
-# Why Framework Development Is Biggest Software Development Baton?
+## Why Framework Development Is Biggest Software Development Baton?
 
 Framework developers abstract away things so that domain/application developers have less to learn.
 
@@ -66,7 +66,7 @@ Domain problems lead to the need for new algorithms, which eventually becomes pa
 
 Frameworks like Spring Boot, Platforms like Kubernetes and Cloud Provides like AWS have had a much higher impact than any individual.
 
-# Resources
+## Resources
 
 - [Open Source Software (OSS) - Ankush Choubey](/software-blog/open-source/)
 - [Baton Road - Ankush Choubey](/baton/)

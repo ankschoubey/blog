@@ -36,7 +36,7 @@ partner will show you more efficient ways of doing things including how to use i
 
 It may happen that pairing up isn't ideal and one has to review code later, in that case github/gitlab do provide option to comment on a piece of code. The programmer may submit the code to reviewer for review.
 
-# Template
+## Template
 
 I have been templatizing common communication phrases to use them like a checklist to communicate effectively.
 

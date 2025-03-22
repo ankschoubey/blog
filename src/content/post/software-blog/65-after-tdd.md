@@ -17,13 +17,13 @@ Essentially all tests fix the input and check the output or internal state of th
 
 There are some other things that are worth paying attention to:
 
-# Boundary Values and Equivalence Partitioning
+## Boundary Values and Equivalence Partitioning
 
 Decide what input data are valid and which ones are not. How would the code react to invalid input? Specially if data is coming from an external system.
 
 For example: If something depends on a Integer or long, can that be negative?
 
-# Concurrent Transactions
+## Concurrent Transactions
 
 What would happen if 100/500/1000 requests come concurrently?
 
@@ -31,7 +31,7 @@ It's better to think in terms on logarithmic scale here.
 
 I faced this problem [when a record had to be updated concurrenly](/software-blog/optimistic-locking-exception-mongodb).
 
-# Mutation Testing
+## Mutation Testing
 
 <sub>What is mutation testing?</sub>
 
@@ -49,7 +49,7 @@ Mutation testing usually takes more time to execute than usual.
 
 https://software-blog/testing.googleblog.com/2021/04/software-blog/mutation-testing.html
 
-# Chaos Engineering
+## Chaos Engineering
 
 <sub>What is Chaos Engineering?</sub>
 

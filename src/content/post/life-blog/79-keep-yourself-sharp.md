@@ -16,7 +16,7 @@ image: /images/life-blog/keep-yourself-sharp.jpg
 
 Photo by <a href="https://unsplash.com/@huntersrace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hunters Race</a> on <a href="https://unsplash.com/s/photos/suit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-# The need to keep ourselves polished
+## The need to keep ourselves polished
 
 It is always now! However, your past must have been; however, the future must be. The reality of your life is always now.
 
@@ -30,7 +30,7 @@ And then, slowly, we are at square one again. The reason we got successful is no
 
 Therefore, we must always keep ourselves sharp.
 
-# How to keep ourselves polished?
+## How to keep ourselves polished?
 
 How? I don't know. But here are some thoughts.
 

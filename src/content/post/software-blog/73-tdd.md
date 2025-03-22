@@ -53,7 +53,7 @@ TDD leads to extremely fast feedback.
 
 I have written a [detailed blogpost on how I do TDD](/current-tdd-approach).
 
-# Making TDD easier
+## Making TDD easier
 
 ## Usually TDD can be cumbersome because:
 
@@ -92,7 +92,7 @@ Search for libraries that make easier to test
 
 Yeah. It takes times to learn. TDD/any development practice is easier when whole company is aiming at it or enforcing it.
 
-# More tips
+## More tips
 
 ## 1. Don't start the application. Verify everything by writing tests.
 
@@ -104,6 +104,6 @@ Starting the application and testing is usually a longer process than writing a 
 
 [^1]: [Anadi Misra](https://www.linkedin.com/in/ACoAAAGmNOsBErk1_7cbjUHllOPVUE5M-NvcOKc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bd5ZjyftfQoKiUju1OpMyEA%3D%3D)
 
-# More Resources:
+## More Resources:
 
 [The Practical Testing Book](https://damorimrg.github.io/practical_testing_book/intro.html)

@@ -18,7 +18,7 @@ image: /images/software-blog/team-knowing-whom-to-contact.jpg
 
 Photo by <a href="https://unsplash.com/@jasongoodman_youxventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Goodman</a> on <a href="https://unsplash.com/s/photos/team?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-# Silos
+## Silos
 
 We developers love working in silos. We love our technical challenges.
 
@@ -30,7 +30,7 @@ Similarly, there are moments when one needs to collaborate with other teams, and
 
 The higher the quality of collaboration, the less rework a developer has to do.
 
-# Knowing who to contact
+## Knowing who to contact
 
 On this path, the important thing is to remember whom to connect to and when. Knowing organizational structure is helpful. If there is no organizational structure available. Create one.
 
@@ -48,7 +48,7 @@ And, of course, you can use Gherkin BDD files to ensure everyone is in sync.
 
 So here are a few teams and stakeholders that are common and imp:
 
-# Teams
+## Teams
 
 Development Team:
 
@@ -94,7 +94,7 @@ Data science team:
 - Builts applications that help show insight with the help of data.
 - Their work isn't always real-time insights.
 
-# Key Stakeholders
+## Key Stakeholders
 
 - Developers
 - Testers

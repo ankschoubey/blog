@@ -14,7 +14,7 @@ image: /images/good-intentions-good-action.jpg
 
 ![](/images/good-intentions-good-action.jpg)
 
-# Why sometimes having good intentions is not enough?
+## Why sometimes having good intentions is not enough?
 
 You can be a good person. But that's always debatable. But to cut it short, you probably have good intentions and usually make good decisions.
 
@@ -28,7 +28,7 @@ Identifying this disconnect between good intentions and good action is very hard
 
 Therefore you must always be searching and moving towards good action.
 
-# Why you don't know the right action yet? And what should you do about it?
+## Why you don't know the right action yet? And what should you do about it?
 
 You can't be paralyzed by perfection. You need to keep moving forward. Leave things not perfect and move towards doing other things well.
 
@@ -36,6 +36,6 @@ Eventually, you'll have all other parts done and will have improved in the proce
 
 You need to become responsible and develop skills to get there.
 
-# Further Reading
+## Further Reading
 
 [Responsibility Section of Core Values](/life-blog/my-core-values/#responsible-for-self-full-accountability-for-myself)

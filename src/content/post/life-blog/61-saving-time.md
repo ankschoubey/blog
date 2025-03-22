@@ -16,7 +16,7 @@ image: /images/life-blog/saving-time.jpg
 
 <sup> Photo by <a href="https://unsplash.com/@airfocus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">airfocus</a> on <a href="https://unsplash.com/s/photos/kanban?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sup>
 
-# Batch tasks
+## Batch tasks
 
 This could be batching within a certain parts of year, month, week or day.
 
@@ -32,7 +32,7 @@ For example:
    - Stopping work at 6 PM
    - Family/Relaxation/Recovery time post 6.
 
-# Plan and only do what's essential
+## Plan and only do what's essential
 
 Planning is an essential activity that saves maximum time with least effort.
 
@@ -44,7 +44,7 @@ Plans should be a mix of responsibility and rewards. Ask yourself: "If I could h
 
 Or you could also categorize the type of activities you want to do.
 
-# **Pull Right** and **Mono Task**
+## **Pull Right** and **Mono Task**
 
 This comes from Kanban. Value is only delivered when a task in complete.
 
@@ -56,11 +56,11 @@ Mono Task. Do one thing at a time. You’ll save 50% more time.
 
 A tip: Keep your phone outside the room. Your productivity will improve infinitely.
 
-# Keep a **mental note/recalibration of every next hour**
+## Keep a **mental note/recalibration of every next hour**
 
 This would automatically focus you. Every hour. But maybe not every minute.
 
-# Return to the board/tracker often
+## Return to the board/tracker often
 
 Ideally return multiple times in the day. This works really well with previous tip.
 
@@ -68,7 +68,7 @@ The board/tracker should be upto date. Updating board during Daily Standup or ot
 
 Aim to have no "Moments of Glory".
 
-# Limit time/spike
+## Limit time/spike
 
 Almost all tasks can be estimated to a few hours or a day. Even if someone estimates a task to a day, he/she will really actually work on it for a few hours. So aim to estimate to hours.
 
@@ -76,7 +76,7 @@ If a task isn't estimatable, it needs to be broken down.
 
 Once the task is estimated to hours, pomodoro or something similar can be used.
 
-# Focused hours/**pomodoro**s
+## Focused hours/**pomodoro**s
 
 Pomodoros are most effective way to get tasks done.
 
@@ -86,7 +86,7 @@ Pomodoro incorporates both Mono-tasking and recalibration.
 
 The breaks in pomodoro have a effect of recalibration. Specially if you will go away from 5-10 minutes, you come up with better strategy.
 
-# Keep track of distractors/distractions
+## Keep track of distractors/distractions
 
 Learn to let things wait.
 
@@ -99,7 +99,7 @@ This could include:
 3. Something that needs to be ordered.
 4. Etc
 
-# Identify improvements and organize
+## Identify improvements and organize
 
 Along with planning, identifying and improving on timewaster will give back more time. -> Time Assets.
 

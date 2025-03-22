@@ -17,7 +17,7 @@ image: /images/software-blog/feature-flagging.jpg
 
 Photo by <a href="https://unsplash.com/@isaactanlishung?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isaac Li Shung Tan</a> on <a href="https://unsplash.com/s/photos/on-off?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-# What are feature flags?
+## What are feature flags?
 
 The concept of feature flags is simple. You can toggle a feature on or off based on certain conditions. And ideally, this requires zero downtime.
 
@@ -31,13 +31,13 @@ There are many levels to feature flagging:
 
 Feature flagging can also help in AB Testing.
 
-# Feature Flagging for CD
+## Feature Flagging for CD
 
 Feature flags also help in CD. Rather than feature branching, everyone can work on a single branch, but the features that aren't ready yet can be disabled on prod. This decouples release and feature. Feature flagging is probabilistic because, in practice, it leads to stale branches.
 
 In case of chaos engineering, a feature flag can help reduce blast radius and improve resiliency. Suppose a feature fails; that feature can be disabled at a run time until fixed.
 
-# Common ways of implementing Feature Flagging
+## Common ways of implementing Feature Flagging
 
 ## Storing flags
 
@@ -45,7 +45,7 @@ The simplest implementation of the feature flag is DB based. A list of features 
 
 Environment variables can also be used. Configuration management systems like Spring Cloud Config can also be used to store flags.
 
-# Enabling disabling
+## Enabling disabling
 
 The code has an IF else statement that enables or disables the feature.
 
@@ -57,7 +57,7 @@ Having a class per feature and inheriting a common interface is the best approac
 
 There are also full-blown services that help with feature flagging, like [LaunchDarkly](https://launchdarkly.com/blog/what-are-feature-flags/) and [FlagShip](https://www.flagship.io/)
 
-# Resources
+## Resources
 
 - [Feature Toggles (aka Feature Flags)](https://martinfowler.com/articles/feature-toggles.html#CategoriesOfToggles)
 - [DevOps Concepts: Feature Flags](https://youtu.be/UwrJaOtS4ys): An introductory video that explains feature flagging and branching.

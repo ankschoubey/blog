@@ -19,7 +19,7 @@ Everything in Spring Boot is configurable. This was very hard to understand, but
 
 It was hard for me to extend and/or customize the core functionalities of Spring Boot. These are a few pointers that could help.
 
-# `@Bean` s
+## `@Bean` s
 
 Beans can be thought of as singleton classes. i.e. classes where only one instance can exist.
 
@@ -33,7 +33,7 @@ When the class B bean is generated, the class A bean will be injected into it.
 
 All @Component, @Service and `@Repository` are of type bean.
 
-# `@Conditional` s
+## `@Conditional` s
 
 Beans can be generated on conditions.
 
@@ -41,13 +41,13 @@ For example, suppose a particular library exists only then can a bean be generat
 
 For example, in `spring-cloud` stream, Kafka beans would be generated if there is Kafka set.
 
-# Everything would finally plugin to some lifecycle
+## Everything would finally plugin to some lifecycle
 
 All of spring, is a plugin architecture. The core of spring boot exists and everything else is a plugin that plugs into a spring boot lifecycle extending its core functionality.
 
 Everything plugs into some spring boot lifecycle.
 
-# Extending spring boot
+## Extending spring boot
 
 Suppose you want to extend spring boots to your liking here is how you'd do it.
 

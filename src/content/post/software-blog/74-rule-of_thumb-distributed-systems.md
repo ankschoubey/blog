@@ -12,7 +12,7 @@ title: Rules of thumbs for Distributed System
 toc: false
 ---
 
-# Don't distribute. Or atleast don't distribute early.
+## Don't distribute. Or atleast don't distribute early.
 
 We have a tendancy to over engineer.
 
@@ -22,7 +22,7 @@ If a single codebase can deliver good enough performance and is small/organized 
 
 It's easier to have everything very decoupled and in separate packages and then distribute things later if need arises.
 
-# Separate database
+## Separate database
 
 Database for each service should be separate. Data can be shared either by having API call or by using message queue.
 
@@ -30,7 +30,7 @@ If the database is not separate, then the tendacy to make it spagati is high.
 
 A potential exception to this is CQRS style services where one service writes the data and the other service reads the data. In this case, both services are highly coupled to each other.
 
-# Prefer Event Driven Services
+## Prefer Event Driven Services
 
 Message queues are highly decoupled and can scale very efficiently. Prefer having all internal sharing of data using message queue.
 
@@ -40,7 +40,7 @@ This requires having good naming conventions.
 
 Replication is okay in event driven microservices.
 
-# Keep code and interface quality damn high.
+## Keep code and interface quality damn high.
 
 In micro-services, you have to have a very high quality interface. This means Rest APIs, Kafka messages, etc. If quality/standards are not followed, then it effects every other service.
 

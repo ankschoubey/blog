@@ -54,7 +54,7 @@ You can also create separate `json` files for your configuration.
 
 Try to make these configurations modular.
 
-# Validate your configuration
+## Validate your configuration
 
 Run a script when the application starts to make sure all your configurations are loaded properly. The application should fail to start if the configuration provided isn’t provided well.
 

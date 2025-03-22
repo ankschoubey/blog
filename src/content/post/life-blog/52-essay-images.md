@@ -11,13 +11,13 @@ slug: /essay-images/
 title: Choosing Images/Diagrams in Essays
 ---
 
-# Why we should have images and diagrams?
+## Why we should have images and diagrams?
 
 Images and Diagrams make our essays more rememberable and can be used to illustrate concepts that are hard to describe in words.
 
-# How we should choose images/diagrams?
+## How we should choose images/diagrams?
 
-# Which image/diagram type is better for illustrating the point?
+## Which image/diagram type is better for illustrating the point?
 
 An image or a diagram should complement the writing but not distract from the writing. The image/diagram should be linked to what’s been written.
 
@@ -32,15 +32,15 @@ For code style, using appropriate UML diagrams can be useful.
 
 Diagrams need not always be perfect. Sometimes rough diagrams are better than no diagrams.
 
-# Why should we add captions to an image?
+## Why should we add captions to an image?
 
 It makes it easy to understand the diagram if it has a caption. The caption should describe the diagram in detail but need not be a paragraph long. A sentence or two might be enough.
 
-# Why should we add the source to an image?
+## Why should we add the source to an image?
 
 Like any writing, it helps to credit the creator of the image or diagram if we are using someone else’s. It takes too long to make an image or a diagram. By adding sources, we encourage the creator to create more.
 
-# Resources
+## Resources
 
 [Awesome Screenshot -- Screen recorder and Screen capture](https://www.awesomescreenshot.com/)
 

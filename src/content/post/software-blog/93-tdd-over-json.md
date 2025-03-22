@@ -24,13 +24,13 @@ The particular JSON would render as UI in the third-party app's view.
 
 Here is how I approached it with TDD.
 
-# Step 1: Creating the ideal JSON.
+## Step 1: Creating the ideal JSON.
 
 Lucky for me, the third part app had a UI builder to see what the end UI would look. I created the UI and copied JSON into my code.
 
 The UI builder also gave a link which became part of my BDD specs.
 
-# Step 2: Created a Test with JSON Asserts
+## Step 2: Created a Test with JSON Asserts
 
 I followed the method/when/then format to create a test and added the following assertion:
 

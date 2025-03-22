@@ -15,7 +15,7 @@ image: /images/software-blog/atomic-commits.svg
 toc: false
 ---
 
-# What is the problem with larger commits?
+## What is the problem with larger commits?
 
 Many developers complete all their features before committing and merging. When they commit and merge,
 
@@ -27,7 +27,7 @@ Many developers complete all their features before committing and merging. When 
 
 Often the reason is, that we are afraid to merge and want to get everything perfect the first time. But this is counterintuitive.
 
-# Why we should do atomic commits?
+## Why we should do atomic commits?
 
 Atomic commits are frequent commits.
 
@@ -52,7 +52,7 @@ feat(53-service): streaming download from s3
 feat(api): add endpoint for streaming download /downloads
 ```
 
-# How to implement atomic commits in practice?
+## How to implement atomic commits in practice?
 
 1. Commit and push to `dev` after every completing method/feature.
 2. This push should involve both test and code.

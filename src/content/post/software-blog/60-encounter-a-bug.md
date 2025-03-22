@@ -11,7 +11,7 @@ slug: /software-blog/encounter-a-bug/
 title: Whenever you encounter a bug
 ---
 
-# Write a test first
+## Write a test first
 
 Encountering a bug after development means your tests aren't good enough. (or you weren't doing TDD 😉)
 
@@ -21,7 +21,7 @@ By writing a test, you'd have simulated the exact situation where the bug arose.
 
 When you fix the code, you know the bug is perfectly fixed. And anyone modifying the code in the future won't miss it.
 
-# Make sure right things are logged
+## Make sure right things are logged
 
 Logs should provide accurate enough description of the state of the system.
 

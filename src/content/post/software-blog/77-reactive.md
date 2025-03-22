@@ -13,7 +13,7 @@ title: Always choose Reactive Programming
 toc: false
 ---
 
-# What is reactive programming?
+## What is reactive programming?
 
 Reactive programming is not a straight paradigm like empirical or functional. Reactive means that code that is written is non-blocking and asynchronous.
 
@@ -29,7 +29,7 @@ In reactive, however, you can work with streams of data. So, you can start perfo
 
 Similarly, suppose you have a client-server application that needs to display a list. If you code it to be reactive, the list items can be received as a stream. Each item can be displayed one at a time. No need to wait for the entire list to load. This would significantly reduce initial load time.
 
-# Why choose reactive programming for every project?
+## Why choose reactive programming for every project?
 
 Often a con of reactive programming is said to be the initial learning curve. In my experience, the initial learning curve is much less relevant than the return on investment it provides.
 
@@ -37,11 +37,11 @@ Cloud applications need to consume less memory and higher throughput. Before goi
 
 Reactive libraries are available in many programming languages. Especially the flavors of reactivex (RxJs, Rx Java, etc). Spring Webflux is a variant of Spring Boot that supports building reactive backends.
 
-# When should you not use reactive programming?
+## When should you not use reactive programming?
 
 The only place not to use reactive programming is when everything can be done in memory itself i.e there is no IO operation.
 
-# My experience with reactice
+## My experience with reactice
 
 I have used Project Reactor Spring Webflux and RxJS in Angular with both the experience has been this.
 

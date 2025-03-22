@@ -14,7 +14,7 @@ slug: /software-blog/writing-better-specs/
 title: Writing better BDD specifications
 ---
 
-# What is BDD? Why it is needed?
+## What is BDD? Why it is needed?
 
 BDD stands for Behavior Driven Development.
 
@@ -26,7 +26,7 @@ To be more precise, these specs are executable specs. Meaning there can be tests
 
 BDD doesn't always need to be end-to-end flows but it is most commonly that.
 
-# Writing good specifications
+## Writing good specifications
 
 It's important to write specifications such that everyone can understand it.
 

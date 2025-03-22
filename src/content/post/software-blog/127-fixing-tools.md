@@ -35,7 +35,7 @@ Eclipse is probably the worst ever.
 
 VS Code has better and more plugin.
 
-# Favorite Plugins
+## Favorite Plugins
 
 **[Maven Helper](https://plugins.jetbrains.com/plugin/7179-maven-helper)**: IntelliJ
 

@@ -23,7 +23,7 @@ There goes a lot into making a software. Every tiny improvement. Edge case and i
 
 But to know that something is an extension of simple concepts like Queue and Pub/Sub is humblings. That the tools that are built are just a combination of ideas that were arranged and executed well.
 
-# What does this mean practically?
+## What does this mean practically?
 
 Practically, this means we try to make things complex up front.
 

@@ -65,7 +65,7 @@ Something like
   - This will also include manual approavls.
   - I would also add a virus scanner and other security measures.
 
-# Resources
+## Resources
 
 [Plugin Development for Wordpress](https://developer.wordpress.org/plugins/plugin-basics/best-practices/): They are much more low-level about implementation. Especially go through their best practices section.
 

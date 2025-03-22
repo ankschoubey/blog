@@ -30,6 +30,6 @@ Also, for most projects, setting up the project is the most painful part of the 
 
 Most DevOps concerns, can be handles from within chassis, without touching individual code.
 
-# Resources
+## Resources
 
 [Microservice chassis](https://microservices.io/patterns/software-blog/microservice-chassis.html)

@@ -14,7 +14,7 @@ slug: /software-blog/clean-code-spring-boot/
 
 While there are many techniques which are language agnostic, these are some of my favorites with Spring Boot.
 
-# [Project Lombok](https://projectlombok.org/features/all)
+## [Project Lombok](https://projectlombok.org/features/all)
 
 Use this if you don't use Spring Boot with Kotlin. This will module will reduce side of code by around 15-25%.
 
@@ -25,17 +25,17 @@ My favorite onces are
 - **@Data**: A shortcut for @ToString, @EqualsAndHashCode, @Getter on all fields, and @Setter on all non-final fields, and @RequiredArgsConstructor.
 - **@Cleanup**: Automatically calls close() method in case of Streams and Connections.
 
-# @RequestParam without Arguments
+## @RequestParam without Arguments
 
 If the name of variable is same as value in @RequestParam, remove @Request Param.
 
-# Remove @Column on @Entity
+## Remove @Column on @Entity
 
 In a @Entity, if the name of variable is same name of column writing @Column is unnecessary.
 
 By doing this, not only remove a line from every variable, the quality of code is better as there is naming is consistent between DB and backend.
 
-# Use JPA @Repository Methods instead of Hibernate EntityManager/JdbcTemplate
+## Use JPA @Repository Methods instead of Hibernate EntityManager/JdbcTemplate
 
 Ideally your queries should be so simple such that the only type of read operation you do is simple CRUD.
 
