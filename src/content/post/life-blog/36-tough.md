@@ -7,6 +7,7 @@ tags:
   - for-future-me
   - personal
   - responsibility
+  - non-technical
 title: Positive effects of doing hard things
 publishDate: 2021-08-01T20:42:15.663278
 slug: /life-blog/tough/

@@ -4,6 +4,7 @@ title: Middleman
 comments: true
 tags:
   - business
+  - non-technical
 publishDate: 2021-08-01T20:42:15.347436
 use_math: true
 slug: /life-blog/middlemen/

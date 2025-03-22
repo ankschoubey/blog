@@ -5,6 +5,7 @@ comments: true
 tags:
   - business
   - non-profit
+  - non-technical
 use_math: true
 publishDate: 2021-08-01T20:42:15.260601
 slug: /life-blog/environment/

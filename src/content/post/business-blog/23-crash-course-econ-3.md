@@ -6,6 +6,7 @@ tags:
   - crash-course
   - econ
   - summary
+  - non-technical
 title: Economic Systems and Macroeconomics - Crash Course Economics - 3
 slug: /crash-course/econ/3
 publishDate: 2023-03-11T20:42:15.538277

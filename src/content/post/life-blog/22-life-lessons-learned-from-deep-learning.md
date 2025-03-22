@@ -5,6 +5,8 @@ excerpt: Placeholder
 tags:
   - philosophical
   - systems
+  - technical
+  - non-technical
 publishDate: 2021-08-01T20:42:15.433097
 title: Correlation between Deep Learning Concepts and Philosophy
 slug: /life-blog/dl_lessons/

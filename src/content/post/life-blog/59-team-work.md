@@ -40,4 +40,4 @@ They have right to choose what they want to focus on. You may suggest or lead by
 
 Plus forcing opinions assumes that one really knows “life” which probably no one does fully.
 
-6.  Having mutual respect leads to better understanding and less drama.
+6. Having mutual respect leads to better understanding and less drama.

@@ -6,6 +6,7 @@ tags:
   - decision-making
   - communication
   - truth
+  - non-technical
 publishDate: 2021-08-01T20:42:15.451427
 title: Definitions
 slug: /life-blog/definition/

@@ -4,6 +4,7 @@ title: "If it is a core part of your business, don't outsource, build it yoursel
 comments: true
 tags:
   - business
+  - technical
 use_math: true
 publishDate: 2021-08-01T20:42:15.296625
 slug: /software-blog/build_it_yourself/
@@ -34,7 +35,7 @@ SpaceX designs and builds everything on its own. While Boeing buys existing prod
 
 Apple outsources production but still designs everything by itself. While rest rely heavily on Google for phone software and Microsoft for PC software.
 
-## Some companies take control back.
+## Some companies take control back
 
 Apple is taking back control of its microprocessors because it realized that it can ship better products if it designs the chips themself.
 
@@ -42,7 +43,7 @@ And it is not something that they just decided to do overnight. It must have bee
 
 And still, the rolling out is a 2-year transition giving everyone enough room to adapt. And from what current iPads perform it can be assumed that these new computers will perform better.
 
-## Ofcourse you should outsource if ...
+## Ofcourse you should outsource if
 
 A large Hollywood studio need not worry about their backend software. It’s not their core business. Their business is making great movies.
 

@@ -6,6 +6,8 @@ tags:
   - business
   - collection-of-thoughts
   - decision-making
+  - technical
+  - non-technical
 title: Business Ethics
 slug: /software-blog/business-ethics/
 publishDate: 2021-08-01T20:42:15.545856
@@ -61,7 +63,6 @@ Companies should run on ideas, not hierarchy. You have to let the best ideas win
 [^1]: Simon Sinek
 [^2]: Steve Jobs
 [^3]: [The Amazon monopoly and the problem with Jeff Bezos' business model](https://www.youtube.com/watch?v=pBffKzWECUQ)
-[^4]: Jordan B Peterson
 [^8]: Peter Thiel
 [^9]: Mark Cuban
 [^10]: Sapiens by Yuval Noah Harari

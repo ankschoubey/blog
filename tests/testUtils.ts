@@ -31,7 +31,17 @@ function getMarkdownFiles(dir, fileList:string[] = []) {
     return fileList;
 }
 
-const markdownFiles = getMarkdownFiles(contentDir);
+export const getPostForTest = async (fileName: string) => {
+    const currentFileName = fileName.split("/").pop()?.replace(".spec.ts", "");
+    console.log(currentFileName);
+    const file =  markdownFiles.find((f) => f.includes(currentFileName!));
+    if(file === undefined){
+        throw new Error("File not found for test " + currentFileName);
+    }
+    return await getMarkdownContent(file);
+}
+
+export const markdownFiles = getMarkdownFiles(contentDir);
 
 export interface FrontMatter {
     title: string;
@@ -41,6 +51,7 @@ export interface FrontMatter {
     excerpt: string;
     mainKeyword: string;
     seoKeywords: string[];
+    tags: string[];
 }
 
 export interface MarkdownFile{
@@ -62,7 +73,8 @@ export const getMarkdownContent = (file: string) => {
     return {
         frontMatter: frontmatter,
         body: content.body,
-        html: marked.parse(content.body)
+        html: marked.parse(content.body),
+        file
     }
 }
 export const iterateMarkdownFiles = () => markdownFiles.map((file) => getMarkdownContent(file))

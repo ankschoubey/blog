@@ -6,14 +6,13 @@ tags:
   - business
   - books
   - marketing
+  - non-technical
 title: Summary of Marketing Section from The Personal MBA
 slug: /life-blog/marketing-mba/
 publishDate: 2021-08-01T20:42:15.580800
 image: /images/mba.jpg
 hide: true
 ---
-
-![](/images/mba.jpg)
 
 # Marketing
 

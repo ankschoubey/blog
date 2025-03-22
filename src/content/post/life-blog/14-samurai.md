@@ -4,6 +4,8 @@ title: Samurai to Modern Army in 10 years
 comments: true
 tags:
   - philosophical
+  - non-technical
+  - business
 use_math: true
 publishDate: 2021-08-01T20:42:15.336888
 slug: /life-blog/samurai/
@@ -47,7 +49,7 @@ There are a few lessons that can be taken from this over-simplistic snippet. The
 - [Learn by observing others](/observe)
 - Drop your ego. Move on with times.
 
-## History cannot be put in such simple terms.
+## History cannot be put in such simple terms
 
 There were a lot of missteps with their way and the way the world was in general. I recommend listening to [Hardcore History: Super Nova in the East](https://www.dancarlin.com/product/hardcore-history-62-supernova-in-the-east-i/)
 

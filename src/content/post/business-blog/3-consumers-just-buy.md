@@ -4,6 +4,7 @@ title: 'Just buy it. Don’t build it yourself.'
 comments: true
 tags:
   - business
+  - non-technical
 use_math: true
 publishDate: 2021-08-01T20:42:15.292983
 slug: /life-blog/just_buy/

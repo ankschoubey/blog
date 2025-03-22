@@ -6,6 +6,7 @@ tags:
   - for-future-me
   - decision-making
   - truth
+  - non-technical
 title: Opinions/Events are not black and white.
 publishDate: 2021-08-01T20:42:15.410545
 slug: /black_white/
@@ -22,7 +23,7 @@ Most of us would want to make optimal decisions all the time.
 
 But as humans, we have our shortcomings and everyone is trying to do their best with the information they have.
 
-## There is always a trade-off.
+## There is always a trade-off
 
 In every decision you make, there may be points in which you think the decision is right. And there are points where the same decisions are bad.
 
@@ -40,7 +41,7 @@ Those that have unique reasoning are interesting people.
 
 Knowing their reasoning helps you think from their point of view easier.
 
-## Your opinion is probably right but it may be wrong.
+## Your opinion is probably right but it may be wrong
 
 Any opinion you have or someone else has is probably right.
 

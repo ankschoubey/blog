@@ -4,6 +4,8 @@ comments: true
 excerpt: Recognition
 tags:
   - business
+  - technical
+  - non-technical
 title: Give credit where credit is due
 publishDate: 2021-08-01T20:42:15.426183
 slug: /recognition/

@@ -5,6 +5,7 @@ excerpt: 'Placeholder'
 tags:
   - health
   - systems
+  - non-technical
 title: How to recover from physical injuries faster
 slug: /physical-injury/
 publishDate: 2022-01-09T20:42:15.557734
@@ -47,7 +48,7 @@ Your's body will start pumping blood faster to keep your body warm.
 
 Do atleast 30 seconds on the area that is directly effected.
 
-## **Move and Exercise**: Avoid complete rest and immobilization.
+## **Move and Exercise**: Avoid complete rest and immobilization
 
 Problems multiply when you don't move the part. Your body does not fully know how to recover a part until you show it how you use it.
 
@@ -55,7 +56,7 @@ So move as much as you can. It's okay if you can only do quater motion. Do it be
 
 if you cannot move the specific body part because it is too painful. Move other parts, keep blood flowing well.
 
-## Rest Enough but not too much.
+## Rest Enough but not too much
 
 Rest enough. You want to increase the probability that you'll work the next day.
 

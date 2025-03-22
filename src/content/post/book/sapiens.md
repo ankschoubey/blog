@@ -5,6 +5,7 @@ tags:
   - books
   - baton
   - summary
+  - non-technical
 title: Sapiens Book Summary
 slug: /life-blog/sapiens/
 publishDate: 2021-08-01T20:42:15.538277

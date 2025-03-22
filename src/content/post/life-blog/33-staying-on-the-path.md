@@ -6,6 +6,7 @@ tags:
   - philosophical
   - for-future-me
   - responsibility
+  - non-technical
 title: The Path / Ethics
 slug: /life-blog/on-path-ethics/
 publishDate: 2021-08-01T20:42:15.552524

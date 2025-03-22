@@ -5,6 +5,8 @@ excerpt: 'Placeholder'
 tags:
   - philosophical
   - truth
+  - technical
+  - non-technical
 title: Develop your own opinions and reasonings
 publishDate: 2021-05-03T20:42:15.650028
 slug: /life-blog/original-opinion/

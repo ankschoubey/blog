@@ -4,6 +4,7 @@ excerpt: 'Placeholder'
 tags:
   - communication
   - social-harmony
+  - non-technical
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose:
 slug: /life-blog/communication-during-conflict/
@@ -45,11 +46,11 @@ In Person: Best. Aim for in-person communication.
 
 Remember, the goal is to seek to understand, than to be understood.
 
-## Have the attitude of: The person you are listening to is important and worth listening to.
+## Have the attitude of: The person you are listening to is important and worth listening to
 
 Having mutual respect leads to better understanding and less drama.
 
-## Listen carefully and listen everything.
+## Listen carefully and listen everything
 
 No matter how silly on mundane something seems. It maybe of value to the other person. Don't negate anything by saying it's dumb. It may or maynot be dumb. Listen and ask followup questions.
 
@@ -81,7 +82,7 @@ Tell them to calm down. And that way you can understand them a bit better.
 
 Rather than interrupting, wait for when the person has stopped. Even if they are are saying something that you don’t agree with. Let them speak completely. This not only helps understand the other person better, this is more respectful.
 
-## Don’t present your arguments early on.
+## Don’t present your arguments early on
 
 This makes someone jump to a different tangium. Your goal is to understand their points.
 
@@ -95,11 +96,11 @@ Also, it's not your respo to overly try to make a situation pleasant. Over tryin
 
 # Speaking
 
-## Agree to what you find right.
+## Agree to what you find right
 
 Often someone interrupts us or are in a emotional state and are continuing to talk. Let them speak and then agree to the points you agree with. This helps establish a common base for further conversations.
 
-## If you don't understand something, re-iterate what the person is saying and ask if it's right.
+## If you don't understand something, re-iterate what the person is saying and ask if it's right
 
 Specially in complex or emotional issues, understanding someone is hard. Doing the aboves means that you'd have understood better and the person knows you have understood better.
 

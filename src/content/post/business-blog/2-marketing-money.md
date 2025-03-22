@@ -5,6 +5,7 @@ comments: true
 tags:
   - business
   - marketing
+  - non-technical
 publishDate: 2021-08-01T20:42:15.236602
 use_math: true
 slug: /life-blog/marketing-money/

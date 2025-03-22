@@ -5,6 +5,9 @@ comments: true
 publishDate: 2021-08-01T20:42:15.321162
 use_math: true
 slug: /life-blog/writing_process_07_2020/
+tags:
+  - technical
+  - non-technical
 ---
 
 1. Keep going through normal days

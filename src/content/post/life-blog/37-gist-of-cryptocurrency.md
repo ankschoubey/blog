@@ -5,6 +5,7 @@ excerpt: 'Placeholder'
 tags:
   - blockchain
   - information-system
+  - technical
 title: Gist of Cryptocurrencies
 publishDate: 2021-08-01T20:42:15.666464
 slug: /software-blog/crypto/

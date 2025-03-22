@@ -6,6 +6,7 @@ tags:
   - philosophical
   - collection-of-thoughts
   - peace
+  - non-technical
 title: Meditation is how you become peaceful all the time
 slug: /life-blog/meditation/
 publishDate: 2021-04-28T20:42:15.624828

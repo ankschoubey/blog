@@ -6,6 +6,7 @@ tags:
   - decision-making
   - for-future-me
   - baton
+  - non-technical
 title: Research
 publishDate: 2021-08-01T20:42:15.512366
 slug: /life-blog/research/

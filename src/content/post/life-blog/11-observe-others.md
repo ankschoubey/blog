@@ -4,6 +4,7 @@ title: Observe other people in action
 comments: true
 tags:
   - truth
+  - non-technical
 publishDate: 2021-08-01T20:42:15.319898
 use_math: true
 slug: /observe/

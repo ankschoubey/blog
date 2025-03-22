@@ -2,7 +2,9 @@
 toc: false
 comments: true
 excerpt: The illusion of perfect execution... every time.
-
+tags:
+    - technical
+    - non-technical
 publishDate: 2021-08-01T20:42:15.357716
 title: When you are just starting out, don’t try to imitate the expert.
 slug: /life-blog/imitating_experts/

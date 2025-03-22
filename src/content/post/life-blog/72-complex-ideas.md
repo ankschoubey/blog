@@ -5,6 +5,7 @@ excerpt: 'Placeholder'
 tags:
   - philosophical
   - baton
+  - technical
 publishDate: 2022-08-14T20:52:08.052481
 slug: /software-blog/complex/
 last-modified-purpose: added CI/CD and no-automation

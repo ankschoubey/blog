@@ -6,6 +6,7 @@ tags:
   - business
   - leadership
   - social-harmony
+  - non-technical
 title: Who is a leader?
 publishDate: 2021-08-01T20:42:15.419969
 slug: /life-blog/leader/

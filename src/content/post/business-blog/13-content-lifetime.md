@@ -5,6 +5,7 @@ excerpt: 'Placeholder'
 tags:
   - business
   - marketing
+  - non-technical
 title: The lifetime of 'Content' is getting smaller
 publishDate: 2021-08-01T20:42:15.415292
 slug: /life-blog/content/

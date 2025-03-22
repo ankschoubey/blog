@@ -5,6 +5,7 @@ tags:
   - agile
   - collaboration
   - social-harmony
+  - technical
 publishDate: 2022-09-21T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/team-knowing-whom-to-contact/
@@ -93,7 +94,7 @@ Data science team:
 - Builts applications that help show insight with the help of data.
 - Their work isn't always real-time insights.
 
-# Key Stakeholders:
+# Key Stakeholders
 
 - Developers
 - Testers

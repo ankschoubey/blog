@@ -4,6 +4,7 @@ title: Math motivation
 comments: true
 tags:
   - collection-of-thoughts
+  - non-technical
 use_math: true
 publishDate: 2020-05-04T20:42:15.193139
 slug: /life-blog/maths-motivation
@@ -32,7 +33,7 @@ Perhaps we can think, teach, and learn like it’s natural.
 
 ---
 
-## Maths is everywhere. Even if you don’t notice.
+## Maths is everywhere. Even if you don’t notice
 
 ⏰ 🗺 🥇🥈🥉🎰🎲⚽️🍻
 
@@ -50,7 +51,7 @@ People in Spanish class who come from 🏡s where Spanish is spoken are going to
 
 ## Maths is useful and fun
 
-### It makes you more popular.
+### It makes you more popular
 
 - It is cool when others are silently looking for their calculator and you just say the answer.
 
@@ -97,9 +98,9 @@ Knowing the processes is important but does not make you good at maths.
 
 ### Tools of Maths are simple. [^6]
 
-1.  ​**Number**​ (In all their forms)
-2.  ​**Operations (**​Arithmetic; all others are derived from them)
-3.  **Laws** (applies to all numbers)
+1. ​**Number**​ (In all their forms)
+2. ​**Operations (**​Arithmetic; all others are derived from them)
+3. **Laws** (applies to all numbers)
 
 - Commutative
 - Associative
@@ -116,7 +117,7 @@ If you know these ​**you can construct the process on the fly**​.
 
 ### Maths becomes hard when you move away from the real 🌎 and abstract it _beyond recognition_. [^9]
 
-### Like any problem, you can sleep on numbers.
+### Like any problem, you can sleep on numbers
 
 Go away for a while. Rest.
 

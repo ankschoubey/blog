@@ -1,7 +1,8 @@
 ---
 comments: true
 excerpt: Placeholder
-
+tags:
+ - technical
 publishDate: 2022-09-24T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/integrate-external-services/

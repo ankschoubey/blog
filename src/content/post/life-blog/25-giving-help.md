@@ -7,6 +7,8 @@ tags:
   - philosophical
   - business
   - social-harmony
+  - technical
+  - non-technical
 publishDate: 2021-08-01T20:42:15.468577
 title: Empowerment/Enabling
 slug: /life-blog/giving_help/

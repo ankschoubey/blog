@@ -5,6 +5,8 @@ excerpt: 'Placeholder'
 tags:
   - decision-making
   - systems
+  - technical
+  - non-technical
 title: Plan quickly. Move fast. Break things.
 publishDate: 2021-08-01T20:42:15.497285
 slug: /life-blog/plan-quickly-and-move-fast/

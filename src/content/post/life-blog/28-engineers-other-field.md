@@ -5,6 +5,8 @@ excerpt: 'Placeholder'
 tags:
   - information-system
   - baton
+  - technical
+  - non-technical
 title: Why Software Engineers Should Enter Other Fields.
 publishDate: 2021-08-01T20:42:15.506448
 slug: /software-blog/engineer/

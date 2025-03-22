@@ -5,6 +5,7 @@ tags:
   - philosophical
   - for-future-me
   - baton
+  - non-technical
 publishDate: 2021-08-29T20:52:08.052481
 slug: /life-blog/decentralize-high-tech/
 title: Decentralization of High Tech

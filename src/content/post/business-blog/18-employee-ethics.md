@@ -6,6 +6,8 @@ tags:
   - business
   - collection-of-thoughts
   - decision-making
+  - technical
+  - non-technical
 title: Employee Ethics
 publishDate: 2021-08-01T20:42:15.550029
 slug: /life-blog/employee-ethics/

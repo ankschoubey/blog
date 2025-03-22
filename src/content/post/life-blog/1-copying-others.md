@@ -4,6 +4,7 @@ title: Copying Others vs Being Yourself
 comments: true
 tags:
   - truth
+  - non-technical
 publishDate: 2015-10-04T20:42:15.058326
 use_math: true
 slug: /life-blog/copying/

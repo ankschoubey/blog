@@ -6,6 +6,7 @@ tags:
   - philosophical
   - responsibility
   - social-harmony
+  - non-technical
 title: Cases To Be Humble
 slug: /life-blog/humble/
 publishDate: 2021-08-01T20:42:15.643388

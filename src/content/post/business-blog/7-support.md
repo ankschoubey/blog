@@ -4,6 +4,8 @@ title: Support shows how much the company really care
 comments: true
 tags:
   - business
+  - technical
+  - non-technical
 use_math: true
 slug: /software-blog/support/
 publishDate: 2021-08-01T20:42:15.337888

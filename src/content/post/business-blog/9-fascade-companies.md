@@ -4,6 +4,7 @@ comments: true
 excerpt: Only for-money companies
 tags:
   - business
+  - technical
 publishDate: 2021-08-01T20:42:15.366196
 title: Facade companies
 slug: /life-blog/facade/

@@ -4,6 +4,8 @@ comments: true
 excerpt: Placeholder
 tags:
   - time
+  - non-technical
+  - low-quality
 publishDate: 2021-08-01T20:42:15.377623
 title: Opportunity Cost
 slug: /opportunity/

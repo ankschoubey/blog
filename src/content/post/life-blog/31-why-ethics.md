@@ -6,6 +6,7 @@ tags:
   - collection-of-thoughts
   - decision-making
   - mature
+  - non-technical
 title: Why Ethics?
 slug: /life-blog/why_ethics/
 publishDate: 2021-08-01T20:42:15.540962

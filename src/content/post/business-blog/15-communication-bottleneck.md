@@ -5,6 +5,8 @@ excerpt: and why communication policy is essential
 tags:
   - business
   - communication
+  - technical
+  - non-technical
 title: Communication Bottleneck in large organizations
 publishDate: 2021-08-01T20:42:15.428392
 slug: /software-blog/communication_bottleneck/

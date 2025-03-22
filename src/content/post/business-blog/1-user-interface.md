@@ -4,6 +4,7 @@ title: User Interfaces
 comments: true
 tags:
   - business
+  - technical
 publishDate: 2020-06-23T20:42:15.230335
 use_math: true
 slug: /software-blog/thoughts-on-user-interfaces/

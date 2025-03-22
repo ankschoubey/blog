@@ -5,6 +5,7 @@ excerpt: The Game Which Everyone Needs To Win
 tags:
   - business
   - philosophical
+  - non-technical
 title: Ethical Capitalism
 publishDate: 2021-08-01T20:42:15.554981
 slug: /life-blog/ethical-capitalism/

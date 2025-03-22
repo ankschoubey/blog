@@ -8,6 +8,7 @@ tags:
   - personal
   - responsibility
   - systems
+  - non-technical
 title: Compare yourself with who you were yesterday
 publishDate: 2021-05-04T20:42:15.654723
 slug: /life-blog/compare/

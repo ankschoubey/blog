@@ -6,6 +6,7 @@ tags:
   - decision-making
   - for-future-me
   - peace
+  - non-technical
 publishDate: 2021-08-01T20:42:15.508582
 title: Hurrying does not help.
 slug: /life-blog/hurrying/

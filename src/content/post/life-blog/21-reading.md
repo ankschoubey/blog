@@ -6,6 +6,7 @@ tags:
   - collection-of-thoughts
   - drafts
   - truth
+  - non-technical
 title: Reading Books
 slug: /life-blog/reading-books/
 publishDate: 2021-08-01T20:42:15.423682
@@ -98,9 +99,7 @@ The narrative makes it easy to remember. Some non-fiction books have a narrative
 You can choose to read fiction instead of non-fiction for the same topic.
 
 [^1]: Naval
-[^2]: Jordan Peterson
 [^3]: James Clear
-[^4]: [How Bill Gates remembers what he reads](https://www.youtube.com/watch?v=AqGWEk7bxZ0)
 [^5]: [How Bill Gates reads books](https://www.youtube.com/watch?v=eTFy8RnUkoU)
 [^6]: [Elon Musk on The Importance of Reading Books](https://www.youtube.com/watch?v=AqGWEk7bxZ0s)
 

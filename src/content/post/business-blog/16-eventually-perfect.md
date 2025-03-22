@@ -4,6 +4,8 @@ comments: true
 excerpt: Placeholder
 tags:
   - information-system
+  - technical
+  - non-technical
 title: Eventually Perfect Feature
 publishDate: 2021-08-01T20:42:15.503351
 slug: /eventually_perfect/
@@ -20,7 +22,7 @@ There are two approaches to building a new feature to existing software.
 
 This approach works well when the feature is small or needs to be secret to gain a competitive advantage.
 
-### Approach 2: Ship with minimum sub-features. Then iterate.
+### Approach 2: Ship with minimum sub-features. Then iterate
 
 This approach works better because most software features never get used.
 

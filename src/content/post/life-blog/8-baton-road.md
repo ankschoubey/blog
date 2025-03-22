@@ -5,6 +5,7 @@ comments: true
 tags:
   - favorite
   - responsibility
+  - non-technical
 use_math: true
 publishDate: 2021-08-01T20:42:15.242622
 slug: /baton/
@@ -46,7 +47,7 @@ Every moment happens once. [^1]
 
 Someday the 🔥 baton will pass on to our generation. Hopefully, I'll be ready.
 
-{% include twitter.html content="https://twitter.com/elonmusk/status/1237595612473749504?s=20" %}
+{% include twitter.html content="<https://twitter.com/elonmusk/status/1237595612473749504?s=20>" %}
 
 [^1]: Zero to One by Peter Thiel
 [^2]: The title 'Baton Road' is inspired by Boruto: Naruto Next Generations Intro 1

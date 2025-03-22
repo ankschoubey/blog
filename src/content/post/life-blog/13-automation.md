@@ -4,6 +4,8 @@ title: There is never enough automation
 comments: true
 tags:
   - business
+  - technical
+  - non-technical
 publishDate: 2021-08-01T20:42:15.333866
 use_math: true
 slug: /software-blog/automate/

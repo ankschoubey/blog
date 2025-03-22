@@ -6,6 +6,7 @@ tags:
   - for-future-me
   - social-harmony
   - truth
+  - non-technical
 title: Just ask for it
 publishDate: 2021-08-01T20:42:15.417929
 slug: /life-blog/ask-for-help/
@@ -28,7 +29,7 @@ Say it. Don’t hide.
 
 Text/Tweet at them (Keep it short at quick)
 
-#### Everyone is there to help.
+#### Everyone is there to help
 
 But no will know when to help if you don’t say that you need it.
 

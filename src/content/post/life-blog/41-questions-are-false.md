@@ -6,6 +6,7 @@ tags:
   - philosophical
   - decision-making
   - peace
+  - non-technical
 publishDate: 2021-08-16T20:52:08.052481
 slug: /life-blog/questions-false/
 title: 'All Questions are False'

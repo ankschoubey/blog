@@ -6,6 +6,7 @@ tags:
   - baton
   - for-future-me
   - systems
+  - non-technical
 title: Probabilities
 publishDate: 2021-08-01T20:42:15.402337
 slug: /life-blog/probabilities/

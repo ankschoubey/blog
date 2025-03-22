@@ -5,6 +5,7 @@ excerpt: 'Placeholder'
 tags:
   - personal
   - responsibility
+  - non-technical
 title: Always keep yourself ready to switch companies
 slug: /life-blog/switch-jobs/
 publishDate: 2021-05-26T20:42:15.654723

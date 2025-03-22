@@ -1,7 +1,8 @@
 ---
 comments: true
 excerpt: 'Placeholder'
-
+tags: 
+- technical
 publishDate: 2022-05-11T20:52:08.052481
 last-modified-purpose:
 slug: /software-blog/new-project/
@@ -27,7 +28,7 @@ Database:
 - MongoDB
 
 Read Me:
-https://github.com/dbader/readme-template
+<https://github.com/dbader/readme-template>
 
 Wiki:
 

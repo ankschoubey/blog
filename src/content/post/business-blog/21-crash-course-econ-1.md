@@ -6,6 +6,7 @@ tags:
   - crash-course
   - econ
   - summary
+  - non-technical
 title: Intro to Economics - Crash Course Econ 1
 slug: /crash-course/econ/1
 publishDate: 2023-03-04T20:42:15.538277

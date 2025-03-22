@@ -6,6 +6,8 @@ tags:
   - marketing
   - communication
   - truth
+  - technical
+  - non-technical
 title: Who is your audience?
 publishDate: 2021-08-01T20:42:15.434096
 slug: /life-blog/audience/

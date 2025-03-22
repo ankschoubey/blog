@@ -5,6 +5,7 @@ tags:
   - business
   - communication
   - social-harmony
+  - non-technical
 publishDate: 2022-06-19T20:52:08.052481
 last-modified-purpose: added section "Be prepared early by maintaining notes"
 slug: /life-blog/effective-meetings/

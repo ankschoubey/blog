@@ -4,6 +4,8 @@ title: Copying features and products
 comments: true
 tags:
   - business
+  - technical
+  - non-technical
 publishDate: 2021-08-01T20:42:15.329202
 use_math: true
 slug: /life-blog/copying_products/

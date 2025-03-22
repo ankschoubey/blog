@@ -4,6 +4,8 @@ comments: true
 excerpt: Placeholder
 tags:
   - business
+  - technical
+  - non-technical
 title: Businesses are for making money
 publishDate: 2021-08-01T20:42:15.385051
 slug: /life-blog/for_profit/

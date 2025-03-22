@@ -2,10 +2,10 @@
 comments: true
 excerpt: Find out a naming convention and package structure to generate clean event sourcing code.
 tags:
-  - Technical
   - event-sourcing
   - architecture
   - arch-unit-example
+  - technical
 publishDate: 2024-03-27T20:52:08.052481
 slug: /software-blog/event-sourcing-naming-convention
 title: Event Sourcing - Good Naming Convention, File Organization and Enforcing with ArchUnit tests
