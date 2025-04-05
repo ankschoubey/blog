@@ -1,5 +1,9 @@
 ---
 const isLocalhost = Astro.url.hostname === 'localhost';
+const currentPath = Astro.url.pathname;
+const gaUrl = `https://analytics.google.com/analytics/web/#/p238520355/reports/explorer?params=_u..nav%3Dmaui%26_r.explorerCard..filterTerm%3D%252F${currentPath.slice(1)}%26_r.explorerCard..startRow%3D0%26_u.dateOption%3Dlast12Months%26_u.comparisonOption%3Ddisabled&r=all-pages-and-screens&ruid=all-pages-and-screens,life-cycle,engagement&collectionId=life-cycle`;
+const mainSiteUrl = `https://www.ankushchoubey.com${currentPath}`;
+const clarityUrl = `https://clarity.microsoft.com/projects/qc6j7d4654/heatmaps?url=${encodeURIComponent(mainSiteUrl)}`;
 ---
 
 {isLocalhost && (
@@ -8,5 +12,57 @@ const isLocalhost = Astro.url.hostname === 'localhost';
       <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
     </svg>
     <span class="font-medium">Running Locally</span>
+    <div class="flex items-center gap-2 ml-2">
+      <a 
+        href={gaUrl} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="text-sm underline hover:text-gray-800"
+        title="View in Google Analytics"
+      >
+        GA
+      </a>
+      <a 
+        href={mainSiteUrl} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="text-sm underline hover:text-gray-800"
+        title="View on main website"
+      >
+        Live
+      </a>
+      <a 
+        href={clarityUrl} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="text-sm underline hover:text-gray-800"
+        title="View heatmaps in Microsoft Clarity"
+      >
+        Heatmap
+      </a>
+      <span class="text-sm" title="Word count" id="wordCount">
+        Calculating...
+      </span>
+    </div>
   </div>
-)} 
+)}
+
+<script>
+  // Calculate word count after the page loads
+  function updateWordCount() {
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+      const text = mainContent.textContent || '';
+      const wordCount = text.trim().split(/\s+/).length;
+      const wordCountElement = document.getElementById('wordCount');
+      if (wordCountElement) {
+        wordCountElement.textContent = `${wordCount} words`;
+      }
+    }
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', updateWordCount);
+  // Also run after a short delay to ensure all content is loaded
+  setTimeout(updateWordCount, 1000);
+</script> 
