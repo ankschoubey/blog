@@ -48,35 +48,19 @@ import { Icon } from 'astro-icon/components';
   }
 
   // Function to generate TOC from headings
-  function generateTOC() {
-    console.log('Generating TOC...');
-    
+  function generateTOC() {    
     // Get all headings from the page
     const headings = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
-    
-    console.log('Found headings:', headings.length);
-    console.log('Headings:', Array.from(headings).map(h => ({
-      tag: h.tagName,
-      id: h.id,
-      text: h.textContent
-    })));
     
     // Get the TOC lists
     const tocList = document.getElementById('toc-list');
     const tocListMobile = document.getElementById('toc-list-mobile');
     
-    console.log('TOC lists found:', {
-      desktop: !!tocList,
-      mobile: !!tocListMobile
-    });
-    
     if (!tocList || !tocListMobile) {
-      console.log('TOC lists not found');
       return;
     }
     
     if (headings.length === 0) {
-      console.log('No headings found, hiding TOC');
       document.querySelector('.toc-container')?.classList.add('hidden');
       return;
     }
@@ -99,7 +83,7 @@ import { Icon } from 'astro-icon/components';
     headings.forEach((heading) => {
       const level = parseInt(heading.tagName.charAt(1));
       const id = heading.getAttribute('id');
-      const text = heading.textContent || '';
+      const text = '⋅ ' + heading.textContent || '';
       
       console.log('Processing heading:', { level, id, text });
       
@@ -261,6 +245,10 @@ import { Icon } from 'astro-icon/components';
 </script>
 
 <style>
+    a.toc-link.active{
+    font-weight: bold !important;
+  }
+  
   .toc-container {
     position: relative;
   }
@@ -400,16 +388,16 @@ import { Icon } from 'astro-icon/components';
     background: rgba(var(--primary-color-rgb), 0.05);
   }
 
+
   .toc-link.active {
     color: var(--primary-color);
-    font-weight: 700;
+    font-weight: bold !important;
     background: rgba(var(--primary-color-rgb), 0.1);
     box-shadow: 0 0 0 1px var(--primary-color);
   }
 
-  /* Remove the dot indicator since we're using border-left */
   .toc-link.active::before {
-    display: none;
+    /* display: none; */
   }
 
   /* Scrollbar styles */

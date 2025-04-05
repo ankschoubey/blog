@@ -21,9 +21,7 @@ These are my optimizations for Team City. Similar features can be found in other
 
 **Note**: I could not share images of my workflow because I use TeamCity at work. I have added some pictures that found on the internet.
 
-## My Optimized CI Workflow
-
-### Install Team City Chrome Extension for Notifications
+## Install Team City Chrome Extension for Notifications
 
 This allows for notification when the build succeeds or fails. This has been a big time saver for me. I can run a job in the background and let myself work on another task freely. As soon as the task is done, I will get a notification. Before, I would have to recheck it a few times and often I would completely forget about it.
 
@@ -35,19 +33,19 @@ You could also do email notification but it'd get cluttered fast.
 
 Download link [TeamCity Notifier - Chrome Web Store](https://chromewebstore.google.com/detail/teamcity-notifier/miolcigeeebinhdbihpodaajenfoggjl?hl=en). [^2]
 
-### Bookmark Favorite Builds page
+## Bookmark Favorite Builds page
 
 This will allow you to quickly see the builds that you run.
 
 If you want to get notifications for something you haven't run, click the ⭐ star icon next to the build. This adds it to your favorites and you'll start receiving notifications for it.
 
-### Fuzzy Search to Launch Builds Fast
+## Fuzzy Search to Launch Builds Fast
 
 You can use quick search by using `Cmd + K` or just `Q`. And then you can search with initial phrases instead of typing the whole thing.
 
 Suppose you want to search `Movie Microservice Test`, typing just `mo mi te` will filter and bring it to the top. You can click enter and run.
 
-### Running the build quickly
+## Running the build quickly
 
 TeamCity does not offer a quick shortcut to run a build once we are on a page. For this, I created a custom shortcut using the [Shortcuts Chrome Plugin](https://chromewebstore.google.com/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck?hl=en):
 
@@ -58,7 +56,7 @@ Array.from(document.querySelectorAll('button[aria-label]'))
 
 Once focused I click `Enter`.
 
-### Looking at dependent builds with the Dependencies view
+## Looking at dependent builds with the Dependencies view
 
 TeamCity and other tools allow viewing related dependencies in a single view.
 
@@ -89,7 +87,7 @@ Here are some blogposts that you might want to read up next:
 
 **What is your workflow for CI builds?**
 
-## Sources
+****
 
 [^1]: Image source - [CI/CD with TeamCity | DevOps Tool of the Month (4)](https://dev.to/techworld_with_nana/ci-cd-with-teamcity-devops-tool-of-the-month-4-16pm)
 [^2]: [TeamCity Notifier - Chrome Web Store](https://chromewebstore.google.com/detail/teamcity-notifier/miolcigeeebinhdbihpodaajenfoggjl?hl=en)

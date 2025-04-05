@@ -88,3 +88,7 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+a.toc-link.active{
+  font-weight: bold !important;
+}
