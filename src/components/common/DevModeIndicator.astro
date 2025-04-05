@@ -4,47 +4,75 @@ const currentPath = Astro.url.pathname;
 const gaUrl = `https://analytics.google.com/analytics/web/#/p238520355/reports/explorer?params=_u..nav%3Dmaui%26_r.explorerCard..filterTerm%3D%252F${currentPath.slice(1)}%26_r.explorerCard..startRow%3D0%26_u.dateOption%3Dlast12Months%26_u.comparisonOption%3Ddisabled&r=all-pages-and-screens&ruid=all-pages-and-screens,life-cycle,engagement&collectionId=life-cycle`;
 const mainSiteUrl = `https://www.ankushchoubey.com${currentPath}`;
 const clarityUrl = `https://clarity.microsoft.com/projects/qc6j7d4654/heatmaps?url=${encodeURIComponent(mainSiteUrl)}`;
+
+// Checklist items with their display values
+const checklistItems = [
+  { key: 'content_finished', display: 'Content finished' },
+  { key: 'perplexity_research', display: 'Researched with Perplexity' },
+  { key: 'grammarly_review', display: 'Grammarly reviewed' },
+  { key: 'tests_passing', display: 'Test passing' },
+  { key: 'social_promotion', display: 'Promoted on social media' }
+];
 ---
 
 {isLocalhost && (
-  <div class="fixed bottom-4 left-4 bg-yellow-500 text-black px-4 py-2 rounded-lg shadow-lg z-50 flex items-center gap-2">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-      <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-    </svg>
-    <span class="font-medium">Running Locally</span>
-    <div class="flex items-center gap-2 ml-2">
-      <a 
-        href={gaUrl} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="text-sm underline hover:text-gray-800"
-        title="View in Google Analytics"
-      >
-        GA
-      </a>
-      <a 
-        href={mainSiteUrl} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="text-sm underline hover:text-gray-800"
-        title="View on main website"
-      >
-        Live
-      </a>
-      <a 
-        href={clarityUrl} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="text-sm underline hover:text-gray-800"
-        title="View heatmaps in Microsoft Clarity"
-      >
-        Heatmap
-      </a>
-      <span class="text-sm" title="Word count" id="wordCount">
-        Calculating...
-      </span>
+  <>
+    <div class="fixed bottom-24 left-4 bg-white dark:bg-gray-800 text-black dark:text-white px-4 py-2 rounded-lg shadow-lg z-50">
+      <div class="text-sm font-medium mb-2">Post Checklist</div>
+      <div class="space-y-1" id="postChecklist">
+        {checklistItems.map(item => (
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input 
+              type="checkbox" 
+              class="form-checkbox h-4 w-4 text-blue-600"
+              data-key={item.key}
+              data-slug={currentPath}
+            />
+            <span class="text-sm">{item.display}</span>
+          </label>
+        ))}
+      </div>
     </div>
-  </div>
+
+    <div class="fixed bottom-4 left-4 bg-yellow-500 text-black px-4 py-2 rounded-lg shadow-lg z-50 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+      </svg>
+      <span class="font-medium">Running Locally</span>
+      <div class="flex items-center gap-2 ml-2">
+        <a 
+          href={gaUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-sm underline hover:text-gray-800"
+          title="View in Google Analytics"
+        >
+          GA
+        </a>
+        <a 
+          href={mainSiteUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-sm underline hover:text-gray-800"
+          title="View on main website"
+        >
+          Live
+        </a>
+        <a 
+          href={clarityUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-sm underline hover:text-gray-800"
+          title="View heatmaps in Microsoft Clarity"
+        >
+          Heatmap
+        </a>
+        <span class="text-sm" title="Word count" id="wordCount">
+          Calculating...
+        </span>
+      </div>
+    </div>
+  </>
 )}
 
 <script>
@@ -65,4 +93,36 @@ const clarityUrl = `https://clarity.microsoft.com/projects/qc6j7d4654/heatmaps?u
   document.addEventListener('DOMContentLoaded', updateWordCount);
   // Also run after a short delay to ensure all content is loaded
   setTimeout(updateWordCount, 1000);
+
+  // Checklist functionality
+  function initializeChecklist() {
+    const checkboxes = document.querySelectorAll('#postChecklist input[type="checkbox"]') as NodeListOf<HTMLInputElement>;
+    const currentSlug = checkboxes[0]?.dataset.slug;
+
+    if (!currentSlug) return;
+
+    // Load saved state
+    const savedState = localStorage.getItem(`checklist_${currentSlug}`);
+    const savedChecks: Record<string, boolean> = savedState ? JSON.parse(savedState) : {};
+
+    checkboxes.forEach(checkbox => {
+      const key = checkbox.dataset.key;
+      if (!key) return;
+
+      // Set initial state from localStorage
+      checkbox.checked = savedChecks[key] || false;
+
+      // Add change listener
+      checkbox.addEventListener('change', (e: Event) => {
+        const target = e.target as HTMLInputElement;
+        if (!target || !key) return;
+        
+        const newState = { ...savedChecks, [key]: target.checked };
+        localStorage.setItem(`checklist_${currentSlug}`, JSON.stringify(newState));
+      });
+    });
+  }
+
+  // Initialize checklist when DOM is loaded
+  document.addEventListener('DOMContentLoaded', initializeChecklist);
 </script> 
