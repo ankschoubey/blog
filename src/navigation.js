@@ -5,7 +5,6 @@ export const headerData = {
   links: [
     {
       text: 'Software',
-
       href: getPermalink(),
       links: [
         { text: 'Blog', href: getPermalink('technical', 'tag') },
@@ -19,6 +18,10 @@ export const headerData = {
         { text: 'Blog', href: getPermalink('non-technical', 'tag') },
         { text: 'Series', href: '/life' },
       ],
+    },
+    {
+      text: 'Previous Years',
+      href: '/from-previous-years',
     },
 
     // {

@@ -1,42 +1,42 @@
 ---
 import { GoogleAnalytics } from '@astrolib/analytics';
 import { ANALYTICS } from '~/utils/config';
+
+// Get the current URL from Astro's request object
+const isLocalhost = Astro.url.hostname === 'localhost';
 ---
 
-{
-  ANALYTICS?.vendors?.googleAnalytics?.id ? (
-    <GoogleAnalytics
-      id={String(ANALYTICS.vendors.googleAnalytics.id)}
-      partytown={ANALYTICS?.vendors?.googleAnalytics?.partytown}
-    />
-  ) : null
-}
+{!isLocalhost && (
+  <>
+    {ANALYTICS?.vendors?.googleAnalytics?.id ? (
+      <GoogleAnalytics
+        id={String(ANALYTICS.vendors.googleAnalytics.id)}
+        partytown={ANALYTICS?.vendors?.googleAnalytics?.partytown}
+      />
+    ) : null}
 
-<!-- Adsense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5553828151949683"
+      crossorigin="anonymous"></script>
 
-<script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5553828151949683"
-  crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V8XD5HMMR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3V8XD5HMMR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
+      gtag('config', 'G-3V8XD5HMMR');
+    </script>
 
-  gtag('config', 'G-3V8XD5HMMR');
-</script>
-
-<!-- Microsoft Clarity tag (clarity.ms) -->
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "qc6j7d4654");
-</script>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "qc6j7d4654");
+    </script>
+  </>
+)}

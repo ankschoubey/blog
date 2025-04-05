@@ -11,6 +11,7 @@ import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification from '~/components/common/SiteVerification.astro';
 import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
+import DevModeIndicator from '~/components/common/DevModeIndicator.astro';
 
 // Uncomment line below to activate View Transitions
 // import { ViewTransitions } from 'astro:transitions';
@@ -42,7 +43,7 @@ const { language, textDirection } = I18N;
 
   <body class="bg-page tracking-tight text-default antialiased">
     <slot />
-
+    <DevModeIndicator />
     <BasicScripts />
 
     <style is:global>
