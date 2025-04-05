@@ -4,17 +4,19 @@ import { Icon } from 'astro-icon/components';
 
 <div class="toc-container">
   {/* Desktop TOC */}
-  <nav class="toc-desktop">
-    <h2 class="toc-title">Table of Contents</h2>
-    <ul class="toc-list" id="toc-list">
-      <!-- TOC items will be inserted here by JavaScript -->
-    </ul>
-  </nav>
+  <div class="toc-desktop-wrapper">
+    <h2 class="toc-title-outer">Index</h2>
+    <nav class="toc-desktop">
+      <ul class="toc-list" id="toc-list">
+        <!-- TOC items will be inserted here by JavaScript -->
+      </ul>
+    </nav>
+  </div>
 
   {/* Mobile TOC */}
   <div class="toc-mobile">
+    <h2 class="toc-title-outer">Index</h2>
     <nav class="toc-content">
-      <h2 class="toc-title">Table of Contents</h2>
       <ul class="toc-list" id="toc-list-mobile">
         <!-- TOC items will be inserted here by JavaScript -->
       </ul>
@@ -49,8 +51,8 @@ import { Icon } from 'astro-icon/components';
 
   // Function to generate TOC from headings
   function generateTOC() {    
-    // Get all headings from the page
-    const headings = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
+    // Get all headings from the page (only up to h3)
+    const headings = document.querySelectorAll('h1[id], h2[id], h3[id]');
     
     // Get the TOC lists
     const tocList = document.getElementById('toc-list');
@@ -119,10 +121,6 @@ import { Icon } from 'astro-icon/components';
             
             // Update URL hash without scrolling
             history.pushState(null, '', `#${targetId}`);
-            
-            // Toggle sublevels visibility
-            const level = parseInt(link.closest('.toc-item').className.match(/pl-(\d+)/)[1]) / 4;
-            toggleSublevels(level);
           }
         });
       });
@@ -136,28 +134,12 @@ import { Icon } from 'astro-icon/components';
       tocListMobile.appendChild(liMobile);
     });
     
-    // Initially hide all sublevels except level 1
-    toggleSublevels(1);
-    
     console.log('TOC generation complete');
-  }
-  
-  // Function to toggle sublevels visibility
-  function toggleSublevels(activeLevel) {
-    const tocItems = document.querySelectorAll('.toc-item');
-    tocItems.forEach(item => {
-      const level = parseInt(item.className.match(/pl-(\d+)/)[1]) / 4;
-      if (level > activeLevel) {
-        item.style.display = 'none';
-      } else {
-        item.style.display = 'block';
-      }
-    });
   }
   
   // Function to highlight the current section
   function highlightCurrentSection() {
-    const headings = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]'));
+    const headings = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id]'));
     const tocLinks = document.querySelectorAll('.toc-link');
     
     // Get the current scroll position
@@ -202,8 +184,10 @@ import { Icon } from 'astro-icon/components';
           const containerRect = tocContainer.getBoundingClientRect();
           const linkRect = activeLink.getBoundingClientRect();
           
+          // Calculate if the active link is outside the visible area
           if (linkRect.top < containerRect.top || linkRect.bottom > containerRect.bottom) {
-            activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // Scroll the active link to the top of the container
+            activeLink.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
         }
       }
@@ -245,31 +229,36 @@ import { Icon } from 'astro-icon/components';
 </script>
 
 <style>
-
-
   .toc-container {
     position: relative;
   }
 
-  /* Desktop styles */
-  .toc-desktop {
+  .toc-desktop-wrapper {
     position: fixed;
     top: 50%;
     right: 2rem;
     transform: translateY(-50%);
     width: 250px;
-    max-height: 80vh;
+    z-index: 10;
+  }
+
+  .toc-title-outer {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+    text-align: center;
+  }
+
+  /* Desktop styles */
+  .toc-desktop {
+    max-height: 70vh;
     overflow-y: auto;
-    padding: 1rem;
+    padding: 1rem 0.1rem;
     background: rgba(var(--background-color-rgb), 0.8);
     backdrop-filter: blur(8px);
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-  }
-
-  .toc-desktop .toc-content {
-    display: block;
   }
 
   /* Mobile styles */
@@ -342,22 +331,12 @@ import { Icon } from 'astro-icon/components';
     .toc-mobile {
       display: none;
     }
-    .toc-desktop .toc-content {
-      display: block;
-    }
   }
 
   @media (max-width: 1023px) {
-    .toc-desktop {
+    .toc-desktop-wrapper {
       display: none;
     }
-  }
-
-  .toc-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--heading-color);
   }
 
   .toc-list {
@@ -386,16 +365,11 @@ import { Icon } from 'astro-icon/components';
     background: rgba(var(--primary-color-rgb), 0.05);
   }
 
-
   .toc-link.active {
     color: var(--primary-color);
     font-weight: bold !important;
     background: rgba(var(--primary-color-rgb), 0.1);
     box-shadow: 0 0 0 1px var(--primary-color);
-  }
-
-  .toc-link.active::before {
-    /* display: none; */
   }
 
   /* Scrollbar styles */
