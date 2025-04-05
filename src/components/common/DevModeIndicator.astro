@@ -5,6 +5,10 @@ const gaUrl = `https://analytics.google.com/analytics/web/#/p238520355/reports/e
 const mainSiteUrl = `https://www.ankushchoubey.com${currentPath}`;
 const clarityUrl = `https://clarity.microsoft.com/projects/qc6j7d4654/heatmaps?url=${encodeURIComponent(mainSiteUrl)}`;
 
+// Get the content file path based on the current URL
+const contentPath = currentPath.replace(/^\/blog\//, '').replace(/\/$/, '');
+const vsCodeUrl = `vscode://file${process.cwd()}/src/content/blog/${contentPath}.mdx`;
+
 // Checklist items with their display values
 const checklistItems = [
   { key: 'content_finished', display: 'Content finished' },
