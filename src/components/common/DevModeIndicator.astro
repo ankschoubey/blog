@@ -21,14 +21,15 @@ const checklistItems = [
       <div class="text-sm font-medium mb-2">Post Checklist</div>
       <div class="space-y-1" id="postChecklist">
         {checklistItems.map(item => (
-          <label class="flex items-center gap-2 cursor-pointer">
+          <label class="checklist-label">
             <input 
               type="checkbox" 
-              class="form-checkbox h-4 w-4 text-blue-600"
+              class="checklist-checkbox"
               data-key={item.key}
               data-slug={currentPath}
             />
-            <span class="text-sm">{item.display}</span>
+            <span class="checkmark">✓</span>
+            <span class="label-text">{item.display}</span>
           </label>
         ))}
       </div>
@@ -74,6 +75,67 @@ const checklistItems = [
     </div>
   </>
 )}
+
+<style>
+  .checklist-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px;
+    user-select: none;
+  }
+
+  .checklist-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    transition: all 0.2s ease;
+  }
+
+  .dark .checkmark {
+    background-color: #1e293b;
+    border-color: #475569;
+  }
+
+  /* Hover state */
+  .checklist-label:hover .checkmark {
+    border-color: #10B981;
+  }
+
+  /* Checked state */
+  .checklist-checkbox:checked + .checkmark {
+    background-color: #10B981;
+    border-color: #10B981;
+    color: white;
+  }
+
+  .label-text {
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+
+  .dark .label-text {
+    color: #94a3b8;
+  }
+</style>
 
 <script>
   // Calculate word count after the page loads
