@@ -13,15 +13,16 @@ import { Icon } from 'astro-icon/components';
 
   {/* Mobile TOC */}
   <div class="toc-mobile">
-    <button class="toc-toggle" aria-label="Toggle Table of Contents">
-      <Icon name="tabler:list" class="h-6 w-6" />
-    </button>
     <nav class="toc-content">
       <h2 class="toc-title">Table of Contents</h2>
       <ul class="toc-list" id="toc-list-mobile">
         <!-- TOC items will be inserted here by JavaScript -->
       </ul>
     </nav>
+    <button class="toc-toggle" aria-label="Toggle Table of Contents">
+      <Icon name="tabler:menu-2" class="menu-icon h-6 w-6" />
+      <Icon name="tabler:x" class="close-icon h-6 w-6" />
+    </button>
   </div>
 </div>
 
@@ -172,39 +173,69 @@ import { Icon } from 'astro-icon/components';
   
   // Function to highlight the current section
   function highlightCurrentSection() {
-    const headings = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
+    const headings = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]'));
     const tocLinks = document.querySelectorAll('.toc-link');
     
     // Get the current scroll position
-    const scrollPosition = window.scrollY;
+    const scrollY = window.scrollY;
+    const viewportHeight = window.innerHeight;
     
-    // Find the current heading
-    let currentHeading = null;
+    // Find the active heading
+    let activeHeading = null;
     
-    for (let i = 0; i < headings.length; i++) {
+    // Loop through headings in reverse to find the last one that's above our current position
+    for (let i = headings.length - 1; i >= 0; i--) {
       const heading = headings[i];
-      const headingTop = heading.getBoundingClientRect().top + window.scrollY;
+      const rect = heading.getBoundingClientRect();
+      const absoluteTop = window.scrollY + rect.top;
       
-      if (headingTop <= scrollPosition + 100) {
-        currentHeading = heading;
-      } else {
+      if (scrollY >= absoluteTop - 100) {  // 100px offset for better UX
+        activeHeading = heading;
         break;
       }
     }
     
-    // Update active state
-    tocLinks.forEach((link) => {
+    // If we're at the very top and no heading is found, use the first heading
+    if (!activeHeading && headings.length > 0 && scrollY < 100) {
+      activeHeading = headings[0];
+    }
+    
+    // Remove active class from all links
+    tocLinks.forEach(link => {
       link.classList.remove('active');
     });
     
-    if (currentHeading) {
-      const currentId = currentHeading.getAttribute('id');
-      const currentLink = document.querySelector(`.toc-link[href="#${currentId}"]`);
-      if (currentLink) {
-        currentLink.classList.add('active');
-        // Show sublevels for active heading
-        const level = parseInt(currentLink.closest('.toc-item').className.match(/pl-(\d+)/)[1]) / 4;
-        toggleSublevels(level);
+    // Add active class to the corresponding link
+    if (activeHeading) {
+      const activeId = activeHeading.id;
+      const activeLink = document.querySelector(`.toc-link[href="#${activeId}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+        
+        // Ensure the active link is visible in the TOC
+        const tocContainer = activeLink.closest('.toc-desktop, .toc-content');
+        if (tocContainer) {
+          const containerRect = tocContainer.getBoundingClientRect();
+          const linkRect = activeLink.getBoundingClientRect();
+          
+          if (linkRect.top < containerRect.top || linkRect.bottom > containerRect.bottom) {
+            activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      }
+    }
+  }
+  
+  // Throttle function to limit how often the highlight function runs
+  function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+      const args = arguments;
+      const context = this;
+      if (!inThrottle) {
+        func.apply(context, args);
+        inThrottle = true;
+        setTimeout(() => inThrottle = false, limit);
       }
     }
   }
@@ -221,8 +252,8 @@ import { Icon } from 'astro-icon/components';
   document.addEventListener('DOMContentLoaded', () => {
     generateTOC();
     
-    // Add scroll event listener to highlight current section
-    window.addEventListener('scroll', highlightCurrentSection);
+    // Add throttled scroll event listener
+    window.addEventListener('scroll', throttle(highlightCurrentSection, 100));
     
     // Highlight current section on initial load
     highlightCurrentSection();
@@ -273,11 +304,29 @@ import { Icon } from 'astro-icon/components';
     color: white;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .toc-toggle .menu-icon,
+  .toc-toggle .close-icon {
+    position: absolute;
+    transition: all 0.2s;
+  }
+
+  .toc-toggle .close-icon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+  }
+
+  .toc-toggle .menu-icon {
+    opacity: 1;
+    transform: rotate(0) scale(1);
   }
 
   .toc-toggle:hover {
     transform: scale(1.05);
+    background: var(--primary-color-dark, var(--primary-color));
   }
 
   .toc-content {
@@ -336,30 +385,28 @@ import { Icon } from 'astro-icon/components';
     display: block;
     color: var(--text-color);
     text-decoration: none;
-    transition: color 0.2s;
-    padding: 0.25rem 0;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    border-radius: 0.25rem;
+    margin: 0.25rem 0;
   }
 
   .toc-link:hover {
     color: var(--primary-color);
+    background: rgba(var(--primary-color-rgb), 0.05);
   }
 
   .toc-link.active {
     color: var(--primary-color);
-    font-weight: 600;
-    position: relative;
+    font-weight: 700;
+    background: rgba(var(--primary-color-rgb), 0.1);
+    box-shadow: 0 0 0 1px var(--primary-color);
   }
 
+  /* Remove the dot indicator since we're using border-left */
   .toc-link.active::before {
-    content: '';
-    position: absolute;
-    left: -1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: var(--primary-color);
-    border-radius: 50%;
+    display: none;
   }
 
   /* Scrollbar styles */
