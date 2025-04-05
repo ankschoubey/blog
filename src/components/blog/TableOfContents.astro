@@ -306,6 +306,8 @@ import { Icon } from 'astro-icon/components';
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.2s;
     position: relative;
+    backdrop-filter: blur(10px);
+    background: #8080804a;
   }
 
   .toc-toggle .menu-icon,
@@ -326,7 +328,8 @@ import { Icon } from 'astro-icon/components';
 
   .toc-toggle:hover {
     transform: scale(1.05);
-    background: var(--primary-color-dark, var(--primary-color));
+    backdrop-filter: blur(10px);
+    background: #8080804a;
   }
 
   .toc-content {
