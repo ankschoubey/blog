@@ -9,16 +9,51 @@ const { totalPosts, readPosts } = Astro.props;
 
 <div class="mb-8 flex flex-wrap items-center justify-between gap-4">
   <div class="flex items-center gap-4">
-    <select
-      id="readFilter"
-      class="rounded-md border-gray-300 bg-white px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary dark:border-gray-600 dark:bg-slate-800"
-    >
-      <option value="all">Show All ({totalPosts})</option>
-      <option value="unread">Unread Only ({totalPosts - readPosts})</option>
-      <option value="read">Read Only ({readPosts})</option>
-    </select>
+    <div class="relative">
+      <button
+        id="readFilterButton"
+        class="flex items-center justify-between rounded-md border border-gray-300 bg-white px-4 py-2 pr-10 text-sm font-medium text-gray-700 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary dark:border-gray-600 dark:bg-slate-800 dark:text-gray-200"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <span id="selectedOption">Show All ({totalPosts})</span>
+        <svg class="ml-2 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+        </svg>
+      </button>
+      
+      <div 
+        id="readFilterDropdown" 
+        class="absolute left-0 mt-1 hidden w-full rounded-md border border-gray-300 bg-white py-1 shadow-lg dark:border-gray-600 dark:bg-slate-800 z-50"
+        role="menu"
+        aria-orientation="vertical"
+        aria-labelledby="readFilterButton"
+      >
+        <button 
+          class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-slate-700" 
+          role="menuitem" 
+          data-value="all"
+        >
+          Show All ({totalPosts})
+        </button>
+        <button 
+          class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-slate-700" 
+          role="menuitem" 
+          data-value="unread"
+        >
+          Unread Only ({totalPosts - readPosts})
+        </button>
+        <button 
+          class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-slate-700" 
+          role="menuitem" 
+          data-value="read"
+        >
+          Read Only ({readPosts})
+        </button>
+      </div>
+    </div>
   </div>
-  <div id="readCounter" class="text-sm text-gray-600 dark:text-gray-400">
+  <div id="readCounter" class="text-sm font-medium text-gray-600 dark:text-gray-400">
     {readPosts} of {totalPosts} posts read
   </div>
 </div>
@@ -45,15 +80,28 @@ const { totalPosts, readPosts } = Astro.props;
       readCounterElement.textContent = `${readCount} of ${totalPosts} posts read`;
       
       // Also update the dropdown options
-      const filterSelect = document.getElementById('readFilter') as HTMLSelectElement;
-      if (filterSelect) {
-        const allOption = filterSelect.querySelector('option[value="all"]');
-        const unreadOption = filterSelect.querySelector('option[value="unread"]');
-        const readOption = filterSelect.querySelector('option[value="read"]');
-        
-        if (allOption) allOption.textContent = `Show All (${totalPosts})`;
-        if (unreadOption) unreadOption.textContent = `Unread Only (${totalPosts - readCount})`;
-        if (readOption) readOption.textContent = `Read Only (${readCount})`;
+      const allOption = document.querySelector('[data-value="all"]');
+      const unreadOption = document.querySelector('[data-value="unread"]');
+      const readOption = document.querySelector('[data-value="read"]');
+      
+      if (allOption) allOption.textContent = `Show All (${totalPosts})`;
+      if (unreadOption) unreadOption.textContent = `Unread Only (${totalPosts - readCount})`;
+      if (readOption) readOption.textContent = `Read Only (${readCount})`;
+      
+      // Update the selected option text
+      const selectedOption = document.getElementById('selectedOption');
+      if (selectedOption) {
+        switch (currentFilter) {
+          case 'all':
+            selectedOption.textContent = `Show All (${totalPosts})`;
+            break;
+          case 'unread':
+            selectedOption.textContent = `Unread Only (${totalPosts - readCount})`;
+            break;
+          case 'read':
+            selectedOption.textContent = `Read Only (${readCount})`;
+            break;
+        }
       }
     }
     
@@ -80,32 +128,76 @@ const { totalPosts, readPosts } = Astro.props;
     });
   }
 
+  // Toggle dropdown
+  function toggleDropdown() {
+    const dropdown = document.getElementById('readFilterDropdown');
+    const button = document.getElementById('readFilterButton');
+    
+    if (dropdown && button) {
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', (!isExpanded).toString());
+      dropdown.classList.toggle('hidden', isExpanded);
+    }
+  }
+
+  // Close dropdown when clicking outside
+  function closeDropdown() {
+    const dropdown = document.getElementById('readFilterDropdown');
+    const button = document.getElementById('readFilterButton');
+    
+    if (dropdown && button) {
+      button.setAttribute('aria-expanded', 'false');
+      dropdown.classList.add('hidden');
+    }
+  }
+
   // Initialize filter from localStorage
   const savedFilter = localStorage.getItem('lastYearFilter');
   if (savedFilter) {
-    const filterSelect = document.getElementById('readFilter') as HTMLSelectElement;
-    filterSelect.value = savedFilter;
     currentFilter = savedFilter;
     updateVisibility();
   }
 
-  // Handle filter changes
-  document.getElementById('readFilter')?.addEventListener('change', (e) => {
-    const select = e.target as HTMLSelectElement;
-    currentFilter = select.value;
-    localStorage.setItem('lastYearFilter', currentFilter);
-    updateVisibility();
-  });
-
-  // Update visibility when checkboxes change
-  document.addEventListener('change', (e) => {
-    if ((e.target as HTMLElement).matches('input[type="checkbox"][data-post-id]')) {
-      updateVisibility();
-    }
-  });
-  
   // Initialize on page load
   document.addEventListener('DOMContentLoaded', () => {
+    // Set up dropdown toggle
+    const button = document.getElementById('readFilterButton');
+    if (button) {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleDropdown();
+      });
+    }
+    
+    // Set up dropdown options
+    const options = document.querySelectorAll('[role="menuitem"]');
+    options.forEach(option => {
+      option.addEventListener('click', (e) => {
+        const value = (e.currentTarget as HTMLElement).getAttribute('data-value');
+        if (value) {
+          currentFilter = value;
+          localStorage.setItem('lastYearFilter', currentFilter);
+          updateVisibility();
+          closeDropdown();
+        }
+      });
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!(e.target as HTMLElement).closest('#readFilterButton') && 
+          !(e.target as HTMLElement).closest('#readFilterDropdown')) {
+        closeDropdown();
+      }
+    });
+    
+    // Update visibility when checkboxes change
+    document.addEventListener('change', (e) => {
+      if ((e.target as HTMLElement).matches('input[type="checkbox"][data-post-id]')) {
+        updateVisibility();
+      }
+    });
+    
     countReadPosts();
     updateVisibility();
   });
