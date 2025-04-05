@@ -1,0 +1,63 @@
+---
+interface Props {
+  postId: string;
+  postTitle: string;
+}
+
+const { postId, postTitle } = Astro.props;
+---
+
+<div class="flex items-center gap-2 mt-4">
+  <input
+    type="checkbox"
+    id={`read-${postId}`}
+    class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary dark:border-gray-600"
+    data-post-id={postId}
+    data-post-title={postTitle}
+  />
+  <label for={`read-${postId}`} class="text-sm text-gray-600 dark:text-gray-400">
+    Mark as read
+  </label>
+</div>
+
+<script>
+  // Initialize checkboxes from localStorage
+  function initializeCheckboxes() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"][data-post-id]');
+    checkboxes.forEach((checkbox) => {
+      const postId = checkbox.getAttribute('data-post-id');
+      if (postId) {
+        const isRead = localStorage.getItem(`post-${postId}-read`) === 'true';
+        (checkbox as HTMLInputElement).checked = isRead;
+      }
+    });
+  }
+
+  // Handle checkbox changes
+  function handleCheckboxChange(event: Event) {
+    const checkbox = event.target as HTMLInputElement;
+    const postId = checkbox.getAttribute('data-post-id');
+    const postTitle = checkbox.getAttribute('data-post-title');
+    
+    if (postId) {
+      localStorage.setItem(`post-${postId}-read`, checkbox.checked.toString());
+      
+      // Optional: Show a toast or notification
+      if (checkbox.checked) {
+        console.log(`Marked "${postTitle}" as read`);
+      } else {
+        console.log(`Marked "${postTitle}" as unread`);
+      }
+    }
+  }
+
+  // Add event listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    initializeCheckboxes();
+    
+    const checkboxes = document.querySelectorAll('input[type="checkbox"][data-post-id]');
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', handleCheckboxChange);
+    });
+  });
+</script> 
