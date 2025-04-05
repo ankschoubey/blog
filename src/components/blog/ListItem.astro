@@ -82,7 +82,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     {post.excerpt && <p class="flex-grow text-lg text-muted dark:text-slate-400">{post.excerpt}</p>}
     <footer class="mt-5">
       <PostTags tags={post.tags} />
-      <ReadChecklist postId={post.id} postTitle={post.title} />
+      <ReadChecklist postId={post.id} postTitle={post.title} slug={post.permalink} />
     </footer>
   </div>
 </article>
@@ -115,7 +115,9 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     posts.forEach((post) => {
       const postId = post.getAttribute('data-post-id');
       if (postId) {
-        const isRead = localStorage.getItem(`post-${postId}-read`) === 'true';
+        const checkbox = post.querySelector('input[type="checkbox"]') as HTMLInputElement;
+        const slug = checkbox?.getAttribute('data-slug');
+        const isRead = slug ? localStorage.getItem(`post-${slug}-read`) === 'true' : false;
         post.classList.toggle('read', isRead);
       }
     });

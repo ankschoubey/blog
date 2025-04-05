@@ -68,7 +68,8 @@ const { totalPosts, readPosts } = Astro.props;
     let readCount = 0;
     
     checkboxes.forEach((checkbox) => {
-      if ((checkbox as HTMLInputElement).checked) {
+      const slug = checkbox.getAttribute('data-slug');
+      if (slug && localStorage.getItem(`post-${slug}-read`) === 'true') {
         readCount++;
       }
     });
@@ -113,7 +114,8 @@ const { totalPosts, readPosts } = Astro.props;
     
     posts.forEach((post) => {
       const checkbox = post.querySelector('input[type="checkbox"]') as HTMLInputElement;
-      const isRead = checkbox?.checked || false;
+      const slug = checkbox?.getAttribute('data-slug');
+      const isRead = slug ? localStorage.getItem(`post-${slug}-read`) === 'true' : false;
       
       switch (currentFilter) {
         case 'read':

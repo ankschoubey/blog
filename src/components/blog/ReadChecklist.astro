@@ -2,12 +2,27 @@
 interface Props {
   postId: string;
   postTitle: string;
+  slug: string;
 }
 
-const { postId, postTitle } = Astro.props;
+const { postId, postTitle, slug } = Astro.props;
+const isLocalhost = Astro.url.hostname === 'localhost';
+const currentPath = Astro.url.pathname;
+const gaUrl = `https://analytics.google.com/analytics/web/#/p238520355/reports/explorer?params=_u..nav%3Dmaui%26_r.explorerCard..filterTerm%3D%252F${currentPath.slice(1)}%26_r.explorerCard..startRow%3D0%26_u.dateOption%3Dlast12Months%26_u.comparisonOption%3Ddisabled&r=all-pages-and-screens&ruid=all-pages-and-screens,life-cycle,engagement&collectionId=life-cycle`;
+const mainSiteUrl = `https://www.ankushchoubey.com${currentPath}`;
+const clarityUrl = `https://clarity.microsoft.com/projects/qc6j7d4654/heatmaps?url=${encodeURIComponent(mainSiteUrl)}`;
+
+// Checklist items with their display values
+const checklistItems = [
+  { key: 'content_finished', display: 'Content finished' },
+  { key: 'perplexity_research', display: 'Researched with Perplexity' },
+  { key: 'grammarly_review', display: 'Grammarly reviewed' },
+  { key: 'tests_passing', display: 'Test passing' },
+  { key: 'social_promotion', display: 'Promoted on social media' }
+];
 ---
 
-<div class="flex items-center gap-2 mt-4">
+<div class="flex flex-col gap-2 mt-4">
   <label class="read-checkbox-label" for={`read-${postId}`}>
     <input
       type="checkbox"
@@ -15,10 +30,73 @@ const { postId, postTitle } = Astro.props;
       class="read-checkbox"
       data-post-id={postId}
       data-post-title={postTitle}
+      data-slug={slug}
     />
     <span class="checkmark">✓</span>
     <span class="label-text">Mark as read</span>
   </label>
+
+  {isLocalhost && (
+    <div class="bg-white dark:bg-gray-800 text-black dark:text-white px-4 py-2 rounded-lg shadow-lg relative z-10">
+      <div class="flex items-center justify-between mb-2">
+        <div class="text-sm font-medium">Post Checklist</div>
+        <button 
+          id={`toggleChecklist-${postId}`}
+          class="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+          title="Toggle checklist visibility"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+      <div class="space-y-1" id={`postChecklist-${postId}`}>
+        {checklistItems.map(item => (
+          <label class="checklist-label" for={`checklist-${postId}-${item.key}`}>
+            <input 
+              type="checkbox" 
+              id={`checklist-${postId}-${item.key}`}
+              class="checklist-checkbox"
+              data-key={item.key}
+              data-post-id={postId}
+              data-slug={slug}
+            />
+            <span class="checkmark">✓</span>
+            <span class="label-text">{item.display}</span>
+          </label>
+        ))}
+      </div>
+      <div class="flex items-center gap-2 mt-2 text-sm">
+        <a 
+          href={gaUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="underline hover:text-gray-800"
+          title="View in Google Analytics"
+        >
+          GA
+        </a>
+        <a 
+          href={mainSiteUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="underline hover:text-gray-800"
+          title="View on main website"
+        >
+          Live
+        </a>
+        <a 
+          href={clarityUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="underline hover:text-gray-800"
+          title="View heatmaps in Microsoft Clarity"
+        >
+          Heatmap
+        </a>
+      </div>
+    </div>
+  )}
 </div>
 
 <style>
@@ -30,6 +108,7 @@ const { postId, postTitle } = Astro.props;
     position: relative;
     padding-left: 32px;
     user-select: none;
+    z-index: 10;
   }
 
   .read-checkbox {
@@ -38,6 +117,7 @@ const { postId, postTitle } = Astro.props;
     cursor: pointer;
     height: 0;
     width: 0;
+    z-index: 20;
   }
 
   .checkmark {
@@ -53,6 +133,7 @@ const { postId, postTitle } = Astro.props;
     justify-content: center;
     color: transparent;
     transition: all 0.2s ease;
+    z-index: 15;
   }
 
   .dark .checkmark {
@@ -75,22 +156,79 @@ const { postId, postTitle } = Astro.props;
   .label-text {
     font-size: 0.875rem;
     color: #64748b;
+    z-index: 10;
   }
 
   .dark .label-text {
     color: #94a3b8;
+  }
+
+  .checklist-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px;
+    user-select: none;
+    z-index: 10;
+  }
+
+  .checklist-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    z-index: 20;
+  }
+
+  /* Checklist checkbox checked state */
+  .checklist-checkbox:checked + .checkmark {
+    background-color: #10B981;
+    border-color: #10B981;
+    color: white;
+  }
+
+  /* Checklist label hover state */
+  .checklist-label:hover .checkmark {
+    border-color: #10B981;
+  }
+
+  [id^="postChecklist-"] {
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 5;
+  }
+
+  [id^="postChecklist-"].hidden {
+    display: none;
+  }
+
+  [id^="toggleChecklist-"] {
+    transition: transform 0.3s ease;
+    z-index: 15;
+  }
+
+  [id^="toggleChecklist-"].rotated {
+    transform: rotate(180deg);
   }
 </style>
 
 <script>
   // Initialize checkboxes from localStorage
   function initializeCheckboxes() {
+    console.log('Initializing checkboxes');
     const checkboxes = document.querySelectorAll('input[type="checkbox"][data-post-id]');
+    console.log('Found checkboxes:', checkboxes.length);
+    
     checkboxes.forEach((checkbox) => {
       const postId = checkbox.getAttribute('data-post-id');
-      if (postId) {
-        const isRead = localStorage.getItem(`post-${postId}-read`) === 'true';
+      const slug = checkbox.getAttribute('data-slug');
+      if (postId && slug) {
+        const isRead = localStorage.getItem(`post-${slug}-read`) === 'true';
         (checkbox as HTMLInputElement).checked = isRead;
+        console.log(`Set checkbox ${postId} to ${isRead}`);
       }
     });
   }
@@ -99,27 +237,122 @@ const { postId, postTitle } = Astro.props;
   function handleCheckboxChange(event: Event) {
     const checkbox = event.target as HTMLInputElement;
     const postId = checkbox.getAttribute('data-post-id');
-    const postTitle = checkbox.getAttribute('data-post-title');
+    const slug = checkbox.getAttribute('data-slug');
     
-    if (postId) {
-      localStorage.setItem(`post-${postId}-read`, checkbox.checked.toString());
+    if (postId && slug) {
+      localStorage.setItem(`post-${slug}-read`, checkbox.checked.toString());
+      console.log(`Saved checkbox state for ${postId}: ${checkbox.checked}`);
       
-      // Optional: Show a toast or notification
-      if (checkbox.checked) {
-        console.log(`Marked "${postTitle}" as read`);
-      } else {
-        console.log(`Marked "${postTitle}" as unread`);
-      }
+      // Force update the checkbox state in the UI
+      checkbox.checked = checkbox.checked;
     }
+  }
+
+  // Initialize all checklists
+  function initializeAllChecklists() {
+    console.log('Initializing all checklists');
+    
+    // Get all checklist containers
+    const checklistContainers = document.querySelectorAll('[id^="postChecklist-"]');
+    console.log('Found checklist containers:', checklistContainers.length);
+    
+    checklistContainers.forEach(container => {
+      const containerId = container.id;
+      const postId = containerId.replace('postChecklist-', '');
+      console.log('Processing checklist for postId:', postId);
+      
+      // Get the toggle button for this checklist
+      const toggleButton = document.getElementById(`toggleChecklist-${postId}`);
+      if (!toggleButton) {
+        console.log('Toggle button not found for postId:', postId);
+        return;
+      }
+      
+      // Get all checkboxes in this checklist - specifically the checklist checkboxes
+      const checkboxes = container.querySelectorAll('input.checklist-checkbox');
+      console.log('Found checkboxes:', checkboxes.length);
+      
+      // Get the slug from the first checkbox
+      const firstCheckbox = checkboxes[0] as HTMLInputElement;
+      const slug = firstCheckbox?.getAttribute('data-slug');
+      if (!slug) {
+        console.log('Slug not found for postId:', postId);
+        return;
+      }
+      console.log('Using slug:', slug);
+      
+      // Load saved state for this checklist
+      const savedState = localStorage.getItem(`checklist_${slug}`);
+      const savedChecks = savedState ? JSON.parse(savedState) : {};
+      console.log('Loaded saved checks:', savedChecks);
+      
+      // Set initial state for each checkbox
+      checkboxes.forEach(checkbox => {
+        const key = checkbox.getAttribute('data-key');
+        if (!key) return;
+        
+        // Set initial state from localStorage
+        const isChecked = savedChecks[key] || false;
+        (checkbox as HTMLInputElement).checked = isChecked;
+        console.log(`Initial state - slug: ${slug}, key: ${key}, value: ${isChecked}`);
+        
+        // Remove any existing event listeners
+        const newCheckbox = checkbox.cloneNode(true) as HTMLInputElement;
+        checkbox.parentNode?.replaceChild(newCheckbox, checkbox);
+        
+        // Add change listener - using the same approach as the read checkbox
+        newCheckbox.addEventListener('change', (e) => {
+          const target = e.target as HTMLInputElement;
+          const isChecked = target.checked;
+          console.log(`Checkbox changed - slug: ${slug}, key: ${key}, value: ${isChecked}`);
+          
+          // Update the saved state
+          const newState = { ...savedChecks };
+          newState[key] = isChecked;
+          localStorage.setItem(`checklist_${slug}`, JSON.stringify(newState));
+          
+          // Force update the checkbox state in the UI
+          target.checked = isChecked;
+        });
+      });
+      
+      // Set initial visibility
+      const isVisible = localStorage.getItem(`checklist_visible_${slug}`) !== 'false';
+      if (!isVisible) {
+        container.classList.add('hidden');
+        toggleButton.classList.add('rotated');
+      }
+      
+      // Add toggle button listener
+      toggleButton.addEventListener('click', () => {
+        console.log('Toggle button clicked for postId:', postId);
+        container.classList.toggle('hidden');
+        toggleButton.classList.toggle('rotated');
+        localStorage.setItem(`checklist_visible_${slug}`, (!container.classList.contains('hidden')).toString());
+      });
+    });
   }
 
   // Add event listeners
   document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM Content Loaded');
+    
+    // Initialize read checkboxes
     initializeCheckboxes();
     
-    const checkboxes = document.querySelectorAll('input[type="checkbox"][data-post-id]');
-    checkboxes.forEach((checkbox) => {
+    // Add change listeners to read checkboxes
+    const readCheckboxes = document.querySelectorAll('input[type="checkbox"][data-post-id]');
+    readCheckboxes.forEach((checkbox) => {
       checkbox.addEventListener('change', handleCheckboxChange);
     });
+    
+    // Initialize all checklists
+    initializeAllChecklists();
+    
+    // Also initialize after a short delay to ensure all content is loaded
+    setTimeout(() => {
+      console.log('Running delayed initialization');
+      initializeAllChecklists();
+    }, 500);
   });
 </script> 
