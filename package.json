@@ -14,7 +14,7 @@
     "ci": "npm run lint:eslint && npm run build",
     "playwright": "playwright test",
     "test": "vitest",
-    "vitest-ui": "vitest --ui"
+    "testui": "vitest --ui"
   },
   "dependencies": {
     "@astrojs/react": "^3.0.9",

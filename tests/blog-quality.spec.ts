@@ -4,26 +4,6 @@ import { SeoCheck } from "seord";
 const writeGood = require('write-good');
 
 
-// iterateMarkdownFiles()
-
-// .slice(0, 10)
-// .filter(({frontMatter}) => frontMatter.title.includes('PIT'))
-// .forEach(({frontMatter, body, html}) => {
-//     test(frontMatter.title + ' ' + frontMatter.slug, async() => {
-//         console.log(frontMatter.title);
-//         expectHeader2ToBeInFormOfQuestion(body);
-//         expectTitleShouldBeBetween50To60(frontMatter);
-//         expectExcerptShouldBeBetween70To155(frontMatter);
-//         expectSeoKeywordsShouldExistOrBeEmpty(frontMatter);
-//         // expectNoWritingSuggestions(body);
-//         expectSeoAnalysisToBePerfect(frontMatter, html);
-//         expectNoImageWithoutAlt(body);
-//         expectAtleastOneImage(body);
-//     }
-// );
-// });
-
-
 const expectTitleShouldBeBetween50To60 = (frontMatter) => {
     const message = `Title length should be between 50 to 60. Found: ${frontMatter.title.length} characters '${frontMatter.title}'`;
     expect.soft(frontMatter.title.length,message).toBeGreaterThanOrEqual(50);
@@ -95,19 +75,21 @@ const expectAtleastOneImage = (markdown: string) => {
 
 iterateMarkdownFiles()
     // .slice(0, 10)
-    // .filter(({ frontMatter }) => frontMatter.title.includes('PIT'))
+    .filter(({ frontMatter }) => frontMatter.title.includes('CI Workflow Tweaks That Skyrocketed My Developer Productivity'))
     .forEach(({ frontMatter, body, html, file }) => {
         test(frontMatter.title + ' ' + frontMatter.slug + ' '+ file , async () => {
             console.log(frontMatter.title);
             expectPostToBeInTechnicalOrNonTechnical(frontMatter);
-            // expectHeader2ToBeInFormOfQuestion(body);
-            // expectTitleShouldBeBetween50To60(frontMatter);
-            // expectExcerptShouldBeBetween70To155(frontMatter);
-            // expectSeoKeywordsShouldExistOrBeEmpty(frontMatter);
+            expectHeader2ToBeInFormOfQuestion(body);
+            expectTitleShouldBeBetween50To60(frontMatter);
+            expectExcerptShouldBeBetween70To155(frontMatter);
+            expectSeoKeywordsShouldExistOrBeEmpty(frontMatter);
             // expectNoWritingSuggestions(body);
-            // expectSeoAnalysisToBePerfect(frontMatter, html);
-            // expectNoImageWithoutAlt(body);
-            // expectAtleastOneImage(body);
+            expectSeoAnalysisToBePerfect(frontMatter, html);
+            expectNoImageWithoutAlt(body);
+            expectAtleastOneImage(body);
+
+            // meta
             // expectMetaDescriptionToExist(frontMatter);
             // expectMetaViewportToExist(html);
             // expectOpenGraphTagsToExist(html);
@@ -115,22 +97,22 @@ iterateMarkdownFiles()
             // expectTitleTagToExist(html);
             // expectValidHreflang(html);
             // expectFaviconToExist(html);
-            // expectSeoFriendlyUrls(frontMatter);
-            // expectHeadingsInOrder(body);
             // expectLegibleFontSizes(html);
-            // expectTapTargetsSizedAppropriately(html);
-            // expectNoPlugins(html);
-            // expectTitleWidth(frontMatter);
-            // expectSubheadingDistribution(body);
-            // expectLinksHaveDescriptiveText(body);
+
+            expectSeoFriendlyUrls(frontMatter);
+            expectHeadingsInOrder(body);
+            expectTapTargetsSizedAppropriately(html);
+            expectNoPlugins(html);
+            expectSubheadingDistribution(body);
+            expectLinksHaveDescriptiveText(body);
             // expectInternalLinks(html);
             // expectOutboundLinks(html);
-            // expectUseOfKeyphrases(frontMatter, body);
-            // expectUseOfPassiveVoice(body);
-            // expectUseOfTransitionWords(body);
+            expectUseOfKeyphrases(frontMatter, body);
+            expectUseOfPassiveVoice(body);
+            expectUseOfTransitionWords(body);
             // expectTextLength(body);
-            // expectLengthOfParagraphs(body);
-            // expectLengthOfSentences(body);
+            expectLengthOfParagraphs(body);
+            expectLengthOfSentences(body);
         });
     });
 const expectPostToBeInTechnicalOrNonTechnical = (frontMatter: FrontMatter) => {
@@ -180,10 +162,21 @@ const expectSeoFriendlyUrls = (frontMatter) => {
 const expectHeadingsInOrder = (body) => {
     const headers = getHeaders(body);
     let lastLevel = 0;
+    let previousHeader = '';
     headers?.forEach(header => {
         const level = header.match(/#/g)?.length || 0;
-        expect.soft(level, "Headings should be in order").toBeGreaterThanOrEqual(lastLevel);
+        const diff = Math.abs(level - lastLevel);
+
+        const message = `Headings should be in order. 
+            Previous header: ${previousHeader}
+            Current header: ${header}
+            Level difference: ${diff}`;
+
+        if(previousHeader != '') {
+            expect.soft(diff, message).toBeLessThanOrEqual(1);
+        }
         lastLevel = level;
+        previousHeader = header;
     });
 };
 
@@ -204,11 +197,6 @@ const expectNoPlugins = (html) => {
     });
 };
 
-const expectTitleWidth = (frontMatter) => {
-    const title = frontMatter.title;
-    expect.soft(title.length, "Title width should be appropriate").toBeLessThanOrEqual(60);
-};
-
 const expectSubheadingDistribution = (body) => {
     const headers = getHeaders(body);
     expect.soft(headers?.length, "Subheading distribution should be appropriate").toBeGreaterThan(0);
@@ -222,13 +210,13 @@ const expectLinksHaveDescriptiveText = (body) => {
 };
 
 const expectInternalLinks = (body) => {
-    const links = body.match(/<a [^>]*href="\/[^"]*"[^>]*>/g);
-    expect.soft(links?.length, "Internal links should exist").toBeGreaterThan(0);
+    const links = body.match(/\[.*?\]\(\/[^)]*\)/g);
+    expect.soft(links, "Internal links should exist in markdown").not.toBeNull();
 };
 
 const expectOutboundLinks = (body) => {
-    const links = body.match(/<a [^>]*href="http[^"]*"[^>]*>/g);
-    expect.soft(links?.length, "Outbound links should exist").toBeGreaterThan(0);
+    const links = body.match(/\[.*?\]\(http[^)]*\)/g);
+    expect.soft(links, "Outbound links should exist in markdown").not.toBeNull();
 };
 
 const expectUseOfKeyphrases = (frontMatter, body) => {
@@ -238,6 +226,11 @@ const expectUseOfKeyphrases = (frontMatter, body) => {
 
 const expectUseOfPassiveVoice = (body) => {
     const passiveVoice = body.match(/\b(is|was|were|be|been|being|am|are)\b\s+\b(\w+ed)\b/g);
+    if(!passiveVoice) {
+        expect.soft(passiveVoice, "No passive voice found").toBeNull();
+        return;
+    }
+    // Check if the passive voice is used more than 5 times
     expect.soft(passiveVoice?.length, "Use of passive voice should be minimal").toBeLessThanOrEqual(5);
 };
 
@@ -261,7 +254,15 @@ const expectLengthOfParagraphs = (body) => {
 };
 
 const expectLengthOfSentences = (body) => {
-    const sentences = body.split(/[.!?]\s+/);
+
+    // remove all header sentences
+    const headers = getHeaders(body);
+    headers?.forEach(header => {
+        body = body.replace(header, '');
+    });
+
+    const sentences = body.split(/[.!?:(```)]\s+/);
+
     sentences.forEach(sentence => {
         const wordCount = sentence.split(/\s+/).length;
         expect.soft(wordCount, "Sentence length should be less than 20: " + sentence).toBeLessThanOrEqual(20);

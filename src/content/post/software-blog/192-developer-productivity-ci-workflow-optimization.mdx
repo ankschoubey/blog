@@ -1,6 +1,6 @@
 ---
-title: The CI Workflow Tweaks That Skyrocketed My Developer Productivity
-excerpt: Discover how optimizing my CI workflow with real-time notifications and smart monitoring tools helped me boost productivity and stay in deep developer flow.
+title: CI Workflow Tweaks That Skyrocketed My Developer Productivity
+excerpt: Discover how optimizing my CI workflow with real-time notifications and smart monitoring tools helped me boost productivity and stay in deep developer flow
 slug: /software-blog/developer-productivity-ci-workflow-optimization/
 image: /images/software-blog/192-developer-productivity-ci-workflow-optimization/developer-productivity-ci-workflow-optimization.png
 tags:
@@ -8,26 +8,24 @@ tags:
 publishDate: 2025-04-05T13:09:55.008274
 gpt: chatgpt url
 trello: ""
-seo_keywords: 
+mainKeyword: ci
+seo_keywords:
+- developer productivity
+- ci tools
 seo_descriptions: 
 ---
 
-I try to optimize my workflows so that I can do things at a speed of thought, where your tools feel like extensions of your mind, not blockers.
+I try to optimize my workflows so that I can do things at a speed of thinking.
 
-These are my optimizations for CI monitoring. I currently use Team City but I believe similar features can be found in other CI tools.
+These are my optimizations for Team City. Similar features can be found in other tools.
 
 **Note**: I could not share images of my workflow because I use TeamCity at work. I have added some pictures that found on the internet.
 
-## Workflow
+## My Optimized CI Workflow
 
 ### Install Team City Chrome Extension for Notifications
 
-This allows for notification when the build succeeds or fails. This has been a big time saver for me recently where I can run a job in the background and let myself work on another task freely. As soon as the task is done, I will get a notification.
-
-Personally, it has helped me reduce stress and it has increased my productivity because
-
-- I can start a build and leave it in the background while I do other tasks.
-- I will get a notification as soon as the task is complete vs I remember if I had put a task up and going and rechecking a few times. This means that I take action on it as soon as it succeeds or fails.
+This allows for notification when the build succeeds or fails. This has been a big time saver for me. I can run a job in the background and let myself work on another task freely. As soon as the task is done, I will get a notification. Before, I would have to recheck it a few times and often I would completely forget about it.
 
 **Note**: you'd need to configure Team City so that you'd have you'd receive a notification.
 
@@ -35,13 +33,13 @@ Personally, it has helped me reduce stress and it has increased my productivity 
 
 You could also do email notification but it'd get cluttered fast.
 
-Download link [TeamCity Notifier - Chrome Web Store](https://chromewebstore.google.com/detail/teamcity-notifier/miolcigeeebinhdbihpodaajenfoggjl?hl=en) [^2]
+Download link [TeamCity Notifier - Chrome Web Store](https://chromewebstore.google.com/detail/teamcity-notifier/miolcigeeebinhdbihpodaajenfoggjl?hl=en). [^2]
 
 ### Bookmark Favorite Builds page
 
 This will allow you to quickly see the builds that you run.
 
-If you want to monitor and get notifications for something you haven't run, click the ⭐ star icon next to the build which adds it to your favorites and you'll start receiving notifications for it.
+If you want to get notifications for something you haven't run, click the ⭐ star icon next to the build. This adds it to your favorites and you'll start receiving notifications for it.
 
 ### Fuzzy Search to Launch Builds Fast
 
@@ -51,7 +49,7 @@ Suppose you want to search `Movie Microservice Test`, typing just `mo mi te` wil
 
 ### Running the build quickly
 
-TeamCity does not offer a quick shortcut to run a build once we are on a page. For this, I created a custom shortcut using the [Shortcuts Chrome Plugin](https://chromewebstore.google.com/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck?hl=en)
+TeamCity does not offer a quick shortcut to run a build once we are on a page. For this, I created a custom shortcut using the [Shortcuts Chrome Plugin](https://chromewebstore.google.com/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck?hl=en):
 
 ```javascript
 Array.from(document.querySelectorAll('button[aria-label]'))
@@ -62,7 +60,7 @@ Once focused I click `Enter`.
 
 ### Looking at dependent builds with the Dependencies view
 
-TeamCity and many other CI tools view related dependencies in a single view.
+TeamCity and other tools allow viewing related dependencies in a single view.
 
 For example, if `Build 1` depends on `Build 2`, then you can see the progress of both on one screen.
 
@@ -70,18 +68,24 @@ For example, if `Build 1` depends on `Build 2`, then you can see the progress of
 
 [^1]
 
-For TeamCity,
+For TeamCity:
 
-- Go in the "Run"
-- Click on "Dependencies"
-- Click on "Chain"
-- Optional: Click on details for more details
+- Go in the "Run".
+- Click on "Dependencies".
+- Click on "Chain".
+- Optional: Click on details for more details.
 
 This will allow you to easily see all the steps in the chain from one view.
 
 ## Conclusion
 
-Watching over CI build can be tedious. Using the above tips can help you improve your CI workflow by a huge margin. While the examples above are with Team City, you can replicate it with any CI of your choice if you understand the intent.
+Watching over CI build can be tedious. Using the above tips can help you improve your workflow by a huge margin. While the examples above are in TeamCity, you can replicate it with any tool of your choice.
+
+Here are some blogposts that you might want to read up next:
+
+- [Speeding up CI Pipeline](/software-blog/speeding-up-pipelines)
+- [Speeding Up Spring Boot/JUnit tests](/spring-boot-junit-faster): From 8 minutes to less than 3 minutes.
+- [A Collection of Developer Productivity](/software-blog/dev_productivity/)
 
 **What is your workflow for CI builds?**
 
