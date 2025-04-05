@@ -169,6 +169,13 @@ const checklistItems = [
 </style>
 
 <script>
+  import { 
+    getChecklistState, 
+    saveChecklistState, 
+    isChecklistVisible, 
+    setChecklistVisible 
+  } from '../../utils/localStorage';
+
   // Calculate word count after the page loads
   function updateWordCount() {
     const mainContent = document.querySelector('main');
@@ -195,8 +202,7 @@ const checklistItems = [
     if (!currentSlug) return;
 
     // Load saved state
-    const savedState = localStorage.getItem(`checklist_${currentSlug}`);
-    const savedChecks: Record<string, boolean> = savedState ? JSON.parse(savedState) : {};
+    const savedChecks = getChecklistState(currentSlug);
 
     checkboxes.forEach(checkbox => {
       const key = checkbox.dataset.key;
@@ -211,14 +217,14 @@ const checklistItems = [
         if (!target || !key) return;
         
         const newState = { ...savedChecks, [key]: target.checked };
-        localStorage.setItem(`checklist_${currentSlug}`, JSON.stringify(newState));
+        saveChecklistState(currentSlug, newState);
       });
     });
 
     // Initialize checklist visibility
     const checklist = document.getElementById('postChecklist');
     const toggleButton = document.getElementById('toggleChecklist');
-    const isVisible = localStorage.getItem(`checklist_visible_${currentSlug}`) !== 'false';
+    const isVisible = isChecklistVisible(currentSlug);
 
     if (checklist && toggleButton) {
       if (!isVisible) {
@@ -229,7 +235,7 @@ const checklistItems = [
       toggleButton.addEventListener('click', () => {
         checklist.classList.toggle('hidden');
         toggleButton.classList.toggle('rotated');
-        localStorage.setItem(`checklist_visible_${currentSlug}`, (!checklist.classList.contains('hidden')).toString());
+        setChecklistVisible(currentSlug, !checklist.classList.contains('hidden'));
       });
     }
   }

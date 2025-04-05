@@ -12,6 +12,9 @@ const gaUrl = `https://analytics.google.com/analytics/web/#/p238520355/reports/e
 const mainSiteUrl = `https://www.ankushchoubey.com${currentPath}`;
 const clarityUrl = `https://clarity.microsoft.com/projects/qc6j7d4654/heatmaps?url=${encodeURIComponent(mainSiteUrl)}`;
 
+// Ensure the slug has the same format as in DevModeIndicator
+const formattedSlug = slug.startsWith('/') ? slug : `/${slug}`;
+
 // Checklist items with their display values
 const checklistItems = [
   { key: 'content_finished', display: 'Content finished' },
@@ -30,7 +33,7 @@ const checklistItems = [
       class="read-checkbox"
       data-post-id={postId}
       data-post-title={postTitle}
-      data-slug={slug}
+      data-slug={formattedSlug}
     />
     <span class="checkmark">✓</span>
     <span class="label-text">Mark as read</span>
@@ -52,14 +55,13 @@ const checklistItems = [
       </div>
       <div class="space-y-1" id={`postChecklist-${postId}`}>
         {checklistItems.map(item => (
-          <label class="checklist-label" for={`checklist-${postId}-${item.key}`}>
+          <label class="checklist-label">
             <input 
               type="checkbox" 
-              id={`checklist-${postId}-${item.key}`}
               class="checklist-checkbox"
               data-key={item.key}
               data-post-id={postId}
-              data-slug={slug}
+              data-slug={formattedSlug}
             />
             <span class="checkmark">✓</span>
             <span class="label-text">{item.display}</span>
@@ -216,6 +218,15 @@ const checklistItems = [
 </style>
 
 <script>
+  import { 
+    isPostRead, 
+    setPostRead, 
+    getChecklistState, 
+    saveChecklistState, 
+    isChecklistVisible, 
+    setChecklistVisible 
+  } from '../../utils/localStorage';
+
   // Initialize checkboxes from localStorage
   function initializeCheckboxes() {
     console.log('Initializing checkboxes');
@@ -226,7 +237,7 @@ const checklistItems = [
       const postId = checkbox.getAttribute('data-post-id');
       const slug = checkbox.getAttribute('data-slug');
       if (postId && slug) {
-        const isRead = localStorage.getItem(`post-${slug}-read`) === 'true';
+        const isRead = isPostRead(slug);
         (checkbox as HTMLInputElement).checked = isRead;
         console.log(`Set checkbox ${postId} to ${isRead}`);
       }
@@ -240,7 +251,7 @@ const checklistItems = [
     const slug = checkbox.getAttribute('data-slug');
     
     if (postId && slug) {
-      localStorage.setItem(`post-${slug}-read`, checkbox.checked.toString());
+      setPostRead(slug, checkbox.checked);
       console.log(`Saved checkbox state for ${postId}: ${checkbox.checked}`);
       
       // Force update the checkbox state in the UI
@@ -282,8 +293,7 @@ const checklistItems = [
       console.log('Using slug:', slug);
       
       // Load saved state for this checklist
-      const savedState = localStorage.getItem(`checklist_${slug}`);
-      const savedChecks = savedState ? JSON.parse(savedState) : {};
+      const savedChecks = getChecklistState(slug);
       console.log('Loaded saved checks:', savedChecks);
       
       // Set initial state for each checkbox
@@ -296,28 +306,21 @@ const checklistItems = [
         (checkbox as HTMLInputElement).checked = isChecked;
         console.log(`Initial state - slug: ${slug}, key: ${key}, value: ${isChecked}`);
         
-        // Remove any existing event listeners
-        const newCheckbox = checkbox.cloneNode(true) as HTMLInputElement;
-        checkbox.parentNode?.replaceChild(newCheckbox, checkbox);
-        
-        // Add change listener - using the same approach as the read checkbox
-        newCheckbox.addEventListener('change', (e) => {
+        // Add change listener - using the same approach as DevModeIndicator
+        checkbox.addEventListener('change', (e) => {
           const target = e.target as HTMLInputElement;
-          const isChecked = target.checked;
-          console.log(`Checkbox changed - slug: ${slug}, key: ${key}, value: ${isChecked}`);
+          if (!target || !key) return;
+          
+          console.log(`Checkbox changed - slug: ${slug}, key: ${key}, value: ${target.checked}`);
           
           // Update the saved state
-          const newState = { ...savedChecks };
-          newState[key] = isChecked;
-          localStorage.setItem(`checklist_${slug}`, JSON.stringify(newState));
-          
-          // Force update the checkbox state in the UI
-          target.checked = isChecked;
+          const newState = { ...savedChecks, [key]: target.checked };
+          saveChecklistState(slug, newState);
         });
       });
       
       // Set initial visibility
-      const isVisible = localStorage.getItem(`checklist_visible_${slug}`) !== 'false';
+      const isVisible = isChecklistVisible(slug);
       if (!isVisible) {
         container.classList.add('hidden');
         toggleButton.classList.add('rotated');
@@ -328,7 +331,7 @@ const checklistItems = [
         console.log('Toggle button clicked for postId:', postId);
         container.classList.toggle('hidden');
         toggleButton.classList.toggle('rotated');
-        localStorage.setItem(`checklist_visible_${slug}`, (!container.classList.contains('hidden')).toString());
+        setChecklistVisible(slug, !container.classList.contains('hidden'));
       });
     });
   }
