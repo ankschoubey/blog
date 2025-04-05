@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import TableOfContents from '~/components/blog/TableOfContents.astro';
 
 import type { MetaData } from '~/types';
 
@@ -14,6 +15,20 @@ const { frontmatter } = Astro.props;
 const metadata: MetaData = {
   title: frontmatter?.title,
 };
+
+// Extract headings from the content
+const content = await Astro.slots.render('default');
+const headingRegex = /<h([1-6])[^>]*id="([^"]*)"[^>]*>(.*?)<\/h\1>/g;
+let match;
+const headings: Array<{ depth: number; text: string; slug: string }> = [];
+
+while ((match = headingRegex.exec(content)) !== null) {
+  headings.push({
+    depth: parseInt(match[1]),
+    text: match[3].replace(/<[^>]*>/g, ''), // Remove any HTML tags from the heading text
+    slug: match[2],
+  });
+}
 ---
 
 <Layout metadata={metadata}>
@@ -25,4 +40,5 @@ const metadata: MetaData = {
       <slot />
     </div>
   </section>
+  {headings.length > 0 && <TableOfContents headings={headings} />}
 </Layout>

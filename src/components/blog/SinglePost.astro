@@ -7,6 +7,8 @@ import SocialShare from '~/components/common/SocialShare.astro';
 
 import Disqus from '~/components/custom/Disqus.astro';
 
+import TableOfContents from '~/components/blog/TableOfContents.astro';
+
 import { getPermalink } from '~/utils/permalinks';
 import { getFormattedDate } from '~/utils/utils';
 
@@ -84,4 +86,5 @@ const { Content } = post;
     </div>
   </article>
   <Disqus />
+  <TableOfContents />
 </section>
