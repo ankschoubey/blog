@@ -17,6 +17,8 @@ I try to optimize my workflows in such a way that I can do things at a speed-of-
 
 This is my optimizations for CI monitoring. I currently use Team City but I believe similar features can be found in other CI tools.
 
+**Note**: I could not share images of my workflow because I use TeamCity at work. I have added some images that found on the internet.
+
 ## Workflow
 
 ### Install Team City Chrome Extension for Notifications
@@ -30,11 +32,11 @@ Personally, it has helped me reduced stress and it has increased my productivity
 
 **Note**: you'd need to configure Team City so that you'd have you'd receive a notification.
 
-\{image}
-
 **also** ensure your browser notifications are on.
 
 you could also do email notification but it'd get cluttered fast.
+
+Download link [TeamCity Notifier - Chrome Web Store](https://chromewebstore.google.com/detail/teamcity-notifier/miolcigeeebinhdbihpodaajenfoggjl?hl=en) [^2]
 
 ### Bookmark the favourite runs page
 
@@ -47,8 +49,6 @@ If you want to monitor and get notification for something you haven't run, you'd
 You can use quick search by using `Cmd + K` or just `Q`. And then you can search with initial phrases instead of typicing the whole thing
 
 Suppose you want to search `Movie Microservice Test`, typing just `mo mi te` will filter and bring it to the top. You can click enter and the run.
-
-- [ ] I need to find a way to run with button click.
 
 ### Running the build quickly
 
@@ -67,8 +67,24 @@ TeamCity and many other CI tools offer showing related dependencies.
 
 For example, if Build1 depends on Build 2. Then you can see the progress of both in one screen.
 
+![team-city-build-chains](/images/software-blog/192-developer-productivity-ci-workflow-optimization/team-city-build-chains.webp)
+
+[^1]
+
+For TeamCity,
+
+- Go in the run
+- Click on dependencies
+- Click on chain
+- Optional: Click on details for more details
+
+This will allow you to easily see if all the steps in the chain from one view.
+
 ## Conclusion
 
 Watching over CI build can be tedius. Using the above tips can help you improve your CI workflow by a huge margin. While the examples above are with Team City, you can replicate it with any CI of your choice if you understand the intent.
 
 **What is your workflow for CI builds?**
+
+[^1]: Image source - [CI/CD with TeamCity | DevOps Tool of the Month (4)](https://dev.to/techworld_with_nana/ci-cd-with-teamcity-devops-tool-of-the-month-4-16pm)
+[^2]: [TeamCity Notifier - Chrome Web Store](https://chromewebstore.google.com/detail/teamcity-notifier/miolcigeeebinhdbihpodaajenfoggjl?hl=en)
