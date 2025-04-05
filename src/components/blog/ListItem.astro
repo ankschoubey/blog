@@ -22,7 +22,10 @@ const image = (await findImage(post.image)) as ImageMetadata | undefined;
 const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : '';
 ---
 
-<article class={`max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8 ${image ? 'md:grid-cols-2' : ''}`}>
+<article 
+  class={`max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8 ${image ? 'md:grid-cols-2' : ''} post-item`} 
+  data-post-id={post.id}
+>
   {
     image && (
       <a class="group relative block" href={link ?? 'javascript:void(0)'}>
@@ -83,3 +86,63 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     </footer>
   </div>
 </article>
+
+<style>
+  .post-item {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .post-item.read {
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .post-item.read::before {
+    content: "✓";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #10B981;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 10;
+  }
+  
+  .dark .post-item.read {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+</style>
+
+<script>
+  // Add read class to posts that are marked as read
+  function updateReadStatus() {
+    const posts = document.querySelectorAll('.post-item');
+    
+    posts.forEach((post) => {
+      const postId = post.getAttribute('data-post-id');
+      if (postId) {
+        const isRead = localStorage.getItem(`post-${postId}-read`) === 'true';
+        post.classList.toggle('read', isRead);
+      }
+    });
+  }
+  
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', updateReadStatus);
+  
+  // Update when checkboxes change
+  document.addEventListener('change', (e) => {
+    if ((e.target as HTMLElement).matches('input[type="checkbox"][data-post-id]')) {
+      updateReadStatus();
+    }
+  });
+</script>

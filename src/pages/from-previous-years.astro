@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import BlogList from '~/components/blog/List.astro';
 import Headline from '~/components/blog/Headline.astro';
+import ReadFilter from '~/components/blog/ReadFilter.astro';
 import { fetchPosts } from '~/utils/blog';
 
 const metadata = {
@@ -39,7 +40,10 @@ const currentMonthName = monthNames[currentMonth];
     </Headline>
     {
       sortedPosts.length > 0 ? (
-        <BlogList posts={sortedPosts} />
+        <>
+          <ReadFilter totalPosts={sortedPosts.length} readPosts={0} />
+          <BlogList posts={sortedPosts} />
+        </>
       ) : (
         <p class="text-center text-gray-600 dark:text-gray-400">
           No posts found from previous {currentMonthName}s.

@@ -1,0 +1,112 @@
+---
+interface Props {
+  totalPosts: number;
+  readPosts: number;
+}
+
+const { totalPosts, readPosts } = Astro.props;
+---
+
+<div class="mb-8 flex flex-wrap items-center justify-between gap-4">
+  <div class="flex items-center gap-4">
+    <select
+      id="readFilter"
+      class="rounded-md border-gray-300 bg-white px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary dark:border-gray-600 dark:bg-slate-800"
+    >
+      <option value="all">Show All ({totalPosts})</option>
+      <option value="unread">Unread Only ({totalPosts - readPosts})</option>
+      <option value="read">Read Only ({readPosts})</option>
+    </select>
+  </div>
+  <div id="readCounter" class="text-sm text-gray-600 dark:text-gray-400">
+    {readPosts} of {totalPosts} posts read
+  </div>
+</div>
+
+<script>
+  let currentFilter = 'all';
+  const posts = document.querySelectorAll('article');
+  
+  // Function to count read posts
+  function countReadPosts() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"][data-post-id]');
+    let readCount = 0;
+    
+    checkboxes.forEach((checkbox) => {
+      if ((checkbox as HTMLInputElement).checked) {
+        readCount++;
+      }
+    });
+    
+    // Update the read count display
+    const readCounterElement = document.getElementById('readCounter');
+    if (readCounterElement) {
+      const totalPosts = checkboxes.length;
+      readCounterElement.textContent = `${readCount} of ${totalPosts} posts read`;
+      
+      // Also update the dropdown options
+      const filterSelect = document.getElementById('readFilter') as HTMLSelectElement;
+      if (filterSelect) {
+        const allOption = filterSelect.querySelector('option[value="all"]');
+        const unreadOption = filterSelect.querySelector('option[value="unread"]');
+        const readOption = filterSelect.querySelector('option[value="read"]');
+        
+        if (allOption) allOption.textContent = `Show All (${totalPosts})`;
+        if (unreadOption) unreadOption.textContent = `Unread Only (${totalPosts - readCount})`;
+        if (readOption) readOption.textContent = `Read Only (${readCount})`;
+      }
+    }
+    
+    return readCount;
+  }
+  
+  function updateVisibility() {
+    const readCount = countReadPosts();
+    
+    posts.forEach((post) => {
+      const checkbox = post.querySelector('input[type="checkbox"]') as HTMLInputElement;
+      const isRead = checkbox?.checked || false;
+      
+      switch (currentFilter) {
+        case 'read':
+          post.classList.toggle('hidden', !isRead);
+          break;
+        case 'unread':
+          post.classList.toggle('hidden', isRead);
+          break;
+        default:
+          post.classList.remove('hidden');
+      }
+    });
+  }
+
+  // Initialize filter from localStorage
+  const savedFilter = localStorage.getItem('lastYearFilter');
+  if (savedFilter) {
+    const filterSelect = document.getElementById('readFilter') as HTMLSelectElement;
+    filterSelect.value = savedFilter;
+    currentFilter = savedFilter;
+    updateVisibility();
+  }
+
+  // Handle filter changes
+  document.getElementById('readFilter')?.addEventListener('change', (e) => {
+    const select = e.target as HTMLSelectElement;
+    currentFilter = select.value;
+    localStorage.setItem('lastYearFilter', currentFilter);
+    updateVisibility();
+  });
+
+  // Update visibility when checkboxes change
+  document.addEventListener('change', (e) => {
+    if ((e.target as HTMLElement).matches('input[type="checkbox"][data-post-id]')) {
+      updateVisibility();
+    }
+  });
+  
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    countReadPosts();
+    updateVisibility();
+  });
+</script> 
