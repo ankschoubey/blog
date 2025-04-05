@@ -94,31 +94,14 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
   }
   
   .post-item.read {
-    opacity: 0.8;
+    opacity: 0.85;
     background-color: rgba(0, 0, 0, 0.02);
     border-radius: 8px;
     padding: 8px;
   }
   
-  .post-item.read::before {
-    content: "✓";
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #10B981;
-    color: white;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    z-index: 10;
-  }
-  
   .dark .post-item.read {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.02);
   }
 </style>
 
