@@ -1,0 +1,198 @@
+---
+title: "Spring Boot Performance: Automated Tests to Detect API Calls Within Database Transactions"
+excerpt: Protect your database connections with automated tests that detect API calls inside transactions before they cause performance issues.
+slug: /software-blog/validate-api-calls-in-database-transactions-spring-boot
+# image: /images/software-blog/validate-api-calls-in-database-transactions-spring-boot.png
+tags:
+    - technical
+    - tdd
+publishDate: 2025-04-06T18:38:16.025110
+gpt: chatgpt url
+trello: ""
+mainKeyword: Preventing API calls inside database transactions
+seo_keywords: 
+  - API calls in database transactions
+  - prevent deadlocks
+  - connection pool exhaustion
+  - transaction timeout
+  - Spring Boot transaction testing
+  - database security
+  - transaction atomicity
+  - API call validation
+seo_descriptions: Learn automated testing techniques to detect API calls made within database transactions in Spring Boot, preventing deadlocks and connection pool exhaustion.
+---
+
+We should not make API calls within Database Transactions for increase performance and security. This post is going to talk about:
+
+- Why API calls should not be made within Database Transaction?
+- How to validate API calls are not made within Database Transaction?
+
+This post is a describes a test first approach to finding the problem. The next post will talk about fixed it. i.e by the end of this post, you'd have a repeatable automated test that can detect this case. In the next blogpost, I will talk about how to separate out API calls from database transaction and different patterns that I have come accross.
+
+Remember: the syntax will change but you can use the same principles in database of your choice.
+
+## Why API calls should not be made within Database Transaction?
+
+The main reason is the database conenciton remains open for a long time. This can cause the following problems:
+
+**Pool Exhausted**
+
+- Database and ORMs want to work efficiently and have a limited connection pool size.
+- When a part of code wants to make a DB call, it will acquire a connection and release when it's done using it.
+- By having API calls within Database transaction the connection can remain open for much much longer and can consume all the connections in the connection pool.
+- When this happens, you could get a `Pool Exhausted` exception.
+- Therefore, it is important to only use database connections for a short time so that it is free to be used by other parts of the code.
+
+**Dead Lock** and **Timeout**
+
+- Whenever we open a transaction we open a context in the database and in some cases we lock on particular database rows.
+- When this happens, other database transactions won't have access to that row. This can cause timeouts or in worst case a deadlock.
+
+Both of these are security concerns as well because they can be exploite the availability of the service.
+
+If your application is small you may not think of these things but as the application grows these performance and security concerns become important.
+
+## How to validate API calls are not made within Database Transaction?
+
+It is possible to validate that API calls are not within Database transaction right from our Unit Test and Integration Tests with simple test contract without modification to any of our current tests.
+
+In both cases the idea is the following:
+
+1. intercept when a API call is made
+2. check in that moment if call is made within transaction
+3. if yes, throw an exception
+
+Note while below example is in java, you can replicate in any language.
+
+### Integration Test
+
+In Spring Boot, we can intercept `WebClient` by adding a filter to it. And then adding a code to check it's called within `Transactional` or `TransactionTemplate`
+
+```java
+@TestConfiguration
+@Order(1)
+@RequiredArgsConstructor
+public class DatabaseTransactionApiCallBlockerConfig {
+    private final WebClient.Builder httpClientBuilder;
+
+    @PostConstruct
+    public void enforceTransactionSafetyOnHttpCalls() {
+        httpClientBuilder.filter(((request, next) -> {
+            if (TransactionSynchronizationManager.isSynchronizationActive()) {
+                throw new RuntimeException("Performance Exception: API call attempted during DB transaction");
+            }
+            return next.exchange(request);
+        }));
+    }
+}
+```
+
+The following is the hibernate code which returns will tell us if call is made with transactional.
+
+```java
+TransactionSynchronizationManager.isSynchronizationActive()
+```
+
+### Unit Test
+
+This was the most exciting part of solving this problem. We want to ensure a [good test pyramid](/software-blog/understanding-testing-pyramid) and have more number of unit test that integration tests to ensure faster tests. But if we aren't using an actual database then how can we tell if call is made within transaction?
+
+By a similar actual actually, that is to check if the caller is within a transaction. And this we can do by checking the `StackTrace`.
+
+If the caller of the transaction is in a code construct related to transaction, we throw an exception.
+
+In case of Spring Boot we want to ensure,
+
+- The calling method is not annotated with `@Transactional`
+- The calling method is class name is not `TransactionTemplate`.
+  - If you have a custom wrapper, then you may also detect your wrapper class name here.
+
+Here's how you can do it
+
+- create a new mock factory: `mockApi`
+- this would contain an interceptor that checks if any method in the call stack is transaction related
+
+```java
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public class MockitoApiInterceptor implements InvocationListener {
+
+    public static <M> M mockApi(Class<M> clazz) {
+        return Mockito.mock(clazz, Mockito.withSettings()
+                .invocationListeners(new MockitoApiInterceptor()));
+    }
+
+    @SneakyThrows
+    private static boolean isTransactionOpen() {
+        var stackTrace = Thread.currentThread().getStackTrace();
+
+        for (var element : stackTrace) {
+
+            // Quick check for usage of TransactionTemplate (programmatic transactions)
+            if (element.toString().contains(TransactionTemplate.class.getSimpleName())) {
+                return true;
+            }
+
+            var clazz = ClassLoader.getSystemClassLoader().loadClass(element.getClassName());
+            var maybeMethod = findMethodMatchingStackTraceElement(clazz, element);
+
+            if (maybeMethod.isEmpty()) {
+                continue;
+            }
+
+            var method = maybeMethod.get();
+
+            // If the method is annotated with @Transactional, we assume it's part of an active transaction
+            if (method.getAnnotation(Transactional.class) != null) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static Optional<Method> findMethodMatchingStackTraceElement(Class<?> clazz, StackTraceElement element) {
+        return Arrays.stream(clazz.getDeclaredMethods())
+                .filter(method -> method.getName().equals(element.getMethodName()))
+                .findFirst();
+    }
+
+    @Override
+    public <T> T answer(InvocationOnMock invocation) throws Throwable {
+        if (isTransactionOpen()) {
+            throw new RuntimeException("Performance Exception: API call attempted during DB transaction");
+        }
+        return invocation.callRealMethod();
+    }
+}
+```
+
+Usage
+
+```java
+@ExtendWith(MockitoExtension.class)
+class MovieServiceTest {
+    // Before
+    @Mock
+    private MovieApiClient movieApiClient;
+
+    // After
+    @Spy
+    private MovieApiClient movieApiClient = mockApi(MovieApiClient.class); // guarded spy; statically imported
+
+    ... tests
+ 
+```
+
+### Chaos engineering (Optional)
+
+Do you want to be adventurous, you can enable the Bean for `IntegrationTest` bean configuration in your `DEV` or 🙃 `PROD` for real world chaos engineering.
+
+## Conclusion
+
+It's important that API calls are executed outside Database Transactions to ensure that Database isn't locked for a long time. If the database stays locked for a long time, the number of connects end and it will lead to an error.
+
+We can easily validate is API calls are not made within database transactions in both `Integration` test and `Unit` tests.
+
+In the next blogpost is about how to not to make API calls within transaction. You can also checkout my [TDD](/tdd) series for more such validations.
+
+Question: **Have you encountered other hidden performance or transactional issues in your codebase? I’d love to hear and learn from your experience.**
