@@ -20,6 +20,9 @@ export const headerData = {
       ],
     },
     {
+       text: 'Business Related', href: getPermalink('business', 'tag') 
+    },
+    {
       text: 'Previous Years',
       href: '/from-previous-years',
     },

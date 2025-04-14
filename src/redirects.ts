@@ -20,6 +20,7 @@ const FORCED_SALED = '/life-blog/forced_sale';
 const OPEN_SOURCE_SOFTWARE = '/software-blog/open-source';
 const CHAOS_ENGINEERING = '/software-blog/chaos-engineering';
 export const redirects = {
+  '/atomic-commits': '/software-blog/atomic-commits',
   'the-prometheus-cheatsheet': '/v1/prometheus',
   '/software-blog/prometheus-cheatsheet': '/v1/prometheus',
   '/software-blog/chaos-engineering-for-spring-boot': CHAOS_ENGINEERING,
