@@ -33,6 +33,14 @@ let headerLine = tag === 'non-technical' ? 'Life & Self Improvement' : `Tag: ${t
 if (tag === 'technical') {
   headerLine = 'Software Engineering';
 }
+const isLocalhost = Astro.url.hostname === 'localhost';
+
+if(tag === 'business') {
+  headerLine = 'Thinking about Business';
+}
+if(tag === 'business' && isLocalhost) {
+  headerLine = 'Thinking about Business and Entrepreneurship';
+}
 ---
 
 <Layout metadata={metadata}>
