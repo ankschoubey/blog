@@ -26,6 +26,10 @@ export const headerData = {
       text: 'Previous Years',
       href: '/from-previous-years',
     },
+  {
+    text: 'Sponsor This Blog',
+    href: '/sponsor',
+  },
 
     // {
     //   text: "Tech Series",
