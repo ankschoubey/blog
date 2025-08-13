@@ -5,7 +5,9 @@ slug: /life-blog/templates-for-trello-workflow/
 image: /images/life-blog/137-templates-for-trello-workflow/templates-for-trello-workflow-raycast-snippet.png
 tags:
     - non-technical
-    - draft
+    - productivity
+    - trello
+    - workflow
 publishDate: 2025-08-07T10:47:11.018869
 gpt: chatgpt url
 trello: ""
@@ -15,148 +17,134 @@ seo_descriptions:
 
 My [previous post](/life-blog/how-i-use-trello/) presented my Trello board structure and card structure. This post will describe the template for text content inside those cards.
 
-## Why Templates?
+## The Quest for Clarity
 
-While working I found, that the more clarity that I have the better the cards move.
+I used to have a problem. My Trello cards would stall. They'd move from "To Do" to "Doing" and then... just sit there. The root cause? A lack of clarity. I often didn't know exactly what the next step was, or why I was even doing the task in the first place.
 
-“Finding Clarity” is a big term and I would not know if I found clarity until I complete the task.
+"Finding clarity" is easier said than done. It's not something you find; it's something you create.
 
-So, I thought I needed thinking frameworks that can get me closer to clarity.
+That's when I started building thinking frameworks for myself—a set of templates to guide me at each stage of a task. Each template provides a mental model that has helped me shift my perspective and bring focus to my work.
 
-And that’s when I started creating and using these templates. Each template has had a unique shift in mindset that helps at that particular stage.
+The result is a simple, 3-step workflow that helps me understand what to do, why I'm doing it, and how to get it done: **Arrange, Act, and Assert.**
 
-In the end, I have more clarity of what to do in each stage of my 3 step workflow (arrange, act, assert)
+## The Templates: My Mental Toolkit
 
-## Templates / Mental Models
+I've created a template for each stage of my workflow. I use a text expander tool ([Raycast](https://www.raycast.com)) to quickly insert them into my Trello cards using simple shortcuts (like `gg` for Grand Goal).
 
-These are arranged according to most usefulness and not according to sequence they are used.
+Here they are, arranged by the sequence I use them in my workflow.
 
-1. Small Step - ss
-2. Grand Goal - gg
-3. Conventional Comment - cc
-4. Relaxed Reflection - rr
-5. Easy Entry - ee
-6. Flow Finder - ff
+### 1. Arrange: Setting Up for Success
 
-(The repeated characters like ss above are the keyboard shortcut I have setup in Raycast).
+This is the planning stage. The goal is to define the task, its purpose, and its boundaries before I start working.
 
-### Small Steps - ss
+#### Grand Goal (gg): Defining the "Why"
 
-Small steps are what I call my checklist items.
+Every task, or "Grand Goal" as I call it, needs a clear purpose. This template forces me to focus on the *outcome* or *value* first, before I even think about the task itself.
 
-They are intentionally written in a way that they are a small step.
+**Format:**
+```
+{value/outcome} → {verb}: {what} - {context}
+```
 
-each small step has the following syntax.
+**Example:**
+```
+A clearer writing process → document: my Trello templates - in a new blog post
+```
 
+By starting with the "why," I can easily adapt my approach if needed. If a task no longer serves its intended value, I can deprioritize it without hesitation.
+
+#### Easy Entry (ee): Scoping the "What"
+
+This template goes into the Trello card's description. It expands on the "why" and sets clear boundaries for the task, defining what "done" looks like.
+
+**Format:**
+```
+## Getting In
+
+{Intention / Context or Constraint / Outcome Sketch}
+
+## Done When
+
+{Success Condition / Testable Trigger / Observable Output / Point of Closure}
+```
+
+This helps me avoid scope creep and gives me a clear finish line to aim for.
+
+### 2. Act: Doing the Work
+
+With a clear plan, it's time to execute. These templates help me break down the work and track my progress.
+
+#### Small Steps (ss): The Power of Checklists
+
+I use "Small Steps" for my checklist items inside a Trello card. The key is to make them small, specific, and actionable.
+
+**Format:**
 ```
 verb: {what} - {context in form of with/if/where/in}
 ```
 
-Example
-
+**Example:**
 ```
-write: notes on “Claude Code: Beginner’s Guide” - in Day One app in 30m
+write: notes on "Claude Code: Beginner’s Guide" - in Day One app in 30m
 ```
+Vague tasks are paralyzing. Small, precise steps are empowering.
 
-Before small step, my tasks would be vague, after small step, my tasks are much more exact.
+#### Conventional Comment (cc): Tracking Progress
 
-### Grand Goal (gg)
+This is where it all started. I needed a simple, consistent way to leave comments on my cards. This format makes it easy to scan through a card's history.
 
-Grand Goal is what I call each card in my Trello setup. Each card is a new undertaking and therefore is grand.
-
-The grand is suppose to emphase the reason behind why I am doing a task.
-
-While small steps are clear action, they are not focused on the why. Grand goals are focused on the why.
-
-Format
-
-```
-{value/outcome} → {verb}: {what} - {context in form of with/if/where/in}
-```
-
-or you could think of as starting with value followed by the step format
-
-```
-{value/outcome} → {step format}
-```
-
-Eg:
-
-```
-30%+ productivity → learning: VIM motions - by watching YouTube videos
-```
-
-Now I know exactly why I am doing something.
-
-The format emphasises focus on value/outcome rather than the specific task.
-
-I found that when I wrote the task before value/outcome, I would do tasks for wrong reason and make tasks less flexible. but by having value/why focus early I can adapt my approach and even deprioritize cards early if needed.
-
-### Conventional Comment cc
-
-This is what started the journey of templatizing all stuff.
-
-Conventional comments is a common format for comments during code review which is aimed and making writing comments easier.
-
+**Format:**
 ```
 {type}: {comment}
 ```
 
-Example:
-
+**Example:**
 ```
-progress: talk to Steve Jobs. Found out that he is working on a similar AI product
+progress: Talked to Steve Jobs. Found out he is working on a similar AI product.
 ```
+I only comment when necessary to avoid clutter.
 
-Note: I don't comment on my cards if there is no needed.
+### 3. Assert: Learning and Improving
 
-### Relaxed Reflection
+Once a task is done, the work isn't over. The "Assert" stage is about reflection and learning.
 
-Relaxed Reflection is what I use during the Debrief/assert stage.
+#### Relaxed Reflection (rr): Debriefing for Growth
 
-I want to gather as much insights from what I did and use it the next time.
+I use this template in the card's comments during my debrief. The goal is to capture insights that will help me improve my process for next time.
 
+**Format:**
 ```
 ## Relaxed Reflections
 
 ### Observations
-{argument name="Liked - Learned - Lacked - Longed For"}
+(Liked - Learned - Lacked - Longed For)
 
 ### Recall Wastes
-{argument name="Defects - OverProduction - Waiting - UnusedTalent - Transportation - Inventory - Motion - ExtraProcessing"}
+(Defects - OverProduction - Waiting - UnusedTalent - Transportation - Inventory - Motion - ExtraProcessing)
 
 ### Next Time
 - {cursor}
 ```
 
-### Easy Entry ee
+This structured reflection helps me identify what went well and where I can be more efficient.
 
-This is the description of a card. This expands on why and limits the scope of the task.
+### What If I Get Stuck?
 
-```
-## Getting In
+Even with the best-laid plans, sometimes a card just doesn't move. For those moments, I have a special template.
 
-{argument name="Getting In (Intention / Context or Constraint / Outcome Sketch)"}
+#### Flow Finder (ff): A Tool for Unblocking Myself
 
-## Done When
+I use this template in the comments to diagnose why a task is stalled. I've only needed it a few times, but it's been incredibly effective.
 
-{argument name="Done When (Success Condition / Testable Trigger /  Observable Output / Point of Closure)"}
-```
-
-### Flow Finder ff
-
-In case a card hasn't been moving for a while. I use this template in comment to figure out why it hasn't been moving. 
-
-I must have used this 3-4 times.
-
+**Format:**
 ```
 ## Flow Finding
 
 ### Objective
 
-#### I want to
+#### I want to...
 
-#### But I am not doing this because
+#### But I am not doing this because...
 
 ### Diagnosis
 
@@ -168,12 +156,14 @@ I must have used this 3-4 times.
 #### Treatment
 ```
 
+It's a quick way to perform some self-coaching and get back on track.
+
 ## Conclusion
 
-The above templates help me be productive with my work. They help clarity, what to do (grand goal, small step), why to do (grand goal, easy entry), and how to do it (small steps). And in between help document progress (conventional comments), find blockers (flow finder) and increase learning from each card (relaxed reflections).
+These templates are more than just text snippets; they are thinking tools. They bring clarity to my work by helping me define the why (`Grand Goal`, `Easy Entry`), the what (`Easy Entry`, `Small Steps`), and the how (`Small Steps`). They also provide a framework for tracking progress (`Conventional Comment`), overcoming blocks (`Flow Finder`), and continuous learning (`Relaxed Reflection`).
 
-I suggest you use the above templates or create your own templates to suit your working style. You can use a tool like [Raycast](https://www.raycast.com) or some other text expander that can help you fill this template easily. 
+Since implementing this system, I've seen a significant improvement in my productivity and a dramatic reduction in the mental overhead of managing my tasks.
 
-Since, I have implemented these template I have found a rough 40% increase in productive.
+I encourage you to try these templates or create your own that fit your working style. A text expander like [Raycast](https://www.raycast.com) can make using them effortless.
 
-In an upcoming blogpost, I will talk about more Trello systems. If you have an RSS feed do subscribe. Thank you for reading so far!
+In an upcoming blog post, I will talk about more Trello systems. If you have an RSS feed, do subscribe. Thank you for reading!
