@@ -8,7 +8,7 @@ echo "Choose Blog:"
 folders=($(ls -d $BLOG_DIR*/ | xargs -n 1 basename))
 
 for i in "${!folders[@]}"; do
-    echo "$((i + 1)): ${folders[i]}"
+  echo "$((i + 1)): ${folders[i]}"
 done
 
 read -p "Enter the number of your choice: " folder_choice
@@ -19,9 +19,9 @@ chosen_path="${BLOG_DIR}${chosen_folder}/"
 last_file=$(ls $chosen_path | grep -E '^[0-9]+-' | sort -V | tail -n 1)
 
 if [[ -n "$last_file" ]]; then
-    last_number=$(echo $last_file | cut -d'-' -f1)
+  last_number=$(echo $last_file | cut -d'-' -f1)
 else
-    last_number=0
+  last_number=0
 fi
 
 new_number=$((last_number + 1))
@@ -37,9 +37,9 @@ read -p "Add image? y/n: " add_image
 
 # Set the image path if selected
 if [[ "$add_image" == "y" ]]; then
-    image_path="/images/${chosen_folder}/${slug}.png"
+  image_path="/images/${chosen_folder}/${slug}.png"
 else
-    image_path=""
+  image_path=""
 fi
 
 # Get the current date in the desired format: 2024-09-28T20:52:08.052481
@@ -53,7 +53,7 @@ current_date="${current_date}.${microseconds}"
 new_file="${new_number}-${slug}.mdx"
 new_filepath="${chosen_path}${new_file}"
 
-cat <<EOF > "$new_filepath"
+cat <<EOF >"$new_filepath"
 ---
 title: $title
 excerpt: $excerpt
@@ -72,4 +72,5 @@ EOF
 
 echo "New blog post created: $new_filepath"
 
-code $new_filepath
+vi $new_filepath
+
