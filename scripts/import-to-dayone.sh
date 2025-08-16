@@ -99,12 +99,16 @@ fi
 # Find all image paths in the markdown content
 body_images=($(printf "%s" "$markdown_content" | grep -o '!\[.*\]([^)]*)' | grep -v 'http[s]*://' | sed 's/!\[.*\](\(.*\))/public\1/g'))
 
-# Combine all image paths
-image_paths=()
+# Combine all image paths and remove duplicates
+all_image_paths_temp=""
 if [ -n "$frontmatter_image_path" ]; then
-  image_paths+=("$frontmatter_image_path")
+  all_image_paths_temp+="$frontmatter_image_path\n"
 fi
-image_paths+=("${body_images[@]}")
+for img_path in "${body_images[@]}"; do
+  all_image_paths_temp+="$img_path\n"
+done
+
+image_paths=($(echo -e "$all_image_paths_temp" | sort -u))
 
 # Prepare photo assets for dayone CLI
 cwd=$(pwd)
