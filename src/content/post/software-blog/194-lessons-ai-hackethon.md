@@ -19,7 +19,7 @@ I participated in an AI Hackathon at my current workspace, [Real Brokerage: REAX
 
 Having used tools like Cursor before, I had certain expectations for Claude Code's performance. I anticipated getting stuck in places and needing to intervene manually. However, the outcome of the hackathon fundamentally changed my perspective on the potential of Agentic AI.
 
-The final result is a playable zombie survival game, which you can try here: [ankush-ai-hackethon-2025.vercel.app](https://ankush-ai-hackethon-2025.vercel.app).
+The final result is a playable zombie survival game, which you can try here: [ankush-ai-hackethon-2025.vercel.app](https://ankush-ai-hackethon-2025.vercel.app). (If you are playing: Assume you are throwing a bomb instead of firing a gun. Mute on Level 4 Dark Forest)
 
 ## Planning for the Hackethon
 
