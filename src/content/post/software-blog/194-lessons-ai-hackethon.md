@@ -1,6 +1,7 @@
 ---
 title: DRAFT - Lessons from my first AI Hackethon
 excerpt: I participated in AI Hackethon at Real Brokerage
+image: /images/software-blog/194-lessons-ai-hackethon.md/zombie-survival-game-dark-forest-level.png
 slug: /software-blog/building-game-ai-hackathon-lessons/
 tags:
     - technical
@@ -20,6 +21,12 @@ As Claude Code and other AI tools are coming up, we needed to be updated on it. 
 I had used Cursor before, and I expected Claude Code to have a similar performance. I also expected, Claude Code to get stuck at some parts and that I would have to jump in. The outcome of the hackethon has changed my views on the potential of Agentic AI. 
 
 I share more of my thoughts in the conclusion.
+
+The final result is a playable zombie survival game, which you can try here: [ankush-ai-hackethon-2025.vercel.app](https://ankush-ai-hackethon-2025.vercel.app).
+
+![zombie-survival-menu](/images/software-blog/194-lessons-ai-hackethon.md/zombie-survival-game-menu.png)
+![zombie-survival-game-level-selector](/images/software-blog/194-lessons-ai-hackethon.md/zombie-survival-game-level-selector.png)
+![level-1-of-zombie-survival-game-built-with-claude-code](/images/software-blog/194-lessons-ai-hackethon.md/level-1-of-zombie-survival-game-built-with-claude-code.png)
 
 -- Planning for the hackethon --
 
