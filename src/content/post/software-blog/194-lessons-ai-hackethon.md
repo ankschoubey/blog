@@ -12,8 +12,6 @@ seo_keywords:
 seo_descriptions: 
 ---
 
-**Regarding Draft**: This post has been published before it is ready. I believe in Continious Delivery. Care has been taken to ensure the information published is still applications. Examples and other refinements will be added overtime. 
-
 I participated in an AI Hackethon at my current workspace ([Real Brokerage: REAX](https://www.joinreal.com)) in June 2025.
 
 As Claude Code and other AI tools are coming up, we needed to be updated on it. The leadership at the company decided it would be good to have a Hackethon as a way for employees to understand what the current state of Agentic AI is.
@@ -24,10 +22,6 @@ I share more of my thoughts in the conclusion.
 
 The final result is a playable zombie survival game, which you can try here: [ankush-ai-hackethon-2025.vercel.app](https://ankush-ai-hackethon-2025.vercel.app).
 
-![zombie-survival-menu](/images/software-blog/194-lessons-ai-hackethon.md/zombie-survival-game-menu.png)
-![zombie-survival-game-level-selector](/images/software-blog/194-lessons-ai-hackethon.md/zombie-survival-game-level-selector.png)
-![level-1-of-zombie-survival-game-built-with-claude-code](/images/software-blog/194-lessons-ai-hackethon.md/level-1-of-zombie-survival-game-built-with-claude-code.png)
-
 -- Planning for the hackethon --
 
 ## Planning for the Hackethon
@@ -36,6 +30,8 @@ The final result is a playable zombie survival game, which you can try here: [an
 The goal of the challenge was to try to build something big that we would not usually code up and this was communicated. So, I thought maybe making a video game would be a good idea!
 
 I have never created a video game before. So this would be a real challenge
+
+![zombie-survival-menu](/images/software-blog/194-lessons-ai-hackethon.md/zombie-survival-game-menu.png)
 
 ### Validating the Idea
 
@@ -71,6 +67,8 @@ Now I started by copying steps from `EXECUTION_PLAN` and pasting them in a diffe
 
 This creating a simple app. I kept, VS Code and Browser to the side. As soon as Claude did something I tested it. This was my Generation <-> Human Verification Loop. 
 
+![zombie-survival-game-level-selector](/images/software-blog/194-lessons-ai-hackethon.md/zombie-survival-game-level-selector.png)
+
 After 15 steps, it was time to go parallel.only. I asked claude to ensure that will there be merge conflicts if I go parallel. It did some research. Then I asked it to create 3 folders with prompts for each of the agents. And it did.
 
 I created 3 worktrees manually. And within each worktree, I executed of the steps. That was created by main claude. 
@@ -78,6 +76,8 @@ I created 3 worktrees manually. And within each worktree, I executed of the step
 I had one VS Code and Chrome pair open for each of the worktrees. As soon as an agent was completed, I would test and if it was right commit.
 
 Eventually, all agent's tasks were completed and I asked Claude to merge. After merge, I tested the game again. And gave changes and problems. It resolved it all.
+
+![level-1-of-zombie-survival-game-built-with-claude-code](/images/software-blog/194-lessons-ai-hackethon.md/level-1-of-zombie-survival-game-built-with-claude-code.png)
 
 I went back to doing sequential tasks and after some steps did some tasks in parallel again with the same system the only difference was I asked claude to create worktrees.
 
