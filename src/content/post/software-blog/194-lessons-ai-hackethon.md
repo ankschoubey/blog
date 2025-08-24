@@ -42,6 +42,8 @@ I wanted my game to be a Zombie Survival with multiplayer capability. I did rese
 
 ### Optimizing Speed
 
+I also decided to skip backend entirely and focus only on the frontend to speed up deployment.
+
 I bookmarked Vercel template link so that I can quickly spin up a deployment environment.
 
 ## During the Hackethon
@@ -75,46 +77,6 @@ I went back to doing sequential tasks and after some steps did some tasks in par
 My deployment pipeline had broken after the first few steps because of typescript strict more. The mistake that I did was I asked Claude to fix it by providing the output. This tool over 30 minutes and still had a few errors left. As a developer, I knew I could just disable the strict mode. And I should have done that.
 
 Luckily I was able to submit about 5 minutes before the End of Hackethon.
-
-
-
-
-My idea of the haathon was to create an AI generated zombie survival game.
-
-Before the hackethon, I was clean on what my idea was. I talked to Claude and did a quick prototype to understand the boundaries of it.
-
-I also experimenting with adding different things to the site. 
-
-This experiment also helped me understand the boundaries of what claude can do and also realized where it went wrong. 
-
-While showing this prototype a friend/collegue suggested adding sounds which claud did.
-
-I also decided to skip backend entirely and focus only on the frontend to speed up deployment.
-
-Also, I realized I would have to type a lot. To speed up. I decided to voice dictation, which would help me speed up dramatically. I set voice dictation up to the key double press on my computer.
-
-I had also read and listen to a few podcasts and blogs where I had of handedly gained some information:
-• agents can work in parallel
-• you can write things in a file and drag the file into LLM
-
-So, before the hackethon I was prepared with:
-• an idea that I had potential POC
-• bookmark to quickly deploy on vercel
-• a plan for how I am going to do it.
-• etc
-After the Hackathon
-• What's changed in how you code?
-• What Claude added? What Cursor lacked?
-• Multi-agent thinking: how did it emerge?
-Developer Systems I Built
-• Prompt directory
-• Dictation
-• Chrome + Claude rapid test loop
-• Claude for PRDs → Plans → Prompts
-Final Thoughts
-• What worked well?
-• What surprised you?
-• What would you reuse next time?
 
 ## Conclusion
 
