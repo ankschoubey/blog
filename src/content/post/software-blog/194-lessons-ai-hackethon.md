@@ -21,6 +21,8 @@ Having used tools like Cursor before, I had certain expectations for Claude Code
 
 The final result is a playable zombie survival game, which you can try here: [ankush-ai-hackethon-2025.vercel.app](https://ankush-ai-hackethon-2025.vercel.app). (If you are playing: Assume you are throwing a bomb instead of firing a gun. Mute on Level 4 Dark Forest)
 
+Link to Repository: [github.com/ankschoubey/ankush-ai-hackethon-2025](https://github.com/ankschoubey/ankush-ai-hackethon-2025)
+
 ## Planning for the Hackethon
 
 ### Deciding on the Idea
