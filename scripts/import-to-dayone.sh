@@ -144,7 +144,7 @@ tags_array+=("cli-imported")
 header=$(printf "# 🌐%s\n\n%s\n\n*%s*\n\n---\n\n" "$title" "[${slug}](https://www.ankushchoubey.com${slug})" "$description")
 markdown_body=$(awk 'BEGIN{p=0} /^---$/{p++; next} p>=2' "$article_file" | sed '/^import.*;$/d' | sed '/!\[.*\]([^)]*)/d')
 link_at_end=$(printf "\n\n---\n\n%s" "[${slug}](https://www.ankushchoubey.com${slug})")
-full_entry_text="$header$markdown_body$link_at_end\n\nFilename: $article_file_name"
+full_entry_text=$(printf "%s\n\nFilename: \`%s\`" "$header$markdown_body$link_at_end" "$article_file_name")
 
 echo "Importing to Day One..."
 
