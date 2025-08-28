@@ -1,10 +1,9 @@
 ---
-title: Some Assumptions That Are Useful To Have In Life
-excerpt: S
+title: Useful Assumptions for Sharper Decision-Making 
+excerpt: Some useful assumptions to protect against cognitive biases 
 slug: /life-blog/useful-assumptions-decision-making/
-image: 
+image: /images/life-blog/138-useful-assumptions-decision-making/a-man-on-cross-roads-ai-generated-for-blogpost-useful-assumptions-decision-making.png 
 tags:
-    - technical
     - non-technical
 publishDate: 2025-08-26T00:43:20.031604
 gpt: chatgpt url
@@ -13,8 +12,7 @@ seo_keywords:
 seo_descriptions: 
 ---
 
-There are some assumptions that are useful to have in life.
-
+There are some assumptions that I have found useful when dealing with my own biases.
 
 ## 1. Assume you don't know something or you are not good and need to practice regularly.
 
