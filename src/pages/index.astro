@@ -14,7 +14,7 @@ import { headerData } from '~/navigation';
 import ankushLinks from '~/content/ankushLinks';
 
 const metadata = {
-	title: 'Ankush Choubey - Full Stack Developer',
+	title: 'Ankush Choubey - Freelance Full Stack Developer',
 };
 
 let topHeaderActions = [
@@ -23,7 +23,7 @@ let topHeaderActions = [
 		variant: 'primary',
 		target: '_blank',
 		text: 'Connect',
-		icon: 'tabler:brand-linkedin',
+		// icon: 'tabler:brand-linkedin',
 		href: ankushLinks.socialMedia.linkedIn,
 	},
 	{ variant: 'secondary', text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
@@ -58,15 +58,15 @@ var modifiedHeaderDate = {
 		id="hero"
 		title="Ankush Choubey"
 		taglineInverted={true}
-		tagline="Full Stack Developer"
+		tagline="Freelance - Full Stack Developer"
 		actions={topHeaderActions}
 	>
 		<Fragment slot="subtitle">
+			7+ years of experience working with Spring Boot and React.<br /><br />
 			Helping you build <a class="font-bold text-blue-700" href="/clean-code">clean</a>, <a
 				class="font-bold text-blue-700"
 				href="/tdd">bug-free</a
 			>, scalable software <a class="font-bold text-blue-700" href="/cd">fast</a>!
-
 			<br /><br />
 			<!-- <span class="font-bold"><a class="text-blue-700 font-bold" href="https://www.linkedin.com/in/ankushchoubey/">🇮🇳 Hiring</a>: If you are looking for a remote backend-java developer role in India?</span> -->
 			<br />
@@ -82,13 +82,13 @@ var modifiedHeaderDate = {
 	</Hero>
 
 	<!-- BlogLatestPost Widget **************** -->
-
+<!-- information={`From TDD, BDD, DevOps, etc.`} -->
+ 		<!-- linkText="View Software Development Posts" -->
 	<BlogLatestPosts
 		id="tech-blog"
 		tag="technical"
 		title="Software Posts"
-		information={`From TDD, BDD, DevOps, etc.`}
-		linkText="View Software Development Posts"
+		linkText="View Posts"
 		linkUrl={getPermalink('technical', 'tag')}
 	>
 		<Fragment slot="bg">
