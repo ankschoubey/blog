@@ -35,4 +35,4 @@ If the privacy policy changes, updates will be reflected on this page.
 
 ## Contact
 
-If you have questions, contact: [your email here]
+If you have questions, contact: ankushchoubey @ outlook.com
