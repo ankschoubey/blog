@@ -3,7 +3,7 @@ title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
+_Last updated_: April 20, 2026
 
 ## Privacy Policy for Fast Highlighter
 
@@ -35,4 +35,4 @@ If the privacy policy changes, updates will be reflected on this page.
 
 ## Contact
 
-If you have questions, contact: ankushchoubey @ outlook.com
+If you have questions, contact: ankushchoubey@outlook.com
