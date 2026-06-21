@@ -74,7 +74,7 @@ export const movieApi = {
 }
 ```
 
-Add a ViewModel for presentation mapping:
+Raw API responses rarely match what the UI needs. Fields get renamed, values get formatted, computed properties get derived. Without a boundary, this transformation logic leaks into every component that renders the data — sometimes in different ways each time.
 
 ```ts
 // view-models/movie.ts
@@ -91,7 +91,7 @@ export class MovieViewModel {
 }
 ```
 
-Now the feature hook ties everything together:
+The ViewModel is the single place where DTOs become UI-friendly data. `displayRating` and `isPopular` are computed once, in one file, not scattered across components with ad-hoc format logic.
 
 ```ts
 // hooks/useMovie.ts
