@@ -14,9 +14,9 @@ Most React apps start with a simple pattern: a component calls `useQuery`, rende
 
 Here's the insight: **your hooks should behave like backend entities.** A `useMovie` hook should be the single source of truth for everything related to "the movie feature" — data queries, form management, validation, permissions, commands, and view-model mapping. It becomes the orchestration layer between UI and API, much like an Application Service in Domain-Driven Design.
 
-Let me show you what this looks like.
-
 > **TL;DR** — Treat API hooks like backend entities. One `use{Entity}` per aggregate root — CRUD, permissions, form state, view-model mapping all in one place. Translate DTOs once via a ViewModel so components get `entity.displayRating`, not raw API fields. Permissions (CASL) and form state (TanStack Form) live inside the hook; components only see booleans like `canUpdate` and functions like `saveMovie()`. The goal is zero library imports in your components — React Query, Zod, Axios never appear there. The hook is the only dependency. (UI hooks like `useTheme` are different — they group cross-cutting concerns without CRUD or DTOs.)
+
+Let me show you what this looks like.
 
 ## The Messy Baseline
 
