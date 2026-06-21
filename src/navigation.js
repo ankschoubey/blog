@@ -4,35 +4,75 @@ import ankushLinks from './content/ankushLinks'
 export const headerData = {
   links: [
     {
-      text: 'Services',
-      href: '/services',
+      text: 'Software',
+      href: getPermalink(),
+      links: [
+        { text: 'Blog', href: getPermalink('technical', 'tag') },
+        { text: 'TDD & Beyond Series', href: '/tdd' },
+        { text: 'Clean Code Series', href: '/clean-code' },
+      ],
     },
     {
-      text: 'Process',
-      href: '/#process',
+      text: 'Life',
+      links: [
+        { text: 'Blog', href: getPermalink('non-technical', 'tag') },
+        { text: 'Series', href: '/life' },
+      ],
     },
     {
-      text: 'Work',
-      href: '/#work',
+       text: 'Business Related', href: getPermalink('business', 'tag') 
     },
     {
-      text: 'Blog',
-      href: getPermalink('technical', 'tag'),
+      text: 'Previous Years',
+      href: '/from-previous-years',
     },
+  {
+    text: 'Sponsor This Blog',
+    href: '/sponsor',
+  },
+
+    // {
+    //   text: "Tech Series",
+    //   // href: getPermalink(),
+    //   links: [
+    //     // { text: 'Clean Code', href: getPermalink('clean-code', 'tag') },
+    //     { text: 'TDD', href: "/tdd" },
+    //     // { text: 'Continuous Delivery', href: getPermalink('non-technical', 'tag') },
+    //   ]
+    // },
+    // {
+    //   text: "Life Series",
+    //   href: getPermalink(),
+    //   links: [
+    //     { text: 'Developing Core Values', href: getPermalink('non-technical', 'tag') },
+    //     { text: 'Clarity in Thoughts', href: getPermalink('non-technical', 'tag') },
+    //     { text: 'Responsibility in Actions', href: getPermalink('non-technical', 'tag') },
+    //     { text: 'Optimism in Approach', href: getPermalink('non-technical', 'tag') },
+    //     { text: 'Harmony in Interactions', href: getPermalink('non-technical', 'tag') },
+    //   ]
+    // }
   ],
   actions: [
     {
       text: 'Search',
+      // target:"_blank",search
       icon: 'tabler:search',
       variant: 'primary',
       href: '/search',
     },
+    // {
+    //   text: 'Resume',
+    //   target:"_blank",
+    //   variant: "secondary",
+    //   href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
+    // },
     {
       variant: 'primary',
       target: '_blank',
-      text: 'Let\'s Talk',
-      icon: 'tabler:brand-whatsapp',
-      href: ankushLinks.socialMedia.whatsapp,
+      text: 'Contact',
+      icon: 'tabler:brand-linkedin',
+      showText: false,
+      href: ankushLinks.so,
     },
   ],
   isSticky: true,
