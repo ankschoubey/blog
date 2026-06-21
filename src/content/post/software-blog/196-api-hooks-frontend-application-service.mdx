@@ -16,6 +16,8 @@ Here's the insight: **your hooks should behave like backend entities.** A `useMo
 
 Let me show you what this looks like.
 
+> **TL;DR** — Treat API hooks like backend entities. One `use{Entity}` per aggregate root — CRUD, permissions, form state, view-model mapping all in one place. Translate DTOs once via a ViewModel so components get `entity.displayRating`, not raw API fields. Permissions (CASL) and form state (TanStack Form) live inside the hook; components only see booleans like `canUpdate` and functions like `saveMovie()`. The goal is zero library imports in your components — React Query, Zod, Axios never appear there. The hook is the only dependency. (UI hooks like `useTheme` are different — they group cross-cutting concerns without CRUD or DTOs.)
+
 ## The Messy Baseline
 
 The common alternative is to scatter concerns across the component:
