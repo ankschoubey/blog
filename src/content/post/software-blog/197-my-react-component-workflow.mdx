@@ -1,0 +1,285 @@
+---
+title: My Workflow for Building React Components
+excerpt: Markup first. Extract. Story per behavior. Hook last. A repeatable sequence for building React components with Storybook, Loki, and Vitest.
+slug: /software-blog/react-component-workflow/
+tags:
+    - technical
+    - react
+    - storybook
+    - testing
+publishDate: 2026-06-21T21:00:00.000000
+---
+
+Most React tutorials teach rendering first, then sprinkle state and handlers inline until the component works. Then you ship. The component grows. You extract a sub-component here, a hook there. The final structure is accidental, not designed.
+
+Over years of building React UIs, I've landed on a repeatable sequence — one that front-loads structure, surfaces missing abstractions early, and keeps behavior testing pure. It looks like this:
+
+```
+1. Static markup (hardcoded data, one item per list)
+2. Extract sub-components + design hook APIs upfront
+3. Storybook stories per behavior (red) + visual baseline
+4. Add behavior until stories pass (green)
+5. Unit-test hooks in Vitest (no Storybook)
+6. Wire hooks into components
+```
+
+The example I'll thread through this article: a todo list. Familiar enough that the *workflow* is what you notice, not the domain.
+
+---
+
+## Step 1: Static Markup, No Behavior
+
+Open a component file and a Storybook file side-by-side. Write the *entire* JSX markup as if the data already exists. Hardcode one item — a single todo, a single list entry. No event handlers, no state, no hooks.
+
+```tsx
+// TodoApp.tsx
+export function TodoApp() {
+  return (
+    <div>
+      <h1>Todo List</h1>
+      <input placeholder="Add a todo..." />
+      <button>Add</button>
+      <ul>
+        <li>
+          <input type="checkbox" checked={false} />
+          <span>Buy milk</span>
+          <button>Delete</button>
+        </li>
+      </ul>
+      <p>1 item remaining</p>
+      <div>
+        <button>All</button>
+        <button>Active</button>
+        <button>Completed</button>
+      </div>
+    </div>
+  );
+}
+```
+
+That's it. The component renders. Storybook shows you a static snapshot.
+
+Why start here? Three reasons:
+- **You see the full shape** before committing to abstractions. The DOM tree tells you what *must* exist before you decide how to slice it.
+- **One item, not many.** Lists hide complexity. If you start with three todo items, you'll miss that the item itself is an extractable unit.
+- **Zero behavioral debt.** No handlers, no state, no bugs. Just markup you can throw away and rewrite without cost.
+
+## Step 2: Extract Sub-Components and Design Hook APIs
+
+Now read the markup from top to bottom and identify natural boundaries:
+
+- `TodoInput` — the add form (input + button)
+- `TodoList` — the `<ul>` wrapper
+- `TodoItem` — the `<li>` (checkbox + text + delete)
+- `TodoCounter` — "X items remaining"
+- `TodoFilter` — All / Active / Completed buttons
+
+Extract each into its own file. At this stage they're still static — same hardcoded data, just relocated.
+
+```tsx
+// TodoItem.tsx
+export function TodoItem() {
+  return (
+    <li>
+      <input type="checkbox" checked={false} />
+      <span>Buy milk</span>
+      <button>Delete</button>
+    </li>
+  );
+}
+```
+
+While extracting, also **sketch the hook APIs you'll need later**. Don't implement them yet — just write a comment or a type signature:
+
+```ts
+// useTodos will return:
+// { todos, addTodo, toggleTodo, deleteTodo, filteredTodos, filter, setFilter }
+```
+
+This is the critical insight: you design the hook's public interface *before* you know how it's implemented, because you already know what the components need. The extraction step reveals the contract.
+
+## Step 3: Write One Story Per Behavior (Red)
+
+Now for each extracted component, write a Storybook story for a single behavior. Use `play` functions to simulate interaction and assert the result.
+
+```ts
+// TodoItem.stories.ts
+export const ToggleComplete: Story = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const checkbox = canvas.getByRole('checkbox');
+
+    // Initially unchecked
+    expect(checkbox).not.toBeChecked();
+
+    await userEvent.click(checkbox);
+
+    // After click, it should be checked
+    expect(checkbox).toBeChecked();
+  },
+};
+```
+
+This story will **fail**. The checkbox has no `onChange` handler. The component is still static. Red.
+
+Also run Loki to capture a visual baseline:
+
+```bash
+npx loki test
+```
+
+Loki takes screenshots of every story. Right now it captures the "no behavior" state — a useful point of comparison for visual regression later.
+
+Write one story per behavior. For `TodoItem`:
+- Toggle complete
+- Delete item
+- Edit text (if you support it)
+
+Each story is atomic. Each fails independently. This granularity is the whole point — you know exactly which behavior is missing.
+
+## Step 4: Add Behavior Until Stories Pass (Green)
+
+Now wire up real handlers and state. Give `TodoItem` the props it needs:
+
+```tsx
+interface TodoItemProps {
+  todo: { id: string; text: string; completed: boolean };
+  onToggle: (id: string) => void;
+  onDelete: (id: string) => void;
+}
+
+export function TodoItem({ todo, onToggle, onDelete }: TodoItemProps) {
+  return (
+    <li>
+      <input
+        type="checkbox"
+        checked={todo.completed}
+        onChange={() => onToggle(todo.id)}
+      />
+      <span>{todo.text}</span>
+      <button onClick={() => onDelete(todo.id)}>Delete</button>
+    </li>
+  );
+}
+```
+
+Run the story again. It passes. Loki re-snapshots and diffs — you see exactly when a visual change happens.
+
+Repeat for each component. `TodoCounter` needs a `count` prop. `TodoFilter` needs an `activeFilter` + `onSetFilter`. Each behavior goes from red → green independently. You build the component tree from the leaves up.
+
+When you reach `TodoInput` — which needs `addTodo` from a hook — stop. Don't fake it with local state. This is the signal to move to step 5.
+
+## Step 5: Unit-Test Hooks in Vitest
+
+You've already designed the hook API in step 2. Now implement and test it — *without Storybook*. Hooks are pure logic. State mutations, filtering, persistence — all testable in Vitest.
+
+```ts
+// useTodos.test.ts
+import { renderHook, act } from '@testing-library/react';
+
+describe('useTodos', () => {
+  it('adds a todo', () => {
+    const { result } = renderHook(() => useTodos());
+
+    act(() => result.current.addTodo('Buy milk'));
+
+    expect(result.current.todos).toHaveLength(1);
+    expect(result.current.todos[0].text).toBe('Buy milk');
+    expect(result.current.todos[0].completed).toBe(false);
+  });
+
+  it('toggles a todo', () => {
+    const { result } = renderHook(() => useTodos());
+
+    act(() => result.current.addTodo('Buy milk'));
+    act(() => result.current.toggleTodo(result.current.todos[0].id));
+
+    expect(result.current.todos[0].completed).toBe(true);
+  });
+
+  it('filters active todos', () => {
+    const { result } = renderHook(() => useTodos());
+
+    act(() => result.current.addTodo('Milk'));
+    act(() => result.current.addTodo('Eggs'));
+    act(() => result.current.toggleTodo(result.current.todos[0].id));
+
+    act(() => result.current.setFilter('active'));
+
+    expect(result.current.filteredTodos).toHaveLength(1);
+    expect(result.current.filteredTodos[0].text).toBe('Eggs');
+  });
+});
+```
+
+Write the test first. Watch it fail (red). Implement the hook:
+
+```ts
+export function useTodos(initial: Todo[] = []) {
+  const [todos, setTodos] = useState(initial);
+  const [filter, setFilter] = useState<Filter>('all');
+
+  const addTodo = (text: string) => {
+    setTodos(prev => [...prev, { id: crypto.randomUUID(), text, completed: false }]);
+  };
+
+  const toggleTodo = (id: string) => {
+    setTodos(prev => prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t));
+  };
+
+  const deleteTodo = (id: string) => {
+    setTodos(prev => prev.filter(t => t.id !== id));
+  };
+
+  const filteredTodos = useMemo(() => {
+    if (filter === 'active') return todos.filter(t => !t.completed);
+    if (filter === 'completed') return todos.filter(t => t.completed);
+    return todos;
+  }, [todos, filter]);
+
+  return { todos, addTodo, toggleTodo, deleteTodo, filter, setFilter, filteredTodos };
+}
+```
+
+Test passes (green). The hook is fully covered by fast, isolated unit tests — no browser, no Storybook, no Loki.
+
+## Step 6: Wire Hooks Into Components
+
+Now plug `useTodos` into `TodoApp`. The stories you wrote in step 3 already describe the contract. Nothing changes at the component level — they receive the same props they were already tested against.
+
+```tsx
+export function TodoApp() {
+  const { todos, addTodo, toggleTodo, deleteTodo, filter, setFilter, filteredTodos } = useTodos();
+
+  return (
+    <div>
+      <h1>Todo List</h1>
+      <TodoInput onAdd={addTodo} />
+      <TodoList>
+        {filteredTodos.map(todo => (
+          <TodoItem key={todo.id} todo={todo} onToggle={toggleTodo} onDelete={deleteTodo} />
+        ))}
+      </TodoList>
+      <TodoCounter count={filteredTodos.length} />
+      <TodoFilter active={filter} onSet={setFilter} />
+    </div>
+  );
+}
+```
+
+Re-run all stories. They still pass. Re-run Loki. No visual regressions. The integration works because the contract was already validated by the stories.
+
+## Why This Order?
+
+The sequence is deliberately interleaved:
+
+- **Leaves first**: `TodoItem`, `TodoCounter` — pure props, no hooks. You build them in Storybook without needing any state infrastructure.
+- **Pause at the first component that needs hook logic**: `TodoInput` needs `addTodo`. This is a natural forcing function — don't hack local state into the component. Extract the hook.
+- **Hooks in isolation**: Unit tests are faster than Storybook for logic. By testing hooks separately, you keep story files focused on interaction and visual behavior.
+- **Plug back in**: The integration step is trivial because the contract was known upfront.
+
+You never rewrite. You never backfill tests. Each step produces artifacts (stories, tests, hooks) that compose into the final component.
+
+---
+
+The result: components extracted by structure, behaviors tested by interaction, logic tested by unit, and every piece verified independently before it ever meets production data.
