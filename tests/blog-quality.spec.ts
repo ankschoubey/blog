@@ -75,7 +75,7 @@ const expectAtleastOneImage = (markdown: string) => {
 
 iterateMarkdownFiles()
     // .slice(0, 10)
-    .filter(({ frontMatter }) => frontMatter.title.includes('CI Workflow Tweaks That Skyrocketed My Developer Productivity'))
+    .filter(({ frontMatter }) => frontMatter.title.includes('Spring Boot Performance: Automated Tests to Detect API Calls Within Database Transactions'))
     .forEach(({ frontMatter, body, html, file }) => {
         test(frontMatter.title + ' ' + frontMatter.slug + ' '+ file , async () => {
             console.log(frontMatter.title);

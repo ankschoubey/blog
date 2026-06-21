@@ -1,5 +1,5 @@
 site:
-  name: Ankush Choubey
+  name: Ankush Choubey | Startup Build Partner
   site: 'https://www.ankushchoubey.com/'
   base: '/'
   trailingSlash: false
@@ -8,9 +8,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Ankush Choubey
+    default: Ankush Choubey | Startup Build Partner
     template: '%s — Ankush Choubey'
-  description: "\U0001F680 Full Stack Developer: Microservices, Architecture, TDD, Domain Driven Design, Spring Boot, React, etc."
+  description: "Architecture-first development for serious founders. Launch your SaaS in 5-8 weeks with production-ready code."
   robots:
     index: true
     follow: true

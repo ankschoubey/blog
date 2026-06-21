@@ -2,6 +2,7 @@ const data = {
   socialMedia: {
     twitter: 'https://twitter.com/ankushchoubey',
     linkedIn: 'https://www.linkedin.com/in/ankushchoubey/',
+    whatsapp: 'https://wa.me/918169949676',
   },
   totalExperience: '6 years',
   testimonials: [

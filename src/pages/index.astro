@@ -14,22 +14,24 @@ import { headerData } from '~/navigation';
 import ankushLinks from '~/content/ankushLinks';
 
 const metadata = {
-	title: 'Ankush Choubey - Freelance Full Stack Developer',
+	title: 'Ankush Choubey | Startup Build Partner',
+	description: 'Architecture-first development for serious founders. Launch your SaaS in 5-8 weeks with production-ready code.',
 };
 
 let topHeaderActions = [
-	{ variant: 'secondary', text: 'S/W Blog', href: getPermalink('technical', 'tag') },
 	{
 		variant: 'primary',
 		target: '_blank',
-		text: 'Connect',
-		// icon: 'tabler:brand-linkedin',
-		href: ankushLinks.socialMedia.linkedIn,
+		text: 'Start a Project',
+		icon: 'tabler:brand-whatsapp',
+		href: ankushLinks.socialMedia.whatsapp,
 	},
-	{ variant: 'secondary', text: 'Life Blog', href: getPermalink('non-technical', 'tag') },
+	{
+		variant: 'secondary',
+		text: 'View Work',
+		href: '#work',
+	},
 ];
-
-let img = { src: 'IMG_0463.jpg', alt: 'img' };
 
 var modifiedHeaderDate = {
 	...headerData,
@@ -37,7 +39,6 @@ var modifiedHeaderDate = {
 	actions: [
 		{
 			text: 'Search',
-			// target:"_blank",search
 			icon: 'tabler:search',
 			variant: 'primary',
 			href: '/search',
@@ -52,143 +53,157 @@ var modifiedHeaderDate = {
 		<Header {...modifiedHeaderDate} />
 	</Fragment>
 
-	<!-- Hero2 Widget ******************* -->
-
 	<Hero
 		id="hero"
-		title="Ankush Choubey"
-		taglineInverted={true}
-		tagline="Java Full Stack Developer (Backend Heavy)"
+		title="Launch your SaaS in 5-8 weeks"
+		tagline="For founders who want it built properly from day one"
 		actions={topHeaderActions}
 	>
 		<Fragment slot="subtitle">
-			8 years of experience working with Spring Boot and React.<br /><br />
-			Helping you build <a class="font-bold text-blue-700" href="/clean-code">clean</a>, <a
-				class="font-bold text-blue-700"
-				href="/tdd">bug-free</a
-			>, scalable software <a class="font-bold text-blue-700" href="/cd">fast</a>!
-			<br /><br />
-			<!-- <span class="font-bold"><a class="text-blue-700 font-bold" href="https://www.linkedin.com/in/ankushchoubey/">🇮🇳 Hiring</a>: If you are looking for a remote backend-java developer role in India?</span> -->
-			<br />
-			<!-- <span class="highlight text-accent dark:text-white"> </span>
-       I have five years of experience as a full-stack developer, with a focus on developing microservices, implementing
-      test-first development practices, writing clean code, and delivering customer and business-oriented solutions.
-      <br /> -->
-			<!-- Through this blog, I share my insights and ideas on software development philosophy and best practices to help
-      fellow developers create high-quality software products. My goal is to help you write 🧹 clean & 🐞 bug-free code
-      every time and support you in swiftly delivering your 👨🏻‍💻 code to production! Hire me for consulting, speaking and
-      developer roles by contacting me on LinkedIn logo. -->
+			Architecture-first development. Production-ready from day one.<br /><br />
+			SGD $15,000 – $22,000<br />
+			<span class="text-sm">50% upfront, 50% before launch</span>
 		</Fragment>
 	</Hero>
 
-	<!-- BlogLatestPost Widget **************** -->
-<!-- information={`From TDD, BDD, DevOps, etc.`} -->
- 		<!-- linkText="View Software Development Posts" -->
-	<BlogLatestPosts
-		id="tech-blog"
-		tag="technical"
-		title="Software Posts"
-		linkText="View Posts"
-		linkUrl={getPermalink('technical', 'tag')}
-	>
-		<Fragment slot="bg">
-			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-		</Fragment>
-	</BlogLatestPosts>
-	<Hero tagline="Life & Self Improvement">
-		<Fragment slot="subtitle">
-			<br />
-			 I write a lot about philosophy and life too.<br />
-			<br />
-			 My main focus recently has been <strike>my 4 core values</strike>
-			<b>Shreemad Bhagwat Gita 🍃</b><br /><br />
-			<sup
-				><strike
-					><span class="text-white-700 dark:text-black-800 text-1 font-bold">🔭 Clarity</span>, <span
-						class="font-bold text-orange-700">💎 Responsibility</span
-					>, 🫀 <span class="font-bold text-green-700">Optimism</span> and 🫱🏻‍🫲🏾 <a
-						class="font-bold text-blue-700 hover:bg-slate-200 dark:hover:bg-slate-900"
-						href={getPermalink('social-harmony', 'tag')}>Social</a
-					>.</strike
-				>
-			</sup>
-			<span class="text-white-700 dark:text-black-800 text-1 font-bold">🔭 Gyaan</span>. <span
-				class="font-bold text-orange-700">💎 Karma</span
-			>. 🫀 <span class="font-bold text-green-700">Bhakti</span>.<br />
-			<br />
-			<b>कर्म</b>ण्येवाधिकारस्ते मा फलेषु कदाचन। <br />
-			 मा कर्मफलहेतुर्भुर्मा ते संगोऽस्त्वकर्मणि॥ <br />
-			<br />
-			<!-- <sup> -->
-			 You have every right to work but not expecting the fruits out of it. <br />
-			 Let the focus be not on the fruits and never be inactive.
-			<!-- </sup> -->
-		</Fragment>
-	</Hero>
-	<BlogLatestPosts
-		id="non-tech-blog"
-		tag="non-technical"
-		title="Life Posts"
-		information={`Range from topics such as Truth, Discipline, Karma, Social, Psychology, Challenges to everything that's not software engineering`}
-		linkUrl={getPermalink('non-technical', 'tag')}
-	>
-		<Fragment slot="bg">
-			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-		</Fragment>
-	</BlogLatestPosts>
-	<Content
-		id="about"
-		columns={3}
+	<Features3
+		id="value-props"
+		title="What you get"
 		items={[
 			{
-				icon: 'tabler:brand-linkedin',
-				callToAction: {
-					target: '_blank',
-					text: 'LinkedIn',
-					href: 'https://www.linkedin.com/in/ankushchoubey/',
-				},
+				title: 'Architecture First',
+				description: 'We plan before we code. Scalable foundations from day one, not patches later.',
+			},
+			{
+				title: 'Feature Pruning',
+				description: 'Cut what doesn\'t matter. Focus on what users actually need in version one.',
+			},
+			{
+				title: 'CTO-Level Thinking',
+				description: 'Strategic guidance, not just code. You get a technical partner, not a coder.',
 			},
 		]}
+	>
+		<Fragment slot="bg">
+			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+		</Fragment>
+	</Features3>
+
+	<Steps
+		id="process"
+		title="The Process"
+		subtitle="From idea to production in 8 weeks"
+		items={[
+			{
+				title: 'Week 1: Architecture Sprint',
+				description: 'Scope refinement, business model clarity, feature pruning, tech stack decision, 6-12 month roadmap.',
+			},
+			{
+				title: 'Weeks 2-7: Engineering',
+				description: 'Responsive frontend, production-grade backend, authentication, payments, clean database design.',
+			},
+			{
+				title: 'Production Launch',
+				description: 'Cloud deployment, domain setup, dev/prod separation, monitoring basics, documentation.',
+			},
+			{
+				title: '30-Day Post-Launch Support',
+				description: 'Bug fixes, light refinements, strategic advice, scaling discussions, hiring roadmap.',
+			},
+		]}
+	>
+		<Fragment slot="bg">
+			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+		</Fragment>
+	</Steps>
+
+	<Content
+		id="work"
+		columns={2}
 		image={{
 			src: 'profile.PNG',
-			alt: 'Photo of Ankush Choubey',
+			alt: 'Svaaya Platform',
 		}}
 	>
 		<Fragment slot="content">
-			<h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">About me</h3>
-			 I am 28 y.o. full stack developer from Mumbai, India.<br /><br />
-
-			 I'm very curious by nature and can explore random topics non-stop.<br /><br />
-			 Some areas of my current (Dec 2023) interest are Boxing, Running, Writing and the Bhagwad Gita.<br /><br />
-
-			 As a full stack developer, I love both front-end and backend. I am equally good in both. And my interests is producing
-			bug free code as fast as possible. Especially within teams.
+			<h3 class="mb-4 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">Case Study: Svaaya</h3>
+			<p class="mb-4">Ashay came to me with a strong idea. But the scope was big. Really big.</p>
+			<p class="mb-4">Instead of jumping into development, we structured it properly:</p>
+			<ul class="list-disc pl-6 mb-4 space-y-2">
+				<li>Defined the core flows</li>
+				<li>Removed unnecessary features</li>
+				<li>Designed architecture around long-term growth</li>
+			</ul>
+			<p class="mb-4">Built fully within 4 months — scope was larger than a typical MVP. Now when he shows the product to people, they consistently appreciate what's been built. We're continuing to expand it feature by feature.</p>
+			<p class="font-semibold">That's the difference between building something… and building it properly.</p>
 		</Fragment>
 
 		<Fragment slot="bg">
 			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
 		</Fragment>
 	</Content>
+
 	<Testimonials
-		title="Recommendations and Appreciation"
-		subtitle="Discover what fellow collegues have to say about their experiences working with me."
-		testimonials={ankushLinks.testimonials}
+		id="testimonials"
+		title="What others say"
+		testimonials={[
+			{
+				testimonial: `Ankush thinks about design upfront and breaks complex problems into clear, manageable steps.`,
+				name: 'VP of Engineering',
+				job: 'MNC Company',
+			},
+			{
+				testimonial: `You can trust him with complex systems. He evaluates multiple approaches before deciding.`,
+				name: 'Principal Architect',
+				job: 'MNC Company',
+			},
+			{
+				testimonial: `He consistently builds reusable, clean components that reduce long-term maintenance.`,
+				name: 'Technical Lead',
+				job: 'Product Company',
+			},
+		]}
 	/>
+
+	<BlogLatestPosts
+		id="tech-blog"
+		tag="technical"
+		title="Technical Insights"
+		information="Thoughts on architecture, development, and building products."
+		linkText="Read More"
+		linkUrl={getPermalink('technical', 'tag')}
+	>
+		<Fragment slot="bg">
+			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+		</Fragment>
+	</BlogLatestPosts>
+
+	<Content
+		id="life"
+		columns={1}
+	>
+		<Fragment slot="content">
+			<p class="text-center text-muted dark:text-gray-400">
+				Outside work: Boxing, Running, Gita philosophy —
+				<a href={getPermalink('non-technical', 'tag')} class="text-blue-700 dark:text-blue-400 hover:underline">Life Blog</a>
+			</p>
+		</Fragment>
+
+		<Fragment slot="bg">
+			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+		</Fragment>
+	</Content>
+
 	<CallToAction
-		title="Let's create together"
-		subtitle="Want help with setting up TDD within an organization, designing a complex system or something else?"
+		id="cta"
+		title="Ready to build properly?"
+		subtitle="Let\'s discuss your project. Serious founders only."
 		actions={[
-			//  {
-			//   text: 'Resume',
-			//   target:"_blank",
-			//   variant: "secondary",
-			//   href: 'https://docs.google.com/viewer?url=https://docs.google.com/document/d/1SjN-Sij2NKrA8C9irLCz0qDAQ50B7sp6iGN8hD8uRE0/export?format=pdf',
-			// },
 			{
 				variant: 'primary',
-				text: 'LinkedIn',
-				icon: 'tabler:brand-linkedin',
-				href: 'https://www.linkedin.com/in/ankushchoubey/',
+				text: 'Let\'s Talk',
+				icon: 'tabler:brand-whatsapp',
+				href: ankushLinks.socialMedia.whatsapp,
 			},
 		]}
 	/>
