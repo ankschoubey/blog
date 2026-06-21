@@ -1,0 +1,277 @@
+---
+title: Treating React Hooks Like Backend Entities
+excerpt: Feature hooks let you treat React hooks as a frontend application service layer — coordinating data fetching, validation, permissions, forms, and commands in one place.
+slug: /software-blog/api-hooks-frontend-application-service/
+tags:
+  - react
+  - frontend
+  - ddd
+publishDate: 2026-06-21T20:00:00.000000
+---
+
+Most React apps start with a simple pattern: a component calls `useQuery`, renders some UI, maybe a button calls `useMutation`. It works fine for small features. Then you add form state. Then validation. Then permission checks. Before long, a single "page" component is juggling four different libraries, scattered state, and inline logic that's hard to test and harder to reuse.
+
+Here's the insight: **your hooks should behave like backend entities.** A `useMovie` hook should be the single source of truth for everything related to "the movie feature" — data queries, form management, validation, permissions, commands, and view-model mapping. It becomes the orchestration layer between UI and API, much like an Application Service in Domain-Driven Design.
+
+Let me show you what this looks like.
+
+## The Messy Baseline
+
+The common alternative is to scatter concerns across the component:
+
+```tsx
+function MoviePage({ id }: { id: string }) {
+  const { data: movie, isLoading } = useQuery({
+    queryKey: ['movie', id],
+    queryFn: () => fetch(`/api/movies/${id}`).then(r => r.json()),
+  })
+
+  const [title, setTitle] = useState('')
+  const [rating, setRating] = useState(0)
+
+  const updateMutation = useMutation({
+    mutationFn: (data) => fetch(`/api/movies/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
+  })
+
+  const handleSave = () => { updateMutation.mutate({ title, rating }) }
+
+  useEffect(() => {
+    if (movie) { setTitle(movie.title); setRating(movie.rating) }
+  }, [movie])
+
+  if (isLoading) return <div>Loading...</div>
+  // render...
+}
+```
+
+This component knows about query keys, API URLs, JSON serialization, local form state, effect synchronization, and mutation state. Every new concern (permissions, validation, form library) gets dumped into the same file with no boundary.
+
+## The Feature Hook Pattern
+
+The fix is to extract every backend-facing concern into a single hook — what's sometimes called a **feature hook** or **view-model hook**. The component talks only about UI; the hook talks only about orchestration.
+
+Start with a clean API layer:
+
+```ts
+// api/movieApi.ts
+export const movieApi = {
+  getById: async (id: string): Promise<MovieDTO> => {
+    const response = await axios.get(`/api/movies/${id}`)
+    return response.data
+  },
+  create: async (request: CreateMovieRequest): Promise<MovieDTO> => {
+    const response = await axios.post('/api/movies', request)
+    return response.data
+  },
+  update: async (id: string, request: UpdateMovieRequest): Promise<MovieDTO> => {
+    const response = await axios.put(`/api/movies/${id}`, request)
+    return response.data
+  },
+  delete: async (id: string): Promise<void> => {
+    await axios.delete(`/api/movies/${id}`)
+  },
+}
+```
+
+Add a ViewModel for presentation mapping:
+
+```ts
+// view-models/movie.ts
+export class MovieViewModel {
+  static map(movie: MovieDTO | undefined) {
+    if (!movie) return null
+    return {
+      id: movie.id,
+      title: movie.title,
+      displayRating: `${movie.rating}/10`,
+      isPopular: movie.rating > 8,
+    }
+  }
+}
+```
+
+Now the feature hook ties everything together:
+
+```ts
+// hooks/useMovie.ts
+export const useMovie = (id?: string) => {
+  const { userId, userRole } = useAuth()
+
+  const movieQuery = useQuery({
+    queryKey: ['movie', id],
+    queryFn: () => movieApi.getById(id!),
+    enabled: !!id,
+  })
+
+  const createMutation = useMutation({ mutationFn: movieApi.create })
+  const updateMutation = useMutation({
+    mutationFn: (request: UpdateMovieRequest) => movieApi.update(id!, request),
+  })
+  const deleteMutation = useMutation({ mutationFn: () => movieApi.delete(id!) })
+
+  const canCreate = userRole === 'admin' || userRole === 'editor'
+  const canUpdate = canCreate && !!id
+  const canDelete = userRole === 'admin' && !!id
+
+  return {
+    movieId: id,
+    movie: MovieViewModel.map(movieQuery.data),
+    isLoading: movieQuery.isLoading,
+    createMovie: createMutation.mutate,
+    updateMovie: updateMutation.mutate,
+    deleteMovie: deleteMutation.mutate,
+    canCreate,
+    canUpdate,
+    canDelete,
+    isSaving: createMutation.isPending || updateMutation.isPending,
+    isDeleting: deleteMutation.isPending,
+  }
+}
+```
+
+The component becomes thin:
+
+```tsx
+function MoviePage({ id }: { id: string }) {
+  const { movie, isLoading, updateMovie, canUpdate, isSaving } = useMovie(id)
+
+  if (isLoading) return <div>Loading...</div>
+  if (!movie) return <div>Movie not found</div>
+
+  return (
+    <div>
+      <h1>{movie.title}</h1>
+      <p>Rating: {movie.displayRating}</p>
+      <button disabled={!canUpdate || isSaving} onClick={() => updateMovie({ title: 'New Title' })}>
+        Save
+      </button>
+    </div>
+  )
+}
+```
+
+The component knows about `movie`, `canUpdate`, `updateMovie`, and nothing else. No query keys. No API URLs. No DTO fields. No mutation state management.
+
+## This Is an Application Service
+
+This pattern maps directly to the backend layers from DDD:
+
+| Backend (DDD) | Frontend (Feature Hook) |
+|---|---|
+| Controller / UI | Component |
+| Application Service | `useMovie()` hook |
+| Repository | `movieApi.ts` |
+| DTO | API response types |
+| ViewModel | `MovieViewModel.map()` |
+
+The hook is a **frontend Application Service**. It coordinates:
+- Authorization (via `useAuth`)
+- Data retrieval (React Query)
+- Commands (mutations)
+- View-model mapping
+- Feature-level state (isSaving, canUpdate)
+
+You can swap React Query for any other data-fetching library, or swap the API layer without touching a single component. The boundary is the hook's return type.
+
+## The Full Version: Adding Form, Validation, and Permissions
+
+Once you bring in TanStack Form, Zod, and CASL, the pattern really shines. The hook grows in reach but stays single-responsibility:
+
+```ts
+// hooks/useMovie.ts
+import { useForm } from '@tanstack/react-form'
+import { zodValidator } from '@tanstack/zod-form-adapter'
+import { useAbility } from '@casl/react'
+import { AbilityContext } from './ability-context'
+
+export const useMovie = (id?: string) => {
+  const { userId } = useAuth()
+  const ability = useAbility(AbilityContext)
+
+  // Data
+  const movieQuery = useQuery({
+    queryKey: ['movie', id],
+    queryFn: () => movieApi.getById(id!),
+    enabled: !!id,
+  })
+
+  // Permissions (CASL + ownership)
+  const canCreate = ability.can('create', 'Movie')
+  const canUpdate = ability.can('update', 'Movie') || movieQuery.data?.authorId === userId
+  const canDelete = ability.can('delete', 'Movie') && !!id
+
+  // Mutations
+  const createMutation = useMutation({ mutationFn: movieApi.create })
+  const updateMutation = useMutation({
+    mutationFn: (data: MovieFormData) => movieApi.update(id!, data),
+  })
+  const deleteMutation = useMutation({ mutationFn: () => movieApi.delete(id!) })
+
+  // Form (TanStack Form + Zod)
+  const form = useForm({
+    defaultValues: {
+      title: movieQuery.data?.title ?? '',
+      rating: movieQuery.data?.rating ?? 0,
+    },
+    validators: { onChange: zodValidator(movieSchema) },
+    onSubmit: async ({ value }) => {
+      if (id) {
+        await updateMutation.mutateAsync(value)
+      } else {
+        await createMutation.mutateAsync(value)
+      }
+    },
+  })
+
+  return {
+    movieId: id,
+    movie: MovieViewModel.map(movieQuery.data),
+    form,
+    saveMovie: form.handleSubmit,
+    deleteMovie: deleteMutation.mutate,
+    canCreate,
+    canUpdate,
+    canDelete,
+    isSaving: createMutation.isPending || updateMutation.isPending,
+    isDeleting: deleteMutation.isPending,
+  }
+}
+```
+
+The component becomes even simpler because form state is fully encapsulated:
+
+```tsx
+function MoviePage({ id }: { id: string }) {
+  const { movie, form, saveMovie, canUpdate } = useMovie(id)
+
+  if (!movie) return <div>Loading...</div>
+
+  return (
+    <form onSubmit={(e) => { e.preventDefault(); saveMovie() }}>
+      <form.Field name="title">
+        {(field) => (
+          <input value={field.state.value} onChange={(e) => field.handleChange(e.target.value)} />
+        )}
+      </form.Field>
+      <button disabled={!canUpdate}>Save</button>
+    </form>
+  )
+}
+```
+
+The component doesn't know about CASL, TanStack Form, Zod, or React Query. It just calls `useMovie` and renders what it gets.
+
+## Why This Scales
+
+Every feature in your app gets a single hook: `useMovie`, `useBooking`, `useUserProfile`, `useInvoice`. Each hook has the same shape — it exposes data, commands, and permission flags. New team members learn one pattern per feature instead of per library.
+
+The benefits compound:
+
+- **Testable** — Test the hook in isolation. The component is too thin to need testing beyond UI.
+- **Swappable** — Replace Axios with tRPC? Change `movieApi.ts`. No component changes.
+- **Auditable** — All authorization logic for "movies" lives in one function.
+- **Co-located** — Form validation schema lives next to the mutation that submits it.
+
+This doesn't mean every hook needs TanStack Form and CASL. The pattern scales down too. A read-only page can skip the form and mutations entirely. The point is the boundary itself: one hook per entity, encapsulating everything the UI needs to interact with that entity.
+
+Start with the simple version. Add form state when you need it. Add permissions when the product demands it. The shape stays the same, and your components never need to learn what's behind the curtain.
