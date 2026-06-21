@@ -447,4 +447,6 @@ describe('useMovie', () => {
 
 No providers wrapped around the test. No mocked router. The return type is the contract. Every feature hook follows the same test pattern because every hook returns the same kind of shape.
 
+We could extract a `TestUseMovieReturn` helper with named states like `.loading()` and `.editable()` — one line per test case.
+
 Start with the simple version. Add form state when you need it. Add permissions when the product demands it. The shape stays the same, and your components never need to learn what's behind the curtain.
