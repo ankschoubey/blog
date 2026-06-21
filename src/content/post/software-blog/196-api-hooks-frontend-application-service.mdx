@@ -93,13 +93,25 @@ export class MovieViewModel {
 
 The ViewModel is the single place where DTOs become UI-friendly data. `displayRating` and `isPopular` are computed once, in one file, not scattered across components with ad-hoc format logic.
 
+Query keys should follow the same discipline. A factory prevents key collisions and enables targeted cache invalidation:
+
+```ts
+// query-keys/movies.ts
+export const movieKeys = {
+  all: ['movies'] as const,
+  byId: (id: string) => ['movies', id] as const,
+}
+```
+
+Now the feature hook ties everything together:
+
 ```ts
 // hooks/useMovie.ts
 export const useMovie = (id?: string) => {
   const { userId, userRole } = useAuth()
 
   const movieQuery = useQuery({
-    queryKey: ['movie', id],
+    queryKey: movieKeys.byId(id!),
     queryFn: () => movieApi.getById(id!),
     enabled: !!id,
   })
@@ -118,6 +130,7 @@ export const useMovie = (id?: string) => {
     movieId: id,
     movie: MovieViewModel.map(movieQuery.data),
     isLoading: movieQuery.isLoading,
+    movieError: movieQuery.error,
     createMovie: createMutation.mutate,
     updateMovie: updateMutation.mutate,
     deleteMovie: deleteMutation.mutate,
@@ -126,6 +139,8 @@ export const useMovie = (id?: string) => {
     canDelete,
     isSaving: createMutation.isPending || updateMutation.isPending,
     isDeleting: deleteMutation.isPending,
+    saveError: createMutation.error || updateMutation.error,
+    deleteError: deleteMutation.error,
   }
 }
 ```
@@ -185,13 +200,18 @@ import { zodValidator } from '@tanstack/zod-form-adapter'
 import { useAbility } from '@casl/react'
 import { AbilityContext } from './ability-context'
 
-export const useMovie = (id?: string) => {
+interface UseMovieOptions {
+  onSaveSuccess?: (savedId: string) => void
+  onDeleteSuccess?: () => void
+}
+
+export const useMovie = (id?: string, options?: UseMovieOptions) => {
   const { userId } = useAuth()
   const ability = useAbility(AbilityContext)
 
   // Data
   const movieQuery = useQuery({
-    queryKey: ['movie', id],
+    queryKey: movieKeys.byId(id!),
     queryFn: () => movieApi.getById(id!),
     enabled: !!id,
   })
@@ -202,11 +222,18 @@ export const useMovie = (id?: string) => {
   const canDelete = ability.can('delete', 'Movie') && !!id
 
   // Mutations
-  const createMutation = useMutation({ mutationFn: movieApi.create })
+  const createMutation = useMutation({
+    mutationFn: movieApi.create,
+    onSuccess: (data: MovieDTO) => options?.onSaveSuccess?.(data.id),
+  })
   const updateMutation = useMutation({
     mutationFn: (data: MovieFormData) => movieApi.update(id!, data),
+    onSuccess: () => options?.onSaveSuccess?.(id!),
   })
-  const deleteMutation = useMutation({ mutationFn: () => movieApi.delete(id!) })
+  const deleteMutation = useMutation({
+    mutationFn: () => movieApi.delete(id!),
+    onSuccess: () => options?.onDeleteSuccess?.(),
+  })
 
   // Form (TanStack Form + Zod)
   const form = useForm({
@@ -227,6 +254,8 @@ export const useMovie = (id?: string) => {
   return {
     movieId: id,
     movie: MovieViewModel.map(movieQuery.data),
+    isLoading: movieQuery.isLoading,
+    movieError: movieQuery.error,
     form,
     saveMovie: form.handleSubmit,
     deleteMovie: deleteMutation.mutate,
@@ -235,6 +264,8 @@ export const useMovie = (id?: string) => {
     canDelete,
     isSaving: createMutation.isPending || updateMutation.isPending,
     isDeleting: deleteMutation.isPending,
+    saveError: createMutation.error || updateMutation.error,
+    deleteError: deleteMutation.error,
   }
 }
 ```
@@ -262,6 +293,8 @@ function MoviePage({ id }: { id: string }) {
 
 The component doesn't know about CASL, TanStack Form, Zod, or React Query. It just calls `useMovie` and renders what it gets.
 
+The hook handles create and edit mode through the `id` parameter. When `id` is undefined, the form starts empty, `canUpdate` is false (no entity to update yet), and `saveMovie` calls the create mutation instead of update. After a successful create, `onSaveSuccess` fires with the new entity's ID so the container can navigate to it. This is why the save callback receives `savedId: string` — the container doesn't need to figure out whether it was a create or an update.
+
 ## Why This Scales
 
 Every feature in your app gets a single hook: `useMovie`, `useBooking`, `useUserProfile`, `useInvoice`. Each hook has the same shape — it exposes data, commands, and permission flags. New team members learn one pattern per feature instead of per library.
@@ -284,23 +317,30 @@ export interface UseMovieReturn {
   movieId: string | undefined
   movie: ViewModelMovie | null
   isLoading: boolean
+  movieError: Error | null
   createMovie: (request: CreateMovieRequest) => void
   updateMovie: (request: UpdateMovieRequest) => void
   deleteMovie: () => void
+  saveMovie: () => void
   canCreate: boolean
   canUpdate: boolean
   canDelete: boolean
   isSaving: boolean
   isDeleting: boolean
+  saveError: Error | null
+  deleteError: Error | null
 }
 ```
 
-The container is trivial — it just wires the hook to the presenter:
+The container wires the hook and side effects. After saving a new movie, navigate to its detail page. After deleting, go back to the list:
 
 ```tsx
 // containers/MovieContainer.tsx
 function MovieContainer({ id }: { id: string }) {
-  const movie = useMovie(id)
+  const movie = useMovie(id, {
+    onSaveSuccess: (savedId) => navigate(`/movies/${savedId}`),
+    onDeleteSuccess: () => navigate('/movies'),
+  })
   return <MoviePresenter {...movie} />
 }
 ```
