@@ -224,7 +224,7 @@ export const useMovie = (id?: string, options?: UseMovieOptions) => {
   // Mutations
   const createMutation = useMutation({
     mutationFn: movieApi.create,
-    onSuccess: (data: MovieDTO) => options?.onSaveSuccess?.(data.id),
+    onSuccess: (response: CreateMovieResponse) => options?.onSaveSuccess?.(response.id),
   })
   const updateMutation = useMutation({
     mutationFn: (data: MovieFormData) => movieApi.update(id!, data),
