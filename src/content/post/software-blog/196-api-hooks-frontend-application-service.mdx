@@ -268,11 +268,86 @@ Every feature in your app gets a single hook: `useMovie`, `useBooking`, `useUser
 
 The benefits compound:
 
-- **Testable** — Test the hook in isolation. The component is too thin to need testing beyond UI.
 - **Swappable** — Replace Axios with tRPC? Change `movieApi.ts`. No component changes.
 - **Auditable** — All authorization logic for "movies" lives in one function.
 - **Co-located** — Form validation schema lives next to the mutation that submits it.
 
 This doesn't mean every hook needs TanStack Form and CASL. The pattern scales down too. A read-only page can skip the form and mutations entirely. The point is the boundary itself: one hook per entity, encapsulating everything the UI needs to interact with that entity.
+
+## Container, Presenter, and the Testable Contract
+
+Because the hook owns all orchestration, the component tree splits cleanly into two layers: **container** (calls the hook) and **presenter** (renders the return value). The return type becomes the explicit contract between them:
+
+```ts
+// types/movie.ts
+export interface UseMovieReturn {
+  movieId: string | undefined
+  movie: ViewModelMovie | null
+  isLoading: boolean
+  createMovie: (request: CreateMovieRequest) => void
+  updateMovie: (request: UpdateMovieRequest) => void
+  deleteMovie: () => void
+  canCreate: boolean
+  canUpdate: boolean
+  canDelete: boolean
+  isSaving: boolean
+  isDeleting: boolean
+}
+```
+
+The container is trivial — it just wires the hook to the presenter:
+
+```tsx
+// containers/MovieContainer.tsx
+function MovieContainer({ id }: { id: string }) {
+  const movie = useMovie(id)
+  return <MoviePresenter {...movie} />
+}
+```
+
+The presenter is a pure function of props. No hooks, no side effects:
+
+```tsx
+// presenters/MoviePresenter.tsx
+function MoviePresenter(props: UseMovieReturn) {
+  const { movie, isLoading, canUpdate, updateMovie, isSaving } = props
+
+  if (isLoading) return <div>Loading...</div>
+  if (!movie) return <div>Movie not found</div>
+
+  return (
+    <div>
+      <h1>{movie.title}</h1>
+      <p>Rating: {movie.displayRating}</p>
+      <button
+        disabled={!canUpdate || isSaving}
+        onClick={() => updateMovie({ title: 'New Title' })}
+      >
+        Save
+      </button>
+    </div>
+  )
+}
+```
+
+This separation makes testing straightforward. The hook's return type is the contract, so you test against the shape directly:
+
+```tsx
+// hooks/__tests__/useMovie.test.ts
+describe('useMovie', () => {
+  it('returns loading state on mount', () => {
+    const { result } = renderHook(() => useMovie('123'))
+
+    expect(result.current.movieId).toBe('123')
+    expect(result.current.isLoading).toBe(true)
+    expect(result.current.movie).toBeNull()
+    expect(typeof result.current.updateMovie).toBe('function')
+    expect(result.current.canUpdate).toBe(false)
+    expect(result.current.isSaving).toBe(false)
+  })
+})
+```
+
+No mocking of query keys or router state. No rendering through multiple component layers. You test the hook's return value, which is exactly what your presenter receives. Every test follows the same pattern for every feature because every hook returns the same kind of shape.
 
 Start with the simple version. Add form state when you need it. Add permissions when the product demands it. The shape stays the same, and your components never need to learn what's behind the curtain.
