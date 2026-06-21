@@ -86,12 +86,13 @@ export class MovieViewModel {
       title: movie.title,
       displayRating: `${movie.rating}/10`,
       isPopular: movie.rating > 8,
+      authorId: movie.authorId,
     }
   }
 }
 ```
 
-The ViewModel is the single place where DTOs become UI-friendly data. `displayRating` and `isPopular` are computed once, in one file, not scattered across components with ad-hoc format logic.
+The ViewModel is the single place where DTOs become UI-friendly data. `displayRating` and `isPopular` are computed once, in one file, not scattered across components with ad-hoc format logic. Fields the hook needs for logic (like `authorId` for permission checks) pass through unchanged.
 
 Query keys should follow the same discipline. A factory prevents key collisions and enables targeted cache invalidation:
 
@@ -114,6 +115,7 @@ export const useMovie = (id?: string) => {
     queryKey: movieKeys.byId(id!),
     queryFn: () => movieApi.getById(id!),
     enabled: !!id,
+    select: MovieViewModel.map,
   })
 
   const createMutation = useMutation({ mutationFn: movieApi.create })
@@ -128,7 +130,7 @@ export const useMovie = (id?: string) => {
 
   return {
     movieId: id,
-    movie: MovieViewModel.map(movieQuery.data),
+    entity: movieQuery.data,
     isLoading: movieQuery.isLoading,
     movieError: movieQuery.error,
     createMovie: createMutation.mutate,
@@ -149,15 +151,15 @@ The component becomes thin:
 
 ```tsx
 function MoviePage({ id }: { id: string }) {
-  const { movie, isLoading, updateMovie, canUpdate, isSaving } = useMovie(id)
+  const { entity, isLoading, updateMovie, canUpdate, isSaving } = useMovie(id)
 
   if (isLoading) return <div>Loading...</div>
-  if (!movie) return <div>Movie not found</div>
+  if (!entity) return <div>Movie not found</div>
 
   return (
     <div>
-      <h1>{movie.title}</h1>
-      <p>Rating: {movie.displayRating}</p>
+      <h1>{entity.title}</h1>
+      <p>Rating: {entity.displayRating}</p>
       <button disabled={!canUpdate || isSaving} onClick={() => updateMovie({ title: 'New Title' })}>
         Save
       </button>
@@ -166,7 +168,7 @@ function MoviePage({ id }: { id: string }) {
 }
 ```
 
-The component knows about `movie`, `canUpdate`, `updateMovie`, and nothing else. No query keys. No API URLs. No DTO fields. No mutation state management.
+The component knows about `entity`, `canUpdate`, `updateMovie`, and nothing else. No query keys. No API URLs. No DTO fields. No mutation state management.
 
 ## This Is an Application Service
 
@@ -214,6 +216,7 @@ export const useMovie = (id?: string, options?: UseMovieOptions) => {
     queryKey: movieKeys.byId(id!),
     queryFn: () => movieApi.getById(id!),
     enabled: !!id,
+    select: MovieViewModel.map,
   })
 
   // Permissions (CASL + ownership)
@@ -253,7 +256,7 @@ export const useMovie = (id?: string, options?: UseMovieOptions) => {
 
   return {
     movieId: id,
-    movie: MovieViewModel.map(movieQuery.data),
+    entity: movieQuery.data,
     isLoading: movieQuery.isLoading,
     movieError: movieQuery.error,
     form,
@@ -274,9 +277,9 @@ The component becomes even simpler because form state is fully encapsulated:
 
 ```tsx
 function MoviePage({ id }: { id: string }) {
-  const { movie, form, saveMovie, canUpdate } = useMovie(id)
+  const { entity, form, saveMovie, canUpdate } = useMovie(id)
 
-  if (!movie) return <div>Loading...</div>
+  if (!entity) return <div>Loading...</div>
 
   return (
     <form onSubmit={(e) => { e.preventDefault(); saveMovie() }}>
@@ -315,7 +318,7 @@ Because the hook owns all orchestration, the component tree splits cleanly into 
 // types/movie.ts
 export interface UseMovieReturn {
   movieId: string | undefined
-  movie: ViewModelMovie | null
+  entity: ViewModelMovie | null
   isLoading: boolean
   movieError: Error | null
   createMovie: (request: CreateMovieRequest) => void
@@ -332,7 +335,7 @@ export interface UseMovieReturn {
 }
 ```
 
-The container wires the hook and side effects. After saving a new movie, navigate to its detail page. After deleting, go back to the list:
+The container wires the hook and side effects. The entire hook return is passed as a single prop named after the entity — no spreading, no destructuring layers:
 
 ```tsx
 // containers/MovieContainer.tsx
@@ -341,27 +344,25 @@ function MovieContainer({ id }: { id: string }) {
     onSaveSuccess: (savedId) => navigate(`/movies/${savedId}`),
     onDeleteSuccess: () => navigate('/movies'),
   })
-  return <MoviePresenter {...movie} />
+  return <MoviePresenter movie={movie} />
 }
 ```
 
-The presenter is a pure function of props. No hooks, no side effects:
+The presenter is a pure function of the single `movie` prop. No hooks, no side effects:
 
 ```tsx
 // presenters/MoviePresenter.tsx
-function MoviePresenter(props: UseMovieReturn) {
-  const { movie, isLoading, canUpdate, updateMovie, isSaving } = props
-
-  if (isLoading) return <div>Loading...</div>
-  if (!movie) return <div>Movie not found</div>
+function MoviePresenter({ movie }: { movie: UseMovieReturn }) {
+  if (movie.isLoading) return <div>Loading...</div>
+  if (!movie.entity) return <div>Movie not found</div>
 
   return (
     <div>
-      <h1>{movie.title}</h1>
-      <p>Rating: {movie.displayRating}</p>
+      <h1>{movie.entity.title}</h1>
+      <p>Rating: {movie.entity.displayRating}</p>
       <button
-        disabled={!canUpdate || isSaving}
-        onClick={() => updateMovie({ title: 'New Title' })}
+        disabled={!movie.canUpdate || movie.isSaving}
+        onClick={() => movie.updateMovie({ title: 'New Title' })}
       >
         Save
       </button>
@@ -370,7 +371,63 @@ function MoviePresenter(props: UseMovieReturn) {
 }
 ```
 
-This separation makes testing straightforward. The hook's return type is the contract, so you test against the shape directly:
+This separation makes testing straightforward. UI tests with React Testing Library are hard — every component needs providers, router, query client, and auth context mocked. The presenter changes this entirely. It's a pure function of `UseMovieReturn`. No providers, no hooks, no setup:
+
+```tsx
+// presenters/__tests__/MoviePresenter.test.tsx
+describe('MoviePresenter', () => {
+  const baseState: UseMovieReturn = {
+    movieId: '1',
+    entity: null,
+    isLoading: true,
+    movieError: null,
+    createMovie: vi.fn(),
+    updateMovie: vi.fn(),
+    deleteMovie: vi.fn(),
+    saveMovie: vi.fn(),
+    canCreate: false,
+    canUpdate: false,
+    canDelete: false,
+    isSaving: false,
+    isDeleting: false,
+    saveError: null,
+    deleteError: null,
+  }
+
+  it('renders movie details', () => {
+    render(
+      <MoviePresenter
+        movie={{
+          ...baseState,
+          isLoading: false,
+          entity: { id: '1', title: 'Inception', displayRating: '8.8/10', isPopular: true, authorId: '42' },
+          canUpdate: true,
+        }}
+      />
+    )
+
+    expect(screen.getByText('Inception')).toBeInTheDocument()
+    expect(screen.getByText('8.8/10')).toBeInTheDocument()
+  })
+
+  it('disables save when user cannot update', () => {
+    render(
+      <MoviePresenter
+        movie={{
+          ...baseState,
+          isLoading: false,
+          entity: { id: '1', title: 'Inception', displayRating: '8.8/10', isPopular: true, authorId: '42' },
+          canUpdate: false,
+        }}
+      />
+    )
+
+    expect(screen.getByRole('button', { name: /save/i })).toBeDisabled()
+  })
+})
+```
+
+The hook itself is tested at the orchestration layer — does it return the right shape under different states?
 
 ```tsx
 // hooks/__tests__/useMovie.test.ts
@@ -380,7 +437,7 @@ describe('useMovie', () => {
 
     expect(result.current.movieId).toBe('123')
     expect(result.current.isLoading).toBe(true)
-    expect(result.current.movie).toBeNull()
+    expect(result.current.entity).toBeNull()
     expect(typeof result.current.updateMovie).toBe('function')
     expect(result.current.canUpdate).toBe(false)
     expect(result.current.isSaving).toBe(false)
@@ -388,6 +445,6 @@ describe('useMovie', () => {
 })
 ```
 
-No mocking of query keys or router state. No rendering through multiple component layers. You test the hook's return value, which is exactly what your presenter receives. Every test follows the same pattern for every feature because every hook returns the same kind of shape.
+No providers wrapped around the test. No mocked router. The return type is the contract. Every feature hook follows the same test pattern because every hook returns the same kind of shape.
 
 Start with the simple version. Add form state when you need it. Add permissions when the product demands it. The shape stays the same, and your components never need to learn what's behind the curtain.
