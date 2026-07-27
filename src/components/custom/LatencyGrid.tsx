@@ -36,51 +36,49 @@ export const LatencyGrid = ({ entries, currentUnit, label, id }: LatencyGridProp
       <h2 className="text-xl font-bold mb-4">{label}</h2>
 
       <div className="overflow-x-auto">
-        <div className="inline-block min-w-[480px] border-[2px] border-white/25">
-          {/* x-axis labels */}
-          <div className="grid grid-cols-[60px_1fr_1fr_1fr]">
-            <div className="border-b-[2px] border-r-[2px] border-white/25" />
-            {buckets.map((b) => (
-              <div key={b} className="text-center text-sm font-bold border-b-[2px] border-white/25 py-1">
-                {b}
-              </div>
+        <table className="min-w-[300px] border-[2px] border-white/25 text-sm table-fixed">
+          <thead>
+            <tr>
+              <th className="border-b-[2px] border-r-[2px] border-white/25 px-2 py-1 w-[60px]" />
+              {buckets.map((b) => (
+                <th key={b} className="border-b-[2px] border-r-[2px] border-white/25 px-2 py-1 font-bold text-center last:border-r-0 min-w-[120px]">
+                  {b}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {multipliers.map((m) => (
+              <tr key={m}>
+                <td className="border-r-[2px] border-b-[2px] border-white/25 px-2 py-2 text-right font-bold align-top whitespace-nowrap">
+                  {m}
+                </td>
+                {buckets.map((b) => {
+                  const items = grid.get(`${b}-${m}`) ?? [];
+                  return (
+                    <td
+                      key={`${b}-${m}`}
+                      className="border-b-[2px] border-r-[2px] border-white/25 p-2 align-top last:border-r-0"
+                    >
+                      {items.map((item) => {
+                        const colors = LocationColors[item.location];
+                        return (
+                          <div
+                            key={item.name}
+                            className={`${colors.bg} ${colors.text} px-2 py-1 text-xs leading-tight mb-1 last:mb-0`}
+                          >
+                            <span>{item.name}</span>
+                            <span className="ml-1 opacity-70">{item.actualLatency}</span>
+                          </div>
+                        );
+                      })}
+                    </td>
+                  );
+                })}
+              </tr>
             ))}
-          </div>
-
-          {/* grid rows */}
-          {multipliers.map((m) => (
-            <div key={m} className="grid grid-cols-[60px_1fr_1fr_1fr]">
-              {/* y-axis label */}
-              <div className="flex items-center justify-end pr-2 text-sm font-bold border-r-[2px] border-white/25 py-2">
-                {m}
-              </div>
-
-              {/* cells */}
-              {buckets.map((b) => {
-                const items = grid.get(`${b}-${m}`) ?? [];
-                return (
-                  <div
-                    key={`${b}-${m}`}
-                    className="p-2 min-h-[80px] border-r-[2px] border-b-[2px] border-white/25 last:border-r-0"
-                  >
-                    {items.map((item) => {
-                      const colors = LocationColors[item.location];
-                      return (
-                        <div
-                          key={item.name}
-                          className={`${colors.bg} ${colors.text} px-2 py-1 text-xs leading-tight mb-1 last:mb-0`}
-                        >
-                          <span>{item.name}</span>
-                          <span className="ml-1 opacity-70">{item.actualLatency}</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                );
-              })}
-            </div>
-          ))}
-        </div>
+          </tbody>
+        </table>
       </div>
 
       {/* legend */}
