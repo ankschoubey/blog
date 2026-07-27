@@ -259,7 +259,6 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
             onKeyDown={handleKeyDown}
             disabled={!!result}
             placeholder="Type the operation name..."
-            autoFocus
             className={`w-full bg-transparent border-[2px] px-3 py-2 text-sm outline-none transition-colors ${
               result === 'correct'
                 ? 'border-green-500 text-green-300'
@@ -277,7 +276,6 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
               onKeyDown={handleKeyDown}
               disabled={!!result}
               placeholder="Number"
-              autoFocus
               className={`flex-1 bg-transparent border-[2px] px-3 py-2 text-sm outline-none transition-colors ${
                 result === 'correct'
                   ? 'border-green-500 text-green-300'
