@@ -26,19 +26,33 @@ export enum Location {
   IntercontinentalNetwork = 'Intercontinental Network',
 }
 
-export const LocationColors: Record<Location, string> = {
-  [Location.CPU]: 'text-red-600',
-  [Location.Memory]: 'text-red-400',
-  [Location.CPUKernel]: 'text-red-500',
-  [Location.SSD]: 'text-orange-500',
-  [Location.HDD]: 'text-amber-500',
-  [Location.DatabaseCache]: 'text-green-500',
-  [Location.ObjectStorage]: 'text-teal-500',
-  [Location.NearbyNetwork]: 'text-blue-400',
-  [Location.Network]: 'text-blue-500',
-  [Location.LongDistanceNetwork]: 'text-indigo-500',
-  [Location.IntercontinentalNetwork]: 'text-violet-500',
+export const LocationColors: Record<Location, { bg: string; text: string }> = {
+  [Location.CPU]: { bg: 'bg-[#4c0519]', text: 'text-red-200' },
+  [Location.Memory]: { bg: 'bg-red-900', text: 'text-red-100' },
+  [Location.CPUKernel]: { bg: 'bg-[#4c0519]', text: 'text-red-200' },
+  [Location.SSD]: { bg: 'bg-orange-800', text: 'text-orange-100' },
+  [Location.HDD]: { bg: 'bg-amber-800', text: 'text-amber-100' },
+  [Location.DatabaseCache]: { bg: 'bg-green-800', text: 'text-green-100' },
+  [Location.ObjectStorage]: { bg: 'bg-teal-800', text: 'text-teal-100' },
+  [Location.NearbyNetwork]: { bg: 'bg-blue-800', text: 'text-blue-100' },
+  [Location.Network]: { bg: 'bg-blue-900', text: 'text-blue-100' },
+  [Location.LongDistanceNetwork]: { bg: 'bg-indigo-800', text: 'text-indigo-100' },
+  [Location.IntercontinentalNetwork]: { bg: 'bg-violet-800', text: 'text-violet-100' },
 };
+
+export const LocationOrder: Location[] = [
+  Location.CPU,
+  Location.Memory,
+  Location.CPUKernel,
+  Location.SSD,
+  Location.HDD,
+  Location.DatabaseCache,
+  Location.ObjectStorage,
+  Location.NearbyNetwork,
+  Location.Network,
+  Location.LongDistanceNetwork,
+  Location.IntercontinentalNetwork,
+];
 
 export interface LatencyEntry {
   location: Location;
@@ -83,4 +97,41 @@ export const entries: LatencyEntry[] = [
   { location: Location.IntercontinentalNetwork, name: 'Network EU West ↔ NA Central', bucket: 1, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '100 ms' },
   { location: Location.IntercontinentalNetwork, name: 'Network NA West ↔ Singapore', bucket: 2, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '180 ms' },
   { location: Location.IntercontinentalNetwork, name: 'Network EU West ↔ Singapore', bucket: 2, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '160 ms' },
+];
+
+export interface CostEntry {
+  category: string;
+  name: string;
+  amount: string;
+  pricePerMonth: string;
+  indent?: boolean;
+  color?: { bg: string; text: string };
+}
+
+export const costEntries: CostEntry[] = [
+  { category: 'CPU', name: 'CPU', amount: '1', pricePerMonth: '$15' },
+  { category: 'GPU', name: 'GPU', amount: '1', pricePerMonth: '$5000' },
+  { category: 'Memory', name: 'Memory', amount: '1 GB', pricePerMonth: '$2' },
+  { category: 'Storage', name: 'Storage', amount: '', pricePerMonth: '' },
+  { category: 'Storage', name: 'Warehouse Storage', amount: '1 GB', pricePerMonth: '$0.02', indent: true, color: { bg: 'bg-teal-800', text: 'text-teal-100' } },
+  { category: 'Storage', name: 'Blob (S3, GCS)', amount: '1 GB', pricePerMonth: '$0.02', indent: true, color: { bg: 'bg-teal-800', text: 'text-teal-100' } },
+  { category: 'Storage', name: 'Zonal HDD', amount: '1 GB', pricePerMonth: '$0.05', indent: true, color: { bg: 'bg-amber-800', text: 'text-amber-100' } },
+  { category: 'Storage', name: 'Ephemeral SSD', amount: '1 GB', pricePerMonth: '$0.08', indent: true, color: { bg: 'bg-orange-800', text: 'text-orange-100' } },
+  { category: 'Storage', name: 'Regional HDD', amount: '1 GB', pricePerMonth: '$0.10', indent: true, color: { bg: 'bg-amber-800', text: 'text-amber-100' } },
+  { category: 'Storage', name: 'Zonal SSD', amount: '1 GB', pricePerMonth: '$0.20', indent: true, color: { bg: 'bg-orange-800', text: 'text-orange-100' } },
+  { category: 'Storage', name: 'Regional SSD', amount: '1 GB', pricePerMonth: '$0.35', indent: true, color: { bg: 'bg-orange-800', text: 'text-orange-100' } },
+  { category: 'Networking', name: 'Networking', amount: '', pricePerMonth: '' },
+  { category: 'Networking', name: 'Same Zone', amount: '1 GB', pricePerMonth: '$0', indent: true },
+  { category: 'Networking', name: 'Blob', amount: '1 GB', pricePerMonth: '$0', indent: true },
+  { category: 'Networking', name: 'Ingress', amount: '1 GB', pricePerMonth: '$0', indent: true },
+  { category: 'Networking', name: 'L4 LB', amount: '1 GB', pricePerMonth: '$0.008', indent: true },
+  { category: 'Networking', name: 'Inter-Zone', amount: '1 GB', pricePerMonth: '$0.01', indent: true },
+  { category: 'Networking', name: 'Inter-Region', amount: '1 GB', pricePerMonth: '$0.02', indent: true },
+  { category: 'Networking', name: 'Internet Egress †', amount: '1 GB', pricePerMonth: '$0.10', indent: true },
+  { category: 'CDN', name: 'CDN Egress', amount: '1 GB', pricePerMonth: '$0.05' },
+  { category: 'CDN', name: 'CDN Fill ‡', amount: '1 GB', pricePerMonth: '$0.01' },
+  { category: 'Query', name: 'Warehouse Query', amount: '1 GB', pricePerMonth: '$0.005' },
+  { category: 'Observability', name: 'Logs/Traces ♣', amount: '1 GB', pricePerMonth: '$0.50' },
+  { category: 'Observability', name: 'Metrics', amount: '1000', pricePerMonth: '$20' },
+  { category: 'Security', name: 'EKM Keys', amount: '1', pricePerMonth: '$1' },
 ];

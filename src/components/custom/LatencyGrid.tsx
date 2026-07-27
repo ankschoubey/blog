@@ -1,15 +1,16 @@
-import { type LatencyEntry, type Unit, LocationColors, type Location } from '../../data/latency-entries';
+import { type LatencyEntry, type Unit, LocationColors, LocationOrder } from '../../data/latency-entries';
 
 interface LatencyGridProps {
   entries: LatencyEntry[];
   currentUnit: Unit;
   label: string;
+  id?: string;
 }
 
 const buckets = [1, 2, 5] as const;
 const multipliers = [1, 10, 100] as const;
 
-export const LatencyGrid = ({ entries, currentUnit, label }: LatencyGridProps) => {
+export const LatencyGrid = ({ entries, currentUnit, label, id }: LatencyGridProps) => {
   const filtered = entries.filter((e) => e.unit === currentUnit);
 
   const grid = new Map<string, LatencyEntry[]>();
@@ -24,19 +25,23 @@ export const LatencyGrid = ({ entries, currentUnit, label }: LatencyGridProps) =
     grid.get(key)?.push(entry);
   }
 
-  const presentLocations = [...new Set(filtered.map((e) => e.location))];
+  for (const [, items] of grid) {
+    items.sort((a, b) => parseFloat(a.actualLatency) - parseFloat(b.actualLatency));
+  }
+
+  const presentLocations = LocationOrder.filter((loc) => filtered.some((e) => e.location === loc));
 
   return (
-    <div className="mb-12">
+    <div id={id} className="mb-12">
       <h2 className="text-xl font-bold mb-4">{label}</h2>
 
       <div className="overflow-x-auto">
-        <div className="inline-block min-w-[480px]">
+        <div className="inline-block min-w-[480px] border-[2px] border-white/25">
           {/* x-axis labels */}
-          <div className="grid grid-cols-[60px_1fr_1fr_1fr] mb-2">
-            <div />
+          <div className="grid grid-cols-[60px_1fr_1fr_1fr]">
+            <div className="border-b-[2px] border-r-[2px] border-white/25" />
             {buckets.map((b) => (
-              <div key={b} className="text-center text-sm font-medium text-gray-500">
+              <div key={b} className="text-center text-sm font-bold border-b-[2px] border-white/25 py-1">
                 {b}
               </div>
             ))}
@@ -44,9 +49,9 @@ export const LatencyGrid = ({ entries, currentUnit, label }: LatencyGridProps) =
 
           {/* grid rows */}
           {multipliers.map((m) => (
-            <div key={m} className="grid grid-cols-[60px_1fr_1fr_1fr] gap-2 mb-2">
+            <div key={m} className="grid grid-cols-[60px_1fr_1fr_1fr]">
               {/* y-axis label */}
-              <div className="flex items-center justify-end pr-2 text-sm font-medium text-gray-500">
+              <div className="flex items-center justify-end pr-2 text-sm font-bold border-r-[2px] border-white/25 py-2">
                 {m}
               </div>
 
@@ -56,14 +61,20 @@ export const LatencyGrid = ({ entries, currentUnit, label }: LatencyGridProps) =
                 return (
                   <div
                     key={`${b}-${m}`}
-                    className="border border-gray-200 rounded p-2 min-h-[80px] hover:bg-gray-50 transition-colors"
+                    className="p-2 min-h-[80px] border-r-[2px] border-b-[2px] border-white/25 last:border-r-0"
                   >
-                    {items.map((item) => (
-                      <div key={item.name} className={`${LocationColors[item.location]} text-sm leading-tight py-0.5`}>
-                        <span>{item.name}</span>
-                        <span className="ml-1 text-xs opacity-70">{item.actualLatency}</span>
-                      </div>
-                    ))}
+                    {items.map((item) => {
+                      const colors = LocationColors[item.location];
+                      return (
+                        <div
+                          key={item.name}
+                          className={`${colors.bg} ${colors.text} px-2 py-1 text-xs leading-tight mb-1 last:mb-0`}
+                        >
+                          <span>{item.name}</span>
+                          <span className="ml-1 opacity-70">{item.actualLatency}</span>
+                        </div>
+                      );
+                    })}
                   </div>
                 );
               })}
@@ -73,12 +84,18 @@ export const LatencyGrid = ({ entries, currentUnit, label }: LatencyGridProps) =
       </div>
 
       {/* legend */}
-      <div className="flex flex-wrap gap-3 mt-4">
-        {presentLocations.map((loc) => (
-          <span key={loc} className={`${LocationColors[loc]} text-sm font-medium`}>
-            {loc}
-          </span>
-        ))}
+      <div className="flex flex-wrap gap-2 mt-4">
+        {presentLocations.map((loc) => {
+          const colors = LocationColors[loc];
+          return (
+            <span
+              key={loc}
+              className={`${colors.bg} ${colors.text} border-[2px] border-white/25 px-2 py-1 text-xs font-medium`}
+            >
+              {loc}
+            </span>
+          );
+        })}
       </div>
     </div>
   );

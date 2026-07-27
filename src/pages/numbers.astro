@@ -1,7 +1,9 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import { LatencyGrid } from '~/components/custom/LatencyGrid';
-import { entries, Unit } from '~/data/latency-entries';
+import { CostTable } from '~/components/custom/CostTable';
+import { FlashCardQuiz } from '~/components/custom/FlashCardQuiz';
+import { entries, Unit, costEntries } from '~/data/latency-entries';
 
 const metadata = {
   title: 'Latency Numbers Every Programmer Should Know',
@@ -11,10 +13,24 @@ const metadata = {
 <Layout metadata={metadata}>
   <section class="mx-auto max-w-4xl px-6 py-12">
     <h1 class="text-3xl font-bold mb-2">Latency Numbers</h1>
-    <p class="text-gray-500 mb-8">Every programmer should know</p>
+    <p class="text-gray-500 mb-2">Every programmer should know</p>
+    <p class="text-sm text-gray-400 mb-8">
+      A learning tool to help memorize napkin math.
+      Reference: <a href="https://github.com/sirupsen/napkin-math" target="_blank" rel="noopener" class="underline hover:text-gray-200">sirupsen/napkin-math</a>
+    </p>
 
-    <LatencyGrid entries={entries} currentUnit={Unit.ns} label="ns" client:load />
-    <LatencyGrid entries={entries} currentUnit={Unit.microS} label="μs" client:load />
-    <LatencyGrid entries={entries} currentUnit={Unit.mS} label="ms" client:load />
+    <LatencyGrid entries={entries} currentUnit={Unit.ns} label="ns" id="grid-ns" client:load />
+    <LatencyGrid entries={entries} currentUnit={Unit.microS} label="μs" id="grid-us" client:load />
+    <LatencyGrid entries={entries} currentUnit={Unit.mS} label="ms" id="grid-ms" client:load />
+
+    <h1 class="text-3xl font-bold mt-16 mb-2">Cloud Pricing</h1>
+    <p class="text-gray-500 mb-8">Approximate monthly costs</p>
+
+    <CostTable entries={costEntries} client:load />
+
+    <h1 id="quiz" class="text-3xl font-bold mt-16 mb-2">Latency Quiz</h1>
+    <p class="text-gray-500 mb-8">Test your knowledge</p>
+
+    <FlashCardQuiz entries={entries} totalQuestions={10} client:load />
   </section>
 </Layout>
