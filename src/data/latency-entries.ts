@@ -108,6 +108,42 @@ export interface CostEntry {
   color?: { bg: string; text: string };
 }
 
+export interface PowerOfNEntry {
+  power2: number;
+  power10: number;
+  approximate: string;
+  fullName: string;
+  shortName: string;
+}
+
+export const powerEntries: PowerOfNEntry[] = [
+  { power2: 10, power10: 3, approximate: '1 Thousand', fullName: 'Kilobyte', shortName: 'KB' },
+  { power2: 20, power10: 6, approximate: '1 Million', fullName: 'Megabyte', shortName: 'MB' },
+  { power2: 30, power10: 9, approximate: '1 Billion', fullName: 'Gigabyte', shortName: 'GB' },
+  { power2: 40, power10: 12, approximate: '1 Trillion', fullName: 'Terabyte', shortName: 'TB' },
+  { power2: 50, power10: 15, approximate: '1 Quadrillion', fullName: 'Petabyte', shortName: 'PB' },
+  { power2: 60, power10: 18, approximate: '1 Quintillion', fullName: 'Exabyte', shortName: 'EB' },
+  { power2: 70, power10: 21, approximate: '1 Sextillion', fullName: 'Zettabyte', shortName: 'ZB' },
+  { power2: 80, power10: 24, approximate: '1 Septillion', fullName: 'Yottabyte', shortName: 'YB' },
+];
+
+export interface AvailabilityMnemonicEntry {
+  level: string;
+  downtimePerYear: string;
+  mnemonic: string;
+  meaning: string;
+}
+
+export const availabilityMnemonicEntries: AvailabilityMnemonicEntry[] = [
+  { level: '90% (1 nine)', downtimePerYear: '36.5 days', mnemonic: '1 month', meaning: 'The service is down for a month.' },
+  { level: '99% (2 nines)', downtimePerYear: '3.65 days', mnemonic: 'Long weekend', meaning: 'Down for a long weekend.' },
+  { level: '99.9% (3 nines)', downtimePerYear: '8.76 hours ≈ 500 min', mnemonic: '500', meaning: 'Down for a workday (~9 hours).' },
+  { level: '99.99% (4 nines)', downtimePerYear: '52.6 minutes ≈ 50 min', mnemonic: '50', meaning: 'Down for a lunch break (~50 minutes).' },
+  { level: '99.999% (5 nines)', downtimePerYear: '5.26 minutes ≈ 5 min', mnemonic: '5', meaning: 'Down for a coffee break (~5 minutes).' },
+  { level: '99.9999% (6 nines)', downtimePerYear: '31.5 seconds ≈ 0.5 min', mnemonic: '0.5', meaning: 'Down for half a minute.' },
+  { level: '99.99999% (7 nines)', downtimePerYear: '3.15 seconds', mnemonic: '3 sec', meaning: 'Down for a blink (~3 seconds).' },
+];
+
 export const costEntries: CostEntry[] = [
   { category: 'CPU', name: 'CPU', amount: '1', pricePerMonth: '$15' },
   { category: 'GPU', name: 'GPU', amount: '1', pricePerMonth: '$5000' },

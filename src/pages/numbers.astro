@@ -1,18 +1,53 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import { LatencyGrid } from '~/components/custom/LatencyGrid';
+import { PowerTable } from '~/components/custom/PowerTable';
+import { PowerQuiz } from '~/components/custom/PowerQuiz';
 import { CostTable } from '~/components/custom/CostTable';
+import { CostQuiz } from '~/components/custom/CostQuiz';
+import { AvailabilityMnemonicTable } from '~/components/custom/AvailabilityMnemonicTable';
+import { AvailabilityQuiz } from '~/components/custom/AvailabilityQuiz';
 import { FlashCardQuiz } from '~/components/custom/FlashCardQuiz';
-import { entries, Unit, costEntries } from '~/data/latency-entries';
+import { entries, Unit, costEntries, availabilityMnemonicEntries, powerEntries } from '~/data/latency-entries';
 
 const metadata = {
-  title: 'Latency Numbers Every Programmer Should Know',
+  title: 'Numbers Every Programmer Should Know',
 };
 ---
 
 <Layout metadata={metadata}>
   <section class="mx-auto max-w-4xl px-6 py-12">
-    <h1 class="text-3xl font-bold mb-2">Latency Numbers</h1>
+    <h1 class="text-3xl font-bold mb-2">Numbers Every Programmer Should Know</h1>
+    <p class="text-gray-500 mb-8">This page is made for memorization.</p>
+
+    <nav class="mb-8 border-[2px] border-white/25 p-4">
+      <p class="text-sm font-bold mb-2">Contents</p>
+      <ol class="text-sm text-gray-400 space-y-1 list-decimal pl-5">
+        <li><a href="#PowerOf2" class="underline hover:text-gray-200">Power of 2</a></li>
+        <li><a href="#LatencyNumbers" class="underline hover:text-gray-200">Latency Numbers</a></li>
+        <li><a href="#CloudPricing" class="underline hover:text-gray-200">Cloud Pricing</a></li>
+        <li><a href="#AvailabilityTable" class="underline hover:text-gray-200">Availability Table</a></li>
+      </ol>
+    </nav>
+
+    <h1 id="PowerOf2" class="text-3xl font-bold mt-16 mb-2">Power of 2</h1>
+    <p class="text-gray-500 mb-4">
+      Data volume in distributed systems boils down to basics: a byte is a sequence of 8 bits; an ASCII character
+      uses one byte of memory. Units are powers of 2: 2<sup>10</sup> = 1024 ≈ 10<sup>3</sup> = 1000 (1 Thousand), and
+      so on.
+    </p>
+    <p class="text-sm text-gray-400 mb-8">
+      Reference: <a href="https://bytebytego.com/courses/system-design-interview/back-of-the-envelope-estimation" target="_blank" rel="noopener" class="underline hover:text-gray-200">ByteByteGo — Back of the Envelope Estimation</a>
+    </p>
+
+    <PowerTable entries={powerEntries} />
+
+    <h1 id="PowerQuiz" class="text-3xl font-bold mt-16 mb-2">Power of 2 Quiz</h1>
+    <p class="text-gray-500 mb-8">Test the units and powers</p>
+
+    <PowerQuiz entries={powerEntries} client:load />
+
+    <h1 id="LatencyNumbers" class="text-3xl font-bold mt-16 mb-2">Latency Numbers</h1>
     <p class="text-gray-500 mb-2">Every programmer should know</p>
     <p class="text-sm text-gray-400 mb-8">
       A learning tool to help memorize napkin math.
@@ -23,14 +58,29 @@ const metadata = {
     <LatencyGrid entries={entries} currentUnit={Unit.microS} label="μs" id="grid-us" client:load />
     <LatencyGrid entries={entries} currentUnit={Unit.mS} label="ms" id="grid-ms" client:load />
 
-    <h1 class="text-3xl font-bold mt-16 mb-2">Cloud Pricing</h1>
-    <p class="text-gray-500 mb-8">Approximate monthly costs</p>
-
-    <CostTable entries={costEntries} client:load />
-
     <h1 id="LatencyQuiz" class="text-3xl font-bold mt-16 mb-2">Latency Quiz</h1>
     <p class="text-gray-500 mb-8">Test your knowledge</p>
 
     <FlashCardQuiz entries={entries} totalQuestions={10} client:load />
+
+    <h1 id="CloudPricing" class="text-3xl font-bold mt-16 mb-2">Cloud Pricing</h1>
+    <p class="text-gray-500 mb-8">Approximate monthly costs</p>
+
+    <CostTable entries={costEntries} client:load />
+
+    <h1 id="CostQuiz" class="text-3xl font-bold mt-16 mb-2">Cost Quiz</h1>
+    <p class="text-gray-500 mb-8">Test your pricing knowledge</p>
+
+    <CostQuiz entries={costEntries} client:load />
+
+    <h1 id="AvailabilityTable" class="text-3xl font-bold mt-16 mb-2">Availability Table</h1>
+    <p class="text-gray-500 mb-8">Rule-of-thumb downtime to remember</p>
+
+    <AvailabilityMnemonicTable entries={availabilityMnemonicEntries} />
+
+    <h1 id="AvailabilityMnemonicQuiz" class="text-3xl font-bold mt-16 mb-2">Availability Mnemonics Quiz</h1>
+    <p class="text-gray-500 mb-8">Test the mnemonics</p>
+
+    <AvailabilityQuiz entries={availabilityMnemonicEntries} client:load />
   </section>
 </Layout>
