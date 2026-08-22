@@ -1,14 +1,15 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import { LatencyGrid } from '~/components/custom/LatencyGrid';
 import { PowerTable } from '~/components/custom/PowerTable';
 import { PowerQuiz } from '~/components/custom/PowerQuiz';
 import { CostTable } from '~/components/custom/CostTable';
 import { CostQuiz } from '~/components/custom/CostQuiz';
 import { AvailabilityMnemonicTable } from '~/components/custom/AvailabilityMnemonicTable';
 import { AvailabilityQuiz } from '~/components/custom/AvailabilityQuiz';
-import { FlashCardQuiz } from '~/components/custom/FlashCardQuiz';
-import { entries, Unit, costEntries, availabilityMnemonicEntries, powerEntries } from '~/data/latency-entries';
+import { LatencySection } from '~/components/custom/LatencySection';
+import { BandwidthTable } from '~/components/custom/BandwidthTable';
+import { BandwidthQuiz } from '~/components/custom/BandwidthQuiz';
+import { costEntries, availabilityMnemonicEntries, powerEntries, bandwidthEntries } from '~/data/latency-entries';
 
 const metadata = {
   title: 'Numbers Every Programmer Should Know',
@@ -25,6 +26,7 @@ const metadata = {
       <ol class="text-sm text-gray-400 space-y-1 list-decimal pl-5">
         <li><a href="#PowerOf2" class="underline hover:text-gray-200">Power of 2</a></li>
         <li><a href="#LatencyNumbers" class="underline hover:text-gray-200">Latency Numbers</a></li>
+        <li><a href="#Bandwidth" class="underline hover:text-gray-200">Bandwidth</a></li>
         <li><a href="#CloudPricing" class="underline hover:text-gray-200">Cloud Pricing</a></li>
         <li><a href="#AvailabilityTable" class="underline hover:text-gray-200">Availability Table</a></li>
       </ol>
@@ -49,19 +51,31 @@ const metadata = {
 
     <h1 id="LatencyNumbers" class="text-3xl font-bold mt-16 mb-2">Latency Numbers</h1>
     <p class="text-gray-500 mb-2">Every programmer should know</p>
-    <p class="text-sm text-gray-400 mb-8">
+    <p class="text-sm text-gray-400 mb-4">
       A learning tool to help memorize napkin math.
       Reference: <a href="https://github.com/sirupsen/napkin-math" target="_blank" rel="noopener" class="underline hover:text-gray-200">sirupsen/napkin-math</a>
     </p>
+    <p class="text-sm text-gray-400 mb-8">
+      Network RTT tiers (universal): <strong>20 / 40 / 60 / 120 / 200 ms</strong> — within country, nearby region, neighboring region, far region, very far.
+      India and US example routes share the same tier cells.
+    </p>
 
-    <LatencyGrid entries={entries} currentUnit={Unit.ns} label="ns" id="grid-ns" client:load />
-    <LatencyGrid entries={entries} currentUnit={Unit.microS} label="μs" id="grid-us" client:load />
-    <LatencyGrid entries={entries} currentUnit={Unit.mS} label="ms" id="grid-ms" client:load />
+    <LatencySection client:load />
 
-    <h1 id="LatencyQuiz" class="text-3xl font-bold mt-16 mb-2">Latency Quiz</h1>
-    <p class="text-gray-500 mb-8">Test your knowledge</p>
+    <h1 id="Bandwidth" class="text-3xl font-bold mt-16 mb-2">Bandwidth</h1>
+    <p class="text-gray-500 mb-2">Throughput and transfer time (÷8)</p>
+    <p class="text-sm text-gray-400 mb-8">
+      1 Gbps ≈ 125 MB/s. 1 GB over 1 Gbps = 8 seconds. Same fact, two angles.
+    </p>
 
-    <FlashCardQuiz entries={entries} totalQuestions={10} client:load />
+    <div id="BandwidthTable">
+      <BandwidthTable entries={bandwidthEntries} />
+    </div>
+
+    <h1 id="BandwidthQuiz" class="text-3xl font-bold mt-16 mb-2">Bandwidth Quiz</h1>
+    <p class="text-gray-500 mb-8">Test your ÷8 reflex</p>
+
+    <BandwidthQuiz entries={bandwidthEntries} client:load />
 
     <h1 id="CloudPricing" class="text-3xl font-bold mt-16 mb-2">Cloud Pricing</h1>
     <p class="text-gray-500 mb-8">Approximate monthly costs</p>
