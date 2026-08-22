@@ -2,6 +2,7 @@ export enum Unit {
   ns = 'ns',
   microS = 'μs',
   mS = 'ms',
+  s = 's',
 }
 
 export type Bucket = 1 | 2 | 5;
@@ -17,6 +18,7 @@ export enum GridGroup {
   Network = 'Network',
   Java = 'Java',
   StorageIO = 'Storage/I/O',
+  Warehouse = 'Warehouse',
 }
 
 export enum Location {
@@ -37,6 +39,7 @@ export enum Location {
   JavaInProcess = 'Java in-process',
   JavaFramework = 'Java framework',
   JavaJVM = 'Java JVM',
+  WarehouseQuery = 'Warehouse query',
 }
 
 export const LocationGridGroup: Record<Location, GridGroup> = {
@@ -57,6 +60,7 @@ export const LocationGridGroup: Record<Location, GridGroup> = {
   [Location.JavaInProcess]: GridGroup.Java,
   [Location.JavaFramework]: GridGroup.Java,
   [Location.JavaJVM]: GridGroup.Java,
+  [Location.WarehouseQuery]: GridGroup.Warehouse,
 };
 
 export const LocationColors: Record<Location, { bg: string; text: string }> = {
@@ -77,6 +81,7 @@ export const LocationColors: Record<Location, { bg: string; text: string }> = {
   [Location.JavaInProcess]: { bg: 'bg-rose-800', text: 'text-rose-100' },
   [Location.JavaFramework]: { bg: 'bg-pink-800', text: 'text-pink-100' },
   [Location.JavaJVM]: { bg: 'bg-fuchsia-800', text: 'text-fuchsia-100' },
+  [Location.WarehouseQuery]: { bg: 'bg-emerald-800', text: 'text-emerald-100' },
 };
 
 export const LocationOrder: Location[] = [
@@ -97,6 +102,7 @@ export const LocationOrder: Location[] = [
   Location.JavaInProcess,
   Location.JavaFramework,
   Location.JavaJVM,
+  Location.WarehouseQuery,
 ];
 
 export const GridGroupOrder: GridGroup[] = [
@@ -104,6 +110,7 @@ export const GridGroupOrder: GridGroup[] = [
   GridGroup.Network,
   GridGroup.Java,
   GridGroup.StorageIO,
+  GridGroup.Warehouse,
 ];
 
 export interface LatencyEntry {
@@ -157,9 +164,14 @@ export const entries: LatencyEntry[] = [
   { location: Location.FarRegion, name: 'India ↔ Europe', bucket: 1, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '120 ms' },
   { location: Location.ObjectStorage, name: 'Blob Storage PUT, 1 conn (128 KiB)', bucket: 2, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '200 ms' },
   { location: Location.ObjectStorage, name: 'Blob Storage PUT, n conn (multipart)', bucket: 2, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '200 ms' },
+  { location: Location.WarehouseQuery, name: 'Snowflake: simple query', bucket: 2, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '250 ms' },
   { location: Location.VeryFar, name: 'NA West ↔ Singapore', bucket: 2, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '180 ms' },
   { location: Location.VeryFar, name: 'India ↔ US', bucket: 2, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '240 ms' },
   { location: Location.JavaJVM, name: 'Full GC pause', bucket: 5, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '500 ms' },
+  { location: Location.WarehouseQuery, name: 'Snowflake: moderate / less optimized', bucket: 5, multiplier: Multiplier.hundred, unit: Unit.mS, actualLatency: '500 ms' },
+
+  { location: Location.WarehouseQuery, name: 'Snowflake: heavy query (typical)', bucket: 1, multiplier: Multiplier.one, unit: Unit.s, actualLatency: '1 s' },
+  { location: Location.WarehouseQuery, name: 'Snowflake: heavy query (bad)', bucket: 5, multiplier: Multiplier.one, unit: Unit.s, actualLatency: '5 s' },
 ];
 
 export interface CostEntry {

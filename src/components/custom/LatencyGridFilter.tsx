@@ -89,7 +89,8 @@ export const LatencyGridFilter = ({ onChange }: LatencyGridFilterProps) => {
         ({locationsForGroup(GridGroup.Hardware).filter((l) => visibility[l]).length} hardware,
         {locationsForGroup(GridGroup.Network).filter((l) => visibility[l]).length} network,
         {locationsForGroup(GridGroup.Java).filter((l) => visibility[l]).length} java,
-        {locationsForGroup(GridGroup.StorageIO).filter((l) => visibility[l]).length} storage)
+        {locationsForGroup(GridGroup.StorageIO).filter((l) => visibility[l]).length} storage,
+        {locationsForGroup(GridGroup.Warehouse).filter((l) => visibility[l]).length} warehouse)
       </p>
     </div>
   );

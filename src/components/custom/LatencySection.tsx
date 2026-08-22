@@ -21,9 +21,16 @@ export const LatencySection = () => {
     <>
       <LatencyGridFilter onChange={handleFilterChange} />
 
+      <p className="text-sm text-gray-400 mb-6 border-[2px] border-white/15 p-3">
+        <strong className="text-gray-300">Warehouse queries (very high level).</strong>
+        Snowflake query times depend on warehouse size, data volume, caching, and query plan.
+        Entries in the ms and s grids are napkin anchors, not benchmarks.
+      </p>
+
       <LatencyGrid entries={filteredEntries} currentUnit={Unit.ns} label="ns" id="grid-ns" />
       <LatencyGrid entries={filteredEntries} currentUnit={Unit.microS} label="μs" id="grid-us" />
       <LatencyGrid entries={filteredEntries} currentUnit={Unit.mS} label="ms" id="grid-ms" />
+      <LatencyGrid entries={filteredEntries} currentUnit={Unit.s} label="s" id="grid-s" />
 
       <h1 id="LatencyQuiz" className="text-3xl font-bold mt-16 mb-2">Latency Quiz</h1>
       <p className="text-gray-500 mb-8">Test your knowledge</p>

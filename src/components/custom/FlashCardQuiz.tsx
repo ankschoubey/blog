@@ -5,6 +5,7 @@ const gridIdMap: Record<Unit, string> = {
   [Unit.ns]: 'grid-ns',
   [Unit.microS]: 'grid-us',
   [Unit.mS]: 'grid-ms',
+  [Unit.s]: 'grid-s',
 };
 
 interface FlashCardQuizProps {
@@ -50,11 +51,11 @@ function toSuperscript(n: string): string {
 }
 
 function toScientific(actualLatency: string): string {
-  const match = actualLatency.match(/^([\d.]+)\s*(ns|μs|ms)$/);
+  const match = actualLatency.match(/^([\d.]+)\s*(ns|μs|ms|s)$/);
   if (!match) return actualLatency;
   const [, numStr, unit] = match;
   const num = parseFloat(numStr);
-  const unitExp: Record<string, number> = { ns: -9, μs: -6, ms: -3 };
+  const unitExp: Record<string, number> = { ns: -9, μs: -6, ms: -3, s: 0 };
   const totalExp = unitExp[unit] + Math.floor(Math.log10(num));
   const mantissa = num / Math.pow(10, Math.floor(Math.log10(num)));
   const mantissaStr = mantissa % 1 === 0 ? mantissa.toString() : mantissa.toFixed(1);
@@ -65,6 +66,7 @@ const unitLabels: { unit: Unit; label: string; sci: string }[] = [
   { unit: Unit.ns, label: 'ns', sci: '10⁻⁹' },
   { unit: Unit.microS, label: 'μs', sci: '10⁻⁶' },
   { unit: Unit.mS, label: 'ms', sci: '10⁻³' },
+  { unit: Unit.s, label: 's', sci: '10⁰' },
 ];
 
 export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizProps) => {

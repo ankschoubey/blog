@@ -59,10 +59,27 @@ Interactive visibility toggles on the latency grid. Top-level group toggles (`Ha
 _Avoid_: filter, collapse, hide show
 
 **Grid group**:
-A top-level bucket for bulk grid filtering: `Hardware`, `Network`, `Java`, or `Storage/I/O`. Each maps to one or more legend categories.
+A top-level bucket for bulk grid filtering: `Hardware`, `Network`, `Java`, `Storage/I/O`, or `Warehouse`. Each maps to one or more legend categories.
 _Avoid_: section, layer, domain
 
-## Java entries
+**Warehouse query**:
+Legend category for analytical warehouse query latency (e.g. Snowflake). Distinct from operational `Database / Cache` (μs-scale).
+_Avoid_: Snowflake, OLAP, analytics query
+
+**Warehouse disclaimer**:
+A short note on `/numbers` that Snowflake query times are very high-level napkin anchors — not benchmarks — shown after the grid filter before the latency grids.
+_Avoid_: warning, caveat, footnote
+
+## Warehouse query tiers
+
+Very high-level Snowflake napkin anchors (workload-dependent; not benchmarks):
+
+| Tier | Napkin latency | Grid unit |
+|------|----------------|-----------|
+| Simple | ~250 ms | ms |
+| Moderate / less optimized | ~500 ms | ms |
+| Complex / heavy (typical) | ~1 s | s |
+| Complex / heavy (bad) | ~5 s | s |
 
 Eight entries in the `Java` grid group, slotted into existing bucket × multiplier cells:
 
@@ -82,5 +99,9 @@ The geography you mentally place yourself in when picking example routes for a t
 _Avoid_: origin, home region, baseline
 
 **Latency grid**:
-The napkin-math table on `/numbers` that maps operations and network routes into bucket × multiplier cells (1/2/5 × 1/10/100) across ns, μs, and ms units. μs cells use datacenter location labels (`Nearby Network`, `Network`); ms network cells use RTT tier labels.
+The napkin-math table on `/numbers` that maps operations and network routes into bucket × multiplier cells (1/2/5 × 1/10/100) across ns, μs, ms, and s units. μs cells use datacenter location labels (`Nearby Network`, `Network`); ms network cells use RTT tier labels.
 _Avoid_: numbers table, napkin grid
+
+**Seconds grid**:
+The s row of the latency grid for operations that routinely exceed hundreds of milliseconds (e.g. heavy warehouse queries).
+_Avoid_: second tier, slow query grid
