@@ -1,0 +1,48 @@
+---
+title: Using Matt Pocock Skills
+excerpt: The pinnacle of AI software engineering in 2026
+slug: /software-blog/using-matt-pocock-skills/
+tags:
+    - technical
+    - ai
+publishDate: 2026-08-24T21:00:00.000000
+---
+
+I have been using **Matt Pocock**'s Skill files for around 4-5 months. 
+
+I believe this skill files are the #pinnacle of AI driven software development.
+
+I have been developing a pretty complex life OS app for myself. And I rarely touch code. The stuff I developed in a month, would have taken me more than 6-7 months of coding by hand.
+
+The codebase has around 1200 frontend tests and 900 tests. And these are good quality tests written with perfectly done TDD.
+
+There are 4 main skills that are need to be run in order:
+
+## 1. `/grill-with-docs` - requirement gathering
+• Asks you questions repeatedly until you and the agent have shared understanding. 
+• It then updates CONTEXT.md and other docs which improves working with future agent.
+• With this you avoid the "I had told you to implement like this" problem later.
+
+This skill is way better than usual plan mode.
+
+FYI: I do discuss technical implementation, libraries, etc with agent and simplify my architecture. Sometimes, I perform a grilling session but hold implementation if design is too complex. 
+
+## 2. `/to-spec` - detailed specifications
+
+## 3. `/to-tickets` - convert to tickets
+
+## 4. `/implement {ticketNo}` 
+• calls `/tdd` over the ticket and `/code-review` which does an spec review and code review.
+• The spec review is a game changer IMO.
+
+The only 2 parts where I was focus on are `/grill-wi:th-docs` and `/implement`.
+
+--- 
+
+## 5. `/afk` - my personal skill to run `/implement` in a loop while I am away-from-keyboard
+
+I found myself calling /implement a lot with each ticket, so I created a `/afk` skill to which I can pass multiple tickets. It calls subagents with `/implement {ticketNo}` sequentially and also handles retries if subagent fails to commit. 
+
+Which means, the only step I focus on now carefully is grilling and everything else is done by the agent.
+
+- I write my posts by hand.
