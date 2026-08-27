@@ -91,6 +91,14 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
   const [showMultiplierHint, setShowMultiplierHint] = useState(false);
   const [finished, setFinished] = useState(false);
 
+  if (questions.length === 0) {
+    return (
+      <div className="border-[2px] border-white/25 p-6 text-center text-sm text-gray-400">
+        No latency entries selected. Enable at least one category in the filter above to start the quiz.
+      </div>
+    );
+  }
+
   const q = questions[current];
   const entry = q?.entry;
   const colors = entry ? LocationColors[entry.location] : undefined;

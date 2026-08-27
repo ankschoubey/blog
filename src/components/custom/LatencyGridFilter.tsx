@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import {
   type Location,
   LocationColors,
@@ -6,8 +5,6 @@ import {
   GridGroup,
 } from '../../data/latency-entries';
 import {
-  getGridFilterState,
-  saveGridFilterState,
   locationsForGroup,
   isGroupVisible,
   setGroupVisibility,
@@ -16,28 +13,18 @@ import {
 } from '../../utils/gridFilter';
 
 interface LatencyGridFilterProps {
+  visibility: LocationVisibility;
   onChange: (visibility: LocationVisibility) => void;
 }
 
-export const LatencyGridFilter = ({ onChange }: LatencyGridFilterProps) => {
-  const [visibility, setVisibility] = useState<LocationVisibility>(() => getGridFilterState());
-
-  useEffect(() => {
-    onChange(visibility);
-  }, [visibility, onChange]);
-
-  const update = (next: LocationVisibility) => {
-    setVisibility(next);
-    saveGridFilterState(next);
-  };
-
+export const LatencyGridFilter = ({ visibility, onChange }: LatencyGridFilterProps) => {
   const toggleLocation = (loc: Location) => {
-    update({ ...visibility, [loc]: !visibility[loc] });
+    onChange({ ...visibility, [loc]: !visibility[loc] });
   };
 
   const toggleGroup = (group: GridGroup) => {
     const visible = !isGroupVisible(visibility, group);
-    update(setGroupVisibility(visibility, group, visible));
+    onChange(setGroupVisibility(visibility, group, visible));
   };
 
   return (

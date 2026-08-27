@@ -126,6 +126,8 @@ export const entries: LatencyEntry[] = [
   { location: Location.Memory, name: 'Sequential Memory R/W (64 bytes)', bucket: 1, multiplier: Multiplier.one, unit: Unit.ns, actualLatency: '0.5 ns' },
   { location: Location.CPU, name: 'Hashing, not crypto-safe (64 bytes)', bucket: 1, multiplier: Multiplier.ten, unit: Unit.ns, actualLatency: '10 ns' },
   { location: Location.JavaInProcess, name: 'HashMap get', bucket: 1, multiplier: Multiplier.hundred, unit: Unit.ns, actualLatency: '100 ns' },
+  { location: Location.JavaInProcess, name: 'Virtual thread create', bucket: 5, multiplier: Multiplier.ten, unit: Unit.ns, actualLatency: '50 ns' },
+  { location: Location.JavaInProcess, name: 'Virtual thread context switch', bucket: 1, multiplier: Multiplier.hundred, unit: Unit.ns, actualLatency: '100 ns' },
   { location: Location.Memory, name: 'Random Memory R/W (64 bytes)', bucket: 2, multiplier: Multiplier.ten, unit: Unit.ns, actualLatency: '20 ns' },
   { location: Location.CPUKernel, name: 'System Call', bucket: 2, multiplier: Multiplier.hundred, unit: Unit.ns, actualLatency: '300 ns' },
   { location: Location.CPU, name: 'Hashing, crypto-safe (64 bytes)', bucket: 1, multiplier: Multiplier.hundred, unit: Unit.ns, actualLatency: '100 ns' },
@@ -135,6 +137,7 @@ export const entries: LatencyEntry[] = [
   { location: Location.JavaInProcess, name: 'JSON serialize 1 KB', bucket: 1, multiplier: Multiplier.one, unit: Unit.microS, actualLatency: '1 μs' },
   { location: Location.JavaInProcess, name: 'Log line (sync)', bucket: 1, multiplier: Multiplier.one, unit: Unit.microS, actualLatency: '1 μs' },
   { location: Location.CPUKernel, name: 'Context Switch', bucket: 1, multiplier: Multiplier.ten, unit: Unit.microS, actualLatency: '10 μs' },
+  { location: Location.JavaJVM, name: 'Platform thread context switch', bucket: 1, multiplier: Multiplier.ten, unit: Unit.microS, actualLatency: '10 μs' },
   { location: Location.SSD, name: 'Sequential SSD write, -fsync (8 KiB)', bucket: 2, multiplier: Multiplier.one, unit: Unit.microS, actualLatency: '2 μs' },
   { location: Location.NearbyNetwork, name: 'TCP Echo Server (32 KiB)', bucket: 5, multiplier: Multiplier.ten, unit: Unit.microS, actualLatency: '50 μs' },
   { location: Location.SSD, name: 'Random SSD Read (8 KiB)', bucket: 1, multiplier: Multiplier.hundred, unit: Unit.microS, actualLatency: '100 μs' },
@@ -146,6 +149,7 @@ export const entries: LatencyEntry[] = [
   { location: Location.DatabaseCache, name: '{MySQL, Memcached, Redis, ...} Query', bucket: 5, multiplier: Multiplier.hundred, unit: Unit.microS, actualLatency: '500 μs' },
 
   { location: Location.JavaFramework, name: 'JDBC pool checkout', bucket: 1, multiplier: Multiplier.one, unit: Unit.mS, actualLatency: '1 ms' },
+  { location: Location.JavaFramework, name: 'Platform thread create', bucket: 1, multiplier: Multiplier.one, unit: Unit.mS, actualLatency: '1 ms' },
   { location: Location.JavaFramework, name: 'JDBC round-trip (no pool)', bucket: 2, multiplier: Multiplier.one, unit: Unit.mS, actualLatency: '2 ms' },
   { location: Location.HDD, name: 'Sequential HDD Read (8 KiB)', bucket: 1, multiplier: Multiplier.ten, unit: Unit.mS, actualLatency: '10 ms' },
   { location: Location.JavaJVM, name: 'Young GC pause', bucket: 1, multiplier: Multiplier.ten, unit: Unit.mS, actualLatency: '10 ms' },
@@ -232,6 +236,19 @@ export const bandwidthEntries: BandwidthEntry[] = [
   { linkSpeed: '100 Mbps', throughput: '12.5 MB/s', transferTime: '80 s', mnemonic: '÷8' },
   { linkSpeed: '1 Gbps', throughput: '125 MB/s', transferTime: '8 s', mnemonic: '÷8' },
   { linkSpeed: '10 Gbps', throughput: '1.25 GB/s', transferTime: '0.8 s', mnemonic: '÷8' },
+];
+
+export interface ThreadComparisonEntry {
+  metric: string;
+  platform: string;
+  virtual: string;
+}
+
+export const threadComparisonEntries: ThreadComparisonEntry[] = [
+  { metric: 'Memory overhead', platform: '~1 MB per thread (stack-allocated)', virtual: '~2 KB to 10 KB per thread (heap-allocated)' },
+  { metric: 'Creation time', platform: '~1 to 2 ms (OS kernel system call)', virtual: '~10 to 50 ns (Java object allocation)' },
+  { metric: 'Max capacity', platform: '~1,000 to 5,000 per server (OOM risk)', virtual: 'Millions on a standard laptop' },
+  { metric: 'Context switch cost', platform: '~1 to 10 μs (heavy OS operation)', virtual: '~100 ns (managed by the JVM)' },
 ];
 
 export const costEntries: CostEntry[] = [

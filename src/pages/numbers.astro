@@ -9,7 +9,8 @@ import { AvailabilityQuiz } from '~/components/custom/AvailabilityQuiz';
 import { LatencySection } from '~/components/custom/LatencySection';
 import { BandwidthTable } from '~/components/custom/BandwidthTable';
 import { BandwidthQuiz } from '~/components/custom/BandwidthQuiz';
-import { costEntries, availabilityMnemonicEntries, powerEntries, bandwidthEntries } from '~/data/latency-entries';
+import { ThreadComparisonTable } from '~/components/custom/ThreadComparisonTable';
+import { costEntries, availabilityMnemonicEntries, powerEntries, bandwidthEntries, threadComparisonEntries } from '~/data/latency-entries';
 
 const metadata = {
   title: 'Numbers Every Programmer Should Know',
@@ -29,6 +30,7 @@ const metadata = {
         <li><a href="#Bandwidth" class="underline hover:text-gray-200">Bandwidth</a></li>
         <li><a href="#CloudPricing" class="underline hover:text-gray-200">Cloud Pricing</a></li>
         <li><a href="#AvailabilityTable" class="underline hover:text-gray-200">Availability Table</a></li>
+        <li><a href="#Threads" class="underline hover:text-gray-200">Threads: Platform vs Virtual</a></li>
       </ol>
     </nav>
 
@@ -96,5 +98,10 @@ const metadata = {
     <p class="text-gray-500 mb-8">Test the mnemonics</p>
 
     <AvailabilityQuiz entries={availabilityMnemonicEntries} client:load />
+
+    <h1 id="Threads" class="text-3xl font-bold mt-16 mb-2">Threads: Platform vs Virtual</h1>
+    <p class="text-gray-500 mb-8">Java concurrency napkin math</p>
+
+    <ThreadComparisonTable entries={threadComparisonEntries} />
   </section>
 </Layout>

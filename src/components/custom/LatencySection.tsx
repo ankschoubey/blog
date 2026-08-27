@@ -1,6 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { entries, Unit } from '../../data/latency-entries';
-import { getGridFilterState, type LocationVisibility } from '../../utils/gridFilter';
+import { getGridFilterState, saveGridFilterState, type LocationVisibility } from '../../utils/gridFilter';
 import { LatencyGrid } from './LatencyGrid';
 import { LatencyGridFilter } from './LatencyGridFilter';
 import { FlashCardQuiz } from './FlashCardQuiz';
@@ -10,6 +10,7 @@ export const LatencySection = () => {
 
   const handleFilterChange = useCallback((next: LocationVisibility) => {
     setVisibility(next);
+    saveGridFilterState(next);
   }, []);
 
   const filteredEntries = useMemo(
@@ -19,7 +20,7 @@ export const LatencySection = () => {
 
   return (
     <>
-      <LatencyGridFilter onChange={handleFilterChange} />
+      <LatencyGridFilter visibility={visibility} onChange={handleFilterChange} />
 
       <p className="text-sm text-gray-400 mb-6 border-[2px] border-white/15 p-3">
         <strong className="text-gray-300">Warehouse queries (very high level).</strong>
