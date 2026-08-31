@@ -25,31 +25,14 @@ const metadata = {
     <nav class="mb-8 border-[2px] border-white/25 p-4">
       <p class="text-sm font-bold mb-2">Contents</p>
       <ol class="text-sm text-gray-400 space-y-1 list-decimal pl-5">
-        <li><a href="#PowerOf2" class="underline hover:text-gray-200">Power of 2</a></li>
         <li><a href="#LatencyNumbers" class="underline hover:text-gray-200">Latency Numbers</a></li>
         <li><a href="#Bandwidth" class="underline hover:text-gray-200">Bandwidth</a></li>
         <li><a href="#CloudPricing" class="underline hover:text-gray-200">Cloud Pricing</a></li>
         <li><a href="#AvailabilityTable" class="underline hover:text-gray-200">Availability Table</a></li>
         <li><a href="#Threads" class="underline hover:text-gray-200">Threads: Platform vs Virtual</a></li>
+        <li><a href="#PowerOf2" class="underline hover:text-gray-200">Power of 2</a></li>
       </ol>
     </nav>
-
-    <h1 id="PowerOf2" class="text-3xl font-bold mt-16 mb-2">Power of 2</h1>
-    <p class="text-gray-500 mb-4">
-      Data volume in distributed systems boils down to basics: a byte is a sequence of 8 bits; an ASCII character
-      uses one byte of memory. Units are powers of 2: 2<sup>10</sup> = 1024 ≈ 10<sup>3</sup> = 1000 (1 Thousand), and
-      so on.
-    </p>
-    <p class="text-sm text-gray-400 mb-8">
-      Reference: <a href="https://bytebytego.com/courses/system-design-interview/back-of-the-envelope-estimation" target="_blank" rel="noopener" class="underline hover:text-gray-200">ByteByteGo — Back of the Envelope Estimation</a>
-    </p>
-
-    <PowerTable entries={powerEntries} />
-
-    <h1 id="PowerQuiz" class="text-3xl font-bold mt-16 mb-2">Power of 2 Quiz</h1>
-    <p class="text-gray-500 mb-8">Test the units and powers</p>
-
-    <PowerQuiz entries={powerEntries} client:load />
 
     <h1 id="LatencyNumbers" class="text-3xl font-bold mt-16 mb-2">Latency Numbers</h1>
     <p class="text-gray-500 mb-2">Every programmer should know</p>
@@ -103,5 +86,22 @@ const metadata = {
     <p class="text-gray-500 mb-8">Java concurrency napkin math</p>
 
     <ThreadComparisonTable entries={threadComparisonEntries} />
+
+    <h1 id="PowerOf2" class="text-3xl font-bold mt-16 mb-2">Power of 2</h1>
+    <p class="text-gray-500 mb-4">
+      Data volume in distributed systems boils down to basics: a byte is a sequence of 8 bits; an ASCII character
+      uses one byte of memory. Units are powers of 2: 2<sup>10</sup> = 1024 ≈ 10<sup>3</sup> = 1000 (1 Thousand), and
+      so on.
+    </p>
+    <p class="text-sm text-gray-400 mb-8">
+      Reference: <a href="https://bytebytego.com/courses/system-design-interview/back-of-the-envelope-estimation" target="_blank" rel="noopener" class="underline hover:text-gray-200">ByteByteGo — Back of the Envelope Estimation</a>
+    </p>
+
+    <PowerTable entries={powerEntries} />
+
+    <h1 id="PowerQuiz" class="text-3xl font-bold mt-16 mb-2">Power of 2 Quiz</h1>
+    <p class="text-gray-500 mb-8">Test the units and powers</p>
+
+    <PowerQuiz entries={powerEntries} client:load />
   </section>
 </Layout>
