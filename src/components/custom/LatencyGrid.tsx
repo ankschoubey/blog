@@ -10,6 +10,8 @@ interface LatencyGridProps {
 const buckets = [1, 2, 5] as const;
 const multipliers = [1, 10, 100] as const;
 
+const border = 'border-gray-300 dark:border-white/25';
+
 export const LatencyGrid = ({ entries, currentUnit, label, id }: LatencyGridProps) => {
   const filtered = entries.filter((e) => e.unit === currentUnit);
 
@@ -36,12 +38,12 @@ export const LatencyGrid = ({ entries, currentUnit, label, id }: LatencyGridProp
       <h2 className="text-xl font-bold mb-4">{label}</h2>
 
       <div className="overflow-x-auto">
-        <table className="min-w-[300px] border-[2px] border-white/25 text-sm table-fixed">
+        <table className={`min-w-[300px] border-[2px] ${border} text-sm table-fixed`}>
           <thead>
             <tr>
-              <th className="border-b-[2px] border-r-[2px] border-white/25 px-2 py-1 w-[60px]" />
+              <th className={`border-b-[2px] border-r-[2px] ${border} px-2 py-1 w-[60px]`} />
               {buckets.map((b) => (
-                <th key={b} className="border-b-[2px] border-r-[2px] border-white/25 px-2 py-1 font-bold text-center last:border-r-0 min-w-[120px]">
+                <th key={b} className={`border-b-[2px] border-r-[2px] ${border} px-2 py-1 font-bold text-center last:border-r-0 min-w-[120px]`}>
                   {b}
                 </th>
               ))}
@@ -50,7 +52,7 @@ export const LatencyGrid = ({ entries, currentUnit, label, id }: LatencyGridProp
           <tbody>
             {multipliers.map((m) => (
               <tr key={m}>
-                <td className="border-r-[2px] border-b-[2px] border-white/25 px-2 py-2 text-right font-bold align-top whitespace-nowrap">
+                <td className={`border-r-[2px] border-b-[2px] ${border} px-2 py-2 text-right font-bold align-top whitespace-nowrap`}>
                   {m}
                 </td>
                 {buckets.map((b) => {
@@ -58,7 +60,7 @@ export const LatencyGrid = ({ entries, currentUnit, label, id }: LatencyGridProp
                   return (
                     <td
                       key={`${b}-${m}`}
-                      className="border-b-[2px] border-r-[2px] border-white/25 p-2 align-top last:border-r-0"
+                      className={`border-b-[2px] border-r-[2px] ${border} p-2 align-top last:border-r-0`}
                     >
                       {items.map((item) => {
                         const colors = LocationColors[item.location];
@@ -88,7 +90,7 @@ export const LatencyGrid = ({ entries, currentUnit, label, id }: LatencyGridProp
           return (
             <span
               key={loc}
-              className={`${colors.bg} ${colors.text} border-[2px] border-white/25 px-2 py-1 text-xs font-medium`}
+              className={`${colors.bg} ${colors.text} border-[2px] ${border} px-2 py-1 text-xs font-medium`}
             >
               {loc}
             </span>

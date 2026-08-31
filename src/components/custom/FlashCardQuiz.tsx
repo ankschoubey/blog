@@ -8,6 +8,9 @@ const gridIdMap: Record<Unit, string> = {
   [Unit.s]: 'grid-s',
 };
 
+const border = 'border-gray-300 dark:border-white/25';
+const hover = 'hover:bg-black/5 dark:hover:bg-white/10';
+
 interface FlashCardQuizProps {
   entries: LatencyEntry[];
   totalQuestions?: number;
@@ -93,7 +96,7 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
 
   if (questions.length === 0) {
     return (
-      <div className="border-[2px] border-white/25 p-6 text-center text-sm text-gray-400">
+      <div className={`border-[2px] ${border} p-6 text-center text-sm text-gray-600 dark:text-gray-400`}>
         No latency entries selected. Enable at least one category in the filter above to start the quiz.
       </div>
     );
@@ -163,17 +166,17 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
 
   if (finished) {
     return (
-      <div className="border-[2px] border-white/25 p-8 text-center">
+      <div className={`border-[2px] ${border} p-8 text-center`}>
         <h3 className="text-2xl font-bold mb-2">Quiz Complete</h3>
         <p className="text-lg mb-1">
           Score: <span className="font-bold">{score}</span> / {questions.length}
         </p>
-        <p className="text-sm text-gray-400 mb-6">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
           {score === questions.length ? 'Perfect!' : score >= questions.length * 0.7 ? 'Nice work!' : 'Keep practicing!'}
         </p>
         <button
           onClick={handleRestart}
-          className="border-[2px] border-white/25 px-4 py-2 text-sm font-bold hover:bg-white/10 transition-colors"
+          className={`border-[2px] ${border} px-4 py-2 text-sm font-bold ${hover} transition-colors`}
         >
           Try Again
         </button>
@@ -182,16 +185,16 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
   }
 
   return (
-    <div className="border-[2px] border-white/25 p-6">
+    <div className={`border-[2px] ${border} p-6`}>
       {/* progress */}
-      <div className="flex justify-between items-center mb-4 text-sm text-gray-400">
+      <div className="flex justify-between items-center mb-4 text-sm text-gray-600 dark:text-gray-400">
         <span>{current + 1} / {questions.length}</span>
         <span>Score: {score}</span>
       </div>
 
       {/* question */}
       <div className="text-center mb-6">
-        <p className="text-xs text-gray-500 mb-2">
+        <p className="text-xs text-gray-600 dark:text-gray-500 mb-2">
           {isGuessOp ? 'What operation has this latency?' : `What latency is ${entry.name}?`}
         </p>
         <p className="text-3xl font-bold">
@@ -204,7 +207,7 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
         {!showLocationHint && (
           <button
             onClick={() => setShowLocationHint(true)}
-            className="border-[2px] border-white/25 px-3 py-1 text-xs hover:bg-white/10 transition-colors"
+            className={`border-[2px] ${border} px-3 py-1 text-xs ${hover} transition-colors`}
           >
             Show Location
           </button>
@@ -212,7 +215,7 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
         {!showUnitHint && (
           <button
             onClick={() => setShowUnitHint(true)}
-            className="border-[2px] border-white/25 px-3 py-1 text-xs hover:bg-white/10 transition-colors"
+            className={`border-[2px] ${border} px-3 py-1 text-xs ${hover} transition-colors`}
           >
             Show Unit
           </button>
@@ -220,7 +223,7 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
         {!showBucketHint && (
           <button
             onClick={() => setShowBucketHint(true)}
-            className="border-[2px] border-white/25 px-3 py-1 text-xs hover:bg-white/10 transition-colors"
+            className={`border-[2px] ${border} px-3 py-1 text-xs ${hover} transition-colors`}
           >
             Show Group
           </button>
@@ -228,7 +231,7 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
         {!showMultiplierHint && (
           <button
             onClick={() => setShowMultiplierHint(true)}
-            className="border-[2px] border-white/25 px-3 py-1 text-xs hover:bg-white/10 transition-colors"
+            className={`border-[2px] ${border} px-3 py-1 text-xs ${hover} transition-colors`}
           >
             Show Multiplier
           </button>
@@ -238,22 +241,22 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
       {/* hint reveals */}
       <div className="flex flex-wrap justify-center gap-2 mb-6 min-h-[28px]">
         {showLocationHint && (
-          <span className={`${colors?.bg} ${colors?.text} border-[2px] border-white/25 px-2 py-0.5 text-xs`}>
+          <span className={`${colors?.bg} ${colors?.text} border-[2px] ${border} px-2 py-0.5 text-xs`}>
             {entry.location}
           </span>
         )}
         {showUnitHint && (
-          <span className="border-[2px] border-white/25 px-2 py-0.5 text-xs text-gray-300">
+          <span className={`border-[2px] ${border} px-2 py-0.5 text-xs text-gray-700 dark:text-gray-300`}>
             {q.useScientific ? unitLabels.find((u) => u.unit === entry.unit)?.sci : entry.unit}
           </span>
         )}
         {showBucketHint && (
-          <span className="border-[2px] border-white/25 px-2 py-0.5 text-xs text-gray-300">
+          <span className={`border-[2px] ${border} px-2 py-0.5 text-xs text-gray-700 dark:text-gray-300`}>
             Group: {entry.bucket}
           </span>
         )}
         {showMultiplierHint && (
-          <span className="border-[2px] border-white/25 px-2 py-0.5 text-xs text-gray-300">
+          <span className={`border-[2px] ${border} px-2 py-0.5 text-xs text-gray-700 dark:text-gray-300`}>
             Multiplier: {entry.multiplier}
           </span>
         )}
@@ -271,10 +274,10 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
             placeholder="Type the operation name..."
             className={`w-full bg-transparent border-[2px] px-3 py-2 text-sm outline-none transition-colors ${
               result === 'correct'
-                ? 'border-green-500 text-green-300'
+                ? 'border-green-600 text-green-700 dark:border-green-500 dark:text-green-300'
                 : result === 'incorrect'
-                ? 'border-red-500 text-red-300'
-                : 'border-white/25 focus:border-white/50'
+                ? 'border-red-600 text-red-700 dark:border-red-500 dark:text-red-300'
+                : `${border} focus:border-black/50 dark:focus:border-white/50`
             }`}
           />
         ) : (
@@ -288,10 +291,10 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
               placeholder="Number"
               className={`flex-1 bg-transparent border-[2px] px-3 py-2 text-sm outline-none transition-colors ${
                 result === 'correct'
-                  ? 'border-green-500 text-green-300'
+                  ? 'border-green-600 text-green-700 dark:border-green-500 dark:text-green-300'
                   : result === 'incorrect'
-                  ? 'border-red-500 text-red-300'
-                  : 'border-white/25 focus:border-white/50'
+                  ? 'border-red-600 text-red-700 dark:border-red-500 dark:text-red-300'
+                  : `${border} focus:border-black/50 dark:focus:border-white/50`
               }`}
             />
             <div className="flex">
@@ -302,8 +305,8 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
                   disabled={!!result}
                   className={`px-3 py-2 text-sm border-[2px] transition-colors ${
                     selectedUnit === unit
-                      ? 'border-white/50 bg-white/10 font-bold'
-                      : 'border-white/25 hover:bg-white/10'
+                      ? 'border-black/50 bg-black/10 font-bold dark:border-white/50 dark:bg-white/10'
+                      : `${border} ${hover}`
                   } first:border-r-0`}
                 >
                   {q.useScientific ? sci : label}
@@ -317,15 +320,15 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
       {/* result + answer */}
       {result && (
         <div className="text-center mb-4">
-          <p className={`text-sm font-bold mb-1 ${result === 'correct' ? 'text-green-400' : 'text-red-400'}`}>
+          <p className={`text-sm font-bold mb-1 ${result === 'correct' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
             {result === 'correct' ? 'Correct!' : 'Incorrect'}
           </p>
           {result === 'incorrect' && (
-            <p className="text-sm text-gray-300 mb-2">{answer}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{answer}</p>
           )}
           <button
             onClick={() => document.getElementById(gridIdMap[entry.unit])?.scrollIntoView({ behavior: 'smooth' })}
-            className="border-[2px] border-white/25 px-3 py-1 text-xs hover:bg-white/10 transition-colors"
+            className={`border-[2px] ${border} px-3 py-1 text-xs ${hover} transition-colors`}
           >
             Jump to {entry.unit} Grid
           </button>
@@ -338,14 +341,14 @@ export const FlashCardQuiz = ({ entries, totalQuestions = 10 }: FlashCardQuizPro
           <button
             onClick={handleSubmit}
             disabled={!canSubmit}
-            className="border-[2px] border-white/25 px-4 py-2 text-sm font-bold hover:bg-white/10 transition-colors disabled:opacity-30"
+            className={`border-[2px] ${border} px-4 py-2 text-sm font-bold ${hover} transition-colors disabled:opacity-30`}
           >
             Submit
           </button>
         ) : (
           <button
             onClick={handleNext}
-            className="border-[2px] border-white/25 px-4 py-2 text-sm font-bold hover:bg-white/10 transition-colors"
+            className={`border-[2px] ${border} px-4 py-2 text-sm font-bold ${hover} transition-colors`}
           >
             {current + 1 >= questions.length ? 'See Results' : 'Next'}
           </button>

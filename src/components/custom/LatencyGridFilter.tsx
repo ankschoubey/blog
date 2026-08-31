@@ -28,7 +28,7 @@ export const LatencyGridFilter = ({ visibility, onChange }: LatencyGridFilterPro
   };
 
   return (
-    <div className="mb-8 border-[2px] border-white/25 p-4">
+    <div className="mb-8 border-[2px] border-gray-300 dark:border-white/25 p-4">
       <p className="text-sm font-bold mb-3">Filter grid</p>
 
       <div className="flex flex-wrap gap-2 mb-4">
@@ -39,7 +39,7 @@ export const LatencyGridFilter = ({ visibility, onChange }: LatencyGridFilterPro
               key={group}
               onClick={() => toggleGroup(group)}
               className={`border-[2px] px-3 py-1 text-xs font-bold transition-colors ${
-                active ? 'border-white/50 bg-white/10' : 'border-white/15 opacity-50'
+                active ? 'border-black/30 bg-black/5 dark:border-white/50 dark:bg-white/10' : 'border-black/15 opacity-50 dark:border-white/15'
               }`}
             >
               {group}
@@ -56,14 +56,14 @@ export const LatencyGridFilter = ({ visibility, onChange }: LatencyGridFilterPro
             <label
               key={loc}
               className={`flex items-center gap-1.5 cursor-pointer border-[2px] px-2 py-1 text-xs transition-opacity ${
-                visible ? 'border-white/25 opacity-100' : 'border-white/10 opacity-40'
+                visible ? 'border-gray-400 dark:border-white/25 opacity-100' : 'border-black/20 opacity-40 dark:border-white/10'
               }`}
             >
               <input
                 type="checkbox"
                 checked={visible}
                 onChange={() => toggleLocation(loc)}
-                className="accent-white"
+                className="accent-black dark:accent-white"
               />
               <span className={`${colors.bg} ${colors.text} px-1.5 py-0.5`}>{loc}</span>
             </label>
@@ -71,7 +71,7 @@ export const LatencyGridFilter = ({ visibility, onChange }: LatencyGridFilterPro
         })}
       </div>
 
-      <p className="text-xs text-gray-500 mt-3">
+      <p className="text-xs text-gray-600 dark:text-gray-500 mt-3">
         Group: {LocationOrder.filter((loc) => visibility[loc]).length} / {LocationOrder.length} categories visible
         ({locationsForGroup(GridGroup.Hardware).filter((l) => visibility[l]).length} hardware,
         {locationsForGroup(GridGroup.Network).filter((l) => visibility[l]).length} network,

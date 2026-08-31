@@ -10,26 +10,28 @@ function toSuperscript(n: number): string {
   return n.toString().split('').map((c) => superscripts[c] ?? c).join('');
 }
 
+const border = 'border-gray-300 dark:border-white/25';
+
 export const PowerTable = ({ entries }: PowerTableProps) => {
   return (
     <div className="overflow-x-auto">
-      <table className="w-full border-[2px] border-white/25 border-collapse">
+      <table className={`w-full border-[2px] ${border} border-collapse`}>
         <thead>
-          <tr className="border-b-[2px] border-white/25">
-            <th className="text-center text-sm font-bold px-3 py-2 border-r-[2px] border-white/25">Power (2ⁿ)</th>
-            <th className="text-center text-sm font-bold px-3 py-2 border-r-[2px] border-white/25">Power (10ⁿ)</th>
-            <th className="text-left text-sm font-bold px-3 py-2 border-r-[2px] border-white/25">Approximate value</th>
-            <th className="text-left text-sm font-bold px-3 py-2 border-r-[2px] border-white/25">Full name</th>
+          <tr className={`border-b-[2px] ${border}`}>
+            <th className={`text-center text-sm font-bold px-3 py-2 border-r-[2px] ${border}`}>Power (2ⁿ)</th>
+            <th className={`text-center text-sm font-bold px-3 py-2 border-r-[2px] ${border}`}>Power (10ⁿ)</th>
+            <th className={`text-left text-sm font-bold px-3 py-2 border-r-[2px] ${border}`}>Approximate value</th>
+            <th className={`text-left text-sm font-bold px-3 py-2 border-r-[2px] ${border}`}>Full name</th>
             <th className="text-center text-sm font-bold px-3 py-2">Short name</th>
           </tr>
         </thead>
         <tbody>
           {entries.map((entry, i) => (
-            <tr key={entry.shortName} className={`${i % 2 === 0 ? 'bg-gray-900' : 'bg-gray-800'} border-b-[2px] border-white/25 last:border-b-0`}>
-              <td className="text-center text-sm px-3 py-1.5 font-bold border-r-[2px] border-white/25">2{toSuperscript(entry.power2)}</td>
-              <td className="text-center text-sm px-3 py-1.5 font-bold border-r-[2px] border-white/25">10{toSuperscript(entry.power10)}</td>
-              <td className="px-3 py-1.5 text-sm border-r-[2px] border-white/25">{entry.approximate}</td>
-              <td className="px-3 py-1.5 text-sm border-r-[2px] border-white/25">{entry.fullName}</td>
+            <tr key={entry.shortName} className={`${i % 2 === 0 ? 'bg-gray-100 dark:bg-gray-900' : 'bg-white dark:bg-gray-800'} border-b-[2px] ${border} last:border-b-0`}>
+              <td className={`text-center text-sm px-3 py-1.5 font-bold border-r-[2px] ${border}`}>2{toSuperscript(entry.power2)}</td>
+              <td className={`text-center text-sm px-3 py-1.5 font-bold border-r-[2px] ${border}`}>10{toSuperscript(entry.power10)}</td>
+              <td className={`px-3 py-1.5 text-sm border-r-[2px] ${border}`}>{entry.approximate}</td>
+              <td className={`px-3 py-1.5 text-sm border-r-[2px] ${border}`}>{entry.fullName}</td>
               <td className="text-center text-sm px-3 py-1.5 font-bold">{entry.shortName}</td>
             </tr>
           ))}

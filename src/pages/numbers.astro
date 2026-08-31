@@ -20,27 +20,27 @@ const metadata = {
 <Layout metadata={metadata}>
   <section class="mx-auto max-w-4xl px-6 py-12">
     <h1 class="text-3xl font-bold mb-2">Numbers Every Programmer Should Know</h1>
-    <p class="text-gray-500 mb-8">This page is made for memorization.</p>
+    <p class="text-gray-600 dark:text-gray-500 mb-8">This page is made for memorization.</p>
 
-    <nav class="mb-8 border-[2px] border-white/25 p-4">
+    <nav class="mb-8 border-[2px] border-gray-300 dark:border-white/25 p-4">
       <p class="text-sm font-bold mb-2">Contents</p>
-      <ol class="text-sm text-gray-400 space-y-1 list-decimal pl-5">
-        <li><a href="#LatencyNumbers" class="underline hover:text-gray-200">Latency Numbers</a></li>
-        <li><a href="#Bandwidth" class="underline hover:text-gray-200">Bandwidth</a></li>
-        <li><a href="#CloudPricing" class="underline hover:text-gray-200">Cloud Pricing</a></li>
-        <li><a href="#AvailabilityTable" class="underline hover:text-gray-200">Availability Table</a></li>
-        <li><a href="#Threads" class="underline hover:text-gray-200">Threads: Platform vs Virtual</a></li>
-        <li><a href="#PowerOf2" class="underline hover:text-gray-200">Power of 2</a></li>
+      <ol class="text-sm text-gray-600 dark:text-gray-400 space-y-1 list-decimal pl-5">
+        <li><a href="#LatencyNumbers" class="underline hover:text-gray-900 dark:hover:text-gray-200">Latency Numbers</a></li>
+        <li><a href="#Bandwidth" class="underline hover:text-gray-900 dark:hover:text-gray-200">Bandwidth</a></li>
+        <li><a href="#CloudPricing" class="underline hover:text-gray-900 dark:hover:text-gray-200">Cloud Pricing</a></li>
+        <li><a href="#AvailabilityTable" class="underline hover:text-gray-900 dark:hover:text-gray-200">Availability Table</a></li>
+        <li><a href="#Threads" class="underline hover:text-gray-900 dark:hover:text-gray-200">Threads: Platform vs Virtual</a></li>
+        <li><a href="#PowerOf2" class="underline hover:text-gray-900 dark:hover:text-gray-200">Power of 2</a></li>
       </ol>
     </nav>
 
     <h1 id="LatencyNumbers" class="text-3xl font-bold mt-16 mb-2">Latency Numbers</h1>
-    <p class="text-gray-500 mb-2">Every programmer should know</p>
-    <p class="text-sm text-gray-400 mb-4">
+    <p class="text-gray-600 dark:text-gray-500 mb-2">Every programmer should know</p>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
       A learning tool to help memorize napkin math.
-      Reference: <a href="https://github.com/sirupsen/napkin-math" target="_blank" rel="noopener" class="underline hover:text-gray-200">sirupsen/napkin-math</a>
+      Reference: <a href="https://github.com/sirupsen/napkin-math" target="_blank" rel="noopener" class="underline hover:text-gray-900 dark:hover:text-gray-200">sirupsen/napkin-math</a>
     </p>
-    <p class="text-sm text-gray-400 mb-8">
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8">
       Network RTT tiers (universal): <strong>20 / 40 / 60 / 120 / 200 ms</strong> — within country, nearby region, neighboring region, far region, very far.
       India and US example routes share the same tier cells.
     </p>
@@ -48,8 +48,8 @@ const metadata = {
     <LatencySection client:load />
 
     <h1 id="Bandwidth" class="text-3xl font-bold mt-16 mb-2">Bandwidth</h1>
-    <p class="text-gray-500 mb-2">Throughput and transfer time (÷8)</p>
-    <p class="text-sm text-gray-400 mb-8">
+    <p class="text-gray-600 dark:text-gray-500 mb-2">Throughput and transfer time (÷8)</p>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8">
       1 Gbps ≈ 125 MB/s. 1 GB over 1 Gbps = 8 seconds. Same fact, two angles.
     </p>
 
@@ -58,49 +58,49 @@ const metadata = {
     </div>
 
     <h1 id="BandwidthQuiz" class="text-3xl font-bold mt-16 mb-2">Bandwidth Quiz</h1>
-    <p class="text-gray-500 mb-8">Test your ÷8 reflex</p>
+    <p class="text-gray-600 dark:text-gray-500 mb-8">Test your ÷8 reflex</p>
 
     <BandwidthQuiz entries={bandwidthEntries} client:load />
 
     <h1 id="CloudPricing" class="text-3xl font-bold mt-16 mb-2">Cloud Pricing</h1>
-    <p class="text-gray-500 mb-8">Approximate monthly costs</p>
+    <p class="text-gray-600 dark:text-gray-500 mb-8">Approximate monthly costs</p>
 
     <CostTable entries={costEntries} client:load />
 
     <h1 id="CostQuiz" class="text-3xl font-bold mt-16 mb-2">Cost Quiz</h1>
-    <p class="text-gray-500 mb-8">Test your pricing knowledge</p>
+    <p class="text-gray-600 dark:text-gray-500 mb-8">Test your pricing knowledge</p>
 
     <CostQuiz entries={costEntries} client:load />
 
     <h1 id="AvailabilityTable" class="text-3xl font-bold mt-16 mb-2">Availability Table</h1>
-    <p class="text-gray-500 mb-8">Rule-of-thumb downtime to remember</p>
+    <p class="text-gray-600 dark:text-gray-500 mb-8">Rule-of-thumb downtime to remember</p>
 
     <AvailabilityMnemonicTable entries={availabilityMnemonicEntries} />
 
     <h1 id="AvailabilityMnemonicQuiz" class="text-3xl font-bold mt-16 mb-2">Availability Mnemonics Quiz</h1>
-    <p class="text-gray-500 mb-8">Test the mnemonics</p>
+    <p class="text-gray-600 dark:text-gray-500 mb-8">Test the mnemonics</p>
 
     <AvailabilityQuiz entries={availabilityMnemonicEntries} client:load />
 
     <h1 id="Threads" class="text-3xl font-bold mt-16 mb-2">Threads: Platform vs Virtual</h1>
-    <p class="text-gray-500 mb-8">Java concurrency napkin math</p>
+    <p class="text-gray-600 dark:text-gray-500 mb-8">Java concurrency napkin math</p>
 
     <ThreadComparisonTable entries={threadComparisonEntries} />
 
     <h1 id="PowerOf2" class="text-3xl font-bold mt-16 mb-2">Power of 2</h1>
-    <p class="text-gray-500 mb-4">
+    <p class="text-gray-600 dark:text-gray-500 mb-4">
       Data volume in distributed systems boils down to basics: a byte is a sequence of 8 bits; an ASCII character
       uses one byte of memory. Units are powers of 2: 2<sup>10</sup> = 1024 ≈ 10<sup>3</sup> = 1000 (1 Thousand), and
       so on.
     </p>
-    <p class="text-sm text-gray-400 mb-8">
-      Reference: <a href="https://bytebytego.com/courses/system-design-interview/back-of-the-envelope-estimation" target="_blank" rel="noopener" class="underline hover:text-gray-200">ByteByteGo — Back of the Envelope Estimation</a>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8">
+      Reference: <a href="https://bytebytego.com/courses/system-design-interview/back-of-the-envelope-estimation" target="_blank" rel="noopener" class="underline hover:text-gray-900 dark:hover:text-gray-200">ByteByteGo — Back of the Envelope Estimation</a>
     </p>
 
     <PowerTable entries={powerEntries} />
 
     <h1 id="PowerQuiz" class="text-3xl font-bold mt-16 mb-2">Power of 2 Quiz</h1>
-    <p class="text-gray-500 mb-8">Test the units and powers</p>
+    <p class="text-gray-600 dark:text-gray-500 mb-8">Test the units and powers</p>
 
     <PowerQuiz entries={powerEntries} client:load />
   </section>

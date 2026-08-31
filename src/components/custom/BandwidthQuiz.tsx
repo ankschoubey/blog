@@ -65,6 +65,9 @@ const promptLabel: Record<QuestionType, string> = {
   'transfer-to-speed': 'What link speed transfers 1 GB in this time?',
 };
 
+const border = 'border-gray-300 dark:border-white/25';
+const hover = 'hover:bg-black/5 dark:hover:bg-white/10';
+
 export const BandwidthQuiz = ({ entries }: BandwidthQuizProps) => {
   const questions = useMemo(() => shuffle(buildQuestions(entries)), [entries]);
 
@@ -100,17 +103,17 @@ export const BandwidthQuiz = ({ entries }: BandwidthQuizProps) => {
 
   if (finished) {
     return (
-      <div className="border-[2px] border-white/25 p-8 text-center">
+      <div className={`border-[2px] ${border} p-8 text-center`}>
         <h3 className="text-2xl font-bold mb-2">Quiz Complete</h3>
         <p className="text-lg mb-1">
           Score: <span className="font-bold">{score}</span> / {questions.length}
         </p>
-        <p className="text-sm text-gray-400 mb-6">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
           {score === questions.length ? 'Perfect!' : score >= questions.length * 0.7 ? 'Nice work!' : 'Keep practicing!'}
         </p>
         <button
           onClick={handleRestart}
-          className="border-[2px] border-white/25 px-4 py-2 text-sm font-bold hover:bg-white/10 transition-colors"
+          className={`border-[2px] ${border} px-4 py-2 text-sm font-bold ${hover} transition-colors`}
         >
           Try Again
         </button>
@@ -119,27 +122,27 @@ export const BandwidthQuiz = ({ entries }: BandwidthQuizProps) => {
   }
 
   return (
-    <div className="border-[2px] border-white/25 p-6">
-      <div className="flex justify-between items-center mb-4 text-sm text-gray-400">
+    <div className={`border-[2px] ${border} p-6`}>
+      <div className="flex justify-between items-center mb-4 text-sm text-gray-600 dark:text-gray-400">
         <span>{current + 1} / {questions.length}</span>
         <span>Score: {score}</span>
       </div>
 
       <div className="text-center mb-6">
-        <p className="text-xs text-gray-500 mb-2">{promptLabel[q.type]}</p>
+        <p className="text-xs text-gray-600 dark:text-gray-500 mb-2">{promptLabel[q.type]}</p>
         <p className="text-3xl font-bold">{q.prompt}</p>
       </div>
 
       <div className="max-w-md mx-auto mb-6 flex flex-col gap-2">
         {q.options.map((option) => {
-          let cls = 'border-white/25 hover:bg-white/10';
+          let cls = `${border} ${hover}`;
           if (picked) {
             if (option === q.answer) {
-              cls = 'border-green-500 text-green-300';
+              cls = 'border-green-600 text-green-700 dark:border-green-500 dark:text-green-300';
             } else if (option === picked) {
-              cls = 'border-red-500 text-red-300';
+              cls = 'border-red-600 text-red-700 dark:border-red-500 dark:text-red-300';
             } else {
-              cls = 'border-white/10 opacity-40';
+              cls = 'border-black/10 opacity-40 dark:border-white/10';
             }
           }
           return (
@@ -157,18 +160,18 @@ export const BandwidthQuiz = ({ entries }: BandwidthQuizProps) => {
 
       {picked && (
         <div className="text-center mb-4">
-          <p className={`text-sm font-bold mb-1 ${isCorrect ? 'text-green-400' : 'text-red-400'}`}>
+          <p className={`text-sm font-bold mb-1 ${isCorrect ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
             {isCorrect ? 'Correct!' : 'Incorrect'}
           </p>
           {!isCorrect && (
-            <p className="text-sm text-gray-300 mb-2">Answer: {q.answer}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">Answer: {q.answer}</p>
           )}
-          <p className="text-sm text-gray-400 mb-2">
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
             {q.entry.linkSpeed} → {q.entry.throughput}, 1 GB in {q.entry.transferTime}
           </p>
           <button
             onClick={() => document.getElementById('BandwidthTable')?.scrollIntoView({ behavior: 'smooth' })}
-            className="border-[2px] border-white/25 px-3 py-1 text-xs hover:bg-white/10 transition-colors"
+            className={`border-[2px] ${border} px-3 py-1 text-xs ${hover} transition-colors`}
           >
             Jump to Bandwidth Table
           </button>
@@ -179,7 +182,7 @@ export const BandwidthQuiz = ({ entries }: BandwidthQuizProps) => {
         {picked && (
           <button
             onClick={handleNext}
-            className="border-[2px] border-white/25 px-4 py-2 text-sm font-bold hover:bg-white/10 transition-colors"
+            className={`border-[2px] ${border} px-4 py-2 text-sm font-bold ${hover} transition-colors`}
           >
             {current + 1 >= questions.length ? 'See Results' : 'Next'}
           </button>
