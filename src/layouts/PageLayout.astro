@@ -22,7 +22,7 @@ const { metadata } = Astro.props;
   <slot name="header">
     <Header {...headerData} />
   </slot>
-  <main>
+  <main data-pagefind-body>
     <slot />
   </main>
   <slot name="footer">

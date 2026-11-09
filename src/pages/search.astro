@@ -13,25 +13,86 @@ const metadata = {
       <p class="p-2">Full-text search across all posts. Works offline after first load.</p>
       <div class="py-2">
         <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-        <div id="search"></div>
-        <script is:inline src="/pagefind/pagefind-ui.js"></script>
+        <link rel="preload" href="/pagefind/pagefind-ui.js" as="script" fetchpriority="low" />
+        <div id="search"><p>Loading search…</p></div>
         <script is:inline>
           window.addEventListener('DOMContentLoaded', () => {
-            if (window.PagefindUI) {
-              new window.PagefindUI({
-                element: '#search',
-                showSubResults: true,
-                showImages: false,
-                resetStyles: false,
-              });
-              const q = new URLSearchParams(window.location.search).get('q');
-              if (q) {
+            const params = new URLSearchParams(window.location.search);
+            const q = (params.get('q') || '').trim();
+            let started = false;
+
+            function paintQuery(pf, query) {
+              let tries = 0;
+              const timer = setInterval(() => {
+                tries += 1;
                 const input = document.querySelector('#search input');
                 if (input) {
-                  input.value = q;
-                  input.dispatchEvent(new Event('input', { bubbles: true }));
+                  clearInterval(timer);
+                  try {
+                    pf.triggerSearch(query);
+                  } catch {
+                    input.value = query;
+                    input.dispatchEvent(new Event('input', { bubbles: true }));
+                  }
+                  input.focus();
+                } else if (tries > 40) {
+                  clearInterval(timer);
                 }
+              }, 50);
+            }
+
+            function init() {
+              if (started) return window._pfReady;
+              started = true;
+              document.querySelector('#search p')?.remove();
+              window._pfReady = (async () => {
+                try {
+                  await import('/pagefind/pagefind-ui.js');
+                } catch {
+                  await new Promise((resolve, reject) => {
+                    const s = document.createElement('script');
+                    s.src = '/pagefind/pagefind-ui.js';
+                    s.defer = true;
+                    s.onload = resolve;
+                    s.onerror = reject;
+                    document.head.appendChild(s);
+                  });
+                }
+                const pf = new window.PagefindUI({
+                  element: '#search',
+                  showSubResults: false,
+                  showImages: false,
+                  resetStyles: false,
+                  excerptLength: 15,
+                  pageSize: 8,
+                  debounceTimeoutMs: 300,
+                  autofocus: true,
+                  focusOnSlash: true,
+                });
+                if (q) paintQuery(pf, q);
+                return pf;
+              })();
+              return window._pfReady;
+            }
+
+            if (q) {
+              init();
+            } else {
+              const el = document.querySelector('#search');
+              const onFirstInteract = () => init();
+              el?.addEventListener('pointerenter', onFirstInteract, { once: true });
+              el?.addEventListener('focusin', onFirstInteract, { once: true });
+              if ('IntersectionObserver' in window && el) {
+                const io = new IntersectionObserver((entries) => {
+                  if (entries.some((e) => e.isIntersecting)) {
+                    init();
+                    io.disconnect();
+                  }
+                });
+                io.observe(el);
               }
+              const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 3000));
+              idle(() => init(), { timeout: 4000 });
             }
           });
         </script>
