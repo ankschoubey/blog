@@ -64,7 +64,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-astro": "^0.30.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^5.5.0",
     "jsdom": "^25.0.1",
     "mdast-util-to-string": "^4.0.0",
     "pagefind": "^1.6.0",
