@@ -1,6 +1,6 @@
 import fs from 'fs';
 import yaml from 'js-yaml';
-import merge from 'lodash.merge';
+import { deepMerge as merge } from './merge';
 
 import type { MetaData } from '~/types';
 

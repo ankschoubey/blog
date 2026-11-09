@@ -1,50 +1,55 @@
 ---
-
 ---
 
 <br />
 <div id="disqus_thread" class="container m-auto"></div>
+<p class="container m-auto mt-2 text-sm text-muted">
+  Comments lazy-load on scroll. Prefer GitHub? Giscus activates once
+  <code>PUBLIC_GISCUS_*</code> env vars are set (see <code>Giscus.astro</code>).
+</p>
 
 <script is:inline>
   if (!window.DisqusWidget) {
     window.DisqusWidget = {
-      overwriteGlobalSelectors: function () {
-        window.$disqus = document.querySelector('#disqus_thread');
-      },
+      loaded: false,
       init: function () {
-        this.overwriteGlobalSelectors();
-        this.addListeners();
-        this.initDisqus();
-      },
-      addListeners: function () {
-        // After language switched
-        document.addEventListener('astro:after-swap', () => {
-          this.overwriteGlobalSelectors();
-          this.initDisqus();
-        });
-      },
-      initDisqus: () => {
-        // early escape if $disqus not exists
-        if (window.$disqus === null) {
-          return;
-        }
-
-        // Reset DISQUS, Rather than loading new embed.js
-        if (window.DISQUS) {
-          window.DISQUS.reset({
-            reload: true,
-          });
-          return;
-        }
-
-        (function () {
-          // DON'T EDIT BELOW THIS LINE
+        const target = document.querySelector('#disqus_thread');
+        if (!target) return;
+        // Lazy-load Disqus only when visible
+        const load = () => {
+          if (window.DisqusWidget.loaded) return;
+          window.DisqusWidget.loaded = true;
+          if (window.DISQUS) {
+            window.DISQUS.reset({ reload: true });
+            return;
+          }
           const d = document,
             s = d.createElement('script');
           s.src = 'https://ankushchoubey.disqus.com/embed.js';
           s.setAttribute('data-timestamp', String(+new Date()));
+          s.async = true;
           (d.head || d.body).appendChild(s);
-        })();
+        };
+        if ('IntersectionObserver' in window) {
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((e) => {
+                if (e.isIntersecting) {
+                  load();
+                  io.disconnect();
+                }
+              });
+            },
+            { rootMargin: '400px' }
+          );
+          io.observe(target);
+        } else {
+          load();
+        }
+        document.addEventListener('astro:after-swap', () => {
+          window.DisqusWidget.loaded = false;
+          window.DisqusWidget.init();
+        });
       },
     };
 

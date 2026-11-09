@@ -4,34 +4,38 @@ import Layout from '~/layouts/PageLayout.astro';
 const metadata = {
   title: 'Search Ankush Choubey - Full Stack Developer',
 };
-
-import SearchBox from '../components/custom/SearchBox';
-
-let allPosts = Object.values(import.meta.glob('../content/**/*.md', { eager: true }));
-allPosts = allPosts.map((post) => {
-  let text = post.frontmatter.title + post.frontmatter.except + post.compiledContent();
-  text = text
-    .replace('undefined', '\n')
-    .replace('<br>', '\n')
-    .replace('</p>', '\n')
-    .replace(/<\/[^>]+(>|$)/g, ' ')
-    .replace(/<[^>]*>?/gm, ' ')
-    .replace('\n', '<br>');
-  return {
-    frontmatter: post.frontmatter,
-    searchableContent: text.toLowerCase(),
-    displayContent: text,
-  };
-});
 ---
 
 <Layout {metadata}>
   <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-8">
     <div class="align-center container flex flex-col" style="width: 100%;">
-      <h1 class="p-2 text-3xl font-bold">🔎 Search</h1>
-      <p class="p-2">These include posts from both software development and life.</p>
+      <h1 class="p-2 text-3xl font-bold">Search</h1>
+      <p class="p-2">Full-text search across all posts. Works offline after first load.</p>
       <div class="py-2">
-        <SearchBox client:only {allPosts} />
+        <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+        <div id="search"></div>
+        <script is:inline src="/pagefind/pagefind-ui.js"></script>
+        <script is:inline>
+          window.addEventListener('DOMContentLoaded', () => {
+            if (window.PagefindUI) {
+              new window.PagefindUI({
+                element: '#search',
+                showSubResults: true,
+                showImages: false,
+                resetStyles: false,
+              });
+              const q = new URLSearchParams(window.location.search).get('q');
+              if (q) {
+                const input = document.querySelector('#search input');
+                if (input) {
+                  input.value = q;
+                  input.dispatchEvent(new Event('input', { bubbles: true }));
+                }
+              }
+            }
+          });
+        </script>
+        <noscript><p>Search needs JavaScript. Browse <a href="/blog">all posts</a> or use the <a href="/rss.xml">RSS feed</a>.</p></noscript>
       </div>
     </div>
   </section>

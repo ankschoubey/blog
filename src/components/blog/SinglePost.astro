@@ -6,6 +6,7 @@ import PostTags from '~/components/blog/Tags.astro';
 import SocialShare from '~/components/common/SocialShare.astro';
 
 import Disqus from '~/components/custom/Disqus.astro';
+import Giscus from '~/components/custom/Giscus.astro';
 
 import TableOfContents from '~/components/blog/TableOfContents.astro';
 
@@ -140,6 +141,7 @@ const jsonLd = {
     </div>
   </article>
   <Disqus />
+  <Giscus />
   <TableOfContents />
   <div class="reading-progress fixed left-0 top-0 z-50 h-1 w-0 bg-primary" aria-hidden="true"></div>
   <script is:inline>

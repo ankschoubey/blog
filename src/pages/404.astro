@@ -2,25 +2,6 @@
 import Layout from '~/layouts/PageLayout.astro';
 import { getHomePermalink } from '~/utils/permalinks';
 const title = `Error 404`;
-
-import SearchBox from '../components/custom/SearchBox';
-
-let allPosts = Object.values(import.meta.glob('../content/**/*.md', { eager: true }));
-allPosts = allPosts.map((post) => {
-  let text = post.frontmatter.title + post.frontmatter.except + post.compiledContent();
-  text = text
-    .replace('undefined', '\n')
-    .replace('<br>', '\n')
-    .replace('</p>', '\n')
-    .replace(/<\/[^>]+(>|$)/g, ' ')
-    .replace(/<[^>]*>?/gm, ' ')
-    .replace('\n', '<br>');
-  return {
-    frontmatter: post.frontmatter,
-    searchableContent: text.toLowerCase(),
-    displayContent: text,
-  };
-});
 ---
 
 <Layout metadata={{ title }}>
@@ -30,13 +11,21 @@ allPosts = allPosts.map((post) => {
         <span class="p-2 text-3xl font-bold" style="padding-right: 0px;"
           ><span class="text-primary dark:text-blue-600">404</span>: Sorry, we couldn't find this page.</span
         >
-        <span class="p-2 text-3xl font-bold text-muted dark:text-slate-400" style="padding-left: 0px;"
-          >Use the search below.</span
-        >
       </span>
       <br />
       <div class="py-2">
-        <SearchBox client:only {allPosts} />
+        <form action="/search" method="get" class="flex max-w-md gap-2">
+          <label for="q-404" class="sr-only">Search posts</label>
+          <input
+            id="q-404"
+            name="q"
+            type="search"
+            placeholder="Search posts…"
+            class="flex-1 rounded border px-3 py-2"
+          />
+          <button type="submit" class="rounded bg-primary px-4 py-2 text-white">Search</button>
+        </form>
+        <p class="mt-4"><a href={getHomePermalink()} class="text-primary hover:underline">Back home</a> · <a href="/blog" class="text-primary hover:underline">All posts</a></p>
       </div>
     </div>
   </section>
