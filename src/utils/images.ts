@@ -63,8 +63,18 @@ export const adaptOpenGraphImages = async (
   const adaptedImages = await Promise.all(
     images.map(async (image) => {
       if (image?.url) {
-        const resolvedImage = (await findImage(image.url)) as ImageMetadata | undefined;
-        if (!resolvedImage) {
+        const resolvedImage = (await findImage(image.url)) as ImageMetadata | string | undefined | null;
+        if (typeof resolvedImage === 'string') {
+          const absoluteUrl = resolvedImage.startsWith('http')
+            ? resolvedImage
+            : String(new URL(resolvedImage, astroSite));
+          return {
+            url: absoluteUrl,
+            width: image?.width || defaultWidth,
+            height: image?.height || defaultHeight,
+          };
+        }
+        if (!resolvedImage || typeof resolvedImage !== 'object') {
           return {
             url: '',
           };

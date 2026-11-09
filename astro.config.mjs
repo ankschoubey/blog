@@ -36,19 +36,10 @@ export default defineConfig({
     }),
     mdx(),
     icon({
+      // NOTE: tabler uses dynamic `tabler:number-${index}-small` icons
+      // (src/utils/customCode.ts/ankushUtils.ts), so wildcard required.
       include: {
         tabler: ['*'],
-        'flat-color-icons': [
-          'template',
-          'gallery',
-          'approval',
-          'document',
-          'advertising',
-          'currency-exchange',
-          'voice-presentation',
-          'business-contact',
-          'database',
-        ],
       },
     }),
     ...whenExternalScripts(() =>
@@ -59,10 +50,11 @@ export default defineConfig({
       })
     ),
     tasks(),
+    sitemap(),
     compress({
       CSS: true,
-      HTML: false,
-      Image: false,
+      HTML: true,
+      Image: true,
       JavaScript: true,
       SVG: true,
       Logger: 1,

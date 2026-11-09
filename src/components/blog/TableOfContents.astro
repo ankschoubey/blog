@@ -6,7 +6,7 @@ import { Icon } from 'astro-icon/components';
   {/* Desktop TOC */}
   <div class="toc-desktop-wrapper">
     <h2 class="toc-title-outer">Index</h2>
-    <nav class="toc-desktop">
+    <nav class="toc-desktop" aria-label="Table of contents">
       <ul class="toc-list" id="toc-list">
         <!-- TOC items will be inserted here by JavaScript -->
       </ul>
@@ -16,12 +16,12 @@ import { Icon } from 'astro-icon/components';
   {/* Mobile TOC */}
   <div class="toc-mobile">
     <h2 class="toc-title-outer">Index</h2>
-    <nav class="toc-content">
+    <nav class="toc-content" aria-label="Table of contents">
       <ul class="toc-list" id="toc-list-mobile">
         <!-- TOC items will be inserted here by JavaScript -->
       </ul>
     </nav>
-    <button class="toc-toggle" aria-label="Toggle Table of Contents">
+    <button class="toc-toggle" aria-label="Toggle Table of Contents" aria-expanded="false" aria-controls="toc-list-mobile">
       <Icon name="tabler:menu-2" class="menu-icon h-6 w-6" />
       <Icon name="tabler:x" class="close-icon h-6 w-6" />
     </button>
@@ -87,8 +87,6 @@ import { Icon } from 'astro-icon/components';
       const id = heading.getAttribute('id');
       const text = '⋅ ' + heading.textContent || '';
       
-      console.log('Processing heading:', { level, id, text });
-      
       // Create list items for both desktop and mobile
       const liDesktop = document.createElement('li');
       const liMobile = document.createElement('li');
@@ -133,8 +131,6 @@ import { Icon } from 'astro-icon/components';
       tocList.appendChild(liDesktop);
       tocListMobile.appendChild(liMobile);
     });
-    
-    console.log('TOC generation complete');
   }
   
   // Function to highlight the current section
@@ -213,7 +209,8 @@ import { Icon } from 'astro-icon/components';
   const mobileToc = document.querySelector('.toc-mobile .toc-content');
   
   toggleButton?.addEventListener('click', () => {
-    mobileToc?.classList.toggle('active');
+    const expanded = mobileToc?.classList.toggle('active');
+    toggleButton?.setAttribute('aria-expanded', String(!!expanded));
   });
   
   // Initialize TOC when the page is loaded

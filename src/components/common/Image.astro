@@ -8,8 +8,6 @@ import {
   type AttributesProps,
 } from '~/utils/images-optimization';
 
-import { Image as OptimizedImage, imageConfig } from 'astro:assets';
-
 type Props = ImageProps;
 type ImageType = {
   src: string;
@@ -50,34 +48,9 @@ if (_image !== null && typeof _image === 'object') {
   image = await getImagesOptimized(_image, props);
 }
 
-// Below does not work
-
-const imgSrc = image?.src.startsWith('/images') ? '../../assets' + image?.src : image?.src;
-let publicImage = !imgSrc?.startsWith('../../assets') || true;
-
-// const skip = [
-//   "event",
-//   "communication"
-// ]
-
-// for(const skipWord of skip){
-//   if(publicImage){
-//     break;
-//   }
-//   publicImage = image?.src.includes(skipWord) || true;
-// }
-
-// if(!publicImage){
-//   console.log(imgSrc)
-// }
-
-const importedImage = imgSrc && !publicImage ? import(imgSrc) : null;
-
-// const publicImage = true;
-
-// console.log(image?.src)
-// console.log(imgSrc)
+// NOTE: public/ images stay raw <img> for now. Proper astro:assets migration
+// needs images moved to src/assets (dynamic import() with variable path
+// breaks static build). Deferred.
 ---
 
-{publicImage && <img src={image?.src} {...image?.attributes} />}
-{!publicImage && (!image ? <Fragment /> : <OptimizedImage src={importedImage} {...image?.attributes} />)}
+<img src={image?.src} {...image?.attributes} />

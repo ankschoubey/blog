@@ -11,6 +11,7 @@ import TableOfContents from '~/components/blog/TableOfContents.astro';
 
 import { getPermalink } from '~/utils/permalinks';
 import { getFormattedDate } from '~/utils/utils';
+import { findRelatedPosts, findPrevNextPosts } from '~/utils/blog';
 
 import type { Post } from '~/types';
 
@@ -21,15 +22,31 @@ export interface Props {
 
 const { post, url } = Astro.props;
 const { Content } = post;
+const relatedPosts = await findRelatedPosts(post, 3);
+const { prev: prevPost, next: nextPost } = await findPrevNextPosts(post);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.title,
+  description: post.excerpt,
+  datePublished: post.publishDate.toISOString(),
+  ...(post.updateDate ? { dateModified: post.updateDate.toISOString() } : {}),
+  author: { '@type': 'Person', name: post.author || 'Ankush Choubey', url: 'https://www.ankushchoubey.com' },
+  mainEntityOfPage: String(url),
+  ...(post.image
+    ? { image: [typeof post.image === 'string' ? post.image : (post.image as { src?: string })?.src] }
+    : {}),
+};
 ---
 
 <section class="mx-auto py-8 sm:py-16 lg:py-20">
   <article>
-    <header class={post.image ? '' : ''}>
+    <header>
+      <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-white focus:px-4 focus:py-2">Skip to content</a>
       <div class="mx-auto mb-2 mt-0 flex max-w-3xl flex-col justify-between px-4 sm:flex-row sm:items-center sm:px-6">
         <p>
           <Icon name="tabler:clock" class="-mt-0.5 inline-block h-4 w-4 dark:text-gray-400" />
-          <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time>
+          <time datetime={post.publishDate.toISOString()} class="inline-block">{getFormattedDate(post.publishDate)}</time>
           {
             post.category && (
               <>
@@ -50,7 +67,7 @@ const { Content } = post;
         {post.title}
       </h1>
       <p
-        class="mx-auto mb-8 mt-4 max-w-3xl px-4 text-justify text-xl text-muted dark:text-slate-400 sm:px-6 md:text-2xl"
+        class="mx-auto mb-8 mt-4 max-w-3xl px-4 text-left text-xl text-muted dark:text-slate-400 sm:px-6 md:text-2xl"
       >
         {post.excerpt}
       </p>
@@ -62,7 +79,7 @@ const { Content } = post;
             class="mx-auto mb-6 max-w-full bg-gray-400 dark:bg-slate-700 sm:rounded-md lg:max-w-[900px]"
             widths={[400, 900]}
             sizes="(max-width: 900px) 400px, 900px"
-            alt={post?.excerpt || ''}
+            alt={post.title}
             width={900}
             height={506}
             loading="eager"
@@ -84,7 +101,60 @@ const { Content } = post;
       <PostTags tags={post.tags} class="mr-5 rtl:ml-5 rtl:mr-0" />
       <SocialShare url={url} text={post.title} class="mt-5 align-middle text-gray-500 dark:text-slate-600 sm:mt-1" />
     </div>
+    <div class="mx-auto mt-8 grid max-w-3xl gap-4 px-6 sm:grid-cols-2 sm:px-6">
+      {prevPost ? (
+        <a href={getPermalink(prevPost.permalink, 'post')} class="rounded border p-4 hover:border-primary">
+          <span class="text-xs uppercase text-muted">Older</span>
+          <span class="block font-semibold">{prevPost.title}</span>
+        </a>
+      ) : <span />}
+      {nextPost ? (
+        <a href={getPermalink(nextPost.permalink, 'post')} class="rounded border p-4 text-right hover:border-primary">
+          <span class="text-xs uppercase text-muted">Newer</span>
+          <span class="block font-semibold">{nextPost.title}</span>
+        </a>
+      ) : <span />}
+    </div>
+    {relatedPosts.length > 0 && (
+      <div class="mx-auto mt-8 max-w-3xl px-6 sm:px-6">
+        <h2 class="mb-4 text-xl font-bold">Related posts</h2>
+        <ul class="space-y-3">
+          {relatedPosts.map((rel) => (
+            <li>
+              <a href={getPermalink(rel.permalink, 'post')} class="text-primary hover:underline">{rel.title}</a>
+              <span class="ml-2 text-sm text-muted">{getFormattedDate(rel.publishDate)}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+    <div class="mx-auto mt-8 max-w-3xl rounded border p-6 px-6 sm:px-6">
+      <h2 class="text-lg font-bold">Get new posts by email</h2>
+      <p class="mt-1 text-sm text-muted">No spam. Unsubscribe anytime. Or grab the <a href="/rss.xml" class="text-primary hover:underline">RSS feed</a>.</p>
+      <form action="mailto:ankushchoubey@outlook.com?subject=Subscribe%20to%20blog" method="post" enctype="text/plain" class="mt-4 flex flex-col gap-2 sm:flex-row">
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input id="newsletter-email" type="email" required placeholder="you@example.com" class="flex-1 rounded border px-3 py-2" />
+        <button type="submit" class="rounded bg-primary px-4 py-2 text-white">Subscribe</button>
+      </form>
+      <p class="mt-2 text-xs text-muted">Mailto-based for now. ButtonDown / ConvertKit can replace this form later.</p>
+    </div>
   </article>
   <Disqus />
   <TableOfContents />
+  <div class="reading-progress fixed left-0 top-0 z-50 h-1 w-0 bg-primary" aria-hidden="true"></div>
+  <script is:inline>
+    (() => {
+      const bar = document.currentScript?.previousElementSibling;
+      if (!bar) return;
+      const onScroll = () => {
+        const el = document.documentElement;
+        const max = el.scrollHeight - el.clientHeight;
+        const pct = max > 0 ? (el.scrollTop / max) * 100 : 0;
+        bar.style.width = pct + '%';
+      };
+      document.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 </section>

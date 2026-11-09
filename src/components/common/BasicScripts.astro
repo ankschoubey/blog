@@ -44,6 +44,29 @@ import { UI } from '~/utils/config';
     let lastKnownScrollPosition = window.scrollY;
     let ticking = true;
 
+    // Copy-code buttons for <pre><code> blocks
+    document.querySelectorAll('pre').forEach((pre) => {
+      if (pre.querySelector('.copy-code-btn')) return;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'copy-code-btn';
+      btn.setAttribute('aria-label', 'Copy code');
+      btn.textContent = 'Copy';
+      btn.style.cssText =
+        'position:absolute;top:0.5rem;right:0.5rem;font-size:0.75rem;padding:0.25rem 0.5rem;border-radius:0.25rem;border:1px solid currentColor;opacity:0.7;cursor:pointer;';
+      btn.addEventListener('click', async () => {
+        const code = pre.querySelector('code');
+        try {
+          await navigator.clipboard.writeText(code ? code.innerText : pre.innerText);
+          btn.textContent = 'Copied';
+          setTimeout(() => (btn.textContent = 'Copy'), 2000);
+        } catch {}
+      });
+      const style = getComputedStyle(pre);
+      if (style.position === 'static') pre.style.position = 'relative';
+      pre.appendChild(btn);
+    });
+
     attachEvent('#header nav', 'click', function () {
       document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
       document.body.classList.remove('overflow-hidden');
@@ -72,7 +95,7 @@ import { UI } from '~/utils/config';
       localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     });
 
-    attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
+    attachEvent('[data-aw-social-share]', 'click', async function (_, elem) {
       const network = elem.getAttribute('data-aw-social-share');
       const url = encodeURIComponent(elem.getAttribute('data-aw-url'));
       const text = encodeURIComponent(elem.getAttribute('data-aw-text'));
@@ -94,6 +117,17 @@ import { UI } from '~/utils/config';
         case 'mail':
           href = `mailto:?subject=%22${text}%22&body=${text}%20${url}`;
           break;
+        case 'copy-link':
+          try {
+            await navigator.clipboard.writeText(decodeURIComponent(url));
+            elem.setAttribute('aria-label', 'Link copied');
+            elem.setAttribute('title', 'Link copied');
+            setTimeout(() => {
+              elem.setAttribute('aria-label', 'Copy link');
+              elem.setAttribute('title', 'Copy link');
+            }, 2000);
+          } catch {}
+          return;
 
         default:
           return;
@@ -105,8 +139,7 @@ import { UI } from '~/utils/config';
       newlink.click();
     });
 
-    function appyHeaderStylesOnScroll() {
-      const header = document.querySelector('#header[data-aw-sticky-header]');
+    function appyHeaderStylesOnScroll() {      const header = document.querySelector('#header[data-aw-sticky-header]');
       if (lastKnownScrollPosition > 60 && !header.classList.contains('scroll')) {
         document.getElementById('header').classList.add('scroll');
       } else if (lastKnownScrollPosition <= 60 && header.classList.contains('scroll')) {

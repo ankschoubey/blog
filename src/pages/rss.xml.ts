@@ -18,19 +18,18 @@ export const GET = async () => {
   const rss = await getRssString({
     title: `${SITE.name}’s Blog`,
     description: METADATA?.description || '',
-    site: import.meta.env.SITE,
-
+    site: SITE.site || import.meta.env.SITE,
+    trailingSlash: SITE.trailingSlash,
     items: posts
       .filter((post) => post.tags?.findIndex((tag) => exludeThoughtTags.has(tag)) === -1)
       .map((post) => ({
         link: getPermalink(post.permalink, 'post'),
         title: post.title,
         description: post.excerpt,
-        publishDate: post.publishDate,
-        pubDate: post.publishDate,
+        publishDate: post.updateDate || post.publishDate,
+        pubDate: post.updateDate || post.publishDate,
+        categories: post.tags || [],
       })),
-
-    trailingSlash: SITE.trailingSlash,
   });
 
   return new Response(rss, {

@@ -10,11 +10,16 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier -w .",
+    "format:check": "prettier --check .",
     "lint:eslint": "eslint . --ext .js,.ts,.astro",
-    "ci": "npm run lint:eslint && npm run build",
+    "typecheck": "tsc --noEmit",
+    "ci": "npm run lint:eslint && npm run typecheck && npm run build",
     "playwright": "playwright test",
-    "test": "vitest",
-    "testui": "vitest --ui"
+    "test": "vitest run",
+    "testui": "vitest --ui",
+    "new-article": "bash scripts/new-article.sh",
+    "add-image": "bash scripts/add-image.sh",
+    "lint-links": "bash scripts/lint-links.sh"
   },
   "dependencies": {
     "@astrojs/react": "^3.0.9",

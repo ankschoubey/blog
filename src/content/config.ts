@@ -47,17 +47,18 @@ const metadataDefinition = () =>
 
 const postCollection = defineCollection({
   schema: z.object({
-    publishDate: z.date().optional(),
+    publishDate: z.date({ required_error: 'publishDate required (YYYY-MM-DD)' }),
     updateDate: z.date().optional(),
-    draft: z.boolean().optional(),
+    draft: z.boolean().default(false),
 
-    title: z.string(),
-    excerpt: z.string().optional(),
+    title: z.string().min(1),
+    excerpt: z.string().min(1).optional(),
     image: z.string().optional(),
+    imageAlt: z.string().optional(),
 
     category: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-    author: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    author: z.string().default('Ankush Choubey'),
 
     metadata: metadataDefinition(),
   }),

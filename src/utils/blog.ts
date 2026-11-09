@@ -172,6 +172,35 @@ export const findLatestPosts = async ({ count }: { count?: number }): Promise<Ar
   return posts ? posts.slice(0, _count) : [];
 };
 
+/** Related posts: same category first, then shared tags. */
+export const findRelatedPosts = async (post: Post, count = 3): Promise<Array<Post>> => {
+  const posts = (await fetchPosts()).filter((p) => p.slug !== post.slug);
+  const scored = posts.map((p) => {
+    let score = 0;
+    if (post.category && p.category === post.category) score += 2;
+    const shared = (p.tags || []).filter((t) => (post.tags || []).includes(t)).length;
+    score += shared;
+    return { p, score };
+  });
+  scored.sort((a, b) => b.score - a.score || b.p.publishDate.valueOf() - a.p.publishDate.valueOf());
+  const withScore = scored.filter((s) => s.score > 0).map((s) => s.p);
+  const fallback = scored.map((s) => s.p);
+  const picked = withScore.length ? withScore : fallback;
+  return picked.slice(0, count);
+};
+
+/** Prev / next in publish-date-desc order. */
+export const findPrevNextPosts = async (post: Post): Promise<{ prev?: Post; next?: Post }> => {
+  const posts = await fetchPosts();
+  const idx = posts.findIndex((p) => p.slug === post.slug);
+  if (idx === -1) return {};
+  return {
+    // posts sorted newest-first: next = newer, prev = older
+    next: idx > 0 ? posts[idx - 1] : undefined,
+    prev: idx < posts.length - 1 ? posts[idx + 1] : undefined,
+  };
+};
+
 /** */
 export const getStaticPathsBlogList = async ({ paginate }: { paginate: PaginateFunction }) => {
   if (!isBlogEnabled || !isBlogListRouteEnabled) return [];

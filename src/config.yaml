@@ -17,13 +17,13 @@ metadata:
   openGraph:
     site_name: Ankush Choubey
     images:
-      - url: '~/assets/images/default.png'
+      - url: '/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@ankschoubey'
+    site: '@ankschoubey'
     cardType: summary_large_image
 
 i18n:
@@ -57,7 +57,7 @@ apps:
       isEnabled: true
       pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
       robots:
-        index: false
+        index: true
 
 analytics:
   vendors:
@@ -96,7 +96,7 @@ ui:
         bgPage: rgb(3 6 32)
         primary: rgb(29 78 216)
         secondary: rgb(30 58 138)
-        accent: rgb(135 77 2267)
+        accent: rgb(135 77 227)
         info: rgb(58 191 248)
         success: rgb(54 211 153)
         warning: rgb(251 189 35)
